@@ -1,0 +1,4 @@
+# Exact source/evidence bytes are the experiment identity on every platform.
+# Preserve existing LF and CRLF files, especially immutable parent records.
+# Python entry points work on both platforms; invoke them with python -m.
+* -text -filter -ident -working-tree-encoding

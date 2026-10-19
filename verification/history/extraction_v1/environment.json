@@ -1,0 +1,9 @@
+{
+  "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "torch": "2.11.0+cu126",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "learner": "cpu",
+  "threads": 1,
+  "is_ci": false
+}

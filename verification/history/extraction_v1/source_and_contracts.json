@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "cases": 17,
+  "records": [
+    {
+      "label": "frozen_actor",
+      "exit_code": 0,
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-c",
+        "preserved inline code"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_extraction_20261019\\project_v3"
+    },
+    {
+      "label": "parent_generator",
+      "exit_code": 0,
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-c",
+        "preserved inline code"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis"
+    },
+    {
+      "label": "active_generator",
+      "exit_code": 0,
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-c",
+        "preserved inline code"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_extraction_20261019\\project_v3"
+    },
+    {
+      "label": "verify_normal",
+      "exit_code": 0,
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "verify"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_extraction_20261019\\project_v3"
+    },
+    {
+      "label": "dry_formal",
+      "exit_code": 0,
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "train",
+        "--config",
+        "configs/b2.json",
+        "--output",
+        "work/collision_terminal/dry"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_extraction_20261019\\project_v3"
+    },
+    {
+      "label": "dry_mechanism",
+      "exit_code": 0,
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "train",
+        "--config",
+        "configs/b2_mechanism.json",
+        "--output",
+        "work/collision_terminal/dry",
+        "--mechanism-check"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_extraction_20261019\\project_v3"
+    },
+    {
+      "label": "reject_formal",
+      "exit_code": 1,
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "train",
+        "--config",
+        "configs/b2.json",
+        "--output",
+        "work/collision_terminal/blocked",
+        "--execute"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_extraction_20261019\\project_v3"
+    },
+    {
+      "label": "config_changed",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "config_changed_optimized",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "config_changed_train",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "unreviewed_file",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "unreviewed_file_optimized",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "unreviewed_file_train",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "missing_parent",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "missing_parent_optimized",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "missing_parent_train",
+      "exit_code": 1,
+      "expected_rejection": true
+    },
+    {
+      "label": "reject_old_identity",
+      "exit_code": 0,
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-c",
+        "preserved inline code"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_extraction_20261019\\project_v3"
+    }
+  ],
+  "scope": "source integrity, manual execution guards, frozen actor/Adam and active M20 generator identity",
+  "performance_passed": false
+}

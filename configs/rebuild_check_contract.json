@@ -1,0 +1,6 @@
+{
+  "schema": "auv.active.check_inventory.v1",
+  "expected_tests": 38,
+  "modules": ["checks.test_learning", "checks.test_workflow", "checks.test_checkout"],
+  "allow_skips": false
+}

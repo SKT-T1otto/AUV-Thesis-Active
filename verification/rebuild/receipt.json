@@ -1,0 +1,43 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "publication_20261019_v1",
+  "source_identity": {
+    "review_sha256": "954f773a96b297ad8af3ec49eeabf969bf9b2326bdba67ea03c39d3044941f4f",
+    "profile": "active_rebuild_v1",
+    "inventory_sha256": "43adbbc97f067e7503df9c4ad3477b8e25ce841009dbca1f00299889b4de9655",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.rebuild.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/rebuild/source.json",
+      "sha256": "ef2f31cd8d407eb1b19ddaf47343fcb51b544c2a6d483dfd95808ac380a3e7b1"
+    },
+    "structural": {
+      "path": "verification/rebuild/structural.json",
+      "sha256": "d27b7579a79d363657f2af748b4ca5d9db06076c88183b9aebc1ad507ad49727"
+    },
+    "regression": {
+      "path": "verification/rebuild/regression.json",
+      "sha256": "9a43b844b52109b0ab1dfba74c9c219c16f91dd3c81a35c119a774f95f31e651"
+    },
+    "parity": {
+      "path": "verification/rebuild/parity.json",
+      "sha256": "1f3b5d76ee866bdef637be2ae0ae032e69b16fea1774c29871b6e05dec5f1e6e"
+    },
+    "entrypoints": {
+      "path": "verification/rebuild/entrypoints.json",
+      "sha256": "6336e608ae4d812b0c28cf2426e8026d8a0f4d31f1f9f7510a9d1fc6b1deb79f"
+    },
+    "checkpoint": {
+      "path": "verification/rebuild/checkpoint.json",
+      "sha256": "178bc4db682b3d398015331a08ada2d0846674d336a264d62070827d6e96f788"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "performance_passed": false,
+  "scope": "Transport-only successor: current local bounded checks; prior exact parity carried with unchanged runtime byte proof. Linux/committed clone verification must run on the user-selected new commit.",
+  "historical_e0_passed": false,
+  "committed_clean_clone_claimed": false
+}

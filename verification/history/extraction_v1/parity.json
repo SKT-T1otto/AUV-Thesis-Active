@@ -1,0 +1,59 @@
+{
+  "independent_processes": true,
+  "parent_result_reused": true,
+  "bit_exact": true,
+  "differences": [],
+  "parent": [
+    {
+      "label": "b2",
+      "episodes": 1,
+      "steps": 4,
+      "updates": 0,
+      "state": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905",
+      "mechanism_only": true,
+      "formal_load_rejected": true
+    },
+    {
+      "label": "b3",
+      "episodes": 1,
+      "steps": 4,
+      "updates": 0,
+      "state": "bbc2970aa47545e1251d4eba147a664b7d464a371dc0a7e5eebc9fc0ac163237",
+      "mechanism_only": true,
+      "formal_load_rejected": true
+    }
+  ],
+  "active": [
+    {
+      "label": "b2",
+      "episodes": 1,
+      "steps": 4,
+      "updates": 0,
+      "state": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905",
+      "mechanism_only": true,
+      "formal_load_rejected": true
+    },
+    {
+      "label": "b3",
+      "episodes": 1,
+      "steps": 4,
+      "updates": 0,
+      "state": "bbc2970aa47545e1251d4eba147a664b7d464a371dc0a7e5eebc9fc0ac163237",
+      "mechanism_only": true,
+      "formal_load_rejected": true
+    }
+  ],
+  "methods": [
+    "D2",
+    "B2",
+    "B3"
+  ],
+  "scenes": 4,
+  "max_steps_per_scene": 8,
+  "learning_updates_per_model": 1,
+  "source_leaks": [],
+  "file_access_isolation": {
+    "original_checkout_reads_blocked": true,
+    "project_files_opened": 225
+  }
+}

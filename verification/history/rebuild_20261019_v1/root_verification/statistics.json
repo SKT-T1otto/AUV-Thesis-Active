@@ -1,0 +1,8 @@
+{
+  "python_files": 116,
+  "python_lines": 12322,
+  "original_extracted_parent_files": 85,
+  "removed_unused_methods_in_extraction": 55,
+  "focused_tests": 31,
+  "core_changes_in_rebuild": 0
+}

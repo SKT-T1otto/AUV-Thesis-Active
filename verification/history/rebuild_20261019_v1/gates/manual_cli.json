@@ -1,0 +1,245 @@
+{
+  "passed": true,
+  "readiness": {
+    "source": {
+      "review_sha256": "6b872032c2a4f0c52aa6cffdfacc084db7eef03521d09a9a2a03aab93614ed27",
+      "profile": "active_rebuild_v1",
+      "inventory_sha256": "1387cadc5f9d35b33ff3d990695c32dbeb09706267b95d251266b940932786fb",
+      "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+      "distribution": "auv.active_source.rebuild.v1"
+    },
+    "manual_research_execution_allowed": true,
+    "readiness_run": "rebuild_20261019_v1",
+    "performance_passed": false
+  },
+  "normal_scope_state": {
+    "scope": "manual_research",
+    "mechanism": false,
+    "evaluation_allowed": true,
+    "formal_performance_approved": false,
+    "niter": 2
+  },
+  "training_steps": 4,
+  "evaluation_steps": 2,
+  "additional_environment_steps": 6,
+  "actual_training_episodes": 1,
+  "full_plan_jobs": 7,
+  "full_plan_executed": false,
+  "generated_eval": {
+    "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\generated_eval_400.json",
+    "scenarios": 1,
+    "split": "eval",
+    "seed": 928301,
+    "max_steps": 400,
+    "sha256": "93e60149825223582236aeb301d32aa3b5c3f54d9a285c249042c733a06141ec",
+    "executed": true
+  },
+  "summary": {
+    "schema": "auv.active.summary.v1",
+    "source_review": {
+      "review_sha256": "6b872032c2a4f0c52aa6cffdfacc084db7eef03521d09a9a2a03aab93614ed27",
+      "profile": "active_rebuild_v1",
+      "inventory_sha256": "1387cadc5f9d35b33ff3d990695c32dbeb09706267b95d251266b940932786fb",
+      "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+      "distribution": "auv.active_source.rebuild.v1"
+    },
+    "complete": true,
+    "mechanism_only": false,
+    "scope": "selected verified evaluation files",
+    "groups": [
+      {
+        "method": "D2",
+        "expected_replicates": 1,
+        "completed_replicates": 1,
+        "complete": true,
+        "found_rate": 0,
+        "found_rate_seed_sd": null,
+        "pre_found_collision_rate": 1,
+        "pre_found_collision_rate_seed_sd": null,
+        "found_penalized_steps": 4,
+        "found_penalized_steps_seed_sd": null,
+        "success_rate": 0,
+        "success_rate_seed_sd": null
+      },
+      {
+        "method": "D2_B2_repair_v2",
+        "expected_replicates": 1,
+        "completed_replicates": 1,
+        "complete": true,
+        "found_rate": 0,
+        "found_rate_seed_sd": null,
+        "pre_found_collision_rate": 1,
+        "pre_found_collision_rate_seed_sd": null,
+        "found_penalized_steps": 4,
+        "found_penalized_steps_seed_sd": null,
+        "success_rate": 0,
+        "success_rate_seed_sd": null
+      }
+    ],
+    "performance_passed": false
+  },
+  "commands": [
+    {
+      "label": "verify",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "verify"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "ec3c2cffea6ba778095feefe113b2b5983c4cd031739e837465e2ca0a83007a8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "research_preview",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "train",
+        "--config",
+        "configs/b2.json",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\never_started"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "d9d5dfa71158c9a574c9ba3dcd25c3b882dd4c9e28ba0bf666aad5c949edf08a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "research_train",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "train",
+        "--config",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\bounded_normal_scope.json",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\research_train",
+        "--execute"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "557a1bbf54a07b0df0d0696534921d0d0d13f922483a7dcbeb48c3585c208946",
+      "stderr_sha256": "ecd07df9f1b95297c1e6e5e51ef41bd6b554fee12413becb64528da61402caa8"
+    },
+    {
+      "label": "research_evaluate",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "evaluate",
+        "--checkpoint",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\research_train\\checkpoint_final.pt",
+        "--manifest",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\eval.json",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\research_evaluate",
+        "--execute"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "3d601393e06914e8dc4ad8b5411d9891d20616d8845753253aa59b65f2bb256b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "d2_normal_scope",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "reference",
+        "--config",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\bounded_normal_scope.json",
+        "--manifest",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\eval.json",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\d2_evaluate",
+        "--execute"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "9dd78353e07c36ec1c0a01e46d88d7cf6ce67fda4be19a0a6209f019e383615d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "summary_normal_scope",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "summarize",
+        "--episodes",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\d2_evaluate\\episodes.jsonl",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\research_evaluate\\episodes.jsonl",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\comparison",
+        "--execute"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "8cc41686177946674fde8ca87c0e2b217fac7acfc0be3821a21b341ea58abec3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "normal_checkpoint_default_load",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-c",
+        "import json,sys;from chapter3_bser.learning.train import load_for_evaluation;m,c,p=load_for_evaluation(sys.argv[1]);print(json.dumps(dict(scope=p[\"execution_scope\"],mechanism=p[\"mechanism_only\"],evaluation_allowed=p[\"evaluation_use_allowed\"],formal_performance_approved=p[\"formal_use_allowed\"],niter=m.niter)))",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\research_train\\checkpoint_final.pt"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "4bb1061e499d72ceee30aa14a98479d2174291f159e574b3919d063f25a51437",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "actual_scenario_export",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "scenarios",
+        "--split",
+        "eval",
+        "--count",
+        "1",
+        "--seed",
+        "928301",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\generated_eval_400.json",
+        "--execute"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "68b28cec8019c8cf18dd6ca3925a5fbae2df69d54b043cd4b22c550042200fb3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "full_plan_only",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "suite",
+        "prepare",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\collision_terminal\\full_plan",
+        "--manifest",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\manual_smoke\\generated_eval_400.json",
+        "--execute"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "stdout_sha256": "35e7125b05181eb67d7edb5b2409d03db1904a247e5cbe19bcdbb61c4cf38e42",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "performance_passed": false
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "auv.active_source.parent.v1",
+  "source_verified": true,
+  "source_identity": {
+    "review_sha256": "cc4c346efc19abc45d03d899d0dbe386eeac394028ee13f8e2ff36506b13df07",
+    "profile": "windows_existing",
+    "inventory_sha256": "806baf5c494f8b0638dbe7f63a23f81e6e4017751f2e0f4c175bb640e0cc3ebf",
+    "parent_commit": "6538c3e6a67e96d56940ab09fcff15cd9dc7a7d8"
+  },
+  "head": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+  "branch": "codex/framework-audit-20261018-164056",
+  "worktree_contains_uncommitted_repairs": true,
+  "formal_training_allowed": false,
+  "performance_passed": false,
+  "source_tree": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis",
+  "historical_evidence_rewritten": false
+}

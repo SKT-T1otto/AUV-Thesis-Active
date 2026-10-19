@@ -1,0 +1,17 @@
+{
+  "original_audit_root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019",
+  "sha256": {
+    "compare_generated.py": "bc2b7ac90edafd19e00df9aaacbaf4ae99f402460ce979cc9b251c269bbf1c7e",
+    "compare_parent.py": "875eb1ea9d0b836d3db50818c114a5937ceafb3deec3811089ee2468e6bcde5d",
+    "finish_bundle.py": "05c929884cdbfe329a9baa010102e6a4ad32f62dca84b597fd88332bffc553fa",
+    "manual_smoke.py": "ea08431ca5fc3357f5841079bd07e7a700e008f4789e9601b0e801b7b64694fd",
+    "publish_readiness.py": "a3cd48fcca0a8c967832f84f8053d2dd4edfcc1a5c0cb1d870ef7cdf894330dc",
+    "seal_source.py": "6327145349756ec2138f1a17d8b6a2c419ec3883600e396e6f907dfa36a04b01",
+    "parity_parent.stdout": "c0cc4cdacce45c5383392b8d0588d0f5ca3e8f8197de84fbff7fe11ea2722ed9",
+    "parity_rebuilt.stdout": "af90c60bf07f9de7831f85db426d5750e84bee021bf7a3392cca48a1aeec9674",
+    "parity_parent.stderr": "48dd234884cbcf4dd3f378b86ace36503c9344264dc584926de9198245064024",
+    "parity_rebuilt.stderr": "ecd07df9f1b95297c1e6e5e51ef41bd6b554fee12413becb64528da61402caa8"
+  },
+  "raw_rollouts_and_models_migrated": false,
+  "runtime_dependencies_on_original": false
+}

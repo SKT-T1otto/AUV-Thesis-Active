@@ -1,0 +1,741 @@
+{
+  "authority_record_count": 27,
+  "created_at_utc": "2026-08-02T12:49:47.601456+00:00",
+  "records": [
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/algorithms/__init__.py",
+      "new_core_sha256": "c31e610f78e23fe8e5aabd5b5326d40471bb47ee6ba3421177aec244425557aa",
+      "old_source_path": "legacy_adapters/ch3_snapshot/algorithms/__init__.py",
+      "old_source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "source_was_empty_package_marker": true,
+        "target_is_package_marker": true
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/algorithms/maddpg.py",
+      "new_core_sha256": "a574285b33d9a82971cf8016ce93e79f1c90b07cca5236edf5deb7fcb9b6d907",
+      "old_source_path": "legacy_adapters/ch3_snapshot/algorithms/maddpg.py",
+      "old_source_sha256": "b49ffe858df40f9e05c0127b37ad8930b2f593f26eeb7bec056be845e8939cb2",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 2,
+        "replacements": [
+          {
+            "new": "from core.algorithms.misc import",
+            "occurrences": 1,
+            "old": "from utils.misc import"
+          },
+          {
+            "new": "from core.algorithms.agents import",
+            "occurrences": 1,
+            "old": "from utils.agents import"
+          }
+        ],
+        "source_size_bytes": 18974,
+        "target_size_bytes": 18994
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/env/base_env.py",
+      "new_core_sha256": "17c71f0ee058f32715f5210d8249d85ee0270cc365163a1295b88f5f19d5f954",
+      "old_source_path": "legacy_adapters/ch3_snapshot/base_env.py",
+      "old_source_sha256": "e64ed6ef16b9136b3dff86583525cc50de7010278319b6bc268b7792ae2918b4",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 2,
+        "replacements": [
+          {
+            "new": "from core.env.uav_env import UAVEnv as UnifiedUAVEnv",
+            "occurrences": 1,
+            "old": "from env import UAVEnv as UnifiedUAVEnv"
+          },
+          {
+            "new": "from core.env.uav_env import _BaseUAVEnv",
+            "occurrences": 1,
+            "old": "from env import _BaseUAVEnv"
+          }
+        ],
+        "source_size_bytes": 420,
+        "target_size_bytes": 446
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/config/ch3_config.py",
+      "new_core_sha256": "445ab698c37ac698ca2b291a25427d9f5647cacc979167d1deaa0657aa9c6085",
+      "old_source_path": "legacy_adapters/ch3_snapshot/ch3_config.py",
+      "old_source_sha256": "ba9476d9a865ff810299be05e11b41c38a93f818f1ca57d1be7b9218c0c7ac7f",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 2,
+        "replacements": [
+          {
+            "new": "from core.config.ch3_constants import",
+            "occurrences": 1,
+            "old": "from ch3_constants import"
+          },
+          {
+            "new": "from core.registry.ch3_efficiency_v3_registry import",
+            "occurrences": 1,
+            "old": "from registry.ch3_efficiency_v3_registry import"
+          }
+        ],
+        "source_size_bytes": 6164,
+        "target_size_bytes": 6181
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/config/ch3_constants.py",
+      "new_core_sha256": "53ebf6bafd9ba4ad9286a6a15ce415f821593ac14d779650a6ab53bc15038146",
+      "old_source_path": "legacy_adapters/ch3_snapshot/ch3_constants.py",
+      "old_source_sha256": "aa650c77f0f3dd9ef8846c4eda762941c2bc5cc7818c9675996d75ba714d86a3",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 1,
+        "replacements": [
+          {
+            "new": "PROJECT_ROOT = Path(__file__).resolve().parents[2]",
+            "occurrences": 1,
+            "old": "PROJECT_ROOT = Path(__file__).resolve().parent"
+          }
+        ],
+        "source_size_bytes": 1543,
+        "target_size_bytes": 1547
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/communication/__init__.py",
+      "new_core_sha256": "884a125f89485cc25d1ba33a19aa1ba94dcc2a67efcc4fa75caa81057e89c1aa",
+      "old_source_path": "legacy_adapters/ch3_snapshot/comm/__init__.py",
+      "old_source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "source_was_empty_package_marker": true,
+        "target_is_package_marker": true
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/communication/basic_communication.py",
+      "new_core_sha256": "cde58122008981ae4fa29fb003310824ebd6c7116452a2bfd272eaa9b784c595",
+      "old_source_path": "legacy_adapters/ch3_snapshot/comm/basic_communication.py",
+      "old_source_sha256": "cde58122008981ae4fa29fb003310824ebd6c7116452a2bfd272eaa9b784c595",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 2704,
+        "target_size_bytes": 2704
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/env/uav_env.py",
+      "new_core_sha256": "ef964149b6af3a164cd35ce3ff81636e140fd88180750b12ecac6f30e2b9f698",
+      "old_source_path": "legacy_adapters/ch3_snapshot/env.py",
+      "old_source_sha256": "8b2eb96473a25ec5a36bfc42f6da7207a4db1fbc21b5cf04de00f594f39cad91",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 5,
+        "replacements": [
+          {
+            "new": "from core.communication.basic_communication import",
+            "occurrences": 1,
+            "old": "from comm.basic_communication import"
+          },
+          {
+            "new": "from core.mapping.map_module import",
+            "occurrences": 1,
+            "old": "from map.map_module import"
+          },
+          {
+            "new": "from core.mapping.path_planner import",
+            "occurrences": 1,
+            "old": "from map.path_planner import"
+          },
+          {
+            "new": "from core.config.ch3_constants import",
+            "occurrences": 1,
+            "old": "from ch3_constants import"
+          },
+          {
+            "new": "from core.env.target_motion import",
+            "occurrences": 1,
+            "old": "from target_motion import"
+          }
+        ],
+        "source_size_bytes": 116250,
+        "target_size_bytes": 116303
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/mapping/__init__.py",
+      "new_core_sha256": "c506f66317a8fda56028ece149069672961c613d15e74eb22a0feb0cf3d842d0",
+      "old_source_path": "legacy_adapters/ch3_snapshot/map/__init__.py",
+      "old_source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "source_was_empty_package_marker": true,
+        "target_is_package_marker": true
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/mapping/map_module.py",
+      "new_core_sha256": "21cd5be94738c0b85cdead218e480925b42abc42a53190f4870f066347a3a907",
+      "old_source_path": "legacy_adapters/ch3_snapshot/map/map_module.py",
+      "old_source_sha256": "21cd5be94738c0b85cdead218e480925b42abc42a53190f4870f066347a3a907",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 45408,
+        "target_size_bytes": 45408
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/mapping/path_planner.py",
+      "new_core_sha256": "0c86f2a701c931179d6609ea755f82fe27d1e8df35672ff5696f5471bcad1925",
+      "old_source_path": "legacy_adapters/ch3_snapshot/map/path_planner.py",
+      "old_source_sha256": "6efb9d8745d63784eeec2f6a75c11e311f0c5aad77ccff6c6e548f6b546f0cbd",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 2,
+        "replacements": [
+          {
+            "new": "from core.mapping.map_module import",
+            "occurrences": 1,
+            "old": "from map.map_module import"
+          },
+          {
+            "new": "from core.env.target_motion import",
+            "occurrences": 1,
+            "old": "from target_motion import"
+          }
+        ],
+        "source_size_bytes": 77116,
+        "target_size_bytes": 77134
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/runtime/metrics.py",
+      "new_core_sha256": "bedf29a47199064e88ac29a8bd21d13a573be7612c2e81242b51b0481504ea1a",
+      "old_source_path": "legacy_adapters/ch3_snapshot/metrics.py",
+      "old_source_sha256": "bedf29a47199064e88ac29a8bd21d13a573be7612c2e81242b51b0481504ea1a",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 5438,
+        "target_size_bytes": 5438
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/registry/__init__.py",
+      "new_core_sha256": "5f99f65b368099e95be91baaf840917c6a167ccc8c3da84290d76734d1cda309",
+      "old_source_path": "legacy_adapters/ch3_snapshot/registry/__init__.py",
+      "old_source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "source_was_empty_package_marker": true,
+        "target_is_package_marker": true
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/registry/ch3_efficiency_v3_registry.py",
+      "new_core_sha256": "e81296e7566015231fec3717568e242f766cb7ed0be502648574252a82af28cd",
+      "old_source_path": "legacy_adapters/ch3_snapshot/registry/ch3_efficiency_v3_registry.py",
+      "old_source_sha256": "5b9d39fbead69800e3f472c8b6169b90a14f33a206718575110866529b530300",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 1,
+        "replacements": [
+          {
+            "new": "from core.runtime.engine import CH3_EFFICIENCY_V2, get_ch3_method_config",
+            "occurrences": 1,
+            "old": "from train import CH3_EFFICIENCY_V2, get_ch3_method_config"
+          }
+        ],
+        "source_size_bytes": 6294,
+        "target_size_bytes": 6308
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/registry/experiment_registry.py",
+      "new_core_sha256": "769dad9c900af98bc0cb067632d2343db573fcd36c52bd176cba6966351f2b61",
+      "old_source_path": "legacy_adapters/ch3_snapshot/registry/experiment_registry.py",
+      "old_source_sha256": "769dad9c900af98bc0cb067632d2343db573fcd36c52bd176cba6966351f2b61",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 1230,
+        "target_size_bytes": 1230
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/runtime/builder.py",
+      "new_core_sha256": "5533be17d3b37c75ef65df6774c41929e866ae02b4161d32951d78eb88799d52",
+      "old_source_path": "legacy_adapters/ch3_snapshot/runtime.py",
+      "old_source_sha256": "156d103298bced92c2fce4bdcd56dfab78ac3df1a5f5464c10104e8346eca988",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 6,
+        "replacements": [
+          {
+            "new": "from core.algorithms.maddpg import",
+            "occurrences": 1,
+            "old": "from algorithms.maddpg import"
+          },
+          {
+            "new": "from core.config.ch3_config import",
+            "occurrences": 1,
+            "old": "from ch3_config import"
+          },
+          {
+            "new": "from core.config.ch3_constants import",
+            "occurrences": 1,
+            "old": "from ch3_constants import"
+          },
+          {
+            "new": "from core.env.uav_env import UAVEnv, _BaseUAVEnv",
+            "occurrences": 1,
+            "old": "from env import UAVEnv, _BaseUAVEnv"
+          },
+          {
+            "new": "from core.runtime.engine import",
+            "occurrences": 1,
+            "old": "from train import"
+          },
+          {
+            "new": "from core.replay.ch3_buffer import",
+            "occurrences": 1,
+            "old": "from utils.ch3_buffer import"
+          }
+        ],
+        "source_size_bytes": 3454,
+        "target_size_bytes": 3516
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/env/target_motion.py",
+      "new_core_sha256": "8e2cd1fc585bd3b148a1f0ff87ab8eb758bfe3db9142792d40da987b7ec5fde0",
+      "old_source_path": "legacy_adapters/ch3_snapshot/target_motion.py",
+      "old_source_sha256": "8e2cd1fc585bd3b148a1f0ff87ab8eb758bfe3db9142792d40da987b7ec5fde0",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 15956,
+        "target_size_bytes": 15956
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/scenarios/ch3_generator_impl.py",
+      "new_core_sha256": "2c6c414bca3d79fd038f96537603f78938fe91574e1ee02fcd8f2e1038a95633",
+      "old_source_path": "legacy_adapters/ch3_snapshot/tools/build_ch3_scenarios.py",
+      "old_source_sha256": "e49d9baba61afe3ef5e001034d14e02bbbaf2f621f609b3505bf73f7f827b59a",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 5,
+        "replacements": [
+          {
+            "new": "",
+            "occurrences": 1,
+            "old": "import sys\r\n"
+          },
+          {
+            "new": "PROJECT_ROOT = Path(__file__).resolve().parents[2]\r\n",
+            "occurrences": 1,
+            "old": "PROJECT_ROOT = Path(__file__).resolve().parents[1]\r\nif str(PROJECT_ROOT) not in sys.path:\r\n    sys.path.insert(0, str(PROJECT_ROOT))\r\n"
+          },
+          {
+            "new": "from core.config.ch3_constants import",
+            "occurrences": 1,
+            "old": "from ch3_constants import"
+          },
+          {
+            "new": "from core.env.target_motion import",
+            "occurrences": 1,
+            "old": "from target_motion import"
+          },
+          {
+            "new": "from core.mapping.path_planner import",
+            "occurrences": 1,
+            "old": "from map.path_planner import"
+          }
+        ],
+        "source_size_bytes": 40352,
+        "target_size_bytes": 40288
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/runtime/engine.py",
+      "new_core_sha256": "1998051dc1651ea9413a4e18124d40dce0e56cc58aeb5e345c4a552a46e698cc",
+      "old_source_path": "legacy_adapters/ch3_snapshot/train.py",
+      "old_source_sha256": "5578263a44d46d0484cefd19c6476f6794f710d124d021c7fbbb60b1a4b5adb6",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 9,
+        "replacements": [
+          {
+            "new": "from core.algorithms.maddpg import",
+            "occurrences": 1,
+            "old": "from algorithms.maddpg import"
+          },
+          {
+            "new": "from core.env.base_env import",
+            "occurrences": 1,
+            "old": "from base_env import"
+          },
+          {
+            "new": "from core.config.ch3_constants import",
+            "occurrences": 1,
+            "old": "from ch3_constants import"
+          },
+          {
+            "new": "from core.env.uav_env import UAVEnv",
+            "occurrences": 1,
+            "old": "from env import UAVEnv"
+          },
+          {
+            "new": "from core.registry.experiment_registry import",
+            "occurrences": 1,
+            "old": "from registry.experiment_registry import"
+          },
+          {
+            "new": "from core.registry.ch3_efficiency_v3_registry import",
+            "occurrences": 1,
+            "old": "from registry.ch3_efficiency_v3_registry import"
+          },
+          {
+            "new": "from core.replay.ch3_buffer import",
+            "occurrences": 1,
+            "old": "from utils.ch3_buffer import"
+          },
+          {
+            "new": "from core.provenance.provenance import",
+            "occurrences": 1,
+            "old": "from utils.provenance import"
+          },
+          {
+            "new": "PROJECT_ROOT = Path(__file__).resolve().parents[2]",
+            "occurrences": 1,
+            "old": "PROJECT_ROOT = Path(__file__).resolve().parent"
+          }
+        ],
+        "source_size_bytes": 59722,
+        "target_size_bytes": 59791
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/runtime/training.py",
+      "new_core_sha256": "58cf5abf4700923293c046d51227c0df105f48ac2c21f4953345cc080a41bef4",
+      "old_source_path": "legacy_adapters/ch3_snapshot/training.py",
+      "old_source_sha256": "da5f2c88a0cb838d5a3ac629aa22691be3e35a946a5d92032dd3473f71dd5173",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 6,
+        "replacements": [
+          {
+            "new": "from core.config.ch3_constants import",
+            "occurrences": 1,
+            "old": "from ch3_constants import"
+          },
+          {
+            "new": "from core.runtime.metrics import",
+            "occurrences": 1,
+            "old": "from metrics import"
+          },
+          {
+            "new": "from core.runtime.builder import",
+            "occurrences": 1,
+            "old": "from runtime import"
+          },
+          {
+            "new": "from core.runtime.engine import",
+            "occurrences": 1,
+            "old": "from train import"
+          },
+          {
+            "new": "from core.provenance.provenance import",
+            "occurrences": 1,
+            "old": "from utils.provenance import"
+          },
+          {
+            "new": "project_root = Path(__file__).resolve().parents[2]",
+            "occurrences": 1,
+            "old": "project_root = Path(__file__).resolve().parent"
+          }
+        ],
+        "source_size_bytes": 29292,
+        "target_size_bytes": 29358
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/provenance/__init__.py",
+      "new_core_sha256": "b190a8da2cf552bb60391eb609adabb5e6b5b2a53f3f4677382e2c6ec26aaa69",
+      "old_source_path": "legacy_adapters/ch3_snapshot/utils/__init__.py",
+      "old_source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "source_was_empty_package_marker": true,
+        "target_is_package_marker": true
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/algorithms/agents.py",
+      "new_core_sha256": "b507fc584689c4da3ce517cf35d423c73a1fa9e7e51470aa61aed35daa3a572d",
+      "old_source_path": "legacy_adapters/ch3_snapshot/utils/agents.py",
+      "old_source_sha256": "bbf8d504e05548a5792b7e0107c315ac52e20883220e65a70b0188031b984ad4",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 3,
+        "replacements": [
+          {
+            "new": "from core.algorithms.networks import",
+            "occurrences": 1,
+            "old": "from .networks import"
+          },
+          {
+            "new": "from core.algorithms.misc import",
+            "occurrences": 1,
+            "old": "from .misc import"
+          },
+          {
+            "new": "from core.algorithms.noise import",
+            "occurrences": 1,
+            "old": "from .noise import"
+          }
+        ],
+        "source_size_bytes": 5403,
+        "target_size_bytes": 5448
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/replay/ch3_buffer.py",
+      "new_core_sha256": "e22412e43e589962582c2a3ce727b167a6689e60223f6d64fd71ef1e9e5cfa42",
+      "old_source_path": "legacy_adapters/ch3_snapshot/utils/ch3_buffer.py",
+      "old_source_sha256": "e22412e43e589962582c2a3ce727b167a6689e60223f6d64fd71ef1e9e5cfa42",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 9134,
+        "target_size_bytes": 9134
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/algorithms/misc.py",
+      "new_core_sha256": "aeec704d3bc84afa0e321f6870d81ec6841616793168160905eeac956f5bc53f",
+      "old_source_path": "legacy_adapters/ch3_snapshot/utils/misc.py",
+      "old_source_sha256": "aeec704d3bc84afa0e321f6870d81ec6841616793168160905eeac956f5bc53f",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 1785,
+        "target_size_bytes": 1785
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/algorithms/networks.py",
+      "new_core_sha256": "fe28d54150c245f698418c57b850db44225a8fd65f8119ca38469270d5be54cc",
+      "old_source_path": "legacy_adapters/ch3_snapshot/utils/networks.py",
+      "old_source_sha256": "fe28d54150c245f698418c57b850db44225a8fd65f8119ca38469270d5be54cc",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 1246,
+        "target_size_bytes": 1246
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": true,
+      "new_core_path": "core/algorithms/noise.py",
+      "new_core_sha256": "3d3fb7c0248d3900900ab311d6d3c68dd41b33216a04c70435ad2a5b1163fe9f",
+      "old_source_path": "legacy_adapters/ch3_snapshot/utils/noise.py",
+      "old_source_sha256": "3d3fb7c0248d3900900ab311d6d3c68dd41b33216a04c70435ad2a5b1163fe9f",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 0,
+        "replacements": [],
+        "source_size_bytes": 1149,
+        "target_size_bytes": 1149
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    },
+    {
+      "import_only_changes": false,
+      "new_core_path": "core/provenance/provenance.py",
+      "new_core_sha256": "ed4a6dabd82b4d56aa09a77e170c8c45ff8d744dc6216e6c31b4fad647c72c16",
+      "old_source_path": "legacy_adapters/ch3_snapshot/utils/provenance.py",
+      "old_source_sha256": "80fbfc51a5e3da276b805dd4b4081330ff804116164a3fb56eea398c5c001402",
+      "semantic_changes": false,
+      "structured_diff_summary": {
+        "replacement_count": 21,
+        "replacements": [
+          {
+            "new": "\"core/runtime/engine.py\"",
+            "occurrences": 1,
+            "old": "\"train.py\""
+          },
+          {
+            "new": "\"core/env/base_env.py\"",
+            "occurrences": 1,
+            "old": "\"base_env.py\""
+          },
+          {
+            "new": "\"core/env/uav_env.py\"",
+            "occurrences": 1,
+            "old": "\"env.py\""
+          },
+          {
+            "new": "\"core/mapping/map_module.py\"",
+            "occurrences": 1,
+            "old": "\"map/map_module.py\""
+          },
+          {
+            "new": "\"core/algorithms/agents.py\"",
+            "occurrences": 1,
+            "old": "\"utils/agents.py\""
+          },
+          {
+            "new": "\"core/algorithms/networks.py\"",
+            "occurrences": 1,
+            "old": "\"utils/networks.py\""
+          },
+          {
+            "new": "\"core/algorithms/noise.py\"",
+            "occurrences": 1,
+            "old": "\"utils/noise.py\""
+          },
+          {
+            "new": "\"core/algorithms/misc.py\"",
+            "occurrences": 1,
+            "old": "\"utils/misc.py\""
+          },
+          {
+            "new": "\"core/replay/ch3_buffer.py\"",
+            "occurrences": 1,
+            "old": "\"utils/ch3_buffer.py\""
+          },
+          {
+            "new": "\"core/scenarios/ch3_generator_impl.py\"",
+            "occurrences": 1,
+            "old": "\"tools/build_ch3_efficiency_scenarios.py\""
+          },
+          {
+            "new": "\"core/scenarios/ch3_generator_impl.py\"",
+            "occurrences": 1,
+            "old": "\"tools/build_ch3_efficiency_v3_scenarios.py\""
+          },
+          {
+            "new": "\"core/scenarios/ch3_generator_impl.py\"",
+            "occurrences": 1,
+            "old": "\"tools/build_ch3_pilot_scenarios.py\""
+          },
+          {
+            "new": "_BASE_DIRECTORIES = (\"core/algorithms\", \"core/communication\", \"core/registry\")",
+            "occurrences": 1,
+            "old": "_BASE_DIRECTORIES = (\"algorithms\", \"comm\", \"registry\")"
+          },
+          {
+            "new": "\"core/config/ch3_config.py\"",
+            "occurrences": 1,
+            "old": "\"ch3_config.py\""
+          },
+          {
+            "new": "\"core/config/ch3_constants.py\"",
+            "occurrences": 1,
+            "old": "\"ch3_constants.py\""
+          },
+          {
+            "new": "\"core/env/target_motion.py\"",
+            "occurrences": 1,
+            "old": "\"target_motion.py\""
+          },
+          {
+            "new": "\"core/runtime/builder.py\"",
+            "occurrences": 1,
+            "old": "\"runtime.py\""
+          },
+          {
+            "new": "\"core/runtime/training.py\"",
+            "occurrences": 1,
+            "old": "\"training.py\""
+          },
+          {
+            "new": "\"core/runtime/metrics.py\"",
+            "occurrences": 1,
+            "old": "\"metrics.py\""
+          },
+          {
+            "new": "\"core/mapping/path_planner.py\"",
+            "occurrences": 1,
+            "old": "\"map/path_planner.py\""
+          },
+          {
+            "new": "\"core/scenarios/ch3_generator_impl.py\"",
+            "occurrences": 1,
+            "old": "\"tools/build_ch3_scenarios.py\""
+          }
+        ],
+        "source_size_bytes": 11874,
+        "target_size_bytes": 12071
+      },
+      "validation": "PASS_PHASE0B2_ALL_GATES"
+    }
+  ],
+  "schema": "ch3_to_core_migration_manifest.v1",
+  "semantic_changes": false
+}

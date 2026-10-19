@@ -1,0 +1,3132 @@
+[
+  {
+    "source": "chapter3_bser/candidate_generator.py",
+    "target": "chapter3_bser/candidate_generator.py",
+    "parent_sha256": "d80edd01d8f0568350dafc589ca818182b5fc0543e751bd7e9e6d6ff353e8187",
+    "target_sha256": "b8b46d413c64ef155a4b81a92cffaf783bc6b9fe5f56aabfb4b41393e4522ca8",
+    "retained_symbols": [
+      {
+        "name": "_local_peak_indices",
+        "original_line": 14,
+        "original_end": 29,
+        "source_ast_sha256": "095960e9142b7004f00af20f985525eb1053d5ee74fd166aa467e75ecda8273c",
+        "selected_ast_sha256": "095960e9142b7004f00af20f985525eb1053d5ee74fd166aa467e75ecda8273c",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_frontier_indices",
+        "original_line": 32,
+        "original_end": 48,
+        "source_ast_sha256": "0a37932263059b12a7dc9d064f861c096e7a9b0862c583c1463a84f19055a9c0",
+        "selected_ast_sha256": "0a37932263059b12a7dc9d064f861c096e7a9b0862c583c1463a84f19055a9c0",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_ordered_pool",
+        "original_line": 51,
+        "original_end": 71,
+        "source_ast_sha256": "aba90f1676d19f65ea9517ffd4b827bcc9a9fa3e13d92cae3e17e6f6db38869a",
+        "selected_ast_sha256": "aba90f1676d19f65ea9517ffd4b827bcc9a9fa3e13d92cae3e17e6f6db38869a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_separated",
+        "original_line": 74,
+        "original_end": 75,
+        "source_ast_sha256": "16cc18af93f41fef5b34decd4d100e3966be947e2b427bb2706de3d8300b7221",
+        "selected_ast_sha256": "16cc18af93f41fef5b34decd4d100e3966be947e2b427bb2706de3d8300b7221",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "generate_search_candidates",
+        "original_line": 78,
+        "original_end": 124,
+        "source_ast_sha256": "95b345594db28dbc2ca1a5b675e6dab16a37ca2ecb85664adaa08cd7969a6c54",
+        "selected_ast_sha256": "95b345594db28dbc2ca1a5b675e6dab16a37ca2ecb85664adaa08cd7969a6c54",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "generate_standby_candidates",
+        "original_line": 127,
+        "original_end": 173,
+        "source_ast_sha256": "9687fa3e9be20f5c2e4985d5c34f54ca48bc081e81d6b22c9e84274504c29fec",
+        "selected_ast_sha256": "9687fa3e9be20f5c2e4985d5c34f54ca48bc081e81d6b22c9e84274504c29fec",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "generate_candidates",
+        "original_line": 176,
+        "original_end": 190,
+        "source_ast_sha256": "389b06a4c782f9e48080b78490605cf6beeacc5e82e2d4db581a93986fee3af1",
+        "selected_ast_sha256": "389b06a4c782f9e48080b78490605cf6beeacc5e82e2d4db581a93986fee3af1",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 12,
+    "original_top_level_nodes": 14,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/config.py",
+    "target": "chapter3_bser/config.py",
+    "parent_sha256": "d3fc4e637c85dd7cd69aa8c73807503313c790aa3bb166182b5760e5adefff0b",
+    "target_sha256": "97b98b5cc469cd83cc201f305bf914be96c334506ccf22df7e957fc199a70fc7",
+    "retained_symbols": [
+      {
+        "name": "load_bser_phase1a1_config",
+        "original_line": 22,
+        "original_end": 29,
+        "source_ast_sha256": "e03b8ce7cca31c1d4031a1adf4bb21937f180ee52f3087ecb2cda2f99993d12f",
+        "selected_ast_sha256": "3588f4b369ccc4dd36541042efdb8d85cdc26364abf387ec9033a4ca92e4ab92",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 3,
+    "original_top_level_nodes": 9,
+    "reviewed_specialization": true
+  },
+  {
+    "source": "chapter3_bser/controllers/path_tracker.py",
+    "target": "chapter3_bser/controllers/path_tracker.py",
+    "parent_sha256": "f52d8a90828591814cd420620b30c483ff97906a1f66ca9663081b993cf358a3",
+    "target_sha256": "436970b1a83dd3d1da731692a1140fe2d68d8411ee49213b745cf4aa953d796e",
+    "retained_symbols": [
+      {
+        "name": "_TrackingState",
+        "original_line": 15,
+        "original_end": 17,
+        "source_ast_sha256": "b96421be585fcdc49e5cc2f1f9c6893cceaf8676552d5bf26333f52c3c4a30a8",
+        "selected_ast_sha256": "b96421be585fcdc49e5cc2f1f9c6893cceaf8676552d5bf26333f52c3c4a30a8",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PathTrackerSnapshot",
+        "original_line": 21,
+        "original_end": 30,
+        "source_ast_sha256": "f393a57ac0656c979d30deb1a236dde0baa2f7060d2bb5ac71e1030045bf6fe5",
+        "selected_ast_sha256": "f393a57ac0656c979d30deb1a236dde0baa2f7060d2bb5ac71e1030045bf6fe5",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PathTracker",
+        "original_line": 33,
+        "original_end": 175,
+        "source_ast_sha256": "7395d1d183a4ca55495e2f3663b0974a6917ef30a482946533e0e31eb87a3645",
+        "selected_ast_sha256": "a87385ab382c017a123568261feb62faa8aa936a32f6bd2fb0c87d4aecc96ca2",
+        "explicitly_dropped_methods": [
+          "_point_segment_distance",
+          "cross_track_error",
+          "last_targets",
+          "mean_tracking_error",
+          "remaining_path_length"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 7,
+    "original_top_level_nodes": 9,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/controllers/state_provider.py",
+    "target": "chapter3_bser/controllers/state_provider.py",
+    "parent_sha256": "d5c9a233304c15b193e3dcc07b7239854f1d39067d9af9536100fd1fbb8cae49",
+    "target_sha256": "9e4034101d021edbc4b1853a0634669750cbf5bc6339a2e5287fcabe1afe9330",
+    "retained_symbols": [
+      {
+        "name": "OnlinePlanningStateProvider",
+        "original_line": 10,
+        "original_end": 149,
+        "source_ast_sha256": "7b2d65ae874f220893eaddd5075ea41accb0c72e66b10fa24a1327c15db4911c",
+        "selected_ast_sha256": "c904c74b54bb1f596e2e20a5cabacaefa749cc26b27a66f4691ce6356530222a",
+        "explicitly_dropped_methods": [
+          "last_refresh_reason"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 3,
+    "original_top_level_nodes": 5,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/detection_model.py",
+    "target": "chapter3_bser/detection_model.py",
+    "parent_sha256": "2f3ca09e49a4d04f0b62951bc711f091bbc4914a8f854a5e9ecd957ae3b0dcfa",
+    "target_sha256": "7854eab123f482394dc4c5c94223a8f800824cae3a574429602cc4e3f37af18b",
+    "retained_symbols": [
+      {
+        "name": "_point_segment_distance",
+        "original_line": 11,
+        "original_end": 18,
+        "source_ast_sha256": "db29bfcad97364ee863ff5f02c74c32c2c6c3dcbe862df9c2db71b45083efc4a",
+        "selected_ast_sha256": "db29bfcad97364ee863ff5f02c74c32c2c6c3dcbe862df9c2db71b45083efc4a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "detection_probability",
+        "original_line": 21,
+        "original_end": 42,
+        "source_ast_sha256": "e4624fb74ccd4c6b7bb377176abf2eb6bd8c61d8172a6f48ba424ad5bbe82735",
+        "selected_ast_sha256": "e4624fb74ccd4c6b7bb377176abf2eb6bd8c61d8172a6f48ba424ad5bbe82735",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 7,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/events/event_detector.py",
+    "target": "chapter3_bser/events/event_detector.py",
+    "parent_sha256": "9904d04401008647f9bf9fc4e304c17642de4b056d679651a0349103c6c27eac",
+    "target_sha256": "50653fb904b83c13de19e78fb6618beb7b4911c6242edb5e3cf9c4c10ead6857",
+    "retained_symbols": [
+      {
+        "name": "EventDetector",
+        "original_line": 19,
+        "original_end": 329,
+        "source_ast_sha256": "76853d2f40bbe1c8e8141a7fcbdc2ee2590fa48e114126badd2cad1dd4d06719",
+        "selected_ast_sha256": "76853d2f40bbe1c8e8141a7fcbdc2ee2590fa48e114126badd2cad1dd4d06719",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 7,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/events/event_types.py",
+    "target": "chapter3_bser/events/event_types.py",
+    "parent_sha256": "37fd841a4e9f415ee65a072cac325e3abacd9991c75a6d9a05f7545ac3f6be43",
+    "target_sha256": "b13b6cfd728f39bd9f994d5125f88256b5fe4c80b1bb6143b9cd4b2a743c6a85",
+    "retained_symbols": [
+      {
+        "name": "BSEREvent",
+        "original_line": 10,
+        "original_end": 19,
+        "source_ast_sha256": "4cf2e7a0f9bd046a8251f7cbf1cdd2d2c57c501be26fb330ad15fdcc89505f6b",
+        "selected_ast_sha256": "4cf2e7a0f9bd046a8251f7cbf1cdd2d2c57c501be26fb330ad15fdcc89505f6b",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "EventDetection",
+        "original_line": 23,
+        "original_end": 50,
+        "source_ast_sha256": "6e532dcd8a5fec31bf623ef03634e0de9c1e9d86dcb99dc9c125e7542e1f5413",
+        "selected_ast_sha256": "b2f8902aa51c6dd7e51f9f8558b89eef9441ce644d3fe28baf42967bbe3bfe27",
+        "explicitly_dropped_methods": [
+          "has"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 7,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/events/trigger_policy.py",
+    "target": "chapter3_bser/events/trigger_policy.py",
+    "parent_sha256": "b2fe21a8771f79e95d770fb55a70af4b7852f87a346a643485b25bee365a0afa",
+    "target_sha256": "2b418f5fc07cd6a98acda39a6ba1932576b67608a945be75ea3fa7867b5c5b9c",
+    "retained_symbols": [
+      {
+        "name": "TriggerDecision",
+        "original_line": 9,
+        "original_end": 13,
+        "source_ast_sha256": "91af2efe37033d5e31f91cb976821f5f623d6efdece347ea94eb5294c02cee89",
+        "selected_ast_sha256": "91af2efe37033d5e31f91cb976821f5f623d6efdece347ea94eb5294c02cee89",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 2,
+    "original_top_level_nodes": 4,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/baselines/common/checkpoint.py",
+    "target": "chapter3_bser/learning/checkpoint.py",
+    "parent_sha256": "6bf936443e1897807f9f0a34415027ef0f5e64530f8fca601d0ed93ee1ed1598",
+    "target_sha256": "60bab056a1f8c007c02d65e46f53c687c995b0470d6131aeab16eaf4d5a15ac4",
+    "retained_symbols": [
+      {
+        "name": "digest",
+        "original_line": 27,
+        "original_end": 29,
+        "source_ast_sha256": "acff9940f507741192d1880adc14399421acac401c2ac9b6e09fac52b4636578",
+        "selected_ast_sha256": "acff9940f507741192d1880adc14399421acac401c2ac9b6e09fac52b4636578",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "write_json",
+        "original_line": 32,
+        "original_end": 37,
+        "source_ast_sha256": "56635834850e7f80844be7b2ace20e2e71ac6b73a86cffe3fb622963eeaa5038",
+        "selected_ast_sha256": "56635834850e7f80844be7b2ace20e2e71ac6b73a86cffe3fb622963eeaa5038",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "validate_config",
+        "original_line": 40,
+        "original_end": 106,
+        "source_ast_sha256": "9ff99384e1e70d562fe39a0a09a0f87d2a3156b747a07141686800397dff7c49",
+        "selected_ast_sha256": "9ff99384e1e70d562fe39a0a09a0f87d2a3156b747a07141686800397dff7c49",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "validated_output",
+        "original_line": 109,
+        "original_end": 114,
+        "source_ast_sha256": "74eef2d1f5a5cce5a0c2362ba107de49fcf0ff5d0675dcb14a6aeb950495aa02",
+        "selected_ast_sha256": "74eef2d1f5a5cce5a0c2362ba107de49fcf0ff5d0675dcb14a6aeb950495aa02",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "fresh_source_identity",
+        "original_line": 117,
+        "original_end": 123,
+        "source_ast_sha256": "58c08f9e7411cc5a5e8cdbb588904ad7aaa2290213ba6390f27b0be93123912a",
+        "selected_ast_sha256": "58c08f9e7411cc5a5e8cdbb588904ad7aaa2290213ba6390f27b0be93123912a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "validate_source_identity",
+        "original_line": 126,
+        "original_end": 142,
+        "source_ast_sha256": "2a5d897627028fa49d872da2ed3ac2e8fd606c410d6b52f86007f021bb2c2387",
+        "selected_ast_sha256": "2a5d897627028fa49d872da2ed3ac2e8fd606c410d6b52f86007f021bb2c2387",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "require_source_match",
+        "original_line": 145,
+        "original_end": 151,
+        "source_ast_sha256": "6cc2f4d003661a92d94bc9a5510f60f1025080dbb830e12434628e909dce41ce",
+        "selected_ast_sha256": "6cc2f4d003661a92d94bc9a5510f60f1025080dbb830e12434628e909dce41ce",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "state_digest",
+        "original_line": 154,
+        "original_end": 172,
+        "source_ast_sha256": "c785acdb4b70446c8335606bee3e6e4e84e1b5c3e856853264eac4168fc73b4b",
+        "selected_ast_sha256": "c785acdb4b70446c8335606bee3e6e4e84e1b5c3e856853264eac4168fc73b4b",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_finite_state",
+        "original_line": 175,
+        "original_end": 182,
+        "source_ast_sha256": "06293f98f7f545057a40583fda083beaff89ee4d48d8315b7ba53b2ae0bd9cdc",
+        "selected_ast_sha256": "06293f98f7f545057a40583fda083beaff89ee4d48d8315b7ba53b2ae0bd9cdc",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 24,
+    "original_top_level_nodes": 28,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/baselines/common/model.py",
+    "target": "chapter3_bser/learning/boundary.py",
+    "parent_sha256": "85a5c7c216c2dc4ed3e77b9bf31fac07e21c0ec4f68d1a5f5e0462fbc6600172",
+    "target_sha256": "9681dce1105e0f5344919ab9744923d4e13ffe2d35838143d0a598db95b4e7eb",
+    "retained_symbols": [
+      {
+        "name": "boundary_features",
+        "original_line": 35,
+        "original_end": 69,
+        "source_ast_sha256": "b90262f46471701cca12b767794fd52f3776165cb1761b6e4b89232a847ec47f",
+        "selected_ast_sha256": "b90262f46471701cca12b767794fd52f3776165cb1761b6e4b89232a847ec47f",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "BoundaryEncoder",
+        "original_line": 72,
+        "original_end": 94,
+        "source_ast_sha256": "0fe6ab9cbf7155f425268b539008ec023f6f4a365af882b6f8f7d9ed567283e7",
+        "selected_ast_sha256": "0fe6ab9cbf7155f425268b539008ec023f6f4a365af882b6f8f7d9ed567283e7",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "BoundaryConditionedPolicy",
+        "original_line": 97,
+        "original_end": 113,
+        "source_ast_sha256": "dd36660a3453916efcec6bf2dd35580711a33051a62ad91bbe6c66e4863edd6b",
+        "selected_ast_sha256": "dd36660a3453916efcec6bf2dd35580711a33051a62ad91bbe6c66e4863edd6b",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "BoundaryConditionedMADDPG",
+        "original_line": 116,
+        "original_end": 144,
+        "source_ast_sha256": "49ec35f6b3751171e0e58b4365ee09ea28b1fb0708201bb3418c60ecb00c5b84",
+        "selected_ast_sha256": "49ec35f6b3751171e0e58b4365ee09ea28b1fb0708201bb3418c60ecb00c5b84",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_contract_environment",
+        "original_line": 147,
+        "original_end": 155,
+        "source_ast_sha256": "6379c29ba2fb5eee21326a17e9b29d1d75384b5f3a846fa298ab9e0e8ac75f9f",
+        "selected_ast_sha256": "6379c29ba2fb5eee21326a17e9b29d1d75384b5f3a846fa298ab9e0e8ac75f9f",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 12,
+    "original_top_level_nodes": 18,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/baselines/common/runtime.py",
+    "target": "chapter3_bser/learning/base_runtime.py",
+    "parent_sha256": "d494fcee4f9c73368557999f4ac9e5736d3418ac9bcf30e45351c65e5fc226a6",
+    "target_sha256": "32d2d79d4852ed62310ac8c5f612834d920d54923eb7c60399478c6c85a05a06",
+    "retained_symbols": [
+      {
+        "name": "seed_innovations",
+        "original_line": 23,
+        "original_end": 28,
+        "source_ast_sha256": "211427236cfab8a458282e76431232f4f5af8d1b06737a06a3a19914b86d7b60",
+        "selected_ast_sha256": "211427236cfab8a458282e76431232f4f5af8d1b06737a06a3a19914b86d7b60",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_make_base_env",
+        "original_line": 31,
+        "original_end": 41,
+        "source_ast_sha256": "903c48527641a7f3910fb5ef650f1ac448cac4d77205c2d0b221d9e7d6e4b594",
+        "selected_ast_sha256": "903c48527641a7f3910fb5ef650f1ac448cac4d77205c2d0b221d9e7d6e4b594",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_public_context",
+        "original_line": 44,
+        "original_end": 47,
+        "source_ast_sha256": "cc2274a5238d749d1c08968984c5e41d0558d7ae2f05c9630990f40d8f241c18",
+        "selected_ast_sha256": "cc2274a5238d749d1c08968984c5e41d0558d7ae2f05c9630990f40d8f241c18",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_observations",
+        "original_line": 50,
+        "original_end": 55,
+        "source_ast_sha256": "d4f772ab07d332d6dfc7feb41d47e0f627d9f0dc092018abbed5037723fb6311",
+        "selected_ast_sha256": "d4f772ab07d332d6dfc7feb41d47e0f627d9f0dc092018abbed5037723fb6311",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "BaselineMissionRuntime",
+        "original_line": 58,
+        "original_end": 181,
+        "source_ast_sha256": "3e884820491e96d372653cf574f0e3573e92ddcd415f58c7e4beaeb41b115ae9",
+        "selected_ast_sha256": "89684d94d5413da04c971da8e213f866a287ee567656912f9b1b0a12ea29056a",
+        "explicitly_dropped_methods": [
+          "_actions_for_step"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 20,
+    "original_top_level_nodes": 23,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/bser_effect_v1/allocator.py",
+    "target": "chapter3_bser/d2/allocator.py",
+    "parent_sha256": "8d360e7af9b80c39d7f168bbd9bfe82939354b46aa9f337ae7b1721e5ae7a546",
+    "target_sha256": "23392d7d81c3239946ec3be21f928643a7abdd4223913d761a38722409c7393e",
+    "retained_symbols": [
+      {
+        "name": "finite",
+        "original_line": 13,
+        "original_end": 14,
+        "source_ast_sha256": "97e38138797102fd8d41bcfc9888f4b7c45da8490e92e92bdbfe9e990ab6daba",
+        "selected_ast_sha256": "97e38138797102fd8d41bcfc9888f4b7c45da8490e92e92bdbfe9e990ab6daba",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "EffectAllocator",
+        "original_line": 17,
+        "original_end": 136,
+        "source_ast_sha256": "e6a770ac8a497d83e7cc2f018fd92179866937292a94423d63161ab0814b90df",
+        "selected_ast_sha256": "e6a770ac8a497d83e7cc2f018fd92179866937292a94423d63161ab0814b90df",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 10,
+    "original_top_level_nodes": 11,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/bser_effect_v1/controller.py",
+    "target": "chapter3_bser/d2/scored_controller.py",
+    "parent_sha256": "381da82468647b0b0870272a67f65007371ada530c65c100189f1e72019525fb",
+    "target_sha256": "9b0c05698aa6ea7195c225ee5cf597df5ef6a62df4dc246cb3813496eb1b59d5",
+    "retained_symbols": [
+      {
+        "name": "EffectPolicy",
+        "original_line": 8,
+        "original_end": 20,
+        "source_ast_sha256": "45a2ab8e95c108f1bb7fb921755d9255d0454e537a01cb3bd564b3d3422e9f3d",
+        "selected_ast_sha256": "45a2ab8e95c108f1bb7fb921755d9255d0454e537a01cb3bd564b3d3422e9f3d",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "ScoredWaypoints",
+        "original_line": 23,
+        "original_end": 31,
+        "source_ast_sha256": "f5169618b96934c2ee73f4d11bcb3807dfcc3535f222aa4f33bc60c7faea27dc",
+        "selected_ast_sha256": "f5169618b96934c2ee73f4d11bcb3807dfcc3535f222aa4f33bc60c7faea27dc",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "EffectController",
+        "original_line": 34,
+        "original_end": 59,
+        "source_ast_sha256": "2d18733ece563d2d662db03ba0b218840627b1b22c614b33422c5908ae725bb6",
+        "selected_ast_sha256": "2d18733ece563d2d662db03ba0b218840627b1b22c614b33422c5908ae725bb6",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 7,
+    "original_top_level_nodes": 8,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/bser_effect_v1/solver.py",
+    "target": "chapter3_bser/d2/solver.py",
+    "parent_sha256": "9e764a7e82b7b9882dc6e02f2fe2108c7c43f60fc839d7fe4e9458d7eb9d80a6",
+    "target_sha256": "cc08ab05aee6d38c6ffc94a0350cfe070cb16c144ffe18c7489a50546606c470",
+    "retained_symbols": [
+      {
+        "name": "fixed_greedy",
+        "original_line": 6,
+        "original_end": 23,
+        "source_ast_sha256": "3678a2e4bd3a220c816ed5e8a97792a4389ad71afbf23f802ea8f9855dce4c58",
+        "selected_ast_sha256": "3678a2e4bd3a220c816ed5e8a97792a4389ad71afbf23f802ea8f9855dce4c58",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "best_standby",
+        "original_line": 26,
+        "original_end": 32,
+        "source_ast_sha256": "2ecba12ff2f49690442998d87cbf0f1a119c03c8633ed33fe490b60f5b050c19",
+        "selected_ast_sha256": "2ecba12ff2f49690442998d87cbf0f1a119c03c8633ed33fe490b60f5b050c19",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "solve",
+        "original_line": 35,
+        "original_end": 53,
+        "source_ast_sha256": "d8cfcafb9786205fd8d4274117c312afef603ccaeaf80b2da732d6e5c49b1f0f",
+        "selected_ast_sha256": "d8cfcafb9786205fd8d4274117c312afef603ccaeaf80b2da732d6e5c49b1f0f",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 6,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_performance/logging.py",
+    "target": "chapter3_bser/d2/logging.py",
+    "parent_sha256": "fed622f64a13b6272634694144400284c24ca242b5048a9e8bafed81bc91364b",
+    "target_sha256": "4ba583c98f18f0f978d0ede1b862c3fd08a4d0ec22fabf3c236f802aabf9265b",
+    "retained_symbols": [
+      {
+        "name": "read_records",
+        "original_line": 7,
+        "original_end": 17,
+        "source_ast_sha256": "fba5fce5251ea3444298194e96e4e534132b618d1351c9674388cfd694850a24",
+        "selected_ast_sha256": "fba5fce5251ea3444298194e96e4e534132b618d1351c9674388cfd694850a24",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "JsonlJournal",
+        "original_line": 20,
+        "original_end": 52,
+        "source_ast_sha256": "909a5b0b3a1b0010988bb368c07d7ea5902b5bcb7e5f617251716fb6d479ad3e",
+        "selected_ast_sha256": "909a5b0b3a1b0010988bb368c07d7ea5902b5bcb7e5f617251716fb6d479ad3e",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 6,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_performance/options.py",
+    "target": "chapter3_bser/d2/options.py",
+    "parent_sha256": "90fd8c2317f1f0ea49de1378c5baa8d1e6332bca7ccf32aeec3fd08a32d19d5f",
+    "target_sha256": "7f46bad91578e6a8355e6c2eb325d7a37ac58bf02efc3ba00f521cb677195ba6",
+    "retained_symbols": [
+      {
+        "name": "performance_options",
+        "original_line": 4,
+        "original_end": 14,
+        "source_ast_sha256": "3848d8a9ef7a4fcc66c8fd4ff46520c152641abdec256716ea8d2e956c58c272",
+        "selected_ast_sha256": "3848d8a9ef7a4fcc66c8fd4ff46520c152641abdec256716ea8d2e956c58c272",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 1,
+    "original_top_level_nodes": 3,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_performance/planning.py",
+    "target": "chapter3_bser/d2/planning.py",
+    "parent_sha256": "649c8d4124df31bb0a2a9e509f3292bd503d56872389ca0310fedf5ab80a43e6",
+    "target_sha256": "10836ba019607ee6a21f0f35e4132eed7cacc19807d05cbb33386c8ed50ef08e",
+    "retained_symbols": [
+      {
+        "name": "locked",
+        "original_line": 14,
+        "original_end": 16,
+        "source_ast_sha256": "bacacc956eccad9d31aa47386a96f408ec4ff3ff0cb06cfde540bd5526c5e913",
+        "selected_ast_sha256": "bacacc956eccad9d31aa47386a96f408ec4ff3ff0cb06cfde540bd5526c5e913",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "SafetyOccupancy",
+        "original_line": 20,
+        "original_end": 21,
+        "source_ast_sha256": "222dd62bfd9977ea6fc8a0ee4e685f56accad95b6dac9019086c38e94baa3caa",
+        "selected_ast_sha256": "222dd62bfd9977ea6fc8a0ee4e685f56accad95b6dac9019086c38e94baa3caa",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "SafetyState",
+        "original_line": 25,
+        "original_end": 29,
+        "source_ast_sha256": "804ffd586dd13ec72d4c8977e05ee793c08af791878385390d68ebf730dba69d",
+        "selected_ast_sha256": "804ffd586dd13ec72d4c8977e05ee793c08af791878385390d68ebf730dba69d",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "D2PlanningViews",
+        "original_line": 32,
+        "original_end": 78,
+        "source_ast_sha256": "aadf30a05ea80541c32543cfcc72e202e17e4918d713cc1316b39b4fccc3557a",
+        "selected_ast_sha256": "aadf30a05ea80541c32543cfcc72e202e17e4918d713cc1316b39b4fccc3557a",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 8,
+    "original_top_level_nodes": 9,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v1/diagnostics.py",
+    "target": "chapter3_bser/learning/metric_ordering.py",
+    "parent_sha256": "b34c4f423b86aeb565fc9366cea2888f4318e0f2c3c75599ec958efa05ae903e",
+    "target_sha256": "6c4ed86c9abc55328528eaff43d5689efe3c70923d7a1ad1752179cae372a7a1",
+    "retained_symbols": [
+      {
+        "name": "paired_ordering",
+        "original_line": 6,
+        "original_end": 45,
+        "source_ast_sha256": "31ee311506e97bfc338c398fa0d1b6dfe6e8f4b0f49a6577b6eb940a8db8134f",
+        "selected_ast_sha256": "31ee311506e97bfc338c398fa0d1b6dfe6e8f4b0f49a6577b6eb940a8db8134f",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 3,
+    "original_top_level_nodes": 4,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v1/model.py",
+    "target": "chapter3_bser/learning/execution_mask.py",
+    "parent_sha256": "51589599e58cfbee2b4fc16d0ebfc87e0445f61d1bb3a213b8ba43343b29750b",
+    "target_sha256": "d0d7bf736a4d42792c90ab700f33a2198ba524ef17b25f704ebe11bfc8d9aa77",
+    "retained_symbols": [
+      {
+        "name": "ExecutionRepair",
+        "original_line": 12,
+        "original_end": 58,
+        "source_ast_sha256": "db080106597b1d040d881c4aec5123d4ae4fa574fb6a8ff6557161e9983b2569",
+        "selected_ast_sha256": "194baa5b6b9e8f873cc7f2c2fd1c27bb63166d46bedd8ac7b068d6e22ceb3ed4",
+        "explicitly_dropped_methods": [
+          "load_training_state_dict",
+          "training_state_dict"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 2,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v1/replay.py",
+    "target": "chapter3_bser/learning/replay_base.py",
+    "parent_sha256": "44fec24ab2be312fe0112e2b232a52f0f76a5e10c4deb0eba226a58a833a9268",
+    "target_sha256": "72f81b3171373a9135cbdbfda7d14958a7334aca935b47461c9720afa69fb2eb",
+    "retained_symbols": [
+      {
+        "name": "ExecutionSample",
+        "original_line": 6,
+        "original_end": 11,
+        "source_ast_sha256": "70b1041b4605cedcca32db7b79558bae03eb20c27c603e3989f0f04f2aacb968",
+        "selected_ast_sha256": "70b1041b4605cedcca32db7b79558bae03eb20c27c603e3989f0f04f2aacb968",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "ExecutionReplay",
+        "original_line": 14,
+        "original_end": 48,
+        "source_ast_sha256": "c5b5979607a234391fe3163a947e936683719abcb9b4d2ff53586cb6dcc7ce28",
+        "selected_ast_sha256": "c5b5979607a234391fe3163a947e936683719abcb9b4d2ff53586cb6dcc7ce28",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 4,
+    "original_top_level_nodes": 5,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v1/runtime.py",
+    "target": "chapter3_bser/learning/gated_runtime.py",
+    "parent_sha256": "8388a42f395d474ec98cb6c3deb21591641abf9e9d19f568c2c27d34545fdfc0",
+    "target_sha256": "0ac0f0dc1adeaf31981ff9ab8a37d4d180695db8da089326ed017f6e49a48b4f",
+    "retained_symbols": [
+      {
+        "name": "execution_gates",
+        "original_line": 14,
+        "original_end": 25,
+        "source_ast_sha256": "ffd33b048fdea595cc879ac6a67bab234ab05020d418a3db61249e79715e24c6",
+        "selected_ast_sha256": "ffd33b048fdea595cc879ac6a67bab234ab05020d418a3db61249e79715e24c6",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "RepairedMissionRuntime",
+        "original_line": 28,
+        "original_end": 76,
+        "source_ast_sha256": "7864a08aa7407af08d8ba47642c4c55af3d60c9ef349028e44696321bfe3aaac",
+        "selected_ast_sha256": "77058170d1a6a79a2d9210dd0d6bc8638438ca465f443d4a77b7558600484eec",
+        "explicitly_dropped_methods": [
+          "__init__"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 6,
+    "original_top_level_nodes": 8,
+    "reviewed_specialization": true
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v2/config.py",
+    "target": "chapter3_bser/learning/config.py",
+    "parent_sha256": "5a08bfa82d661660ad2d05b48e8967c008c3d9f5116e7ab54dbb6cc74aa329bb",
+    "target_sha256": "395a154c1fab1edf0e54c9fb29e737cb72a7c6bb51c2328a5c022141be480c24",
+    "retained_symbols": [
+      {
+        "name": "scenario_fingerprint",
+        "original_line": 16,
+        "original_end": 59,
+        "source_ast_sha256": "c5b0fa25b69d49692dc7a55053e63ba9e17c235527c7bff76a2aa49e8a47ecd8",
+        "selected_ast_sha256": "c5b0fa25b69d49692dc7a55053e63ba9e17c235527c7bff76a2aa49e8a47ecd8",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "validate",
+        "original_line": 62,
+        "original_end": 94,
+        "source_ast_sha256": "241ad9d5fd27e658826dc11d1891f4b1edecf0a3a636f5ff6422683fe882c4db",
+        "selected_ast_sha256": "241ad9d5fd27e658826dc11d1891f4b1edecf0a3a636f5ff6422683fe882c4db",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 9,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v2/evaluate.py",
+    "target": "chapter3_bser/learning/evaluate.py",
+    "parent_sha256": "46a982b2aeb8f85f82ad9d2135bcc3c2d5e534af189f748dbde8a555877fda07",
+    "target_sha256": "d76ecf9cab3e96d1f03c92c40750c2aff3020e05867c87ab1323adc6ddfcea3d",
+    "retained_symbols": [
+      {
+        "name": "preserved_rng",
+        "original_line": 20,
+        "original_end": 33,
+        "source_ast_sha256": "ff77691def6fb391814ababaf06522fc3da256c9f8f2787135012a5d9a5332cb",
+        "selected_ast_sha256": "ff77691def6fb391814ababaf06522fc3da256c9f8f2787135012a5d9a5332cb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "evaluate",
+        "original_line": 37,
+        "original_end": 82,
+        "source_ast_sha256": "f2fc7c9b35431ccc5726b928a623cd03b14a2c20b1ad255226b91f7fd6e40dcd",
+        "selected_ast_sha256": "f2fc7c9b35431ccc5726b928a623cd03b14a2c20b1ad255226b91f7fd6e40dcd",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "main",
+        "original_line": 85,
+        "original_end": 112,
+        "source_ast_sha256": "52a47f95dfd02d6177361ead55a3bdf6b3eb062d509eecd7c930a9602c7c4099",
+        "selected_ast_sha256": "52a47f95dfd02d6177361ead55a3bdf6b3eb062d509eecd7c930a9602c7c4099",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 17,
+    "original_top_level_nodes": 19,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v2/model.py",
+    "target": "chapter3_bser/learning/model.py",
+    "parent_sha256": "01e59d0463b15deeed6d2e656b317f875d3105e14df94ba202b1f4b862ecd862",
+    "target_sha256": "419e6a74a7523e7c4f8ae94eeb008b8ef5e92a4f1aee371da0692810403f7715",
+    "retained_symbols": [
+      {
+        "name": "ExecutionRepair",
+        "original_line": 12,
+        "original_end": 39,
+        "source_ast_sha256": "1b360df4926a36a3ce365edc5478d892a9311d3fee6f76214a24c35416332bdc",
+        "selected_ast_sha256": "1b360df4926a36a3ce365edc5478d892a9311d3fee6f76214a24c35416332bdc",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "RepairedMADDPG",
+        "original_line": 42,
+        "original_end": 43,
+        "source_ast_sha256": "7a64414da31ed81fed6a08d192ee8f3e09580b26800c15b2fdd4e3edf8285bb5",
+        "selected_ast_sha256": "7a64414da31ed81fed6a08d192ee8f3e09580b26800c15b2fdd4e3edf8285bb5",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "RepairedBoundaryMADDPG",
+        "original_line": 46,
+        "original_end": 47,
+        "source_ast_sha256": "16f5c7e839024711025f96a2cad82d71c3df6c924f2c2b9642fbe6f8a7a61529",
+        "selected_ast_sha256": "16f5c7e839024711025f96a2cad82d71c3df6c924f2c2b9642fbe6f8a7a61529",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "build_model",
+        "original_line": 50,
+        "original_end": 66,
+        "source_ast_sha256": "bf2a6c29752fd797258813184b01f6c34b15602caa19e10f121a60ef28fa5107",
+        "selected_ast_sha256": "bf2a6c29752fd797258813184b01f6c34b15602caa19e10f121a60ef28fa5107",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 10,
+    "original_top_level_nodes": 11,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v2/provenance.py",
+    "target": "chapter3_bser/learning/provenance.py",
+    "parent_sha256": "1c719cca3a4f434e43da99d131c6a4574943f38265323c407f441451840ce7aa",
+    "target_sha256": "b36ccb22640940a54adfdd42261a71e1f3db073b08c40b50a1cfc473e24a0935",
+    "retained_symbols": [
+      {
+        "name": "verify_reviewed_changes",
+        "original_line": 22,
+        "original_end": 79,
+        "source_ast_sha256": "ae2a11c144f5fa57d5af3c9750d64d22255926611ae321a772bbc8e2d0b3c221",
+        "selected_ast_sha256": "0b06932d716f28c2a5538cf55a01aaa11f9655805c11d855f87f4bf1d897f53c",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "training_admission",
+        "original_line": 128,
+        "original_end": 139,
+        "source_ast_sha256": "5563023bab6154b05e2ffd2baec547f1c89a77bd9255f54760d6b500cef7c31e",
+        "selected_ast_sha256": "6e02ae2bf7e6b5503ca70961ede7f3b265678e040b24e4e500eea1adc943fc4c",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 19,
+    "reviewed_specialization": true
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v2/replay.py",
+    "target": "chapter3_bser/learning/replay.py",
+    "parent_sha256": "7f7e568643af2c1b9a9b8fc48ce864a7634ceeb9a56ce85222bfef1ba59e2f3a",
+    "target_sha256": "81ffb74711bdf3bc4a8d85efc283aa86bf55751fc58bdb62cb5a404fda380ab9",
+    "retained_symbols": [
+      {
+        "name": "ExecutionReplay",
+        "original_line": 8,
+        "original_end": 65,
+        "source_ast_sha256": "add9f4786152851f5a667cc054409290dbe05ddcdd4601d68475af2258b7874a",
+        "selected_ast_sha256": "add9f4786152851f5a667cc054409290dbe05ddcdd4601d68475af2258b7874a",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 3,
+    "original_top_level_nodes": 4,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v2/runtime.py",
+    "target": "chapter3_bser/learning/runtime.py",
+    "parent_sha256": "019f519158fe414639de4606dac662d841fd19ba42be517319008ac24d0c0910",
+    "target_sha256": "c644ee8b385bf18002952e39de9f1dd326a2fdf60bea74267852180979f85e80",
+    "retained_symbols": [
+      {
+        "name": "RepairedMissionRuntime",
+        "original_line": 8,
+        "original_end": 19,
+        "source_ast_sha256": "3d05c5ca08e5cc32cf8d6eb2a1b5bf9d43cc676ddf23608f25c7290f53b424f3",
+        "selected_ast_sha256": "3d05c5ca08e5cc32cf8d6eb2a1b5bf9d43cc676ddf23608f25c7290f53b424f3",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 6,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_repair_v2/train.py",
+    "target": "chapter3_bser/learning/train.py",
+    "parent_sha256": "f93f9f0062a838c764b4183e7780035aa8c1c762ccd452f3fe759f9ca024a27d",
+    "target_sha256": "adfd2aa0cfc70d7f76668402b1beb303101b753ba9e791612980c7b1bb3cc991",
+    "retained_symbols": [
+      {
+        "name": "Trainer",
+        "original_line": 21,
+        "original_end": 119,
+        "source_ast_sha256": "654035e6a2cb62d743dd7ff0a87808aa1c547236da917a569be7d4745270dea3",
+        "selected_ast_sha256": "391fe98de8435ac4ddff67f2153166305895f12f623b2c046c5e7e6260b07c25",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "load_for_evaluation",
+        "original_line": 122,
+        "original_end": 158,
+        "source_ast_sha256": "d7f6714845e465cb37a2dbce7327b21b00075978027b5045dc09003125c129cc",
+        "selected_ast_sha256": "d7f6714845e465cb37a2dbce7327b21b00075978027b5045dc09003125c129cc",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "main",
+        "original_line": 161,
+        "original_end": 178,
+        "source_ast_sha256": "9a8963aaf107d27d80e942446892f3b1db7e362219d9a07e9d6ba99d37ec4fe4",
+        "selected_ast_sha256": "9a8963aaf107d27d80e942446892f3b1db7e362219d9a07e9d6ba99d37ec4fe4",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 21,
+    "original_top_level_nodes": 20,
+    "reviewed_specialization": true
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_v1/assembly.py",
+    "target": "chapter3_bser/d2/assembly.py",
+    "parent_sha256": "3a545c44f4ff67aef8d2527450ba2e8ed0a90ba462a5d6a8b4c739573f28a51d",
+    "target_sha256": "ab3beb6c1a56c56caceb5a4f1e319e09240148f94fda8f63d19a569c2e157dea",
+    "retained_symbols": [
+      {
+        "name": "prepare",
+        "original_line": 11,
+        "original_end": 18,
+        "source_ast_sha256": "c38284903dec0656aadd2a0e41f5af700b782e5d32c6a507b4d6967e766569f1",
+        "selected_ast_sha256": "c38284903dec0656aadd2a0e41f5af700b782e5d32c6a507b4d6967e766569f1",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "build_controller",
+        "original_line": 21,
+        "original_end": 33,
+        "source_ast_sha256": "f4bd8ffccf5c00713d6b591210aedbcb460a8b1d8f47da68638f3ac47f2dd245",
+        "selected_ast_sha256": "f4bd8ffccf5c00713d6b591210aedbcb460a8b1d8f47da68638f3ac47f2dd245",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "build_bridge",
+        "original_line": 36,
+        "original_end": 38,
+        "source_ast_sha256": "1643992f25ab723fba5129ee681abcf251e1d30b7da4f882a3e271693f39014e",
+        "selected_ast_sha256": "1643992f25ab723fba5129ee681abcf251e1d30b7da4f882a3e271693f39014e",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "diagnostics",
+        "original_line": 41,
+        "original_end": 45,
+        "source_ast_sha256": "947f1b08a01fd78dcc46e2fb6903d806b8d477ccebc774dc6ba36d7581719729",
+        "selected_ast_sha256": "947f1b08a01fd78dcc46e2fb6903d806b8d477ccebc774dc6ba36d7581719729",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 6,
+    "original_top_level_nodes": 7,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_v1/contract.py",
+    "target": "chapter3_bser/d2/contract.py",
+    "parent_sha256": "8846479b87abcccc1c31c4cb7c2593480940cd183a0af281ea2518ef8ad4379a",
+    "target_sha256": "a2ed6b06a5ddf4169c6251e39abf17aeda8d8d030028fd07867507e32d73016f",
+    "retained_symbols": [
+      {
+        "name": "planner_protocol",
+        "original_line": 6,
+        "original_end": 10,
+        "source_ast_sha256": "47cad5f22dd7209aff3055282133cb4d2a05fd30a0852f8f62ae80a2f4dae8d8",
+        "selected_ast_sha256": "47cad5f22dd7209aff3055282133cb4d2a05fd30a0852f8f62ae80a2f4dae8d8",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "enabled",
+        "original_line": 13,
+        "original_end": 14,
+        "source_ast_sha256": "9b5b300d6f92ec1e8fa859f969be11dbd5a7d3053e8445826429139ba7553984",
+        "selected_ast_sha256": "9b5b300d6f92ec1e8fa859f969be11dbd5a7d3053e8445826429139ba7553984",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 4,
+    "original_top_level_nodes": 5,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/d2_v1/controller.py",
+    "target": "chapter3_bser/d2/controller.py",
+    "parent_sha256": "08b2adbcbf040d771487fa6b74b8c85fe5931238d4fafc0589616eeffa484a1a",
+    "target_sha256": "40c8b5a933fb0829cdbd5d088a461be65e57be6081352c7967b79fe4d2f49344",
+    "retained_symbols": [
+      {
+        "name": "D2SearchController",
+        "original_line": 5,
+        "original_end": 9,
+        "source_ast_sha256": "9e27df6d5981ddea2d6efdf9052d3e2e3391e4ca3b4a5f416ff82a189fcb86a3",
+        "selected_ast_sha256": "9e27df6d5981ddea2d6efdf9052d3e2e3391e4ca3b4a5f416ff82a189fcb86a3",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 2,
+    "original_top_level_nodes": 3,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/phase1c_bser_rmaddpg_v2/reward_adapter.py",
+    "target": "chapter3_bser/rewards/reward_adapter.py",
+    "parent_sha256": "e72e0dc137961a97da6fdaabb276a29247fdf5184c43b878b86d4527a44e7298",
+    "target_sha256": "56f1843ab9b5b8e1030d3f267fe5296bd35afb82e46452e591d31a9bad1718d3",
+    "retained_symbols": [
+      {
+        "name": "Phase1CExecutionRewardConfig",
+        "original_line": 20,
+        "original_end": 83,
+        "source_ast_sha256": "1a4cb6c1bd01e4f0fde909b784cb01126fd6d0cd86e5c39921ef332dbe973ae1",
+        "selected_ast_sha256": "1a4cb6c1bd01e4f0fde909b784cb01126fd6d0cd86e5c39921ef332dbe973ae1",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "RewardAdjustmentResult",
+        "original_line": 87,
+        "original_end": 90,
+        "source_ast_sha256": "2ea2c1de2e1462dc0ff30aa711727b82db63db83bce3ef4b4306d405a78a5417",
+        "selected_ast_sha256": "2ea2c1de2e1462dc0ff30aa711727b82db63db83bce3ef4b4306d405a78a5417",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "Phase1CExecutionRewardAdapter",
+        "original_line": 93,
+        "original_end": 307,
+        "source_ast_sha256": "362c5d3ccba346078eec15eaa3845fa78e34056873f3b7bf0cb0e0834ced293b",
+        "selected_ast_sha256": "362c5d3ccba346078eec15eaa3845fa78e34056873f3b7bf0cb0e0834ced293b",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 8,
+    "original_top_level_nodes": 11,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/phase1c_bser_rmaddpg_v2/training_env.py",
+    "target": "chapter3_bser/rewards/training_env.py",
+    "parent_sha256": "b5b5e46d17e457eea844d709350bd4fbf9b279081f3cad390feedab72fc56ce9",
+    "target_sha256": "b027faf5155271a59e971cce3c4a33ecd6d2e3338ff0ce55cc63ac22c3d61662",
+    "retained_symbols": [
+      {
+        "name": "Phase1CV2TrainingEnv",
+        "original_line": 27,
+        "original_end": 250,
+        "source_ast_sha256": "f1413d1674a73678ffa0b8bfec52fbe7a0c14b456e79fe0d8d7ba8d58c55b330",
+        "selected_ast_sha256": "f1413d1674a73678ffa0b8bfec52fbe7a0c14b456e79fe0d8d7ba8d58c55b330",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 8,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/phase1c_common/__init__.py",
+    "target": "chapter3_bser/protocols/__init__.py",
+    "parent_sha256": "88b21dff696eeb218974c56ab05cc97f3b43c78135e4e70e46208223f67c21c8",
+    "target_sha256": "e75f782babfc393f348b3a31c229952866e3defb3345880d42cfff08b0fa1ba3",
+    "retained_symbols": [],
+    "selected_top_level_nodes": 2,
+    "original_top_level_nodes": 4,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/phase1c_common/execution_diagnostics.py",
+    "target": "chapter3_bser/protocols/execution_diagnostics.py",
+    "parent_sha256": "eae4373112e948b746872cd80185be50e06d3646839fd0cdfa813691ac6d8389",
+    "target_sha256": "0749491eedb745b7080244dc70c86481197e9d5b8e4ff2ffd0d5fd884184d131",
+    "retained_symbols": [
+      {
+        "name": "_runtime",
+        "original_line": 17,
+        "original_end": 18,
+        "source_ast_sha256": "39a0a79d222b9d458d2226e485a59cb373d4006511deeb208cb7f3e949cd5bab",
+        "selected_ast_sha256": "39a0a79d222b9d458d2226e485a59cb373d4006511deeb208cb7f3e949cd5bab",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_number",
+        "original_line": 21,
+        "original_end": 32,
+        "source_ast_sha256": "db2bcdd694f4062f9937addf7b66228115437e6fa79a3d7d6e4563aad2ff28c9",
+        "selected_ast_sha256": "db2bcdd694f4062f9937addf7b66228115437e6fa79a3d7d6e4563aad2ff28c9",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_integer",
+        "original_line": 35,
+        "original_end": 37,
+        "source_ast_sha256": "0686256da0ee2ca6696526888e6222e86f3d6340b17e6c4b8d2b508b71d8142b",
+        "selected_ast_sha256": "0686256da0ee2ca6696526888e6222e86f3d6340b17e6c4b8d2b508b71d8142b",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_vector",
+        "original_line": 40,
+        "original_end": 51,
+        "source_ast_sha256": "fbbff2d56d0629cbc4d9f8784111c154dbb7fd0155a01bb6bdb67015638809f8",
+        "selected_ast_sha256": "fbbff2d56d0629cbc4d9f8784111c154dbb7fd0155a01bb6bdb67015638809f8",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_mean",
+        "original_line": 54,
+        "original_end": 55,
+        "source_ast_sha256": "b049977fcbaf99a1188b8fbbb003e2013c7bae257213446f8efc9976d0c6bfac",
+        "selected_ast_sha256": "b049977fcbaf99a1188b8fbbb003e2013c7bae257213446f8efc9976d0c6bfac",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_sum_reward",
+        "original_line": 58,
+        "original_end": 60,
+        "source_ast_sha256": "32b088f0ad871496d9cad454592e88b839146c469b8a6291b74c7c98cf1f7fce",
+        "selected_ast_sha256": "32b088f0ad871496d9cad454592e88b839146c469b8a6291b74c7c98cf1f7fce",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_event_names",
+        "original_line": 63,
+        "original_end": 71,
+        "source_ast_sha256": "7e637d5e6ec70139ff07f77e8dc07c20e718679e875ef785bc5d89fa96a2af61",
+        "selected_ast_sha256": "7e637d5e6ec70139ff07f77e8dc07c20e718679e875ef785bc5d89fa96a2af61",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "ExecutionEpisodeDiagnostics",
+        "original_line": 75,
+        "original_end": 572,
+        "source_ast_sha256": "b796a0a05a4c01dbc4efcd842233cfed172c974f46311c12d08123e832251286",
+        "selected_ast_sha256": "b796a0a05a4c01dbc4efcd842233cfed172c974f46311c12d08123e832251286",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 13,
+    "original_top_level_nodes": 15,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/phase1c_common/transition_schema.py",
+    "target": "chapter3_bser/protocols/transition_schema.py",
+    "parent_sha256": "3382d9d7a4f84b54f1d9183df56a1c4bb34f672cb7b17ce1cef9e3b86db93079",
+    "target_sha256": "3955812a86d1c39b24a2d229236c00c53060a2bb88a37cd284a8edef287f0650",
+    "retained_symbols": [
+      {
+        "name": "TransitionPhase",
+        "original_line": 14,
+        "original_end": 21,
+        "source_ast_sha256": "f56cb833f73b53938147f0d688e98d281356ace4fe5e916e5e9abfd3dde88918",
+        "selected_ast_sha256": "f56cb833f73b53938147f0d688e98d281356ace4fe5e916e5e9abfd3dde88918",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "classify_transition_phase",
+        "original_line": 24,
+        "original_end": 44,
+        "source_ast_sha256": "aa79fa36bd39583dc3f3054b1a09c17ef08584f90e2954788eb653cf4deccf39",
+        "selected_ast_sha256": "aa79fa36bd39583dc3f3054b1a09c17ef08584f90e2954788eb653cf4deccf39",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "Phase1CTransitionMetadata",
+        "original_line": 48,
+        "original_end": 139,
+        "source_ast_sha256": "23cb58c2920a8df3e8dbd2d6d4d5047161ec666e8255e89d602f188f6a359426",
+        "selected_ast_sha256": "23cb58c2920a8df3e8dbd2d6d4d5047161ec666e8255e89d602f188f6a359426",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 6,
+    "original_top_level_nodes": 8,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/phase1c_prrac/runtime_factory.py",
+    "target": "chapter3_bser/protocols/controller_factory.py",
+    "parent_sha256": "1d86db9eb503cd5ffafa4eb8007858fab3f978f15f6890f1595b4df4b740f369",
+    "target_sha256": "f004fba3ac3cbc9480fbf85a7e11f888a92d419bbe7cfcd3c24682d5bc07c82c",
+    "retained_symbols": [
+      {
+        "name": "ExecutionVariant",
+        "original_line": null,
+        "original_end": null,
+        "source_ast_sha256": null,
+        "selected_ast_sha256": "dbab5f731eb0e5e080a4abcee5c177a1e27507fcd9c08ddb5923c79cc45ee16d",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PRRACRuntimeContract",
+        "original_line": 23,
+        "original_end": 27,
+        "source_ast_sha256": "ef6ac485b2a79e83e1ed188e8ecd63a78cf8647a76dd8bf040b13ff817e32429",
+        "selected_ast_sha256": "ef6ac485b2a79e83e1ed188e8ecd63a78cf8647a76dd8bf040b13ff817e32429",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "build_prrac_online_controller",
+        "original_line": 78,
+        "original_end": 128,
+        "source_ast_sha256": "e3ee6fbd1d2e282deb11e7d3d9794711cfcda8cd59bb0b8ce9b01405d92b43cd",
+        "selected_ast_sha256": "7270e305627b6302d11b82fed2f34115366c87c196e34ce7bd325da35ec3c65a",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 8,
+    "original_top_level_nodes": 13,
+    "reviewed_specialization": true
+  },
+  {
+    "source": "chapter3_bser/experiments/phase1c_prrac/training_env.py",
+    "target": "chapter3_bser/protocols/team_environment.py",
+    "parent_sha256": "0898f4e11e44a698131375ec8276e160127fccf2be6954ea92130a72d632622e",
+    "target_sha256": "79b6fcee55d179901b50edea8adb2df791f15854cb18ae5aefa839bc4ed73ed5",
+    "retained_symbols": [
+      {
+        "name": "PRRACTrainingEnv",
+        "original_line": 17,
+        "original_end": 95,
+        "source_ast_sha256": "b9bf4ac03f76432d7c897ee5bf807202fbf088cc6e3ea2a5ae2352767f144958",
+        "selected_ast_sha256": "b9bf4ac03f76432d7c897ee5bf807202fbf088cc6e3ea2a5ae2352767f144958",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 6,
+    "original_top_level_nodes": 9,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/phase1c_prrac/transition_protocol.py",
+    "target": "chapter3_bser/protocols/transition_protocol.py",
+    "parent_sha256": "a6083a7c01c26d5c869894ddaf68cca5e71840ab77d9256cb46eef47783ed8a9",
+    "target_sha256": "8575ca33ba57bbba6f1b910b6c49c9509a0f4962f78c79a4b789716a7c06838e",
+    "retained_symbols": [
+      {
+        "name": "PRRACTransitionMetadata",
+        "original_line": 18,
+        "original_end": 83,
+        "source_ast_sha256": "ef6433a3186c4601bd0271f2c6ffa694584f58d12ee5480d4024c93b6ed3c4f9",
+        "selected_ast_sha256": "ef6433a3186c4601bd0271f2c6ffa694584f58d12ee5480d4024c93b6ed3c4f9",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 7,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/reward_objective.py",
+    "target": "chapter3_bser/rewards/team_objective.py",
+    "parent_sha256": "f4072f5bb6ec378eefec897365818baf789d351113e8be194f9c8b11c1853710",
+    "target_sha256": "480e5e53cda49a6e4d6b04c4c0010a9c35b85a50a3afa5c28b93efefdbd831f4",
+    "retained_symbols": [
+      {
+        "name": "objective_identity",
+        "original_line": 17,
+        "original_end": 25,
+        "source_ast_sha256": "4db2a692e300214a109c88fbd174488466ae66a0a33a4ab06c6c8a1825bb92f3",
+        "selected_ast_sha256": "4db2a692e300214a109c88fbd174488466ae66a0a33a4ab06c6c8a1825bb92f3",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "RewardAccounting",
+        "original_line": 28,
+        "original_end": 71,
+        "source_ast_sha256": "9bf1e6655f2ebadfae04b5026ba928537ed449e5efa7c70ebb0fcc00f858cbf0",
+        "selected_ast_sha256": "9bf1e6655f2ebadfae04b5026ba928537ed449e5efa7c70ebb0fcc00f858cbf0",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 8,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/safe_search_v1/allocators.py",
+    "target": "chapter3_bser/safety/allocators.py",
+    "parent_sha256": "02ca680cf1544f0c71baa7ab09cb7c9fdf12d752dfe4f10590ac1cfe3abc078c",
+    "target_sha256": "ea3cf0ccf57154e5386f03fdaeece4c91e92d6c98222c78c680083b0a790c06e",
+    "retained_symbols": [
+      {
+        "name": "SearchPoolMixin",
+        "original_line": 14,
+        "original_end": 36,
+        "source_ast_sha256": "86f17abfd456f57687e22c55725974c51e333f2ace610ae8a1620e26369c8c24",
+        "selected_ast_sha256": "86f17abfd456f57687e22c55725974c51e333f2ace610ae8a1620e26369c8c24",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "SafeJointAllocator",
+        "original_line": 52,
+        "original_end": 134,
+        "source_ast_sha256": "4a8f150895a678e2febe28e388d0b976954bab1f6005864594abb74efc84b454",
+        "selected_ast_sha256": "4a8f150895a678e2febe28e388d0b976954bab1f6005864594abb74efc84b454",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 10,
+    "original_top_level_nodes": 13,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/safe_search_v1/failure_policy.py",
+    "target": "chapter3_bser/safety/failure_policy.py",
+    "parent_sha256": "e4d605a75fdce375605869463a10900b0aba48342d53292a12c347ba192c6bbd",
+    "target_sha256": "d876623c358a68b6e7d577a8c74a7cd4ac1eed8944868e1c2d939e2b50db3f57",
+    "retained_symbols": [
+      {
+        "name": "SearchFailurePolicy",
+        "original_line": 6,
+        "original_end": 40,
+        "source_ast_sha256": "92407023f1758fba6e5ebfd65461d42023fe1d5c695f7d4f0ade7283897bc87f",
+        "selected_ast_sha256": "92407023f1758fba6e5ebfd65461d42023fe1d5c695f7d4f0ade7283897bc87f",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 3,
+    "original_top_level_nodes": 4,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/safe_search_v1/planning_refresh.py",
+    "target": "chapter3_bser/safety/planning_refresh.py",
+    "parent_sha256": "42b7ac51b42859494e3bfd61cf0cd5ee580fbe860f5593c8256b5b789bf41e2d",
+    "target_sha256": "9e47bb939590dd0f9c281910937c1ad7c6c7f0156a6b57234f9625312f212001",
+    "retained_symbols": [
+      {
+        "name": "start_status",
+        "original_line": 11,
+        "original_end": 26,
+        "source_ast_sha256": "5465cd8bbfb03077092bc5c7d785ebbb0652aa96d6c08ced7770ead8f1eb275f",
+        "selected_ast_sha256": "5465cd8bbfb03077092bc5c7d785ebbb0652aa96d6c08ced7770ead8f1eb275f",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "topology_key",
+        "original_line": 29,
+        "original_end": 34,
+        "source_ast_sha256": "66ca0a2c59c53759b95e0751bcb632a76cee8ed52d34b2d8d8011e2c304d8d85",
+        "selected_ast_sha256": "66ca0a2c59c53759b95e0751bcb632a76cee8ed52d34b2d8d8011e2c304d8d85",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PlanningViews",
+        "original_line": 37,
+        "original_end": 70,
+        "source_ast_sha256": "638ce996328ff32e6d9077c3e46550ea94123d295c9d9eb505bd604641951edf",
+        "selected_ast_sha256": "638ce996328ff32e6d9077c3e46550ea94123d295c9d9eb505bd604641951edf",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 8,
+    "original_top_level_nodes": 9,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/safe_search_v1/public_geometry.py",
+    "target": "chapter3_bser/safety/public_geometry.py",
+    "parent_sha256": "6cae5d38ed157baf57a9f225fd257226b50ecf056f095007310290d0afa34fee",
+    "target_sha256": "01ddb2a48cef314065d6e1e734e60fc4616de0dbf988a950ce82553ae5264eec",
+    "retained_symbols": [
+      {
+        "name": "_locked",
+        "original_line": 25,
+        "original_end": 27,
+        "source_ast_sha256": "1c4ced97532dbf88fdf6ff1d4678f1be8b95888f0ed61f6eede97d26963b7b5a",
+        "selected_ast_sha256": "1c4ced97532dbf88fdf6ff1d4678f1be8b95888f0ed61f6eede97d26963b7b5a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_vector",
+        "original_line": 30,
+        "original_end": 37,
+        "source_ast_sha256": "01ac81993a28f431eb89cb51a175f563a884ec1402198ed18af625679ac7abaf",
+        "selected_ast_sha256": "01ac81993a28f431eb89cb51a175f563a884ec1402198ed18af625679ac7abaf",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PublicGeometry",
+        "original_line": 40,
+        "original_end": 126,
+        "source_ast_sha256": "4a7ed8a9d3d0560a7fd2be8662d56563aefd37c10fc63361ad7e341b232a05d8",
+        "selected_ast_sha256": "4a7ed8a9d3d0560a7fd2be8662d56563aefd37c10fc63361ad7e341b232a05d8",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_component_labels",
+        "original_line": 129,
+        "original_end": 150,
+        "source_ast_sha256": "1cea14968d7872345283e310c06417864f3f4b9eb02b0d04e355d8c758bbff61",
+        "selected_ast_sha256": "1cea14968d7872345283e310c06417864f3f4b9eb02b0d04e355d8c758bbff61",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_graph_hash",
+        "original_line": 153,
+        "original_end": 169,
+        "source_ast_sha256": "614dd220550aaf2fe3d6c15d73714b078a17f1d141ce26f87ace99cf5bafdbe8",
+        "selected_ast_sha256": "614dd220550aaf2fe3d6c15d73714b078a17f1d141ce26f87ace99cf5bafdbe8",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "filter_planning_state",
+        "original_line": 172,
+        "original_end": 246,
+        "source_ast_sha256": "2e8beeb807b35864e2961f20d62f1dee818ef18115a90fcd5ebfe3a89c8b47b9",
+        "selected_ast_sha256": "2e8beeb807b35864e2961f20d62f1dee818ef18115a90fcd5ebfe3a89c8b47b9",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 14,
+    "original_top_level_nodes": 16,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/safe_search_v1/runtime.py",
+    "target": "chapter3_bser/safety/runtime.py",
+    "parent_sha256": "c6997363894f7e20618b6f5e1abb2a4dc172302723d7fe977a16cf89afa8b8d0",
+    "target_sha256": "95e0da8cde5528020f4f9f86ef52e0c56ee3715ddb0bfe961e9c3b51ac8fbb29",
+    "retained_symbols": [
+      {
+        "name": "SearchController",
+        "original_line": 28,
+        "original_end": 133,
+        "source_ast_sha256": "ced34f689e3291cd78c40573431112ed9641b6260354b17d0f2b4d6b35d59364",
+        "selected_ast_sha256": "ced34f689e3291cd78c40573431112ed9641b6260354b17d0f2b4d6b35d59364",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "SafetyMixin",
+        "original_line": 136,
+        "original_end": 171,
+        "source_ast_sha256": "76d4702a5d473a449200627d1e2e7a1aeed628182694244341b0912efaafcc24",
+        "selected_ast_sha256": "db34a388d550c99acef0102fd29d7f420bed2e4d4faae046b26ff75bde9baabc",
+        "explicitly_dropped_methods": [
+          "_build_guidance_bridge",
+          "_build_online_controller",
+          "_build_prior_controller",
+          "controller_diagnostics"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 10,
+    "original_top_level_nodes": 19,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/experiments/safe_search_v1/safe_guidance.py",
+    "target": "chapter3_bser/safety/safe_guidance.py",
+    "parent_sha256": "dde5e31e9da634294249a441c338855f3adbd8c2f8598d4285c0d40287877cb8",
+    "target_sha256": "0c4e10808ce34e9268239aaff085cfad287d047dae9f18983384db0f1fd30edc",
+    "retained_symbols": [
+      {
+        "name": "_signature",
+        "original_line": 16,
+        "original_end": 21,
+        "source_ast_sha256": "dcd70f299399f127fe9f14ead3b3b91036aecee833758ab1a4906061a5270161",
+        "selected_ast_sha256": "dcd70f299399f127fe9f14ead3b3b91036aecee833758ab1a4906061a5270161",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "SafetyBridge",
+        "original_line": 24,
+        "original_end": 158,
+        "source_ast_sha256": "65fe06831a75d353fa641dd67789cd30ff39fea98dc09bbe13a81c4e9dad7ed6",
+        "selected_ast_sha256": "65fe06831a75d353fa641dd67789cd30ff39fea98dc09bbe13a81c4e9dad7ed6",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 7,
+    "original_top_level_nodes": 8,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/greedy_solver.py",
+    "target": "chapter3_bser/greedy_solver.py",
+    "parent_sha256": "9fc83bc31e9210112fd08afa63549c247505c900ce8e914f4dd02981f0cc7759",
+    "target_sha256": "31494ea3b2da9d18f241922cf88668bcaad0a7ea3832f9e170601a31e35ccdc8",
+    "retained_symbols": [
+      {
+        "name": "solve_fixed_standby_greedy",
+        "original_line": 11,
+        "original_end": 34,
+        "source_ast_sha256": "5b20166c65d07db05cf59638a85d29cc98b176b8bce3d06f7bd38d11f43f34c9",
+        "selected_ast_sha256": "5b20166c65d07db05cf59638a85d29cc98b176b8bce3d06f7bd38d11f43f34c9",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "solve_joint_greedy",
+        "original_line": 37,
+        "original_end": 47,
+        "source_ast_sha256": "e58da0a4ec01c877480fac71ca60fd3c51ecb581f405d8d66d6a0484baf62b16",
+        "selected_ast_sha256": "e58da0a4ec01c877480fac71ca60fd3c51ecb581f405d8d66d6a0484baf62b16",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 7,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/hysteresis/cooldown.py",
+    "target": "chapter3_bser/hysteresis/cooldown.py",
+    "parent_sha256": "9011e8f138f849936d5da20391e23b1aadfc6ef5e642526ab35846fad617f8a2",
+    "target_sha256": "c3920907c30b3b848b439348319b13a95cd59b2247fdb2f91462880793d909e8",
+    "retained_symbols": [
+      {
+        "name": "ReplanningCooldown",
+        "original_line": 9,
+        "original_end": 22,
+        "source_ast_sha256": "281175f594ac0477e9f6ba34575c43807338dd0ee8806ac56f18aaabffe346a7",
+        "selected_ast_sha256": "281175f594ac0477e9f6ba34575c43807338dd0ee8806ac56f18aaabffe346a7",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 2,
+    "original_top_level_nodes": 4,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/hysteresis/policy.py",
+    "target": "chapter3_bser/hysteresis/policy.py",
+    "parent_sha256": "e46ed7e51740405f9e5a5b6b3e491295e4db408ff1ef26e8513fb3e41b4eb313",
+    "target_sha256": "5627306b91f618f62b5ef1415dc21b7f3cdacbc9317c84c2ecde857587269d8d",
+    "retained_symbols": [
+      {
+        "name": "ReplanningPolicy",
+        "original_line": 12,
+        "original_end": 104,
+        "source_ast_sha256": "84002fc12261e7f3ee21b384af816db22f1542acd05768aaffb7792e518e85f9",
+        "selected_ast_sha256": "84002fc12261e7f3ee21b384af816db22f1542acd05768aaffb7792e518e85f9",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 7,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/integration/control_context.py",
+    "target": "chapter3_bser/integration/control_context.py",
+    "parent_sha256": "1f6fe63810e90cce4947542bf65efbd7c13a31861f987ee04def578715c4c1b9",
+    "target_sha256": "11202b8c8b25ab023076fc0e2c6ebe3dc9489a09f5f2b406939e0bdfa66bc538",
+    "retained_symbols": [
+      {
+        "name": "AgentAssignmentContextV1",
+        "original_line": 13,
+        "original_end": 26,
+        "source_ast_sha256": "30b88094410bdb03c7d12f42bd18321764369c7c4ab126a95e0ab94e31847717",
+        "selected_ast_sha256": "30b88094410bdb03c7d12f42bd18321764369c7c4ab126a95e0ab94e31847717",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "ExecutorAssignmentContextV1",
+        "original_line": 30,
+        "original_end": 41,
+        "source_ast_sha256": "574cf28260c22a98cea0fdacfce40765ea9e37c82c24bf7d14cb6d0843fde945",
+        "selected_ast_sha256": "574cf28260c22a98cea0fdacfce40765ea9e37c82c24bf7d14cb6d0843fde945",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "BSERControlContextV1",
+        "original_line": 45,
+        "original_end": 67,
+        "source_ast_sha256": "586f4044390855991e0abcc9f4f183481ff4603dbff41a2e797f39725ac953b1",
+        "selected_ast_sha256": "2e4115c37de5864f5a77494f0bf9956e64ccbfe46d39660a8edefbef35847df1",
+        "explicitly_dropped_methods": [
+          "assignment_for"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 6,
+    "original_top_level_nodes": 8,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/integration/guided_env.py",
+    "target": "chapter3_bser/integration/guided_env.py",
+    "parent_sha256": "34fa427cdd0c0b5dc90b49376c98308381967ec5999c6b6ce9f7c90e92edf366",
+    "target_sha256": "215c9335c8035395fe4a8da24ef2d31d02ec78e8d2444dba800f832928067a25",
+    "retained_symbols": [
+      {
+        "name": "GuidedEnv",
+        "original_line": 15,
+        "original_end": 247,
+        "source_ast_sha256": "48e71ebc76e35e1ffacf6ca4d551b5ed7302d3b7d4efdf98722d287ea0d15883",
+        "selected_ast_sha256": "b796a94b9b9c63c6d71ca0cf7424a9836463c7fb51bd5f8fdd130083105010db",
+        "explicitly_dropped_methods": [
+          "last_initial_endpoint_failures"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 7,
+    "original_top_level_nodes": 9,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/integration/rmaddpg_bridge.py",
+    "target": "chapter3_bser/integration/rmaddpg_bridge.py",
+    "parent_sha256": "1af8934dc99e81b5f3ccf6b91281a96e8ca875330754e7932ce6efb23d3f3908",
+    "target_sha256": "22ffbc0ee8f3e0228fe964c3b872c5b0b2190a9653d9358797a2a0617379d6e6",
+    "retained_symbols": [
+      {
+        "name": "_vector3",
+        "original_line": 19,
+        "original_end": 23,
+        "source_ast_sha256": "7210f3b4bee8ed562bd16e51a8f970446594458d67be2df15bae99d16e959c17",
+        "selected_ast_sha256": "7210f3b4bee8ed562bd16e51a8f970446594458d67be2df15bae99d16e959c17",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_mission_phase",
+        "original_line": 26,
+        "original_end": 33,
+        "source_ast_sha256": "3aaa6052b9824c9fdf744d9cd918db76610e248da5ab0e4444b12d3208b8958d",
+        "selected_ast_sha256": "3aaa6052b9824c9fdf744d9cd918db76610e248da5ab0e4444b12d3208b8958d",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "RMADDPGGuidanceBridge",
+        "original_line": 36,
+        "original_end": 188,
+        "source_ast_sha256": "d8cb69dc1714047150fc12a68a7b78d51ec2bda5728ccc93c35c15870f6eac55",
+        "selected_ast_sha256": "d8cb69dc1714047150fc12a68a7b78d51ec2bda5728ccc93c35c15870f6eac55",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "get_tracking_targets",
+        "original_line": 209,
+        "original_end": 219,
+        "source_ast_sha256": "470aa1b06405448191f76b22d41b280bea69c5592345f143e6f25499d9ad0852",
+        "selected_ast_sha256": "470aa1b06405448191f76b22d41b280bea69c5592345f143e6f25499d9ad0852",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 10,
+    "original_top_level_nodes": 13,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/models/prrac/stage_mapping.py",
+    "target": "chapter3_bser/protocols/stage_mapping.py",
+    "parent_sha256": "bb7e584b6dedb7b7047c6ad40ecdb72368c20560b0427a28a24f03c23b8df45b",
+    "target_sha256": "f8bce19f876c18e777f154840be474e0dd53e103b0ccdc727960699e0b740973",
+    "retained_symbols": [
+      {
+        "name": "PRRACStage",
+        "original_line": 12,
+        "original_end": 15,
+        "source_ast_sha256": "93ca044fbbe9141968293ac523e38f18eb0c4da0532e3deda3b70827f99da1a1",
+        "selected_ast_sha256": "93ca044fbbe9141968293ac523e38f18eb0c4da0532e3deda3b70827f99da1a1",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "transition_phase_to_prrac_stage",
+        "original_line": 27,
+        "original_end": 39,
+        "source_ast_sha256": "e87a8d93013d86306d0cf87821174891486ad92db4cce6a9d57226f237fc9662",
+        "selected_ast_sha256": "e87a8d93013d86306d0cf87821174891486ad92db4cce6a9d57226f237fc9662",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 9,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/objective.py",
+    "target": "chapter3_bser/objective.py",
+    "parent_sha256": "09df76bf604f51fe335d30f852d9b4fe4efe26aa673a8889344040dc16f83ac9",
+    "target_sha256": "eb705af260a8afc0cf9a2be3a522af2b9057f02f0adadcf19d86829db3ee9d7f",
+    "retained_symbols": [
+      {
+        "name": "ObjectiveContext",
+        "original_line": 17,
+        "original_end": 25,
+        "source_ast_sha256": "1646754934b70886e8e3b18454998bdb33652ba88c0e03f7ac6f5b5566f81bcb",
+        "selected_ast_sha256": "1646754934b70886e8e3b18454998bdb33652ba88c0e03f7ac6f5b5566f81bcb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "ResponseDiagnostics",
+        "original_line": 29,
+        "original_end": 37,
+        "source_ast_sha256": "b1e3c18eded76b334dbf137ac91cb3600c4f83ac57e2f5c8d1e21d6b389e06dd",
+        "selected_ast_sha256": "b1e3c18eded76b334dbf137ac91cb3600c4f83ac57e2f5c8d1e21d6b389e06dd",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "build_objective_context",
+        "original_line": 40,
+        "original_end": 72,
+        "source_ast_sha256": "5a456d9194c82adca3054760a34652ee399136dcc882b6150e5eb35f737bd923",
+        "selected_ast_sha256": "5a456d9194c82adca3054760a34652ee399136dcc882b6150e5eb35f737bd923",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "cell_detection_probability",
+        "original_line": 75,
+        "original_end": 81,
+        "source_ast_sha256": "7c8fbbcb468615ba47c77aa8e209d9820825c395a70da905f8269a20d1fd1106",
+        "selected_ast_sha256": "7c8fbbcb468615ba47c77aa8e209d9820825c395a70da905f8269a20d1fd1106",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "evaluate_objective",
+        "original_line": 84,
+        "original_end": 95,
+        "source_ast_sha256": "3d1b05deb8714eb088d19a0238cf888c90beaee7332cc08d7f7ed99b2782f33d",
+        "selected_ast_sha256": "3d1b05deb8714eb088d19a0238cf888c90beaee7332cc08d7f7ed99b2782f33d",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "marginal_gain",
+        "original_line": 98,
+        "original_end": 102,
+        "source_ast_sha256": "f3eec35df593cfdb01560d79e5911c0cdaf33e33d369c86488367ee325bc710c",
+        "selected_ast_sha256": "f3eec35df593cfdb01560d79e5911c0cdaf33e33d369c86488367ee325bc710c",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "expected_detection_probability",
+        "original_line": 105,
+        "original_end": 106,
+        "source_ast_sha256": "64ba465b6c1a270cd5a1d5adaeca5191e36c88a5cfd1a3d6bba82f1f3562b01f",
+        "selected_ast_sha256": "64ba465b6c1a270cd5a1d5adaeca5191e36c88a5cfd1a3d6bba82f1f3562b01f",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "response_diagnostics",
+        "original_line": 113,
+        "original_end": 141,
+        "source_ast_sha256": "c4cefeb7cba67cecbcc5556ee53899dcf39045b01825965d09b62e8c9dea9e5f",
+        "selected_ast_sha256": "c4cefeb7cba67cecbcc5556ee53899dcf39045b01825965d09b62e8c9dea9e5f",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 15,
+    "original_top_level_nodes": 19,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/online/allocator.py",
+    "target": "chapter3_bser/online/allocator.py",
+    "parent_sha256": "6f77ec62083446d1fa62bec8406ebfdd5988e6708614497a2fc6ba108f730ff2",
+    "target_sha256": "b68c1ba2c4d41f754c3df289136c383dfd0dc666388ebeebed2ed14bafd6f23a",
+    "retained_symbols": [
+      {
+        "name": "_path",
+        "original_line": 31,
+        "original_end": 33,
+        "source_ast_sha256": "4a2d6674462d11e321b5b2bbd9c5caa3db7f819822b56c6fd4e08391c91720eb",
+        "selected_ast_sha256": "4a2d6674462d11e321b5b2bbd9c5caa3db7f819822b56c6fd4e08391c91720eb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "BSEROnlineAllocator",
+        "original_line": 36,
+        "original_end": 341,
+        "source_ast_sha256": "4d3c5d97b332d17f7d101ff33745c456354815284dc6f81d9d87572953a377d5",
+        "selected_ast_sha256": "4d3c5d97b332d17f7d101ff33745c456354815284dc6f81d9d87572953a377d5",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 15,
+    "original_top_level_nodes": 17,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/online/config.py",
+    "target": "chapter3_bser/online/config.py",
+    "parent_sha256": "3850eb73be9b45a199635ef6d18616ea1d5ebcbc9aa0d46db5a2ce6c9ba612f3",
+    "target_sha256": "cf7f382966ec290bebeeca13692f7b83ae7a0d7767f600e85f82cb8c1db4a77e",
+    "retained_symbols": [
+      {
+        "name": "execution_runtime_config",
+        "original_line": 23,
+        "original_end": 30,
+        "source_ast_sha256": "f223ffe5bf419f998f9c73f98f4ca0cedd1092f2c6b04d7636adee90bf5258bb",
+        "selected_ast_sha256": "f223ffe5bf419f998f9c73f98f4ca0cedd1092f2c6b04d7636adee90bf5258bb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "load_phase1b2_config",
+        "original_line": 61,
+        "original_end": 82,
+        "source_ast_sha256": "3844152e55fe96a7043bb0025547c8f72979f1359bb6969bec3c50e0daabe197",
+        "selected_ast_sha256": "82bfa6a5678f70f662969be55deacc752d5c6e6aab92e8cd518a8d0463c519c0",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "load_phase1b_config",
+        "original_line": 33,
+        "original_end": 51,
+        "source_ast_sha256": "7e399c020cfe6939a1f5c861af420615cc4b0b0a19bed5819935744023b1e35d",
+        "selected_ast_sha256": "439a118b823c81758e418b319aa068623dabf58b378071552d687751f7c0ffe7",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 7,
+    "original_top_level_nodes": 13,
+    "reviewed_specialization": true
+  },
+  {
+    "source": "chapter3_bser/online/controller.py",
+    "target": "chapter3_bser/online/controller.py",
+    "parent_sha256": "ccb222f64bf393847a2597cd2e9cbf3ef9477b0b11d8eedd01d3c136ff2af61b",
+    "target_sha256": "e43254a106079368e5bc6ea8186f47645ce0f68627b3b95fedeeace6c569fa67",
+    "retained_symbols": [
+      {
+        "name": "OnlineBSERController",
+        "original_line": 28,
+        "original_end": 514,
+        "source_ast_sha256": "c9f1aa8e3d7fc32dda5886a23d5779de5f6dcdb079fd512c841dd767ba4f9a03",
+        "selected_ast_sha256": "c9f1aa8e3d7fc32dda5886a23d5779de5f6dcdb079fd512c841dd767ba4f9a03",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 15,
+    "original_top_level_nodes": 17,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/online/execution_manager.py",
+    "target": "chapter3_bser/online/execution_manager.py",
+    "parent_sha256": "307fb1b67cb6733b9425f9173fb2ae8441e4dad09a1b54a731ef33d41b090eb8",
+    "target_sha256": "e6d6ba51cd44c5f90223ea4962b1b5faecc286ef493685ca73b3b536d61ef080",
+    "retained_symbols": [
+      {
+        "name": "_path",
+        "original_line": 15,
+        "original_end": 17,
+        "source_ast_sha256": "4a2d6674462d11e321b5b2bbd9c5caa3db7f819822b56c6fd4e08391c91720eb",
+        "selected_ast_sha256": "4a2d6674462d11e321b5b2bbd9c5caa3db7f819822b56c6fd4e08391c91720eb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "ExecutionManager",
+        "original_line": 20,
+        "original_end": 89,
+        "source_ast_sha256": "9986843d73bf00dac3bd1256b2e4aaf2afd51782c0cfcbe000226d4d7f930f6c",
+        "selected_ast_sha256": "9986843d73bf00dac3bd1256b2e4aaf2afd51782c0cfcbe000226d4d7f930f6c",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 8,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/online/mission_context.py",
+    "target": "chapter3_bser/online/mission_context.py",
+    "parent_sha256": "7134a8e247a67ca1f1ace5e9cd84537142f454bd6da0d37c974dcec2a152fc49",
+    "target_sha256": "edc402462a25feb5e0370d84a74a303705efde60bfe8da3862d006790f93da1a",
+    "retained_symbols": [
+      {
+        "name": "OnlineMissionContext",
+        "original_line": 16,
+        "original_end": 66,
+        "source_ast_sha256": "6d2815124292b4b8c9b3c0517abaa897d872deba3cef7a968f6e06f77dfa165c",
+        "selected_ast_sha256": "6d2815124292b4b8c9b3c0517abaa897d872deba3cef7a968f6e06f77dfa165c",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 6,
+    "original_top_level_nodes": 8,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/online/route_impact.py",
+    "target": "chapter3_bser/online/route_impact.py",
+    "parent_sha256": "fdb2b8457f50ae79d0445bc28aa9c25defc4d649eb366dbd9ebb54b563e99e06",
+    "target_sha256": "56e969ad4011a0708306870f35d94aa5f61d8b06cfec19890ecd666d18261752",
+    "retained_symbols": [
+      {
+        "name": "RouteCheck",
+        "original_line": 17,
+        "original_end": 25,
+        "source_ast_sha256": "056ed28463cf59f62e642500a665194972fdf1fcf9cd5d55d4bb15693a3b4088",
+        "selected_ast_sha256": "056ed28463cf59f62e642500a665194972fdf1fcf9cd5d55d4bb15693a3b4088",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "RouteImpactResult",
+        "original_line": 29,
+        "original_end": 36,
+        "source_ast_sha256": "c97139eca7b187f1f7389f0fbcbe8e1e3d1b8d63a796e5ec30be96668ab9075f",
+        "selected_ast_sha256": "c97139eca7b187f1f7389f0fbcbe8e1e3d1b8d63a796e5ec30be96668ab9075f",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "RouteImpactEvaluator",
+        "original_line": 39,
+        "original_end": 136,
+        "source_ast_sha256": "681bcf2c91bf93e18059aaa25c139076c397fc40ff1db151612834f46be7cb4c",
+        "selected_ast_sha256": "681bcf2c91bf93e18059aaa25c139076c397fc40ff1db151612834f46be7cb4c",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 10,
+    "original_top_level_nodes": 12,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/online/state_cache.py",
+    "target": "chapter3_bser/online/state_cache.py",
+    "parent_sha256": "bca4c90e12705ea9aaced54de040ba519f3c8821bc03910d2df965c6d270a50e",
+    "target_sha256": "b467b0b4cd8b84da1ddb4de1ab3d29e1d301bc93d4c1c349150367bc3b8f9de8",
+    "retained_symbols": [
+      {
+        "name": "OnlineStateCache",
+        "original_line": 11,
+        "original_end": 31,
+        "source_ast_sha256": "146ee132c17c1952d808bfe29b71dda23e8bcc3611fb4dce56e0031d79434ba4",
+        "selected_ast_sha256": "146ee132c17c1952d808bfe29b71dda23e8bcc3611fb4dce56e0031d79434ba4",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 3,
+    "original_top_level_nodes": 5,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/online/types.py",
+    "target": "chapter3_bser/online/types.py",
+    "parent_sha256": "7b2234177c152768675ae590add5e354f8051fd871fe7ec1d1a2c3fff6f27dfb",
+    "target_sha256": "623ddf947b87c49815aa95160b3928ff532d61056c38a42f6ef7022ade68e13d",
+    "retained_symbols": [
+      {
+        "name": "SearchAssignment",
+        "original_line": 17,
+        "original_end": 25,
+        "source_ast_sha256": "8fc948c5a922e2669dffb340e3d9a33610cbafe44eac26f0cb544719f43497b8",
+        "selected_ast_sha256": "8fc948c5a922e2669dffb340e3d9a33610cbafe44eac26f0cb544719f43497b8",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "ExecutorAssignment",
+        "original_line": 29,
+        "original_end": 38,
+        "source_ast_sha256": "5d9e31d739e1ad131baffe083d1a3f69d7f66d9bd61155f802ae140b5a9ebf1e",
+        "selected_ast_sha256": "5d9e31d739e1ad131baffe083d1a3f69d7f66d9bd61155f802ae140b5a9ebf1e",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "OnlineAllocation",
+        "original_line": 42,
+        "original_end": 63,
+        "source_ast_sha256": "b7ea894aa2f80e9f27bb474ddb61ac4f9d0b7798ada1f1af16e69e2185fc1b73",
+        "selected_ast_sha256": "b7ea894aa2f80e9f27bb474ddb61ac4f9d0b7798ada1f1af16e69e2185fc1b73",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "CurrentAssignment",
+        "original_line": 67,
+        "original_end": 72,
+        "source_ast_sha256": "5bac4ed817f718dd749d72e3a3008d80862f61e639eebf1024e2b16e6ac748f4",
+        "selected_ast_sha256": "5bac4ed817f718dd749d72e3a3008d80862f61e639eebf1024e2b16e6ac748f4",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "InitialBSERAllocation",
+        "original_line": 76,
+        "original_end": 78,
+        "source_ast_sha256": "6e8caf144ffcfc9844feba77745e12c3863d6637425b0c414d8bbf16a578365f",
+        "selected_ast_sha256": "6e8caf144ffcfc9844feba77745e12c3863d6637425b0c414d8bbf16a578365f",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "BSERActionAssignment",
+        "original_line": 82,
+        "original_end": 90,
+        "source_ast_sha256": "e5e08bdae135c4958c0ea4932bf26786b776f70d87320e587bd4851cc14aaf3d",
+        "selected_ast_sha256": "e5e08bdae135c4958c0ea4932bf26786b776f70d87320e587bd4851cc14aaf3d",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "OnlineStepDiagnostics",
+        "original_line": 94,
+        "original_end": 111,
+        "source_ast_sha256": "37aa7d0eccb4723d01c9bef8141a8ce0e71386ee6c5f0086eac81d632d859297",
+        "selected_ast_sha256": "37aa7d0eccb4723d01c9bef8141a8ce0e71386ee6c5f0086eac81d632d859297",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 13,
+    "original_top_level_nodes": 15,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/online/waypoint_manager.py",
+    "target": "chapter3_bser/online/waypoint_manager.py",
+    "parent_sha256": "164a552019c754aa93ce4b660a032212f4102c23b560a9c714a336b87f2fefa3",
+    "target_sha256": "9ecc7695e5fab6000d05864f16193a92c11f7049f6084831e623b85fefdb2150",
+    "retained_symbols": [
+      {
+        "name": "WaypointManager",
+        "original_line": 12,
+        "original_end": 93,
+        "source_ast_sha256": "462c56b3462ec303b34375fdef80a6075fa2dd25ae826f909875f591bd23db81",
+        "selected_ast_sha256": "b38453ad5de947ec4835a1210b96dd67ae73aad8f29b7a4e6efa091fc0fab955",
+        "explicitly_dropped_methods": [
+          "mean_switch_distance",
+          "waypoint_by_agent"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 4,
+    "original_top_level_nodes": 6,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "chapter3_bser/types.py",
+    "target": "chapter3_bser/types.py",
+    "parent_sha256": "c57971208314a9717744f1ed7fabd295c0112893738a4146fe65e60adf235863",
+    "target_sha256": "316bf74ab7107877d320f4c68dadeb31c84e429e7a1c618be95b64da24d57e36",
+    "retained_symbols": [
+      {
+        "name": "SearchCandidate",
+        "original_line": 12,
+        "original_end": 29,
+        "source_ast_sha256": "956659f14b8800b716d35737eeb2b8238812f5c02ef428f0776b9683ad293a6d",
+        "selected_ast_sha256": "956659f14b8800b716d35737eeb2b8238812f5c02ef428f0776b9683ad293a6d",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "StandbyCandidate",
+        "original_line": 33,
+        "original_end": 49,
+        "source_ast_sha256": "a5fa65ca40c10adc19ff39a29f743b465eeb74d552a52281a2cd643c1e7f7570",
+        "selected_ast_sha256": "a5fa65ca40c10adc19ff39a29f743b465eeb74d552a52281a2cd643c1e7f7570",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "CandidateGenerationResult",
+        "original_line": 53,
+        "original_end": 59,
+        "source_ast_sha256": "479262b50371acae276526aafd98fab179f87e97c22a838bcefb56bfb969c74a",
+        "selected_ast_sha256": "479262b50371acae276526aafd98fab179f87e97c22a838bcefb56bfb969c74a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "SolverResult",
+        "original_line": 63,
+        "original_end": 73,
+        "source_ast_sha256": "b557674a8b7c7c2c0fcab5356eef83e62c5f09cce520f284078af0d7504f73d1",
+        "selected_ast_sha256": "1f1b9b9f54fc56f2e98f7fee0e55468bacf1034dec10b4a0271dd1fb3ff2aa97",
+        "explicitly_dropped_methods": [
+          "selected_ids"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 7,
+    "original_top_level_nodes": 9,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/algorithms/agents.py",
+    "target": "core/algorithms/agents.py",
+    "parent_sha256": "0cf9872c6c2d1cf5ed6797862967dc63ccb34da574cb70487e87e1cca9cb26d5",
+    "target_sha256": "25b4011653886d802566155d5707967ca76bbb6d789654ba48b835ce5e5de9d8",
+    "retained_symbols": [
+      {
+        "name": "_validate_adam_slot",
+        "original_line": 13,
+        "original_end": 35,
+        "source_ast_sha256": "079922e7c1f013979726fde7b3d6352f129aad91aced46521cf66d131ca8d6ad",
+        "selected_ast_sha256": "079922e7c1f013979726fde7b3d6352f129aad91aced46521cf66d131ca8d6ad",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "validate_optimizer_state",
+        "original_line": 38,
+        "original_end": 57,
+        "source_ast_sha256": "e480c86cdb9af8b8efbb89aa5242222b64ba4775ff16d7369d5b4f840f7e9422",
+        "selected_ast_sha256": "e480c86cdb9af8b8efbb89aa5242222b64ba4775ff16d7369d5b4f840f7e9422",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "validate_module_snapshot",
+        "original_line": 60,
+        "original_end": 69,
+        "source_ast_sha256": "1ac8b74345b77d819425a69a989d99996f85ed2f145c487e6f65eef4cdc665bc",
+        "selected_ast_sha256": "1ac8b74345b77d819425a69a989d99996f85ed2f145c487e6f65eef4cdc665bc",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "validate_optimizer_snapshot",
+        "original_line": 72,
+        "original_end": 97,
+        "source_ast_sha256": "93371b9e5123b697d781aa1ee7cfae4564a2dfc0830ca241f65a239d6f120b85",
+        "selected_ast_sha256": "93371b9e5123b697d781aa1ee7cfae4564a2dfc0830ca241f65a239d6f120b85",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "optimizer_transaction",
+        "original_line": 101,
+        "original_end": 126,
+        "source_ast_sha256": "d7afb0ab44e304a8af001eab8f8f946d0d5b048ecc828990fce33040826f87c7",
+        "selected_ast_sha256": "d7afb0ab44e304a8af001eab8f8f946d0d5b048ecc828990fce33040826f87c7",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "DDPGAgent",
+        "original_line": 129,
+        "original_end": 299,
+        "source_ast_sha256": "b7c768308baf73cde227d5005efa7f22c4e3885c525104810d12867b9517db51",
+        "selected_ast_sha256": "938b0c7340018ad37c3fc8516ebd389460de3ef87fc30a0605f7ada5bddd616f",
+        "explicitly_dropped_methods": [
+          "critic_optimizer",
+          "get_params",
+          "load_params",
+          "target_critic"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 15,
+    "original_top_level_nodes": 15,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/algorithms/maddpg.py",
+    "target": "core/algorithms/maddpg.py",
+    "parent_sha256": "a88edb4c12c3daa38bbad141f4c4c738e26f56619b321dfaf1250f89fe711245",
+    "target_sha256": "3663c9e4a8f9d84802d20060af762d1d7c40126b480d20137df79e424fc0c1ff",
+    "retained_symbols": [
+      {
+        "name": "MADDPG",
+        "original_line": 15,
+        "original_end": 624,
+        "source_ast_sha256": "e1ac68f9272ad05b3f478bf98989c6a701359e3492db843ce987fc2e1f0e63e7",
+        "selected_ast_sha256": "852a0a79b02a8ae4e648bf3f3157dd351265442c37d329401d32cae9fc5cc33b",
+        "explicitly_dropped_methods": [
+          "init_from_save",
+          "save",
+          "step_residual",
+          "update_critic_only"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 9,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/algorithms/misc.py",
+    "target": "core/algorithms/misc.py",
+    "parent_sha256": "8b6a2c85ba0367b636ae32af27f97d665d153a1e7f66fd0e4c84279f7d152337",
+    "target_sha256": "095743cf3fa8b8973926da462ea847b4fe33b7fd9a0eab38c9e3d0be418d50fd",
+    "retained_symbols": [
+      {
+        "name": "soft_update_group",
+        "original_line": 8,
+        "original_end": 36,
+        "source_ast_sha256": "a1e4e27db8d8da0d9e6241c4bb6f5b3c013850fa50c8b8572730c8b78c08d2fd",
+        "selected_ast_sha256": "a1e4e27db8d8da0d9e6241c4bb6f5b3c013850fa50c8b8572730c8b78c08d2fd",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "hard_update",
+        "original_line": 43,
+        "original_end": 56,
+        "source_ast_sha256": "48cffcfc652a5e5c7cb8f8fb86edf0450572f449e87ec71b80982d098543735a",
+        "selected_ast_sha256": "48cffcfc652a5e5c7cb8f8fb86edf0450572f449e87ec71b80982d098543735a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "onehot_from_logits",
+        "original_line": 59,
+        "original_end": 70,
+        "source_ast_sha256": "b87356912b8aa2426e526981b364835dae85e80071d03b0aa9f3c27f7247d1d5",
+        "selected_ast_sha256": "b87356912b8aa2426e526981b364835dae85e80071d03b0aa9f3c27f7247d1d5",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "sample_gumbel",
+        "original_line": 73,
+        "original_end": 76,
+        "source_ast_sha256": "1126a9c068cc97aa827b93ba02d8b383dbd0545d6afb7ab6884433caf2ba4106",
+        "selected_ast_sha256": "1126a9c068cc97aa827b93ba02d8b383dbd0545d6afb7ab6884433caf2ba4106",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "gumbel_softmax_sample",
+        "original_line": 79,
+        "original_end": 81,
+        "source_ast_sha256": "de2ccade9963a4dc07073bb495ff54d15cace9a1b81e3dfcb9f44ff7241ceeb7",
+        "selected_ast_sha256": "de2ccade9963a4dc07073bb495ff54d15cace9a1b81e3dfcb9f44ff7241ceeb7",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "gumbel_softmax",
+        "original_line": 84,
+        "original_end": 89,
+        "source_ast_sha256": "fa47dd541b108f6c7d60928b0c35b4a62c0488c356b355b55f35c6f0a2855ac4",
+        "selected_ast_sha256": "fa47dd541b108f6c7d60928b0c35b4a62c0488c356b355b55f35c6f0a2855ac4",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 11,
+    "original_top_level_nodes": 12,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/algorithms/networks.py",
+    "target": "core/algorithms/networks.py",
+    "parent_sha256": "fe28d54150c245f698418c57b850db44225a8fd65f8119ca38469270d5be54cc",
+    "target_sha256": "3faf4ce4de9377fd6d580d78b899d879820b1b06ea4f3f95018f41bb7ffcce2f",
+    "retained_symbols": [
+      {
+        "name": "Identity",
+        "original_line": 6,
+        "original_end": 8,
+        "source_ast_sha256": "8e3776cbcfe19a61c40d393411e52b87650594ea83145039a9d87e1312415d40",
+        "selected_ast_sha256": "8e3776cbcfe19a61c40d393411e52b87650594ea83145039a9d87e1312415d40",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "MLPNetwork",
+        "original_line": 11,
+        "original_end": 43,
+        "source_ast_sha256": "cbc6948f9cb603a263dd5ea5497c06892f054418cfec31332e6125c265937fb6",
+        "selected_ast_sha256": "cbc6948f9cb603a263dd5ea5497c06892f054418cfec31332e6125c265937fb6",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 5,
+    "original_top_level_nodes": 5,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/algorithms/noise.py",
+    "target": "core/algorithms/noise.py",
+    "parent_sha256": "3d3fb7c0248d3900900ab311d6d3c68dd41b33216a04c70435ad2a5b1163fe9f",
+    "target_sha256": "8b356ab850f048ccca644e7267c6bf916c37a7564730a33880db18342064c448",
+    "retained_symbols": [
+      {
+        "name": "OUNoise",
+        "original_line": 4,
+        "original_end": 38,
+        "source_ast_sha256": "6ec4ef84787191274582ca8ae48875b6ad60645c2da900506cc31b0db56f8503",
+        "selected_ast_sha256": "6ec4ef84787191274582ca8ae48875b6ad60645c2da900506cc31b0db56f8503",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 2,
+    "original_top_level_nodes": 2,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/communication/basic_communication.py",
+    "target": "core/communication/basic_communication.py",
+    "parent_sha256": "cde58122008981ae4fa29fb003310824ebd6c7116452a2bfd272eaa9b784c595",
+    "target_sha256": "050a8f7e8e0a2895895c8d290f18acac49cae10a7e1a0c95a08626fa1fd34599",
+    "retained_symbols": [
+      {
+        "name": "_copy_target",
+        "original_line": 15,
+        "original_end": 24,
+        "source_ast_sha256": "cec70643a9e08d145f9299a7f173faa62f37ba28f8d4d5d3f092128147d8f4e0",
+        "selected_ast_sha256": "cec70643a9e08d145f9299a7f173faa62f37ba28f8d4d5d3f092128147d8f4e0",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "FixedReliableHandoff",
+        "original_line": 27,
+        "original_end": 77,
+        "source_ast_sha256": "128685131cadb7ecc894774df8a97dad44cd47c757906d606e93a41bb61e63e9",
+        "selected_ast_sha256": "128685131cadb7ecc894774df8a97dad44cd47c757906d606e93a41bb61e63e9",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 4,
+    "original_top_level_nodes": 6,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/config/ch3_config.py",
+    "target": "core/config/active_environment.py",
+    "parent_sha256": "445ab698c37ac698ca2b291a25427d9f5647cacc979167d1deaa0657aa9c6085",
+    "target_sha256": "cfa54b960a835512fa8c5fbb778f81dcf5e20d32cebeca635e39f930c3ae8fc6",
+    "retained_symbols": [
+      {
+        "name": "build_ch3_config",
+        "original_line": 125,
+        "original_end": 149,
+        "source_ast_sha256": "e721ada58739411c4ad046980d5f77f3af9fdfb465d7102717c288a68f0a10aa",
+        "selected_ast_sha256": "bc6ac19d9dcb9053099e7bfc077fdb7a8cfa7c411dc14c4c6dba8255805e23fa",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 4,
+    "original_top_level_nodes": 15,
+    "reviewed_specialization": true
+  },
+  {
+    "source": "core/config/ch3_constants.py",
+    "target": "core/config/ch3_constants.py",
+    "parent_sha256": "53ebf6bafd9ba4ad9286a6a15ce415f821593ac14d779650a6ab53bc15038146",
+    "target_sha256": "1b4f45c1031fa324e57eaccc32c7179aaac5687db884c38d059a2d505c1f53f8",
+    "retained_symbols": [],
+    "selected_top_level_nodes": 9,
+    "original_top_level_nodes": 28,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/env/mission_env.py",
+    "target": "core/env/mission_env.py",
+    "parent_sha256": "e4d853fe143764ef4197cba472ebd045fbd0d03fae956cf539aae491f946657f",
+    "target_sha256": "53ca90a07a7bf212db8615485f52a1a67071ab686e9588e8496282a8ca19176b",
+    "retained_symbols": [
+      {
+        "name": "environment_kwargs_from_config",
+        "original_line": 22,
+        "original_end": 47,
+        "source_ast_sha256": "15152437b5099e94ca794bbe913715d81954d70afb1b535d5e700e284d24037a",
+        "selected_ast_sha256": "15152437b5099e94ca794bbe913715d81954d70afb1b535d5e700e284d24037a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_array",
+        "original_line": 50,
+        "original_end": 53,
+        "source_ast_sha256": "63ea0bd3ae9f05464bb84c50bf123c5b776c89cd3843f9a97fd92d0153baab15",
+        "selected_ast_sha256": "63ea0bd3ae9f05464bb84c50bf123c5b776c89cd3843f9a97fd92d0153baab15",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_vectors",
+        "original_line": 56,
+        "original_end": 58,
+        "source_ast_sha256": "f1d22b8494e8c392a0d8129a57f07efa608433cfd92421dd91de1a797400e1bb",
+        "selected_ast_sha256": "f1d22b8494e8c392a0d8129a57f07efa608433cfd92421dd91de1a797400e1bb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "MissionCoreEnv",
+        "original_line": 61,
+        "original_end": 193,
+        "source_ast_sha256": "a1597a8b493e36054f39a2909332d52056298940442b3fe63aff8a2362a0355e",
+        "selected_ast_sha256": "b42ffe000fea990031394ea7418cf6e0f17c00015c26cf32d39687b836e30a39",
+        "explicitly_dropped_methods": [
+          "get_local_observations",
+          "get_mapping_state",
+          "get_privileged_training_state",
+          "get_target_state"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 11,
+    "original_top_level_nodes": 13,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/env/observation_contract.py",
+    "target": "core/env/observation_contract.py",
+    "parent_sha256": "3ec924b14bd760ace9f8aacecbc3719c533bbdf8f27adbf0926578fa53f0db46",
+    "target_sha256": "cf5fc38fbad9903d7969d66fe6aa21e1489cd0957d69b9e8084211f9191597ea",
+    "retained_symbols": [],
+    "selected_top_level_nodes": 2,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/env/target_motion.py",
+    "target": "core/env/target_motion.py",
+    "parent_sha256": "e35ae02447723dfdc6be23d31fa4ed73a992ddcf12998947bd2af0b6084844af",
+    "target_sha256": "5a4459d15035740ca76899065b8e45ac64a99257eee6edf8db2f362dc41d478f",
+    "retained_symbols": [
+      {
+        "name": "_nonnegative_int",
+        "original_line": 30,
+        "original_end": 36,
+        "source_ast_sha256": "353148195e073637ed939b0d902ed68b554a32cdee51c4ed26b14beb599d3b77",
+        "selected_ast_sha256": "353148195e073637ed939b0d902ed68b554a32cdee51c4ed26b14beb599d3b77",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_validate_finite_numbers",
+        "original_line": 39,
+        "original_end": 51,
+        "source_ast_sha256": "f254dbfa2fd468263647310aa669fe671d7c0d1b8707a6b90d6790ac853aa5dd",
+        "selected_ast_sha256": "f254dbfa2fd468263647310aa669fe671d7c0d1b8707a6b90d6790ac853aa5dd",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_vec3",
+        "original_line": 54,
+        "original_end": 58,
+        "source_ast_sha256": "68ddfb84cc46d61a836635f7e568d865867c593ce34026c2061df96a5ef3424c",
+        "selected_ast_sha256": "68ddfb84cc46d61a836635f7e568d865867c593ce34026c2061df96a5ef3424c",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_expanded_boxes",
+        "original_line": 61,
+        "original_end": 71,
+        "source_ast_sha256": "369579a2e603efee736f59158311d95e28824b1f773ccdb23fd82e682fa9af91",
+        "selected_ast_sha256": "369579a2e603efee736f59158311d95e28824b1f773ccdb23fd82e682fa9af91",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "segment_aabb_first_hit",
+        "original_line": 74,
+        "original_end": 105,
+        "source_ast_sha256": "6c94c4e91987b99769ea76c96eab74d9e978644b6a9a242d635ccb40443827fd",
+        "selected_ast_sha256": "6c94c4e91987b99769ea76c96eab74d9e978644b6a9a242d635ccb40443827fd",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_boundary_first_hit",
+        "original_line": 108,
+        "original_end": 128,
+        "source_ast_sha256": "4ae6c45ec4af61846d7ed6b47a629bc1cdcc9ddb47fdfd2645868f70de2d318a",
+        "selected_ast_sha256": "4ae6c45ec4af61846d7ed6b47a629bc1cdcc9ddb47fdfd2645868f70de2d318a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "TargetState",
+        "original_line": 132,
+        "original_end": 246,
+        "source_ast_sha256": "588fd10e8910d1ad0aec583254335a8904bdcb105ae4ee5752578b8452a928b0",
+        "selected_ast_sha256": "b7117825b0b97bcc68340aa84578f014a66bdcddf505f02f36593cfa9a2c4e92",
+        "explicitly_dropped_methods": [
+          "predict"
+        ]
+      },
+      {
+        "name": "advance_target_state",
+        "original_line": 249,
+        "original_end": 318,
+        "source_ast_sha256": "99d5b4dc4b5025a104bd0bc6f6d49fe0a4c6af52634930c978e9e84de9eb121e",
+        "selected_ast_sha256": "99d5b4dc4b5025a104bd0bc6f6d49fe0a4c6af52634930c978e9e84de9eb121e",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_plain_prediction_metadata",
+        "original_line": 327,
+        "original_end": 334,
+        "source_ast_sha256": "77655b4c1f410f46f16bbbbefa571742dd1abdad84b0f0417382220b86a763ee",
+        "selected_ast_sha256": "77655b4c1f410f46f16bbbbefa571742dd1abdad84b0f0417382220b86a763ee",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_prediction_context",
+        "original_line": 337,
+        "original_end": 379,
+        "source_ast_sha256": "ceed13e9c5fb4809613c3b8ea2e1720bb497dc5790b1c9a4d43fb84eca548396",
+        "selected_ast_sha256": "ceed13e9c5fb4809613c3b8ea2e1720bb497dc5790b1c9a4d43fb84eca548396",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_prediction_step",
+        "original_line": 383,
+        "original_end": 397,
+        "source_ast_sha256": "b43c927f902c3b2413bc17e440ddfe7c09502353b5eccccab28798ef3b50b4c4",
+        "selected_ast_sha256": "b43c927f902c3b2413bc17e440ddfe7c09502353b5eccccab28798ef3b50b4c4",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "predict_target_state",
+        "original_line": 400,
+        "original_end": 429,
+        "source_ast_sha256": "2bc3dcc9afbf13377867c1fa945afdd0c867d460214431055493423eade343dd",
+        "selected_ast_sha256": "2bc3dcc9afbf13377867c1fa945afdd0c867d460214431055493423eade343dd",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "simulate_target_trajectory",
+        "original_line": 432,
+        "original_end": 450,
+        "source_ast_sha256": "aab5bd51be352f92382a340474290f870e884d70dd340e03fd153e6950df1f30",
+        "selected_ast_sha256": "aab5bd51be352f92382a340474290f870e884d70dd340e03fd153e6950df1f30",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "swept_relative_min_distance",
+        "original_line": 453,
+        "original_end": 461,
+        "source_ast_sha256": "707c0cd7eebe46b8ae0a590e7a99db2d1cc7e1a9c58c0dd19c8b6b33aab4c75a",
+        "selected_ast_sha256": "707c0cd7eebe46b8ae0a590e7a99db2d1cc7e1a9c58c0dd19c8b6b33aab4c75a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "solve_intercept_point",
+        "original_line": 464,
+        "original_end": 508,
+        "source_ast_sha256": "1c8c7158aea6dacfc7ac9bc4f72f70e4ecba0c1ab27094a4fd0d795a9e7712a8",
+        "selected_ast_sha256": "1c8c7158aea6dacfc7ac9bc4f72f70e4ecba0c1ab27094a4fd0d795a9e7712a8",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 25,
+    "original_top_level_nodes": 27,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/env/task_protocol.py",
+    "target": "core/env/task_protocol.py",
+    "parent_sha256": "a2786eb3fa1db4fde485cbf21ef22226b3eefed4113b799888b1a820656638bb",
+    "target_sha256": "5a4daa807ce144cda8a13e20e2bc700f1680212b750c1455ac213b0a3217143b",
+    "retained_symbols": [
+      {
+        "name": "protocol_identity",
+        "original_line": 18,
+        "original_end": 28,
+        "source_ast_sha256": "fefc624c129478b7f08ca564f27e252c3d286df8fc75f06a6f9cf8ee7da70818",
+        "selected_ast_sha256": "fefc624c129478b7f08ca564f27e252c3d286df8fc75f06a6f9cf8ee7da70818",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "validate_task_config",
+        "original_line": 31,
+        "original_end": 44,
+        "source_ast_sha256": "1f9c32a8944d30e524f113d45babdbac0b05179a66693f21a39d02a3eb225114",
+        "selected_ast_sha256": "1f9c32a8944d30e524f113d45babdbac0b05179a66693f21a39d02a3eb225114",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "require_protocol_output",
+        "original_line": 47,
+        "original_end": 50,
+        "source_ast_sha256": "0873bac406e4619728541bd8646c5414ac2a9e9c42ef651a9c689f3cf1ba0787",
+        "selected_ast_sha256": "0873bac406e4619728541bd8646c5414ac2a9e9c42ef651a9c689f3cf1ba0787",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "closed_segment_aabb_first_hit",
+        "original_line": 53,
+        "original_end": 76,
+        "source_ast_sha256": "706b0d6ee923a853119fa32384552e80d4a1fc75e897290b2299c0c37a2d5c7c",
+        "selected_ast_sha256": "706b0d6ee923a853119fa32384552e80d4a1fc75e897290b2299c0c37a2d5c7c",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "EpisodeOutcome",
+        "original_line": 80,
+        "original_end": 101,
+        "source_ast_sha256": "7f45c5f1cbcff7599603d56241885c0674755586721a163d722b0d7ed69093a2",
+        "selected_ast_sha256": "7f45c5f1cbcff7599603d56241885c0674755586721a163d722b0d7ed69093a2",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "strict_terminal",
+        "original_line": 104,
+        "original_end": 107,
+        "source_ast_sha256": "8ad0cccdf1f8ff2ea6b0417eee6cbb7c52c1559557e6fc2fce66882510b4c5f4",
+        "selected_ast_sha256": "8ad0cccdf1f8ff2ea6b0417eee6cbb7c52c1559557e6fc2fce66882510b4c5f4",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "episode_result",
+        "original_line": 110,
+        "original_end": 121,
+        "source_ast_sha256": "0f4510bb7e1df22602f790ee3f14095a5da0b43f6803f61f322e49d1ad26fb7c",
+        "selected_ast_sha256": "0f4510bb7e1df22602f790ee3f14095a5da0b43f6803f61f322e49d1ad26fb7c",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 15,
+    "original_top_level_nodes": 16,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/env/task_state.py",
+    "target": "core/env/task_state.py",
+    "parent_sha256": "a57c48f4176bcfc67c03d3b55c261f2c5e25a55121677104d351b23f896ea53d",
+    "target_sha256": "c6f882cb71038b7580a909164ff669469a9eeba53e84deb08c5dab8e73d63484",
+    "retained_symbols": [
+      {
+        "name": "MissionTaskState",
+        "original_line": 17,
+        "original_end": 24,
+        "source_ast_sha256": "a11b8df5ef1c4a242a1e62e52e9841f159d9854813b9bace97acae261ea49c52",
+        "selected_ast_sha256": "a11b8df5ef1c4a242a1e62e52e9841f159d9854813b9bace97acae261ea49c52",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "AgentStateView",
+        "original_line": 36,
+        "original_end": 41,
+        "source_ast_sha256": "2909274a1dab29010d17b3749bbb6757769faab3b43d90f1d3dff7297a4b0bd2",
+        "selected_ast_sha256": "2909274a1dab29010d17b3749bbb6757769faab3b43d90f1d3dff7297a4b0bd2",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "SearchExecutionState",
+        "original_line": 45,
+        "original_end": 51,
+        "source_ast_sha256": "70e107add75cbf727715f82b5f09ccdf6065c514c0828e5b5e0a0a152b9c87e9",
+        "selected_ast_sha256": "70e107add75cbf727715f82b5f09ccdf6065c514c0828e5b5e0a0a152b9c87e9",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 6,
+    "original_top_level_nodes": 10,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/env/uav_env.py",
+    "target": "core/env/uav_env.py",
+    "parent_sha256": "402878207aa69f334311e1c690dbc7b231a7fde0a0a7affaf5c645c1dd24d60b",
+    "target_sha256": "83b7ea143e8c203c4e0249c4c2f0b212eae05ca1b612941e7bc6245fa33d1556",
+    "retained_symbols": [
+      {
+        "name": "_BaseUAVEnv",
+        "original_line": 34,
+        "original_end": 1398,
+        "source_ast_sha256": "c7f179974d0dab28c17511b07970db86de127d692b33db63e2b02f9b9b5a7ded",
+        "selected_ast_sha256": "6a39fe9daafc6d3e043a5f627e7a8f9dca00a5a3402fc164ac1809a1e6b97cc3",
+        "explicitly_dropped_methods": [
+          "agent_acc",
+          "agent_vel",
+          "collision_flags",
+          "get_ch3_communication_metrics",
+          "get_observation_layout",
+          "nav_targets",
+          "prev_acc",
+          "targets",
+          "task_target"
+        ]
+      },
+      {
+        "name": "DummySpace",
+        "original_line": 1401,
+        "original_end": 1403,
+        "source_ast_sha256": "8f44ad84a51d30966dee8e687379b7ee842b00ff3ccd40ba929a07b5f1352ff3",
+        "selected_ast_sha256": "8f44ad84a51d30966dee8e687379b7ee842b00ff3ccd40ba929a07b5f1352ff3",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "UAVEnv",
+        "original_line": 1406,
+        "original_end": 2535,
+        "source_ast_sha256": "2d978e63300e090e30c626046e560167ebd82635b5037ef0a6a140277f1dbb14",
+        "selected_ast_sha256": "6bbdd9b954b41252e2ce95bf7419aaa73b1aeb961de70fe6ea3264851ff0c0d9",
+        "explicitly_dropped_methods": [
+          "_truth_occupancy_mask",
+          "get_unknown_map_metrics"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 13,
+    "original_top_level_nodes": 19,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/mapping/map_module.py",
+    "target": "core/mapping/map_module.py",
+    "parent_sha256": "21cd5be94738c0b85cdead218e480925b42abc42a53190f4870f066347a3a907",
+    "target_sha256": "c92654ddac5e13c410153103805592affbcc5e12a5d193955d8ea1acfc9dc78a",
+    "retained_symbols": [
+      {
+        "name": "PheromoneWaypointPlanner",
+        "original_line": 8,
+        "original_end": 429,
+        "source_ast_sha256": "0f8a2670135043b25fa9dfc44265cb792411e4d127e93f332db0488c7bc9ab02",
+        "selected_ast_sha256": "554ef16f9ee03bc9b017dc544c269c79abfa69887e82e797288a1556d8dfbf60",
+        "explicitly_dropped_methods": [
+          "_sample_count",
+          "build_episode_waypoints",
+          "register_negative_observation"
+        ]
+      },
+      {
+        "name": "ProbabilisticTaskMapPlanner",
+        "original_line": 432,
+        "original_end": 979,
+        "source_ast_sha256": "608185a6f9ccc684e6f6835cf5013e3d274eb3ed66ca8f1dd6fb0ca11c96970b",
+        "selected_ast_sha256": "8f53b8136b32066b394cf6cd9f579f987e3583d73049f9655d444b47d7e01678",
+        "explicitly_dropped_methods": [
+          "score_point"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 6,
+    "original_top_level_nodes": 6,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/mapping/path_planner.py",
+    "target": "core/mapping/path_planner.py",
+    "parent_sha256": "032cc1f5f1488f668ac7c1b4e8f7bb0a01003f9546f04312008dd464ffcb269c",
+    "target_sha256": "0415b51e1ac2c8f0e48b8b4effaf19b741adc6dca4a3203b2c2282654351c2aa",
+    "retained_symbols": [
+      {
+        "name": "ObstacleAwareTaskMapPlanner",
+        "original_line": 21,
+        "original_end": 1112,
+        "source_ast_sha256": "fdb67692c24b69b906aa590231867d3807a0f41b225b12e4d0ee2f9a8a026de2",
+        "selected_ast_sha256": "256a7221dc95f0acd06828748f126f3fb5069448ad6b0e8011d5474650de2a25",
+        "explicitly_dropped_methods": [
+          "_single_source_costs",
+          "is_reachable_endpoint",
+          "nearest_valid_grid_cell"
+        ]
+      },
+      {
+        "name": "_online_cells",
+        "original_line": 1120,
+        "original_end": 1128,
+        "source_ast_sha256": "7807005fb76c74196958ab051db49e19d72d2317e22c1993b1cac791f5d59451",
+        "selected_ast_sha256": "7807005fb76c74196958ab051db49e19d72d2317e22c1993b1cac791f5d59451",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_online_segment_cells",
+        "original_line": 1132,
+        "original_end": 1142,
+        "source_ast_sha256": "5cb23047377bf56cfeff5dc203dea9cf4a64556e4fd9b543821f57e9505c35af",
+        "selected_ast_sha256": "5cb23047377bf56cfeff5dc203dea9cf4a64556e4fd9b543821f57e9505c35af",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_sampled_online_segment_free",
+        "original_line": 1146,
+        "original_end": 1160,
+        "source_ast_sha256": "bd86e517a2de6d2d43a9554ce4401dd8d614b5b5b6a26d3eb35d0c8ea01ff0e7",
+        "selected_ast_sha256": "bd86e517a2de6d2d43a9554ce4401dd8d614b5b5b6a26d3eb35d0c8ea01ff0e7",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_online_physical_time",
+        "original_line": 1164,
+        "original_end": 1170,
+        "source_ast_sha256": "d7b59fc829e1dd7e4bfa4b85efdf59f698ad6ca9535af45505b7ff84cd8fa936",
+        "selected_ast_sha256": "d7b59fc829e1dd7e4bfa4b85efdf59f698ad6ca9535af45505b7ff84cd8fa936",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "OnlineUnknownMapTaskPlanner",
+        "original_line": 1173,
+        "original_end": 1965,
+        "source_ast_sha256": "3f6b03ef7d5aa5e7cc33c911ae32e0f258634ab14fe9626435cf5b2943e9e091",
+        "selected_ast_sha256": "d6f86c77fa8459e3db476f7218a1ba8c6cdd66a3c322da751ae606b657ce0091",
+        "explicitly_dropped_methods": [
+          "map_statistics",
+          "mark_all_free"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 19,
+    "original_top_level_nodes": 22,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/mapping/planning_graph.py",
+    "target": "core/mapping/planning_graph.py",
+    "parent_sha256": "8d0771716459a33131fefc6847af5e58569bc763c0a80090f692320b7d6176bc",
+    "target_sha256": "d81242565c92c33174d44c9ce90436c57cbac048e71ddac0657c720f9b76265c",
+    "retained_symbols": [
+      {
+        "name": "_readonly",
+        "original_line": 22,
+        "original_end": 27,
+        "source_ast_sha256": "55c9cf02e619a7893159b713663d88e8680c15c767cd04dbd7708b2de8cbbbae",
+        "selected_ast_sha256": "55c9cf02e619a7893159b713663d88e8680c15c767cd04dbd7708b2de8cbbbae",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PlanningEdgeView",
+        "original_line": 31,
+        "original_end": 34,
+        "source_ast_sha256": "3c7dfaf17d905737a540992359fac483e9579a9e11fd0181e967ee928b00367a",
+        "selected_ast_sha256": "3c7dfaf17d905737a540992359fac483e9579a9e11fd0181e967ee928b00367a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PlanningConnectorView",
+        "original_line": 38,
+        "original_end": 42,
+        "source_ast_sha256": "f50bf5ad7c581ef9b9127cce17931b5beaec868513509298f37365ed6fff660f",
+        "selected_ast_sha256": "f50bf5ad7c581ef9b9127cce17931b5beaec868513509298f37365ed6fff660f",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "EndpointConnectorSet",
+        "original_line": 46,
+        "original_end": 51,
+        "source_ast_sha256": "c5eeccaed3069ab80a65fbebf12e0bc74a9aec996af98bc311af7a72a534287c",
+        "selected_ast_sha256": "c5eeccaed3069ab80a65fbebf12e0bc74a9aec996af98bc311af7a72a534287c",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PlanningGraphView",
+        "original_line": 55,
+        "original_end": 81,
+        "source_ast_sha256": "3e15f49d2f34f19e0cabbe8e7a0912f8fec0f0e3a0f735c29bf9a53a77cd38e2",
+        "selected_ast_sha256": "3e15f49d2f34f19e0cabbe8e7a0912f8fec0f0e3a0f735c29bf9a53a77cd38e2",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_flat",
+        "original_line": 84,
+        "original_end": 85,
+        "source_ast_sha256": "e301784cf980d3825a38ffff0337ad4caf4663043e2e9835d39b8ae3db016ad4",
+        "selected_ast_sha256": "e301784cf980d3825a38ffff0337ad4caf4663043e2e9835d39b8ae3db016ad4",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_diagnostic_snapshot",
+        "original_line": 88,
+        "original_end": 93,
+        "source_ast_sha256": "0ff05474f6af352a555bc89658b1c3c8592d0b5e8c500fdd2c23dfbbfb61d205",
+        "selected_ast_sha256": "0ff05474f6af352a555bc89658b1c3c8592d0b5e8c500fdd2c23dfbbfb61d205",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_topology",
+        "original_line": 96,
+        "original_end": 118,
+        "source_ast_sha256": "59dc0e0222625d3998ca0864d2c62b78c98b546a7b1558cd80bfd2de872eded0",
+        "selected_ast_sha256": "59dc0e0222625d3998ca0864d2c62b78c98b546a7b1558cd80bfd2de872eded0",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_component_labels_from_topology",
+        "original_line": 121,
+        "original_end": 138,
+        "source_ast_sha256": "67776531361652431b947732dab58f274294cddc0fe9921aade4c15e353e4279",
+        "selected_ast_sha256": "67776531361652431b947732dab58f274294cddc0fe9921aade4c15e353e4279",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_build_role_adjacency",
+        "original_line": 141,
+        "original_end": 183,
+        "source_ast_sha256": "a0561aad7c0bb6c4802acd70351c68980b0acfa36286f34098e40c557f996147",
+        "selected_ast_sha256": "a0561aad7c0bb6c4802acd70351c68980b0acfa36286f34098e40c557f996147",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_build_endpoint",
+        "original_line": 186,
+        "original_end": 217,
+        "source_ast_sha256": "c530d1a63522f6e9b6e877561fd59e86bd84f0bea18db8168a5a73717e62facb",
+        "selected_ast_sha256": "c530d1a63522f6e9b6e877561fd59e86bd84f0bea18db8168a5a73717e62facb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_graph_hash",
+        "original_line": 220,
+        "original_end": 240,
+        "source_ast_sha256": "f42ab7fb646b852beaece6b5f7bebc6e8c4a8f9e2eebda7657bba55bf02d8522",
+        "selected_ast_sha256": "f42ab7fb646b852beaece6b5f7bebc6e8c4a8f9e2eebda7657bba55bf02d8522",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "build_planning_graph",
+        "original_line": 243,
+        "original_end": 329,
+        "source_ast_sha256": "e51d6eba182a7cd716b65ff08cb377d1a8ae2b60b38fbd4f381c4d9176dc0130",
+        "selected_ast_sha256": "e51d6eba182a7cd716b65ff08cb377d1a8ae2b60b38fbd4f381c4d9176dc0130",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 20,
+    "original_top_level_nodes": 22,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/mapping/planning_state.py",
+    "target": "core/mapping/planning_state.py",
+    "parent_sha256": "0c0a72bad93d11bd3d42cb132e8449958ddefb7acb9fe2156250808dc2a5b6a5",
+    "target_sha256": "4b8d395c072fcc501bf0e6a98b5be8c6011757cd9455434f2a1c511c227103c9",
+    "retained_symbols": [
+      {
+        "name": "_readonly",
+        "original_line": 21,
+        "original_end": 29,
+        "source_ast_sha256": "b21fcad7b217c64f4e513058fc26be7dd7aaa4dc2ed30676a32bc1046f3a033a",
+        "selected_ast_sha256": "b21fcad7b217c64f4e513058fc26be7dd7aaa4dc2ed30676a32bc1046f3a033a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "GridGeometryView",
+        "original_line": 33,
+        "original_end": 37,
+        "source_ast_sha256": "8df8124c560ea5b141e3a1f2101cbc695ea37f74ac4e7af4f83cc6eb37855903",
+        "selected_ast_sha256": "8df8124c560ea5b141e3a1f2101cbc695ea37f74ac4e7af4f83cc6eb37855903",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "TargetBeliefView",
+        "original_line": 41,
+        "original_end": 47,
+        "source_ast_sha256": "13e847a197ac37671fa511c1005c2bc599eeacb1ebe06ca2eb1530ea8f20d616",
+        "selected_ast_sha256": "13e847a197ac37671fa511c1005c2bc599eeacb1ebe06ca2eb1530ea8f20d616",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "OccupancyBeliefView",
+        "original_line": 51,
+        "original_end": 58,
+        "source_ast_sha256": "cda4bcf61671e3bcc637939b7ed94ab098ec7532d4cb37c7e98e53035b9c32c7",
+        "selected_ast_sha256": "cda4bcf61671e3bcc637939b7ed94ab098ec7532d4cb37c7e98e53035b9c32c7",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PlanningAgentView",
+        "original_line": 62,
+        "original_end": 70,
+        "source_ast_sha256": "ca64cf2c51728afff99335f4347e2049ef1da51869e12b084eb9ba69773ac74a",
+        "selected_ast_sha256": "ca64cf2c51728afff99335f4347e2049ef1da51869e12b084eb9ba69773ac74a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PlanningStateView",
+        "original_line": 74,
+        "original_end": 86,
+        "source_ast_sha256": "27bd79e18c68804a6a18264b73681c75dafe618132a6dc3e8059db79fae9c070",
+        "selected_ast_sha256": "27bd79e18c68804a6a18264b73681c75dafe618132a6dc3e8059db79fae9c070",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "planning_state_sha256",
+        "original_line": 89,
+        "original_end": 126,
+        "source_ast_sha256": "4df5db6b2d4d03775251537913b7b226d2233372f56315084d5b0e1810bb8fbb",
+        "selected_ast_sha256": "4df5db6b2d4d03775251537913b7b226d2233372f56315084d5b0e1810bb8fbb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_triple",
+        "original_line": 129,
+        "original_end": 131,
+        "source_ast_sha256": "539b44f7e179160f638d349c029cd58122d0f715281f08b5ca64bbb44c90f66e",
+        "selected_ast_sha256": "539b44f7e179160f638d349c029cd58122d0f715281f08b5ca64bbb44c90f66e",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "extract_planning_state",
+        "original_line": 134,
+        "original_end": 245,
+        "source_ast_sha256": "32036446153b92b287071572e51f457f1d86c2c2751c8d9aa49d1ece2157db28",
+        "selected_ast_sha256": "32036446153b92b287071572e51f457f1d86c2c2751c8d9aa49d1ece2157db28",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 16,
+    "original_top_level_nodes": 18,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/mapping/travel_cost_service.py",
+    "target": "core/mapping/travel_cost_service.py",
+    "parent_sha256": "185cfc49deab62e33374dc423fb582b0e54ead7b8a6c1675827022a316f69c2e",
+    "target_sha256": "8629dbf7f0e0ef59f03ecea4e865a644c6a012c1dca0ffe03b4c7bc66b09bbcb",
+    "retained_symbols": [
+      {
+        "name": "_locked",
+        "original_line": 17,
+        "original_end": 22,
+        "source_ast_sha256": "0bd4f1f24fa45f95d90f3da5e6cce35dac6d198f0a560cf09b232b46478c926c",
+        "selected_ast_sha256": "0bd4f1f24fa45f95d90f3da5e6cce35dac6d198f0a560cf09b232b46478c926c",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "PathQueryResult",
+        "original_line": 26,
+        "original_end": 41,
+        "source_ast_sha256": "75f120d6defe583ca05929b6924a914b8e15781c82cceccc916d01fc1c7c20fc",
+        "selected_ast_sha256": "7d090d8c137b710d0239e01702f4b2551f28bfbe52889ecc124edb8e31652b92",
+        "explicitly_dropped_methods": [
+          "estimated_travel_time"
+        ]
+      },
+      {
+        "name": "SingleSourceTravelResult",
+        "original_line": 45,
+        "original_end": 50,
+        "source_ast_sha256": "3e194e1589551fdeb7629be76200dc35762cad290be24f2a3166838ad30fdfee",
+        "selected_ast_sha256": "3e194e1589551fdeb7629be76200dc35762cad290be24f2a3166838ad30fdfee",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "TravelCostService",
+        "original_line": 53,
+        "original_end": 249,
+        "source_ast_sha256": "cdbd54b90db4a18e9d9dc0b54ef598d41881000c24984e7301ad98b2cf6f9b23",
+        "selected_ast_sha256": "cdbd54b90db4a18e9d9dc0b54ef598d41881000c24984e7301ad98b2cf6f9b23",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 12,
+    "original_top_level_nodes": 14,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/replay/ch3_buffer.py",
+    "target": "core/replay/ch3_buffer.py",
+    "parent_sha256": "c549eaa9f6d75f79f0beeb02cc6e8b1abb16f56e3f15df3ea8647894b5e91002",
+    "target_sha256": "5cfc23c40258db8114da9afa8a4989c080e8ae81780c5b058e4f89480ae88624",
+    "retained_symbols": [
+      {
+        "name": "_resolve_device",
+        "original_line": 12,
+        "original_end": 18,
+        "source_ast_sha256": "f4208bf99a77bbdba4486e3fc1b0f49bdd5ac41b0078ea8a2f77063a4ce9b050",
+        "selected_ast_sha256": "f4208bf99a77bbdba4486e3fc1b0f49bdd5ac41b0078ea8a2f77063a4ce9b050",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "CH3ReplayBuffer",
+        "original_line": 21,
+        "original_end": 305,
+        "source_ast_sha256": "5a7213d1520e77f9e2e29f9035bea2383f172fec498d3a92790bad120067313d",
+        "selected_ast_sha256": "03a3aa6d1bbf4927a11c56f00216dfa1d069762e2d6063ef96ae5b058849c544",
+        "explicitly_dropped_methods": [
+          "update_priorities"
+        ]
+      }
+    ],
+    "selected_top_level_nodes": 4,
+    "original_top_level_nodes": 6,
+    "reviewed_specialization": false
+  },
+  {
+    "source": "core/scenarios/ch3_generator_impl.py",
+    "target": "core/scenarios/ch3_generator_impl.py",
+    "parent_sha256": "2c6c414bca3d79fd038f96537603f78938fe91574e1ee02fcd8f2e1038a95633",
+    "target_sha256": "de3f501036b0fee6a116690db5e1de3b2ccf8262d1dbee4e0f7ed61caec85728",
+    "retained_symbols": [
+      {
+        "name": "_canonical_sha",
+        "original_line": 80,
+        "original_end": 84,
+        "source_ast_sha256": "499bbd1d6af4ca77416b882b94864916e4e4f7a826bb18fc2cbd7bc4ec00cfed",
+        "selected_ast_sha256": "499bbd1d6af4ca77416b882b94864916e4e4f7a826bb18fc2cbd7bc4ec00cfed",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_inside",
+        "original_line": 87,
+        "original_end": 94,
+        "source_ast_sha256": "b54ebe6ded5faf056aedbe5c6cbd2021ce44c69f0d72ba2495e6edacc1e241b1",
+        "selected_ast_sha256": "b54ebe6ded5faf056aedbe5c6cbd2021ce44c69f0d72ba2495e6edacc1e241b1",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_sample_point",
+        "original_line": 97,
+        "original_end": 106,
+        "source_ast_sha256": "1e3ec8e0e1f40a173491aa8f523248c3953c771f6152050f3a4f225a8cc6ac6b",
+        "selected_ast_sha256": "1e3ec8e0e1f40a173491aa8f523248c3953c771f6152050f3a4f225a8cc6ac6b",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_planner",
+        "original_line": 171,
+        "original_end": 184,
+        "source_ast_sha256": "966b5d7b64542955930337fcac8d7330661e0a690845e59d26b7f73d8ea660d7",
+        "selected_ast_sha256": "966b5d7b64542955930337fcac8d7330661e0a690845e59d26b7f73d8ea660d7",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_boxes_overlap",
+        "original_line": 442,
+        "original_end": 449,
+        "source_ast_sha256": "dca87370938fcba44888ab79b9d1f5f7e3c833af35b0ebeb277b2338b5c214eb",
+        "selected_ast_sha256": "dca87370938fcba44888ab79b9d1f5f7e3c833af35b0ebeb277b2338b5c214eb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_sample_unknown_agents",
+        "original_line": 452,
+        "original_end": 465,
+        "source_ast_sha256": "eb56d140f348c7e9a67e031bf541f06b70985f35d0191d81bfd935abdba7608a",
+        "selected_ast_sha256": "eb56d140f348c7e9a67e031bf541f06b70985f35d0191d81bfd935abdba7608a",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_sample_unknown_obstacles",
+        "original_line": 468,
+        "original_end": 516,
+        "source_ast_sha256": "2f9a9d14a4f6cdb066b4d3bdd47ed8b22207e71b2c3eac89b58a1b0dd7d360eb",
+        "selected_ast_sha256": "2f9a9d14a4f6cdb066b4d3bdd47ed8b22207e71b2c3eac89b58a1b0dd7d360eb",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_unknown_trajectory_record",
+        "original_line": 519,
+        "original_end": 565,
+        "source_ast_sha256": "e2cf6925bcf4437576210ebd7b24f009d4dd2d4a21c4e495d9db0f82acd22906",
+        "selected_ast_sha256": "e2cf6925bcf4437576210ebd7b24f009d4dd2d4a21c4e495d9db0f82acd22906",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_validate_unknown_truth_reachability",
+        "original_line": 568,
+        "original_end": 651,
+        "source_ast_sha256": "6fba441d5a885475651d43763d184a64345279350bfe1932c20e19d66db13959",
+        "selected_ast_sha256": "6fba441d5a885475651d43763d184a64345279350bfe1932c20e19d66db13959",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_unknown_profile_obstacles",
+        "original_line": 654,
+        "original_end": 659,
+        "source_ast_sha256": "5d4f9392043fafd764fabf5a58048aeb0d43ac5084aa3bf8e449c8a6c13c214f",
+        "selected_ast_sha256": "5d4f9392043fafd764fabf5a58048aeb0d43ac5084aa3bf8e449c8a6c13c214f",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "_build_unknown_profile_manifests",
+        "original_line": 662,
+        "original_end": 827,
+        "source_ast_sha256": "0ff48f87f7b5ca72c579ccb941f5abfd563a000b365d061127b930c6a6db2dfa",
+        "selected_ast_sha256": "0ff48f87f7b5ca72c579ccb941f5abfd563a000b365d061127b930c6a6db2dfa",
+        "explicitly_dropped_methods": []
+      },
+      {
+        "name": "build_scenario_manifests",
+        "original_line": 888,
+        "original_end": 935,
+        "source_ast_sha256": "5c45987a39d54ebb64284e9575649bc6700f7a1b8831727b76a2a172c8809536",
+        "selected_ast_sha256": "10a709d00238ee6d68a1711af305133149654458a4141ed82204d23c638c9766",
+        "explicitly_dropped_methods": []
+      }
+    ],
+    "selected_top_level_nodes": 30,
+    "original_top_level_nodes": 51,
+    "reviewed_specialization": true
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "initial_runner_failure": "Windows subprocess stderr decoding failed at the synthetic old-identity check; no active production assertion was bypassed",
+  "repair": "verification runner now explicitly uses UTF-8 and a task-owned temporary directory",
+  "final_run": "closure_verification_final.log",
+  "final_passed": true
+}

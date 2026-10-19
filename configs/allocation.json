@@ -1,0 +1,106 @@
+{
+  "schema": "bser.phase1a1.config.v1",
+  "formal_training": false,
+  "environment": {
+    "max_steps": 400
+  },
+  "candidate_generation": {
+    "k_search_exact": 4,
+    "k_standby_exact": 4,
+    "search_scaling": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "standby_scaling": [
+      4,
+      8,
+      16
+    ],
+    "minimum_separation": 0.45,
+    "maximum_physical_travel_time": 120.0
+  },
+  "detection_model": {
+    "model_parameter_notice": "Fixed algorithm-model parameters; sensitivity is reported without tuning defaults.",
+    "p_max_by_role": {
+      "search_fast": 0.72,
+      "search_balanced": 0.78,
+      "search_precise": 0.84
+    },
+    "p_scale": 1.0,
+    "sigma_sensor_radius_multiplier": 1.0
+  },
+  "objective": {
+    "tau_executor": 18.0,
+    "epsilon": 1e-12
+  },
+  "solver": {
+    "exact_combination_limit": 100000,
+    "random_repetitions": 100,
+    "random_seed": 20260802
+  },
+  "e1_v2": {
+    "snapshot_steps": [
+      0,
+      10,
+      25,
+      50
+    ],
+    "action_traces": [
+      "zero_action",
+      "seeded_random_low_amplitude",
+      "deterministic_scripted"
+    ],
+    "protocol_request_count": 240,
+    "scalability_unique_state_count": 20
+  },
+  "sensitivity": {
+    "knowledge_mode": "M20_MOVING_UNKNOWN_MULTI",
+    "fixed_hash_unique_state_count": 20,
+    "variants": [
+      {
+        "id": "baseline",
+        "p_scale": 1.0,
+        "sigma_multiplier": 1.0,
+        "tau_executor": 18.0
+      },
+      {
+        "id": "p_scale_0.8",
+        "p_scale": 0.8,
+        "sigma_multiplier": 1.0,
+        "tau_executor": 18.0
+      },
+      {
+        "id": "p_scale_1.2",
+        "p_scale": 1.2,
+        "sigma_multiplier": 1.0,
+        "tau_executor": 18.0
+      },
+      {
+        "id": "sigma_0.75",
+        "p_scale": 1.0,
+        "sigma_multiplier": 0.75,
+        "tau_executor": 18.0
+      },
+      {
+        "id": "sigma_1.25",
+        "p_scale": 1.0,
+        "sigma_multiplier": 1.25,
+        "tau_executor": 18.0
+      },
+      {
+        "id": "tau_10",
+        "p_scale": 1.0,
+        "sigma_multiplier": 1.0,
+        "tau_executor": 10.0
+      },
+      {
+        "id": "tau_30",
+        "p_scale": 1.0,
+        "sigma_multiplier": 1.0,
+        "tau_executor": 30.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent_manifests": {
+    "d2_repair_v2_evolution.json": "cc4c346efc19abc45d03d899d0dbe386eeac394028ee13f8e2ff36506b13df07",
+    "ch3_to_core_migration_manifest.json": "df1b34ac73d23606078c10866717fac27986e0c24d3f8d4a4d45a2e40dbc4c69",
+    "collision_terminal_evolution.json": "9cf26c6f5c187410789f281d115cb62ea6ce7b9fe4d43084b7863500c9628388",
+    "hgr_evolution.json": "14272e954f50bea1a5ff05a6810268df17e990a66b0b866a13588dc8357a4dc9"
+  },
+  "original_source_files_checked": 85,
+  "original_source_files_changed": []
+}

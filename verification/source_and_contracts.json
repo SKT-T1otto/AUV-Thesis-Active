@@ -1,0 +1,163 @@
+{
+  "passed": true,
+  "source_identity": {
+    "review_sha256": "954f773a96b297ad8af3ec49eeabf969bf9b2326bdba67ea03c39d3044941f4f",
+    "profile": "active_rebuild_v1",
+    "inventory_sha256": "43adbbc97f067e7503df9c4ad3477b8e25ce841009dbca1f00299889b4de9655",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.rebuild.v1"
+  },
+  "regression": {
+    "passed": true,
+    "expected": 38,
+    "tests_run": 38,
+    "failures": [],
+    "errors": [],
+    "skipped": []
+  },
+  "manual_research_scope_verified": true,
+  "workflow": {
+    "passed": true,
+    "suite": {
+      "executed": true,
+      "jobs": [
+        {
+          "job": "D2_B2_seed2729",
+          "stage": "train",
+          "status": "completed"
+        },
+        {
+          "job": "D2_B3_seed2729",
+          "stage": "train",
+          "status": "completed"
+        },
+        {
+          "job": "D2",
+          "stage": "evaluate",
+          "status": "completed"
+        },
+        {
+          "job": "D2_B2_seed2729",
+          "stage": "evaluate",
+          "status": "completed"
+        },
+        {
+          "job": "D2_B3_seed2729",
+          "stage": "evaluate",
+          "status": "completed"
+        }
+      ],
+      "performance_passed": false
+    },
+    "summary": {
+      "schema": "auv.active.summary.v1",
+      "source_review": {
+        "review_sha256": "954f773a96b297ad8af3ec49eeabf969bf9b2326bdba67ea03c39d3044941f4f",
+        "profile": "active_rebuild_v1",
+        "inventory_sha256": "43adbbc97f067e7503df9c4ad3477b8e25ce841009dbca1f00299889b4de9655",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.rebuild.v1"
+      },
+      "complete": true,
+      "mechanism_only": true,
+      "scope": "prepared suite",
+      "groups": [
+        {
+          "method": "D2",
+          "expected_replicates": 1,
+          "completed_replicates": 1,
+          "complete": true,
+          "found_rate": 1,
+          "found_rate_seed_sd": null,
+          "pre_found_collision_rate": 0,
+          "pre_found_collision_rate_seed_sd": null,
+          "found_penalized_steps": 1,
+          "found_penalized_steps_seed_sd": null,
+          "success_rate": 1,
+          "success_rate_seed_sd": null
+        },
+        {
+          "method": "D2_B2_repair_v2",
+          "expected_replicates": 1,
+          "completed_replicates": 1,
+          "complete": true,
+          "found_rate": 1,
+          "found_rate_seed_sd": null,
+          "pre_found_collision_rate": 0,
+          "pre_found_collision_rate_seed_sd": null,
+          "found_penalized_steps": 1,
+          "found_penalized_steps_seed_sd": null,
+          "success_rate": 1,
+          "success_rate_seed_sd": null
+        },
+        {
+          "method": "D2_B3_repair_v2",
+          "expected_replicates": 1,
+          "completed_replicates": 1,
+          "complete": true,
+          "found_rate": 1,
+          "found_rate_seed_sd": null,
+          "pre_found_collision_rate": 0,
+          "pre_found_collision_rate_seed_sd": null,
+          "found_penalized_steps": 1,
+          "found_penalized_steps_seed_sd": null,
+          "success_rate": 1,
+          "success_rate_seed_sd": null
+        }
+      ],
+      "performance_passed": false,
+      "missing_jobs": []
+    },
+    "checkpoints": [
+      {
+        "arm": "D2_B2",
+        "path": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_publish_20261019\\checks_01\\collision_terminal\\suite\\jobs\\D2_B2_seed2729\\train\\checkpoint_final.pt",
+        "niter": 4,
+        "actor_steps": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "roundtrip_exact": true
+      },
+      {
+        "arm": "D2_B3",
+        "path": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_publish_20261019\\checks_01\\collision_terminal\\suite\\jobs\\D2_B3_seed2729\\train\\checkpoint_final.pt",
+        "niter": 4,
+        "actor_steps": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "roundtrip_exact": true
+      }
+    ],
+    "source_negative": {
+      "rejected": true,
+      "completed_receipt_absent": true,
+      "physical_steps": 1
+    },
+    "actual_training_episodes": 2,
+    "training_environment_steps": 16,
+    "max_complete_updates_per_model": 4,
+    "evaluation_episodes": 4,
+    "evaluation_environment_steps": 19,
+    "additional_physical_steps": 35,
+    "fixture_thresholds": {
+      "batch_size": 4,
+      "warmup_steps": 4
+    },
+    "default_configs_unchanged": true,
+    "source": {
+      "review_sha256": "954f773a96b297ad8af3ec49eeabf969bf9b2326bdba67ea03c39d3044941f4f",
+      "profile": "active_rebuild_v1",
+      "inventory_sha256": "43adbbc97f067e7503df9c4ad3477b8e25ce841009dbca1f00299889b4de9655",
+      "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+      "distribution": "auv.active_source.rebuild.v1"
+    }
+  },
+  "source_bound_readiness": "verification/rebuild/receipt.json",
+  "linux_execution": false
+}

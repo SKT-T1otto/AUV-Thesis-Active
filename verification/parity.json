@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "bit_exact": true,
+  "differences": [],
+  "fresh_parent_run": true,
+  "methods": [
+    "D2",
+    "B2",
+    "B3"
+  ],
+  "scenes_per_method": 4,
+  "rollout_steps_per_process": 69,
+  "trainer_steps_per_process": 8,
+  "total_environment_steps": 154,
+  "training_episodes_total": 4,
+  "max_learning_updates_per_temporary_model": 1,
+  "isolation": {
+    "original_checkout_reads_blocked": true,
+    "project_files_opened": 240
+  },
+  "processes": [
+    {
+      "label": "parent",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-c",
+        "preserved oracle CHILD"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis",
+      "exit_code": 0,
+      "seconds": 85.08226840000134,
+      "stdout_sha256": "c0cc4cdacce45c5383392b8d0588d0f5ca3e8f8197de84fbff7fe11ea2722ed9",
+      "stderr_sha256": "48dd234884cbcf4dd3f378b86ace36503c9344264dc584926de9198245064024"
+    },
+    {
+      "label": "rebuilt",
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-c",
+        "preserved oracle CHILD"
+      ],
+      "cwd": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis\\tmp\\active_rebuild_20261019\\project",
+      "exit_code": 0,
+      "seconds": 88.48721629998181,
+      "stdout_sha256": "af90c60bf07f9de7831f85db426d5750e84bee021bf7a3392cca48a1aeec9674",
+      "stderr_sha256": "ecd07df9f1b95297c1e6e5e51ef41bd6b554fee12413becb64528da61402caa8"
+    }
+  ]
+}

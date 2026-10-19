@@ -1,0 +1,162 @@
+{
+  "schema": "auv.active.rebuild.evolution.v1",
+  "previous_manifest_sha256": "d25dcc34371a211dc18915e5c2ca05e1601d7c5b8692c404e1571a6a260696ac",
+  "authorization": "2026-10-19 user requests a trainable standalone Active matching current AUV-Thesis D2 repair v2, regardless of performance; no automatic long training",
+  "parent_worktree_review": {
+    "review_sha256": "cc4c346efc19abc45d03d899d0dbe386eeac394028ee13f8e2ff36506b13df07",
+    "profile": "windows_existing",
+    "inventory_sha256": "806baf5c494f8b0638dbe7f63a23f81e6e4017751f2e0f4c175bb640e0cc3ebf",
+    "parent_commit": "6538c3e6a67e96d56940ab09fcff15cd9dc7a7d8"
+  },
+  "historical_manifests_modified": false,
+  "learning_and_physics_changed": false,
+  "changes": [
+    {
+      "path": ".gitattributes",
+      "before_sha256": "052fe1ee70bba83b1c61bf4c220d8653fbf691838ef419caa2190725f4b10cd8",
+      "after_sha256": "cf9acc24c21c63d97066af8624d1e0dcf5823fc5c5b76a898c463acfe767a62a",
+      "reason": "Preserve exact LF/CRLF source and immutable evidence bytes through Git staging and Linux checkout; remove text normalization only; no runtime algorithm change."
+    },
+    {
+      "path": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "b846c976c0bddd2fb8ff9293276d3f931bb4dbfc2e4ce2153bc384174f9c01c6",
+      "reason": "Include existing output-ignore policy in the rebuilt watched inventory."
+    },
+    {
+      "path": "AGENTS.md",
+      "before_sha256": "d32d7cb8ac5ba3c1f769bd32d24d71bc2746d9387684dde21b22c7f444754136",
+      "after_sha256": "72ef946a9c03f21527ff1b6db03eafe9cf41892ac66a7edee282b78a8d99c1a0",
+      "reason": "Record user-authorized rebuilt research repository role and unchanged algorithm contracts."
+    },
+    {
+      "path": "chapter3_bser/learning/checkpoint.py",
+      "before_sha256": "60bab056a1f8c007c02d65e46f53c687c995b0470d6131aeab16eaf4d5a15ac4",
+      "after_sha256": "3ee2be3edf022ad694453c887572a35995e7b4a0ab94373fe11197b80ebe2f2e",
+      "reason": "New rebuilt distribution identity prevents old checkpoint relabeling; learner state equations unchanged."
+    },
+    {
+      "path": "chapter3_bser/learning/evaluate.py",
+      "before_sha256": "d76ecf9cab3e96d1f03c92c40750c2aff3020e05867c87ab1323adc6ddfcea3d",
+      "after_sha256": "e8840622593c1873af3fad8ae5685888f8470377e06694e20cac0b0054ce2283",
+      "reason": "Validate evaluation manifests/budgets and commit common metrics only after final source check; preserve real runtime and RNG behavior."
+    },
+    {
+      "path": "chapter3_bser/learning/evaluation_records.py",
+      "before_sha256": null,
+      "after_sha256": "30cdc92cea9225b6aa5e6737f15332f02eb6eb6d3c0241ae5efc13d019457478",
+      "reason": "New current workflow support: explicit scenario role export, verified evaluation records, aggregation or immutable manual suite; no environment/learner formula changes."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "b36ccb22640940a54adfdd42261a71e1f3db073b08c40b50a1cfc473e24a0935",
+      "after_sha256": "79371cca1466735542eb3d673c1b95aec851da9071cfb39fde97be921f3c55b0",
+      "reason": "Exact independent rebuild lineage plus hashed rebuild readiness under the latest user manual-training request; historical acceptance is not transferred."
+    },
+    {
+      "path": "chapter3_bser/learning/reference.py",
+      "before_sha256": "1ae227eac5d06fcabfa2ed8a9b6093de5b83a5ff8f2975972e8f98e3fc07b8d9",
+      "after_sha256": "c0fa47dffa4ca516b402996a0191f1e1fe74eb960a9f331c091f87e9a6190f7d",
+      "reason": "Restore full D2 reference evaluation with zero residuals, common metrics and bounded mechanism mode."
+    },
+    {
+      "path": "chapter3_bser/learning/scenarios.py",
+      "before_sha256": null,
+      "after_sha256": "46bf2272a18b757ed49b78932da4d90cac79cba6972d1ac992a717609c296a79",
+      "reason": "New current workflow support: explicit scenario role export, verified evaluation records, aggregation or immutable manual suite; no environment/learner formula changes."
+    },
+    {
+      "path": "chapter3_bser/learning/suite.py",
+      "before_sha256": null,
+      "after_sha256": "2045eff23c66b473aa251d98281e9d1f2c85a4b787b00fc289751353523c729d",
+      "reason": "New current workflow support: explicit scenario role export, verified evaluation records, aggregation or immutable manual suite; no environment/learner formula changes."
+    },
+    {
+      "path": "chapter3_bser/learning/summarize.py",
+      "before_sha256": null,
+      "after_sha256": "d9cc522013574360a3090eaa086aa952ff6f4e6ce93a3e0a8dec412d033bc7d1",
+      "reason": "New current workflow support: explicit scenario role export, verified evaluation records, aggregation or immutable manual suite; no environment/learner formula changes."
+    },
+    {
+      "path": "chapter3_bser/learning/train.py",
+      "before_sha256": "adfd2aa0cfc70d7f76668402b1beb303101b753ba9e791612980c7b1bb3cc991",
+      "after_sha256": "29f2fb9fd1bdc7e25d06d304cb92c308f61923437d8c426199fb945a5733946c",
+      "reason": "Restore verified manual research execution and explicit checkpoint scope; bind begin/update/save/end to one source identity; scheduler and episode sampler unchanged."
+    },
+    {
+      "path": "checks/__init__.py",
+      "before_sha256": null,
+      "after_sha256": "6e8e818a0c0f8ab89a7cf262361e11cf00f099271b75b47a241ff20e54686ad4",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    },
+    {
+      "path": "checks/test_checkout.py",
+      "before_sha256": null,
+      "after_sha256": "2c855f44b377037376ccecc7a10b209de5675f83d8cf8265674bc85cc6904b7d",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    },
+    {
+      "path": "checks/test_learning.py",
+      "before_sha256": null,
+      "after_sha256": "9ce2f7bd87f3e20104b87814aa3124376382bae8d0fa30104ca05f57103ed68a",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    },
+    {
+      "path": "checks/test_workflow.py",
+      "before_sha256": null,
+      "after_sha256": "cd610a9530b94740ac22a83b616b0372d6549992f3c3fc7078afd2eeb545ec0c",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    },
+    {
+      "path": "cli.py",
+      "before_sha256": "aca81cebb8f39fc124eb11921923e8a2c7a4e7a4c30df59283a3e2fbdd9e9891",
+      "after_sha256": "1a2954694b4ac93df289faa540ecaeffa99547e87de0f93251282ee333890d24",
+      "reason": "Restore current manual scenario/train/reference/evaluate/report/suite commands and subcommand help; no execution without --execute."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": null,
+      "after_sha256": "b13db15acef2c17d3dbd87fce8c89c34840c4170ea02f398f09e8e2934338aff",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    },
+    {
+      "path": "provenance/history/extraction_v1/PACKAGE_SHA256.json",
+      "before_sha256": null,
+      "after_sha256": "5c4c7dec5669466ef624b1ccb4f062f149176b2baaee4e3da7d65d992f2c47a5",
+      "reason": "Preserve previous extraction source/package manifests byte-for-byte."
+    },
+    {
+      "path": "provenance/history/extraction_v1/active_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "65caf0704ee3de0542f94378cb93fe1ead4f6ede0608e799297acdf862dd03d3",
+      "reason": "Preserve previous extraction source/package manifests byte-for-byte."
+    },
+    {
+      "path": "tools/__init__.py",
+      "before_sha256": null,
+      "after_sha256": "e954b390d222ae5210827b5ef2a87d61dec128ab0a5196f3c0cb2435df832985",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": null,
+      "after_sha256": "3edc40d1bfec0742cbf5b65bcff17c5c7907af336be387a48d36142e8fc946d1",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": null,
+      "after_sha256": "d12fa23fa97611033ccebd947733ffd09f325315052f7bdb55cba3ff9c62142b",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": null,
+      "after_sha256": "2dafaef80b07aa94f08d7a4e6910708a0d25d464af8a1c6ff286237ef2a807a1",
+      "reason": "Portable focused rebuild verification and exact test inventory; excludes historical unrelated tests."
+    }
+  ],
+  "publication_parent_manifest_sha256": "6b872032c2a4f0c52aa6cffdfacc084db7eef03521d09a9a2a03aab93614ed27",
+  "publication_scope": "2026-10-19 user requests new GitHub repository and Linux validation commands; bounded test/transport tooling only",
+  "publication_parent_snapshot": "verification/history/rebuild_20261019_v1"
+}

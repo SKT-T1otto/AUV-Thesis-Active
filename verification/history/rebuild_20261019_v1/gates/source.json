@@ -1,0 +1,55 @@
+{
+  "schema": "auv.active.rebuild.gate.v1",
+  "run_id": "rebuild_20261019_v1",
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "6b872032c2a4f0c52aa6cffdfacc084db7eef03521d09a9a2a03aab93614ed27",
+    "profile": "active_rebuild_v1",
+    "inventory_sha256": "1387cadc5f9d35b33ff3d990695c32dbeb09706267b95d251266b940932786fb",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.rebuild.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "evidence": {
+    "independent_verifier": {
+      "passed": true,
+      "files": 137,
+      "manifest_sha256": "6b872032c2a4f0c52aa6cffdfacc084db7eef03521d09a9a2a03aab93614ed27",
+      "core_unchanged": true
+    },
+    "core_files_unchanged": [
+      "core/__init__.py",
+      "core/algorithms/agents.py",
+      "core/algorithms/maddpg.py",
+      "core/algorithms/misc.py",
+      "core/algorithms/networks.py",
+      "core/algorithms/noise.py",
+      "core/algorithms/__init__.py",
+      "core/communication/basic_communication.py",
+      "core/communication/__init__.py",
+      "core/config/active_environment.py",
+      "core/config/ch3_constants.py",
+      "core/config/__init__.py",
+      "core/env/mission_env.py",
+      "core/env/observation_contract.py",
+      "core/env/target_motion.py",
+      "core/env/task_protocol.py",
+      "core/env/task_state.py",
+      "core/env/uav_env.py",
+      "core/env/__init__.py",
+      "core/mapping/map_module.py",
+      "core/mapping/path_planner.py",
+      "core/mapping/planning_graph.py",
+      "core/mapping/planning_state.py",
+      "core/mapping/travel_cost_service.py",
+      "core/mapping/__init__.py",
+      "core/replay/ch3_buffer.py",
+      "core/replay/__init__.py",
+      "core/scenarios/ch3_generator_impl.py",
+      "core/scenarios/__init__.py"
+    ],
+    "default_configs_unchanged": true,
+    "previous_manifest_sha256": "d25dcc34371a211dc18915e5c2ca05e1601d7c5b8692c404e1571a6a260696ac"
+  }
+}

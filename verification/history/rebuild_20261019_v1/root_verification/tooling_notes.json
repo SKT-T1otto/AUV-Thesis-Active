@@ -1,0 +1,14 @@
+{
+  "initial_check_exit_code": 1,
+  "reasons": [
+    "Windows sandbox default TEMP denied write/cleanup; runner now uses its owned output/temporary directory.",
+    "Synthetic metric-row unit fixture omitted scenario identity; fixture corrected to match real Runtime.summary."
+  ],
+  "final_check_exit_code": 0,
+  "final_tests": 31,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "production_learning_formula_changed": false,
+  "prior_failure_preserved": "verification/rebuild/initial_check_failure.json"
+}

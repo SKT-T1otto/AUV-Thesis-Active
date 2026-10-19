@@ -1,0 +1,374 @@
+test_01_network_dimensions_ownership_and_initial_targets (checks.test_learning.ActiveRLTests) ... ok
+test_02_terminal_nan_and_independent_bellman_oracle (checks.test_learning.ActiveRLTests) ... ok
+test_03_batch_shape_broadcast_and_nonfinite_rejected_without_update (checks.test_learning.ActiveRLTests) ... ok
+test_04_frozen_actor_keeps_existing_adam_but_critic_learns (checks.test_learning.ActiveRLTests) ... ok
+test_05_one_agent_update_does_not_write_other_agents_or_targets (checks.test_learning.ActiveRLTests) ... ok
+test_06_soft_update_uses_tau_and_is_atomic_on_late_invalid_source (checks.test_learning.ActiveRLTests) ... ok
+test_07_both_critics_unchanged_on_second_critic_bad_gradient (checks.test_learning.ActiveRLTests) ... ok
+test_08_twin_optimizer_rollback_if_second_step_throws (checks.test_learning.ActiveRLTests) ... ok
+test_09_b3_next_and_current_context_rebound_from_each_batch (checks.test_learning.ActiveRLTests) ... ok
+test_10_gate_projection_and_team_terminal_contract (checks.test_learning.ActiveRLTests) ... ok
+test_11_replay_wrap_and_gate_rows_match_exact_transition (checks.test_learning.ActiveRLTests) ... ok
+test_12_bad_replay_write_is_rejected_without_ring_mutation (checks.test_learning.ActiveRLTests) ... ok
+test_13_snapshot_is_deep_and_invalid_load_is_atomic (checks.test_learning.ActiveRLTests) ... ok
+test_14_sample_changes_are_not_hidden_by_cached_identity (checks.test_learning.ActiveRLTests) ... ok
+test_15_core_replay_restore_checks_ring_relationship (checks.test_learning.ActiveRLTests) ... ok
+test_16_team_reward_uses_immediate_mean_not_discounted_reward (checks.test_learning.ActiveRLTests) ... ok
+test_17_physical_fingerprint_rejects_id_only_relabel (checks.test_learning.ActiveRLTests) ... ok
+test_01_explicit_role_export_preserves_physical_values (checks.test_workflow.Workflow) ... ERROR
+test_02_mechanism_nine_scene_rejected_before_runtime (checks.test_workflow.Workflow) ... ok
+test_03_research_evaluation_does_not_inherit_mechanism_count_limit (checks.test_workflow.Workflow) ... ok
+test_04_eval_cannot_accept_train_role (checks.test_workflow.Workflow) ... ok
+test_05_duplicate_physical_tasks_rejected_after_id_and_seed_change (checks.test_workflow.Workflow) ... ok
+test_06_d2_metric_row_is_directly_accepted_by_ordering (checks.test_workflow.Workflow) ... ERROR
+test_07_final_source_failure_cannot_write_completion_receipt (checks.test_workflow.Workflow) ... ERROR
+test_08_tampered_evaluation_rows_rejected (checks.test_workflow.Workflow) ... ERROR
+test_09_missing_readiness_never_admits_research (checks.test_workflow.Workflow) ... ERROR
+test_10_prepared_plan_inputs_cannot_drift (checks.test_workflow.Workflow) ... ERROR
+test_11_suite_lock_refuses_a_second_owner_and_removes_own_lock (checks.test_workflow.Workflow) ... ERROR
+test_12_specific_command_help_reaches_its_parser (checks.test_workflow.Workflow) ... ok
+test_13_missing_execute_does_not_create_output_or_restore_model (checks.test_workflow.Workflow) ... ERROR
+test_14_old_distribution_checkpoint_rejected_before_model_construction (checks.test_workflow.Workflow) ... ERROR
+
+======================================================================
+ERROR: test_01_explicit_role_export_preserves_physical_values (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 39, in test_01_explicit_role_export_preserves_physical_values
+    export(path, split='eval', count=1, seed=92729, max_steps=8)
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\chapter3_bser\learning\scenarios.py", line 56, in export
+    write_json(output, result)
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\chapter3_bser\learning\checkpoint.py", line 31, in write_json
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding='utf-8')
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 1154, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpt88zjfdu\\.eval.json.46396.tmp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 622, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpt88zjfdu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 37, in test_01_explicit_role_export_preserves_physical_values
+    with tempfile.TemporaryDirectory() as directory, patch('chapter3_bser.learning.scenarios.build_scenario_manifests', return_value={'M20_MOVING_UNKNOWN_MULTI': generated}) as sampler:
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 878, in __exit__
+    self.cleanup()
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 750, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 624, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 849, in onerror
+    _resetperms(path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpt88zjfdu'
+
+======================================================================
+ERROR: test_06_d2_metric_row_is_directly_accepted_by_ordering (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 72, in test_06_d2_metric_row_is_directly_accepted_by_ordering
+    self.assertEqual(paired_ordering([row])['paired_scenario_groups'], 0)
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\chapter3_bser\learning\metric_ordering.py", line 10, in paired_ordering
+    raise ValueError('ordering requires complete, explicitly identified paired evaluation rows')
+ValueError: ordering requires complete, explicitly identified paired evaluation rows
+
+======================================================================
+ERROR: test_07_final_source_failure_cannot_write_completion_receipt (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 76, in test_07_final_source_failure_cannot_write_completion_receipt
+    output = Path(directory); journal = JsonlJournal(output / 'episodes.jsonl'); journal.append(dict(diagnostic=True))
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\chapter3_bser\d2\logging.py", line 22, in __init__
+    self.path.touch(exist_ok=False)
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 1168, in touch
+    self._accessor.touch(self, mode, exist_ok)
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 331, in touch
+    fd = os.open(path, flags, mode)
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpq1zxggb_\\episodes.jsonl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 622, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpq1zxggb_'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 75, in test_07_final_source_failure_cannot_write_completion_receipt
+    with tempfile.TemporaryDirectory() as directory:
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 878, in __exit__
+    self.cleanup()
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 750, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 624, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 849, in onerror
+    _resetperms(path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpq1zxggb_'
+
+======================================================================
+ERROR: test_08_tampered_evaluation_rows_rejected (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 86, in test_08_tampered_evaluation_rows_rejected
+    output = Path(directory); journal = JsonlJournal(output / 'episodes.jsonl')
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\chapter3_bser\d2\logging.py", line 22, in __init__
+    self.path.touch(exist_ok=False)
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 1168, in touch
+    self._accessor.touch(self, mode, exist_ok)
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 331, in touch
+    fd = os.open(path, flags, mode)
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpg783pf7b\\episodes.jsonl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 622, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpg783pf7b'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 85, in test_08_tampered_evaluation_rows_rejected
+    with tempfile.TemporaryDirectory() as directory:
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 878, in __exit__
+    self.cleanup()
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 750, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 624, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 849, in onerror
+    _resetperms(path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpg783pf7b'
+
+======================================================================
+ERROR: test_09_missing_readiness_never_admits_research (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 622, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmp4n8zswda'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 94, in test_09_missing_readiness_never_admits_research
+    with tempfile.TemporaryDirectory() as directory:
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 878, in __exit__
+    self.cleanup()
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 750, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 624, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 849, in onerror
+    _resetperms(path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmp4n8zswda'
+
+======================================================================
+ERROR: test_10_prepared_plan_inputs_cannot_drift (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 100, in test_10_prepared_plan_inputs_cannot_drift
+    parent = Path(directory); manifest = parent / 'eval.json'; write_json(manifest, dict(scenarios=[scene()]))
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\chapter3_bser\learning\checkpoint.py", line 31, in write_json
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False), encoding='utf-8')
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 1154, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpp23a2mfm\\.eval.json.46396.tmp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 622, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpp23a2mfm'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 99, in test_10_prepared_plan_inputs_cannot_drift
+    with tempfile.TemporaryDirectory() as directory:
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 878, in __exit__
+    self.cleanup()
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 750, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 624, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 849, in onerror
+    _resetperms(path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpp23a2mfm'
+
+======================================================================
+ERROR: test_11_suite_lock_refuses_a_second_owner_and_removes_own_lock (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 111, in test_11_suite_lock_refuses_a_second_owner_and_removes_own_lock
+    with run_lock(directory):
+  File "D:\anaconda\anaconda\envs\AUV\lib\contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\chapter3_bser\learning\suite.py", line 95, in run_lock
+    with path.open('x', encoding='utf-8') as stream:
+  File "D:\anaconda\anaconda\envs\AUV\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmp91bj_wc4\\.active_suite.lock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 622, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmp91bj_wc4'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 109, in test_11_suite_lock_refuses_a_second_owner_and_removes_own_lock
+    with tempfile.TemporaryDirectory() as directory:
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 878, in __exit__
+    self.cleanup()
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 750, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 624, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 849, in onerror
+    _resetperms(path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmp91bj_wc4'
+
+======================================================================
+ERROR: test_13_missing_execute_does_not_create_output_or_restore_model (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 622, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpce0x7d0_'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 125, in test_13_missing_execute_does_not_create_output_or_restore_model
+    with tempfile.TemporaryDirectory() as directory:
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 878, in __exit__
+    self.cleanup()
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 750, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 624, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 849, in onerror
+    _resetperms(path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmpce0x7d0_'
+
+======================================================================
+ERROR: test_14_old_distribution_checkpoint_rejected_before_model_construction (checks.test_workflow.Workflow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 145, in test_14_old_distribution_checkpoint_rejected_before_model_construction
+    torch.save(dict(schema=c['schema'], config=c, config_hash=digest(c), source_review=verify_reviewed_changes(), artifact_schema='old'), path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\site-packages\torch\serialization.py", line 1003, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "D:\anaconda\anaconda\envs\AUV\lib\site-packages\torch\serialization.py", line 865, in _open_zipfile_writer
+    return container(name_or_buffer)  # type: ignore[arg-type]
+  File "D:\anaconda\anaconda\envs\AUV\lib\site-packages\torch\serialization.py", line 829, in __init__
+    torch._C.PyTorchFileWriter(
+RuntimeError: [enforce fail at inline_container.cc:745] . open file failed with error code: 5
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 622, in _rmtree_unsafe
+    os.rmdir(path)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmp0mqbbpd9'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis\tmp\active_rebuild_20261019\project\checks\test_workflow.py", line 143, in test_14_old_distribution_checkpoint_rejected_before_model_construction
+    with tempfile.TemporaryDirectory() as directory:
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 878, in __exit__
+    self.cleanup()
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 882, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 864, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 750, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "D:\anaconda\anaconda\envs\AUV\lib\shutil.py", line 624, in _rmtree_unsafe
+    onerror(os.rmdir, path, sys.exc_info())
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 849, in onerror
+    _resetperms(path)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "D:\anaconda\anaconda\envs\AUV\lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\lenovo\\AppData\\Local\\Packages\\sandbox.{192cad93-9c87-4282-a630-582e5c1b096e}\\AC\\Temp\\tmp0mqbbpd9'
+
+----------------------------------------------------------------------
+Ran 31 tests in 4.445s
+
+FAILED (errors=9)

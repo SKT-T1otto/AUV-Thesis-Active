@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "parent_exit_code": 0,
+  "seed": 928301,
+  "physical_scenarios_equal": true,
+  "explicit_changes": [
+    "scenario_role validation -> eval",
+    "scenario_split validation -> eval",
+    "export provenance added"
+  ],
+  "parent_stdout_sha256": "8730da2c696c70994742448174dc8da70d3c72a8e79bdcffa46b6bed9197931e",
+  "additional_environment_steps": 0
+}

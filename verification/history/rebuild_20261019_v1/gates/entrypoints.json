@@ -1,0 +1,118 @@
+{
+  "schema": "auv.active.rebuild.gate.v1",
+  "run_id": "rebuild_20261019_v1",
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "6b872032c2a4f0c52aa6cffdfacc084db7eef03521d09a9a2a03aab93614ed27",
+    "profile": "active_rebuild_v1",
+    "inventory_sha256": "1387cadc5f9d35b33ff3d990695c32dbeb09706267b95d251266b940932786fb",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.rebuild.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "evidence": {
+    "suite": {
+      "executed": true,
+      "jobs": [
+        {
+          "job": "D2_B2_seed2729",
+          "stage": "train",
+          "status": "completed"
+        },
+        {
+          "job": "D2_B3_seed2729",
+          "stage": "train",
+          "status": "completed"
+        },
+        {
+          "job": "D2",
+          "stage": "evaluate",
+          "status": "completed"
+        },
+        {
+          "job": "D2_B2_seed2729",
+          "stage": "evaluate",
+          "status": "completed"
+        },
+        {
+          "job": "D2_B3_seed2729",
+          "stage": "evaluate",
+          "status": "completed"
+        }
+      ],
+      "performance_passed": false
+    },
+    "summary": {
+      "schema": "auv.active.summary.v1",
+      "source_review": {
+        "review_sha256": "6b872032c2a4f0c52aa6cffdfacc084db7eef03521d09a9a2a03aab93614ed27",
+        "profile": "active_rebuild_v1",
+        "inventory_sha256": "1387cadc5f9d35b33ff3d990695c32dbeb09706267b95d251266b940932786fb",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.rebuild.v1"
+      },
+      "complete": true,
+      "mechanism_only": true,
+      "scope": "prepared suite",
+      "groups": [
+        {
+          "method": "D2",
+          "expected_replicates": 1,
+          "completed_replicates": 1,
+          "complete": true,
+          "found_rate": 1,
+          "found_rate_seed_sd": null,
+          "pre_found_collision_rate": 0,
+          "pre_found_collision_rate_seed_sd": null,
+          "found_penalized_steps": 1,
+          "found_penalized_steps_seed_sd": null,
+          "success_rate": 1,
+          "success_rate_seed_sd": null
+        },
+        {
+          "method": "D2_B2_repair_v2",
+          "expected_replicates": 1,
+          "completed_replicates": 1,
+          "complete": true,
+          "found_rate": 1,
+          "found_rate_seed_sd": null,
+          "pre_found_collision_rate": 0,
+          "pre_found_collision_rate_seed_sd": null,
+          "found_penalized_steps": 1,
+          "found_penalized_steps_seed_sd": null,
+          "success_rate": 1,
+          "success_rate_seed_sd": null
+        },
+        {
+          "method": "D2_B3_repair_v2",
+          "expected_replicates": 1,
+          "completed_replicates": 1,
+          "complete": true,
+          "found_rate": 1,
+          "found_rate_seed_sd": null,
+          "pre_found_collision_rate": 0,
+          "pre_found_collision_rate_seed_sd": null,
+          "found_penalized_steps": 1,
+          "found_penalized_steps_seed_sd": null,
+          "success_rate": 1,
+          "success_rate_seed_sd": null
+        }
+      ],
+      "performance_passed": false,
+      "missing_jobs": []
+    },
+    "source_negative": {
+      "rejected": true,
+      "completed_receipt_absent": true,
+      "physical_steps": 1
+    },
+    "training_episodes": 2,
+    "training_steps": 16,
+    "evaluation_steps": 19,
+    "fixture_thresholds": {
+      "batch_size": 4,
+      "warmup_steps": 4
+    }
+  }
+}

@@ -1,0 +1,47 @@
+"""Independent filesystem verifier; imports no production implementation."""
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+
+def digest(value):
+    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(',', ':'), ensure_ascii=True, allow_nan=False).encode()).hexdigest()
+
+
+def verify(root):
+    root = Path(root).resolve()
+    data = json.loads((root/'provenance/active_manifest.json').read_text(encoding='utf-8'))
+    if data.get('schema') != 'auv.active_source.rebuild.v1' or data.get('sha256') != digest({k:v for k,v in data.items() if k!='sha256'}):
+        raise ValueError('invalid rebuild manifest identity')
+    actual = {}
+    for folder in ('core','chapter3_bser','configs','checks','tools','provenance/parent','provenance/history'):
+        for file in (root/folder).rglob('*'):
+            if file.is_file() and file.suffix in ('.py','.json'):
+                actual[file.relative_to(root).as_posix()] = hashlib.sha256(file.read_bytes()).hexdigest()
+    for name in ('cli.py','project_paths.py','requirements.txt','AGENTS.md','.gitattributes','.gitignore','provenance/rebuild_evolution.json'):
+        actual[name] = hashlib.sha256((root/name).read_bytes()).hexdigest()
+    if actual != data['files']:
+        raise ValueError('independent source inventory mismatch: '+repr(sorted(k for k in actual.keys()|data['files'].keys() if actual.get(k)!=data['files'].get(k))))
+    old = json.loads((root/'provenance/history/extraction_v1/active_manifest.json').read_text(encoding='utf-8'))
+    if old['sha256'] != data['previous_manifest_sha256']:
+        raise ValueError('wrong extraction parent')
+    if any(actual.get(k)!=v for k,v in old['files'].items() if k.startswith('core/')):
+        raise ValueError('rebuild changed shared core behavior')
+    evolution = json.loads((root/'provenance/rebuild_evolution.json').read_text(encoding='utf-8'))
+    rows = evolution['changes']; changes = {r['path']:r for r in rows}
+    required = {k for k in old['files'].keys()|actual.keys() if old['files'].get(k)!=actual.get(k)}-{'provenance/rebuild_evolution.json'}
+    if len(changes)!=len(rows) or set(changes)!=required:
+        raise ValueError('evolution coverage mismatch')
+    for name,row in changes.items():
+        if row['before_sha256']!=old['files'].get(name) or row['after_sha256']!=actual.get(name) or not row['reason']:
+            raise ValueError('evolution hash/reason mismatch: '+name)
+    return dict(passed=True,files=len(actual),manifest_sha256=data['sha256'],core_unchanged=True)
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--root',default=str(Path(__file__).resolve().parents[1]))
+    print(json.dumps(verify(parser.parse_args().root),indent=2))
+
+
+if __name__=='__main__':main()

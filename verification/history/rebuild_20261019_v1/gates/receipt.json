@@ -1,0 +1,43 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "rebuild_20261019_v1",
+  "source_identity": {
+    "review_sha256": "6b872032c2a4f0c52aa6cffdfacc084db7eef03521d09a9a2a03aab93614ed27",
+    "profile": "active_rebuild_v1",
+    "inventory_sha256": "1387cadc5f9d35b33ff3d990695c32dbeb09706267b95d251266b940932786fb",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.rebuild.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/rebuild/source.json",
+      "sha256": "520a0dc61d77e85077c375d95288712c280ce5a02db5413b3125d54563e435a2"
+    },
+    "structural": {
+      "path": "verification/rebuild/structural.json",
+      "sha256": "cd40b252a114efe0f8ef1875e082a32be8b0727c6df463ac7c16af37307a37c8"
+    },
+    "regression": {
+      "path": "verification/rebuild/regression.json",
+      "sha256": "ad85db7a91712898e2d78ae340710114b70741d4d38a7abd0272a86aaa61f767"
+    },
+    "parity": {
+      "path": "verification/rebuild/parity.json",
+      "sha256": "8d8e844159605c42ba8ac3d6515f291023766a13a79d56dce1e878384e5e3549"
+    },
+    "entrypoints": {
+      "path": "verification/rebuild/entrypoints.json",
+      "sha256": "faaaf7c4ee0e3432899d34f78bfcbfa2aa6dfa4812e4a5e5d80bd7cd1dabe1b8"
+    },
+    "checkpoint": {
+      "path": "verification/rebuild/checkpoint.json",
+      "sha256": "8ea92fc16da10fd8a52635cd8c3b4cfac84e26782214e380001f02a537345be3"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "performance_passed": false,
+  "scope": "User-authorized manual thesis research in the standalone rebuilt directory; explicit --execute required.",
+  "historical_e0_passed": false,
+  "committed_clean_clone_claimed": false
+}

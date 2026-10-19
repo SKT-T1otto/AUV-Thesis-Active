@@ -1,0 +1,12 @@
+{
+  "parent_parity.stdout": "c0cc4cdacce45c5383392b8d0588d0f5ca3e8f8197de84fbff7fe11ea2722ed9",
+  "parent_parity.stderr": "48dd234884cbcf4dd3f378b86ace36503c9344264dc584926de9198245064024",
+  "active_parity.stdout": "7e9d4597a1255a691bf2be75107db28eb6862e39dade57be8181825717569304",
+  "active_parity.stderr": "f1d008f8e1f390e6877c3ecc7bc0c7fb284ed3f8333ff9bf246d6838b35ab525",
+  "parent_process.json": "e74a8d84c8fc8eb6923e4c9d26215311e50725e369ef784acd274040a26af3b5",
+  "active_process.json": "c2ef3cdd81351ea4a1685658aa81d5bd10e59abfc70be95d6ea80a1f9cb68d4a",
+  "verify_parity.py": "f902bb327368afa2ba4d282c346422a797b4b4286f7b6f89b0ef2fb3fc01b647",
+  "verify_closure.py": "448ab64fbcad45c31cd7654073e503ede2f7a479a5bb657faf90d9a0073600c9",
+  "slice_project.py": "03d2c6bb34b793835ed213c904ecc139a9bdbd9447cd86d794425b6cc3e67593",
+  "prepare_project.py": "9dafb19edafbc90543b47efb4389dbbf09cb5366b2a277af0e31a1b06e6f05e0"
+}

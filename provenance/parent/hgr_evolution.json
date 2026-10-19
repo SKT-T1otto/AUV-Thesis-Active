@@ -1,0 +1,16 @@
+{
+  "schema": "ch3.hgr.authorized_evolution.v1",
+  "authorization": "2026-09-13 explicit user request: team objective, isolated stochastic HGR, simulator restore and independent registrations",
+  "baseline_commit": "0a5bd3a4efdb68f2cca8721ffe0e8dbf2d54e265",
+  "historical_manifests_modified": false,
+  "records": [
+    {
+      "path": "core/registry/experiment_registry.py",
+      "phase0b2_sha256": "769dad9c900af98bc0cb067632d2343db573fcd36c52bd176cba6966351f2b61",
+      "previous_reviewed_sha256": "8c735bdbe3e6bff0a56a8e4c120f9e65c236987721ad4ba7ec7b74e01d41a87c",
+      "current_sha256": "f5cd0ee57ac83ba9c1525bcda43594f4639b19b7c3502c95d963a8726775c94b",
+      "current_ast_dump_sha256": "b0a5aa025d5b0dc5e06945ccd5c126fe4d27bf81bd8be340bb41fdb339ed09a6",
+      "reason": "Add exactly three independent HGR-family names; retain seven active legacy methods and Phase1C registration."
+    }
+  ]
+}
