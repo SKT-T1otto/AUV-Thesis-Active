@@ -1,0 +1,7 @@
+{
+  "schema": "auv.map.package_parent.v1",
+  "parent_package_sha256": "f92b8db5bcd3d4345dd1b6c7f2b36f1ed21aa6638c5526023d6a89d13090605a",
+  "immutable_parent_archive": "provenance/baselines/map_d2_repair_v2_20261020_v1/source_and_evidence.zip",
+  "source_manifest": "provenance/map_stage1_manifest.json",
+  "new_version": "map_public_interface_v1"
+}

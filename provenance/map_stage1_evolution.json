@@ -1,0 +1,179 @@
+{
+  "schema": "auv.map.source_evolution.v1",
+  "stage": 1,
+  "parent_review_sha256": "954f773a96b297ad8af3ec49eeabf969bf9b2326bdba67ea03c39d3044941f4f",
+  "algorithm_changed": false,
+  "authorized_scope": "User 2026-10-20: record the current map version and begin the implementation plan; stage-1 public interface and equivalence gate.",
+  "implemented": "public evidence and default-off composition only",
+  "not_implemented": [
+    "joint belief",
+    "new candidates",
+    "discovery signatures",
+    "new route allocation",
+    "execution scenarios"
+  ],
+  "changes": [
+    {
+      "path": "chapter3_bser/experiments/__init__.py",
+      "before_sha256": null,
+      "after_sha256": "25912bde9038d8b0f4a6d1aabf3c1f0b9b84ac7701052be18168b2d945dde82a",
+      "reason": "Create explicit Chapter-3 research namespace; no historical runtime dependencies."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/__init__.py",
+      "before_sha256": null,
+      "after_sha256": "1a9f0b475598ace1e81065b8a4b83459cfb88002b152739590921bc8334c150f",
+      "reason": "Declare observation-interface stage only; no algorithm/performance claim."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/assembly.py",
+      "before_sha256": null,
+      "after_sha256": "0f058757185b4478987c25cde6416f45ce15c6df5d2d640e1994cfbcc8bd25c6",
+      "reason": "Bind only public interfaces to an observation session and consume final steps without altering D2 control."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/audit.py",
+      "before_sha256": null,
+      "after_sha256": "c008e01fd1cec2f3ffb9f93584f74340570ba40ef2a47f9c509761230cfb4726",
+      "reason": "Record evidence validity and hashes of actual installed complete paths/Hold states; do not mutate search decisions."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/config.py",
+      "before_sha256": null,
+      "after_sha256": "00d17528a25d6279f0c9e4b0b187e10e2e21b7aa70a0156550e0713d434d738c",
+      "reason": "Strict schema and finite bounded journal/audit capacities; only observe_only is currently implemented."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/public_observations.py",
+      "before_sha256": null,
+      "after_sha256": "2968a1910e100bde03ed1fed2407f9afeb77f34a22e10d0cd8867f8a59db7381",
+      "reason": "Atomically validate/deduplicate event batches, require actual scan/check completion and reject missing history, inconsistent discovery and post-terminal events."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/reference.py",
+      "before_sha256": null,
+      "after_sha256": "fc140af6cf730a332eb148fa473d7fcc45cfba0cf4639ef91c13987a2b0b89b8",
+      "reason": "New manual mechanism-only observer audit entrypoint; defaults to plan-only, bounded zero residual, distinct output schema, no learned model."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/types.py",
+      "before_sha256": null,
+      "after_sha256": "1cb2564d8ce567501e80e6209ee9b13ee8b4963ea620f7dee42cbb68e1236a13",
+      "reason": "Immutable public evidence packets separate from original planning and network interfaces."
+    },
+    {
+      "path": "chapter3_bser/learning/base_runtime.py",
+      "before_sha256": "32d2d79d4852ed62310ac8c5f612834d920d54923eb7c60399478c6c85a05a06",
+      "after_sha256": "4b2ac47d98d097ce8c813b91031042c274737b68c25bf4e3909c82ca8254f131",
+      "reason": "Compose optional observation-only session before reset, after every transition including terminal, and after installed guidance; D2 assembly delegated unchanged."
+    },
+    {
+      "path": "chapter3_bser/learning/map_source.py",
+      "before_sha256": null,
+      "after_sha256": "973ac73596159de08b4d4bc2ee1b653a50253a3e260b6068d663f0a2077e35dc",
+      "reason": "Production validation of complete successor inventory, exact parent/baseline and per-file evolution; no tools or archived runtime imports."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "79371cca1466735542eb3d673c1b95aec851da9071cfb39fde97be921f3c55b0",
+      "after_sha256": "4cbef36e4289ce2c7ee5f7bd5dd0c5a5e6c28c7e9e352286a9f73ad61b44feca",
+      "reason": "Validate a separately versioned source/evidence successor while retaining the old active manifest, evolution and readiness files unchanged."
+    },
+    {
+      "path": "chapter3_bser/planner_factory.py",
+      "before_sha256": null,
+      "after_sha256": "58ee74233f41878faece32e0855f512c2729d22ebd107a2828b2d4163a9ef274",
+      "reason": "Delegate all controller/bridge construction to existing D2; lazily enable the audited observation session only on explicit extension configuration."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": null,
+      "after_sha256": "f3fdefd7fca4d221904d60c9851bf9b1789821efd17dff7487f90510818a821e",
+      "reason": "Three independent negative controls for missing new code, mutable parent evidence and physics changes hidden by resigned manifests."
+    },
+    {
+      "path": "checks/test_public_events.py",
+      "before_sha256": null,
+      "after_sha256": "1bd8b09349059eaad532453bd3915efe759a08a5b3eae6d3dbdf32e28f26cf2e",
+      "reason": "Nineteen independent transaction, validity, lifecycle-hash, schema and default-no-execution checks; no simulator episodes."
+    },
+    {
+      "path": "configs/coupled_search_v1.json",
+      "before_sha256": null,
+      "after_sha256": "5014e1202964cd8ae07ed7b7e662d47ba00c9ccecf082f520f0b304cf00aaad7",
+      "reason": "Default-off stage-1 observation-only config; reject unavailable coupled inference/allocation modes."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "b13db15acef2c17d3dbd87fce8c89c34840c4170ea02f398f09e8e2934338aff",
+      "after_sha256": "1851b38d7784079124a53e9c8b5b44f93926a2fdd362339670f204a85f59cf17",
+      "reason": "Extend the exact required regression inventory from 38 to 60 tests, preserving all existing tests and no-skip requirement."
+    },
+    {
+      "path": "core/env/mission_env.py",
+      "before_sha256": "53ca90a07a7bf212db8615485f52a1a67071ab686e9588e8496282a8ca19176b",
+      "after_sha256": "78cc3df4d6f4ef884a2a7125c9df88588857ace0998ab54e3f17c29000378769",
+      "reason": "Expose typed public event journal and detached public vehicle/control constants without changing the 28D observation."
+    },
+    {
+      "path": "core/env/public_events.py",
+      "before_sha256": null,
+      "after_sha256": "7cc29d4af97255e9d2320517f29b3471b4de436594b16b1f0a16939ed8839fe0",
+      "reason": "Define bounded immutable transaction payloads, reset identity, history-gap rejection and content hashing; no planner or inference."
+    },
+    {
+      "path": "core/env/uav_env.py",
+      "before_sha256": "83b7ea143e8c203c4e0249c4c2f0b212eae05ca1b612941e7bc6245fa33d1556",
+      "after_sha256": "3b6bc79ae5d6f8fe2823a4ba3ccd8471d8b207c1e52478749ba5f9e53bda5e37",
+      "reason": "Add optional immutable copies of already integrated scans and completed physical-step metadata; no legacy physics, sensing, reward, or detection rule edits."
+    },
+    {
+      "path": "provenance/baselines/map_d2_repair_v2_20261020_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "25eba5df156f7ad44f782a5c1c1dd554a4d01aec9e8fd45c09e0adba891d2646",
+      "reason": "Freeze the pre-change Active baseline and/or pre-change data-only trace for reproducible later comparisons; immutable data, never a runtime import."
+    },
+    {
+      "path": "provenance/baselines/map_d2_repair_v2_20261020_v1/baseline_trace.json",
+      "before_sha256": null,
+      "after_sha256": "27727a6ac3db37e05dc426637fa31503a566bb9668faec7f0b84eccb8823a891",
+      "reason": "Freeze the pre-change Active baseline and/or pre-change data-only trace for reproducible later comparisons; immutable data, never a runtime import."
+    },
+    {
+      "path": "provenance/baselines/map_d2_repair_v2_20261020_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "e90659450f0af26db41a1269279bb331dad991aad4f866680944ae5c514ad496",
+      "reason": "Freeze the pre-change Active baseline and/or pre-change data-only trace for reproducible later comparisons; immutable data, never a runtime import."
+    },
+    {
+      "path": "provenance/baselines/map_d2_repair_v2_20261020_v1/trace_receipt.json",
+      "before_sha256": null,
+      "after_sha256": "93c4ea3da9a65c2618ae44d2223335341c588b7956629a4a4a0fd709f4a68232",
+      "reason": "Freeze the pre-change Active baseline and/or pre-change data-only trace for reproducible later comparisons; immutable data, never a runtime import."
+    },
+    {
+      "path": "tools/check_map_interface.py",
+      "before_sha256": null,
+      "after_sha256": "42e5af4006ef6ccce320e7aecefc07f4817ccbfb64d11e88f55eba0bc3146f34",
+      "reason": "Explicit-execute bounded data-only parity replay against pre-change Active traces, with all simulation and model-restoration counts disclosed."
+    },
+    {
+      "path": "tools/map_interface_source.py",
+      "before_sha256": null,
+      "after_sha256": "7b22b2e0da852ebe2f3f7dbc2d8811ffadb7eff1729d684265aba5dff4469211",
+      "reason": "Independently verify complete inventory, immutable archive/evidence, protected files and legacy AST outside the explicit instrumentation."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "3edc40d1bfec0742cbf5b65bcff17c5c7907af336be387a48d36142e8fc946d1",
+      "after_sha256": "8012ee0ee9719812fbc876d7fce171e5e40b80a7fa180799e76345290673451f",
+      "reason": "Permit only the exact coupled_search_v1 research namespace; all other historical experiments remain forbidden. Import-audit scope covers all declared Active runtime/check Python files, excluding attached document generators that must never execute as runtime imports."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "2dafaef80b07aa94f08d7a4e6910708a0d25d464af8a1c6ff286237ef2a807a1",
+      "after_sha256": "8d73d282bcbe9d93f65e6bead3bce84c8ac4c1cb2692091d11123971c2468128",
+      "reason": "Dispatch explicitly versioned map-interface inventory to independent verifier; retain the prior rebuild verifier."
+    }
+  ]
+}

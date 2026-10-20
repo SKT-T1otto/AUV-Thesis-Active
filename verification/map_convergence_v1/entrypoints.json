@@ -1,0 +1,125 @@
+{
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "dcac691315afaf21a3d9370ce7dab8d892cf52cef99dc9330ab23656a91c2223",
+    "profile": "active_map_convergence_v1",
+    "inventory_sha256": "53455486666c457cd69aa8eb67ac1814157201939d6a482226d0be3c5a4e0e78",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_convergence.v1"
+  },
+  "run_id": "map_convergence_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "checks": [
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "prepare",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--spec",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\missing.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"prepare\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"spec\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\missing.json\",\n  \"mechanism_check\": false,\n  \"exclude_runs\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--stage",
+        "train"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"stage\": \"train\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--stage",
+        "diagnose"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"stage\": \"diagnose\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--stage",
+        "evaluate"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"stage\": \"evaluate\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--stage",
+        "all"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"stage\": \"all\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "summarize",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent\\report"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"summarize\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"output\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\\\\report\"\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "tools.check_map_training",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"executed\": false, \"episodes\": 8, \"max_steps\": 8, \"max_complete_updates_per_model\": 4, \"output\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\"}\n"
+    }
+  ],
+  "default_no_execution": true,
+  "bash_syntax": {
+    "command": "E:/git/Git/bin/bash.exe -n scripts/linux_map_experiment.sh",
+    "exit_code": 0,
+    "script_sha256": "6bc9be0b77272ce8566a5c346365e32b929d3efb03c97c54848900098c28f0ed",
+    "scope": "Read-only syntax check succeeded outside the Windows sandbox after MSYS initialization was denied within it."
+  },
+  "linux_execution": false,
+  "formal_launch_requires_fresh_actual_linux_validation": true
+}

@@ -1,0 +1,101 @@
+{
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "8f228e4daa34c9b1948e325cd36be477342dc09ac597fe610e77c5210f09cea2",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "run_id": "map_core_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "execution_source_identity": {
+    "review_sha256": "4f932dba186cbcbf4e8943c7d4c3619591781a7e705ffe65b8d1179636cf75c4",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "b4238595610b6a2543721d347d34f6c401f55b02a37a168e9acc1d32401d7c63",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "executions": [
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/mechanisms.json",
+      "sha256": "72e3009834cc39df3a212e16e0d75abd399b2fda6c9be339754dbe7212eed4a4"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/audit_0.json",
+      "sha256": "0671a260066cc4ef81749307f35d56c5db57662e2edd0578bc599642def41107"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/audit_3.json",
+      "sha256": "44821b1c7d5fe9f0447c01f94e33541f7547450c588f5bf1a5320014246fc3ff"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/audit_1.json",
+      "sha256": "40d9b49b1227a0de871b1f2f39836a5be78fc35b85b30f57518ced28fe1b630e"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/allocator_0.json",
+      "sha256": "727aea06b0fe7415b4b0131cbfb4ee38de03b4bc4b49124b4c5747cb098d0d56"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/allocator_3.json",
+      "sha256": "1341d7e19d4781223eae0ff53afebd0c543d6ae5cecfa3679c3cb429d64467f2"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/allocator_1.json",
+      "sha256": "7a7eee6ea7225072880435b017a61f777c4c96eaf4e66a9e52c95c889c8d622a"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/public_events_0.jsonl",
+      "sha256": "509e3f6525e8861871f79eb5625225ace0f4608f6be72237d315e381cddbfcdb"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/public_events_3.jsonl",
+      "sha256": "1cf67683b1ed5bb12f2ced6d0c5e392f2ae622de334a3a3b3568ad47127db7d2"
+    },
+    {
+      "path": "verification/map_core_v1/candidate_4f932dba/public_events_1.jsonl",
+      "sha256": "c71d35ce4065606858fd9929d62468d5df468ad63b5ca5f03567f1bd8ada6ddc"
+    }
+  ],
+  "snapshot": {
+    "path": "verification/map_core_v1/candidate_4f932dba/source.zip",
+    "sha256": "0cee664fe2116d7a258531845dacd5aa95943b56153362a8a2758ade2b19abf2"
+  },
+  "manifest": {
+    "path": "verification/map_core_v1/candidate_4f932dba/manifest.json",
+    "sha256": "8a305c490ea618db887ff3a26cc24b1e6e3dd626530bbcfcb02aad7385a7ce54"
+  },
+  "final_delta_scope": "Only complete-final-waypoint forecast audit, its independent test, and module descriptions; allocation/filter/forecast scoring unchanged.",
+  "final_delta_ast_proofs": [
+    "chapter3_bser/experiments/coupled_search_v1/allocator.py",
+    "chapter3_bser/experiments/coupled_search_v1/assembly.py",
+    "chapter3_bser/experiments/coupled_search_v1/reference.py",
+    "chapter3_bser/experiments/coupled_search_v1/session.py",
+    "chapter3_bser/planner_factory.py"
+  ],
+  "final_audit_negative_test": "CoupledSearch.test_first_install_checks_final_waypoint_as_well_as_full_path",
+  "normal": {
+    "steps": 32,
+    "core_proposals": 2,
+    "d2_fallbacks": 0
+  },
+  "collision": {
+    "steps": 1,
+    "negative_observations": 0,
+    "fallback_reason": "geometry_proposal_budget_exhausted"
+  },
+  "discovery": {
+    "steps": 32,
+    "found_step": 1,
+    "public_handoff_step": 2,
+    "negative_observations": 0
+  },
+  "limitations": [
+    "Approximate scan-conditioned continuous geometry prior; collision fixture exhausts proposal attempts and falls back.",
+    "Execution scenarios are aggregate public errors, not identified true ocean flow.",
+    "Finite-bank resampling is not independent ground-truth performance evidence."
+  ],
+  "formal_performance_tested": false
+}

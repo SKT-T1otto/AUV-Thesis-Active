@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "plots": 9,
+  "synthetic_only": true,
+  "optimizer_rows": 60000,
+  "scope": "JavaScript execution and SVG DOM smoke check; no browser rendering or research performance claim."
+}

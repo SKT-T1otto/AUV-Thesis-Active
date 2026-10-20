@@ -1,0 +1,123 @@
+{
+  "schema": "auv.active.map_convergence.evolution.v1",
+  "parent_review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+  "authorized_scope": "Four RL groups, two seeds, 300 episodes with interpretable convergence diagnostics; no automatic long training or upload.",
+  "map_algorithm_changed": false,
+  "learning_algorithm_changed": false,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/map_convergence.py",
+      "before_sha256": null,
+      "after_sha256": "6da99cd9c138423f51c17e79a43d31625b84e382b2773901e65ef0daa5dd5806",
+      "reason": "Evaluate fixed validation tasks at initial/50-episode intervals, preserve RNG and frozen policies, bind checkpoints and generate task/return/loss curves with a predeclared plateau screen."
+    },
+    {
+      "path": "chapter3_bser/learning/map_convergence_source.py",
+      "before_sha256": null,
+      "after_sha256": "f12c6449b8a4c42696a9cb5f5bf0cb4d64989f65fe2309bec0eee0ff114c3d41",
+      "reason": "Verify current complete inventory and exact evolution from immutable experiment source."
+    },
+    {
+      "path": "chapter3_bser/learning/map_report.py",
+      "before_sha256": "7fce0de3c22b5b4bf3413d0af5d443020a12fa503ea4e3427109127af68fc93b",
+      "after_sha256": "047c4ba9e5b9e543b604e2fcfbcdd02eabe8f77a193bfa44eb897a2d00194b6e",
+      "reason": "Require validated learning diagnostics and report per-seed practical plateau screens alongside untouched final-policy comparison."
+    },
+    {
+      "path": "chapter3_bser/learning/map_suite.py",
+      "before_sha256": "af0bb071dc62061fd24eeafa25648cb2b544fa55c57d8066915fafdacff85f5a",
+      "after_sha256": "e968aec5f26164bc923a699bac61baf39c668b9da82520de499113dfbb21b7cd",
+      "reason": "Reduce the released budget, freeze an independent validation split, hash intermediate checkpoints, and expose explicit offline diagnostics; preserve learner scheduling."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "3607bd43040acf2b2457bc418cf20885482511a8855c4c3d8b1c87bfe9c5ec3f",
+      "after_sha256": "30b0b2c07a49fff60f0040cd49b551210ea85227a0e12e4e2b64c6a60cd5d43d",
+      "reason": "Dispatch the small-budget diagnostic successor with immutable parent manifests and fresh readiness gates."
+    },
+    {
+      "path": "checks/test_map_convergence.py",
+      "before_sha256": null,
+      "after_sha256": "c0090c500d3c12cb7d17e506048bd091f316b8b006aafde32625a350072ea402",
+      "reason": "Pure positive/negative controls for validation separation, checkpoint binding, plateau interpretation, reports and no-restore automatic checks."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "982d8c4569f9e4ffbdac6d83f3acc79ec3db6215a1df1f999e35631471864123",
+      "after_sha256": "dfa52660dd4bb52cc555adb3382f599fd94660f34568c7a4ec2f8cdc6b874c59",
+      "reason": "Run existing source-drift negative controls against the new immutable successor."
+    },
+    {
+      "path": "checks/test_map_suite.py",
+      "before_sha256": "8c8207fc16cadddb8f2de281dcd7b70d34dcbccf0c13267cbd5d77283b73f0c2",
+      "after_sha256": "95e7a7103b01f2f73077632d9bcc7ab2f3aa409e2b9dbf4abcd3150ff31866c3",
+      "reason": "Update the released budget expectation and preserve legacy six-group fixture coverage."
+    },
+    {
+      "path": "configs/map_comparison_pilot_v1.json",
+      "before_sha256": "4a4337287664bd6db027a369c9c4a09238bb46191749d6f4cb204197e3b5d31d",
+      "after_sha256": "6b5bd7867091844d0cf6b4fc6a70f0b34eaf3eab4cea0fad38fa38b6a32dcce5",
+      "reason": "Use the same two training seeds in the optional 20-episode workflow pilot; main 300-episode experiment does not require a pilot."
+    },
+    {
+      "path": "configs/map_comparison_v1.json",
+      "before_sha256": "eb0b23a5dbb000b0d1a6cadf215fb8a5ac477b4ed91309782e78c7b969308c84",
+      "after_sha256": "9371e7e278805caa397da76547f35dc5ca8bd816615b2f0b8f1afa3a84762c7b",
+      "reason": "User-requested four RL groups x two seeds x 300 episodes; checkpoint every 50, independent 12-task validation and fixed plateau tolerances; retain two no-training ZERO controls."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "79bc5a6bf8e3ba1c652d0468deb6cd2d9c18e6190f7543cc7727130d243a3189",
+      "after_sha256": "023b126a27b559575c2d2683c336b3706779f942af6b13dfa4ad781099e6e746",
+      "reason": "Retain all prior checks and pin added convergence protocol tests."
+    },
+    {
+      "path": "provenance/baselines/map_experiment_20261020_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "6feffba1dc02b32a5df25d287d56f1aa380ebf5c97b3490f222ec1517d0491e4",
+      "reason": "Freeze all 393 released source/evidence/package files before reducing the budget and adding diagnostics."
+    },
+    {
+      "path": "provenance/baselines/map_experiment_20261020_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "5b1349e90657d5182b4ff74a3039e3ac9a5c97ab702484a8403d98e38398f544",
+      "reason": "Freeze all 393 released source/evidence/package files before reducing the budget and adding diagnostics."
+    },
+    {
+      "path": "provenance/map_experiment_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "0f78038c2de9f0a33b312aded43e5b199f69afaa5b743ab67821ab53c0376b72",
+      "reason": "Pin immutable parent experiment manifest in the successor inventory."
+    },
+    {
+      "path": "scripts/linux_map_experiment.sh",
+      "before_sha256": "7362e276386dddb8258c3f03650b564ab522fa81708d3fefc1222713f78614d8",
+      "after_sha256": "6bc9be0b77272ce8566a5c346365e32b929d3efb03c97c54848900098c28f0ed",
+      "reason": "Add manual diagnose stage; no implicit --execute."
+    },
+    {
+      "path": "tools/check_map_training.py",
+      "before_sha256": "3a35f77432a4298c611ce1a73e736e580440baf570cab30001d628164ee75cab",
+      "after_sha256": "4e80015c9a83eada8a0fbb50dfd767b5034c219beb1c9f48ae25b47113902160",
+      "reason": "Remove offline convergence settings from bounded engineering fixtures; no automatic checkpoint restore."
+    },
+    {
+      "path": "tools/map_convergence_source.py",
+      "before_sha256": null,
+      "after_sha256": "27b14987ec9c5d12b6547635e696629ccb615a9d708cdcb64cb511626fdbd385",
+      "reason": "Independently verify frozen parent bytes/evidence, protected map/physics/learner/update schedule and exact reviewed deltas."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "4ce3347f791f60fd04195f4812c89b599cfa661945a71e603a6d6d697506a410",
+      "after_sha256": "ce37a444f269eeb8a1091b4be98d8ef87fb5cadc4d478d646471b534363b91b2",
+      "reason": "Use the existing eight-episode no-restore native workflow for the new source profile on Linux."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "db3203ea7f9fe157f51f433154d67936d1e82ec2820250bce817f672a758b9f5",
+      "after_sha256": "e3ac06746aec910c2bd1d93f99388f8aab68cd25772502d40f31fc2501df8e8c",
+      "reason": "Dispatch independent convergence successor verification."
+    }
+  ]
+}

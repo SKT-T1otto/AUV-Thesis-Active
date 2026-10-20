@@ -1,0 +1,357 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "episodes_started": 8,
+  "training_episodes": 4,
+  "evaluation_episodes": 4,
+  "physical_steps": 36,
+  "max_episode_steps": 8,
+  "max_complete_updates_per_model": 4,
+  "checkpoint_file_restore_executed": false,
+  "formal_training_started": false,
+  "jobs": [
+    {
+      "job": "OLD_B2_seed2729",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "883a6e8e10a866a5f9a4b21c7fb54863f613cea38116a43cae5032fb52181221",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1"
+      },
+      "training_steps": 8,
+      "evaluation_steps": 1,
+      "complete_updates": 4,
+      "initial_state": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905",
+      "core_proposals": 0,
+      "evaluation_policy_unchanged": true
+    },
+    {
+      "job": "NEW_B2_seed2729",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "700c2bf62430ff0d74c1689464c8b6c288e04dd9a666f492de9c2e6a73eb7e96",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1"
+      },
+      "training_steps": 8,
+      "evaluation_steps": 1,
+      "complete_updates": 4,
+      "initial_state": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905",
+      "core_proposals": 1,
+      "evaluation_policy_unchanged": true
+    },
+    {
+      "job": "OLD_B3_seed2729",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "883a6e8e10a866a5f9a4b21c7fb54863f613cea38116a43cae5032fb52181221",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1"
+      },
+      "training_steps": 8,
+      "evaluation_steps": 1,
+      "complete_updates": 4,
+      "initial_state": "bbc2970aa47545e1251d4eba147a664b7d464a371dc0a7e5eebc9fc0ac163237",
+      "core_proposals": 0,
+      "evaluation_policy_unchanged": true
+    },
+    {
+      "job": "NEW_B3_seed2729",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "700c2bf62430ff0d74c1689464c8b6c288e04dd9a666f492de9c2e6a73eb7e96",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1"
+      },
+      "training_steps": 8,
+      "evaluation_steps": 1,
+      "complete_updates": 4,
+      "initial_state": "bbc2970aa47545e1251d4eba147a664b7d464a371dc0a7e5eebc9fc0ac163237",
+      "core_proposals": 1,
+      "evaluation_policy_unchanged": true
+    }
+  ],
+  "report": {
+    "schema": "auv.active.map_summary.v1",
+    "source_review": {
+      "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+      "profile": "active_map_experiment_v1",
+      "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+      "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+      "distribution": "auv.active_source.map_experiment.v1"
+    },
+    "plan_sha256": "2a011640935029fd5904cfec4187c93e43fd72bf0f332dfc357cff31f4021917",
+    "complete": true,
+    "native_evaluation_only": true,
+    "mechanism_only": true,
+    "groups": [
+      {
+        "group": "OLD_B2",
+        "training_replicates": 1,
+        "policies": 1,
+        "scenarios_per_policy": 1,
+        "found_rate": 0.0,
+        "found_rate_seed_sd": null,
+        "success_rate": 0.0,
+        "success_rate_seed_sd": null,
+        "collision_rate": 1.0,
+        "collision_rate_seed_sd": null,
+        "pre_found_collision_rate": 1.0,
+        "pre_found_collision_rate_seed_sd": null,
+        "found_penalized_steps": 8.0,
+        "found_penalized_steps_seed_sd": null,
+        "team_discounted_return": -2.0,
+        "team_discounted_return_seed_sd": null,
+        "runtime_seconds": 0.003726999999344116,
+        "runtime_seconds_seed_sd": null,
+        "fallbacks": 0.0,
+        "fallbacks_seed_sd": null
+      },
+      {
+        "group": "NEW_B2",
+        "training_replicates": 1,
+        "policies": 1,
+        "scenarios_per_policy": 1,
+        "found_rate": 0.0,
+        "found_rate_seed_sd": null,
+        "success_rate": 0.0,
+        "success_rate_seed_sd": null,
+        "collision_rate": 1.0,
+        "collision_rate_seed_sd": null,
+        "pre_found_collision_rate": 1.0,
+        "pre_found_collision_rate_seed_sd": null,
+        "found_penalized_steps": 8.0,
+        "found_penalized_steps_seed_sd": null,
+        "team_discounted_return": -2.0,
+        "team_discounted_return_seed_sd": null,
+        "runtime_seconds": 0.00421969999842986,
+        "runtime_seconds_seed_sd": null,
+        "fallbacks": 1.0,
+        "fallbacks_seed_sd": null
+      },
+      {
+        "group": "OLD_B3",
+        "training_replicates": 1,
+        "policies": 1,
+        "scenarios_per_policy": 1,
+        "found_rate": 0.0,
+        "found_rate_seed_sd": null,
+        "success_rate": 0.0,
+        "success_rate_seed_sd": null,
+        "collision_rate": 1.0,
+        "collision_rate_seed_sd": null,
+        "pre_found_collision_rate": 1.0,
+        "pre_found_collision_rate_seed_sd": null,
+        "found_penalized_steps": 8.0,
+        "found_penalized_steps_seed_sd": null,
+        "team_discounted_return": -2.0,
+        "team_discounted_return_seed_sd": null,
+        "runtime_seconds": 0.004346199999417877,
+        "runtime_seconds_seed_sd": null,
+        "fallbacks": 0.0,
+        "fallbacks_seed_sd": null
+      },
+      {
+        "group": "NEW_B3",
+        "training_replicates": 1,
+        "policies": 1,
+        "scenarios_per_policy": 1,
+        "found_rate": 0.0,
+        "found_rate_seed_sd": null,
+        "success_rate": 0.0,
+        "success_rate_seed_sd": null,
+        "collision_rate": 1.0,
+        "collision_rate_seed_sd": null,
+        "pre_found_collision_rate": 1.0,
+        "pre_found_collision_rate_seed_sd": null,
+        "found_penalized_steps": 8.0,
+        "found_penalized_steps_seed_sd": null,
+        "team_discounted_return": -2.0,
+        "team_discounted_return_seed_sd": null,
+        "runtime_seconds": 0.004466100001081941,
+        "runtime_seconds_seed_sd": null,
+        "fallbacks": 1.0,
+        "fallbacks_seed_sd": null
+      }
+    ],
+    "comparisons": [
+      {
+        "comparison": "NEW_B2 minus OLD_B2",
+        "metric": "found_rate",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B2 minus OLD_B2",
+        "metric": "success_rate",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B2 minus OLD_B2",
+        "metric": "collision_rate",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B2 minus OLD_B2",
+        "metric": "pre_found_collision_rate",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B2 minus OLD_B2",
+        "metric": "found_penalized_steps",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B2 minus OLD_B2",
+        "metric": "team_discounted_return",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B2 minus OLD_B2",
+        "metric": "runtime_seconds",
+        "mean": 0.0004926999990857439,
+        "lower": 0.0004926999990857439,
+        "upper": 0.0004926999990857439,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B2 minus OLD_B2",
+        "metric": "fallbacks",
+        "mean": 1.0,
+        "lower": 1.0,
+        "upper": 1.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B3 minus OLD_B3",
+        "metric": "found_rate",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B3 minus OLD_B3",
+        "metric": "success_rate",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B3 minus OLD_B3",
+        "metric": "collision_rate",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B3 minus OLD_B3",
+        "metric": "pre_found_collision_rate",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B3 minus OLD_B3",
+        "metric": "found_penalized_steps",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B3 minus OLD_B3",
+        "metric": "team_discounted_return",
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B3 minus OLD_B3",
+        "metric": "runtime_seconds",
+        "mean": 0.0001199000016640639,
+        "lower": 0.0001199000016640639,
+        "upper": 0.0001199000016640639,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      },
+      {
+        "comparison": "NEW_B3 minus OLD_B3",
+        "metric": "fallbacks",
+        "mean": 1.0,
+        "lower": 1.0,
+        "upper": 1.0,
+        "training_replicates": 1,
+        "paired_scenes": 1,
+        "interval_scope": "scene uncertainty only"
+      }
+    ],
+    "bootstrap_draws": 32,
+    "performance_passed": false
+  },
+  "performance_passed": false
+}

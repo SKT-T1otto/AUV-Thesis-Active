@@ -1,0 +1,222 @@
+{
+  "schema": "auv.active.map_suite.v1",
+  "source_review": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "protocol_sha256": "a8ad9c19b4ec1903bda8e4964bb2fc5a2b0ba75579a1b0f8f992f262550cb3c0",
+  "mechanism_only": false,
+  "spec": {
+    "schema": "auv.active.map_experiment_spec.v1",
+    "groups": [
+      "OLD_ZERO",
+      "NEW_ZERO",
+      "OLD_B2",
+      "NEW_B2",
+      "OLD_B3",
+      "NEW_B3"
+    ],
+    "seeds": [
+      2729
+    ],
+    "train_episodes": 2,
+    "max_steps": 400,
+    "evaluation_count": 2,
+    "evaluation_generator_seed": 92729,
+    "training_generator_seed_base": 1000000,
+    "checkpoint_interval": 2,
+    "new_map_config": {
+      "schema": "ch3.coupled_search.core.v1",
+      "enabled": true,
+      "mode": "coupled_search",
+      "event_capacity": 1024,
+      "audit_capacity": 1024,
+      "seed": 827291,
+      "maps": 3,
+      "particles_per_map": 32,
+      "horizon": 16,
+      "execution_scenarios": 3,
+      "raw_routes": 12,
+      "representatives": 4,
+      "path_queries": 72,
+      "proposal_regions": 24,
+      "planning_seconds": 20.0,
+      "inference_seconds": 3.0,
+      "history_steps": 512,
+      "geometry_attempts": 128,
+      "replenish_attempts": 2,
+      "recovery_cooldown": 10,
+      "geometry": {
+        "prior_id": "public_scan_conditioned_aabb_completion_v1",
+        "unknown_boxes": 2,
+        "max_hit_clusters": 8,
+        "size_min": 0.6,
+        "size_max": 3.0,
+        "cluster_radius": 1.2,
+        "scan_tolerance": 0.25
+      },
+      "target_prior": {
+        "prior_id": "declared_uniform_position_isotropic_velocity_v1",
+        "speed_min": 0.2,
+        "speed_max": 0.8,
+        "stationary_mass": 0.2
+      },
+      "beta": 0.0,
+      "rho": 0.25,
+      "lambda_cost": 0.02,
+      "cost_scale": 120.0,
+      "compression_epsilon": 0.02,
+      "tie_tolerance": 0.001,
+      "execution_history": 8,
+      "execution_error_clip": 0.5,
+      "review_samples": 64
+    },
+    "bootstrap_draws": 2000,
+    "statistics_seed": 20261020
+  },
+  "jobs": [
+    {
+      "name": "OLD_ZERO",
+      "group": "OLD_ZERO",
+      "map_id": "OLD",
+      "learner": "ZERO",
+      "seed": null,
+      "config": "inputs/OLD_ZERO.json",
+      "train": "jobs/OLD_ZERO/train",
+      "evaluation": "jobs/OLD_ZERO/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "05f5d6d23f04c556b01cdd2e7a6964c11da1f7055f5542762d269d54e062aad3",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "a8ad9c19b4ec1903bda8e4964bb2fc5a2b0ba75579a1b0f8f992f262550cb3c0"
+      }
+    },
+    {
+      "name": "NEW_ZERO",
+      "group": "NEW_ZERO",
+      "map_id": "NEW",
+      "learner": "ZERO",
+      "seed": null,
+      "config": "inputs/NEW_ZERO.json",
+      "train": "jobs/NEW_ZERO/train",
+      "evaluation": "jobs/NEW_ZERO/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "9edaa647bd00c9162ffbcb378eece9943ed39eec7768a120286a59322d8fdd9b",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "a8ad9c19b4ec1903bda8e4964bb2fc5a2b0ba75579a1b0f8f992f262550cb3c0"
+      }
+    },
+    {
+      "name": "OLD_B2_seed2729",
+      "group": "OLD_B2",
+      "map_id": "OLD",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/OLD_B2_seed2729.json",
+      "train": "jobs/OLD_B2_seed2729/train",
+      "evaluation": "jobs/OLD_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "05f5d6d23f04c556b01cdd2e7a6964c11da1f7055f5542762d269d54e062aad3",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "a8ad9c19b4ec1903bda8e4964bb2fc5a2b0ba75579a1b0f8f992f262550cb3c0"
+      }
+    },
+    {
+      "name": "NEW_B2_seed2729",
+      "group": "NEW_B2",
+      "map_id": "NEW",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/NEW_B2_seed2729.json",
+      "train": "jobs/NEW_B2_seed2729/train",
+      "evaluation": "jobs/NEW_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "9edaa647bd00c9162ffbcb378eece9943ed39eec7768a120286a59322d8fdd9b",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "a8ad9c19b4ec1903bda8e4964bb2fc5a2b0ba75579a1b0f8f992f262550cb3c0"
+      }
+    },
+    {
+      "name": "OLD_B3_seed2729",
+      "group": "OLD_B3",
+      "map_id": "OLD",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/OLD_B3_seed2729.json",
+      "train": "jobs/OLD_B3_seed2729/train",
+      "evaluation": "jobs/OLD_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "05f5d6d23f04c556b01cdd2e7a6964c11da1f7055f5542762d269d54e062aad3",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "a8ad9c19b4ec1903bda8e4964bb2fc5a2b0ba75579a1b0f8f992f262550cb3c0"
+      }
+    },
+    {
+      "name": "NEW_B3_seed2729",
+      "group": "NEW_B3",
+      "map_id": "NEW",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/NEW_B3_seed2729.json",
+      "train": "jobs/NEW_B3_seed2729/train",
+      "evaluation": "jobs/NEW_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "9edaa647bd00c9162ffbcb378eece9943ed39eec7768a120286a59322d8fdd9b",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "a8ad9c19b4ec1903bda8e4964bb2fc5a2b0ba75579a1b0f8f992f262550cb3c0"
+      }
+    }
+  ],
+  "assets": {
+    "inputs/evaluation.json": "09a2fe28b9406148ef316765369d31f6b50901d54ab2c9ccfd5b8fb9aab93183",
+    "inputs/excluded_000.json": "3b68afb8ff23b110149315429378dbb7872ccb3c3cc363ed24a84ca907c6a175",
+    "inputs/excluded_001.json": "1c75cb358c1472030b217805d956d5a7f1a676d8bf97725e6b4e66ad4eb0d909",
+    "inputs/generated_evaluation.json": "7497c19b4417e8b4698b25ba081d1be04f5e4af9010c9813317dcb382bb35796",
+    "inputs/generated_train_seed2729.json": "53740e9d859d722e2b178cc4bcf72ff28ca2cf09c5079851bb94cb7d827795e6",
+    "inputs/NEW_B2_seed2729.json": "362d8ba944b29709bd09fc716ddb2c76bcd15171459743e7167f2391263234f9",
+    "inputs/NEW_B3_seed2729.json": "ac53c2e1e642752606114feb7a493b5c68e983d5dcf9cdf56ef670491b712ddb",
+    "inputs/NEW_ZERO.json": "b728f24c4277602507880cf08bde14a4506eb85603243128722510cbf5eb8178",
+    "inputs/OLD_B2_seed2729.json": "5292bba449ca5ffbed379fe98c39bff71710460d20fb8494f03f83ff7dd1de4a",
+    "inputs/OLD_B3_seed2729.json": "41b01a6857d57caebf7c276258be87d4605869c908795eddfd60c8296e084bea",
+    "inputs/OLD_ZERO.json": "07066396b6a31dcef0aaa881e9f7db0f9ece9e88ebfccdd6a9955552d55cf330",
+    "inputs/spec.json": "f15ea18c8c96101d09ab12027bf01f5d6e183b6c414fe6d664e00452265a35ad",
+    "inputs/train_seed2729.json": "127a927f8a8a6a019324a841b8349ba09b053af25a06093a567bbfc0c51bc948"
+  },
+  "excluded_manifests": [
+    {
+      "asset": "inputs/excluded_000.json",
+      "source_plan_sha256": "f8a4ccefe52a7074b8d4d47ee28d235a9f53413c33cea7f028473697f7049fe8",
+      "source_manifest_sha256": "3b68afb8ff23b110149315429378dbb7872ccb3c3cc363ed24a84ca907c6a175"
+    },
+    {
+      "asset": "inputs/excluded_001.json",
+      "source_plan_sha256": "f8a4ccefe52a7074b8d4d47ee28d235a9f53413c33cea7f028473697f7049fe8",
+      "source_manifest_sha256": "1c75cb358c1472030b217805d956d5a7f1a676d8bf97725e6b4e66ad4eb0d909"
+    }
+  ],
+  "training_protocol": "fresh weights; per-seed manifest order; innovation seed=training_seed+episode",
+  "checkpoint_selection": "last fully completed episode",
+  "native_evaluation_only": true,
+  "performance_passed": false,
+  "sha256": "7b8feefc05e78fcbbfa41503e727b33cb9a12113f1f5d5a72b83fbb4e6702916"
+}

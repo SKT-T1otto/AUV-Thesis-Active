@@ -1,0 +1,167 @@
+{
+  "schema": "auv.active.map_suite.v1",
+  "source_review": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1",
+  "mechanism_only": true,
+  "spec": {
+    "schema": "auv.active.map_experiment_spec.v1",
+    "groups": [
+      "OLD_B2",
+      "NEW_B2",
+      "OLD_B3",
+      "NEW_B3"
+    ],
+    "seeds": [
+      2729
+    ],
+    "train_episodes": 1,
+    "max_steps": 8,
+    "evaluation_count": 1,
+    "evaluation_generator_seed": 92729,
+    "training_generator_seed_base": 1000000,
+    "checkpoint_interval": 1,
+    "new_map_config": {
+      "schema": "ch3.coupled_search.core.v1",
+      "enabled": true,
+      "mode": "coupled_search",
+      "event_capacity": 1024,
+      "audit_capacity": 1024,
+      "seed": 827291,
+      "maps": 3,
+      "particles_per_map": 32,
+      "horizon": 16,
+      "execution_scenarios": 3,
+      "raw_routes": 12,
+      "representatives": 4,
+      "path_queries": 72,
+      "proposal_regions": 24,
+      "planning_seconds": 20.0,
+      "inference_seconds": 3.0,
+      "history_steps": 512,
+      "geometry_attempts": 128,
+      "replenish_attempts": 2,
+      "recovery_cooldown": 10,
+      "geometry": {
+        "prior_id": "public_scan_conditioned_aabb_completion_v1",
+        "unknown_boxes": 2,
+        "max_hit_clusters": 8,
+        "size_min": 0.6,
+        "size_max": 3.0,
+        "cluster_radius": 1.2,
+        "scan_tolerance": 0.25
+      },
+      "target_prior": {
+        "prior_id": "declared_uniform_position_isotropic_velocity_v1",
+        "speed_min": 0.2,
+        "speed_max": 0.8,
+        "stationary_mass": 0.2
+      },
+      "beta": 0.0,
+      "rho": 0.25,
+      "lambda_cost": 0.02,
+      "cost_scale": 120.0,
+      "compression_epsilon": 0.02,
+      "tie_tolerance": 0.001,
+      "execution_history": 8,
+      "execution_error_clip": 0.5,
+      "review_samples": 64
+    },
+    "bootstrap_draws": 32,
+    "statistics_seed": 20261020
+  },
+  "jobs": [
+    {
+      "name": "OLD_B2_seed2729",
+      "group": "OLD_B2",
+      "map_id": "OLD",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/OLD_B2_seed2729.json",
+      "train": "jobs/OLD_B2_seed2729/train",
+      "evaluation": "jobs/OLD_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "883a6e8e10a866a5f9a4b21c7fb54863f613cea38116a43cae5032fb52181221",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1"
+      }
+    },
+    {
+      "name": "NEW_B2_seed2729",
+      "group": "NEW_B2",
+      "map_id": "NEW",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/NEW_B2_seed2729.json",
+      "train": "jobs/NEW_B2_seed2729/train",
+      "evaluation": "jobs/NEW_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "700c2bf62430ff0d74c1689464c8b6c288e04dd9a666f492de9c2e6a73eb7e96",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1"
+      }
+    },
+    {
+      "name": "OLD_B3_seed2729",
+      "group": "OLD_B3",
+      "map_id": "OLD",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/OLD_B3_seed2729.json",
+      "train": "jobs/OLD_B3_seed2729/train",
+      "evaluation": "jobs/OLD_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "883a6e8e10a866a5f9a4b21c7fb54863f613cea38116a43cae5032fb52181221",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1"
+      }
+    },
+    {
+      "name": "NEW_B3_seed2729",
+      "group": "NEW_B3",
+      "map_id": "NEW",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/NEW_B3_seed2729.json",
+      "train": "jobs/NEW_B3_seed2729/train",
+      "evaluation": "jobs/NEW_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "700c2bf62430ff0d74c1689464c8b6c288e04dd9a666f492de9c2e6a73eb7e96",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "6709bd4749772d10dc86bb82a591ba43089f2e4fe80c979c78f412b1dc49ddf1"
+      }
+    }
+  ],
+  "assets": {
+    "inputs/evaluation.json": "09182bd963d93370107dc5d4eabea86febc1abf1f3836415f3d526a0072420f2",
+    "inputs/NEW_B2_seed2729.json": "458a82f7763b7f29b3c2148811193789cfa82f8514dc52354d2ffbe4f088820d",
+    "inputs/NEW_B3_seed2729.json": "3a6bbedc79d590289d00343ebfa66df5e777a4e3803afa6c673df2becae047e4",
+    "inputs/OLD_B2_seed2729.json": "2f8f6ee2c57b3611b97c37c69656d88fe2e979738d1f956d7cfff701339a7514",
+    "inputs/OLD_B3_seed2729.json": "97645c80f20f0fd7e80e10a9d506dec87aa9305fe4f0fa260ed712dc2a8535b4",
+    "inputs/spec.json": "69706fb241828e8db9765ac2a2ca98601ee61476ac97d98320bb9df9acdb0692",
+    "inputs/train_seed2729.json": "812afcc322db7bb90c35f2fb279de4339d7f804b2d917a038ff1e2280fcc0460"
+  },
+  "excluded_manifests": [],
+  "training_protocol": "fresh weights; per-seed manifest order; innovation seed=training_seed+episode",
+  "checkpoint_selection": "last fully completed episode",
+  "native_evaluation_only": true,
+  "performance_passed": false,
+  "sha256": "2a011640935029fd5904cfec4187c93e43fd72bf0f332dfc357cff31f4021917"
+}

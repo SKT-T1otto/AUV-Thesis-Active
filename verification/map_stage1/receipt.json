@@ -1,0 +1,53 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "map_public_interface_20261020_v1",
+  "source_identity": {
+    "review_sha256": "b31f45cb16d5ac3bd7586dcfe396b2f605758f32775f3f99fdb736cb5357d280",
+    "profile": "active_map_interface_v1",
+    "inventory_sha256": "ceeb96d183072d9fb59d137d14de68a757e7b2cec6eb913393d13d034dcd5e41",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_interface.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_stage1/source.json",
+      "sha256": "b55dee70e7e840ff95265fa37d1191dcba7b63ddc07dbba7c4bd18430b45d13e"
+    },
+    "structural": {
+      "path": "verification/map_stage1/structural.json",
+      "sha256": "f01b18159781deccb3f72b831689bef8d873badf4e0770f5d36cfa621a9b00aa"
+    },
+    "regression": {
+      "path": "verification/map_stage1/regression.json",
+      "sha256": "ed8c276d5ec3d2292d77f78cb8789a2b64fa99c9c2f2415334a41954113945ab"
+    },
+    "parity": {
+      "path": "verification/map_stage1/parity.json",
+      "sha256": "ea37ffa947a4e8799ac41154ac01dd68ba6d1a64873cbe1375cf2185774680cb"
+    },
+    "entrypoints": {
+      "path": "verification/map_stage1/entrypoints.json",
+      "sha256": "d89c194987c39cbaced3a3f05ebba5fc47ac57582a95fb030faef59812ec1d9a"
+    },
+    "checkpoint": {
+      "path": "verification/map_stage1/checkpoint.json",
+      "sha256": "6bbb2b57f373988ace84504c7c129eed40abcf2079cee47ad96096a5967befd7"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "performance_passed": false,
+  "historical_e0_passed": false,
+  "scope": "Current source local interface verification; original D2/B2/B3 control contract retained, observer only. Coupled search inference/allocation not implemented. No training task or checkpoint restore.",
+  "mechanism_budget": {
+    "episodes": 8,
+    "total_physical_steps": 29,
+    "max_episode_steps": 8,
+    "training_episodes": 0,
+    "checkpoint_files_restored": 0
+  },
+  "actual_event_evidence": {
+    "path": "verification/map_stage1/events.json",
+    "sha256": "6e6c4290a29afc5bbd02c6884024aeff23a6491b3eea8004b2f31cc2fdfda96d"
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "kind": "coupled_proposal",
+    "step": 0,
+    "trigger": "INITIALIZE",
+    "target_identity": "752fa313a7e72f1207392a5440cd14b4c7dc11ceec30cbf43554c18c6ed9769d",
+    "scenario_identity": "4e431ed90544bdf0e8f1eea2baae74178135d8e15569b5966b0f1db6624325a3",
+    "selected_ids": [
+      "coupled_17e7c84b1d2b4e968f78",
+      "coupled_fb1d2ccd273d2a69f919",
+      "coupled_76cf8ad383d5704b4905"
+    ],
+    "compression": {
+      "0": {
+        "raw": 12,
+        "representatives": 2,
+        "epsilon": 0.016314975115442634,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      },
+      "1": {
+        "raw": 12,
+        "representatives": 3,
+        "epsilon": 0.014148454539662195,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      },
+      "2": {
+        "raw": 12,
+        "representatives": 2,
+        "epsilon": 0.017345370793589818,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      }
+    },
+    "combinations": 12,
+    "path_queries": 36,
+    "elapsed_seconds": 0.7128990999990492,
+    "objective": 0.09626149540361903,
+    "detection": 0.10416666666666667,
+    "scenario_utilities": [
+      0.10416666666666667,
+      0.10416666666666667,
+      0.10416666666666667
+    ],
+    "scenario_detection": [
+      0.10416666666666667,
+      0.10416666666666667,
+      0.10416666666666667
+    ],
+    "frozen_agents": [],
+    "installed": false,
+    "finite_bank_review_mean_utility": 0.078125,
+    "review_kind": "independent_resampling_of_same_finite_bank"
+  }
+]

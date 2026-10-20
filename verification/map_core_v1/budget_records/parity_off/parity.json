@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source_identity": {
+    "review_sha256": "fb203054a91c4a3b31f2801b340f20939d374522182ad99925fa5e966b111763",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "e08ddac2c9576df77ae34c17375ee1614c2ebaba1d207fbe50a4f116f3fc5cd2",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "capture": false,
+  "episodes": 2,
+  "physical_steps": 5,
+  "results": [
+    {
+      "scene_index": 0,
+      "steps": 4,
+      "exact_parity": true,
+      "public_evidence": null
+    },
+    {
+      "scene_index": 3,
+      "steps": 1,
+      "exact_parity": true,
+      "public_evidence": null
+    }
+  ],
+  "baseline_sha256": "27727a6ac3db37e05dc426637fa31503a566bb9668faec7f0b84eccb8823a891",
+  "model_restored": false,
+  "optimizer_updates": 0,
+  "performance_passed": false
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "kind": "public_evidence",
+    "step": 0,
+    "scan_event_ids": [
+      [
+        "3:1",
+        0,
+        "shared_neighbor26",
+        "scan",
+        1
+      ]
+    ],
+    "transition_event_id": null,
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "coupled_fallback",
+    "step": 0,
+    "reason": "public_joint_filter_unavailable:geometry_proposal_budget_exhausted",
+    "planner": "d2_v1"
+  },
+  {
+    "kind": "installed_route",
+    "step": 0,
+    "route_sha256": "c35770df344c64c1965529e25fda6863934df7f025f5a439a2f124bad347be87",
+    "previous_route_sha256": null,
+    "hold_agent_ids": [
+      0
+    ],
+    "reason": "INITIALIZE"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 1,
+    "scan_event_ids": [],
+    "transition_event_id": [
+      "3:1",
+      1,
+      "team_search_detector",
+      "step",
+      2
+    ],
+    "negative_observation_valid": false
+  }
+]

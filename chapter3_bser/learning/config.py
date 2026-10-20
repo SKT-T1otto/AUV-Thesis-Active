@@ -42,6 +42,14 @@ def scenario_fingerprint(scene):
 
 def validate(config):
     c = copy.deepcopy(config)
+    if 'map_experiment' in c:
+        from chapter3_bser.learning.map_contract import validate_condition
+        c['map_experiment']=validate_condition(c['map_experiment'])
+    if 'scenario_schedule' in c:
+        order=c['scenario_schedule']
+        if (not isinstance(order,list) or len(order)!=c.get('total_main_trajectories')
+                or any(type(i) is not int or i<0 for i in order) or not c.get('scenario_manifest')):
+            raise ValueError('explicit episode schedule requires one valid manifest index per training episode')
     if c.get('schema') != VERSION or c.get('baseline') not in PARENTS:
         raise ValueError('requires an independent D2 repair configuration')
     (baseline, algorithm, method, architecture) = PARENTS[c['baseline']]

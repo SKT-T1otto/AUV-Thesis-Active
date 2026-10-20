@@ -1,0 +1,19 @@
+{
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "b31f45cb16d5ac3bd7586dcfe396b2f605758f32775f3f99fdb736cb5357d280",
+    "profile": "active_map_interface_v1",
+    "inventory_sha256": "ceeb96d183072d9fb59d137d14de68a757e7b2cec6eb913393d13d034dcd5e41",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_interface.v1"
+  },
+  "run_id": "map_public_interface_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "existing_default_no_execution_test": "Workflow.test_13_missing_execute_does_not_create_output_or_restore_model",
+  "interface_default_no_execution_test": "PublicEvents.test_reference_without_execute_never_reads_manifest_or_creates_output",
+  "actual_bounded_interface_entrypoint_completed": true,
+  "actual_entrypoint_output_sha256": "447cc1e3ee5e00aa4f24a108dabdadb75cd788c1b729ab622793f05e8eae01e9",
+  "unavailable_coupled_algorithm_rejected": true,
+  "default_enabled": false
+}

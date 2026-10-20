@@ -1,0 +1,159 @@
+{
+  "schema": "auv.active.map_experiment.evolution.v1",
+  "parent_review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+  "authorized_scope": "User requested complete native old/new map-adapted D2+RL scripts for GitHub/Linux; no long training or upload.",
+  "map_algorithm_changed": false,
+  "learning_algorithm_changed": false,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/config.py",
+      "before_sha256": "395a154c1fab1edf0e54c9fb29e737cb72a7c6bb51c2328a5c022141be480c24",
+      "after_sha256": "77e3fed3a37cb086f7cc4c66883601f2535c754aff6ebc14d9a1e9e11bf810eb",
+      "reason": "Validate optional map identity and frozen episode schedule; preserve old configurations."
+    },
+    {
+      "path": "chapter3_bser/learning/evaluate.py",
+      "before_sha256": "e8840622593c1873af3fad8ae5685888f8470377e06694e20cac0b0054ce2283",
+      "after_sha256": "ebe820f97a71f55fecdd91a111f57e078173cf27e154d3fee8b57644ed5c4451",
+      "reason": "Evaluate each final policy with its own training map and expose the same kernel for in-memory mechanism verification."
+    },
+    {
+      "path": "chapter3_bser/learning/evaluation_records.py",
+      "before_sha256": "30cdc92cea9225b6aa5e6737f15332f02eb6eb6d3c0241ae5efc13d019457478",
+      "after_sha256": "0ff800c9fce61803b296c4c7336398d9afc81e4a9f4839c9bbe9d2aa19ef5b7b",
+      "reason": "Commit native map identity and map metrics in rows and completion receipts."
+    },
+    {
+      "path": "chapter3_bser/learning/map_contract.py",
+      "before_sha256": null,
+      "after_sha256": "c5f4a948371298031764b8c40396b8922bae2d28f518e7f08606e809076ec427",
+      "reason": "Native map configuration, checkpoint identity, and public performance instrumentation; no learning algorithm edits."
+    },
+    {
+      "path": "chapter3_bser/learning/map_experiment_source.py",
+      "before_sha256": null,
+      "after_sha256": "9ce2411a78bb163c6af50c3cb2315684ba84eac9f052a875c18ae5ec8042d645",
+      "reason": "Verify complete source evolution and independently prove protected physics, map core and learner kernels unchanged."
+    },
+    {
+      "path": "chapter3_bser/learning/map_report.py",
+      "before_sha256": null,
+      "after_sha256": "7fce0de3c22b5b4bf3413d0af5d443020a12fa503ea4e3427109127af68fc93b",
+      "reason": "Summarize native evaluations and paired seed/scene bootstrap with retained training curves."
+    },
+    {
+      "path": "chapter3_bser/learning/map_suite.py",
+      "before_sha256": null,
+      "after_sha256": "af0bb071dc62061fd24eeafa25648cb2b544fa55c57d8066915fafdacff85f5a",
+      "reason": "Prepare and run independent OLD/NEW x ZERO/B2/B3 jobs with frozen task order, paired initialization and exact receipts."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "d720559293e8eebdbbd804157f85aa08525e36da6043a8835da99b9009c83d18",
+      "after_sha256": "3607bd43040acf2b2457bc418cf20885482511a8855c4c3d8b1c87bfe9c5ec3f",
+      "reason": "Pin independent experiment-script source/evidence including Linux launcher; retain immutable parents."
+    },
+    {
+      "path": "chapter3_bser/learning/reference.py",
+      "before_sha256": "c0fa47dffa4ca516b402996a0191f1e1fe74eb960a9f331c091f87e9a6190f7d",
+      "after_sha256": "66329ddb3379401dae9e3378e150affa9c91334f2a9f28919c39c4db772a1eb9",
+      "reason": "Use explicit native map identity for ZERO reference while preserving the original zero residual policy."
+    },
+    {
+      "path": "chapter3_bser/learning/train.py",
+      "before_sha256": "29f2fb9fd1bdc7e25d06d304cb92c308f61923437d8c426199fb945a5733946c",
+      "after_sha256": "c9842e9f084f37656f9861099e1961209049841d189126d86b7ca266f1bb4996",
+      "reason": "Pass native map configuration, use paired frozen tasks, and bind map and initial weights to checkpoints; learner/update/schedule functions unchanged."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "6e69fe6823eccefe446d2b80511b7395b57a777c334f8665861d8e9561211145",
+      "after_sha256": "982d8c4569f9e4ffbdac6d83f3acc79ec3db6215a1df1f999e35631471864123",
+      "reason": "Carry source and protected-physics negative controls to the current successor."
+    },
+    {
+      "path": "checks/test_map_suite.py",
+      "before_sha256": null,
+      "after_sha256": "8c8207fc16cadddb8f2de281dcd7b70d34dcbccf0c13267cbd5d77283b73f0c2",
+      "reason": "Pure positive/negative controls for all six groups, native identity, pairing, immutable output, preserved learner contract and complete reports."
+    },
+    {
+      "path": "cli.py",
+      "before_sha256": "1a2954694b4ac93df289faa540ecaeffa99547e87de0f93251282ee333890d24",
+      "after_sha256": "c98937176504b47a8e1b19f57e3f55c9f9c3ec88c24afa852eb84b204e2fbff0",
+      "reason": "Expose a separate explicit native-map suite command; existing CLI methods remain."
+    },
+    {
+      "path": "configs/map_comparison_pilot_v1.json",
+      "before_sha256": null,
+      "after_sha256": "4a4337287664bd6db027a369c9c4a09238bb46191749d6f4cb204197e3b5d31d",
+      "reason": "Freeze formal and pilot experiment budgets, seeds and explicit enabled research-map configuration."
+    },
+    {
+      "path": "configs/map_comparison_v1.json",
+      "before_sha256": null,
+      "after_sha256": "eb0b23a5dbb000b0d1a6cadf215fb8a5ac477b4ed91309782e78c7b969308c84",
+      "reason": "Freeze formal and pilot experiment budgets, seeds and explicit enabled research-map configuration."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "d8e919fa5fe9d2c56da62f8a69036c47237078b5af377167e0d269666e830fc5",
+      "after_sha256": "79bc5a6bf8e3ba1c652d0468deb6cd2d9c18e6190f7543cc7727130d243a3189",
+      "reason": "Pin all original checks plus new map experiment contract and orchestration checks."
+    },
+    {
+      "path": "provenance/baselines/map_core_20261020_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "4183cf001fefb139d65552f1d1d4c31d7cb9eb6d796b3b74e9d374debb9fb911",
+      "reason": "Freeze all map-core source, manifests and evidence before experiment workflow evolution."
+    },
+    {
+      "path": "provenance/baselines/map_core_20261020_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "752ef1cd107d4d2a8f5d948660ca157b325b873af805fc130dbc5cfff86e7209",
+      "reason": "Freeze all map-core source, manifests and evidence before experiment workflow evolution."
+    },
+    {
+      "path": "provenance/map_core_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "e3bd8854c1a43a700d5ce0c0e08c34c2a52b9edf52f62e787d2b618c5ce1f0f8",
+      "reason": "Include immutable map-core parent manifest in current source inventory."
+    },
+    {
+      "path": "scripts/linux_map_experiment.sh",
+      "before_sha256": null,
+      "after_sha256": "7362e276386dddb8258c3f03650b564ab522fa81708d3fefc1222713f78614d8",
+      "reason": "LF Bash launcher for manual fixed-checkout Linux verification, preparation, training, evaluation and summary."
+    },
+    {
+      "path": "tools/check_map_training.py",
+      "before_sha256": null,
+      "after_sha256": "3a35f77432a4298c611ce1a73e736e580440baf570cab30001d628164ee75cab",
+      "reason": "Explicit eight-episode fresh-model mechanism verification with <=4 complete updates per model and no checkpoint-file restore."
+    },
+    {
+      "path": "tools/map_experiment_source.py",
+      "before_sha256": null,
+      "after_sha256": "79e881256730bd629db1df38bbcbaf89dd6781faf0260a043503f4ce167a6744",
+      "reason": "Verify complete source evolution and independently prove protected physics, map core and learner kernels unchanged."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "8012ee0ee9719812fbc876d7fce171e5e40b80a7fa180799e76345290673451f",
+      "after_sha256": "3b02c7ea4592ff566038bb588e1aeafefa3c6b771e013ac235545a8cc857a08f",
+      "reason": "Select an eight-episode native-map mechanism workflow without checkpoint restore; fix full-inventory cloning in the legacy negative control."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "d12fa23fa97611033ccebd947733ffd09f325315052f7bdb55cba3ff9c62142b",
+      "after_sha256": "4ce3347f791f60fd04195f4812c89b599cfa661945a71e603a6d6d697506a410",
+      "reason": "Validate the current test inventory and native-map workflow on an actual fixed Linux checkout."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "929036aa46fab198d900eefd7ab0ce847f06bf768b12ae911412c22aaf2b8f1d",
+      "after_sha256": "db3203ea7f9fe157f51f433154d67936d1e82ec2820250bce817f672a758b9f5",
+      "reason": "Dispatch independent script successor verification."
+    }
+  ]
+}

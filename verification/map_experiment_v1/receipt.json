@@ -1,0 +1,56 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "native_map_experiment_20261020_v1",
+  "source_identity": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_experiment_v1/source.json",
+      "sha256": "9e2e10d3453629a8efc9f249c9ce276ae7c53c08dc353a2c57a55e4359aa4551"
+    },
+    "structural": {
+      "path": "verification/map_experiment_v1/structural.json",
+      "sha256": "cbff3d32fd94c6181aa8f2bdcd4982d2afc13c5fb4bdb42d2398be9e710ee494"
+    },
+    "regression": {
+      "path": "verification/map_experiment_v1/regression.json",
+      "sha256": "a42c06aa1f95aa37df26d19f197c62cff86678a28aa2c93b5d394f80cb44f4e9"
+    },
+    "parity": {
+      "path": "verification/map_experiment_v1/parity.json",
+      "sha256": "34c8a7e33cd0e95e9b5e576f08ae0f8e36849daff46df719d896e1175ba71566"
+    },
+    "entrypoints": {
+      "path": "verification/map_experiment_v1/entrypoints.json",
+      "sha256": "ee95fe99c0e61ba64618e474719c92033f6de2826da859648c5c58e47d13630a"
+    },
+    "checkpoint": {
+      "path": "verification/map_experiment_v1/checkpoint.json",
+      "sha256": "9982d5468ee3ee78bc3089ed096fbb94dfaf5732cce146e6b71da8681dbec671"
+    },
+    "mechanisms": {
+      "path": "verification/map_experiment_v1/mechanisms.json",
+      "sha256": "5fd0e5da8e9dc1c5ad4102b05e0cb9a3dd1f4b1834aba7b490e2ab3c24f658d6"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "performance_passed": false,
+  "historical_e0_passed": false,
+  "scope": "Windows engineering evidence for native OLD/NEW map adaptation scripts; formal map-suite launch additionally requires a fresh actual Linux fixed-checkout validation. No long training, checkpoint-file restore, commit or push.",
+  "mechanism_budget": {
+    "episodes": 8,
+    "total_physical_steps": 36,
+    "max_episode_steps": 8,
+    "temporary_models": 4,
+    "max_complete_updates_per_model": 4,
+    "formal_training_episodes": 0,
+    "checkpoint_files_restored": 0
+  },
+  "linux_tested": false
+}

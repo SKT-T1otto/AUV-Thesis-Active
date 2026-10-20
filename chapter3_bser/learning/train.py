@@ -26,6 +26,7 @@ from chapter3_bser.learning.runtime import RepairedMissionRuntime
 from chapter3_bser.learning.provenance import training_admission
 from chapter3_bser.learning.provenance import verify_reviewed_changes
 from chapter3_bser.learning.provenance import require_review
+from chapter3_bser.learning import map_contract
 
 class Trainer:
 
@@ -41,6 +42,7 @@ class Trainer:
         np.random.seed(self.config['seed'] % 2 ** 32)
         torch.manual_seed(self.config['seed'])
         self.model = build_model(self.config)
+        self.initial_model_state_sha256=state_digest(self.model.training_state_dict())
         self.replay = ExecutionReplay(self.config['rl']['replay_size'])
         self.global_step = self.completed_main = self.optimizer_updates = 0
         self.training_scenario_ids = set()
@@ -65,15 +67,17 @@ class Trainer:
         self.training_scenario_ids.add(scenario['scenario_id'])
         self.training_scenario_seeds.add(int(scenario['scenario_seed']))
         self.training_scenario_fingerprints.add(scenario_fingerprint(scenario))
-        runtime = RepairedMissionRuntime(self.config, scenario, seed=seed, episode_id=self.completed_main + 1)
+        runtime = RepairedMissionRuntime(self.config, scenario, seed=seed, episode_id=self.completed_main + 1,
+                                        map_research=map_contract.research_config(self.config))
         try:
             self.model.prep_rollouts(device='cpu')
             self.model.reset_noise()
             while not runtime.terminal:
-                self.replay.push_transition(runtime.advance(self.model, explore=True))
+                self.replay.push_transition(map_contract.advance(runtime,self.model,explore=True))
                 self.global_step += 1
                 self._update()
             row = runtime.summary()
+            row.update(map_contract.metrics(runtime))
         except Exception as exc:
             state = self.model.training_state_dict()
             failure = dict(error=repr(exc), traceback=traceback.format_exc(), environment_step=self.global_step, model_state_sha256=state_digest(state), successful=False, diagnostic_state=None)
@@ -104,6 +108,7 @@ class Trainer:
             raise ValueError('v2 checkpoint requires a completed mechanism or training episode')
         state = self.model.training_state_dict()
         payload = dict(schema=VERSION, artifact_schema='auv.active.checkpoint.rebuild.v1', config=copy.deepcopy(self.config), config_hash=digest(self.config), source_identity=self.source, source_review=self.review, model_state=state, model_state_sha256=state_digest(state), global_step=self.global_step, episodes=self.completed_main, optimizer_updates=self.optimizer_updates, actor_optimizer_steps=list(self.model.actor_updates), critic_optimizer_steps=8 * self.optimizer_updates, training_scenario_ids=sorted(self.training_scenario_ids), training_scenario_seeds=sorted(self.training_scenario_seeds), training_scenario_fingerprints=sorted(self.training_scenario_fingerprints), resume_supported=False, mechanism_only=self.mechanism_only, execution_scope='mechanism' if self.mechanism_only else 'manual_research', evaluation_use_allowed=not self.mechanism_only, formal_use_allowed=False, performance_passed=False)
+        payload.update(map_contract.metadata(self.config),initial_model_state_sha256=self.initial_model_state_sha256)
         path = self.output / f'checkpoint_{label}.pt'
         if path.exists():
             raise FileExistsError(path)
@@ -117,6 +122,7 @@ class Trainer:
         result = self._run_loop()
         require_review(self.review)
         result.update(schema=VERSION, method=self.config['method'], source_review=self.review, source_identity=self.source, mechanism_only=self.mechanism_only, execution_scope='mechanism' if self.mechanism_only else 'manual_research', performance_passed=False)
+        result.update(map_contract.metadata(self.config),initial_model_state_sha256=self.initial_model_state_sha256)
         write_json(self.output / 'summary.json', result)
         return result
 
@@ -176,6 +182,10 @@ class Trainer:
                 raise ValueError('training scenario identity/profile/role/horizon/protocol mismatch')
         if len(set(identifiers)) != len(identifiers) or manifest.get('scenario_count', len(scenarios)) != len(scenarios):
             raise ValueError('training manifest has duplicate scenario IDs or a count mismatch')
+        if 'scenario_schedule' in self.config:
+            from chapter3_bser.learning.scenarios import validate_manifest
+            validate_manifest(manifest,self.config,evaluation=False)
+            if any(i>=len(scenarios) for i in self.config['scenario_schedule']):raise ValueError('episode schedule index outside training manifest')
         return scenarios
 
     def _scenario(self, episode):
@@ -185,7 +195,8 @@ class Trainer:
             scenario = manifests[self.config['profile']]['scenarios'][0]
             scenario['max_steps'] = self.config['max_steps']
         else:
-            index = int(np.random.default_rng(seed).integers(len(self.scenarios)))
+            index = (self.config['scenario_schedule'][episode-1] if 'scenario_schedule' in self.config
+                     else int(np.random.default_rng(seed).integers(len(self.scenarios))))
             scenario = self.scenarios[index]
         return (copy.deepcopy(scenario), seed)
 
@@ -195,6 +206,7 @@ def load_for_evaluation(path, *, allow_mechanism=False):
     if payload.get('schema') != VERSION or payload.get('artifact_schema') != 'auv.active.checkpoint.rebuild.v1' or payload.get('config_hash') != digest(payload['config']) or payload.get('source_review') != review:
         raise ValueError('not a source-verified v2 checkpoint')
     config = validate(payload['config'])
+    map_contract.validate_checkpoint_map(config,payload)
     if type(payload.get('episodes')) is not int or not 1 <= payload['episodes'] <= config['total_main_trajectories'] or type(payload.get('global_step')) is not int or (not payload['episodes'] <= payload['global_step'] <= payload['episodes'] * config['max_steps']) or (type(payload.get('optimizer_updates')) is not int) or (payload['optimizer_updates'] < 0):
         raise ValueError('v2 checkpoint environment/episode counters disagree')
     mechanism = payload.get('mechanism_only')

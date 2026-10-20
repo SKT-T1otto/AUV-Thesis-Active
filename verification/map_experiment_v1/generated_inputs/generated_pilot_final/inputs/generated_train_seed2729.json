@@ -1,0 +1,161 @@
+{
+  "protocol": "ch3_unknown_map_v1",
+  "manifest_id": "ch3_unknown_map_v1_train_m20_scenarios_v1",
+  "scenario_profile": "M20_MOVING_UNKNOWN_MULTI",
+  "scenario_role": "train",
+  "scenario_split": "train",
+  "scenario_schema_version": 1,
+  "scenario_count": 1,
+  "generator_seed": 2002729,
+  "max_steps": 400,
+  "target_motion_known": true,
+  "scenarios": [
+    {
+      "scenario_id": "unknown_train_m20_0001",
+      "pair_group_id": "unknown_train_pair_0001",
+      "scenario_profile": "M20_MOVING_UNKNOWN_MULTI",
+      "scenario_role": "train",
+      "scenario_split": "train",
+      "protocol": "ch3_unknown_map_v1",
+      "scenario_seed": 2002729,
+      "planner_seed": 884933842,
+      "max_steps": 400,
+      "target_motion_known": true,
+      "target_motion_mode": "constant_velocity_reflect_v1",
+      "target_state_schema": "moving_target_state_v1",
+      "target_motion_seed": 20027290,
+      "initial_agent_positions": [
+        [
+          9.9562095,
+          2.113493,
+          4.7476049
+        ],
+        [
+          2.247098,
+          18.9579438,
+          6.4969719
+        ],
+        [
+          3.707607,
+          15.0393318,
+          4.8279772
+        ],
+        [
+          14.9808991,
+          17.5289394,
+          4.1262354
+        ]
+      ],
+      "initial_executor_wait_point": [
+        18.0707091,
+        3.4167874,
+        1.4063733
+      ],
+      "target_position": [
+        8.2420692,
+        17.266953,
+        5.804434
+      ],
+      "target_initial_position": [
+        8.2420692,
+        17.266953,
+        5.804434
+      ],
+      "target_initial_velocity": [
+        -0.0145157,
+        0.1880523,
+        0.4432791
+      ],
+      "use_obstacles": true,
+      "obstacle_layout_id": "custom_aabb_v1",
+      "obstacle_family": "random_multi_aabb_v1",
+      "obstacle_knowledge_mode": "online_unknown",
+      "obstacle_layout_sha256": "08c890f5c360123493a014bdb19c8c16b0984652ba53eaf9024d04a9ac4f4b7b",
+      "obstacle_count": 4,
+      "obstacles": [
+        {
+          "center": [
+            12.248695,
+            11.3641081,
+            4.4790233
+          ],
+          "size": [
+            2.0613991,
+            1.4899381,
+            3.1901023
+          ]
+        },
+        {
+          "center": [
+            15.9475878,
+            5.3791606,
+            3.9708966
+          ],
+          "size": [
+            1.7593271,
+            4.3160251,
+            3.7127055
+          ]
+        },
+        {
+          "center": [
+            12.0087921,
+            16.6038365,
+            1.8149619
+          ],
+          "size": [
+            2.7454123,
+            2.9941451,
+            2.4854477
+          ]
+        },
+        {
+          "center": [
+            4.4022346,
+            12.1069346,
+            2.0338499
+          ],
+          "size": [
+            3.6807798,
+            1.6274646,
+            2.8307168
+          ]
+        }
+      ],
+      "planner_grid_size": [
+        10,
+        10,
+        8
+      ],
+      "planner_obstacle_clearance": 0.4,
+      "target_obstacle_clearance": 0.2,
+      "target_capture_radius": 0.8,
+      "target_trajectory_sha256": "2eb409d7f4f90545a24fb5a3b95db4689c2712de8860e4be079c4970393673dc",
+      "target_trajectory_distance": 38.35780334992107,
+      "unknown_map_schema": "shared_logodds_occupancy_v1",
+      "map_sharing_mode": "central_shared_deterministic_v1",
+      "flow_phase_x": 0.0,
+      "flow_phase_y": 0.0,
+      "scenario_schema_version": 1,
+      "connectivity_component_id": "de535829b14f52cc",
+      "target_trajectory_reachable": true,
+      "target_trajectory_exact_endpoint_reachable": true,
+      "target_trajectory_max_connector_distance": 1.3993121455528297,
+      "target_trajectory_connector_failure_count": 0
+    }
+  ],
+  "export_schema": "auv.active.manifest.v1",
+  "source_review": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "generation_origin": {
+    "split": "train",
+    "seed": 2002729,
+    "manifest_sha256": "ccbec91f8c788502a6ef799a5dfc9820f534ec7561a8669320e6207f4420b5a3"
+  },
+  "role_mapping_explicit": true
+}

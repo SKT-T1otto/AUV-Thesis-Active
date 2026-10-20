@@ -1,0 +1,17 @@
+{
+  "schema": "auv.map.baseline.trace.v1",
+  "source_review_sha256": "954f773a96b297ad8af3ec49eeabf969bf9b2326bdba67ea03c39d3044941f4f",
+  "trace_sha256": "27727a6ac3db37e05dc426637fa31503a566bb9668faec7f0b84eccb8823a891",
+  "episodes": 2,
+  "physical_steps": 5,
+  "max_steps_per_episode": 4,
+  "scene_indices": [
+    0,
+    3
+  ],
+  "policy": "four-agent zero normalized RL residual",
+  "recorded_before_source_changes": true,
+  "model_restored": false,
+  "optimizer_updates": 0,
+  "performance_passed": false
+}

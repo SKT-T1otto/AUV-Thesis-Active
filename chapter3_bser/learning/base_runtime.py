@@ -52,14 +52,15 @@ class BaselineMissionRuntime:
     shared environment's prior/physical action mapping remains unchanged.
     """
 
-    def __init__(self, config, scenario, *, seed, episode_id=0):
+    def __init__(self, config, scenario, *, seed, episode_id=0, map_research=None):
         self.config = copy.deepcopy(config)
         self.scenario = copy.deepcopy(scenario)
-        import chapter3_bser.d2.assembly as assembly
+        import chapter3_bser.planner_factory as assembly
         from chapter3_bser.d2.contract import enabled
-        assembly.prepare(self, config, scenario)
+        assembly.prepare(self, config, scenario, map_research=map_research)
         seed_innovations(seed)
         base = _make_base_env(config)
+        assembly.before_reset(self, base, episode_id)
         guided = GuidedEnv(base, enabled=True)
         v2 = Phase1CV2TrainingEnv(guided, reward_config=config['reward'])
         self.env = PRRACTrainingEnv(v2, reward_objective_config=config, gamma=config['rl']['gamma'])
@@ -68,6 +69,7 @@ class BaselineMissionRuntime:
         self.handoff_decision_step = None
         try:
             self.env.reset(scenario=scenario, episode_id=episode_id, episode_index=episode_id)
+            assembly.consume(self)
             seed_innovations(seed)
             phase_config = load_phase1b2_config()
             runtime_config = execution_runtime_config(config)
@@ -83,6 +85,7 @@ class BaselineMissionRuntime:
             self.guidance = self.bridge.compile_guidance(initialized.allocation, self.state, context, decision_reason='INITIALIZE')
             self.env.install_guidance(self.guidance)
             self.observations = self.env.refresh_observation_after_guidance()
+            assembly.installed(self)
             _observations(self.observations)
             self._record_events()
         except Exception:
@@ -117,6 +120,8 @@ class BaselineMissionRuntime:
             raise ValueError('baseline actor must produce finite 4 x 3 actions')
         actions = self._actions_for_step(actions)
         (step_obs, rewards, dones) = self.env.step(actions)
+        import chapter3_bser.planner_factory as assembly
+        assembly.consume(self)
         if self.terminal:
             self.observations = step_obs
         else:
@@ -127,6 +132,7 @@ class BaselineMissionRuntime:
             self.guidance = self.bridge.compile_guidance(result.allocation, self.state, context, decision_reason=result.decision_reason)
             self.env.install_guidance(self.guidance)
             self.observations = self.env.refresh_observation_after_guidance()
+            assembly.installed(self)
         self._record_events()
         done_values = [bool(done) for done in dones]
         if len(done_values) != 4 or self.step != before + 1 or self.terminal != all(done_values):
@@ -135,7 +141,7 @@ class BaselineMissionRuntime:
 
     def summary(self):
         summary = self.env.finalize_episode()
-        import chapter3_bser.d2.assembly as assembly
+        import chapter3_bser.planner_factory as assembly
         from chapter3_bser.d2.contract import enabled
         if enabled(self.config):
             summary['planner'] = assembly.diagnostics(self)

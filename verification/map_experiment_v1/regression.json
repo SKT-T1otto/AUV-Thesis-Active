@@ -1,0 +1,25 @@
+{
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "run_id": "native_map_experiment_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "result": {
+    "passed": true,
+    "expected": 112,
+    "tests_run": 112,
+    "failures": [],
+    "errors": [],
+    "skipped": []
+  },
+  "log": {
+    "path": "verification/map_experiment_v1/unittest.log",
+    "sha256": "1b9dd1579d9839dab42beb6b378d42d388429e73c3067a055dbfa24099c3ecdb"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "run_id": "native_map_experiment_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "unchanged_model_replay_reward_and_base_configs": {
+    "core/algorithms/agents.py": "25b4011653886d802566155d5707967ca76bbb6d789654ba48b835ce5e5de9d8",
+    "core/algorithms/maddpg.py": "3663c9e4a8f9d84802d20060af762d1d7c40126b480d20137df79e424fc0c1ff",
+    "core/algorithms/misc.py": "095743cf3fa8b8973926da462ea847b4fe33b7fd9a0eab38c9e3d0be418d50fd",
+    "core/algorithms/networks.py": "3faf4ce4de9377fd6d580d78b899d879820b1b06ea4f3f95018f41bb7ffcce2f",
+    "core/algorithms/noise.py": "8b356ab850f048ccca644e7267c6bf916c37a7564730a33880db18342064c448",
+    "core/algorithms/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "core/replay/ch3_buffer.py": "5cfc23c40258db8114da9afa8a4989c080e8ae81780c5b058e4f89480ae88624",
+    "core/replay/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "chapter3_bser/learning/checkpoint.py": "3ee2be3edf022ad694453c887572a35995e7b4a0ab94373fe11197b80ebe2f2e",
+    "chapter3_bser/learning/model.py": "419e6a74a7523e7c4f8ae94eeb008b8ef5e92a4f1aee371da0692810403f7715",
+    "chapter3_bser/learning/replay.py": "81ffb74711bdf3bc4a8d85efc283aa86bf55751fc58bdb62cb5a404fda380ab9",
+    "chapter3_bser/rewards/reward_adapter.py": "56f1843ab9b5b8e1030d3f267fe5296bd35afb82e46452e591d31a9bad1718d3",
+    "chapter3_bser/rewards/team_objective.py": "480e5e53cda49a6e4d6b04c4c0010a9c35b85a50a3afa5c28b93efefdbd831f4",
+    "chapter3_bser/rewards/training_env.py": "b027faf5155271a59e971cce3c4a33ecd6d2e3338ff0ce55cc63ac22c3d61662",
+    "chapter3_bser/rewards/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "configs/b2.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "configs/b2_mechanism.json": "d67ddba8bbdb1193b6da67b50f4132ed5a7d07a95f8c04ce0e8c69c4015b1f0e",
+    "configs/b3.json": "925b442da6a56d38e3c432ef5bb00d2e85ed43bd81a30dec48091806b2c64c09",
+    "configs/b3_mechanism.json": "5bccf6490e0d87558f28e50b0217a802fb1a5e9cae939332e25df2aaeaaf9031"
+  },
+  "native_map_identity_negative_test": "MapSuite.test_checkpoint_native_map_cannot_be_relabelled",
+  "actual_new_checkpoint_files_written": 8,
+  "checkpoint_file_restore_executed": false,
+  "historical_checkpoint_relabelled": false,
+  "validation_scope": "Fresh temporary training writes per-episode/final checkpoints. Native identity and in-memory frozen-policy evaluation verified; no checkpoint was loaded into a model automatically."
+}

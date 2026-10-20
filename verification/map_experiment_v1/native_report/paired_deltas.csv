@@ -1,0 +1,17 @@
+comparison,metric,mean,lower,upper,training_replicates,paired_scenes,interval_scope
+NEW_B2 minus OLD_B2,found_rate,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B2 minus OLD_B2,success_rate,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B2 minus OLD_B2,collision_rate,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B2 minus OLD_B2,pre_found_collision_rate,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B2 minus OLD_B2,found_penalized_steps,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B2 minus OLD_B2,team_discounted_return,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B2 minus OLD_B2,runtime_seconds,0.0004926999990857439,0.0004926999990857439,0.0004926999990857439,1,1,scene uncertainty only
+NEW_B2 minus OLD_B2,fallbacks,1.0,1.0,1.0,1,1,scene uncertainty only
+NEW_B3 minus OLD_B3,found_rate,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B3 minus OLD_B3,success_rate,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B3 minus OLD_B3,collision_rate,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B3 minus OLD_B3,pre_found_collision_rate,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B3 minus OLD_B3,found_penalized_steps,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B3 minus OLD_B3,team_discounted_return,0.0,0.0,0.0,1,1,scene uncertainty only
+NEW_B3 minus OLD_B3,runtime_seconds,0.0001199000016640639,0.0001199000016640639,0.0001199000016640639,1,1,scene uncertainty only
+NEW_B3 minus OLD_B3,fallbacks,1.0,1.0,1.0,1,1,scene uncertainty only

@@ -1,0 +1,5 @@
+group,training_replicates,policies,scenarios_per_policy,found_rate,found_rate_seed_sd,success_rate,success_rate_seed_sd,collision_rate,collision_rate_seed_sd,pre_found_collision_rate,pre_found_collision_rate_seed_sd,found_penalized_steps,found_penalized_steps_seed_sd,team_discounted_return,team_discounted_return_seed_sd,runtime_seconds,runtime_seconds_seed_sd,fallbacks,fallbacks_seed_sd
+OLD_B2,1,1,1,0.0,,0.0,,1.0,,1.0,,8.0,,-2.0,,0.003955500000301981,,0.0,
+NEW_B2,1,1,1,0.0,,0.0,,1.0,,1.0,,8.0,,-2.0,,0.008628800000224146,,1.0,
+OLD_B3,1,1,1,0.0,,0.0,,1.0,,1.0,,8.0,,-2.0,,0.004300499998862506,,0.0,
+NEW_B3,1,1,1,0.0,,0.0,,1.0,,1.0,,8.0,,-2.0,,0.009678700000222307,,1.0,

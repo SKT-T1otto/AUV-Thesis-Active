@@ -1,0 +1,342 @@
+{
+  "passed": true,
+  "source_identity": {
+    "review_sha256": "fb203054a91c4a3b31f2801b340f20939d374522182ad99925fa5e966b111763",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "e08ddac2c9576df77ae34c17375ee1614c2ebaba1d207fbe50a4f116f3fc5cd2",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "episodes_started": 1,
+  "episodes": [
+    {
+      "scene_index": 0,
+      "steps": 32,
+      "summary": {
+        "schema": "ch3.coupled_search.core_audit.v1",
+        "mode": "coupled_search",
+        "search_planner_id": "coupled_search_v1",
+        "algorithm_changed": true,
+        "estimator_implemented": true,
+        "valid": true,
+        "error": null,
+        "last_event_sequence": 65,
+        "counts": {
+          "scan_batches": 33,
+          "ray_measurements": 3432,
+          "decision_public_snapshots": 2,
+          "core_proposals": 1,
+          "route_versions": 2,
+          "physical_transitions": 32,
+          "negative_observations": 32,
+          "discovery_checks": 32,
+          "terminal_transitions": 1,
+          "d2_fallbacks": 3,
+          "forecast_invalidations": 1
+        },
+        "retained_audit_records": 88,
+        "latest_route_sha256": "66e99fde62425ec76aed2494cb373ed9c72f8f18eb62a6be9005ab1a5b94a2ce",
+        "coupled_belief": {
+          "valid": true,
+          "error": null,
+          "step": 32,
+          "stopped": true,
+          "alpha": [
+            0.5090909090909093,
+            0.0,
+            0.4909090909090908
+          ],
+          "conditional_ess": [
+            28.0,
+            27.99999999999999,
+            26.999999999999993
+          ],
+          "history_complete": true,
+          "retained_history": 33,
+          "counts": {
+            "full_history_replays": 1,
+            "joint_updates": 32
+          },
+          "geometry_attempts": 6,
+          "prior": "public_scan_conditioned_aabb_completion_v1"
+        },
+        "execution_error_observations": 32,
+        "prior_is_approximate": true,
+        "performance_passed": false
+      },
+      "runtime": {
+        "episode_id": 0,
+        "episode_index": 0,
+        "scenario_id": "v2_mechanism_normal_620196",
+        "scenario_seed": 620196,
+        "found": false,
+        "success": false,
+        "success_if_found": false,
+        "found_step": null,
+        "success_step": null,
+        "remaining_steps_after_found": null,
+        "executor_target_received_step": null,
+        "handoff_delay": null,
+        "found_to_target_received_steps": null,
+        "found_to_success_steps": null,
+        "executor_distance_at_handoff": null,
+        "executor_distance_to_target_at_found": null,
+        "executor_distance_to_target_at_received": null,
+        "executor_min_distance_to_target": null,
+        "executor_final_distance_to_target": null,
+        "executor_distance_to_intercept_at_received": null,
+        "executor_min_distance_to_intercept": null,
+        "executor_final_distance_to_intercept": null,
+        "target_prediction_error_at_delivery": null,
+        "mean_target_prediction_error": null,
+        "target_prediction_map_fallback_count": 0,
+        "capture_contact_step_count": 0,
+        "capture_full_hold_step_count": 0,
+        "capture_hold_counter_max": 0,
+        "capture_swept_min_distance": null,
+        "executor_path_unreachable_count": null,
+        "executor_invalid_count": 0,
+        "executor_replan_count": 1,
+        "executor_invalid_assignment_unreachable_count": 0,
+        "executor_invalid_query_unreachable_count": 0,
+        "executor_invalid_cost_increase_count": 0,
+        "executor_invalid_stale_snapshot_deferred_count": 30,
+        "executor_validity_evaluation_count": 1,
+        "executor_validity_deferred_count": 30,
+        "public_target_update_event_count": 0,
+        "public_target_update_accepted_count": 0,
+        "public_target_shift_sum": 0.0,
+        "public_target_shift_mean": null,
+        "public_target_shift_max": null,
+        "environment_public_target_at_handoff": null,
+        "controller_execution_target_at_handoff": null,
+        "installed_executor_tracking_target_at_handoff": null,
+        "controller_to_public_target_error_at_handoff": null,
+        "controller_to_public_target_error_mean": null,
+        "controller_to_public_target_error_final": null,
+        "full_planning_refresh_count": 2,
+        "handoff_forced_refresh_count": 0,
+        "target_shift_forced_refresh_count": 0,
+        "post_found_collision_count": 0,
+        "pre_found_base_reward": 0.7923214831389487,
+        "post_found_base_reward": 0.0,
+        "post_found_shaping_reward": 0.0,
+        "completion_reward_post_tanh": 0.0,
+        "adjusted_episode_reward": 0.19808037078473717,
+        "search_residual_ratio_pre_found": 0.0,
+        "search_residual_ratio_post_found": null,
+        "executor_residual_ratio_pre_found": 0.0,
+        "executor_residual_ratio_post_found": null,
+        "initial_planner_endpoint_fallback_count": 0,
+        "episode_terminated": true,
+        "episode_truncated": false,
+        "termination_reason": "timeout",
+        "terminal_step": 32,
+        "first_collision_step": null,
+        "first_collision_agent_ids": [],
+        "first_collision_phase": null,
+        "collision_records": [],
+        "mission_complete": false,
+        "task_protocol": "collision_terminal_v1",
+        "collision_detection_revision": "segment_closed_aabb_v1",
+        "terminal_reward_revision": "team_failure_override_v1",
+        "terminated": true,
+        "truncated": false,
+        "safe_success": false,
+        "collision_episode": false,
+        "remaining_task_steps": 0,
+        "bootstrap_mask": 0.0,
+        "contact_bonus_count": 0,
+        "hold_bonus_count": 0,
+        "terminal_bonus_count": 0,
+        "discovery_correction_count": 0,
+        "searcher_zeroed_step_count": 0,
+        "reward_objective": "team_mean_v1",
+        "source_reward_revision": "execution_reward_v2_after_terminal_override_v1",
+        "gamma": 0.95,
+        "team_undiscounted_return": 0.19808037078473717,
+        "team_discounted_return": 0.09747940665481526,
+        "source_individual_returns": [
+          0.3100376082365983,
+          0.26915608381386846,
+          0.1903353075031191,
+          0.022792482025579375
+        ],
+        "source_searcher_zeroed_step_count": 0,
+        "source_adjusted_episode_reward": 0.7923214831389487,
+        "planner": {
+          "planner_protocol": "d2_v1",
+          "reference_arm": "D2",
+          "safety_variant": "V4",
+          "safe_counts": {
+            "path_safety_checks": 96,
+            "search_candidate_unreachable_queries": 0,
+            "candidate_shortage_events": 0
+          },
+          "effect_counts": {
+            "standby_unreachable_queries": 0,
+            "standby_shortage_events": 0
+          },
+          "unresolved_searcher_ids": [],
+          "audit_record_count": 7,
+          "public_evidence": {
+            "schema": "ch3.coupled_search.core_audit.v1",
+            "mode": "coupled_search",
+            "search_planner_id": "coupled_search_v1",
+            "algorithm_changed": true,
+            "estimator_implemented": true,
+            "valid": true,
+            "error": null,
+            "last_event_sequence": 65,
+            "counts": {
+              "scan_batches": 33,
+              "ray_measurements": 3432,
+              "decision_public_snapshots": 2,
+              "core_proposals": 1,
+              "route_versions": 2,
+              "physical_transitions": 32,
+              "negative_observations": 32,
+              "discovery_checks": 32,
+              "terminal_transitions": 1,
+              "d2_fallbacks": 3,
+              "forecast_invalidations": 1
+            },
+            "retained_audit_records": 88,
+            "latest_route_sha256": "66e99fde62425ec76aed2494cb373ed9c72f8f18eb62a6be9005ab1a5b94a2ce",
+            "coupled_belief": {
+              "valid": true,
+              "error": null,
+              "step": 32,
+              "stopped": true,
+              "alpha": [
+                0.5090909090909093,
+                0.0,
+                0.4909090909090908
+              ],
+              "conditional_ess": [
+                28.0,
+                27.99999999999999,
+                26.999999999999993
+              ],
+              "history_complete": true,
+              "retained_history": 33,
+              "counts": {
+                "full_history_replays": 1,
+                "joint_updates": 32
+              },
+              "geometry_attempts": 6,
+              "prior": "public_scan_conditioned_aabb_completion_v1"
+            },
+            "execution_error_observations": 32,
+            "prior_is_approximate": true,
+            "performance_passed": false
+          }
+        },
+        "actual_length": 32,
+        "handoff_event_step": null,
+        "handoff_decision_step": null,
+        "repair_version": "ch3.d2.implementation_repair.v2",
+        "repair_switches": {
+          "waypoint_arrival": true,
+          "inactive_actor": true,
+          "hold_residual": true
+        },
+        "waypoint_reward_timing": "arrival_before_reward_v1",
+        "action_safety": {
+          "disabled_agent_steps": 0,
+          "suppressed_nonzero_residuals": 0
+        },
+        "raw_pre_tanh_components": {
+          "reward_find_event": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reward_early_find": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reward_completion_event": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reward_early_completion": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reward_progress": [
+            107.08513236045837,
+            80.50767111778259,
+            58.61343574523926,
+            15.565102338790894
+          ],
+          "reward_coverage": [
+            24.218614611774683,
+            33.87500023841858,
+            24.218614611774683,
+            0.0
+          ],
+          "reward_time_penalty": [
+            -6.400000095367432,
+            -6.400000095367432,
+            -6.400000095367432,
+            -6.400000095367432
+          ],
+          "reward_energy_penalty": [
+            -0.27308167003502604,
+            -0.1427682321955217,
+            -0.08115562741295435,
+            -0.024167672425392084
+          ],
+          "reward_smoothness_penalty": [
+            -0.45963731376832584,
+            -0.17337243561269133,
+            -0.06608792063934743,
+            -0.023937855147494247
+          ],
+          "reward_collision_penalty": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "reward_separation_penalty": [
+            -0.14890137501060963,
+            0.0,
+            -0.14890137501060963,
+            0.0
+          ]
+        },
+        "team_return_by_phase": {
+          "pre_found": 0.19808037078473717
+        },
+        "observation_risks": {
+          "input_contract": [
+            28,
+            3,
+            124
+          ],
+          "remaining_time_observed": false,
+          "previous_acceleration_observed": false,
+          "full_map_observed": false,
+          "execution_gate_is_network_input": false,
+          "markov_sufficiency_established": false
+        },
+        "safety_guarantee": false,
+        "reward_metric_equivalence_established": false
+      }
+    }
+  ],
+  "physical_steps": 32,
+  "model_restored": false,
+  "optimizer_updates": 0,
+  "training_started": false,
+  "performance_passed": false
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "map_core_20261020_v1",
+  "source_identity": {
+    "review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "8f228e4daa34c9b1948e325cd36be477342dc09ac597fe610e77c5210f09cea2",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_core_v1/source.json",
+      "sha256": "43ec4ad8df48f2876ba38258f1bf99fe9045302d30cec6c48e19de12d0492a08"
+    },
+    "structural": {
+      "path": "verification/map_core_v1/structural.json",
+      "sha256": "1ce2847be22762f159596f47a6fa2225b63b0eabb64ead15b021ee6b80c57f5a"
+    },
+    "regression": {
+      "path": "verification/map_core_v1/regression.json",
+      "sha256": "d9578c84d7674bf3719c6a62ccee7c9c83d506aaa09be9268734a7772ea2f447"
+    },
+    "parity": {
+      "path": "verification/map_core_v1/parity.json",
+      "sha256": "a9ad26711692357abfd6f129234be6b7b6d5f65ba3b6e2adcbbd6f2e7d011bd2"
+    },
+    "entrypoints": {
+      "path": "verification/map_core_v1/entrypoints.json",
+      "sha256": "3298348b48fd35b216e1a3b5a01e2e581b8972eebe99c521a3782c422b642ea6"
+    },
+    "checkpoint": {
+      "path": "verification/map_core_v1/checkpoint.json",
+      "sha256": "8710da943f920e75770ddcbfff2c7f7b2f637622118c2b305409b8d1ba9583cb"
+    },
+    "mechanisms": {
+      "path": "verification/map_core_v1/mechanisms.json",
+      "sha256": "3aa3c8c0caa73b8e421bc18c2c281678695b92573c7417270071a93f936e824b"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "performance_passed": false,
+  "historical_e0_passed": false,
+  "scope": "Current local engineering evidence. Default D2/B2/B3 contract unchanged; optional map core bounded ZERO mechanism verified. Six-group map x RL formal scheduler not implemented.",
+  "mechanism_budget": {
+    "episodes": 8,
+    "total_physical_steps": 107,
+    "max_episode_steps": 32,
+    "training_episodes": 0,
+    "checkpoint_files_restored": 0
+  },
+  "candidate_execution_identity_preserved": true
+}

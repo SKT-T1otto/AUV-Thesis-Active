@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "prepare",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--spec",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\missing.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"prepare\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"spec\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\missing.json\",\n  \"mechanism_check\": false,\n  \"exclude_runs\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--stage",
+        "train"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"stage\": \"train\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--stage",
+        "diagnose"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"stage\": \"diagnose\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--stage",
+        "evaluate"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"stage\": \"evaluate\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--stage",
+        "all"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"stage\": \"all\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "summarize",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent\\report"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"summarize\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\",\n  \"output\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\\\\report\"\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "tools.check_map_training",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\dry_run_output_absent"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"executed\": false, \"episodes\": 8, \"max_steps\": 8, \"max_complete_updates_per_model\": 4, \"output\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_convergence\\\\20261020_v1\\\\delivery_completion_v2\\\\dry_run_output_absent\"}\n"
+    }
+  ],
+  "output_created": false
+}

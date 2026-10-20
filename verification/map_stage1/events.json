@@ -1,0 +1,45 @@
+{
+  "gate": "events",
+  "source_identity": {
+    "review_sha256": "b31f45cb16d5ac3bd7586dcfe396b2f605758f32775f3f99fdb736cb5357d280",
+    "profile": "active_map_interface_v1",
+    "inventory_sha256": "ceeb96d183072d9fb59d137d14de68a757e7b2cec6eb913393d13d034dcd5e41",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_interface.v1"
+  },
+  "run_id": "map_public_interface_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "results": [
+    {
+      "scene": "v2_mechanism_near_620197",
+      "steps": 8,
+      "found_step": 1,
+      "success": false,
+      "terminal_reason": "timeout",
+      "discovery_checks": 1,
+      "post_found_steps": 7,
+      "searchers_frozen_after_found": true,
+      "events_sha256": "c01b14ad6bfb266475b281b22c0535a308214e78b3d03afad152a5d32e04aa60"
+    },
+    {
+      "scene": "v2_mechanism_success_620198",
+      "steps": 6,
+      "found_step": 1,
+      "success": true,
+      "terminal_reason": "success",
+      "discovery_checks": 1,
+      "post_found_steps": 5,
+      "searchers_frozen_after_found": true,
+      "events_sha256": "752bec5ac173e106ba4938ece220810020fd68ad6cbcf2566b2aeb5a689b74af"
+    }
+  ],
+  "completed_checks_only": true,
+  "collision_negative_evidence_count": 0,
+  "total_mechanism_episodes": 8,
+  "total_physical_steps": 29,
+  "max_episode_steps": 8,
+  "optimizer_updates_in_rollouts": 0,
+  "model_files_restored": false,
+  "raw_output": "work\\map_research\\20261020_v1\\collision_terminal\\discovery_success_audit"
+}

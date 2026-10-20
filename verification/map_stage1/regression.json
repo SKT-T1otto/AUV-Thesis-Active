@@ -1,0 +1,26 @@
+{
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "b31f45cb16d5ac3bd7586dcfe396b2f605758f32775f3f99fdb736cb5357d280",
+    "profile": "active_map_interface_v1",
+    "inventory_sha256": "ceeb96d183072d9fb59d137d14de68a757e7b2cec6eb913393d13d034dcd5e41",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_interface.v1"
+  },
+  "run_id": "map_public_interface_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "result": {
+    "passed": true,
+    "expected": 60,
+    "tests_run": 60,
+    "failures": [],
+    "errors": [],
+    "skipped": []
+  },
+  "log_sha256": "2d3e83f06a01533ae24ab5c5df94c55776425e897221efdc9fe0c7de871dbf02",
+  "new_tests": 22,
+  "original_tests": 38,
+  "model_files_restored": false,
+  "training_episodes": 0
+}

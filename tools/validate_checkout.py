@@ -102,7 +102,9 @@ def run(output, *, require_linux=False, expected_commit=None):
         research_readiness(source)
         result['source'] = source
         result['versions'] = {name: importlib.metadata.version(name) for name in ('numpy', 'torch')}
-        command = [sys.executable, '-m', 'tools.run_checks', '--output', str(output / 'checks'), '--execute', '--rollout']
+        map_workflow=source.get('profile') in ('active_map_experiment_v1','active_map_convergence_v1')
+        command = [sys.executable, '-m', 'tools.run_checks', '--output', str(output / 'checks'), '--execute',
+                   '--map-workflow' if map_workflow else '--rollout']
         env = os.environ.copy()
         env.pop('PYTHONPATH', None)
         env.update(OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',
@@ -120,8 +122,9 @@ def run(output, *, require_linux=False, expected_commit=None):
                 or regression['failures'] or regression['errors'] or regression['skipped']
                 or checks.get('workflow', {}).get('passed') is not True):
             raise ValueError('incomplete bounded verification evidence')
-        result['checks'] = dict(passed=True, tests_run=expected, additional_physical_steps=checks['workflow']['additional_physical_steps'],
+        result['checks'] = dict(passed=True, tests_run=expected, additional_physical_steps=checks['workflow'].get('additional_physical_steps',checks['workflow'].get('physical_steps')),
                                max_complete_updates_per_model=checks['workflow']['max_complete_updates_per_model'])
+        result['map_workflow_verified']=map_workflow and checks['workflow'].get('checkpoint_file_restore_executed') is False
         if verify_reviewed_changes() != source:
             raise ValueError('source changed during validation')
         research_readiness(source)

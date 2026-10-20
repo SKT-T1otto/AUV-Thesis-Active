@@ -1,0 +1,128 @@
+{
+  "scope": "Algebraic and document QA only; no training or environment experiment",
+  "return_full": 2.4500618749999994,
+  "return_event": 2.450061875,
+  "return_abs_error": 4.440892098500626e-16,
+  "pair_eigenvalues": [
+    1.0,
+    3.0
+  ],
+  "interaction_eigenvalues": [
+    0.9999999999999996,
+    1.0,
+    1.0,
+    5.0
+  ],
+  "interactions": {
+    "additive": 0.0,
+    "AND": 1.0,
+    "OR": -1.0
+  },
+  "unequal_horizon_common_error": 0.3037630607616213,
+  "clip_recursive": 7.5,
+  "clip_once": 9.875,
+  "tail_weights": {
+    "5": 0.7737809374999998,
+    "10": 0.5987369392383787,
+    "20": 0.3584859224085419
+  },
+  "A1_max_branch_steps": 3840,
+  "A2_max_branch_steps": 1920,
+  "one_step_intervention": {
+    "final_x": 0.1600000000000001,
+    "first_threshold_step": null
+  },
+  "repeated_intervention": {
+    "final_x": 1.680000000000001,
+    "first_threshold_step": 16
+  },
+  "read_source_hashes": {
+    "AGENTS.md": "70b33f7aba45917a57bf0bc79d452e9ecb6d1a8c57bf89a371a1ee27fbe336e8",
+    "core/env/uav_env.py": "402878207aa69f334311e1c690dbc7b231a7fde0a0a7affaf5c645c1dd24d60b",
+    "core/env/mission_env.py": "e4d853fe143764ef4197cba472ebd045fbd0d03fae956cf539aae491f946657f",
+    "core/algorithms/maddpg.py": "fbf983ec992613a45c10a2ced45725c17b2a412414d64167cb02b33ab8692a91",
+    "core/runtime/engine.py": "1998051dc1651ea9413a4e18124d40dce0e56cc58aeb5e345c4a552a46e698cc",
+    "chapter3_bser/experiments/baselines/common/model.py": "85a5c7c216c2dc4ed3e77b9bf31fac07e21c0ec4f68d1a5f5e0462fbc6600172",
+    "chapter3_bser/experiments/baselines/common/runtime.py": "d494fcee4f9c73368557999f4ac9e5736d3418ac9bcf30e45351c65e5fc226a6",
+    "chapter3_bser/experiments/hgr/runtime.py": "ee7265978f50b94b5b981e98e305b2da7ead5e45478fbf655c50d7016d2fc4d2",
+    "文献/第三章文献/RL创新候选交叉核验_20261018/manifest.json": "e333502395d02ecb87f99fa1d32e91de9bcc91d2acaf3e5d10f044741f17dd66",
+    "文献/第三章文献/RL创新候选交叉核验_20261018/候选方案与交叉核验.md": "87d176027975daa8a7092bd323f925a57366582928406b73d1b2576a4584e030",
+    "文献/第三章文献/RL创新候选交叉核验_20261018/选定124后的研究推进.md": "5abb06b135ba5437b5b07f43f27f6d135a2d50788d7ae6822a568e14360942da"
+  },
+  "pdf_sha256": "c7779c400aa8fe2c13a422408643194b932603da63840ac951441d68de626810",
+  "pdf_pages": 28,
+  "characters_per_page": [
+    711,
+    700,
+    956,
+    928,
+    926,
+    855,
+    801,
+    730,
+    805,
+    1206,
+    826,
+    734,
+    720,
+    798,
+    862,
+    665,
+    855,
+    1063,
+    1150,
+    957,
+    767,
+    838,
+    823,
+    782,
+    846,
+    819,
+    1412,
+    1357
+  ],
+  "links_per_page": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    6
+  ],
+  "visual_review": {
+    "all_pages": "Inspected at contact-sheet scale, pages 1-28",
+    "detail_pages": [
+      7,
+      11,
+      18,
+      23
+    ],
+    "result": "No overlap, clipped tables, missing math glyphs or unreadable formulas observed"
+  },
+  "math_font_missing_characters": [],
+  "numbered_equations": 35,
+  "references": 13,
+  "verification_scope": "Local document checks and analytical toy examples only; production code and training untouched"
+}

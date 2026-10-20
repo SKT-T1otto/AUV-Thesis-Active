@@ -1,0 +1,29 @@
+{
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "dcac691315afaf21a3d9370ce7dab8d892cf52cef99dc9330ab23656a91c2223",
+    "profile": "active_map_convergence_v1",
+    "inventory_sha256": "53455486666c457cd69aa8eb67ac1814157201939d6a482226d0be3c5a4e0e78",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_convergence.v1"
+  },
+  "run_id": "map_convergence_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "execution": {
+    "path": "verification/map_convergence_v1/native_workflow.json",
+    "sha256": "b6f9d26e278097e59200a74991c57070d779592b7c981e61550d725ebeea58c9"
+  },
+  "total_physical_episodes": 8,
+  "total_physical_steps": 36,
+  "max_episode_steps": 8,
+  "max_complete_updates_per_temporary_model": 4,
+  "checkpoint_file_restore_executed": false,
+  "formal_training_started": false,
+  "evidence_completed_before_interruption": true,
+  "new_physical_episodes_after_resume": 0,
+  "diagnostics_scope": "Fixed-validation, checkpoint integrity, wrong-episode, untrained-policy reconstruction, RNG preservation, safe reentry and synthetic plateau controls are covered by the current 130 tests. No real 300-episode performance measured.",
+  "generated_inputs_verified": true,
+  "synthetic_dashboard_script_verified": true,
+  "performance_passed": false
+}

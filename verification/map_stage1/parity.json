@@ -1,0 +1,138 @@
+{
+  "gate": "parity",
+  "source_identity": {
+    "review_sha256": "b31f45cb16d5ac3bd7586dcfe396b2f605758f32775f3f99fdb736cb5357d280",
+    "profile": "active_map_interface_v1",
+    "inventory_sha256": "ceeb96d183072d9fb59d137d14de68a757e7b2cec6eb913393d13d034dcd5e41",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_interface.v1"
+  },
+  "run_id": "map_public_interface_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "comparisons": [
+    {
+      "passed": true,
+      "source_identity": {
+        "review_sha256": "b31f45cb16d5ac3bd7586dcfe396b2f605758f32775f3f99fdb736cb5357d280",
+        "profile": "active_map_interface_v1",
+        "inventory_sha256": "ceeb96d183072d9fb59d137d14de68a757e7b2cec6eb913393d13d034dcd5e41",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.map_interface.v1"
+      },
+      "capture": false,
+      "episodes": 2,
+      "physical_steps": 5,
+      "results": [
+        {
+          "scene_index": 0,
+          "steps": 4,
+          "exact_parity": true,
+          "public_evidence": null
+        },
+        {
+          "scene_index": 3,
+          "steps": 1,
+          "exact_parity": true,
+          "public_evidence": null
+        }
+      ],
+      "baseline_sha256": "27727a6ac3db37e05dc426637fa31503a566bb9668faec7f0b84eccb8823a891",
+      "model_restored": false,
+      "optimizer_updates": 0,
+      "performance_passed": false
+    },
+    {
+      "passed": true,
+      "source_identity": {
+        "review_sha256": "b31f45cb16d5ac3bd7586dcfe396b2f605758f32775f3f99fdb736cb5357d280",
+        "profile": "active_map_interface_v1",
+        "inventory_sha256": "ceeb96d183072d9fb59d137d14de68a757e7b2cec6eb913393d13d034dcd5e41",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.map_interface.v1"
+      },
+      "capture": true,
+      "episodes": 2,
+      "physical_steps": 5,
+      "results": [
+        {
+          "scene_index": 0,
+          "steps": 4,
+          "exact_parity": true,
+          "public_evidence": {
+            "schema": "ch3.coupled_search.public_evidence.v1",
+            "mode": "observe_only",
+            "search_planner_id": "d2_v1",
+            "algorithm_changed": false,
+            "estimator_implemented": false,
+            "valid": true,
+            "error": null,
+            "last_event_sequence": 9,
+            "counts": {
+              "scan_batches": 5,
+              "ray_measurements": 520,
+              "route_versions": 1,
+              "physical_transitions": 4,
+              "negative_observations": 4,
+              "discovery_checks": 4,
+              "terminal_transitions": 1
+            },
+            "retained_audit_records": 6,
+            "latest_route_sha256": "1938722e1777bdc3523a1e1156669f04c5a7e778282f1c5012ffdee1932ec207"
+          }
+        },
+        {
+          "scene_index": 3,
+          "steps": 1,
+          "exact_parity": true,
+          "public_evidence": {
+            "schema": "ch3.coupled_search.public_evidence.v1",
+            "mode": "observe_only",
+            "search_planner_id": "d2_v1",
+            "algorithm_changed": false,
+            "estimator_implemented": false,
+            "valid": true,
+            "error": null,
+            "last_event_sequence": 2,
+            "counts": {
+              "scan_batches": 1,
+              "ray_measurements": 104,
+              "route_versions": 1,
+              "physical_transitions": 1,
+              "negative_observations": 0,
+              "discovery_checks": 0,
+              "terminal_transitions": 1
+            },
+            "retained_audit_records": 3,
+            "latest_route_sha256": "c35770df344c64c1965529e25fda6863934df7f025f5a439a2f124bad347be87"
+          }
+        }
+      ],
+      "baseline_sha256": "27727a6ac3db37e05dc426637fa31503a566bb9668faec7f0b84eccb8823a891",
+      "model_restored": false,
+      "optimizer_updates": 0,
+      "performance_passed": false
+    }
+  ],
+  "baseline_episodes": 2,
+  "baseline_steps": 5,
+  "comparison_episodes": 4,
+  "comparison_steps": 10,
+  "exact_fields": [
+    "observations",
+    "actions",
+    "positions",
+    "velocities",
+    "accelerations",
+    "navigation",
+    "target_state",
+    "occupancy",
+    "target_belief",
+    "rewards",
+    "done",
+    "execution_gates",
+    "guidance",
+    "python_numpy_torch_rng"
+  ],
+  "scope": "Two declared bounded scenes, capture disabled and enabled; not an all-state proof."
+}

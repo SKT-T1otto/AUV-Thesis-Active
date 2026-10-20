@@ -1,0 +1,25 @@
+{
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "8f228e4daa34c9b1948e325cd36be477342dc09ac597fe610e77c5210f09cea2",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "run_id": "map_core_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "result": {
+    "passed": true,
+    "expected": 85,
+    "tests_run": 85,
+    "failures": [],
+    "errors": [],
+    "skipped": []
+  },
+  "log": {
+    "path": "verification/map_core_v1/unittest.log",
+    "sha256": "28dbaa56de9af1e1dbeafde08024a1c7d824bb968cb2f70b14a2847b3e3b7e39"
+  }
+}

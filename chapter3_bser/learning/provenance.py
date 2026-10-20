@@ -21,12 +21,36 @@ def source_files(root):
                 files[path.relative_to(root).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
     for name in ('cli.py', 'project_paths.py', 'requirements.txt', 'AGENTS.md', '.gitattributes', '.gitignore', 'provenance/rebuild_evolution.json'):
         files[name] = hashlib.sha256((root / name).read_bytes()).hexdigest()
+    for path in (root/'provenance/baselines').rglob('*'):
+        if path.is_file() and path.suffix in ('.json', '.zip'):
+            files[path.relative_to(root).as_posix()] = hashlib.sha256(path.read_bytes()).hexdigest()
+    evolution = root/'provenance/map_stage1_evolution.json'
+    if evolution.is_file():
+        files[evolution.relative_to(root).as_posix()] = hashlib.sha256(evolution.read_bytes()).hexdigest()
+    for name in ('provenance/map_stage1_manifest.json','provenance/map_core_evolution.json',
+                 'provenance/map_core_manifest.json','provenance/map_experiment_evolution.json',
+                 'provenance/map_experiment_manifest.json','provenance/map_convergence_evolution.json'):
+        if (root/name).is_file():files[name]=hashlib.sha256((root/name).read_bytes()).hexdigest()
+    for path in (root/'scripts').rglob('*.sh'):
+        files[path.relative_to(root).as_posix()]=hashlib.sha256(path.read_bytes()).hexdigest()
     return files
 
 
 def verify_reviewed_changes(root=ROOT):
     root = Path(root).resolve()
     try:
+        if (root/'provenance/map_convergence_manifest.json').is_file():
+            from chapter3_bser.learning.map_convergence_source import verify
+            return verify(root,source_files(root),canonical_digest)
+        if (root/'provenance/map_experiment_manifest.json').is_file():
+            from chapter3_bser.learning.map_experiment_source import verify
+            return verify(root,source_files(root),canonical_digest)
+        if (root/'provenance/map_core_manifest.json').is_file():
+            from chapter3_bser.learning.map_core_source import verify
+            return verify(root, source_files(root), canonical_digest)
+        if (root/'provenance/map_stage1_manifest.json').is_file():
+            from chapter3_bser.learning.map_source import verify
+            return verify(root, source_files(root), canonical_digest)
         manifest = json.loads((root / 'provenance/active_manifest.json').read_text(encoding='utf-8'))
         body = {k: v for k, v in manifest.items() if k != 'sha256'}
         if manifest.get('schema') != SCHEMA or manifest.get('sha256') != canonical_digest(body):
@@ -68,14 +92,17 @@ def require_review(identity):
 def research_readiness(identity, root=ROOT):
     root = Path(root).resolve()
     try:
-        receipt = json.loads((root / 'verification/rebuild/receipt.json').read_text(encoding='utf-8'))
+        folder = {'active_map_convergence_v1':'verification/map_convergence_v1','active_map_experiment_v1':'verification/map_experiment_v1','active_map_core_v1':'verification/map_core_v1',
+                  'active_map_interface_v1':'verification/map_stage1'}.get(identity.get('profile'),'verification/rebuild')
+        receipt = json.loads((root / folder / 'receipt.json').read_text(encoding='utf-8'))
+        gates = GATES + ('mechanisms',) if identity.get('profile') in ('active_map_core_v1','active_map_experiment_v1','active_map_convergence_v1') else GATES
         if (receipt.get('schema') != 'auv.active.rebuild.readiness.v1' or receipt.get('source_identity') != identity
                 or receipt.get('manual_research_execution_allowed') is not True or receipt.get('performance_passed') is not False
-                or receipt.get('historical_acceptance_transferred') is not False or set(receipt.get('gates', {})) != set(GATES)):
+                or receipt.get('historical_acceptance_transferred') is not False or set(receipt.get('gates', {})) != set(gates)):
             raise ValueError('manual research readiness is not established for this source')
         for gate, row in receipt['gates'].items():
             path = (root / row['path']).resolve()
-            if not path.is_relative_to(root / 'verification/rebuild') or hashlib.sha256(path.read_bytes()).hexdigest() != row['sha256']:
+            if not path.is_relative_to(root / folder) or hashlib.sha256(path.read_bytes()).hexdigest() != row['sha256']:
                 raise ValueError('missing or changed rebuild evidence: ' + gate)
             report = json.loads(path.read_text(encoding='utf-8'))
             if (report.get('gate') != gate or report.get('source_identity') != identity or report.get('passed') is not True

@@ -27,12 +27,18 @@ def structural():
     for path in sorted(ROOT.rglob('*.py')):
         if any(part in ('__pycache__', 'work', 'outputs') for part in path.relative_to(ROOT).parts):
             continue
-        source = path.read_text(encoding='utf-8'); tree = ast.parse(source)
+        # Attached document builders are reference material, not importable
+        # runtime/check code. Audit every declared Active Python source only.
         relative = path.relative_to(ROOT).as_posix()
+        if relative.split('/')[0] not in ('core', 'chapter3_bser', 'checks', 'tools') and relative not in ('cli.py', 'project_paths.py'):
+            continue
+        source = path.read_text(encoding='utf-8'); tree = ast.parse(source)
         if relative.startswith(('core/', 'chapter3_bser/')):
             for node in ast.walk(tree):
                 names = [a.name for a in node.names] if isinstance(node, ast.Import) else [node.module or ''] if isinstance(node, ast.ImportFrom) else []
-                if any(n.split('.')[0] in ('tests', 'legacy_adapters', 'chapter4_rcag', 'chapter5_vsgc') or '.experiments.' in n for n in names):
+                if any(n.split('.')[0] in ('tests', 'legacy_adapters', 'chapter4_rcag', 'chapter5_vsgc')
+                       or ('.experiments.' in n and not (n == 'chapter3_bser.experiments.coupled_search_v1'
+                           or n.startswith('chapter3_bser.experiments.coupled_search_v1.'))) for n in names):
                     raise ValueError('forbidden runtime import in ' + relative)
         module = relative[:-3].replace('/', '.')
         if module.endswith('.__init__'):module = module[:-9]
@@ -103,8 +109,12 @@ def bounded_workflow(output):
     clone=output/'source_negative_copy';clone.mkdir()
     # Copy the complete pinned runtime inventory, never the output directory
     # (which may itself be inside ROOT/work) or any user-retained models.
-    inventory=json.loads((ROOT/'provenance/active_manifest.json').read_text())['files']
-    for name in (*inventory, 'provenance/active_manifest.json', 'verification/mechanism_scenes.json'):
+    from chapter3_bser.learning.provenance import source_files
+    inventory=set(source_files(ROOT))
+    inventory.update(p.relative_to(ROOT).as_posix() for p in (ROOT/'provenance').glob('*manifest.json'))
+    inventory.update(p.relative_to(ROOT).as_posix() for p in (ROOT/'verification').rglob('*') if p.is_file())
+    inventory.add('provenance/active_manifest.json')
+    for name in sorted(inventory):
         target=clone/name;target.parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(ROOT/name,target)
     collision=copy.deepcopy(next(s for s in scenes if '_collision_' in s['scenario_id']))
@@ -125,9 +135,11 @@ def bounded_workflow(output):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',required=True);parser.add_argument('--execute',action='store_true');parser.add_argument('--rollout',action='store_true')
+    parser.add_argument('--map-workflow',action='store_true')
     args=parser.parse_args()
     if not args.execute:
-        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout)));return
+        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow)));return
+    if args.rollout and args.map_workflow:parser.error('choose one bounded workflow within the shared episode budget')
     output=Path(args.output).resolve()
     if output.is_relative_to(ROOT) and not output.is_relative_to(ROOT/'work'):
         raise ValueError('in-project verification output must stay under work/')
@@ -139,6 +151,11 @@ def main():
         if not result['regression']['passed']:raise RuntimeError('regression failed, skipped, or test inventory incomplete')
         if args.rollout:
             result['workflow']=bounded_workflow(output);write(output/'workflow.json',result['workflow'])
+        if args.map_workflow:
+            from tools.check_map_training import run as check_maps
+            result['workflow']=check_maps(output/'native_maps')
+            write(output/'workflow.json',result['workflow'])
+            if not result['workflow']['passed']:raise RuntimeError('native map workflow failed')
         result['passed']=True
     except Exception:
         import traceback

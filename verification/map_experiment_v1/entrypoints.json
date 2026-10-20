@@ -1,0 +1,97 @@
+{
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "run_id": "native_map_experiment_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "checks": [
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "prepare",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\entrypoint_absent",
+        "--spec",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\missing_spec.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"prepare\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_experiments\\\\20261020_v1\\\\entrypoint_absent\",\n  \"spec\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_experiments\\\\20261020_v1\\\\missing_spec.json\",\n  \"mechanism_check\": false,\n  \"exclude_runs\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\entrypoint_absent",
+        "--stage",
+        "train"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"run\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_experiments\\\\20261020_v1\\\\entrypoint_absent\",\n  \"stage\": \"train\",\n  \"groups\": null,\n  \"seeds\": null,\n  \"validation\": null\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "summarize",
+        "--root",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\entrypoint_absent",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\entrypoint_report_absent"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"command\": \"summarize\",\n  \"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_experiments\\\\20261020_v1\\\\entrypoint_absent\",\n  \"output\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_experiments\\\\20261020_v1\\\\entrypoint_report_absent\"\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "tools.check_map_training",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\entrypoint_absent"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"executed\": false, \"episodes\": 8, \"max_steps\": 8, \"max_complete_updates_per_model\": 4, \"output\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_experiments\\\\20261020_v1\\\\entrypoint_absent\"}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "map-suite",
+        "run",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "usage: cli.py run [-h] --root ROOT [--stage {train,evaluate,all}]\n                  [--groups {OLD_ZERO,NEW_ZERO,OLD_B2,NEW_B2,OLD_B3,NEW_B3} [{OLD_ZERO,NEW_ZERO,OLD_B2,NEW_B2,OLD_B3,NEW_B3} ...]]\n                  [--seeds SEEDS [SEEDS ...]] [--validation VALIDATION]\n                  [--execute]\n\noptions:\n  -h, --help            show this help message and exit\n  --root ROOT\n  --stage {train,evaluate,all}\n  --groups {OLD_ZERO,NEW_ZERO,OLD_B2,NEW_B2,OLD_B3,NEW_B3} [{OLD_ZERO,NEW_ZERO,OLD_B2,NEW_B2,OLD_B3,NEW_B3} ...]\n  --seeds SEEDS [SEEDS ...]\n  --validation VALIDATION\n  --execute\n"
+    }
+  ],
+  "default_no_execution": true,
+  "bash_syntax": {
+    "command": "E:/git/Git/bin/bash.exe -n scripts/linux_map_experiment.sh",
+    "exit_code": 0,
+    "script_sha256": "7362e276386dddb8258c3f03650b564ab522fa81708d3fefc1222713f78614d8",
+    "scope": "Read-only syntax check; Windows MSYS sandbox initialization failed, unsandboxed read-only validation succeeded."
+  },
+  "bash_forwarding_dry_run": {
+    "executed": false,
+    "exit_code": 0,
+    "output_directory_absent": true
+  },
+  "linux_verified": false,
+  "formal_launch_requires_actual_linux_current_validation": true
+}

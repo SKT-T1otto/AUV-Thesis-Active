@@ -1,0 +1,22 @@
+{
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "dcac691315afaf21a3d9370ce7dab8d892cf52cef99dc9330ab23656a91c2223",
+    "profile": "active_map_convergence_v1",
+    "inventory_sha256": "53455486666c457cd69aa8eb67ac1814157201939d6a482226d0be3c5a4e0e78",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_convergence.v1"
+  },
+  "run_id": "map_convergence_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "independent": {
+    "passed": true,
+    "files": 201,
+    "manifest_sha256": "dcac691315afaf21a3d9370ce7dab8d892cf52cef99dc9330ab23656a91c2223",
+    "baseline_archive_verified": true,
+    "map_core_unchanged": true,
+    "learner_and_update_schedule_byte_identical": true,
+    "all_parent_evidence_immutable": true
+  }
+}

@@ -12,6 +12,7 @@ COMMANDS = {
     'scenarios': 'chapter3_bser.learning.scenarios',
     'summarize': 'chapter3_bser.learning.summarize',
     'suite': 'chapter3_bser.learning.suite',
+    'map-suite': 'chapter3_bser.learning.map_suite',
 }
 
 

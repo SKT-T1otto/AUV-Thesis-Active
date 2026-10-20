@@ -1,5 +1,12 @@
 # AUV-Thesis-Active：D2 / D2+B2 / D2+B3
 
+2026-10-20 地图研发：已冻结原 D2 和公共接口两个版本，补充默认关闭的 coupled_search_v1 核心分支，
+包括地图—目标耦合信念、首次发现签名与候选压缩、执行不确定性评分。默认仍使用原 D2。
+核心代码与有限机制验证见 **[实现说明](docs/MAP_CORE_IMPLEMENTATION_20261020_v1.md)**；尚未开展正式性能对照或长训练。
+新旧地图各自独立适应后的 ZERO/B2/B3 六组脚本已补齐；当前为 4 个 RL 组 × 2 种子 × 300 ep，附固定验证集收敛诊断和 HTML 曲线，上传 GitHub、Linux 验收及正式运行命令见 **[新旧地图 Linux 实验](docs/MAP_EXPERIMENT_LINUX_20261020_v1.md)**。
+本地仅完成临时模型的有限机制验证；Linux 实机与正式训练由用户按指南明确执行。
+基线、接口边界及后续对照说明见 **[地图版本记录](docs/MAP_MODULE_VERSIONS.md)**。
+
 当前入口与训练流程见 **[训练和评估指南](docs/TRAINING.md)**。
 首次上传新仓库、Linux 工程验证和手动小规模试验见 **[GitHub / Linux 指南](docs/GITHUB_LINUX.md)**。
 本目录重建的是原 AUV-Thesis 当前工作树的 D2 repair v2，实现行为保持一致；

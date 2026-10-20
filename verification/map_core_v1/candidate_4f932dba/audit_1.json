@@ -1,0 +1,948 @@
+[
+  {
+    "kind": "public_evidence",
+    "step": 0,
+    "scan_event_ids": [
+      [
+        "1:1",
+        0,
+        "shared_neighbor26",
+        "scan",
+        1
+      ]
+    ],
+    "transition_event_id": null,
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "coupled_proposal",
+    "step": 0,
+    "trigger": "INITIALIZE",
+    "target_identity": "752fa313a7e72f1207392a5440cd14b4c7dc11ceec30cbf43554c18c6ed9769d",
+    "scenario_identity": "4e431ed90544bdf0e8f1eea2baae74178135d8e15569b5966b0f1db6624325a3",
+    "selected_ids": [
+      "coupled_17e7c84b1d2b4e968f78",
+      "coupled_fb1d2ccd273d2a69f919",
+      "coupled_76cf8ad383d5704b4905"
+    ],
+    "compression": {
+      "0": {
+        "raw": 12,
+        "representatives": 2,
+        "epsilon": 0.016314975115442634,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      },
+      "1": {
+        "raw": 12,
+        "representatives": 3,
+        "epsilon": 0.014148454539662195,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      },
+      "2": {
+        "raw": 12,
+        "representatives": 2,
+        "epsilon": 0.017345370793589818,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      }
+    },
+    "combinations": 12,
+    "path_queries": 36,
+    "elapsed_seconds": 0.7128990999990492,
+    "objective": 0.09626149540361903,
+    "detection": 0.10416666666666667,
+    "scenario_utilities": [
+      0.10416666666666667,
+      0.10416666666666667,
+      0.10416666666666667
+    ],
+    "scenario_detection": [
+      0.10416666666666667,
+      0.10416666666666667,
+      0.10416666666666667
+    ],
+    "frozen_agents": [],
+    "installed": false,
+    "finite_bank_review_mean_utility": 0.078125,
+    "review_kind": "independent_resampling_of_same_finite_bank"
+  },
+  {
+    "kind": "installed_route",
+    "step": 0,
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666",
+    "previous_route_sha256": null,
+    "hold_agent_ids": [],
+    "reason": "INITIALIZE"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 1,
+    "scan_event_ids": [
+      [
+        "1:1",
+        1,
+        "shared_neighbor26",
+        "scan",
+        2
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      1,
+      "team_search_detector",
+      "step",
+      3
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 1,
+    "agent_id": 0,
+    "age": 1,
+    "scenario_position_errors": [
+      0.007372215441422806,
+      0.007372215441422806,
+      0.007372215441422806
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 1,
+    "agent_id": 1,
+    "age": 1,
+    "scenario_position_errors": [
+      0.004560535440207481,
+      0.004560535440207481,
+      0.004560535440207481
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 1,
+    "agent_id": 2,
+    "age": 1,
+    "scenario_position_errors": [
+      0.00951670593418553,
+      0.00951670593418553,
+      0.00951670593418553
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "forecast_invalidated",
+    "step": 1,
+    "reason": "installed_path_hold_or_replacement",
+    "previous_route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666",
+    "new_route_sha256": "80adb4f68b5183238e91465e2561886ab4680854f851f1d819f7da112c1de121"
+  },
+  {
+    "kind": "installed_route",
+    "step": 1,
+    "route_sha256": "80adb4f68b5183238e91465e2561886ab4680854f851f1d819f7da112c1de121",
+    "previous_route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666",
+    "hold_agent_ids": [
+      0,
+      1,
+      2
+    ],
+    "reason": "ACCEPT_RELATIVE_GAIN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 2,
+    "scan_event_ids": [
+      [
+        "1:1",
+        2,
+        "shared_neighbor26",
+        "scan",
+        4
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      2,
+      "team_search_detector",
+      "step",
+      5
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 2,
+    "route_sha256": "e6ce2a26025df8fa75ae58d9419af5897a09c28a2d5a05226218707dd4599457",
+    "previous_route_sha256": "80adb4f68b5183238e91465e2561886ab4680854f851f1d819f7da112c1de121",
+    "hold_agent_ids": [
+      0,
+      1,
+      2
+    ],
+    "reason": "ACCEPT_PUBLIC_HANDOFF"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 3,
+    "scan_event_ids": [
+      [
+        "1:1",
+        3,
+        "shared_neighbor26",
+        "scan",
+        6
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      3,
+      "team_search_detector",
+      "step",
+      7
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 4,
+    "scan_event_ids": [
+      [
+        "1:1",
+        4,
+        "shared_neighbor26",
+        "scan",
+        8
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      4,
+      "team_search_detector",
+      "step",
+      9
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 5,
+    "scan_event_ids": [
+      [
+        "1:1",
+        5,
+        "shared_neighbor26",
+        "scan",
+        10
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      5,
+      "team_search_detector",
+      "step",
+      11
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 6,
+    "scan_event_ids": [
+      [
+        "1:1",
+        6,
+        "shared_neighbor26",
+        "scan",
+        12
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      6,
+      "team_search_detector",
+      "step",
+      13
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 7,
+    "scan_event_ids": [
+      [
+        "1:1",
+        7,
+        "shared_neighbor26",
+        "scan",
+        14
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      7,
+      "team_search_detector",
+      "step",
+      15
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 8,
+    "scan_event_ids": [
+      [
+        "1:1",
+        8,
+        "shared_neighbor26",
+        "scan",
+        16
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      8,
+      "team_search_detector",
+      "step",
+      17
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 9,
+    "scan_event_ids": [
+      [
+        "1:1",
+        9,
+        "shared_neighbor26",
+        "scan",
+        18
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      9,
+      "team_search_detector",
+      "step",
+      19
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 10,
+    "scan_event_ids": [
+      [
+        "1:1",
+        10,
+        "shared_neighbor26",
+        "scan",
+        20
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      10,
+      "team_search_detector",
+      "step",
+      21
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 11,
+    "scan_event_ids": [
+      [
+        "1:1",
+        11,
+        "shared_neighbor26",
+        "scan",
+        22
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      11,
+      "team_search_detector",
+      "step",
+      23
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 12,
+    "scan_event_ids": [
+      [
+        "1:1",
+        12,
+        "shared_neighbor26",
+        "scan",
+        24
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      12,
+      "team_search_detector",
+      "step",
+      25
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 13,
+    "scan_event_ids": [
+      [
+        "1:1",
+        13,
+        "shared_neighbor26",
+        "scan",
+        26
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      13,
+      "team_search_detector",
+      "step",
+      27
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 14,
+    "scan_event_ids": [
+      [
+        "1:1",
+        14,
+        "shared_neighbor26",
+        "scan",
+        28
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      14,
+      "team_search_detector",
+      "step",
+      29
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 15,
+    "scan_event_ids": [
+      [
+        "1:1",
+        15,
+        "shared_neighbor26",
+        "scan",
+        30
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      15,
+      "team_search_detector",
+      "step",
+      31
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 16,
+    "scan_event_ids": [
+      [
+        "1:1",
+        16,
+        "shared_neighbor26",
+        "scan",
+        32
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      16,
+      "team_search_detector",
+      "step",
+      33
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 17,
+    "scan_event_ids": [
+      [
+        "1:1",
+        17,
+        "shared_neighbor26",
+        "scan",
+        34
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      17,
+      "team_search_detector",
+      "step",
+      35
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 18,
+    "scan_event_ids": [
+      [
+        "1:1",
+        18,
+        "shared_neighbor26",
+        "scan",
+        36
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      18,
+      "team_search_detector",
+      "step",
+      37
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 19,
+    "scan_event_ids": [
+      [
+        "1:1",
+        19,
+        "shared_neighbor26",
+        "scan",
+        38
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      19,
+      "team_search_detector",
+      "step",
+      39
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 20,
+    "scan_event_ids": [
+      [
+        "1:1",
+        20,
+        "shared_neighbor26",
+        "scan",
+        40
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      20,
+      "team_search_detector",
+      "step",
+      41
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 21,
+    "scan_event_ids": [
+      [
+        "1:1",
+        21,
+        "shared_neighbor26",
+        "scan",
+        42
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      21,
+      "team_search_detector",
+      "step",
+      43
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "public_evidence",
+    "step": 22,
+    "scan_event_ids": [
+      [
+        "1:1",
+        22,
+        "shared_neighbor26",
+        "scan",
+        44
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      22,
+      "team_search_detector",
+      "step",
+      45
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 22,
+    "route_sha256": "8ffc4c5b94ab466fc616aebe581727c4b75f906d05829948e78bfc954324564c",
+    "previous_route_sha256": "e6ce2a26025df8fa75ae58d9419af5897a09c28a2d5a05226218707dd4599457",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "EXECUTOR_PUBLIC_TARGET_UPDATED"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 23,
+    "scan_event_ids": [
+      [
+        "1:1",
+        23,
+        "shared_neighbor26",
+        "scan",
+        46
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      23,
+      "team_search_detector",
+      "step",
+      47
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 23,
+    "route_sha256": "11edade72d9b7ac27a8565540977af7708bbb2ba60c969ff17c825ed09a97238",
+    "previous_route_sha256": "8ffc4c5b94ab466fc616aebe581727c4b75f906d05829948e78bfc954324564c",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_NO_ASSIGNMENT_CHANGE"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 24,
+    "scan_event_ids": [
+      [
+        "1:1",
+        24,
+        "shared_neighbor26",
+        "scan",
+        48
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      24,
+      "team_search_detector",
+      "step",
+      49
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 24,
+    "route_sha256": "5e7984fa5585aa26a8d9be5d7e1302432ce0ebc080448d6fd44b253fbcb703e1",
+    "previous_route_sha256": "11edade72d9b7ac27a8565540977af7708bbb2ba60c969ff17c825ed09a97238",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_EVENT_COOLDOWN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 25,
+    "scan_event_ids": [
+      [
+        "1:1",
+        25,
+        "shared_neighbor26",
+        "scan",
+        50
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      25,
+      "team_search_detector",
+      "step",
+      51
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 25,
+    "route_sha256": "4f371d9791e6c43725eb74dfd44cbdfc27607f658ed463326b9748b653823ab4",
+    "previous_route_sha256": "5e7984fa5585aa26a8d9be5d7e1302432ce0ebc080448d6fd44b253fbcb703e1",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_EVENT_COOLDOWN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 26,
+    "scan_event_ids": [
+      [
+        "1:1",
+        26,
+        "shared_neighbor26",
+        "scan",
+        52
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      26,
+      "team_search_detector",
+      "step",
+      53
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 26,
+    "route_sha256": "efec70acc4fcab1de0380fccf14a3fbebbc2951b6e14895d6bd9f8b2561acdaf",
+    "previous_route_sha256": "4f371d9791e6c43725eb74dfd44cbdfc27607f658ed463326b9748b653823ab4",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_EVENT_COOLDOWN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 27,
+    "scan_event_ids": [
+      [
+        "1:1",
+        27,
+        "shared_neighbor26",
+        "scan",
+        54
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      27,
+      "team_search_detector",
+      "step",
+      55
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 27,
+    "route_sha256": "508e81b3826a4aee1c1852708e26a6d7c287f5dd1a50e3775a27160cbe58d28a",
+    "previous_route_sha256": "efec70acc4fcab1de0380fccf14a3fbebbc2951b6e14895d6bd9f8b2561acdaf",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_EVENT_COOLDOWN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 28,
+    "scan_event_ids": [
+      [
+        "1:1",
+        28,
+        "shared_neighbor26",
+        "scan",
+        56
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      28,
+      "team_search_detector",
+      "step",
+      57
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 28,
+    "route_sha256": "7b504f86dcbaaf7546133d70340baf4d4369b46b86d6207589be1c9e5891d050",
+    "previous_route_sha256": "508e81b3826a4aee1c1852708e26a6d7c287f5dd1a50e3775a27160cbe58d28a",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_EVENT_COOLDOWN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 29,
+    "scan_event_ids": [
+      [
+        "1:1",
+        29,
+        "shared_neighbor26",
+        "scan",
+        58
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      29,
+      "team_search_detector",
+      "step",
+      59
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 29,
+    "route_sha256": "a15e86d9f1696577bca09b86922a912e6aec73c4628601e11c4fcb712976239d",
+    "previous_route_sha256": "7b504f86dcbaaf7546133d70340baf4d4369b46b86d6207589be1c9e5891d050",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_EVENT_COOLDOWN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 30,
+    "scan_event_ids": [
+      [
+        "1:1",
+        30,
+        "shared_neighbor26",
+        "scan",
+        60
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      30,
+      "team_search_detector",
+      "step",
+      61
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 30,
+    "route_sha256": "1c0f9fe70a633716a60ebce35b83f0199f6b419241dcd783433f48d8de2873a1",
+    "previous_route_sha256": "a15e86d9f1696577bca09b86922a912e6aec73c4628601e11c4fcb712976239d",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_EVENT_COOLDOWN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 31,
+    "scan_event_ids": [
+      [
+        "1:1",
+        31,
+        "shared_neighbor26",
+        "scan",
+        62
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      31,
+      "team_search_detector",
+      "step",
+      63
+    ],
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "installed_route",
+    "step": 31,
+    "route_sha256": "ca6726ec7cf9aa7a2b9aacdd8769ddd90b1387bf700e878a2feb1548329a0f17",
+    "previous_route_sha256": "1c0f9fe70a633716a60ebce35b83f0199f6b419241dcd783433f48d8de2873a1",
+    "hold_agent_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reason": "REJECT_EVENT_COOLDOWN"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 32,
+    "scan_event_ids": [
+      [
+        "1:1",
+        32,
+        "shared_neighbor26",
+        "scan",
+        64
+      ]
+    ],
+    "transition_event_id": [
+      "1:1",
+      32,
+      "team_search_detector",
+      "step",
+      65
+    ],
+    "negative_observation_valid": false
+  }
+]

@@ -22,12 +22,41 @@ from core.env.target_motion import predict_target_state
 from core.env.target_motion import segment_aabb_first_hit
 from core.env.target_motion import solve_intercept_point
 from core.env.target_motion import swept_relative_min_distance
+from core.env.public_events import PublicEventJournal, ScanObservation, StepObservation, vectors
 
 class _BaseUAVEnv:
     """Four-agent Chapter-3 environment with deterministic target handoff."""
     communication_mode = 'ch3_fixed_reliable'
     communication_model_id = FixedReliableHandoff.model_id
     base_obs_dim = 28
+
+    def enable_public_event_capture(self, episode_id, *, capacity=1024):
+        if getattr(self, 'step_count', 0) != 0:
+            raise ValueError('public capture must be configured before an explicit reset')
+        self._public_event_journal = PublicEventJournal(episode_id, capacity=capacity)
+
+    def read_public_events(self, after_sequence=0):
+        journal = getattr(self, '_public_event_journal', None)
+        return () if journal is None else journal.read(after_sequence)
+
+    def _public_step_begin(self):
+        if getattr(self, '_public_event_journal', None) is not None:
+            self._public_step_start = (vectors(self._agent_pos.detach().cpu().numpy()),
+                                       vectors(self._agent_vel.detach().cpu().numpy()), bool(self.task_found))
+
+    def _public_step_end(self, *, target_transition_completed, discovery_check_completed):
+        journal = getattr(self, '_public_event_journal', None)
+        if journal is None:
+            return
+        start, velocity, found = self._public_step_start
+        outcome = self.episode_outcome
+        payload = StepObservation(start, vectors(self._agent_pos.detach().cpu().numpy()),
+                                  velocity, vectors(self._agent_vel.detach().cpu().numpy()),
+                                  found, bool(self.task_found),
+                                  bool(target_transition_completed and (self.target_continues_after_detection or not found)),
+                                  bool(discovery_check_completed and not found), bool(outcome.episode_terminated),
+                                  str(outcome.termination_reason))
+        journal.append(self.step_count, 'team_search_detector', 'step', payload)
 
     def __init__(self, n_agents=4, space_size=(20, 20, 8), dt=0.2, max_steps=400, task_protocol=LEGACY, collision_detection_revision=None, terminal_reward_revision=None, collision_terminal_reward=-2.0, waypoint_reward_timing='legacy_v1', random_z_range=(0.5, 7.5), random_search_waypoint_count=(2, 4), random_executor_waypoint_count=(1, 1), use_obstacles=False, planner_grid_size=(10, 10, 8), planner_visit_radius=1, planner_pheromone_decay=0.99, planner_suppression=0.54, planner_min_waypoint_separation=4.8, planner_step_update_interval=2, planner_step_update_suppress_only=False, hold_steps=5, search_hold_steps=0, executor_hold_steps=None, hold_speed_thresh=0.2, device=None, return_numpy=True, diverse_fallback_prob=0.25, diverse_fallback_tries=64, search_spread_reward_gain=0.75, planner_coverage_weight=1.1, planner_claim_weight=0.8, planner_stochastic_topk=14, planner_stochastic_eps=0.26, prior_kv_xy=1.1, prior_kv_z=1.0, prior_slow_radius_xy=2.4, prior_slow_radius_z=1.2, prior_strength_search=1.0, prior_strength_executor=1.0, residual_scale_search=0.45, residual_scale_executor=0.35, use_residual_prior=True, protocol='ch3_pilot_v1', reward_profile='ch3_pilot_v1', reward_scale=100.0, team_find_bonus=20.0, finder_extra_bonus=40.0, mission_complete_bonus=300.0, time_penalty=0.03, lambda_a=0.01, lambda_da=0.04, search_detect_bonuses=(120.0, 140.0, 160.0), early_find_bonus_gain=0.0, early_success_bonus_gain=0.0, use_pse_planner=False, pse_use_belief=True, pse_use_exec_cost=True, pse_use_standby=True, pse_fixed_standby_mode='search_centroid', pse_belief_detect_prob=0.75, pse_belief_miss_decay=0.2, pse_detect_sigma=1.2, pse_belief_topk=48, pse_belief_weight=1.2, pse_use_gated_belief=False, pse_belief_weight_max=0.25, pse_belief_gate_start_step=80, pse_belief_gate_full_step=160, pse_belief_entropy_high=0.9, pse_belief_entropy_low=0.65, pse_belief_uniform_mix_high=0.75, pse_belief_uniform_mix_low=0.35, pse_exec_cost_weight=0.18, pse_exec_cost_reference_mode='physical_position', pse_use_exec_cost_schedule=False, pse_exec_cost_weight_min=0.1, pse_exec_cost_weight_max=0.24, pse_exec_cost_schedule_warmup_steps=120, pse_exec_cost_entropy_low=0.45, pse_exec_cost_entropy_high=0.95, pse_search_cost_weight=0.08, pse_base_score_weight=0.25, pse_standby_topk=48, pse_standby_candidates=64, pse_standby_move_weight=0.25, pse_standby_hysteresis_weight=0.1, pse_standby_safe_weight=0.05, pse_lazy_standby=False, pse_standby_entropy_gate=0.75, pse_standby_min_step=80, pse_standby_update_interval_lazy=4, pse_standby_move_weight_lazy=0.4, pse_standby_hysteresis_weight_lazy=0.25, pse_standby_start_step=0, pse_standby_update_interval=2, pse_standby_min_relative_gain=0.0, pse_standby_max_target_shift=float('inf')):
         if int(n_agents) != 4:
@@ -1102,6 +1131,9 @@ class UAVEnv(_BaseUAVEnv):
     def reset(self, scenario=None):
         if self._mission_initializing or not self._mission_features_enabled:
             return _BaseUAVEnv.reset(self, scenario=scenario)
+        journal = getattr(self, '_public_event_journal', None)
+        if journal is not None:
+            journal.reset()
         raw = {} if scenario is None else deepcopy(dict(scenario))
         declared_mode = str(raw.get('obstacle_knowledge_mode', self.obstacle_knowledge_mode))
         if declared_mode != self.obstacle_knowledge_mode:
@@ -1487,6 +1519,12 @@ class UAVEnv(_BaseUAVEnv):
                 distances[agent_index, ray_index] = distance
                 hit_mask[agent_index, ray_index] = hit
         changed = self.map_module.integrate_obstacle_scan(origins, directions, distances, hit_mask, current_step=self.step_count)
+        journal = getattr(self, '_public_event_journal', None)
+        if journal is not None:
+            payload = ScanObservation(vectors(origins), vectors(directions), vectors(distances),
+                                      tuple(tuple(bool(x) for x in row) for row in hit_mask),
+                                      tuple(range(len(origins))))
+            journal.append(self.step_count, 'shared_neighbor26', 'scan', payload)
         self.map_sensor_scan_count += int(distances.size)
         if changed:
             self._last_map_change_step = int(self.step_count)
@@ -1503,6 +1541,7 @@ class UAVEnv(_BaseUAVEnv):
     def step(self, actions):
         if self.task_protocol == STRICT and self.episode_outcome.episode_terminated:
             raise RuntimeError('episode terminated; call reset before step')
+        self._public_step_begin()
         self._phase_before_step = 'Hold' if getattr(self, '_capture_hold_counter', 0) > 0 else 'Intercept' if self.task_found else 'Search'
         if not self._mission_features_enabled:
             self._found_event = False
@@ -1594,6 +1633,7 @@ class UAVEnv(_BaseUAVEnv):
         self._prev_coverage_ratio = self._current_coverage_ratio_internal()
         self._prev_search_task_min_dist = self._current_search_task_min_dist()
         self._sync_pse_diagnostics()
+        self._public_step_end(target_transition_completed=True, discovery_check_completed=True)
         return (self._obs_to_public(observations), self._rewards_to_public(rewards), [done] * 4)
 
     def _record_task_outcome(self):
@@ -1621,4 +1661,5 @@ class UAVEnv(_BaseUAVEnv):
         self.reward_before_terminal_override = raw.detach().clone()
         rewards = torch.full((4,), self.collision_terminal_reward, dtype=self.dtype, device=self.device)
         self.final_reward_by_agent = rewards.detach().cpu().tolist()
+        self._public_step_end(target_transition_completed=False, discovery_check_completed=False)
         return (self._obs_to_public(self._get_obs()), self._rewards_to_public(rewards), [True] * 4)

@@ -1,0 +1,177 @@
+{
+  "schema": "auv.active.map_core.evolution.v1",
+  "parent_review_sha256": "b31f45cb16d5ac3bd7586dcfe396b2f605758f32775f3f99fdb736cb5357d280",
+  "algorithm_changed": true,
+  "authorized_scope": "2026-10-20: coupled belief, discovery signatures/candidate compression, execution uncertainty scoring",
+  "changes": [
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/allocator.py",
+      "before_sha256": null,
+      "after_sha256": "898fef071066c7b20a6885e90d6bec12819cdee9e325043e0d84015b7f2223f7",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/assembly.py",
+      "before_sha256": "0f058757185b4478987c25cde6416f45ce15c6df5d2d640e1994cfbcc8bd25c6",
+      "after_sha256": "97ceaeee696af56b7131fb4b59fd042d763d18b29142f1ddb1ed3f63c35f9410",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/config.py",
+      "before_sha256": "00d17528a25d6279f0c9e4b0b187e10e2e21b7aa70a0156550e0713d434d738c",
+      "after_sha256": "5cb15190d96e2a49e2620065500f57c94f701cfd419bb13fd3a5ae7c82ad88f2",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/controller.py",
+      "before_sha256": null,
+      "after_sha256": "cee1c0ac83fd1a10f49290c8be31ab1bf5d62d248c7938984357ce0e12247cb7",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/core_config.py",
+      "before_sha256": null,
+      "after_sha256": "284e92cbf77810ea56a774914e7d62471305071aed8fde45c132484d74938a8a",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/coupled_belief.py",
+      "before_sha256": null,
+      "after_sha256": "a6634311c378550d23f9a7a32b6f261c3f3b5bc9b3b372c4031111224b93f022",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/discovery.py",
+      "before_sha256": null,
+      "after_sha256": "b922e7e5eae3dd048f9320f2116d50852a08cc5820dd409a491bfda9c70561cf",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/execution_forecast.py",
+      "before_sha256": null,
+      "after_sha256": "4ef48fb89b3001b6a9fe473e52787768cda1daf0bc5dc5d82dcc451e82364d17",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/geometry_hypotheses.py",
+      "before_sha256": null,
+      "after_sha256": "9c3afe850b408843a3f916cf88501da126ce8d16fd5590dd1641c735d8ece3cf",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/numerics.py",
+      "before_sha256": null,
+      "after_sha256": "797cd3995bf398c13e7ea5d3085ff3b47bd7630bdc25ab5a4c6458062acdd25e",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/reference.py",
+      "before_sha256": "fc140af6cf730a332eb148fa473d7fcc45cfba0cf4639ef91c13987a2b0b89b8",
+      "after_sha256": "68b1f5930f98bf87f300f2b01866d46480fcd1c0216977383fefa29614d06378",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/region_proposals.py",
+      "before_sha256": null,
+      "after_sha256": "0ba3abfbb6d8fb5c4db9ef1812a06ef2b94c7c82bd022992c65164e791673daf",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/session.py",
+      "before_sha256": null,
+      "after_sha256": "d660c243018e8f2bf22b522e9280d08a5e9573f24b98665fe2a57dc1109034f4",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/types.py",
+      "before_sha256": "1cb2564d8ce567501e80e6209ee9b13ee8b4963ea620f7dee42cbb68e1236a13",
+      "after_sha256": "aaf8a737bd68fceef6ca93c681352ce5329430eab212c9636e3233e96b6397b3",
+      "reason": "Implement finite joint map-target inference, shared-sample discovery compression and public execution-uncertainty planning."
+    },
+    {
+      "path": "chapter3_bser/learning/map_core_source.py",
+      "before_sha256": null,
+      "after_sha256": "0fe7af4653d4536b6cbf01f0ab21a0d42ae1baa5ab5b6da36d5a014b9957325a",
+      "reason": "Verify exact map-core evolution against frozen Stage-1 source independently of runtime algorithms."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "4cbef36e4289ce2c7ee5f7bd5dd0c5a5e6c28c7e9e352286a9f73ad61b44feca",
+      "after_sha256": "d720559293e8eebdbbd804157f85aa08525e36da6043a8835da99b9009c83d18",
+      "reason": "Admit exact successor identity and separate readiness evidence, preserve parent manifests."
+    },
+    {
+      "path": "chapter3_bser/planner_factory.py",
+      "before_sha256": "58ee74233f41878faece32e0855f512c2729d22ebd107a2828b2d4163a9ef274",
+      "after_sha256": "9f06906741698b7a6bebca5d5ffad3adc50b09ef528461f895fcd329bb25c8d1",
+      "reason": "Select default-off coupled-search controller; retain original D2 for off/observer."
+    },
+    {
+      "path": "checks/test_coupled_search.py",
+      "before_sha256": null,
+      "after_sha256": "47ae078905d17bc13606253f49f3078d0e888c2426c34749f9adbeb770d5ddbd",
+      "reason": "Independent finite analytic, dynamics, signature/compression, degeneration and route-lifecycle checks."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "f3fdefd7fca4d221904d60c9851bf9b1789821efd17dff7487f90510818a821e",
+      "after_sha256": "6e69fe6823eccefe446d2b80511b7395b57a777c334f8665861d8e9561211145",
+      "reason": "Carry source-tamper negative controls to current successor, preserve parent archive/evidence checks."
+    },
+    {
+      "path": "configs/coupled_search_core_v1.json",
+      "before_sha256": null,
+      "after_sha256": "0d6fc8c07a25c8e0707f02490a5800984ed4f5b2413a6db7bdf24c532e1adf3c",
+      "reason": "Declare frozen default-off research priors and bounded compute configuration."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "1851b38d7784079124a53e9c8b5b44f93926a2fdd362339670f204a85f59cf17",
+      "after_sha256": "d8e919fa5fe9d2c56da62f8a69036c47237078b5af377167e0d269666e830fc5",
+      "reason": "Add current finite core mechanism checks to the exact mandatory inventory."
+    },
+    {
+      "path": "core/env/mission_env.py",
+      "before_sha256": "78cc3df4d6f4ef884a2a7125c9df88588857ace0998ab54e3f17c29000378769",
+      "after_sha256": "02131484c251243545bafa3eeb30b642139981244ac5c1ddfba6af732ec3df39",
+      "reason": "Expose existing public control/scanning constants to the detached forecast; no physics edits."
+    },
+    {
+      "path": "provenance/baselines/map_public_interface_20261020_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "41bbbfbc28f26fbe7ec10ff505d32a1408aeb38c14cb6d50ddab6077efdf1f45",
+      "reason": "Freeze complete Stage-1 source and evidence before the explicitly authorized map algorithm change."
+    },
+    {
+      "path": "provenance/baselines/map_public_interface_20261020_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "9b3a6e50c5ab22928a599421560408c75a2992e278e419856e1d4b9366b4f68d",
+      "reason": "Freeze complete Stage-1 source and evidence before the explicitly authorized map algorithm change."
+    },
+    {
+      "path": "provenance/map_stage1_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "b2d0cbb174892c04bd95e3734a5932cd157a9b415901138772703c73bc671e29",
+      "reason": "Pin immutable Stage-1 parent in the successor source inventory."
+    },
+    {
+      "path": "tools/check_coupled_search.py",
+      "before_sha256": null,
+      "after_sha256": "e8ed1d59225ee763e826a45aee61646d02f7d8ac7d008c88c0609b4ae38cb6e9",
+      "reason": "Explicit <=3 episode x32 step zero-residual mechanism command with source identity and visible core/fallback audit."
+    },
+    {
+      "path": "tools/map_core_source.py",
+      "before_sha256": null,
+      "after_sha256": "9a78119d5b296c46b00cba1153098a358cc48ba111fed69727776210b8eff89e",
+      "reason": "Verify exact map-core evolution against frozen Stage-1 source independently of runtime algorithms."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "8d73d282bcbe9d93f65e6bead3bce84c8ac4c1cb2692091d11123971c2468128",
+      "after_sha256": "929036aa46fab198d900eefd7ab0ce847f06bf768b12ae911412c22aaf2b8f1d",
+      "reason": "Dispatch independent map-core verifier before prior immutable Stage-1 verifier."
+    }
+  ],
+  "training_started": false
+}

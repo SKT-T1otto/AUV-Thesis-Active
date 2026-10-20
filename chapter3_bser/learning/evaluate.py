@@ -17,6 +17,7 @@ from chapter3_bser.learning.train import load_for_evaluation
 from chapter3_bser.learning.scenarios import validate_manifest
 from chapter3_bser.learning.evaluation_records import metric_row, finalize_evaluation
 from chapter3_bser.learning.evaluation_records import verified_rows
+from chapter3_bser.learning import map_contract
 
 @contextmanager
 def preserved_rng():
@@ -39,6 +40,15 @@ def evaluate(checkpoint, manifest_path, output, *, mechanism=False):
     from chapter3_bser.learning.provenance import verify_reviewed_changes
     identity = verify_reviewed_changes()
     (model, config, payload) = load_for_evaluation(checkpoint, allow_mechanism=mechanism)
+    return _evaluate_loaded(model,config,payload,manifest_path,output,identity=identity,mechanism=mechanism,checkpoint=checkpoint)
+
+
+def _evaluate_loaded(model,config,payload,manifest_path,output,*,identity,mechanism=False,checkpoint=None):
+    """Native evaluation kernel; verification can supply a fresh in-memory model."""
+    from chapter3_bser.learning.checkpoint import state_digest
+    from chapter3_bser.learning.provenance import require_review
+    require_review(identity);map_contract.validate_checkpoint_map(config,payload)
+    if state_digest(model.training_state_dict())!=payload['model_state_sha256']:raise ValueError('evaluation policy state identity mismatch')
     manifest = json.loads(Path(manifest_path).read_text(encoding='utf-8'))
     scenarios = validate_manifest(manifest, config, evaluation=True, mechanism=mechanism)
     ids = [s.get('scenario_id') for s in scenarios]
@@ -57,17 +67,18 @@ def evaluate(checkpoint, manifest_path, output, *, mechanism=False):
         torch.set_num_threads(1)
         for scene in scenarios:
             seed = int(scene['scenario_seed'])
-            runtime = RepairedMissionRuntime(config, scene, seed=seed)
+            runtime = RepairedMissionRuntime(config, scene, seed=seed,map_research=map_contract.research_config(config))
             try:
                 while not runtime.terminal:
-                    runtime.advance(model, explore=False)
+                    map_contract.advance(runtime,model,explore=False)
                 row = metric_row(runtime, config, scene, policy_id=payload['model_state_sha256'], method=config['method'], identity=identity, mechanism=mechanism)
                 journal.append(row)
             finally:
                 runtime.close()
         return finalize_evaluation(journal, output, identity=identity, manifest=manifest,
                                    policy_id=payload['model_state_sha256'], method=config['method'],
-                                   mechanism=mechanism, checkpoint=str(Path(checkpoint).resolve()))
+                                   mechanism=mechanism, checkpoint=None if checkpoint is None else str(Path(checkpoint).resolve()),
+                                   **map_contract.metadata(config))
     finally:
         torch.set_num_threads(threads)
 

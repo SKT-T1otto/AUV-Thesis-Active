@@ -1,0 +1,62 @@
+{
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "run_id": "native_map_experiment_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "execution": {
+    "path": "verification/map_experiment_v1/native_workflow.json",
+    "sha256": "a545e0331d6ad25cb4ce0dc7f7092006d90f5e3b070fd387e3e3c816bbe98e38"
+  },
+  "actual_training_episodes": 4,
+  "actual_evaluation_episodes": 4,
+  "total_physical_steps": 36,
+  "max_episode_steps": 8,
+  "max_complete_updates_per_temporary_model": 4,
+  "paired_initial_weights_equal": true,
+  "native_policy_unchanged_during_evaluation": true,
+  "new_map_actually_planned": true,
+  "checkpoint_file_restore_executed": false,
+  "six_group_orchestration_scope": "All six groups covered by pure data contract/report tests; real bounded episodes cover four native learned groups. No ZERO episodes added this turn.",
+  "scenario_generation_only": {
+    "passed": true,
+    "scope": "scenario export and preparation only; no environment episodes, models or training",
+    "pilot": {
+      "executed": true,
+      "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\collision_terminal\\generated_pilot_final",
+      "plan_sha256": "f8a4ccefe52a7074b8d4d47ee28d235a9f53413c33cea7f028473697f7049fe8",
+      "training_jobs": 4,
+      "evaluation_jobs": 6,
+      "max_training_steps": 1600,
+      "max_evaluation_steps": 2400,
+      "performance_passed": false
+    },
+    "main": {
+      "executed": true,
+      "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\collision_terminal\\generated_main_final",
+      "plan_sha256": "7b8feefc05e78fcbbfa41503e727b33cb9a12113f1f5d5a72b83fbb4e6702916",
+      "training_jobs": 4,
+      "evaluation_jobs": 6,
+      "max_training_steps": 3200,
+      "max_evaluation_steps": 4800,
+      "performance_passed": false
+    },
+    "excluded_manifests": 2,
+    "source": {
+      "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+      "profile": "active_map_experiment_v1",
+      "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+      "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+      "distribution": "auv.active_source.map_experiment.v1"
+    }
+  },
+  "formal_training_started": false,
+  "linux_execution": false,
+  "performance_passed": false
+}

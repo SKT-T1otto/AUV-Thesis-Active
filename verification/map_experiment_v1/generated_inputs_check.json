@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "scope": "scenario export and preparation only; no environment episodes, models or training",
+  "pilot": {
+    "executed": true,
+    "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\collision_terminal\\generated_pilot_final",
+    "plan_sha256": "f8a4ccefe52a7074b8d4d47ee28d235a9f53413c33cea7f028473697f7049fe8",
+    "training_jobs": 4,
+    "evaluation_jobs": 6,
+    "max_training_steps": 1600,
+    "max_evaluation_steps": 2400,
+    "performance_passed": false
+  },
+  "main": {
+    "executed": true,
+    "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_experiments\\20261020_v1\\collision_terminal\\generated_main_final",
+    "plan_sha256": "7b8feefc05e78fcbbfa41503e727b33cb9a12113f1f5d5a72b83fbb4e6702916",
+    "training_jobs": 4,
+    "evaluation_jobs": 6,
+    "max_training_steps": 3200,
+    "max_evaluation_steps": 4800,
+    "performance_passed": false
+  },
+  "excluded_manifests": 2,
+  "source": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  }
+}

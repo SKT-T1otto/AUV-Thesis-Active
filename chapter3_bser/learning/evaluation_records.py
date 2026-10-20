@@ -8,6 +8,9 @@ from chapter3_bser.learning.provenance import require_review
 
 def metric_row(runtime, config, scene, *, policy_id, method, identity, mechanism):
     row = runtime.summary()
+    if 'map_experiment' in config:
+        from chapter3_bser.learning.map_contract import metrics
+        row.update(metrics(runtime))
     outcome = runtime.env.unwrapped.episode_outcome
     collision_step = outcome.first_collision_step
     collided = outcome.termination_reason == 'obstacle_collision'
@@ -21,7 +24,8 @@ def metric_row(runtime, config, scene, *, policy_id, method, identity, mechanism
     return row
 
 
-def finalize_evaluation(journal, output, *, identity, manifest, policy_id, method, mechanism, checkpoint=None):
+def finalize_evaluation(journal, output, *, identity, manifest, policy_id, method, mechanism, checkpoint=None,
+                        map_condition=None,train_map=None,eval_map=None):
     # Raw journals are diagnostic when the final source gate fails. Consumers
     # require the verified receipt and never infer success from raw rows alone.
     require_review(identity)
@@ -31,6 +35,9 @@ def finalize_evaluation(journal, output, *, identity, manifest, policy_id, metho
     receipt = dict(schema='auv.active.evaluation.v1', status='completed', completed=len(journal), source_review=identity,
                    manifest_sha256=digest(manifest), policy_id=policy_id, method=method, checkpoint=checkpoint,
                    mechanism_only=mechanism, performance_passed=False, files=files)
+    if map_condition is not None:
+        if train_map!=map_condition['map_id'] or eval_map!=train_map:raise ValueError('native map evaluation required')
+        receipt.update(map_condition=map_condition,train_map=train_map,eval_map=eval_map)
     require_review(identity)
     write_json(output / 'evaluation_identity.json', receipt)
     return receipt
@@ -47,4 +54,7 @@ def verified_rows(path, identity):
     rows = json.loads(text) if path.suffix == '.json' else [json.loads(line) for line in text.splitlines() if line.strip()]
     if len(rows) != receipt['completed'] or not rows or any(r.get('source_review') != identity or r.get('trajectory_complete') is not True for r in rows):
         raise ValueError('evaluation row count/source/completeness mismatch')
+    if receipt.get('map_condition') is not None and any(r.get('map_condition')!=receipt['map_condition']
+            or r.get('train_map')!=receipt['train_map'] or r.get('eval_map')!=receipt['eval_map'] for r in rows):
+        raise ValueError('evaluation row map identity mismatch')
     return rows, receipt

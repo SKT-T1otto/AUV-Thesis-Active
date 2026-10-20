@@ -1,0 +1,62 @@
+{
+  "episodes": 8,
+  "physical_steps": 107,
+  "max_episode_steps": 32,
+  "training_episodes": 0,
+  "mechanism_optimizer_updates": 0,
+  "checkpoint_files_restored": 0,
+  "records": [
+    {
+      "path": "work\\map_research\\20261020_core_v1\\core_01\\mechanisms.json",
+      "sha256": "ddd9195502f21223faa3ba0c72cd7500f7683824119772b15240fe401d6d3005",
+      "execution_source_identity": {
+        "review_sha256": "fb203054a91c4a3b31f2801b340f20939d374522182ad99925fa5e966b111763",
+        "profile": "active_map_core_v1",
+        "inventory_sha256": "e08ddac2c9576df77ae34c17375ee1614c2ebaba1d207fbe50a4f116f3fc5cd2",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.map_core.v1"
+      },
+      "episodes": 1,
+      "physical_steps": 32
+    },
+    {
+      "path": "work\\map_research\\20261020_core_v1\\parity_off\\parity.json",
+      "sha256": "79a3491b39fd1dda01c190f14ff9f316b7128c3c0285e850171d2d6663ae9965",
+      "execution_source_identity": {
+        "review_sha256": "fb203054a91c4a3b31f2801b340f20939d374522182ad99925fa5e966b111763",
+        "profile": "active_map_core_v1",
+        "inventory_sha256": "e08ddac2c9576df77ae34c17375ee1614c2ebaba1d207fbe50a4f116f3fc5cd2",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.map_core.v1"
+      },
+      "episodes": 2,
+      "physical_steps": 5
+    },
+    {
+      "path": "work\\map_research\\20261020_core_v1\\core_02\\mechanisms.json",
+      "sha256": "72e3009834cc39df3a212e16e0d75abd399b2fda6c9be339754dbe7212eed4a4",
+      "execution_source_identity": {
+        "review_sha256": "4f932dba186cbcbf4e8943c7d4c3619591781a7e705ffe65b8d1179636cf75c4",
+        "profile": "active_map_core_v1",
+        "inventory_sha256": "b4238595610b6a2543721d347d34f6c401f55b02a37a168e9acc1d32401d7c63",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.map_core.v1"
+      },
+      "episodes": 3,
+      "physical_steps": 65
+    },
+    {
+      "path": "work\\map_research\\20261020_core_v1\\parity_final_off\\parity.json",
+      "sha256": "cb99510070283dace0ec4d4172510c11e187ec61699d9fbae4469dc40fd1db57",
+      "execution_source_identity": {
+        "review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+        "profile": "active_map_core_v1",
+        "inventory_sha256": "8f228e4daa34c9b1948e325cd36be477342dc09ac597fe610e77c5210f09cea2",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.map_core.v1"
+      },
+      "episodes": 2,
+      "physical_steps": 5
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "8f228e4daa34c9b1948e325cd36be477342dc09ac597fe610e77c5210f09cea2",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "run_id": "map_core_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "independent_verification": {
+    "passed": true,
+    "files": 179,
+    "manifest_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+    "baseline_archive_verified": true,
+    "legacy_ast_equal": [
+      "core/env/uav_env.py",
+      "core/env/mission_env.py",
+      "chapter3_bser/learning/base_runtime.py"
+    ],
+    "algorithm_changed": true,
+    "default_enabled": false
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schema": "auv.active.map_suite.v1",
+  "source_review": {
+    "review_sha256": "dcac691315afaf21a3d9370ce7dab8d892cf52cef99dc9330ab23656a91c2223",
+    "profile": "active_map_convergence_v1",
+    "inventory_sha256": "53455486666c457cd69aa8eb67ac1814157201939d6a482226d0be3c5a4e0e78",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_convergence.v1"
+  },
+  "protocol_sha256": "01a89f052f14fb6318db0d5375e2944401d139ad293f6a661dff372a23059e64",
+  "mechanism_only": false,
+  "spec": {
+    "schema": "auv.active.map_experiment_spec.v1",
+    "groups": [
+      "OLD_ZERO",
+      "NEW_ZERO",
+      "OLD_B2",
+      "NEW_B2",
+      "OLD_B3",
+      "NEW_B3"
+    ],
+    "seeds": [
+      2729
+    ],
+    "train_episodes": 3,
+    "max_steps": 400,
+    "evaluation_count": 2,
+    "evaluation_generator_seed": 92729,
+    "training_generator_seed_base": 1000000,
+    "checkpoint_interval": 1,
+    "new_map_config": {
+      "schema": "ch3.coupled_search.core.v1",
+      "enabled": true,
+      "mode": "coupled_search",
+      "event_capacity": 1024,
+      "audit_capacity": 1024,
+      "seed": 827291,
+      "maps": 3,
+      "particles_per_map": 32,
+      "horizon": 16,
+      "execution_scenarios": 3,
+      "raw_routes": 12,
+      "representatives": 4,
+      "path_queries": 72,
+      "proposal_regions": 24,
+      "planning_seconds": 20.0,
+      "inference_seconds": 3.0,
+      "history_steps": 512,
+      "geometry_attempts": 128,
+      "replenish_attempts": 2,
+      "recovery_cooldown": 10,
+      "geometry": {
+        "prior_id": "public_scan_conditioned_aabb_completion_v1",
+        "unknown_boxes": 2,
+        "max_hit_clusters": 8,
+        "size_min": 0.6,
+        "size_max": 3.0,
+        "cluster_radius": 1.2,
+        "scan_tolerance": 0.25
+      },
+      "target_prior": {
+        "prior_id": "declared_uniform_position_isotropic_velocity_v1",
+        "speed_min": 0.2,
+        "speed_max": 0.8,
+        "stationary_mass": 0.2
+      },
+      "beta": 0.0,
+      "rho": 0.25,
+      "lambda_cost": 0.02,
+      "cost_scale": 120.0,
+      "compression_epsilon": 0.02,
+      "tie_tolerance": 0.001,
+      "execution_history": 8,
+      "execution_error_clip": 0.5,
+      "review_samples": 64
+    },
+    "bootstrap_draws": 2000,
+    "statistics_seed": 20261020,
+    "convergence": {
+      "validation_count": 2,
+      "generator_seed": 827399,
+      "tail_points": 3,
+      "rate_tolerance": 0.1,
+      "time_fraction_tolerance": 0.05,
+      "return_relative_tolerance": 0.05
+    }
+  },
+  "jobs": [
+    {
+      "name": "OLD_ZERO",
+      "group": "OLD_ZERO",
+      "map_id": "OLD",
+      "learner": "ZERO",
+      "seed": null,
+      "config": "inputs/OLD_ZERO.json",
+      "train": "jobs/OLD_ZERO/train",
+      "evaluation": "jobs/OLD_ZERO/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "fb4060effb0777ff7980092b81a26a8bd9cdebacdd342754a309db9cd4885808",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "01a89f052f14fb6318db0d5375e2944401d139ad293f6a661dff372a23059e64"
+      }
+    },
+    {
+      "name": "NEW_ZERO",
+      "group": "NEW_ZERO",
+      "map_id": "NEW",
+      "learner": "ZERO",
+      "seed": null,
+      "config": "inputs/NEW_ZERO.json",
+      "train": "jobs/NEW_ZERO/train",
+      "evaluation": "jobs/NEW_ZERO/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "17a69521ebf1c95820a649474ed424cd047dd2034738ef380adc738adb8d2d03",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "01a89f052f14fb6318db0d5375e2944401d139ad293f6a661dff372a23059e64"
+      }
+    },
+    {
+      "name": "OLD_B2_seed2729",
+      "group": "OLD_B2",
+      "map_id": "OLD",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/OLD_B2_seed2729.json",
+      "train": "jobs/OLD_B2_seed2729/train",
+      "evaluation": "jobs/OLD_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "fb4060effb0777ff7980092b81a26a8bd9cdebacdd342754a309db9cd4885808",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "01a89f052f14fb6318db0d5375e2944401d139ad293f6a661dff372a23059e64"
+      }
+    },
+    {
+      "name": "NEW_B2_seed2729",
+      "group": "NEW_B2",
+      "map_id": "NEW",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/NEW_B2_seed2729.json",
+      "train": "jobs/NEW_B2_seed2729/train",
+      "evaluation": "jobs/NEW_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "17a69521ebf1c95820a649474ed424cd047dd2034738ef380adc738adb8d2d03",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "01a89f052f14fb6318db0d5375e2944401d139ad293f6a661dff372a23059e64"
+      }
+    },
+    {
+      "name": "OLD_B3_seed2729",
+      "group": "OLD_B3",
+      "map_id": "OLD",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/OLD_B3_seed2729.json",
+      "train": "jobs/OLD_B3_seed2729/train",
+      "evaluation": "jobs/OLD_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "fb4060effb0777ff7980092b81a26a8bd9cdebacdd342754a309db9cd4885808",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "01a89f052f14fb6318db0d5375e2944401d139ad293f6a661dff372a23059e64"
+      }
+    },
+    {
+      "name": "NEW_B3_seed2729",
+      "group": "NEW_B3",
+      "map_id": "NEW",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/NEW_B3_seed2729.json",
+      "train": "jobs/NEW_B3_seed2729/train",
+      "evaluation": "jobs/NEW_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "17a69521ebf1c95820a649474ed424cd047dd2034738ef380adc738adb8d2d03",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "01a89f052f14fb6318db0d5375e2944401d139ad293f6a661dff372a23059e64"
+      }
+    }
+  ],
+  "assets": {
+    "inputs/evaluation.json": "17d9c1cecfac9f345bf9ad053b2fafd9f4903e9bd8a93272c0e7ddefb9708b7e",
+    "inputs/generated_evaluation.json": "3494bf4ae784378c9665f3355c0f2167cd2bb0c02bfae81d261bdb89838e2bb8",
+    "inputs/generated_train_seed2729.json": "978a5736f9294831eba50fe689558697eeb987857b866ff2e5c5a5d06b862fa7",
+    "inputs/generated_validation.json": "de03ab3fd06bb93bc96a1aa02a3549da2e25995f322019375a8635f2778794d7",
+    "inputs/NEW_B2_seed2729.json": "63561f71f34032b42631b747c16ae47bae6399fe690c6dc010318101938551c3",
+    "inputs/NEW_B3_seed2729.json": "eb13a71b8981b6781f46b3808bf74d2001f0c0f40fee7ce9d1fc20dd32ccd847",
+    "inputs/NEW_ZERO.json": "a7caea890be49ae660a951e21d278686fefdd145c2a756a7212ba654d5d6a281",
+    "inputs/OLD_B2_seed2729.json": "5108b364a904abe1522872b60d3c2f1f86717f8c0c920d6795c477a487af7502",
+    "inputs/OLD_B3_seed2729.json": "538c4f551d233ae981252ef8de813238ac581ee2cf4bde9bdd63b27de328a913",
+    "inputs/OLD_ZERO.json": "cad221d0394dcc0a74c79e2d7d1d1f7354a60ba7d73695af07d7e8b0f6dabb1b",
+    "inputs/spec.json": "919063fb1f6ebb45b13aca95a560df3dadec649630779ebe60c10cefebeff8b6",
+    "inputs/train_seed2729.json": "0922886b33c442836784648dccc9d8677e527e6a5392b3496e55a7f70ddcf255",
+    "inputs/validation.json": "750eccb39c40c91779c7b3a28c6cc59ed1c6afca8600c01bc096a20cd6718ffa"
+  },
+  "excluded_manifests": [],
+  "training_protocol": "fresh weights; per-seed manifest order; innovation seed=training_seed+episode",
+  "checkpoint_selection": "last fully completed episode",
+  "native_evaluation_only": true,
+  "performance_passed": false,
+  "sha256": "740cad6113ea8ee9c508ab6d3861b3f99c5e42979e317c7d40e6ed9ccbcdabc9"
+}

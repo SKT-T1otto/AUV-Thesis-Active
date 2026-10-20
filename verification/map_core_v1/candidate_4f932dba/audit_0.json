@@ -1,0 +1,1821 @@
+[
+  {
+    "kind": "public_evidence",
+    "step": 0,
+    "scan_event_ids": [
+      [
+        "0:1",
+        0,
+        "shared_neighbor26",
+        "scan",
+        1
+      ]
+    ],
+    "transition_event_id": null,
+    "negative_observation_valid": false
+  },
+  {
+    "kind": "coupled_proposal",
+    "step": 0,
+    "trigger": "INITIALIZE",
+    "target_identity": "752fa313a7e72f1207392a5440cd14b4c7dc11ceec30cbf43554c18c6ed9769d",
+    "scenario_identity": "4e431ed90544bdf0e8f1eea2baae74178135d8e15569b5966b0f1db6624325a3",
+    "selected_ids": [
+      "coupled_17e7c84b1d2b4e968f78",
+      "coupled_fb1d2ccd273d2a69f919",
+      "coupled_76cf8ad383d5704b4905"
+    ],
+    "compression": {
+      "0": {
+        "raw": 12,
+        "representatives": 2,
+        "epsilon": 0.016314975115442634,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      },
+      "1": {
+        "raw": 12,
+        "representatives": 3,
+        "epsilon": 0.014148454539662195,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      },
+      "2": {
+        "raw": 12,
+        "representatives": 2,
+        "epsilon": 0.017345370793589818,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      }
+    },
+    "combinations": 12,
+    "path_queries": 36,
+    "elapsed_seconds": 0.7548638999996911,
+    "objective": 0.09626149540361903,
+    "detection": 0.10416666666666667,
+    "scenario_utilities": [
+      0.10416666666666667,
+      0.10416666666666667,
+      0.10416666666666667
+    ],
+    "scenario_detection": [
+      0.10416666666666667,
+      0.10416666666666667,
+      0.10416666666666667
+    ],
+    "frozen_agents": [],
+    "installed": false,
+    "finite_bank_review_mean_utility": 0.078125,
+    "review_kind": "independent_resampling_of_same_finite_bank"
+  },
+  {
+    "kind": "installed_route",
+    "step": 0,
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666",
+    "previous_route_sha256": null,
+    "hold_agent_ids": [],
+    "reason": "INITIALIZE"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 1,
+    "scan_event_ids": [
+      [
+        "0:1",
+        1,
+        "shared_neighbor26",
+        "scan",
+        2
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      1,
+      "team_search_detector",
+      "step",
+      3
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 1,
+    "agent_id": 0,
+    "age": 1,
+    "scenario_position_errors": [
+      0.007372215441422806,
+      0.007372215441422806,
+      0.007372215441422806
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 1,
+    "agent_id": 1,
+    "age": 1,
+    "scenario_position_errors": [
+      0.004560535440207481,
+      0.004560535440207481,
+      0.004560535440207481
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 1,
+    "agent_id": 2,
+    "age": 1,
+    "scenario_position_errors": [
+      0.00951670593418553,
+      0.00951670593418553,
+      0.00951670593418553
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 2,
+    "scan_event_ids": [
+      [
+        "0:1",
+        2,
+        "shared_neighbor26",
+        "scan",
+        4
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      2,
+      "team_search_detector",
+      "step",
+      5
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 2,
+    "agent_id": 0,
+    "age": 2,
+    "scenario_position_errors": [
+      0.020004245929647918,
+      0.020004245929647918,
+      0.020004245929647918
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 2,
+    "agent_id": 1,
+    "age": 2,
+    "scenario_position_errors": [
+      0.012374519576066492,
+      0.012374519576066492,
+      0.012374519576066492
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 2,
+    "agent_id": 2,
+    "age": 2,
+    "scenario_position_errors": [
+      0.02595481837444235,
+      0.02595481837444235,
+      0.02595481837444235
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 3,
+    "scan_event_ids": [
+      [
+        "0:1",
+        3,
+        "shared_neighbor26",
+        "scan",
+        6
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      3,
+      "team_search_detector",
+      "step",
+      7
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 3,
+    "agent_id": 0,
+    "age": 3,
+    "scenario_position_errors": [
+      0.03601248654411838,
+      0.03601248654411838,
+      0.03601248654411838
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 3,
+    "agent_id": 1,
+    "age": 3,
+    "scenario_position_errors": [
+      0.022290208024803145,
+      0.022290208024803145,
+      0.022290208024803145
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 3,
+    "agent_id": 2,
+    "age": 3,
+    "scenario_position_errors": [
+      0.04713266488505303,
+      0.04713266488505303,
+      0.04713266488505303
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 4,
+    "scan_event_ids": [
+      [
+        "0:1",
+        4,
+        "shared_neighbor26",
+        "scan",
+        8
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      4,
+      "team_search_detector",
+      "step",
+      9
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 4,
+    "agent_id": 0,
+    "age": 4,
+    "scenario_position_errors": [
+      0.05378343122605626,
+      0.05378343122605626,
+      0.05378343122605626
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 4,
+    "agent_id": 1,
+    "age": 4,
+    "scenario_position_errors": [
+      0.03332908225470247,
+      0.03332908225470247,
+      0.03332908225470247
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 4,
+    "agent_id": 2,
+    "age": 4,
+    "scenario_position_errors": [
+      0.07124981245942373,
+      0.07124981245942373,
+      0.07124981245942373
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 5,
+    "scan_event_ids": [
+      [
+        "0:1",
+        5,
+        "shared_neighbor26",
+        "scan",
+        10
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      5,
+      "team_search_detector",
+      "step",
+      11
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 5,
+    "agent_id": 0,
+    "age": 5,
+    "scenario_position_errors": [
+      0.07199247480044776,
+      0.07199247480044776,
+      0.07199247480044776
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 5,
+    "agent_id": 1,
+    "age": 5,
+    "scenario_position_errors": [
+      0.04469188513915503,
+      0.04469188513915503,
+      0.04469188513915503
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 5,
+    "agent_id": 2,
+    "age": 5,
+    "scenario_position_errors": [
+      0.09684928420855653,
+      0.09684928420855653,
+      0.09684928420855653
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 6,
+    "scan_event_ids": [
+      [
+        "0:1",
+        6,
+        "shared_neighbor26",
+        "scan",
+        12
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      6,
+      "team_search_detector",
+      "step",
+      13
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 6,
+    "agent_id": 0,
+    "age": 6,
+    "scenario_position_errors": [
+      0.0896042134308259,
+      0.0896042134308259,
+      0.0896042134308259
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 6,
+    "agent_id": 1,
+    "age": 6,
+    "scenario_position_errors": [
+      0.059954283474851905,
+      0.059954283474851905,
+      0.059954283474851905
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 6,
+    "agent_id": 2,
+    "age": 6,
+    "scenario_position_errors": [
+      0.12277939378288025,
+      0.12277939378288025,
+      0.12277939378288025
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 7,
+    "scan_event_ids": [
+      [
+        "0:1",
+        7,
+        "shared_neighbor26",
+        "scan",
+        14
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      7,
+      "team_search_detector",
+      "step",
+      15
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 7,
+    "agent_id": 0,
+    "age": 7,
+    "scenario_position_errors": [
+      0.11272721911357406,
+      0.11272721911357406,
+      0.11272721911357406
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 7,
+    "agent_id": 1,
+    "age": 7,
+    "scenario_position_errors": [
+      0.0789373486999605,
+      0.0789373486999605,
+      0.0789373486999605
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 7,
+    "agent_id": 2,
+    "age": 7,
+    "scenario_position_errors": [
+      0.1547743050374931,
+      0.1547743050374931,
+      0.1547743050374931
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 8,
+    "scan_event_ids": [
+      [
+        "0:1",
+        8,
+        "shared_neighbor26",
+        "scan",
+        16
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      8,
+      "team_search_detector",
+      "step",
+      17
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 8,
+    "agent_id": 0,
+    "age": 8,
+    "scenario_position_errors": [
+      0.1415457115194889,
+      0.1415457115194889,
+      0.1415457115194889
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 8,
+    "agent_id": 1,
+    "age": 8,
+    "scenario_position_errors": [
+      0.10147565301470797,
+      0.10147565301470797,
+      0.10147565301470797
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 8,
+    "agent_id": 2,
+    "age": 8,
+    "scenario_position_errors": [
+      0.20452864055378653,
+      0.20452864055378653,
+      0.20452864055378653
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 9,
+    "scan_event_ids": [
+      [
+        "0:1",
+        9,
+        "shared_neighbor26",
+        "scan",
+        18
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      9,
+      "team_search_detector",
+      "step",
+      19
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 9,
+    "agent_id": 0,
+    "age": 9,
+    "scenario_position_errors": [
+      0.17630052335142898,
+      0.17630052335142898,
+      0.17630052335142898
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 9,
+    "agent_id": 1,
+    "age": 9,
+    "scenario_position_errors": [
+      0.12741406389890642,
+      0.12741406389890642,
+      0.12741406389890642
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 9,
+    "agent_id": 2,
+    "age": 9,
+    "scenario_position_errors": [
+      0.2646010646714755,
+      0.2646010646714755,
+      0.2646010646714755
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 10,
+    "scan_event_ids": [
+      [
+        "0:1",
+        10,
+        "shared_neighbor26",
+        "scan",
+        20
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      10,
+      "team_search_detector",
+      "step",
+      21
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 10,
+    "agent_id": 0,
+    "age": 10,
+    "scenario_position_errors": [
+      0.2171621561057033,
+      0.2171621561057033,
+      0.2171621561057033
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 10,
+    "agent_id": 1,
+    "age": 10,
+    "scenario_position_errors": [
+      0.1485045332494163,
+      0.1485045332494163,
+      0.1485045332494163
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 10,
+    "agent_id": 2,
+    "age": 10,
+    "scenario_position_errors": [
+      0.3315023395311477,
+      0.3315023395311477,
+      0.3315023395311477
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 11,
+    "scan_event_ids": [
+      [
+        "0:1",
+        11,
+        "shared_neighbor26",
+        "scan",
+        22
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      11,
+      "team_search_detector",
+      "step",
+      23
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 11,
+    "agent_id": 0,
+    "age": 11,
+    "scenario_position_errors": [
+      0.2544903369466822,
+      0.2544903369466822,
+      0.2544903369466822
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 11,
+    "agent_id": 1,
+    "age": 11,
+    "scenario_position_errors": [
+      0.16254602424540168,
+      0.16254602424540168,
+      0.16254602424540168
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 11,
+    "agent_id": 2,
+    "age": 11,
+    "scenario_position_errors": [
+      0.39219530611204134,
+      0.39219530611204134,
+      0.39219530611204134
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 12,
+    "scan_event_ids": [
+      [
+        "0:1",
+        12,
+        "shared_neighbor26",
+        "scan",
+        24
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      12,
+      "team_search_detector",
+      "step",
+      25
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 12,
+    "agent_id": 0,
+    "age": 12,
+    "scenario_position_errors": [
+      0.27787576378681916,
+      0.27787576378681916,
+      0.27787576378681916
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 12,
+    "agent_id": 1,
+    "age": 12,
+    "scenario_position_errors": [
+      0.1705958381754222,
+      0.1705958381754222,
+      0.1705958381754222
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 12,
+    "agent_id": 2,
+    "age": 12,
+    "scenario_position_errors": [
+      0.4372828629030057,
+      0.4372828629030057,
+      0.4372828629030057
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 13,
+    "scan_event_ids": [
+      [
+        "0:1",
+        13,
+        "shared_neighbor26",
+        "scan",
+        26
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      13,
+      "team_search_detector",
+      "step",
+      27
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 13,
+    "agent_id": 0,
+    "age": 13,
+    "scenario_position_errors": [
+      0.28940601983575187,
+      0.28940601983575187,
+      0.28940601983575187
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 13,
+    "agent_id": 1,
+    "age": 13,
+    "scenario_position_errors": [
+      0.17372663506894453,
+      0.17372663506894453,
+      0.17372663506894453
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 13,
+    "agent_id": 2,
+    "age": 13,
+    "scenario_position_errors": [
+      0.46523030889725064,
+      0.46523030889725064,
+      0.46523030889725064
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 14,
+    "scan_event_ids": [
+      [
+        "0:1",
+        14,
+        "shared_neighbor26",
+        "scan",
+        28
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      14,
+      "team_search_detector",
+      "step",
+      29
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 14,
+    "agent_id": 0,
+    "age": 14,
+    "scenario_position_errors": [
+      0.29135584359354066,
+      0.29135584359354066,
+      0.29135584359354066
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 14,
+    "agent_id": 1,
+    "age": 14,
+    "scenario_position_errors": [
+      0.1729843470190294,
+      0.1729843470190294,
+      0.1729843470190294
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 14,
+    "agent_id": 2,
+    "age": 14,
+    "scenario_position_errors": [
+      0.4793416177849895,
+      0.4793416177849895,
+      0.4793416177849895
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 15,
+    "scan_event_ids": [
+      [
+        "0:1",
+        15,
+        "shared_neighbor26",
+        "scan",
+        30
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      15,
+      "team_search_detector",
+      "step",
+      31
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 15,
+    "agent_id": 0,
+    "age": 15,
+    "scenario_position_errors": [
+      0.2875850028435187,
+      0.2875850028435187,
+      0.2875850028435187
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 15,
+    "agent_id": 1,
+    "age": 15,
+    "scenario_position_errors": [
+      0.16936046509877742,
+      0.16936046509877742,
+      0.16936046509877742
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 15,
+    "agent_id": 2,
+    "age": 15,
+    "scenario_position_errors": [
+      0.4825855218382996,
+      0.4825855218382996,
+      0.4825855218382996
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 16,
+    "scan_event_ids": [
+      [
+        "0:1",
+        16,
+        "shared_neighbor26",
+        "scan",
+        32
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      16,
+      "team_search_detector",
+      "step",
+      33
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 16,
+    "agent_id": 0,
+    "age": 16,
+    "scenario_position_errors": [
+      0.2811836436421136,
+      0.2811836436421136,
+      0.2811836436421136
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 16,
+    "agent_id": 1,
+    "age": 16,
+    "scenario_position_errors": [
+      0.16639606584476985,
+      0.16639606584476985,
+      0.16639606584476985
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 16,
+    "agent_id": 2,
+    "age": 16,
+    "scenario_position_errors": [
+      0.4775593943601578,
+      0.4775593943601578,
+      0.4775593943601578
+    ],
+    "route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 17,
+    "scan_event_ids": [
+      [
+        "0:1",
+        17,
+        "shared_neighbor26",
+        "scan",
+        34
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      17,
+      "team_search_detector",
+      "step",
+      35
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "public_evidence",
+    "step": 18,
+    "scan_event_ids": [
+      [
+        "0:1",
+        18,
+        "shared_neighbor26",
+        "scan",
+        36
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      18,
+      "team_search_detector",
+      "step",
+      37
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "public_evidence",
+    "step": 19,
+    "scan_event_ids": [
+      [
+        "0:1",
+        19,
+        "shared_neighbor26",
+        "scan",
+        38
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      19,
+      "team_search_detector",
+      "step",
+      39
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "public_evidence",
+    "step": 20,
+    "scan_event_ids": [
+      [
+        "0:1",
+        20,
+        "shared_neighbor26",
+        "scan",
+        40
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      20,
+      "team_search_detector",
+      "step",
+      41
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "coupled_proposal",
+    "step": 20,
+    "trigger": "BELIEF_SHIFT",
+    "target_identity": "df5fb11dba2e5fb73b1c45042f466d6fbc0f234d5fd672a7ac7b6ac237d4f14f",
+    "scenario_identity": "7e026e66f806028bbafacd168f5a78f5086e6107095b3d5a9efad2554b8c10f7",
+    "selected_ids": [
+      "coupled_17e7c84b1d2b4e968f78",
+      "coupled_fb1d2ccd273d2a69f919",
+      "coupled_742340b6bf9f3297bc0e"
+    ],
+    "compression": {
+      "0": {
+        "raw": 12,
+        "representatives": 3,
+        "epsilon": 0.01793628576316926,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      },
+      "1": {
+        "raw": 12,
+        "representatives": 4,
+        "epsilon": 0.02845085513433028,
+        "reached_error_target": false,
+        "stopped_by": "representative_cap"
+      },
+      "2": {
+        "raw": 12,
+        "representatives": 2,
+        "epsilon": 0.01903733369927753,
+        "reached_error_target": true,
+        "stopped_by": "error_target"
+      }
+    },
+    "combinations": 24,
+    "path_queries": 33,
+    "elapsed_seconds": 0.7983495999997103,
+    "objective": 0.07865215345464435,
+    "detection": 0.09302325581395346,
+    "scenario_utilities": [
+      0.09302325581395347,
+      0.09302325581395347,
+      0.09302325581395347
+    ],
+    "scenario_detection": [
+      0.09302325581395347,
+      0.09302325581395347,
+      0.09302325581395347
+    ],
+    "frozen_agents": [],
+    "installed": false,
+    "finite_bank_review_mean_utility": 0.109375,
+    "review_kind": "independent_resampling_of_same_finite_bank"
+  },
+  {
+    "kind": "installed_route",
+    "step": 20,
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7",
+    "previous_route_sha256": "547d6330ea6c4031eea9d0587ebed021b2c13669076e3782f243baab34820666",
+    "hold_agent_ids": [],
+    "reason": "D_ACCEPT_ELIGIBLE_PROPOSAL"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 21,
+    "scan_event_ids": [
+      [
+        "0:1",
+        21,
+        "shared_neighbor26",
+        "scan",
+        42
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      21,
+      "team_search_detector",
+      "step",
+      43
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 21,
+    "agent_id": 0,
+    "age": 1,
+    "scenario_position_errors": [
+      0.00880807858861612,
+      0.0018503633038170477,
+      0.0006883932929839426
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 21,
+    "agent_id": 1,
+    "age": 1,
+    "scenario_position_errors": [
+      0.06469350115304386,
+      0.06123590934160308,
+      0.06041579989921554
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 21,
+    "agent_id": 2,
+    "age": 1,
+    "scenario_position_errors": [
+      0.00811690170280306,
+      0.0013020091465997133,
+      0.0006668144453463464
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 22,
+    "scan_event_ids": [
+      [
+        "0:1",
+        22,
+        "shared_neighbor26",
+        "scan",
+        44
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      22,
+      "team_search_detector",
+      "step",
+      45
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 22,
+    "agent_id": 0,
+    "age": 2,
+    "scenario_position_errors": [
+      0.02405065249278742,
+      0.00494408804832786,
+      0.001911374149833382
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 22,
+    "agent_id": 1,
+    "age": 2,
+    "scenario_position_errors": [
+      0.1319858153121339,
+      0.12141273967258638,
+      0.11902124266096094
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 22,
+    "agent_id": 2,
+    "age": 2,
+    "scenario_position_errors": [
+      0.02199295005185124,
+      0.0035512306731794413,
+      0.0017782121035028848
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 23,
+    "scan_event_ids": [
+      [
+        "0:1",
+        23,
+        "shared_neighbor26",
+        "scan",
+        46
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      23,
+      "team_search_detector",
+      "step",
+      47
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 23,
+    "agent_id": 0,
+    "age": 3,
+    "scenario_position_errors": [
+      0.04360443707280964,
+      0.008787629611867357,
+      0.003582511707099292
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 23,
+    "agent_id": 1,
+    "age": 3,
+    "scenario_position_errors": [
+      0.19473806233084617,
+      0.173263888749939,
+      0.1686543195679965
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 23,
+    "agent_id": 2,
+    "age": 3,
+    "scenario_position_errors": [
+      0.039672130226072515,
+      0.006412584950407581,
+      0.0031394062539746746
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 24,
+    "scan_event_ids": [
+      [
+        "0:1",
+        24,
+        "shared_neighbor26",
+        "scan",
+        48
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      24,
+      "team_search_detector",
+      "step",
+      49
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 24,
+    "agent_id": 0,
+    "age": 4,
+    "scenario_position_errors": [
+      0.06562719462101285,
+      0.012984951682872227,
+      0.005640620974091745
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 24,
+    "agent_id": 1,
+    "age": 4,
+    "scenario_position_errors": [
+      0.24008386991545688,
+      0.20709101589686063,
+      0.20036347165532753
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 24,
+    "agent_id": 2,
+    "age": 4,
+    "scenario_position_errors": [
+      0.059565798972478864,
+      0.009582508581269234,
+      0.004586921858388491
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 25,
+    "scan_event_ids": [
+      [
+        "0:1",
+        25,
+        "shared_neighbor26",
+        "scan",
+        50
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      25,
+      "team_search_detector",
+      "step",
+      51
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 25,
+    "agent_id": 0,
+    "age": 5,
+    "scenario_position_errors": [
+      0.08857289186045676,
+      0.017225021578069283,
+      0.009776527309857213
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 25,
+    "agent_id": 1,
+    "age": 5,
+    "scenario_position_errors": [
+      0.27025471248934974,
+      0.22556931629957272,
+      0.21827918493915707
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 25,
+    "agent_id": 2,
+    "age": 5,
+    "scenario_position_errors": [
+      0.08041464776737015,
+      0.012797428605074558,
+      0.007290888655002958
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 26,
+    "scan_event_ids": [
+      [
+        "0:1",
+        26,
+        "shared_neighbor26",
+        "scan",
+        52
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      26,
+      "team_search_detector",
+      "step",
+      53
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 26,
+    "agent_id": 0,
+    "age": 6,
+    "scenario_position_errors": [
+      0.11119437779994394,
+      0.021271831655414214,
+      0.015159540523321979
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 26,
+    "agent_id": 1,
+    "age": 6,
+    "scenario_position_errors": [
+      0.2876537336554385,
+      0.23147751197588692,
+      0.224792227886053
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 26,
+    "agent_id": 2,
+    "age": 6,
+    "scenario_position_errors": [
+      0.10124882474687788,
+      0.01583912074021977,
+      0.010798462137630737
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 27,
+    "scan_event_ids": [
+      [
+        "0:1",
+        27,
+        "shared_neighbor26",
+        "scan",
+        54
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      27,
+      "team_search_detector",
+      "step",
+      55
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 27,
+    "agent_id": 0,
+    "age": 7,
+    "scenario_position_errors": [
+      0.13865975883675147,
+      0.024957084556477233,
+      0.021068705255908392
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 27,
+    "agent_id": 1,
+    "age": 7,
+    "scenario_position_errors": [
+      0.29467101504705867,
+      0.22752289552726765,
+      0.22227003543990384
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 27,
+    "agent_id": 2,
+    "age": 7,
+    "scenario_position_errors": [
+      0.12134796880315701,
+      0.01853717521600392,
+      0.014706019330294058
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 28,
+    "scan_event_ids": [
+      [
+        "0:1",
+        28,
+        "shared_neighbor26",
+        "scan",
+        56
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      28,
+      "team_search_detector",
+      "step",
+      57
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 28,
+    "agent_id": 0,
+    "age": 8,
+    "scenario_position_errors": [
+      0.16555665665050082,
+      0.028219187455990283,
+      0.026966788430972773
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 28,
+    "agent_id": 1,
+    "age": 8,
+    "scenario_position_errors": [
+      0.29354382355172876,
+      0.21619895753595555,
+      0.21291601343942929
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 28,
+    "agent_id": 2,
+    "age": 8,
+    "scenario_position_errors": [
+      0.14415573921221908,
+      0.021572708016477933,
+      0.019563462275468704
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 29,
+    "scan_event_ids": [
+      [
+        "0:1",
+        29,
+        "shared_neighbor26",
+        "scan",
+        58
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      29,
+      "team_search_detector",
+      "step",
+      59
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 29,
+    "agent_id": 0,
+    "age": 9,
+    "scenario_position_errors": [
+      0.18759216399718723,
+      0.032808554001963294,
+      0.03247241425549748
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 29,
+    "agent_id": 1,
+    "age": 9,
+    "scenario_position_errors": [
+      0.2900132989722281,
+      0.20650652764644506,
+      0.20403639912459937
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 29,
+    "agent_id": 2,
+    "age": 9,
+    "scenario_position_errors": [
+      0.16960373962718242,
+      0.026190693848341218,
+      0.025229764775216868
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 30,
+    "scan_event_ids": [
+      [
+        "0:1",
+        30,
+        "shared_neighbor26",
+        "scan",
+        60
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      30,
+      "team_search_detector",
+      "step",
+      61
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 30,
+    "agent_id": 0,
+    "age": 10,
+    "scenario_position_errors": [
+      0.20484002778432844,
+      0.03797770158096842,
+      0.037317915037316705
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 30,
+    "agent_id": 1,
+    "age": 10,
+    "scenario_position_errors": [
+      0.28932502367734664,
+      0.1955403472337621,
+      0.1929506627309565
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 30,
+    "agent_id": 2,
+    "age": 10,
+    "scenario_position_errors": [
+      0.19515848378204514,
+      0.030788747455361674,
+      0.029981962839702243
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 31,
+    "scan_event_ids": [
+      [
+        "0:1",
+        31,
+        "shared_neighbor26",
+        "scan",
+        62
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      31,
+      "team_search_detector",
+      "step",
+      63
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 31,
+    "agent_id": 0,
+    "age": 11,
+    "scenario_position_errors": [
+      0.2176168633667672,
+      0.043092199185018526,
+      0.04132315684927709
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 31,
+    "agent_id": 1,
+    "age": 11,
+    "scenario_position_errors": [
+      0.2873046383816987,
+      0.18435339563710404,
+      0.18101952994690643
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 31,
+    "agent_id": 2,
+    "age": 11,
+    "scenario_position_errors": [
+      0.2156261813093866,
+      0.03514096135557769,
+      0.03378191213744275
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "public_evidence",
+    "step": 32,
+    "scan_event_ids": [
+      [
+        "0:1",
+        32,
+        "shared_neighbor26",
+        "scan",
+        64
+      ]
+    ],
+    "transition_event_id": [
+      "0:1",
+      32,
+      "team_search_detector",
+      "step",
+      65
+    ],
+    "negative_observation_valid": true
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 32,
+    "agent_id": 0,
+    "age": 12,
+    "scenario_position_errors": [
+      0.2263772617546508,
+      0.047650473176001844,
+      0.044381941138751546
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 32,
+    "agent_id": 1,
+    "age": 12,
+    "scenario_position_errors": [
+      0.28307592728702163,
+      0.17287501444791595,
+      0.1684383383098567
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  },
+  {
+    "kind": "execution_prediction_error",
+    "step": 32,
+    "agent_id": 2,
+    "age": 12,
+    "scenario_position_errors": [
+      0.23133995143897965,
+      0.039098294223859596,
+      0.0366668609068035
+    ],
+    "route_sha256": "8c493231efe64e8f9a3b54f0c32a4912e047c3bc18765715da45ba350519bab7"
+  }
+]

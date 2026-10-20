@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "dcac691315afaf21a3d9370ce7dab8d892cf52cef99dc9330ab23656a91c2223",
+    "profile": "active_map_convergence_v1",
+    "inventory_sha256": "53455486666c457cd69aa8eb67ac1814157201939d6a482226d0be3c5a4e0e78",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_convergence.v1"
+  },
+  "full_budgets": [
+    {
+      "name": "map_comparison_pilot_v1",
+      "training_jobs": 8,
+      "evaluation_jobs": 10,
+      "seeds": [
+        2729,
+        3729
+      ],
+      "train_episodes": 20,
+      "max_training_steps": 64000,
+      "diagnostic_episodes": 0
+    },
+    {
+      "name": "map_comparison_v1",
+      "training_jobs": 8,
+      "evaluation_jobs": 10,
+      "seeds": [
+        2729,
+        3729
+      ],
+      "train_episodes": 300,
+      "max_training_steps": 960000,
+      "diagnostic_episodes": 672
+    }
+  ],
+  "generated_sample_plans": [
+    {
+      "name": "map_comparison_v1",
+      "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\collision_terminal\\map_comparison_v1",
+      "result": {
+        "executed": true,
+        "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_convergence\\20261020_v1\\delivery_completion_v2\\collision_terminal\\map_comparison_v1",
+        "plan_sha256": "740cad6113ea8ee9c508ab6d3861b3f99c5e42979e317c7d40e6ed9ccbcdabc9",
+        "training_jobs": 4,
+        "evaluation_jobs": 6,
+        "diagnostic_episodes": 32,
+        "max_training_steps": 4800,
+        "max_evaluation_steps": 4800,
+        "performance_passed": false
+      },
+      "plan_sha256": "740cad6113ea8ee9c508ab6d3861b3f99c5e42979e317c7d40e6ed9ccbcdabc9",
+      "plan_file_sha256": "3fd4854640d096bf4700a8096fb79355749ece711aaf07ac3521cae754cb776f",
+      "assets": {
+        "inputs/evaluation.json": "17d9c1cecfac9f345bf9ad053b2fafd9f4903e9bd8a93272c0e7ddefb9708b7e",
+        "inputs/generated_evaluation.json": "3494bf4ae784378c9665f3355c0f2167cd2bb0c02bfae81d261bdb89838e2bb8",
+        "inputs/generated_train_seed2729.json": "978a5736f9294831eba50fe689558697eeb987857b866ff2e5c5a5d06b862fa7",
+        "inputs/generated_validation.json": "de03ab3fd06bb93bc96a1aa02a3549da2e25995f322019375a8635f2778794d7",
+        "inputs/NEW_B2_seed2729.json": "63561f71f34032b42631b747c16ae47bae6399fe690c6dc010318101938551c3",
+        "inputs/NEW_B3_seed2729.json": "eb13a71b8981b6781f46b3808bf74d2001f0c0f40fee7ce9d1fc20dd32ccd847",
+        "inputs/NEW_ZERO.json": "a7caea890be49ae660a951e21d278686fefdd145c2a756a7212ba654d5d6a281",
+        "inputs/OLD_B2_seed2729.json": "5108b364a904abe1522872b60d3c2f1f86717f8c0c920d6795c477a487af7502",
+        "inputs/OLD_B3_seed2729.json": "538c4f551d233ae981252ef8de813238ac581ee2cf4bde9bdd63b27de328a913",
+        "inputs/OLD_ZERO.json": "cad221d0394dcc0a74c79e2d7d1d1f7354a60ba7d73695af07d7e8b0f6dabb1b",
+        "inputs/spec.json": "919063fb1f6ebb45b13aca95a560df3dadec649630779ebe60c10cefebeff8b6",
+        "inputs/train_seed2729.json": "0922886b33c442836784648dccc9d8677e527e6a5392b3496e55a7f70ddcf255",
+        "inputs/validation.json": "750eccb39c40c91779c7b3a28c6cc59ed1c6afca8600c01bc096a20cd6718ffa"
+      },
+      "model_created": false,
+      "physical_episodes": 0
+    }
+  ],
+  "scope": "Full released budgets validated without export; seven physical task definitions generated for a small input-only plan. Full 300-episode input export remains a manual preparation step.",
+  "training_started": false,
+  "checkpoint_files_restored": 0,
+  "physical_episodes": 0
+}

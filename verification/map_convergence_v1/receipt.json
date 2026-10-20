@@ -1,0 +1,56 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "map_convergence_20261020_v1",
+  "source_identity": {
+    "review_sha256": "dcac691315afaf21a3d9370ce7dab8d892cf52cef99dc9330ab23656a91c2223",
+    "profile": "active_map_convergence_v1",
+    "inventory_sha256": "53455486666c457cd69aa8eb67ac1814157201939d6a482226d0be3c5a4e0e78",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_convergence.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_convergence_v1/source.json",
+      "sha256": "ee94f56dd6e7da867bc6ae10db97d6ad461266ea93c525fb29a96743d33e215a"
+    },
+    "structural": {
+      "path": "verification/map_convergence_v1/structural.json",
+      "sha256": "260b6bfdc12bf035d64cc40a6658fa06a59166be310467dd76a149458e6ec3d8"
+    },
+    "regression": {
+      "path": "verification/map_convergence_v1/regression.json",
+      "sha256": "dbed2faff2ff0c6a18c72faaaf3b07954fc7f1cae559407e17b68dcdea185c72"
+    },
+    "parity": {
+      "path": "verification/map_convergence_v1/parity.json",
+      "sha256": "bfde22ed9633c9a3ca3df0d80fe50ab379747c29c2d7e49189e79109e826396f"
+    },
+    "entrypoints": {
+      "path": "verification/map_convergence_v1/entrypoints.json",
+      "sha256": "4ff510626fc648598ed1f5363d614bc7159154fb5abda113d180781096a9d260"
+    },
+    "checkpoint": {
+      "path": "verification/map_convergence_v1/checkpoint.json",
+      "sha256": "3589da4a8e42543c65039efb9630d443ccb6b66251b6be8d48ced5b84880c37a"
+    },
+    "mechanisms": {
+      "path": "verification/map_convergence_v1/mechanisms.json",
+      "sha256": "320bdefc513bfcf6c1086f40196d69e910031ca69d53192dfcef266e89d53fb2"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "performance_passed": false,
+  "historical_e0_passed": false,
+  "linux_tested": false,
+  "scope": "Windows engineering evidence only. Formal map-suite execution also requires fresh Linux fixed-checkout validation and explicit --execute. Current 300-episode experiment has not run.",
+  "mechanism_budget": {
+    "episodes": 8,
+    "total_physical_steps": 36,
+    "max_episode_steps": 8,
+    "temporary_models": 4,
+    "max_complete_updates_per_model": 4,
+    "formal_training_episodes": 0,
+    "checkpoint_files_restored": 0
+  }
+}

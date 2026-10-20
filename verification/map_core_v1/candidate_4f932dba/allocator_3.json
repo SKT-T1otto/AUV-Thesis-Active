@@ -1,0 +1,52 @@
+[
+  {
+    "kind": "coupled_fallback",
+    "step": 0,
+    "reason": "public_joint_filter_unavailable:geometry_proposal_budget_exhausted",
+    "planner": "d2_v1"
+  },
+  {
+    "kind": "proposal",
+    "step": 0,
+    "trigger": "INITIALIZE",
+    "candidates_by_agent": {
+      "0": 0,
+      "1": 4,
+      "2": 4
+    },
+    "candidate_ids": [
+      "s1_00_0000",
+      "s1_01_0008",
+      "s1_02_0003",
+      "s1_03_0011",
+      "s2_00_0000",
+      "s2_01_0008",
+      "s2_02_0003",
+      "s2_03_0011"
+    ],
+    "frozen_ids": [],
+    "standby_count": 4,
+    "selected_ids": [
+      "s1_03_0011",
+      "s2_02_0003"
+    ],
+    "pure_search_ids": [
+      "s1_03_0011",
+      "s2_02_0003"
+    ],
+    "search_differs_from_pure": false,
+    "standby": [
+      5.0,
+      5.0,
+      1.5
+    ],
+    "executor_reachable": true,
+    "executor_route_time": 1.7297509238026916,
+    "objective": 0.06997036210281063,
+    "detection": 0.06997036210281063,
+    "joint_score": 0.05274460750686971,
+    "sequential_joint_score": 0.05274460750686971,
+    "response_time": 5.223811802370799,
+    "installed": false
+  }
+]

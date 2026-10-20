@@ -1,0 +1,75 @@
+{
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "8f228e4daa34c9b1948e325cd36be477342dc09ac597fe610e77c5210f09cea2",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "run_id": "map_core_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "checks": [
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "chapter3_bser.experiments.coupled_search_v1.reference",
+        "--config",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_research\\20261020_core_v1\\absent_base.json",
+        "--interface-config",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_research\\20261020_core_v1\\core_enabled_dryrun.json",
+        "--manifest",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_research\\20261020_core_v1\\absent_manifest.json",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_research\\20261020_core_v1\\entrypoint_must_not_exist"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"executed\": false,\n  \"mode\": \"coupled_search\",\n  \"enabled\": true,\n  \"search_planner_id\": \"coupled_search_v1\",\n  \"coupled_search_implemented\": true,\n  \"manifest\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_research\\\\20261020_core_v1\\\\absent_manifest.json\",\n  \"output\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_research\\\\20261020_core_v1\\\\entrypoint_must_not_exist\"\n}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "tools.check_coupled_search",
+        "--output",
+        "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\map_research\\20261020_core_v1\\entrypoint_must_not_exist"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"executed\": false, \"scene_indices\": [0, 3], \"max_steps\": 32, \"output\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\map_research\\\\20261020_core_v1\\\\entrypoint_must_not_exist\"}\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "train",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "usage: cli.py [-h] --config CONFIG --output OUTPUT [--execute]\n              [--mechanism-check] [--seed SEED]\n\noptions:\n  -h, --help         show this help message and exit\n  --config CONFIG\n  --output OUTPUT\n  --execute\n  --mechanism-check\n  --seed SEED\n"
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-m",
+        "cli",
+        "reference",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "usage: cli.py [-h] --config CONFIG --manifest MANIFEST --output OUTPUT\n              [--execute] [--mechanism-check]\n\nEvaluate the D2 prior with exactly zero normalized RL residuals.\n\noptions:\n  -h, --help           show this help message and exit\n  --config CONFIG\n  --manifest MANIFEST\n  --output OUTPUT\n  --execute\n  --mechanism-check\n"
+    }
+  ],
+  "output_absent": true,
+  "default_enabled": false,
+  "actual_core_mechanism_command": {
+    "review_sha256": "4f932dba186cbcbf4e8943c7d4c3619591781a7e705ffe65b8d1179636cf75c4",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "b4238595610b6a2543721d347d34f6c401f55b02a37a168e9acc1d32401d7c63",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "training_started": false
+}

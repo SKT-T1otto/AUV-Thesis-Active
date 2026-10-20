@@ -11,6 +11,18 @@ def digest(value):
 
 def verify(root):
     root = Path(root).resolve()
+    if (root/'provenance/map_convergence_manifest.json').is_file():
+        from tools.map_convergence_source import verify as verify_map
+        return verify_map(root)
+    if (root/'provenance/map_experiment_manifest.json').is_file():
+        from tools.map_experiment_source import verify as verify_map
+        return verify_map(root)
+    if (root/'provenance/map_core_manifest.json').is_file():
+        from tools.map_core_source import verify as verify_map
+        return verify_map(root)
+    if (root/'provenance/map_stage1_manifest.json').is_file():
+        from tools.map_interface_source import verify as verify_map
+        return verify_map(root)
     data = json.loads((root/'provenance/active_manifest.json').read_text(encoding='utf-8'))
     if data.get('schema') != 'auv.active_source.rebuild.v1' or data.get('sha256') != digest({k:v for k,v in data.items() if k!='sha256'}):
         raise ValueError('invalid rebuild manifest identity')

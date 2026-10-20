@@ -1,0 +1,5 @@
+group,training_seed,scenarios,policy_sha256,found_rate,success_rate,collision_rate,pre_found_collision_rate,found_penalized_steps,team_discounted_return,runtime_seconds,fallbacks
+OLD_B2,2729,1,63c02d53bfc79acaff119ff9ab0e5d633bafc64d797c2dcc0c81e62980cb7835,0.0,0.0,1.0,1.0,8.0,-2.0,0.003955500000301981,0.0
+NEW_B2,2729,1,37df7aed46843c54116680ee9524ef235290d120cf1a189cb58241311c86d8f0,0.0,0.0,1.0,1.0,8.0,-2.0,0.008628800000224146,1.0
+OLD_B3,2729,1,db7ee0136380aa84f85cc724e136bc2e1ce8dc1b3c4f0ceefeb51514dcfb5488,0.0,0.0,1.0,1.0,8.0,-2.0,0.004300499998862506,0.0
+NEW_B3,2729,1,fe23aae1c3162d366d252e3316028d9ca51ec8a876dd5f007bdb8906aa68a3c9,0.0,0.0,1.0,1.0,8.0,-2.0,0.009678700000222307,1.0

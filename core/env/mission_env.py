@@ -97,3 +97,26 @@ class MissionCoreEnv:
         close = getattr(self._env, 'close', None)
         if callable(close):
             close()
+
+    def enable_public_event_capture(self, episode_id, *, capacity=1024):
+        if not self._env.online_unknown_map_active:
+            raise ValueError('public capture currently supports the online unknown-map mission')
+        self._env.enable_public_event_capture(episode_id, capacity=capacity)
+
+    def read_public_events(self, after_sequence=0):
+        return self._env.read_public_events(after_sequence)
+
+    def get_public_vehicle_specs(self):
+        fields = ('name', 'a_xy_max', 'a_z_max', 'v_xy_max', 'v_z_max',
+                  'drag_xy', 'drag_z', 'buoyancy_bias', 'sensor_range')
+        return tuple({key: spec[key] for key in fields} for spec in self._env.agent_specs)
+
+    def get_public_control_contract(self):
+        fields = ('dt', 'prior_kv_xy', 'prior_kv_z', 'prior_slow_radius_xy',
+                  'prior_slow_radius_z', 'prior_strength_search', 'prior_strength_executor',
+                  'residual_scale_search', 'residual_scale_executor', 'detect_eps_bias',
+                  'target_motion_mode', 'target_obstacle_clearance', 'target_max_reflections_per_step',
+                  'obstacle_sensor_range', 'use_residual_prior', 'eps')
+        result = {key: getattr(self._env, key) for key in fields}
+        result['bounds'] = tuple(float(x) for x in _array(self._env.space_size))
+        return result

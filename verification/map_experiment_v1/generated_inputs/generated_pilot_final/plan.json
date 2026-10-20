@@ -1,0 +1,209 @@
+{
+  "schema": "auv.active.map_suite.v1",
+  "source_review": {
+    "review_sha256": "efb7805f7e166137a16cd20f869cd602fd294dea715fb197d528df70499b294c",
+    "profile": "active_map_experiment_v1",
+    "inventory_sha256": "3ed3a0f251d2ced168403d061f4d07bfb0f262f1fc875b812e716c57c66eb53f",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_experiment.v1"
+  },
+  "protocol_sha256": "0d280926090d74721f65be93aacc935ed792c68b9cfac5481bd43dfeb56506a2",
+  "mechanism_only": false,
+  "spec": {
+    "schema": "auv.active.map_experiment_spec.v1",
+    "groups": [
+      "OLD_ZERO",
+      "NEW_ZERO",
+      "OLD_B2",
+      "NEW_B2",
+      "OLD_B3",
+      "NEW_B3"
+    ],
+    "seeds": [
+      2729
+    ],
+    "train_episodes": 1,
+    "max_steps": 400,
+    "evaluation_count": 1,
+    "evaluation_generator_seed": 827299,
+    "training_generator_seed_base": 2000000,
+    "checkpoint_interval": 1,
+    "new_map_config": {
+      "schema": "ch3.coupled_search.core.v1",
+      "enabled": true,
+      "mode": "coupled_search",
+      "event_capacity": 1024,
+      "audit_capacity": 1024,
+      "seed": 827291,
+      "maps": 3,
+      "particles_per_map": 32,
+      "horizon": 16,
+      "execution_scenarios": 3,
+      "raw_routes": 12,
+      "representatives": 4,
+      "path_queries": 72,
+      "proposal_regions": 24,
+      "planning_seconds": 20.0,
+      "inference_seconds": 3.0,
+      "history_steps": 512,
+      "geometry_attempts": 128,
+      "replenish_attempts": 2,
+      "recovery_cooldown": 10,
+      "geometry": {
+        "prior_id": "public_scan_conditioned_aabb_completion_v1",
+        "unknown_boxes": 2,
+        "max_hit_clusters": 8,
+        "size_min": 0.6,
+        "size_max": 3.0,
+        "cluster_radius": 1.2,
+        "scan_tolerance": 0.25
+      },
+      "target_prior": {
+        "prior_id": "declared_uniform_position_isotropic_velocity_v1",
+        "speed_min": 0.2,
+        "speed_max": 0.8,
+        "stationary_mass": 0.2
+      },
+      "beta": 0.0,
+      "rho": 0.25,
+      "lambda_cost": 0.02,
+      "cost_scale": 120.0,
+      "compression_epsilon": 0.02,
+      "tie_tolerance": 0.001,
+      "execution_history": 8,
+      "execution_error_clip": 0.5,
+      "review_samples": 64
+    },
+    "bootstrap_draws": 2000,
+    "statistics_seed": 20261020
+  },
+  "jobs": [
+    {
+      "name": "OLD_ZERO",
+      "group": "OLD_ZERO",
+      "map_id": "OLD",
+      "learner": "ZERO",
+      "seed": null,
+      "config": "inputs/OLD_ZERO.json",
+      "train": "jobs/OLD_ZERO/train",
+      "evaluation": "jobs/OLD_ZERO/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "f3aeab0267f6c6f4f3cd9edfd217e9e8b195860eeab27624b11c4cc79bd8af3c",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "0d280926090d74721f65be93aacc935ed792c68b9cfac5481bd43dfeb56506a2"
+      }
+    },
+    {
+      "name": "NEW_ZERO",
+      "group": "NEW_ZERO",
+      "map_id": "NEW",
+      "learner": "ZERO",
+      "seed": null,
+      "config": "inputs/NEW_ZERO.json",
+      "train": "jobs/NEW_ZERO/train",
+      "evaluation": "jobs/NEW_ZERO/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "0e53e6db3672efeccc458c0ff84730d7b3d14cd82e00b2535483ab4eb5e66a81",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "0d280926090d74721f65be93aacc935ed792c68b9cfac5481bd43dfeb56506a2"
+      }
+    },
+    {
+      "name": "OLD_B2_seed2729",
+      "group": "OLD_B2",
+      "map_id": "OLD",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/OLD_B2_seed2729.json",
+      "train": "jobs/OLD_B2_seed2729/train",
+      "evaluation": "jobs/OLD_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "f3aeab0267f6c6f4f3cd9edfd217e9e8b195860eeab27624b11c4cc79bd8af3c",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "0d280926090d74721f65be93aacc935ed792c68b9cfac5481bd43dfeb56506a2"
+      }
+    },
+    {
+      "name": "NEW_B2_seed2729",
+      "group": "NEW_B2",
+      "map_id": "NEW",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/NEW_B2_seed2729.json",
+      "train": "jobs/NEW_B2_seed2729/train",
+      "evaluation": "jobs/NEW_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "0e53e6db3672efeccc458c0ff84730d7b3d14cd82e00b2535483ab4eb5e66a81",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "0d280926090d74721f65be93aacc935ed792c68b9cfac5481bd43dfeb56506a2"
+      }
+    },
+    {
+      "name": "OLD_B3_seed2729",
+      "group": "OLD_B3",
+      "map_id": "OLD",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/OLD_B3_seed2729.json",
+      "train": "jobs/OLD_B3_seed2729/train",
+      "evaluation": "jobs/OLD_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "f3aeab0267f6c6f4f3cd9edfd217e9e8b195860eeab27624b11c4cc79bd8af3c",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "0d280926090d74721f65be93aacc935ed792c68b9cfac5481bd43dfeb56506a2"
+      }
+    },
+    {
+      "name": "NEW_B3_seed2729",
+      "group": "NEW_B3",
+      "map_id": "NEW",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/NEW_B3_seed2729.json",
+      "train": "jobs/NEW_B3_seed2729/train",
+      "evaluation": "jobs/NEW_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_v1",
+        "condition_sha256": "0e53e6db3672efeccc458c0ff84730d7b3d14cd82e00b2535483ab4eb5e66a81",
+        "research_config_sha256": "913e7a864269b5d358e301deaa4a8f33f09cb70a6ce4ea59ee209b3332262114",
+        "protocol_sha256": "0d280926090d74721f65be93aacc935ed792c68b9cfac5481bd43dfeb56506a2"
+      }
+    }
+  ],
+  "assets": {
+    "inputs/evaluation.json": "3b68afb8ff23b110149315429378dbb7872ccb3c3cc363ed24a84ca907c6a175",
+    "inputs/generated_evaluation.json": "841eb5f0aefbbc35c189ef1cca25349c611c83093d8c9e594d3636dbf06b413e",
+    "inputs/generated_train_seed2729.json": "e450ef2ddf72247aad155ef2c994d667552cf178392ef4361f18417daa953a43",
+    "inputs/NEW_B2_seed2729.json": "882b40f12c621f3d0be66c34cb59f57756b2d7981529658994991d6bcd053a7a",
+    "inputs/NEW_B3_seed2729.json": "f12df54558b64eeb002aa98380e5f3afdc684009e5fe086afd78997083f794ae",
+    "inputs/NEW_ZERO.json": "bd620889fa775eabab101c2278ac78459257df541dab3642ffcebc116a13edea",
+    "inputs/OLD_B2_seed2729.json": "dd6ab0e508cb22f4e18962edc6d432019909f57d79e35570db93cbe40205b0a4",
+    "inputs/OLD_B3_seed2729.json": "a11b895713c2b38431f8811690ba945a8972cf694d0e56a0fb1c552276bb464e",
+    "inputs/OLD_ZERO.json": "f988da84056434a3da7ccea596891bd35e8b4cd21f2d3384a4f5a50bfd46f722",
+    "inputs/spec.json": "97a131355fef8c8ae573ffa26cc6c387e6ee9086ac349cd70832827a9f77cb2d",
+    "inputs/train_seed2729.json": "1c75cb358c1472030b217805d956d5a7f1a676d8bf97725e6b4e66ad4eb0d909"
+  },
+  "excluded_manifests": [],
+  "training_protocol": "fresh weights; per-seed manifest order; innovation seed=training_seed+episode",
+  "checkpoint_selection": "last fully completed episode",
+  "native_evaluation_only": true,
+  "performance_passed": false,
+  "sha256": "f8a4ccefe52a7074b8d4d47ee28d235a9f53413c33cea7f028473697f7049fe8"
+}

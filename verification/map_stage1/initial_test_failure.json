@@ -1,0 +1,8 @@
+{
+  "phase": "standalone new unit check before final inventory",
+  "failures": 0,
+  "errors": 1,
+  "reason": "Windows sandbox denied cleanup of the OS temporary directory in the dry-run fixture.",
+  "resolution": "The dry-run fixture now uses a unique path without creating a temporary directory; final all-60 regression passed.",
+  "runtime_episode_used": false
+}

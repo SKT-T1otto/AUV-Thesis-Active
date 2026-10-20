@@ -11,6 +11,7 @@ from chapter3_bser.learning.scenarios import validate_manifest
 from chapter3_bser.learning.evaluation_records import metric_row, finalize_evaluation
 from chapter3_bser.learning.evaluate import preserved_rng
 from chapter3_bser.d2.logging import JsonlJournal
+from chapter3_bser.learning import map_contract
 
 
 class ZeroResidualPolicy:
@@ -25,7 +26,8 @@ def evaluate_reference(config, manifest_path, output, *, mechanism=False):
     manifest = json.loads(Path(manifest_path).read_text(encoding='utf-8'))
     scenes = validate_manifest(manifest, config, evaluation=True, mechanism=mechanism)
     condition_keys = ('profile', 'max_steps', 'planner_protocol', 'repairs', 'waypoint_reward_timing', 'task_protocol', 'reward', 'reward_objective')
-    policy_id = digest(dict(method='D2', source=identity, action='zero_normalized_residual', conditions={k: config[k] for k in condition_keys}))
+    policy_id = digest(dict(method='D2', source=identity, action='zero_normalized_residual', conditions={k: config[k] for k in condition_keys},
+                            **map_contract.metadata(config)))
     output = validated_output(config, output)
     output.mkdir(parents=True, exist_ok=True)
     journal = JsonlJournal(output / 'episodes.jsonl')
@@ -33,14 +35,15 @@ def evaluate_reference(config, manifest_path, output, *, mechanism=False):
     try:
         torch.set_num_threads(1)
         for scene in scenes:
-            runtime = RepairedMissionRuntime(config, scene, seed=int(scene['scenario_seed']))
+            runtime = RepairedMissionRuntime(config, scene, seed=int(scene['scenario_seed']),map_research=map_contract.research_config(config))
             try:
                 while not runtime.terminal:
-                    runtime.advance(ZeroResidualPolicy(), explore=False)
+                    map_contract.advance(runtime,ZeroResidualPolicy(),explore=False)
                 journal.append(metric_row(runtime, config, scene, policy_id=policy_id, method='D2', identity=identity, mechanism=mechanism))
             finally:
                 runtime.close()
-        return finalize_evaluation(journal, output, identity=identity, manifest=manifest, policy_id=policy_id, method='D2', mechanism=mechanism)
+        return finalize_evaluation(journal, output, identity=identity, manifest=manifest, policy_id=policy_id, method='D2', mechanism=mechanism,
+                                   **map_contract.metadata(config))
     finally:
         torch.set_num_threads(previous)
 

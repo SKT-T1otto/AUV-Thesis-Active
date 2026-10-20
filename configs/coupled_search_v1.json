@@ -1,0 +1,7 @@
+{
+  "schema": "ch3.coupled_search.interface.v1",
+  "enabled": false,
+  "mode": "observe_only",
+  "event_capacity": 1024,
+  "audit_capacity": 1024
+}

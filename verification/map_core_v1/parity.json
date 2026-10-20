@@ -1,0 +1,45 @@
+{
+  "gate": "parity",
+  "source_identity": {
+    "review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+    "profile": "active_map_core_v1",
+    "inventory_sha256": "8f228e4daa34c9b1948e325cd36be477342dc09ac597fe610e77c5210f09cea2",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_core.v1"
+  },
+  "run_id": "map_core_20261020_v1",
+  "passed": true,
+  "exit_code": 0,
+  "result": {
+    "passed": true,
+    "source_identity": {
+      "review_sha256": "8e8493417642d9c99b55c8ab1b6ecb6e48d56c4acec77dee6911c9869751d15d",
+      "profile": "active_map_core_v1",
+      "inventory_sha256": "8f228e4daa34c9b1948e325cd36be477342dc09ac597fe610e77c5210f09cea2",
+      "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+      "distribution": "auv.active_source.map_core.v1"
+    },
+    "capture": false,
+    "episodes": 2,
+    "physical_steps": 5,
+    "results": [
+      {
+        "scene_index": 0,
+        "steps": 4,
+        "exact_parity": true,
+        "public_evidence": null
+      },
+      {
+        "scene_index": 3,
+        "steps": 1,
+        "exact_parity": true,
+        "public_evidence": null
+      }
+    ],
+    "baseline_sha256": "27727a6ac3db37e05dc426637fa31503a566bb9668faec7f0b84eccb8823a891",
+    "model_restored": false,
+    "optimizer_updates": 0,
+    "performance_passed": false
+  },
+  "prechange_trace_sha256": "27727a6ac3db37e05dc426637fa31503a566bb9668faec7f0b84eccb8823a891"
+}
