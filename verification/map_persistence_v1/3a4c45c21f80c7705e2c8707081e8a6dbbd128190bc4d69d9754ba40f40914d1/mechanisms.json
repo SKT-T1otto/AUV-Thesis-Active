@@ -1,0 +1,40 @@
+{
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1",
+    "profile": "active_map_persistence_v1",
+    "inventory_sha256": "3f667cf8f878779809e1ee0674cd4f6c42ec2b9124db598e6c9f36420a672e69",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_persistence.v1"
+  },
+  "run_id": "map_persistence_20261021_v1",
+  "passed": true,
+  "exit_code": 0,
+  "workflow": {
+    "path": "verification/map_persistence_v1/3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1/continuous_workflow.json",
+    "sha256": "53cfd5b930b60899789a679b8bba3b0def4976ca7f4d6c40055020c747ca4e49"
+  },
+  "physical_episodes": 8,
+  "physical_steps": 240,
+  "max_episode_steps": 32,
+  "max_complete_updates_per_temporary_model": 4,
+  "zero_unavailable_search_batches": true,
+  "new_b2_and_b3_last_training_scored_step": 31,
+  "new_b2_and_b3_eval_discovery_step": 7,
+  "legitimate_post_found_search_stop": true,
+  "physical_run_source_identities_preserved": true,
+  "runtime_refinement_proof": {
+    "changed_runtime_files": [
+      "chapter3_bser/experiments/coupled_search_v1/geometry_hypotheses.py",
+      "chapter3_bser/learning/provenance.py"
+    ],
+    "geometry": "Only a sensor-interior rejection was added to seed shrinking. Any interior seed remains inside a union/hull, so a formerly successful final geometry (which checks every sensor origin is free) could not have taken this newly rejected branch. Previous accepted geometry decisions are preserved; the new near-hit case is separately tested.",
+    "provenance": "Only per-source evidence receipt lookup was added. No runtime dynamics, weights, random stream or search computation changed.",
+    "physical_evidence_scope": "Original physical-run identities retained. This final refinement is covered by static byte-delta proof and pure regression, not by additional simulator episodes."
+  },
+  "synthetic_400_step_sensor_sequence_passed": true,
+  "checkpoint_file_restore_executed": false,
+  "linux_execution": false,
+  "formal_training_started": false,
+  "performance_passed": false
+}

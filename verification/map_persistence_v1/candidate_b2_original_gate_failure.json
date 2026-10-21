@@ -1,0 +1,72 @@
+{
+  "passed": false,
+  "source": {
+    "review_sha256": "3c3cdd602e86a1679aad6dfc7016f9c3cc3fda80b0d3ba2157182da4ba7d5b2d",
+    "profile": "active_map_persistence_v1",
+    "inventory_sha256": "cbbb2821ade6c69ff5d20be55b6ed4a0776d73e47e109744bf10d255b4c88b57",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_persistence.v1"
+  },
+  "episodes_started": 4,
+  "jobs": [
+    {
+      "job": "OLD_B2_seed2729",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "OLD",
+        "search_planner_id": "d2_v1",
+        "condition_sha256": "4ffac31a7adaabcdb4522d7de51b7c56cd2ce84b0a8138a03a86d5055f15deb8",
+        "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "protocol_sha256": "52a6690492c652bd741dba60814a489f6722e65372bc40435dc07c1f88d9fc1f"
+      },
+      "training_steps": 32,
+      "evaluation_steps": 24,
+      "complete_updates": 4,
+      "initial_state": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905",
+      "core_proposals": 0,
+      "evaluation_policy_unchanged": true,
+      "training_map_health": {
+        "core_proposals": 0,
+        "d2_fallbacks": 0,
+        "path_queries": 0,
+        "compression_max_epsilon": null,
+        "core_planning_seconds": 0,
+        "core_planning_p95": null,
+        "runtime_step_seconds": 2.145745600004375,
+        "runtime_step_p50": 0.053326600000218605,
+        "runtime_step_p95": 0.08600798000052236,
+        "final_filter_valid": null,
+        "search_batches": 0,
+        "available_search_batches": 0,
+        "unavailable_search_batches": 0,
+        "core_scored_steps": 0,
+        "last_core_scored_step": null,
+        "first_filter_failure": null,
+        "planning_timing_scope": "core successful proposals only; runtime timing includes environment and actor"
+      },
+      "evaluation_map_health": {
+        "core_proposals": 0,
+        "d2_fallbacks": 0,
+        "path_queries": 0,
+        "compression_max_epsilon": null,
+        "core_planning_seconds": 0,
+        "core_planning_p95": null,
+        "runtime_step_seconds": 3.3659470999973564,
+        "runtime_step_p50": 0.07425490000059654,
+        "runtime_step_p95": 0.4094799400000733,
+        "final_filter_valid": null,
+        "search_batches": 0,
+        "available_search_batches": 0,
+        "unavailable_search_batches": 0,
+        "core_scored_steps": 0,
+        "last_core_scored_step": null,
+        "first_filter_failure": null,
+        "planning_timing_scope": "core successful proposals only; runtime timing includes environment and actor"
+      }
+    }
+  ],
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\tools\\check_map_training.py\", line 63, in run\n    raise ValueError('continuous new-map participation failed in '+phase)\nValueError: continuous new-map participation failed in evaluation\n",
+  "checkpoint_file_restore_executed": false,
+  "formal_training_started": false,
+  "performance_passed": false
+}

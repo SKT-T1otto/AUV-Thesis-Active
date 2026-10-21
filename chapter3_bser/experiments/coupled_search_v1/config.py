@@ -8,7 +8,7 @@ DEFAULT = dict(schema=SCHEMA, enabled=False, mode='observe_only',
 
 def validate_research_config(value=None):
     result = copy.deepcopy(DEFAULT if value is None else value)
-    if isinstance(result, dict) and result.get('schema') == 'ch3.coupled_search.core.v1':
+    if isinstance(result, dict) and result.get('schema') == 'ch3.coupled_search.core.v2':
         from .core_config import validate_core_config
         return validate_core_config(result)
     if not isinstance(result, dict) or set(result) != set(DEFAULT):

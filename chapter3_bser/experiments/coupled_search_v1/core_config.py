@@ -2,15 +2,15 @@
 import copy
 import math
 
-SCHEMA = 'ch3.coupled_search.core.v1'
+SCHEMA = 'ch3.coupled_search.core.v2'
 CORE_DEFAULT = dict(
     schema=SCHEMA, enabled=False, mode='coupled_search', event_capacity=1024, audit_capacity=1024,
     seed=827291, maps=3, particles_per_map=32, horizon=16, execution_scenarios=3,
     raw_routes=12, representatives=4, path_queries=72, proposal_regions=24,
     planning_seconds=20.0, inference_seconds=3.0, history_steps=512,
     geometry_attempts=128, replenish_attempts=2, recovery_cooldown=10,
-    geometry=dict(prior_id='public_scan_conditioned_aabb_completion_v1',
-                  unknown_boxes=2, max_hit_clusters=8, size_min=0.6, size_max=3.0,
+    geometry=dict(prior_id='public_ray_constrained_aabb_support_v2',
+                  unknown_boxes=2, merge_neighbors=8, size_min=0.6, size_max=3.0,
                   cluster_radius=1.2, scan_tolerance=0.25),
     target_prior=dict(prior_id='declared_uniform_position_isotropic_velocity_v1',
                       speed_min=0.2, speed_max=0.8, stationary_mass=0.2),
@@ -54,7 +54,7 @@ def validate_core_config(value):
                 raise ValueError('invalid prior parameter')
     g,p=c['geometry'],c['target_prior']
     if (type(g['unknown_boxes']) is not int or g['unknown_boxes'] > 8
-            or type(g['max_hit_clusters']) is not int or not 1 <= g['max_hit_clusters'] <= 32
+            or type(g['merge_neighbors']) is not int or not 1 <= g['merge_neighbors'] <= 32
             or not 0 < g['size_min'] <= g['size_max'] or g['cluster_radius'] <= 0 or g['scan_tolerance'] <= 0
             or not 0 <= p['speed_min'] <= p['speed_max'] or not 0 <= p['stationary_mass'] <= 1):
         raise ValueError('invalid geometry or target prior bounds')

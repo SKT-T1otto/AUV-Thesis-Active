@@ -16,14 +16,18 @@ def before_reset(owner, base, episode_id):
 def consume(owner):
     session = owner.map_research_session
     if not session.valid:
+        if session.config['mode']=='coupled_search':raise RuntimeError('coupled_search_public_evidence_invalid:'+str(session.error))
         return
     try:
         events = owner.env.read_public_events(session.adapter.cursor)
     except ValueError as error:
         session.valid, session.error = False, str(error)
         session.counts['event_history_failures'] += 1
+        if session.config['mode']=='coupled_search':raise RuntimeError('coupled_search_public_history_lost') from error
         return
     session.consume(events)
+    if session.config['mode']=='coupled_search' and not session.valid:
+        raise RuntimeError('coupled_search_public_evidence_invalid:'+str(session.error))
 
 
 def installed(owner):

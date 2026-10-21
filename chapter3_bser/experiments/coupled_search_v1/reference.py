@@ -51,7 +51,7 @@ def evaluate(config, extension, manifest_path, output):
     require_review(identity)
     core=extension['mode']=='coupled_search'
     result = dict(schema='ch3.coupled_search.interface_audit.v1', source_identity=identity,
-                  mode=extension['mode'], search_planner_id='coupled_search_v1' if core else 'd2_v1', episodes=rows,
+                  mode=extension['mode'], search_planner_id='coupled_search_v2' if core else 'd2_v1', episodes=rows,
                   completed=True, algorithm_changed=core, coupled_search_implemented=core,
                   performance_passed=False, model_restored=False, optimizer_updates=0)
     (output/'interface_audit.json').write_text(json.dumps(result,indent=2,allow_nan=False),encoding='utf-8')
@@ -70,7 +70,7 @@ def main(argv=None):
     extension = validate_research_config(json.loads(Path(args.interface_config).read_text(encoding='utf-8')))
     if not args.execute:
         result = dict(executed=False, mode=extension['mode'], enabled=extension['enabled'],
-                      search_planner_id='coupled_search_v1' if extension['mode']=='coupled_search' else 'd2_v1',
+                      search_planner_id='coupled_search_v2' if extension['mode']=='coupled_search' else 'd2_v1',
                       coupled_search_implemented=extension['mode']=='coupled_search',
                       manifest=args.manifest, output=args.output)
     else:

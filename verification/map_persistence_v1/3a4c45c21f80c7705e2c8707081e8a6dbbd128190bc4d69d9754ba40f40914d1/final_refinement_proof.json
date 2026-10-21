@@ -1,0 +1,9 @@
+{
+  "changed_runtime_files": [
+    "chapter3_bser/experiments/coupled_search_v1/geometry_hypotheses.py",
+    "chapter3_bser/learning/provenance.py"
+  ],
+  "geometry": "Only a sensor-interior rejection was added to seed shrinking. Any interior seed remains inside a union/hull, so a formerly successful final geometry (which checks every sensor origin is free) could not have taken this newly rejected branch. Previous accepted geometry decisions are preserved; the new near-hit case is separately tested.",
+  "provenance": "Only per-source evidence receipt lookup was added. No runtime dynamics, weights, random stream or search computation changed.",
+  "physical_evidence_scope": "Original physical-run identities retained. This final refinement is covered by static byte-delta proof and pure regression, not by additional simulator episodes."
+}

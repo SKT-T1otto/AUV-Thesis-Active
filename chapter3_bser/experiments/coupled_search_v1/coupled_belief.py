@@ -5,6 +5,7 @@ from core.env.target_motion import TargetState, advance_target_state
 from .geometry_hypotheses import GeometryHypothesisBank, compatible
 from .numerics import Budget, BudgetExceeded, digest, locked, probabilities, swept_distances
 from .types import TargetForecast
+from .target_particles import propagate
 
 
 class CoupledBelief:
@@ -18,6 +19,7 @@ class CoupledBelief:
         self.maps=();self.positions=None;self.velocities=None
         self.alpha=None;self.omega=None
         self.valid=False;self.error='not_initialized';self.stopped=False;self.retry_at=0
+        self.first_failure=None;self.last_failure=None
 
     def initialize_hypotheses(self, maps, positions, velocities, alpha, omega, *, step=0):
         """Explicit finite prior injection, also used by independent analytic checks."""
@@ -53,15 +55,8 @@ class CoupledBelief:
 
     def _propagate(self, p, v, maps, step, budget):
         new_p=np.empty_like(p);new_v=np.empty_like(v)
-        c=self.contract
         for r,m in enumerate(maps):
-            obstacles=m.obstacles()
-            for n in range(p.shape[1]):
-                budget.check()
-                result=advance_target_state(TargetState(p[r,n],v[r,n],step,c['target_motion_mode']),
-                    c['dt'],c['bounds'],obstacles,clearance=c['target_obstacle_clearance'],
-                    max_reflections=c['target_max_reflections_per_step'])
-                new_p[r,n],new_v[r,n]=result.position,result.velocity
+            new_p[r],new_v[r]=propagate(p[r],v[r],m,step,self.contract,budget)
         return new_p,new_v
 
     def _update(self, evidence, budget, *, replay=False):
@@ -102,10 +97,15 @@ class CoupledBelief:
         if not self.history or self.history[0].physical_step!=0:
             raise ValueError('replay_requires_initial_public_scan')
         maps=self.geometry.propose(scans,budget)
-        self._prior(maps,budget)
-        self.stopped=False
-        for item in self.history:self._update(item,budget,replay=True)
-        self.counts['full_history_replays']+=1
+        saved=(self.maps,self.positions,self.velocities,self.alpha,self.omega,self.step,self.valid,self.stopped)
+        try:
+            self._prior(maps,budget)
+            self.stopped=False
+            for item in self.history:self._update(item,budget,replay=True)
+            self.counts['full_history_replays']+=1
+        except (ValueError,RuntimeError):
+            (self.maps,self.positions,self.velocities,self.alpha,self.omega,self.step,self.valid,self.stopped)=saved
+            raise
 
     def consume(self, evidence):
         ids=tuple(e.event_id for e in evidence.scans)+(() if evidence.transition is None else (evidence.transition.event_id,))
@@ -125,6 +125,8 @@ class CoupledBelief:
             return
         except (ValueError,RuntimeError) as error:
             self.valid=False;self.error=str(error);self.counts['inference_failures']+=1
+            self.last_failure=dict(step=evidence.physical_step,reason=str(error),phase='incremental' if self.maps else 'initialization')
+            if self.first_failure is None:self.first_failure=dict(self.last_failure)
         for _ in range(self.config['replenish_attempts']):
             try:
                 budget.check();self._rebuild(budget)
@@ -156,4 +158,7 @@ class CoupledBelief:
             alpha=None if self.alpha is None else self.alpha.tolist(),
             conditional_ess=None if self.omega is None else [float(1/np.sum(w*w)) if np.any(w) else 0. for w in self.omega],
             history_complete=self.history_complete,retained_history=len(self.history),counts=dict(self.counts),
-            geometry_attempts=self.geometry.attempts,prior=self.config['geometry']['prior_id'])
+            geometry_attempts=self.geometry.attempts,prior=self.config['geometry']['prior_id'],
+            support_boxes=self.geometry.support_boxes,distinct_maps=self.geometry.distinct_maps,
+            constraint_rays=self.geometry.constraint_rays,geometry_rebuilds=self.geometry.rebuilds,
+            first_failure=self.first_failure,last_failure=self.last_failure)

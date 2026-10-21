@@ -6,7 +6,7 @@ import shutil
 import tempfile
 import unittest
 from project_paths import ROOT
-from tools.map_convergence_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
+from tools.map_persistence_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
 
 
 class MapSource(unittest.TestCase):

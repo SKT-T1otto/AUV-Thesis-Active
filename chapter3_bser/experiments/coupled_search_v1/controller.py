@@ -19,10 +19,12 @@ class CoupledPolicy(EffectPolicy):
 
 class CoupledController(EffectController):
     def step(self,state,mission_context=None):
-        detection=self.detector.detect(self.cache.current,state,self.current_context,mission_context,
-                                       assignment=self.current_allocation)
-        primary=self.policy.primary_event(detection.events)
-        eligible=primary is not None and not self.policy.event_cooldown_remaining(primary,state.step)
-        if not state.target_found and (eligible or self.policy.recovery_ready):
-            return super().step(state,mission_context)
+        # Refresh the installed routes' utility from the current joint belief
+        # and observed execution errors at every search step. Replanning still
+        # follows the existing events/cooldowns and safety stabilization.
+        if not state.target_found:
+            result=super().step(state,mission_context)
+            if int(state.step) not in self.allocator.scored_steps:
+                raise RuntimeError('coupled_search_scoring_unavailable: step='+str(state.step))
+            return result
         return OnlineBSERController.step(self,state,mission_context)

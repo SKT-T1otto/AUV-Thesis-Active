@@ -26,7 +26,7 @@ def validate_condition(value):
 def identity(config):
     if 'map_experiment' not in config:return None
     c=validate_condition(config['map_experiment'])
-    return dict(schema=SCHEMA,map_id=c['map_id'],search_planner_id='d2_v1' if c['map_id']=='OLD' else 'coupled_search_v1',
+    return dict(schema=SCHEMA,map_id=c['map_id'],search_planner_id='d2_v1' if c['map_id']=='OLD' else 'coupled_search_v2',
                 condition_sha256=digest(c),research_config_sha256=digest(c['research_config']),protocol_sha256=c['protocol_sha256'])
 
 
@@ -61,6 +61,13 @@ def advance(runtime,model,*,explore):
 def metrics(runtime):
     if 'map_experiment' not in runtime.config:return {}
     condition=identity(runtime.config);session=runtime.map_research_session
+    if condition['map_id']=='NEW':
+        counts=session.counts
+        if (not session.valid or counts.get('unavailable_search_batches',0)
+                or counts.get('available_search_batches',0)!=counts.get('search_batches',0)
+                or counts.get('core_proposals',0)<1
+                or counts.get('core_scored_steps',0)<max(0,counts.get('search_batches',0)-1)):
+            raise RuntimeError('continuous coupled-search health contract failed; no completed episode may be published')
     audit=getattr(runtime.controller.allocator,'audit',[])
     proposals=[r for r in audit if r.get('kind')=='coupled_proposal']
     elapsed=[r['elapsed_seconds'] for r in proposals]
@@ -73,4 +80,10 @@ def metrics(runtime):
         runtime_step_seconds=sum(steps),runtime_step_p50=None if not steps else float(np.percentile(steps,50)),
         runtime_step_p95=None if not steps else float(np.percentile(steps,95)),
         final_filter_valid=None if session is None else session.belief.valid,
+        search_batches=0 if session is None else session.counts.get('search_batches',0),
+        available_search_batches=0 if session is None else session.counts.get('available_search_batches',0),
+        unavailable_search_batches=0 if session is None else session.counts.get('unavailable_search_batches',0),
+        core_scored_steps=0 if session is None else session.counts.get('core_scored_steps',0),
+        last_core_scored_step=None if session is None else session.counts.get('last_core_scored_step'),
+        first_filter_failure=None if session is None else session.belief.first_failure,
         planning_timing_scope='core successful proposals only; runtime timing includes environment and actor'))

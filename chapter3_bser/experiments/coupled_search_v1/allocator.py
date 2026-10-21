@@ -20,6 +20,7 @@ class CoupledSearchAllocator(EffectAllocator):
         super().__init__(*args,**kwargs)
         self.session=self.owner.map_research_session;self.research=self.session.config
         self.decision=None;self.failed_step=None;self.core_active=False
+        self.scored_steps=set()
 
     def _fallback(self,state,error):
         self.core_active=False;self.failed_step=int(state.step);self.decision=None
@@ -165,6 +166,9 @@ class CoupledSearchAllocator(EffectAllocator):
         try:
             context=self._context(state);routes=tuple(self._references(context,allocation).values())
             score,_=self._score(context,routes)
+            if int(state.step) not in self.scored_steps:
+                self.scored_steps.add(int(state.step));self.session.counts['core_scored_steps']+=1
+                self.session.counts['last_core_scored_step']=int(state.step)
             if finalize and self.standby_may_change and self.last_standbys:
                 executor,response=self._standby(state,tuple(r.candidate for r in routes),self.last_standbys,None)
                 allocation=replace(allocation,executor_assignment=executor,response_time=response)

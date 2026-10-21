@@ -1,0 +1,25 @@
+{
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "eb40f0ca8c70a6f1331c6cc283c9fbf8430197a97be197dfff7276a072c0387d",
+    "profile": "active_map_persistence_v1",
+    "inventory_sha256": "ba80e2bc751d7ec075dd5d095d64f531152259e2c54bb73e969412b7ea0fff4d",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_persistence.v1"
+  },
+  "run_id": "map_persistence_20261021_v1",
+  "passed": true,
+  "exit_code": 0,
+  "result": {
+    "passed": true,
+    "expected": 144,
+    "tests_run": 144,
+    "failures": [],
+    "errors": [],
+    "skipped": []
+  },
+  "log": {
+    "path": "verification/map_persistence_v1/unittest.log",
+    "sha256": "8a87a84a0668354814612ed3501c48e064db8368868671a497ca96792f526468"
+  }
+}

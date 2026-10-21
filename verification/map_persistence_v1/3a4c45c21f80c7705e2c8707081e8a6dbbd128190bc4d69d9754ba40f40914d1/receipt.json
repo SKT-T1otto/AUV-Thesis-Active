@@ -1,0 +1,56 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "map_persistence_20261021_v1",
+  "source_identity": {
+    "review_sha256": "3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1",
+    "profile": "active_map_persistence_v1",
+    "inventory_sha256": "3f667cf8f878779809e1ee0674cd4f6c42ec2b9124db598e6c9f36420a672e69",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_persistence.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_persistence_v1/3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1/source.json",
+      "sha256": "df38f74408d995b738699878ce44b4b554f00baf50572a2be7493fce922ebf69"
+    },
+    "structural": {
+      "path": "verification/map_persistence_v1/3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1/structural.json",
+      "sha256": "b9be35cee511c0248138b55745ad13bddec33d493ff4792f44957825d77554f6"
+    },
+    "regression": {
+      "path": "verification/map_persistence_v1/3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1/regression.json",
+      "sha256": "d6c931c1f0cd052eba046b622f8ab8543ad854406b32f59608628c6d4d2c99d1"
+    },
+    "parity": {
+      "path": "verification/map_persistence_v1/3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1/parity.json",
+      "sha256": "180120c359e08fd58f7e0d83eb55194aede4b04ef2c8c12ef5ba1dff878d8572"
+    },
+    "entrypoints": {
+      "path": "verification/map_persistence_v1/3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1/entrypoints.json",
+      "sha256": "022ab257bff9add6d096e42a3afdd0ecdf31f2de4e186c69a97fa99077c7d99f"
+    },
+    "checkpoint": {
+      "path": "verification/map_persistence_v1/3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1/checkpoint.json",
+      "sha256": "8afb9b198bef1b122d15f6b6e10d18ba450c52b47f8fc3ad9a71de18e62a29a1"
+    },
+    "mechanisms": {
+      "path": "verification/map_persistence_v1/3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1/mechanisms.json",
+      "sha256": "b0a31552de41b9e9f1b617355e35e6e017a303a7fcaa1e7bb33d9d4591e99625"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "historical_e0_passed": false,
+  "performance_passed": false,
+  "linux_tested": false,
+  "scope": "Windows engineering checks and bounded continuous-map evidence. Actual Linux fixed-checkout validation and explicit --execute remain mandatory. No long training, model-file restoration or automatic upload.",
+  "mechanism_budget": {
+    "episodes": 8,
+    "total_physical_steps": 240,
+    "max_episode_steps": 32,
+    "temporary_models": 4,
+    "max_complete_updates_per_model": 4,
+    "formal_training_episodes": 0,
+    "checkpoint_files_restored": 0
+  }
+}

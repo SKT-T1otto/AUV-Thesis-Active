@@ -1,7 +1,8 @@
-"""Persistent continuous AABB completions constrained only by public scans.
+"""Public-ray-constrained AABB supports and unobserved completions (revision 2).
 
-Scan-anchored proposals are an explicitly approximate conditional completion
-prior, not an exact reconstruction of the unknown geometry posterior.
+Observed surfaces are constructed, never accepted by blind rejection sampling.
+Every support and merge respects all retained free-ray intervals. This remains
+an approximate conditional geometry prior, not a reconstruction of hidden truth.
 """
 from dataclasses import dataclass
 import numpy as np
@@ -68,46 +69,116 @@ class GeometryHypothesisBank:
     def __init__(self, config, contract, rng):
         self.config,self.contract,self.rng=config,contract,rng
         self.attempts=0
-        self.uncovered_hit_clusters=0
+        self.support_boxes=0
+        self.distinct_maps=0
+        self.constraint_rays=0
+        self.rebuilds=0
 
-    def _anchors(self, scans):
-        anchors=[];radius=self.config['geometry']['cluster_radius']
-        for scan in scans:
-            for i,j in np.argwhere(np.asarray(scan.hit_mask)):
-                d=np.asarray(scan.directions[j]);p=np.asarray(scan.origins[i])+d*scan.distances[i][j]
-                if not any(np.linalg.norm(p-q)<radius for q,_ in anchors):
-                    anchors.append((p,d))
-        limit=self.config['geometry']['max_hit_clusters']
-        self.uncovered_hit_clusters=max(0,len(anchors)-limit)
-        return anchors[:limit]
+    def _supports(self, rays, budget):
+        """Cover all hits; the neighbor budget limits merge work, not coverage."""
+        boxes=[];best=rays.limits.copy();g=self.config['geometry']
+        for index in np.flatnonzero(rays.hits):
+            budget.check()
+            if best[index]<rays.limits[index]-1e-10 and abs(best[index]-rays.distances[index])<=rays.tolerance:
+                continue
+            point=rays.origins[index]+rays.directions[index]*rays.distances[index]
+            # Shrink only the invented thickness, never discard a measured hit.
+            half=min(.05,rays.tolerance/4)
+            seed=None
+            for _ in range(24):
+                lo=np.maximum(0.,point-half);hi=np.minimum(rays.bounds,point+half)
+                trial=(tuple((lo+hi)/2),tuple(hi-lo))
+                entry=rays.entry(trial)
+                if (rays.allowed(entry) and np.all(GeometryHypothesis((trial,)).free(rays.origins))
+                        and entry[index]<rays.limits[index]-1e-10 and abs(entry[index]-rays.distances[index])<=rays.tolerance):
+                    seed=trial;break
+                half*=.5
+            if seed is None:raise ValueError('public_ray_constraints_inconsistent')
+            chosen=None
+            if boxes:
+                order=np.argsort([np.linalg.norm(np.asarray(b[0])-point) for b in boxes])[:g['merge_neighbors']]
+                for j in order:
+                    budget.check()
+                    center,size=map(np.asarray,boxes[j]);left=center-size/2;right=center+size/2
+                    if np.linalg.norm(np.maximum(0.,np.maximum(left-point,point-right)))>g['cluster_radius']:
+                        continue
+                    lo=np.minimum(left,np.asarray(seed[0])-np.asarray(seed[1])/2)
+                    hi=np.maximum(right,np.asarray(seed[0])+np.asarray(seed[1])/2)
+                    merged=(tuple((lo+hi)/2),tuple(hi-lo))
+                    if rays.allowed(rays.entry(merged)):
+                        chosen=int(j);seed=merged;break
+            if chosen is None:boxes.append(seed)
+            else:boxes[chosen]=seed
+            best=np.minimum(best,rays.entry(seed))
+        geometry=GeometryHypothesis(tuple(boxes))
+        if not rays.matches(geometry):raise ValueError('constructed_geometry_does_not_match_public_rays')
+        return geometry
 
     def propose(self, scans, budget):
+        if not scans:raise ValueError('public_scan_history_required')
         g=self.config['geometry'];bounds=np.asarray(self.contract['bounds'])
-        anchors=self._anchors(scans)
-        if self.uncovered_hit_clusters:
-            raise ValueError('geometry_hit_cluster_budget')
-        accepted=[]
-        for attempt in range(self.config['geometry_attempts']):
-            budget.check();self.attempts+=1
-            boxes=[]
-            for point,direction in anchors:
-                size=self.rng.uniform(g['size_min'],g['size_max'],3)
-                axis=int(np.argmax(abs(direction)));sign=1 if direction[axis]>0 else -1
-                center=point+self.rng.uniform(-.35,.35,3)*size
-                center[axis]=point[axis]+sign*size[axis]/2
-                if np.any(center-size/2<0) or np.any(center+size/2>bounds):
-                    break
-                boxes.append((tuple(center),tuple(size)))
-            else:
-                for _ in range(g['unknown_boxes']):
+        rays=RayConstraints(scans,bounds,self.contract['obstacle_sensor_range'],g['scan_tolerance'])
+        base=self._supports(rays,budget);accepted=[base]
+        # The observed-support world is an explicit prior component. Optional
+        # unseen solids add diversity only where every public ray permits them.
+        for _ in range(self.config['maps']-1):
+            boxes=list(base.boxes)
+            for _ in range(g['unknown_boxes']):
+                for _ in range(self.config['geometry_attempts']):
+                    budget.check();self.attempts+=1
                     size=self.rng.uniform(g['size_min'],g['size_max'],3)
-                    if np.any(size>=bounds):
-                        continue
+                    if np.any(size>=bounds):continue
                     center=self.rng.uniform(size/2,bounds-size/2)
-                    boxes.append((tuple(center),tuple(size)))
-                geometry=GeometryHypothesis(tuple(boxes))
-                if all(compatible(geometry,s,bounds,self.contract['obstacle_sensor_range'],g['scan_tolerance']) for s in scans):
-                    accepted.append(geometry)
-                    if len(accepted)==self.config['maps']:
-                        return tuple(accepted)
-        raise ValueError('geometry_proposal_budget_exhausted')
+                    box=(tuple(center),tuple(size))
+                    if rays.allowed(rays.entry(box)):
+                        boxes.append(box);break
+            candidate=GeometryHypothesis(tuple(boxes))
+            if not rays.matches(candidate):raise ValueError('completion_violates_public_rays')
+            accepted.append(candidate)
+        self.support_boxes=len(base.boxes);self.distinct_maps=len({m.identity for m in accepted})
+        self.constraint_rays=len(rays.origins);self.rebuilds+=1
+        return tuple(accepted)
+
+
+class RayConstraints:
+    """Vectorized retained public observations; no environment or true layout."""
+    def __init__(self,scans,bounds,sensor_range,tolerance):
+        self.bounds=np.asarray(bounds,float);self.tolerance=float(tolerance)
+        values=[]
+        for scan in scans:
+            origins=np.repeat(np.asarray(scan.origins,float),len(scan.directions),axis=0)
+            directions=np.tile(np.asarray(scan.directions,float),(len(scan.origins),1))
+            values.append(np.column_stack((origins,directions,np.asarray(scan.distances).reshape(-1),np.asarray(scan.hit_mask).reshape(-1))))
+        # Exact duplicate rays carry the same constraint; retain every distinct
+        # observation, including contradictory measurements at the same origin.
+        data=np.unique(np.concatenate(values),axis=0)
+        self.origins=data[:,:3];self.directions=data[:,3:6]
+        self.distances=data[:,6];self.hits=data[:,7].astype(bool)
+        self.limits=np.full(len(data),float(sensor_range))
+        for axis in range(3):
+            d=self.directions[:,axis];travel=np.full(len(data),np.inf)
+            np.divide(np.where(d>0,self.bounds[axis],0)-self.origins[:,axis],d,out=travel,where=abs(d)>1e-12)
+            self.limits=np.minimum(self.limits,np.maximum(0.,travel))
+        self.parallel=abs(self.directions)<=1e-12
+
+    def entry(self,box):
+        center,size=map(np.asarray,box);lo=center-size/2;hi=center+size/2
+        outside=np.any(self.parallel&((self.origins<lo)|(self.origins>hi)),axis=1)
+        first=np.zeros_like(self.origins);second=np.zeros_like(self.origins)
+        np.divide(lo-self.origins,self.directions,out=first,where=~self.parallel)
+        np.divide(hi-self.origins,self.directions,out=second,where=~self.parallel)
+        near=np.where(self.parallel,-np.inf,np.minimum(first,second))
+        far=np.where(self.parallel,np.inf,np.maximum(first,second))
+        enter=np.maximum(0.,near.max(axis=1));leave=far.min(axis=1)
+        return np.where((~outside)&(enter<=leave)&(leave>=0)&(enter<self.limits),enter,np.inf)
+
+    def allowed(self,entry):
+        return bool(np.all(entry>=self.distances-self.tolerance))
+
+    def matches(self,geometry):
+        if not np.all(geometry.free(self.origins)):return False
+        best=self.limits.copy()
+        for box in geometry.boxes:best=np.minimum(best,self.entry(box))
+        predicted=best<self.limits-1e-10
+        return bool(np.all(((predicted==self.hits)&(abs(best-self.distances)<=self.tolerance))|
+                           ((~self.hits)&(best>=self.distances-self.tolerance))))

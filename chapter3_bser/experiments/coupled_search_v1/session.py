@@ -27,6 +27,14 @@ class CoupledSearchSession(PublicEvidenceSession):
                                 agent_id=agent_id,age=age,scenario_position_errors=error.tolist(),
                                 route_sha256=self.prediction['installed_hash']))
             self.belief.consume(item)
+            terminal=bool(item.transition and (item.transition.payload.found_after or item.transition.payload.episode_terminated))
+            if not terminal and not self.belief.stopped:
+                self.counts['search_batches']+=1
+                if self.belief.valid and self.belief.step==item.physical_step:
+                    self.counts['available_search_batches']+=1
+                else:
+                    self.counts['unavailable_search_batches']+=1
+                    raise RuntimeError('coupled_search_unavailable: step='+str(item.physical_step)+', reason='+str(self.belief.error))
         return evidence
 
     def installed(self, context, tracker_indices=None):
@@ -51,7 +59,7 @@ class CoupledSearchSession(PublicEvidenceSession):
     def summary(self):
         result=super().summary()
         result.update(schema='ch3.coupled_search.core_audit.v1',mode='coupled_search',
-            search_planner_id='coupled_search_v1',algorithm_changed=True,estimator_implemented=True,
+            search_planner_id='coupled_search_v2',algorithm_changed=True,estimator_implemented=True,
             coupled_belief=self.belief.summary(),execution_error_observations=self.errors.observations,
             prior_is_approximate=True,performance_passed=False)
         return result

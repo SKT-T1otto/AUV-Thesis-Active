@@ -19,7 +19,7 @@
   "training_generator_seed_base": 2000000,
   "checkpoint_interval": 20,
   "new_map_config": {
-    "schema": "ch3.coupled_search.core.v1",
+    "schema": "ch3.coupled_search.core.v2",
     "enabled": true,
     "mode": "coupled_search",
     "event_capacity": 1024,
@@ -40,13 +40,13 @@
     "replenish_attempts": 2,
     "recovery_cooldown": 10,
     "geometry": {
-      "prior_id": "public_scan_conditioned_aabb_completion_v1",
+      "prior_id": "public_ray_constrained_aabb_support_v2",
       "unknown_boxes": 2,
-      "max_hit_clusters": 8,
       "size_min": 0.6,
       "size_max": 3.0,
       "cluster_radius": 1.2,
-      "scan_tolerance": 0.25
+      "scan_tolerance": 0.25,
+      "merge_neighbors": 8
     },
     "target_prior": {
       "prior_id": "declared_uniform_position_isotropic_velocity_v1",

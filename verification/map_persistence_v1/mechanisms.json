@@ -1,0 +1,32 @@
+{
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "eb40f0ca8c70a6f1331c6cc283c9fbf8430197a97be197dfff7276a072c0387d",
+    "profile": "active_map_persistence_v1",
+    "inventory_sha256": "ba80e2bc751d7ec075dd5d095d64f531152259e2c54bb73e969412b7ea0fff4d",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_persistence.v1"
+  },
+  "run_id": "map_persistence_20261021_v1",
+  "passed": true,
+  "exit_code": 0,
+  "workflow": {
+    "path": "verification/map_persistence_v1/continuous_workflow.json",
+    "sha256": "178cc601759b85f2abceb6a61305bc4fb1cb9abf0241afeb2b38d0c96aa99160"
+  },
+  "physical_episodes": 8,
+  "physical_steps": 240,
+  "max_episode_steps": 32,
+  "max_complete_updates_per_temporary_model": 4,
+  "zero_unavailable_search_batches": true,
+  "new_b2_and_b3_last_training_scored_step": 31,
+  "new_b2_and_b3_eval_discovery_step": 7,
+  "legitimate_post_found_search_stop": true,
+  "physical_run_source_identities_preserved": true,
+  "b2_runtime_bytes_proved_equal_to_final": true,
+  "synthetic_400_step_sensor_sequence_passed": true,
+  "checkpoint_file_restore_executed": false,
+  "linux_execution": false,
+  "formal_training_started": false,
+  "performance_passed": false
+}

@@ -1,0 +1,177 @@
+{
+  "schema": "auv.active.map_persistence.evolution.v1",
+  "parent_review_sha256": "dcac691315afaf21a3d9370ce7dab8d892cf52cef99dc9330ab23656a91c2223",
+  "authorized_scope": "2026-10-21 user explicitly requested fixes and continuous new-map operation, not one successful proposal.",
+  "map_algorithm_changed": true,
+  "learning_algorithm_changed": false,
+  "changes": [
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/allocator.py",
+      "before_sha256": "898fef071066c7b20a6885e90d6bec12819cdee9e325043e0d84015b7f2223f7",
+      "after_sha256": "a773d41d20a3747a76962a6864c48795046854c7a9d05d5d84876cf99817f05b",
+      "reason": "Record successful per-step scoring participation."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/assembly.py",
+      "before_sha256": "97ceaeee696af56b7131fb4b59fd042d763d18b29142f1ddb1ed3f63c35f9410",
+      "after_sha256": "5427639baccbfad3502a5ef6ac8f307d92b4cc260f91a35944c92faad718f0d5",
+      "reason": "Fail closed on lost/invalid public evidence for coupled search."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/config.py",
+      "before_sha256": "5cb15190d96e2a49e2620065500f57c94f701cfd419bb13fd3a5ae7c82ad88f2",
+      "after_sha256": "bc2cc37888dcf69ac820fa865e94e831aaeb0194817b351631a9453c9c57560c",
+      "reason": "Reject old core-v1 configurations instead of silently relabelling old experiments."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/controller.py",
+      "before_sha256": "cee1c0ac83fd1a10f49290c8be31ab1bf5d62d248c7938984357ce0e12247cb7",
+      "after_sha256": "294f2d3ff9d55734f639bf1f8bb54d7accddd97d6f319a8da880c91b3cffe8ef",
+      "reason": "Rescore installed routes on each search step while preserving replanning events, cooldowns and post-discovery behavior."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/core_config.py",
+      "before_sha256": "284e92cbf77810ea56a774914e7d62471305071aed8fde45c132484d74938a8a",
+      "after_sha256": "02736bd3cad02fcc68654e4f7e7af89cce7d52d4d4a41b450e46344b057f16c8",
+      "reason": "Explicit core-v2 / ray-support prior identity and merge-neighbor work budget replace the eight-hit coverage cap."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/coupled_belief.py",
+      "before_sha256": "a6634311c378550d23f9a7a32b6f261c3f3b5bc9b3b372c4031111224b93f022",
+      "after_sha256": "93460526cb8be2f4792fefb4f6016e992713fc701ebee96bd92453291c3b6a25",
+      "reason": "Transactional full-history recovery, vectorized exact-free-flight propagation and preserved first failure diagnostics; no likelihood floor or evidence deletion."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/geometry_hypotheses.py",
+      "before_sha256": "9c3afe850b408843a3f916cf88501da126ce8d16fd5590dd1641c735d8ece3cf",
+      "after_sha256": "b7584411a5a0e2235c639dfb23cbbf6ef80e1c031a04104fca69dfeb72cb874a",
+      "reason": "Construct measured AABB supports against all public free rays; merge without discarding excess hits; optional completions cannot invalidate observed evidence."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/reference.py",
+      "before_sha256": "68b1f5930f98bf87f300f2b01866d46480fcd1c0216977383fefa29614d06378",
+      "after_sha256": "5660c57edf6262c22003fe73682ba8217efdc86bae8e61fa3769d23bdfb4d44b",
+      "reason": "Label new core-v2 search identity explicitly."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/session.py",
+      "before_sha256": "d660c243018e8f2bf22b522e9280d08a5e9573f24b98665fe2a57dc1109034f4",
+      "after_sha256": "625182c2ec5703a016d4a22c7977a49b390f6e5a87dd3fe4c8ca493f67582805",
+      "reason": "Check every search evidence batch and fail visibly if a current belief cannot be recovered; record continuous availability."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/target_particles.py",
+      "before_sha256": null,
+      "after_sha256": "9029ccf94347ecde8f210e830dee69921bcb9d97bd2122a678d5d97c645d177c",
+      "reason": "Accelerate only proven collision-free hypotheses; all possible collisions retain the unchanged physical reflection kernel."
+    },
+    {
+      "path": "chapter3_bser/learning/map_contract.py",
+      "before_sha256": "c5f4a948371298031764b8c40396b8922bae2d28f518e7f08606e809076ec427",
+      "after_sha256": "10bc8c5a541bc3c652b0f10fb16226659bc5483bf8ba4f2e6b09041759bd5def",
+      "reason": "Expose core-v2 identity and continuous health metrics; refuse publishing episodes with missing search participation."
+    },
+    {
+      "path": "chapter3_bser/learning/map_persistence_source.py",
+      "before_sha256": null,
+      "after_sha256": "d5e7880792091e9b34826ccb8cee900e05e8a5e2ca808175e83854adba4a8f61",
+      "reason": "Verify complete current inventory and immutable pre-fix parent linkage."
+    },
+    {
+      "path": "chapter3_bser/learning/map_suite.py",
+      "before_sha256": "e968aec5f26164bc923a699bac61baf39c668b9da82520de499113dfbb21b7cd",
+      "after_sha256": "94537ede492bbb09d02d0c9219096efeee518f5db56e6371b1903d38f7a3e8ed",
+      "reason": "Require enough complete evidence history; lengthen only temporary mechanism fixtures and retain four update rounds per model."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "30b0b2c07a49fff60f0040cd49b551210ea85227a0e12e4e2b64c6a60cd5d43d",
+      "after_sha256": "e65986abcab2181915cd66f66de1381dbcd219e5da16639295af33e270a84ead",
+      "reason": "Dispatch a separately reviewed persistence successor with its own evidence gates."
+    },
+    {
+      "path": "checks/test_map_persistence.py",
+      "before_sha256": null,
+      "after_sha256": "b5632e38d58379378001f4a70e1408461ab3dec9e587b200ed28597e7ddc3b0d",
+      "reason": "Independent public-ray, contradictory-evidence, transactional recovery, original-physics and 400-step continuous-evidence checks."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "dfa52660dd4bb52cc555adb3382f599fd94660f34568c7a4ec2f8cdc6b874c59",
+      "after_sha256": "51baf943b59ddb23d4159cb84f80b2c9b71835b8b55017f2bb617e75f0eb02de",
+      "reason": "Keep source/evidence/physics tamper controls against the new successor."
+    },
+    {
+      "path": "configs/coupled_search_core_v1.json",
+      "before_sha256": "0d6fc8c07a25c8e0707f02490a5800984ed4f5b2413a6db7bdf24c532e1adf3c",
+      "after_sha256": "3ceb576101ff91d3b579bf30b3294994bb443276650a14ab9c7274435ecde531",
+      "reason": "Explicit core-v2 prior; disabled by default."
+    },
+    {
+      "path": "configs/map_comparison_pilot_v1.json",
+      "before_sha256": "6b5bd7867091844d0cf6b4fc6a70f0b34eaf3eab4cea0fad38fa38b6a32dcce5",
+      "after_sha256": "d0bac6900044fe135d14a3468a1483016605c31725282df2e498b31f32fb93c3",
+      "reason": "Explicit core-v2 prior in the optional pilot; preserve declared pilot budget."
+    },
+    {
+      "path": "configs/map_comparison_v1.json",
+      "before_sha256": "9371e7e278805caa397da76547f35dc5ca8bd816615b2f0b8f1afa3a84762c7b",
+      "after_sha256": "037c46ad3284b7e71814546d02cd1232bbc56ae8fc98f667d2b0222cc36175cb",
+      "reason": "Explicit core-v2 research condition, unchanged 2-seed/300-episode RL budgets, new validation seed after previous validation was used for debugging."
+    },
+    {
+      "path": "configs/map_persistence_cases.json",
+      "before_sha256": null,
+      "after_sha256": "dc646d9103b32ab632049c4c70c29cf079ecba494cfa2a75e300b096cff27d6c",
+      "reason": "Freeze user-supplied diagnosed scenes as development regression inputs, separate from future validation/test evidence."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "023b126a27b559575c2d2683c336b3706779f942af6b13dfa4ad781099e6e746",
+      "after_sha256": "fe1a105c33c274fea35e57c8026a16ea1784b061c3e9798771b224fb64b2c717",
+      "reason": "Pin the complete regression inventory including continuous-map negative controls."
+    },
+    {
+      "path": "provenance/baselines/map_convergence_20261021_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "8511bd183885e45bf7c7ac825de3a140ff48668762e70232628fc4aca1effd86",
+      "reason": "Freeze the complete 471-file pre-fix source/evidence/package without relabelling previous checkpoints."
+    },
+    {
+      "path": "provenance/baselines/map_convergence_20261021_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "e27dbdf1f0c5f78784a8a96a032d86119dfd0985ea17ba25ca4c2ca4513e46d2",
+      "reason": "Freeze the complete 471-file pre-fix source/evidence/package without relabelling previous checkpoints."
+    },
+    {
+      "path": "provenance/map_convergence_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "034e3a75248f2f95306fbb6b7852874e5670107a5f5243fb060f739280782f77",
+      "reason": "Pin the immutable pre-fix source manifest in the successor inventory."
+    },
+    {
+      "path": "tools/check_map_training.py",
+      "before_sha256": "4e80015c9a83eada8a0fbb50dfd767b5034c219beb1c9f48ae25b47113902160",
+      "after_sha256": "113f0b0fda975b90ee2c85b998674d7b827d58aef99e425644fdca85e900a75f",
+      "reason": "Eight 32-step episodes; per-search-step availability and late scoring gates replace one-proposal acceptance; no file restore."
+    },
+    {
+      "path": "tools/map_persistence_source.py",
+      "before_sha256": null,
+      "after_sha256": "704630f58e90923e5722f1bd8ba3b087a22830aa9d563adaf1ba9f50ac696446",
+      "reason": "Independently verify exact reviewed changes, frozen parent source/evidence and unchanged physics/learners."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "ce37a444f269eeb8a1091b4be98d8ef87fb5cadc4d478d646471b534363b91b2",
+      "after_sha256": "544bc6dd1038becf578ad7610713d9d14000eff12c726dad6b5f066f4ce29efe",
+      "reason": "Use the strengthened eight-episode native workflow for Linux persistence admission."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "e3ac06746aec910c2bd1d93f99388f8aab68cd25772502d40f31fc2501df8e8c",
+      "after_sha256": "5d8d97f9fc467ff6794c938f630350ec0d9936cd62b6846284fb32d45a0a65fa",
+      "reason": "Dispatch independent persistence source verification."
+    }
+  ]
+}

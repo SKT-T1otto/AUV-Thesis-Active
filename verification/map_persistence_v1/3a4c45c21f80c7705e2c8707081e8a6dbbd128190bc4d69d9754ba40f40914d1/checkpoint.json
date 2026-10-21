@@ -1,0 +1,19 @@
+{
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1",
+    "profile": "active_map_persistence_v1",
+    "inventory_sha256": "3f667cf8f878779809e1ee0674cd4f6c42ec2b9124db598e6c9f36420a672e69",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_persistence.v1"
+  },
+  "run_id": "map_persistence_20261021_v1",
+  "passed": true,
+  "exit_code": 0,
+  "checkpoint_file_restore_executed": false,
+  "historical_checkpoints_relabelled": false,
+  "fresh_temporary_models": 4,
+  "max_complete_updates_per_model": 4,
+  "temporary_checkpoint_files_written": 8,
+  "scope": "Training receipts/checkpoint byte hashes and frozen in-memory evaluation verified; no file was restored to a model."
+}

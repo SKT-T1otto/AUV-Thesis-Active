@@ -1,0 +1,56 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "map_persistence_20261021_v1",
+  "source_identity": {
+    "review_sha256": "eb40f0ca8c70a6f1331c6cc283c9fbf8430197a97be197dfff7276a072c0387d",
+    "profile": "active_map_persistence_v1",
+    "inventory_sha256": "ba80e2bc751d7ec075dd5d095d64f531152259e2c54bb73e969412b7ea0fff4d",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_persistence.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_persistence_v1/source.json",
+      "sha256": "5c0d903e0164eecd25e37c326340f364b844183344fff06ce06006495112986d"
+    },
+    "structural": {
+      "path": "verification/map_persistence_v1/structural.json",
+      "sha256": "c13bed9adfb3e7fc85ff6eefce1dde256fa1de4fcc758f3b317dbbb1ab1254e6"
+    },
+    "regression": {
+      "path": "verification/map_persistence_v1/regression.json",
+      "sha256": "aa4d7f28165f61c1589d82499fdb82254221225d6f36f8f512a8f710124458df"
+    },
+    "parity": {
+      "path": "verification/map_persistence_v1/parity.json",
+      "sha256": "4c75bd536e6e995f602427f165007d6de34d46b709dc99d6acffb50aa131878e"
+    },
+    "entrypoints": {
+      "path": "verification/map_persistence_v1/entrypoints.json",
+      "sha256": "5e9a061f479ae890f4cfb728d8aea786abe8854fec89716aa70e995a204e5743"
+    },
+    "checkpoint": {
+      "path": "verification/map_persistence_v1/checkpoint.json",
+      "sha256": "6bd26cc835ea4a7c24dcc4cdbfd3c3692daa15da44f02b661823bb82c61e3267"
+    },
+    "mechanisms": {
+      "path": "verification/map_persistence_v1/mechanisms.json",
+      "sha256": "940d67c231f3580d2b59b67544066cc214e7d4a1e3357250b073d783fd63211a"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "historical_e0_passed": false,
+  "performance_passed": false,
+  "linux_tested": false,
+  "scope": "Windows engineering checks and bounded continuous-map evidence. Actual Linux fixed-checkout validation and explicit --execute remain mandatory. No long training, model-file restoration or automatic upload.",
+  "mechanism_budget": {
+    "episodes": 8,
+    "total_physical_steps": 240,
+    "max_episode_steps": 32,
+    "temporary_models": 4,
+    "max_complete_updates_per_model": 4,
+    "formal_training_episodes": 0,
+    "checkpoint_files_restored": 0
+  }
+}

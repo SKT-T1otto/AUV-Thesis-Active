@@ -1,0 +1,32 @@
+{
+  "schema": "auv.active.evaluation.v1",
+  "status": "completed",
+  "completed": 1,
+  "source_review": {
+    "review_sha256": "eb40f0ca8c70a6f1331c6cc283c9fbf8430197a97be197dfff7276a072c0387d",
+    "profile": "active_map_persistence_v1",
+    "inventory_sha256": "ba80e2bc751d7ec075dd5d095d64f531152259e2c54bb73e969412b7ea0fff4d",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_persistence.v1"
+  },
+  "manifest_sha256": "e91d88bff371414b9e3e31e214fc53b4286951ccd66abad0b7c7b2ceeb3e808d",
+  "policy_id": "833ae88a2229eb568999995b0fbf4aad202b561f1b03da1412ebca2e6438749d",
+  "method": "D2_B3_repair_v2",
+  "checkpoint": null,
+  "mechanism_only": true,
+  "performance_passed": false,
+  "files": {
+    "episodes.jsonl": "f146d973796f5ba7a25fab6883041aed3f07006916c69ce62c94477d3d8b4483",
+    "episodes.json": "85e95bc01bf98f9d7e1f565ebb78d94e304aa274e2d15587d784459e3eabc5ac"
+  },
+  "map_condition": {
+    "schema": "auv.active.map_condition.v1",
+    "map_id": "OLD",
+    "search_planner_id": "d2_v1",
+    "condition_sha256": "50cd1b34180d0809d925d9e9d0a1f12310ad5a1cde8951616323aaccdbbdde39",
+    "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "protocol_sha256": "0caeb1b5b10802ec6186de5723e4c54699bb3730080147d8c65b19cd840666c4"
+  },
+  "train_map": "OLD",
+  "eval_map": "OLD"
+}

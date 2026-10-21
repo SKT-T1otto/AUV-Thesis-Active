@@ -11,6 +11,9 @@ def digest(value):
 
 def verify(root):
     root = Path(root).resolve()
+    if (root/'provenance/map_persistence_manifest.json').is_file():
+        from tools.map_persistence_source import verify as verify_map
+        return verify_map(root)
     if (root/'provenance/map_convergence_manifest.json').is_file():
         from tools.map_convergence_source import verify as verify_map
         return verify_map(root)
