@@ -6,7 +6,7 @@ import shutil
 import tempfile
 import unittest
 from project_paths import ROOT
-from tools.map_persistence_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
+from tools.map_bounded_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
 
 
 class MapSource(unittest.TestCase):
@@ -24,7 +24,7 @@ class MapSource(unittest.TestCase):
     def test_missing_new_module_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root, manifest = self.fixture(directory)
-            (root/'core/env/public_events.py').unlink()
+            (root/'chapter3_bser/experiments/coupled_search_v1/bounded_belief.py').unlink()
             with self.assertRaisesRegex(ValueError, 'inventory mismatch'): verify(root)
 
     def test_parent_archive_and_old_evidence_are_immutable(self):
@@ -54,3 +54,26 @@ class MapSource(unittest.TestCase):
             manifest['sha256'] = digest({k:v for k,v in manifest.items() if k != 'sha256'})
             (root/MANIFEST).write_text(json.dumps(manifest),encoding='utf-8')
             with self.assertRaisesRegex(ValueError, 'legacy AST changed'): verify(root)
+
+    def test_resigned_manifest_cannot_hide_a_geometry_kernel_change(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root, manifest = self.fixture(directory)
+            name='chapter3_bser/experiments/coupled_search_v1/geometry_hypotheses.py'
+            path=root/name;source=path.read_text(encoding='utf-8')
+            before,entry=source.split('    def entry(self,box):',1)
+            source=before+'    def entry(self,box):'+entry.replace('enter=np.maximum(0.,near.max(axis=1));leave=far.min(axis=1)',
+                                  'enter=np.maximum(0.,near.max(axis=1))+0.01;leave=far.min(axis=1)')
+            path.write_text(source,encoding='utf-8')
+            changed_hash=hashlib.sha256(path.read_bytes()).hexdigest()
+            evolution=json.loads((root/EVOLUTION).read_text(encoding='utf-8'))
+            row=next((r for r in evolution['changes'] if r['path']==name),None)
+            if row is None:
+                row=dict(path=name,before_sha256=manifest['files'][name],reason='negative control')
+                evolution['changes'].append(row)
+            row['after_sha256']=changed_hash
+            (root/EVOLUTION).write_text(json.dumps(evolution),encoding='utf-8')
+            manifest['files'][name]=changed_hash
+            manifest['files'][EVOLUTION]=hashlib.sha256((root/EVOLUTION).read_bytes()).hexdigest()
+            manifest['sha256']=digest({key:value for key,value in manifest.items() if key!='sha256'})
+            (root/MANIFEST).write_text(json.dumps(manifest),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'protected geometry kernel changed'):verify(root)

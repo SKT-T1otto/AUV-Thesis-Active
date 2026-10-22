@@ -1,0 +1,56 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "map_cache_20261022_v1",
+  "source_identity": {
+    "review_sha256": "15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6",
+    "profile": "active_map_cache_v1",
+    "inventory_sha256": "ed5feb5ce6e138af4300dfded4b7c80da4f6fefd69fc3741cd34f178132d44da",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_cache.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_cache_v1/15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6/source.json",
+      "sha256": "a3462d424fa691d15138ec0dc7701785cad940aacadf35df1c5892e77929ddf6"
+    },
+    "structural": {
+      "path": "verification/map_cache_v1/15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6/structural.json",
+      "sha256": "e7c96e407d50d4708e712fbaad83e67769df79d55c643aa74c4631564aa81c12"
+    },
+    "regression": {
+      "path": "verification/map_cache_v1/15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6/regression.json",
+      "sha256": "9d064794297ab06e79217a106c94b7f3b92288f6ec5d8ed19eb9c692885cf280"
+    },
+    "parity": {
+      "path": "verification/map_cache_v1/15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6/parity.json",
+      "sha256": "4bbf71327614e92890e5dd5b1e80165560d01a24f1cf549948180b62e6ad5557"
+    },
+    "entrypoints": {
+      "path": "verification/map_cache_v1/15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6/entrypoints.json",
+      "sha256": "6215d430854e50feba9edaaa5d282c1d94bcc62bde5fa60e9da734383a00614f"
+    },
+    "checkpoint": {
+      "path": "verification/map_cache_v1/15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6/checkpoint.json",
+      "sha256": "03eaad82d92eff0270936d3d6767faf37b3f1898a7151f53ef91d00e12310684"
+    },
+    "mechanisms": {
+      "path": "verification/map_cache_v1/15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6/mechanisms.json",
+      "sha256": "34293e4e897482d8e5e5d66e40991e57c54066bc05fe6fb26f7124219245ae24"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "historical_e0_passed": false,
+  "performance_passed": false,
+  "linux_tested": false,
+  "scope": "Windows engineering regression and bounded native maps for the cache-only successor. Actual current-source Linux validation and explicit --execute remain required; no historical checkpoint relabeling or formal training.",
+  "mechanism_budget": {
+    "episodes": 8,
+    "total_physical_steps": 240,
+    "max_episode_steps": 32,
+    "temporary_models": 4,
+    "max_complete_updates_per_model": 4,
+    "formal_training_episodes": 0,
+    "checkpoint_files_restored": 0
+  }
+}

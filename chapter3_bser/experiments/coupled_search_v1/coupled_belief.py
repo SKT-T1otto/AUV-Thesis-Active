@@ -3,6 +3,7 @@ from collections import Counter, deque
 import numpy as np
 from core.env.target_motion import TargetState, advance_target_state
 from .geometry_hypotheses import GeometryHypothesisBank, compatible
+from .geometry_cache import ObservationCache
 from .numerics import Budget, BudgetExceeded, digest, locked, probabilities, swept_distances
 from .types import TargetForecast
 from .target_particles import propagate
@@ -12,7 +13,8 @@ class CoupledBelief:
     def __init__(self, config, contract, vehicle_specs):
         self.config,self.contract,self.specs=config,contract,vehicle_specs
         self.rng=np.random.default_rng(config['seed'])
-        self.geometry=GeometryHypothesisBank(config,contract,self.rng)
+        self.scan_cache=ObservationCache(config['history_steps']+1)
+        self.geometry=GeometryHypothesisBank(config,contract,self.rng,scan_cache=self.scan_cache)
         self.history=deque(maxlen=config['history_steps']+1)
         self.history_complete=True
         self.seen=set();self.counts=Counter();self.step=0
@@ -65,8 +67,8 @@ class CoupledBelief:
         for event in evidence.scans:
             for r,m in enumerate(self.maps):
                 budget.check()
-                lm[r]*=float(compatible(m,event.payload,self.contract['bounds'],
-                    self.contract['obstacle_sensor_range'],self.config['geometry']['scan_tolerance']))
+                lm[r]*=float(self.scan_cache.compatible(m,event.payload,self.contract['bounds'],
+                    self.contract['obstacle_sensor_range'],self.config['geometry']['scan_tolerance'],compatible))
         transition=evidence.transition
         p,v=self.positions,self.velocities
         ln=np.ones_like(self.omega)

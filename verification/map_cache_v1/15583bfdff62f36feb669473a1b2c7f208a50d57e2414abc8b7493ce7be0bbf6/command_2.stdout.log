@@ -1,0 +1,9 @@
+usage: cli.py [-h] {prepare,run,summarize} ...
+
+Native OLD/NEW x ZERO/B2/B3 experiments with independent fresh training.
+
+positional arguments:
+  {prepare,run,summarize}
+
+options:
+  -h, --help            show this help message and exit

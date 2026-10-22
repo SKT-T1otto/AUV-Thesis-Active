@@ -1,0 +1,207 @@
+{
+  "passed": true,
+  "source_identity": {
+    "review_sha256": "15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6",
+    "profile": "active_map_cache_v1",
+    "inventory_sha256": "ed5feb5ce6e138af4300dfded4b7c80da4f6fefd69fc3741cd34f178132d44da",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_cache.v1"
+  },
+  "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "physical_episodes": 0,
+  "physical_steps": 0,
+  "model_updates": 0,
+  "checkpoint_restores": 0,
+  "formal_training_started": false,
+  "original_kernel_unchanged": true,
+  "full_history_unchanged": true,
+  "proposal_comparisons": [
+    {
+      "scans": 32,
+      "rays": 3328,
+      "reference": {
+        "outcome": "completed",
+        "map_ids": [
+          "d826ff146e66bb6cad49763af1b6bba32649b71dff04dc3a733b1d6e7a3e4478",
+          "66e89ec2a385023a63283ae1dc784108e235a77bf129bd903a25757f49eb32ac",
+          "a3bc65100c4792ffc7122606a9a938e96e5411026c90627f31dc9a1f1a504790"
+        ],
+        "rng_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 316906072118475051079847430930655288249,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "seconds": 0.08604670000204351,
+        "kernel_calls": 180
+      },
+      "cached": {
+        "outcome": "completed",
+        "map_ids": [
+          "d826ff146e66bb6cad49763af1b6bba32649b71dff04dc3a733b1d6e7a3e4478",
+          "66e89ec2a385023a63283ae1dc784108e235a77bf129bd903a25757f49eb32ac",
+          "a3bc65100c4792ffc7122606a9a938e96e5411026c90627f31dc9a1f1a504790"
+        ],
+        "rng_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 316906072118475051079847430930655288249,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "seconds": 0.06257140000525396,
+        "kernel_calls": 111,
+        "entry_cache": {
+          "kernel_calls": 111,
+          "cache_hits": 16,
+          "retained_bytes": 217872,
+          "peak_bytes": 217872
+        },
+        "observation_cache": {
+          "counts": {
+            "prepared_misses": 32
+          },
+          "prepared_entries": 32,
+          "compatibility_entries": 0,
+          "prepared_bytes": 579264,
+          "prepared_peak_bytes": 579264,
+          "compatibility_bytes": 0,
+          "compatibility_peak_bytes": 0
+        }
+      },
+      "per_proposal_budget_seconds": 2.0,
+      "map_and_rng_equal": true,
+      "speedup": 1.3751761986277817,
+      "kernel_call_reduction": 0.3833333333333333
+    },
+    {
+      "scans": 128,
+      "rays": 13312,
+      "reference": {
+        "outcome": "completed",
+        "map_ids": [
+          "86e2fc564527d1fee0df983841966d764ff069f6b48b69a93d2b977b7ff6e79b",
+          "9cad879fb218fce289475a37b9f518a19d1f7930592e1b98707e4252af4d7a2a",
+          "80ff580b4b871c1afe0471a3717fddd1ca5a4b1a4cdf0e4449fefe8499c45c39"
+        ],
+        "rng_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 271996681214718730070203019998752903265,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "seconds": 1.5487291000026744,
+        "kernel_calls": 745
+      },
+      "cached": {
+        "outcome": "completed",
+        "map_ids": [
+          "86e2fc564527d1fee0df983841966d764ff069f6b48b69a93d2b977b7ff6e79b",
+          "9cad879fb218fce289475a37b9f518a19d1f7930592e1b98707e4252af4d7a2a",
+          "80ff580b4b871c1afe0471a3717fddd1ca5a4b1a4cdf0e4449fefe8499c45c39"
+        ],
+        "rng_state": {
+          "bit_generator": "PCG64",
+          "state": {
+            "state": 271996681214718730070203019998752903265,
+            "inc": 78856291631749604729656725519709880197
+          },
+          "has_uint32": 0,
+          "uinteger": 0
+        },
+        "seconds": 1.7887947000126587,
+        "kernel_calls": 482,
+        "entry_cache": {
+          "kernel_calls": 482,
+          "cache_hits": 25,
+          "retained_bytes": 1178166,
+          "peak_bytes": 1178166
+        },
+        "observation_cache": {
+          "counts": {
+            "prepared_misses": 128
+          },
+          "prepared_entries": 128,
+          "compatibility_entries": 0,
+          "prepared_bytes": 2317056,
+          "prepared_peak_bytes": 2317056,
+          "compatibility_bytes": 0,
+          "compatibility_peak_bytes": 0
+        }
+      },
+      "per_proposal_budget_seconds": 2.0,
+      "map_and_rng_equal": true,
+      "speedup": 0.8657947723076966,
+      "kernel_call_reduction": 0.3530201342281879
+    },
+    {
+      "scans": 256,
+      "rays": 26624,
+      "reference": {
+        "outcome": "wall_clock_budget",
+        "seconds": 2.0164875999907963,
+        "kernel_calls": 214
+      },
+      "cached": {
+        "outcome": "wall_clock_budget",
+        "seconds": 2.006524399999762,
+        "kernel_calls": 187,
+        "entry_cache": {
+          "kernel_calls": 187,
+          "cache_hits": 0,
+          "retained_bytes": 1068010,
+          "peak_bytes": 1068010
+        },
+        "observation_cache": {
+          "counts": {
+            "prepared_misses": 256
+          },
+          "prepared_entries": 256,
+          "compatibility_entries": 0,
+          "prepared_bytes": 4634112,
+          "prepared_peak_bytes": 4634112,
+          "compatibility_bytes": 0,
+          "compatibility_peak_bytes": 0
+        }
+      },
+      "per_proposal_budget_seconds": 2.0,
+      "comparison_censored_by_compute_budget": true
+    }
+  ],
+  "compatibility": {
+    "comparisons": 560,
+    "reference_seconds": 0.09966210000857245,
+    "cold_seconds": 0.2861574999988079,
+    "warm_seconds": 0.06277859999681823,
+    "warm_speedup": 1.5875170840640531,
+    "false_cases": 48,
+    "results_equal": true,
+    "cache": {
+      "counts": {
+        "prepared_misses": 272,
+        "compatibility_misses": 304,
+        "prepared_hits": 288,
+        "compatibility_hits": 256
+      },
+      "prepared_entries": 272,
+      "compatibility_entries": 304,
+      "prepared_bytes": 4923744,
+      "prepared_peak_bytes": 4923744,
+      "compatibility_bytes": 1318992,
+      "compatibility_peak_bytes": 1318992
+    }
+  },
+  "elapsed_seconds": 9.249674399994547,
+  "timing_scope": "Windows pure-data samples; 2-second proposal budget; censored comparisons are not speedups",
+  "performance_passed": false
+}

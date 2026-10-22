@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "scope": "Fresh temporary models receive four complete updates; evaluation preserves in-memory policy. Original checkpoint code and distribution rejection checks unchanged. No file restore or roundtrip claimed.",
+  "checkpoint_file_restore_executed": false,
+  "jobs": [
+    {
+      "job": "OLD_B2_seed2729",
+      "initial_state": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905",
+      "complete_updates": 4
+    },
+    {
+      "job": "NEW_B2_seed2729",
+      "initial_state": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905",
+      "complete_updates": 4
+    },
+    {
+      "job": "OLD_B3_seed2729",
+      "initial_state": "bbc2970aa47545e1251d4eba147a664b7d464a371dc0a7e5eebc9fc0ac163237",
+      "complete_updates": 4
+    },
+    {
+      "job": "NEW_B3_seed2729",
+      "initial_state": "bbc2970aa47545e1251d4eba147a664b7d464a371dc0a7e5eebc9fc0ac163237",
+      "complete_updates": 4
+    }
+  ],
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202",
+    "profile": "active_map_bounded_v3",
+    "inventory_sha256": "fe645a56b6feed13f12eb471ebb75add70ea05ef36a9e59229e92be6c1d21a68",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_bounded.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_bounded_20261022_v3"
+}

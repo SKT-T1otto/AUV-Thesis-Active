@@ -7,6 +7,7 @@ an approximate conditional geometry prior, not a reconstruction of hidden truth.
 from dataclasses import dataclass
 import numpy as np
 from .numerics import digest
+from .geometry_cache import ByteLRU, ObservationCache, box_key, prepare_scan, readonly
 
 
 @dataclass(frozen=True)
@@ -30,23 +31,17 @@ class GeometryHypothesis:
         return result
 
 
-def compatible(geometry, scan, bounds, sensor_range, tolerance):
-    origins=np.repeat(np.asarray(scan.origins,dtype=float),len(scan.directions),axis=0)
-    direction=np.tile(np.asarray(scan.directions,dtype=float),(len(scan.origins),1))
-    limits=np.full(len(origins),float(sensor_range))
-    bounds=np.asarray(bounds,dtype=float)
-    for axis in range(3):
-        d=direction[:,axis]
-        travel=np.full(len(d),np.inf)
-        np.divide(np.where(d>0,bounds[axis],0.)-origins[:,axis],d,out=travel,where=abs(d)>1e-12)
-        limits=np.minimum(limits,np.maximum(0.,travel))
+def compatible(geometry, scan, bounds, sensor_range, tolerance, *, prepared=None):
+    if prepared is None:
+        prepared=prepare_scan(scan,bounds,sensor_range)
+    origins=prepared.origins;direction=prepared.directions;limits=prepared.limits
     best=limits.copy()
     if not np.all(geometry.free(origins)):
         return False
     for center,size in geometry.boxes:
         lo=np.asarray(center)-np.asarray(size)/2
         hi=np.asarray(center)+np.asarray(size)/2
-        parallel=abs(direction)<=1e-12
+        parallel=prepared.parallel
         outside=np.any(parallel&((origins<lo)|(origins>hi)),axis=1)
         first=np.zeros_like(origins);second=np.zeros_like(origins)
         np.divide(lo-origins,direction,out=first,where=~parallel)
@@ -57,8 +52,8 @@ def compatible(geometry, scan, bounds, sensor_range, tolerance):
         hit=(~outside)&(enter<=leave)&(leave>=0)&(enter<best)
         best[hit]=enter[hit]
     predicted_hit=best<limits-1e-10
-    observed_hit=np.asarray(scan.hit_mask).reshape(-1)
-    observed=np.asarray(scan.distances).reshape(-1)
+    observed_hit=prepared.hits
+    observed=prepared.distances
     # Tolerance is declared geometric approximation, not a fake miss rate.
     hit_ok=(predicted_hit==observed_hit)&(abs(best-observed)<=tolerance)
     free_ok=(~observed_hit)&(best>=observed-tolerance)
@@ -66,13 +61,15 @@ def compatible(geometry, scan, bounds, sensor_range, tolerance):
 
 
 class GeometryHypothesisBank:
-    def __init__(self, config, contract, rng):
+    def __init__(self, config, contract, rng, *, scan_cache=None):
         self.config,self.contract,self.rng=config,contract,rng
         self.attempts=0
         self.support_boxes=0
         self.distinct_maps=0
         self.constraint_rays=0
         self.rebuilds=0
+        self.scan_cache=scan_cache if scan_cache is not None else ObservationCache(config['history_steps']+1)
+        self.last_entry_stats={}
 
     def _supports(self, rays, budget):
         """Cover all hits; the neighbor budget limits merge work, not coverage."""
@@ -88,10 +85,10 @@ class GeometryHypothesisBank:
             for _ in range(24):
                 lo=np.maximum(0.,point-half);hi=np.minimum(rays.bounds,point+half)
                 trial=(tuple((lo+hi)/2),tuple(hi-lo))
-                entry=rays.entry(trial)
+                entry=rays.evaluate_entry(trial)
                 if (rays.allowed(entry) and np.all(GeometryHypothesis((trial,)).free(rays.origins))
                         and entry[index]<rays.limits[index]-1e-10 and abs(entry[index]-rays.distances[index])<=rays.tolerance):
-                    seed=trial;break
+                    seed=trial;seed_entry=entry;break
                 half*=.5
             if seed is None:raise ValueError('public_ray_constraints_inconsistent')
             chosen=None
@@ -105,11 +102,14 @@ class GeometryHypothesisBank:
                     lo=np.minimum(left,np.asarray(seed[0])-np.asarray(seed[1])/2)
                     hi=np.maximum(right,np.asarray(seed[0])+np.asarray(seed[1])/2)
                     merged=(tuple((lo+hi)/2),tuple(hi-lo))
-                    if rays.allowed(rays.entry(merged)):
-                        chosen=int(j);seed=merged;break
+                    merged_entry=rays.evaluate_entry(merged)
+                    if rays.allowed(merged_entry):
+                        chosen=int(j);seed=merged;seed_entry=merged_entry;break
             if chosen is None:boxes.append(seed)
-            else:boxes[chosen]=seed
-            best=np.minimum(best,rays.entry(seed))
+            else:
+                rays.forget_entry(boxes[chosen]);boxes[chosen]=seed
+            rays.remember_entry(seed,seed_entry)
+            best=np.minimum(best,seed_entry)
         geometry=GeometryHypothesis(tuple(boxes))
         if not rays.matches(geometry):raise ValueError('constructed_geometry_does_not_match_public_rays')
         return geometry
@@ -117,7 +117,8 @@ class GeometryHypothesisBank:
     def propose(self, scans, budget):
         if not scans:raise ValueError('public_scan_history_required')
         g=self.config['geometry'];bounds=np.asarray(self.contract['bounds'])
-        rays=RayConstraints(scans,bounds,self.contract['obstacle_sensor_range'],g['scan_tolerance'])
+        rays=RayConstraints(scans,bounds,self.contract['obstacle_sensor_range'],g['scan_tolerance'],scan_cache=self.scan_cache)
+        self.last_entry_stats=rays.entry_stats
         base=self._supports(rays,budget);accepted=[base]
         # The observed-support world is an explicit prior component. Optional
         # unseen solids add diversity only where every public ray permits them.
@@ -130,8 +131,9 @@ class GeometryHypothesisBank:
                     if np.any(size>=bounds):continue
                     center=self.rng.uniform(size/2,bounds-size/2)
                     box=(tuple(center),tuple(size))
-                    if rays.allowed(rays.entry(box)):
-                        boxes.append(box);break
+                    entry=rays.evaluate_entry(box)
+                    if rays.allowed(entry):
+                        boxes.append(box);rays.remember_entry(box,entry);break
             candidate=GeometryHypothesis(tuple(boxes))
             if not rays.matches(candidate):raise ValueError('completion_violates_public_rays')
             accepted.append(candidate)
@@ -142,10 +144,13 @@ class GeometryHypothesisBank:
 
 class RayConstraints:
     """Vectorized retained public observations; no environment or true layout."""
-    def __init__(self,scans,bounds,sensor_range,tolerance):
+    def __init__(self,scans,bounds,sensor_range,tolerance,*,scan_cache=None,entry_cache_bytes=16*1024**2):
         self.bounds=np.asarray(bounds,float);self.tolerance=float(tolerance)
         values=[]
         for scan in scans:
+            if scan_cache is not None:
+                values.append(scan_cache.prepare(scan,bounds,sensor_range).rows)
+                continue
             origins=np.repeat(np.asarray(scan.origins,float),len(scan.directions),axis=0)
             directions=np.tile(np.asarray(scan.directions,float),(len(scan.origins),1))
             values.append(np.column_stack((origins,directions,np.asarray(scan.distances).reshape(-1),np.asarray(scan.hit_mask).reshape(-1))))
@@ -160,6 +165,33 @@ class RayConstraints:
             np.divide(np.where(d>0,self.bounds[axis],0)-self.origins[:,axis],d,out=travel,where=abs(d)>1e-12)
             self.limits=np.minimum(self.limits,np.maximum(0.,travel))
         self.parallel=abs(self.directions)<=1e-12
+        # A memo belongs to this exact, immutable row-sorted history snapshot.
+        for name in ('bounds','origins','directions','distances','hits','limits','parallel'):
+            setattr(self,name,readonly(getattr(self,name)))
+        self._entries=ByteLRU(entry_cache_bytes,4096)
+        self.entry_stats=dict(kernel_calls=0,cache_hits=0,retained_bytes=0,peak_bytes=0)
+
+    def evaluate_entry(self,box):
+        self.entry_stats['kernel_calls']+=1
+        return self.entry(box)
+
+    def remember_entry(self,box,entry):
+        self._entries.put(box_key(box),readonly(entry),entry.nbytes)
+        self.entry_stats['retained_bytes']=self._entries.bytes
+        self.entry_stats['peak_bytes']=self._entries.peak_bytes
+
+    def forget_entry(self,box):
+        self._entries.discard(box_key(box))
+        self.entry_stats['retained_bytes']=self._entries.bytes
+
+    def cached_entry(self,box):
+        entry=self._entries.get(box_key(box))
+        if entry is not None:
+            self.entry_stats['cache_hits']+=1
+            return entry
+        entry=self.evaluate_entry(box)
+        self.remember_entry(box,entry)
+        return entry
 
     def entry(self,box):
         center,size=map(np.asarray,box);lo=center-size/2;hi=center+size/2
@@ -178,7 +210,7 @@ class RayConstraints:
     def matches(self,geometry):
         if not np.all(geometry.free(self.origins)):return False
         best=self.limits.copy()
-        for box in geometry.boxes:best=np.minimum(best,self.entry(box))
+        for box in geometry.boxes:best=np.minimum(best,self.cached_entry(box))
         predicted=best<self.limits-1e-10
         return bool(np.all(((predicted==self.hits)&(abs(best-self.distances)<=self.tolerance))|
                            ((~self.hits)&(best>=self.distances-self.tolerance))))

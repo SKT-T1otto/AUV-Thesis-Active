@@ -153,7 +153,7 @@ def main():
             result['workflow']=bounded_workflow(output);write(output/'workflow.json',result['workflow'])
         if args.map_workflow:
             from tools.check_map_training import run as check_maps
-            result['workflow']=check_maps(output/'native_maps')
+            result['workflow']=check_maps(output/'native_maps',bounded=(ROOT/'provenance/map_bounded_manifest.json').is_file())
             write(output/'workflow.json',result['workflow'])
             if not result['workflow']['passed']:raise RuntimeError('native map workflow failed')
         result['passed']=True

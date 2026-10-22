@@ -1,0 +1,176 @@
+{
+  "schema": "auv.source_evolution.map_bounded.v1",
+  "parent_review_sha256": "15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6",
+  "algorithm_changed": true,
+  "map_algorithm_revision": "coupled_search_bounded_v3",
+  "changes": [
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/bounded_belief.py",
+      "before_sha256": null,
+      "after_sha256": "361e749173dab3b25ab15f109822cb044e95b3df04cb5244d07bf80265e6db13",
+      "reason": "Implement finite raw history, rolling boundary joint posterior, bounded snapshots and local recovery without uniform full-mode fallback."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/bounded_config.py",
+      "before_sha256": null,
+      "after_sha256": "5ac5d28317493b42f63d12976801901f32ef9039449832c18267972d2ccdb4da",
+      "reason": "Declare and validate bounded v3 map capacities, posterior proposals and explicitly labelled ablations."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/config.py",
+      "before_sha256": "bc2cc37888dcf69ac820fa865e94e831aaeb0194817b351631a9453c9c57560c",
+      "after_sha256": "380b5f82ab3ea330030dc5e3ab58f5fa90ef7847c549f03a67438a20449b1141",
+      "reason": "Dispatch explicitly identified v3 planner configuration while retaining v2 defaults."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/core_config.py",
+      "before_sha256": "02736bd3cad02fcc68654e4f7e7af89cce7d52d4d4a41b450e46344b057f16c8",
+      "after_sha256": "681b87b6f0e46c63956a4a5c0fcb4d6d873ba425918210b382181c23d2bae7cc",
+      "reason": "Dispatch v3 validation without changing v2 budgets or defaults."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/persistent_map.py",
+      "before_sha256": null,
+      "after_sha256": "169fefef0822d9e7464aa98c1fab4d31fd16644a272343b601e0d93e08ff11b4",
+      "reason": "Accumulate public scan evidence in fixed voxels and repair local geometry; never discard known cells to meet box caps."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/reference.py",
+      "before_sha256": "5660c57edf6262c22003fe73682ba8217efdc86bae8e61fa3769d23bdfb4d44b",
+      "after_sha256": "f329583ba2f33c9a32735b839b63e93d4081f32a5c32c5dd603953da84f248ec",
+      "reason": "Publish actual v3 planner identity in standalone reference metadata."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/session.py",
+      "before_sha256": "625182c2ec5703a016d4a22c7977a49b390f6e5a87dd3fe4c8ca493f67582805",
+      "after_sha256": "e0e8f05a18e6e9795afad73d1bb3629efcb359266a86a2d8a7d3731b4104ddbe",
+      "reason": "Select bounded belief only for explicitly enabled v3 configurations."
+    },
+    {
+      "path": "chapter3_bser/learning/bounded_experiment.py",
+      "before_sha256": null,
+      "after_sha256": "c120748e97523c871e969c08104f0fdd69b136406e12df2d3968f87e65376adb",
+      "reason": "Prepare paired scenes and fresh native policies for reference, windows and ablations; retain incomplete arms and report task/work metrics."
+    },
+    {
+      "path": "chapter3_bser/learning/map_bounded_source.py",
+      "before_sha256": null,
+      "after_sha256": "c6ff83575173630302b8b61fd3b251dfe8b7da29422206967e9710214341eff2",
+      "reason": "Verify exact v3 source/evolution and protected v2/physics/learner bytes independently or at runtime."
+    },
+    {
+      "path": "chapter3_bser/learning/map_contract.py",
+      "before_sha256": "10bc8c5a541bc3c652b0f10fb16226659bc5483bf8ba4f2e6b09041759bd5def",
+      "after_sha256": "6b14f684930ad61ed9effdf00bdd5f267c0de5a964d2e6074288942e3aba79bb",
+      "reason": "Keep native map identities distinct, export bounded work traces and preserve failed-run diagnostics."
+    },
+    {
+      "path": "chapter3_bser/learning/map_suite.py",
+      "before_sha256": "94537ede492bbb09d02d0c9219096efeee518f5db56e6371b1903d38f7a3e8ed",
+      "after_sha256": "c14684a30b7758fc9ff6e30093921a2f8bcc139a77184465253c59f1991c4ae7",
+      "reason": "Allow v3 bounded raw windows shorter than the episode; keep v2 complete-history guard."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "e021c7244a9a2979b02239ba805f0b71dd5733c5649395cfa79d62c9bc27de65",
+      "after_sha256": "33f3d0088ef7ad91650e784ffe6badc7bf0ddc397fc0f3117018def9f11a753e",
+      "reason": "Select v3 source inventory and versioned readiness evidence with immutable parent lineage."
+    },
+    {
+      "path": "checks/test_bounded_experiment.py",
+      "before_sha256": null,
+      "after_sha256": "9dd60546f58b0f88ecb98f2d5fc4b835107ee94a6a38eae10ead8dff969c1376",
+      "reason": "Verify finite state, old negative evidence, bounded replay, explicit failures and experimental pairing without simulator episodes."
+    },
+    {
+      "path": "checks/test_bounded_map.py",
+      "before_sha256": null,
+      "after_sha256": "725b82300c3822b58d79c457e2047406583e3b1909a74ff441fa9592ec92b54b",
+      "reason": "Verify finite state, old negative evidence, bounded replay, explicit failures and experimental pairing without simulator episodes."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "88946904eaf76c3742c318af6339640df23b77f3773d545ac7fc8b19038b12f3",
+      "after_sha256": "2a583a5c7e809ff5fb7814c793d7c03846961ea66501846fd20ac55f9e1660f1",
+      "reason": "Reject resigned physics/geometry changes and missing bounded modules against immutable cache parent."
+    },
+    {
+      "path": "cli.py",
+      "before_sha256": "c98937176504b47a8e1b19f57e3f55c9f9c3ec88c24afa852eb84b204e2fbff0",
+      "after_sha256": "81038b06467c60f6f7e1513bbac3b352172d5aa045703b82aa7b4b9441c7b5ce",
+      "reason": "Expose the explicit manual bounded-design prepare/run/report workflow."
+    },
+    {
+      "path": "configs/bounded_design_experiment_v1.json",
+      "before_sha256": null,
+      "after_sha256": "befdb4c8883840dac1bf111fc2a0ffb1dbe9666b67c93727c5fb43105b13b438",
+      "reason": "Provide explicit v3 W64 default and W32/W128/ablation native experiment budgets, keeping all earlier configurations immutable."
+    },
+    {
+      "path": "configs/coupled_search_bounded_v3.json",
+      "before_sha256": null,
+      "after_sha256": "e303934c280fa9cd8ad50113d1b7f8d95ed447918d56b32c66e7cfd492777631",
+      "reason": "Provide explicit v3 W64 default and W32/W128/ablation native experiment budgets, keeping all earlier configurations immutable."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "ee0ee4d8fa66c718c1981cf7ded2ce03020d57945f1aeed9be991748e634bfd5",
+      "after_sha256": "be3743e63d9099202119fccbda9d96be4bc84c574fb34125d39cfded91235268",
+      "reason": "Declare the expanded bounded-map and experimental protocol regression inventory."
+    },
+    {
+      "path": "provenance/baselines/map_cache_20261022_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "c23c390951c39de66fe6276c963686b87a1e9b8f2fc5688c2d11de1b9e57c8e8",
+      "reason": "Freeze exact cache-parent source and evidence; external archives remain hash-pinned, never imported."
+    },
+    {
+      "path": "provenance/baselines/map_cache_20261022_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "2c1291e6cb4fc3f6012e6933fd78ae1ecfb03c3e78ea5f9677cc028cce6b2f44",
+      "reason": "Freeze exact cache-parent source and evidence; external archives remain hash-pinned, never imported."
+    },
+    {
+      "path": "provenance/map_cache_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "3114054a73711019d3b54a9a7e7b5e4c14c908c7b4b7beb0c3ad32bfd2a27006",
+      "reason": "Pin the byte-identical cache parent manifest in the successor source inventory."
+    },
+    {
+      "path": "tools/check_bounded_map.py",
+      "before_sha256": null,
+      "after_sha256": "66c4f0a9b50469c10dcf16793856a79c063964dfcb46d887075f0d9a0292e353",
+      "reason": "Measure public-evidence endurance and labelled injected depletion separately, with all failed arms retained and zero physical episodes."
+    },
+    {
+      "path": "tools/check_map_training.py",
+      "before_sha256": "113f0b0fda975b90ee2c85b998674d7b827d58aef99e425644fdca85e900a75f",
+      "after_sha256": "8b52fd09f6cc0d1404b72a40f07c913896385c70b7adf4896859c0552eeca003",
+      "reason": "Add an explicit W16 v3 fixture for eight bounded native episodes, without altering default legacy fixtures."
+    },
+    {
+      "path": "tools/map_bounded_source.py",
+      "before_sha256": null,
+      "after_sha256": "435b4a2b740287d527a48e0d49be95ad9d0691ba2f2845facdd7d4647dc3cf01",
+      "reason": "Verify exact v3 source/evolution and protected v2/physics/learner bytes independently or at runtime."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "3b02c7ea4592ff566038bb588e1aeafefa3c6b771e013ac235545a8cc857a08f",
+      "after_sha256": "7f8f31a110fcea59af929d54c9f633ba083ea49b3e7affd7896540367cfa458b",
+      "reason": "Choose v3 bounded native mechanism fixture for current successor verification."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "1a21831c890baee86b52343ece7119299d5f5c198e513dec54b9bc3bbd8770b8",
+      "after_sha256": "f31218314bea7c9a3aa07d154a60977c903c7949d12f6a0ed20fad301c697e9d",
+      "reason": "Require Linux map-workflow verification for v3 manual research."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "f66448395549f9e786f2bfeda734a0e6f7d99010ed33774268b256a6a1e4a0d6",
+      "after_sha256": "076f2a158bbdd76221f138423aa0e83671b040ec441804bbbc0d440b254d298d",
+      "reason": "Dispatch the independent bounded successor source verifier."
+    }
+  ]
+}

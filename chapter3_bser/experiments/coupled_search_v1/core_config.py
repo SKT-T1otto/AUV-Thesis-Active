@@ -21,6 +21,9 @@ CORE_DEFAULT = dict(
 
 
 def validate_core_config(value):
+    if isinstance(value,dict) and value.get('schema')=='ch3.coupled_search.core.v3':
+        from .bounded_config import validate_bounded_config
+        return validate_bounded_config(value)
     c = copy.deepcopy(value)
     if not isinstance(c, dict) or set(c) != set(CORE_DEFAULT) or c.get('schema') != SCHEMA:
         raise ValueError('complete coupled-search core configuration required')

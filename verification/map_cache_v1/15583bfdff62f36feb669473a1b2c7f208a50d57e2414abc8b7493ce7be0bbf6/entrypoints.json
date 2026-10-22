@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "-m",
+        "cli",
+        "verify"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "train",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "map-suite",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "tools.check_map_cache",
+        "--output",
+        "work/map_cache_dry_unused"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "tools.check_map_training",
+        "--output",
+        "work/map_cache_native_dry_unused"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "dry_run_outputs_absent": true,
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6",
+    "profile": "active_map_cache_v1",
+    "inventory_sha256": "ed5feb5ce6e138af4300dfded4b7c80da4f6fefd69fc3741cd34f178132d44da",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_cache.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_cache_20261022_v1"
+}

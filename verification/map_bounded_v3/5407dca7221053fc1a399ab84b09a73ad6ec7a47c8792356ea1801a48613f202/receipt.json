@@ -1,0 +1,56 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "map_bounded_20261022_v3",
+  "source_identity": {
+    "review_sha256": "5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202",
+    "profile": "active_map_bounded_v3",
+    "inventory_sha256": "fe645a56b6feed13f12eb471ebb75add70ea05ef36a9e59229e92be6c1d21a68",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_bounded.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_bounded_v3/5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202/source.json",
+      "sha256": "df44eb2ae03a75aba9ae4763bdc099806b8846a0094d691f0491e301bb77cc4c"
+    },
+    "structural": {
+      "path": "verification/map_bounded_v3/5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202/structural.json",
+      "sha256": "ce6e343f0958410a41e235949cb1b80b3208b19dfaa1a9fab5721e45c1a31155"
+    },
+    "regression": {
+      "path": "verification/map_bounded_v3/5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202/regression.json",
+      "sha256": "2afad13083ab7823a5866b08f12fbdefdb8927cf08842bf8dc500f397c1262f6"
+    },
+    "parity": {
+      "path": "verification/map_bounded_v3/5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202/parity.json",
+      "sha256": "818934fe6681410538c14097c466fa01b28554cdbb6f5e4d156989867413af89"
+    },
+    "entrypoints": {
+      "path": "verification/map_bounded_v3/5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202/entrypoints.json",
+      "sha256": "a2b1f738ca45827f279cd03c9fd7437922e32255ae4e1dfcb14ed97c3a3ff094"
+    },
+    "checkpoint": {
+      "path": "verification/map_bounded_v3/5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202/checkpoint.json",
+      "sha256": "039b72f4816786479dfbb59252213eee5cde3d456e87082e4a50756d0113e93f"
+    },
+    "mechanisms": {
+      "path": "verification/map_bounded_v3/5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202/mechanisms.json",
+      "sha256": "6f09126abe28f2061b8629f53164aa620b298ce9154956fa386c044d5df2de99"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "historical_e0_passed": false,
+  "performance_passed": false,
+  "linux_tested": false,
+  "scope": "Windows bounded-map engineering verification only. New v3 map approximation; no equivalence/performance acceptance. Current clean Linux validation and explicit --execute remain required.",
+  "mechanism_budget": {
+    "episodes": 8,
+    "total_physical_steps": 240,
+    "max_episode_steps": 32,
+    "temporary_models": 4,
+    "max_complete_updates_per_model": 4,
+    "formal_training_episodes": 0,
+    "checkpoint_files_restored": 0
+  }
+}

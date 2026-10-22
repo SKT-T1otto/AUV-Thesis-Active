@@ -1,0 +1,25 @@
+{
+  "source_review": {
+    "review_sha256": "5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202",
+    "profile": "active_map_bounded_v3",
+    "inventory_sha256": "fe645a56b6feed13f12eb471ebb75add70ea05ef36a9e59229e92be6c1d21a68",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_bounded.v1"
+  },
+  "plan_sha256": "5faea9405214f449101f917d5a58fd5df52e3f38583374831859526fb382a7af",
+  "config_sha256": "257dfaa5f067d089ec50c0f0bd89393b5d0c76bbf51080ef31c7e1124ea0bc5d",
+  "map_condition": {
+    "schema": "auv.active.map_condition.v1",
+    "map_id": "NEW",
+    "search_planner_id": "coupled_search_bounded_v3",
+    "condition_sha256": "c22a018026c41150f4aefee7998256b04d981498db19b6a64c751b26269da990",
+    "research_config_sha256": "01b3084465aa07897941eb4c224c9065504a87b0c3f9578e8feba2419b650f10",
+    "protocol_sha256": "5151d9c1fd13223aff5f42cac50fde0cf55a55aeb80fe9fca0eb90d09f996f84"
+  },
+  "checkpoint_sha256": "32334b07f9688d44e1ac40102162ebfb33def5beabddcf4b4a7cac764b40a62b",
+  "summary_sha256": "a761b9ac762fe71ea8b08e88fbd3b8da63ed910c33a495812dae46bc4d50425a",
+  "initial_model_state_sha256": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905",
+  "episodes_sha256": "e953ecc0ee116d414c4de6fc2e70d72be00ba68be7613849e8a8ff3b6ac30444",
+  "metrics_sha256": "aae038cf8f8b82bcc39d5c64e82db88c66ead87d289dcd17aba0efac471a7310",
+  "model_state_sha256": "09801efd331497e34ebbda1408f3f4e28b0b56b5bb05e32bcf084315fff00bd7"
+}

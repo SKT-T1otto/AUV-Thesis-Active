@@ -1,0 +1,1246 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "e1fba79a54f4255ec470b192670c4c0b706b7d1a3eb4377aa1515567a68b5259",
+    "profile": "active_map_bounded_v3",
+    "inventory_sha256": "b4420040805747d215544a71147b7f7cc5db8802a26d2b96e59ec94476318b2a",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_bounded.v1"
+  },
+  "batches": 640,
+  "rays_per_batch": 104,
+  "evidence_sha256": "9e970b1509475bcd7cee3fa1fbb2708e4b41d9ac12f6f336bfc06b2488e85704",
+  "rows": [
+    {
+      "arm": "reference_v2",
+      "mode": "natural",
+      "attempted_batches": 184,
+      "completed_batches": 183,
+      "complete": false,
+      "expected_negative_control": false,
+      "check_passed": false,
+      "injected_steps": [],
+      "seconds": 114.8465886000049,
+      "early_p50": 0.01002514999709092,
+      "early_p95": 0.3306494649943488,
+      "middle_p50": 0.4749117000028491,
+      "middle_p95": 1.135067600000184,
+      "late_p50": 1.6949394999974174,
+      "late_p95": 2.3853721000050427,
+      "summary": {
+        "valid": false,
+        "error": "wall_clock_budget",
+        "step": 182,
+        "stopped": false,
+        "alpha": [
+          0.3191489361702128,
+          0.3404255319148936,
+          0.3404255319148936
+        ],
+        "conditional_ess": [
+          30.0,
+          32.0,
+          32.0
+        ],
+        "history_complete": true,
+        "retained_history": 184,
+        "counts": {
+          "full_history_replays": 109,
+          "joint_updates": 74,
+          "inference_failures": 109,
+          "replenishments": 108
+        },
+        "geometry_attempts": 709,
+        "prior": "public_ray_constrained_aabb_support_v2",
+        "support_boxes": 9,
+        "distinct_maps": 3,
+        "constraint_rays": 19136,
+        "geometry_rebuilds": 110,
+        "first_failure": {
+          "step": 2,
+          "reason": "joint_evidence_zero_mass",
+          "phase": "incremental"
+        },
+        "last_failure": {
+          "step": 183,
+          "reason": "joint_evidence_zero_mass",
+          "phase": "incremental"
+        }
+      }
+    },
+    {
+      "arm": "full_w64",
+      "mode": "natural",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [],
+      "seconds": 8.874269499996444,
+      "early_p50": 0.012433949996193405,
+      "early_p95": 0.01690268000238575,
+      "middle_p50": 0.01277079999272246,
+      "middle_p95": 0.0175798200070858,
+      "late_p50": 0.014391699995030649,
+      "late_p95": 0.02384626000130082,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.34782608695652173,
+          0.32608695652173914,
+          0.32608695652173914
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          30.0,
+          30.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 64,
+        "window_steps": 64,
+        "boundary_step": 575,
+        "max_retained_history": 64,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 345600,
+        "retained_snapshots": 64,
+        "retained_event_ids": 138,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 575
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": null,
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "full"
+      }
+    },
+    {
+      "arm": "full_w64",
+      "mode": "forced_depletion",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [
+        192,
+        384,
+        576
+      ],
+      "seconds": 10.580082299988135,
+      "early_p50": 0.016884700002265163,
+      "early_p95": 0.024126600001181938,
+      "middle_p50": 0.01676390001375694,
+      "middle_p95": 0.024267320000217297,
+      "late_p50": 0.013390200008871034,
+      "late_p95": 0.018644960003439334,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.3228081961706416,
+          0.3332213637890494,
+          0.3439704400403091
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          31.0,
+          32.0,
+          32.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 64,
+        "window_steps": 64,
+        "boundary_step": 575,
+        "max_retained_history": 64,
+        "last_replay_steps": 0,
+        "max_replay_steps": 64,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 345600,
+        "retained_snapshots": 64,
+        "retained_event_ids": 138,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 575,
+          "local_recovery_triggers": 3,
+          "local_recovery_attempts": 3,
+          "boundary_conditioned_proposals": 3,
+          "bounded_replay_steps": 192,
+          "local_recoveries": 3
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": {
+          "step": 192,
+          "reason": "bounded_target_zero_mass",
+          "phase": "local"
+        },
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "full"
+      }
+    },
+    {
+      "arm": "full_w32",
+      "mode": "natural",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [],
+      "seconds": 8.955101600004127,
+      "early_p50": 0.012965949994395487,
+      "early_p95": 0.01843194000684889,
+      "middle_p50": 0.014012699990416877,
+      "middle_p95": 0.019722140001249496,
+      "late_p50": 0.013759499997831881,
+      "late_p95": 0.01993555999943055,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.34782608695652173,
+          0.32608695652173914,
+          0.32608695652173914
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          30.0,
+          30.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 32,
+        "window_steps": 32,
+        "boundary_step": 607,
+        "max_retained_history": 32,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 172800,
+        "retained_snapshots": 32,
+        "retained_event_ids": 74,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 607
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": null,
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "full"
+      }
+    },
+    {
+      "arm": "full_w32",
+      "mode": "forced_depletion",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [
+        192,
+        384,
+        576
+      ],
+      "seconds": 9.305962800004636,
+      "early_p50": 0.01311705000262009,
+      "early_p95": 0.018973349994485033,
+      "middle_p50": 0.01405079998949077,
+      "middle_p95": 0.019940379995387045,
+      "late_p50": 0.013957200004369952,
+      "late_p95": 0.02031366000010166,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.34031239614489867,
+          0.3193752077102027,
+          0.34031239614489867
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          31.0,
+          32.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 32,
+        "window_steps": 32,
+        "boundary_step": 607,
+        "max_retained_history": 32,
+        "last_replay_steps": 0,
+        "max_replay_steps": 32,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 172800,
+        "retained_snapshots": 32,
+        "retained_event_ids": 74,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 607,
+          "local_recovery_triggers": 3,
+          "local_recovery_attempts": 3,
+          "boundary_conditioned_proposals": 3,
+          "bounded_replay_steps": 96,
+          "local_recoveries": 3
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": {
+          "step": 192,
+          "reason": "bounded_target_zero_mass",
+          "phase": "local"
+        },
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "full"
+      }
+    },
+    {
+      "arm": "full_w128",
+      "mode": "natural",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [],
+      "seconds": 9.750214500003494,
+      "early_p50": 0.013635199997224845,
+      "early_p95": 0.020740069999737897,
+      "middle_p50": 0.017158100003143772,
+      "middle_p95": 0.024901760002830987,
+      "late_p50": 0.012848700003814884,
+      "late_p95": 0.018401099997572584,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.34782608695652173,
+          0.32608695652173914,
+          0.32608695652173914
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          30.0,
+          30.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 128,
+        "window_steps": 128,
+        "boundary_step": 511,
+        "max_retained_history": 128,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 691200,
+        "retained_snapshots": 128,
+        "retained_event_ids": 266,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 511
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": null,
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "full"
+      }
+    },
+    {
+      "arm": "full_w128",
+      "mode": "forced_depletion",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [
+        192,
+        384,
+        576
+      ],
+      "seconds": 9.489360200008377,
+      "early_p50": 0.012547550002636854,
+      "early_p95": 0.018506375003198627,
+      "middle_p50": 0.013477200001943856,
+      "middle_p95": 0.019851579997339275,
+      "late_p50": 0.013339900004211813,
+      "late_p95": 0.018181959993671625,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.34385493619879115,
+          0.31229012760241776,
+          0.34385493619879115
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          30.0,
+          32.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 128,
+        "window_steps": 128,
+        "boundary_step": 511,
+        "max_retained_history": 128,
+        "last_replay_steps": 0,
+        "max_replay_steps": 128,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 691200,
+        "retained_snapshots": 128,
+        "retained_event_ids": 266,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 511,
+          "local_recovery_triggers": 3,
+          "local_recovery_attempts": 3,
+          "boundary_conditioned_proposals": 3,
+          "bounded_replay_steps": 384,
+          "local_recoveries": 3
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": {
+          "step": 192,
+          "reason": "bounded_target_zero_mass",
+          "phase": "local"
+        },
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "full"
+      }
+    },
+    {
+      "arm": "no_boundary_w64",
+      "mode": "natural",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [],
+      "seconds": 9.08726430000388,
+      "early_p50": 0.013474999992467929,
+      "early_p95": 0.018051189994730522,
+      "middle_p50": 0.01408560000709258,
+      "middle_p95": 0.019435900004464192,
+      "late_p50": 0.01376999999047257,
+      "late_p95": 0.01876720000000204,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.34782608695652173,
+          0.32608695652173914,
+          0.32608695652173914
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          30.0,
+          30.0
+        ],
+        "historical_information_carried_by_boundary": false,
+        "retained_history": 64,
+        "window_steps": 64,
+        "boundary_step": 575,
+        "max_retained_history": 64,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 345600,
+        "retained_snapshots": 64,
+        "retained_event_ids": 138,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 575
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": null,
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "no_boundary"
+      }
+    },
+    {
+      "arm": "no_boundary_w64",
+      "mode": "forced_depletion",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [
+        192,
+        384,
+        576
+      ],
+      "seconds": 9.7240482000052,
+      "early_p50": 0.01343520000227727,
+      "early_p95": 0.01852651500084903,
+      "middle_p50": 0.01408130000345409,
+      "middle_p95": 0.019128140006796454,
+      "late_p50": 0.015184599993517622,
+      "late_p95": 0.022103800004697395,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.3368421052631579,
+          0.3368421052631579,
+          0.32631578947368417
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          32.0,
+          31.0
+        ],
+        "historical_information_carried_by_boundary": false,
+        "retained_history": 64,
+        "window_steps": 64,
+        "boundary_step": 575,
+        "max_retained_history": 64,
+        "last_replay_steps": 0,
+        "max_replay_steps": 64,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 345600,
+        "retained_snapshots": 64,
+        "retained_event_ids": 138,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 575,
+          "local_recovery_triggers": 3,
+          "local_recovery_attempts": 3,
+          "uniform_boundary_ablation_resets": 3,
+          "bounded_replay_steps": 192,
+          "local_recoveries": 3
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": {
+          "step": 192,
+          "reason": "bounded_target_zero_mass",
+          "phase": "local"
+        },
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "no_boundary"
+      }
+    },
+    {
+      "arm": "no_local_recovery_w64",
+      "mode": "natural",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [],
+      "seconds": 9.20988270000089,
+      "early_p50": 0.014304650001577102,
+      "early_p95": 0.02015422499316628,
+      "middle_p50": 0.013637700001709163,
+      "middle_p95": 0.0194623599993065,
+      "late_p50": 0.013881000006222166,
+      "late_p95": 0.020282859998405907,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.34782608695652173,
+          0.32608695652173914,
+          0.32608695652173914
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          30.0,
+          30.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 64,
+        "window_steps": 64,
+        "boundary_step": 575,
+        "max_retained_history": 64,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 19,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 345600,
+        "retained_snapshots": 64,
+        "retained_event_ids": 138,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 172,
+          "boundary_advances": 575
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 415,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1289,
+          "occupied_cells": 16,
+          "observed_cells": 1305,
+          "hit_evidence_cells": 48,
+          "base_boxes": 16,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 1653
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 173
+        },
+        "first_failure": null,
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "no_local_recovery"
+      }
+    },
+    {
+      "arm": "no_local_recovery_w64",
+      "mode": "forced_depletion",
+      "attempted_batches": 193,
+      "completed_batches": 192,
+      "complete": false,
+      "expected_negative_control": true,
+      "check_passed": true,
+      "injected_steps": [
+        192
+      ],
+      "seconds": 2.7169258000067202,
+      "early_p50": 0.012863600000855513,
+      "early_p95": 0.017357200002879835,
+      "middle_p50": 0.014417149999644607,
+      "middle_p95": 0.018525020009838043,
+      "late_p50": 0.01333764999435516,
+      "late_p95": 0.01945138500232133,
+      "summary": {
+        "valid": false,
+        "error": "local_recovery_disabled_ablation",
+        "step": 191,
+        "stopped": false,
+        "alpha": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          32.0,
+          32.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 64,
+        "window_steps": 64,
+        "boundary_step": 128,
+        "max_retained_history": 64,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 18,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 340200,
+        "retained_snapshots": 63,
+        "retained_event_ids": 138,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 192,
+          "approximate_geometry_transports": 42,
+          "boundary_advances": 128,
+          "local_recovery_triggers": 1,
+          "inference_failures": 1
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 164,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 1097,
+          "occupied_cells": 15,
+          "observed_cells": 1112,
+          "hit_evidence_cells": 33,
+          "base_boxes": 15,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 193,
+            "ray_measurements": 20072,
+            "changed_cells": 1182
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 193,
+          "geometry_changes": 43
+        },
+        "first_failure": {
+          "step": 192,
+          "reason": "bounded_target_zero_mass",
+          "phase": "local"
+        },
+        "last_failure": {
+          "step": 192,
+          "reason": "local_recovery_disabled_ablation",
+          "phase": "bounded"
+        },
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "no_local_recovery"
+      }
+    },
+    {
+      "arm": "window_map_w64",
+      "mode": "natural",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [],
+      "seconds": 10.763902800012147,
+      "early_p50": 0.014840099996945355,
+      "early_p95": 0.020730564996483736,
+      "middle_p50": 0.016804600003524683,
+      "middle_p95": 0.02631713999144266,
+      "late_p50": 0.01661390000663232,
+      "late_p95": 0.024479419997078363,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.3440860215053763,
+          0.3333333333333333,
+          0.3225806451612903
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          32.0,
+          31.0,
+          30.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 64,
+        "window_steps": 64,
+        "boundary_step": 575,
+        "max_retained_history": 64,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 16,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 345600,
+        "retained_snapshots": 64,
+        "retained_event_ids": 138,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 181,
+          "boundary_advances": 575
+        },
+        "window_map_frame_bytes": 2566144,
+        "persistent_map": {
+          "revision": 614,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 773,
+          "occupied_cells": 13,
+          "observed_cells": 786,
+          "hit_evidence_cells": 13,
+          "base_boxes": 13,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 5220
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 182
+        },
+        "first_failure": null,
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "window_map"
+      }
+    },
+    {
+      "arm": "window_map_w64",
+      "mode": "forced_depletion",
+      "attempted_batches": 640,
+      "completed_batches": 640,
+      "complete": true,
+      "expected_negative_control": false,
+      "check_passed": true,
+      "injected_steps": [
+        192,
+        384,
+        576
+      ],
+      "seconds": 10.506511100000353,
+      "early_p50": 0.01516655000159517,
+      "early_p95": 0.021326984997722318,
+      "middle_p50": 0.015786699994350784,
+      "middle_p95": 0.024534080005832938,
+      "late_p50": 0.014689999996335246,
+      "late_p95": 0.020130240006255913,
+      "summary": {
+        "valid": true,
+        "error": null,
+        "step": 639,
+        "stopped": false,
+        "alpha": [
+          0.3193752077102027,
+          0.34031239614489867,
+          0.34031239614489867
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          31.0,
+          32.0,
+          32.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 64,
+        "window_steps": 64,
+        "boundary_step": 575,
+        "max_retained_history": 64,
+        "last_replay_steps": 0,
+        "max_replay_steps": 64,
+        "max_map_boxes": 16,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 345600,
+        "retained_snapshots": 64,
+        "retained_event_ids": 138,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 640,
+          "approximate_geometry_transports": 181,
+          "boundary_advances": 575,
+          "local_recovery_triggers": 3,
+          "local_recovery_attempts": 3,
+          "boundary_conditioned_proposals": 3,
+          "bounded_replay_steps": 192,
+          "local_recoveries": 3
+        },
+        "window_map_frame_bytes": 2566144,
+        "persistent_map": {
+          "revision": 614,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "known_free_cells": 773,
+          "occupied_cells": 13,
+          "observed_cells": 786,
+          "hit_evidence_cells": 13,
+          "base_boxes": 13,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 640,
+            "ray_measurements": 66560,
+            "changed_cells": 5220
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 0,
+          "local_geometry_transactions": 640,
+          "geometry_changes": 182
+        },
+        "first_failure": {
+          "step": 192,
+          "reason": "bounded_target_zero_mass",
+          "phase": "local"
+        },
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "window_map"
+      }
+    }
+  ],
+  "required_failures": [],
+  "physical_episodes": 0,
+  "models_created": 0,
+  "fault_scope": "internal particle depletion; not physical closed-loop or task performance",
+  "performance_passed": false
+}

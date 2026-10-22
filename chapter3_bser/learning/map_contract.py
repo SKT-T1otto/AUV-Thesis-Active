@@ -26,7 +26,8 @@ def validate_condition(value):
 def identity(config):
     if 'map_experiment' not in config:return None
     c=validate_condition(config['map_experiment'])
-    return dict(schema=SCHEMA,map_id=c['map_id'],search_planner_id='d2_v1' if c['map_id']=='OLD' else 'coupled_search_v2',
+    from chapter3_bser.experiments.coupled_search_v1.config import search_planner_id
+    return dict(schema=SCHEMA,map_id=c['map_id'],search_planner_id=search_planner_id(c['research_config']),
                 condition_sha256=digest(c),research_config_sha256=digest(c['research_config']),protocol_sha256=c['protocol_sha256'])
 
 
@@ -53,6 +54,22 @@ def advance(runtime,model,*,explore):
     if 'map_experiment' not in runtime.config:return runtime.advance(model,explore=explore)
     started=time.perf_counter()
     try:return runtime.advance(model,explore=explore)
+    except Exception:
+        # Failure evidence is not a completed episode or a successful receipt.
+        # Logging must never mask the original inference/planning exception.
+        session=getattr(runtime,'map_research_session',None)
+        if identity(runtime.config)['search_planner_id']=='coupled_search_bounded_v3' and session is not None:
+            try:
+                import json
+                from pathlib import Path
+                directory=Path(runtime.config['output_dir'])
+                if directory.is_dir():
+                    path=directory/f'map_failure_{time.time_ns()}.json'
+                    with path.open('x',encoding='utf-8') as stream:
+                        json.dump(dict(completed=False,belief=session.belief.summary(),
+                            trace=list(session.belief.timings)),stream,indent=2,allow_nan=False)
+            except (OSError,ValueError,TypeError):pass
+        raise
     finally:
         if not hasattr(runtime,'_map_step_seconds'):runtime._map_step_seconds=[]
         runtime._map_step_seconds.append(time.perf_counter()-started)
@@ -73,7 +90,7 @@ def metrics(runtime):
     elapsed=[r['elapsed_seconds'] for r in proposals]
     steps=getattr(runtime,'_map_step_seconds',[])
     eps=[r['epsilon'] for p in proposals for r in p['compression'].values()]
-    return dict(map_condition=condition,train_map=condition['map_id'],eval_map=condition['map_id'],map_metrics=dict(
+    result=dict(map_condition=condition,train_map=condition['map_id'],eval_map=condition['map_id'],map_metrics=dict(
         core_proposals=len(proposals),d2_fallbacks=0 if session is None else session.counts.get('d2_fallbacks',0),
         path_queries=sum(p['path_queries'] for p in proposals),compression_max_epsilon=max(eps,default=None),
         core_planning_seconds=sum(elapsed),core_planning_p95=None if not elapsed else float(np.percentile(elapsed,95)),
@@ -87,3 +104,7 @@ def metrics(runtime):
         last_core_scored_step=None if session is None else session.counts.get('last_core_scored_step'),
         first_filter_failure=None if session is None else session.belief.first_failure,
         planning_timing_scope='core successful proposals only; runtime timing includes environment and actor'))
+    if condition['search_planner_id']=='coupled_search_bounded_v3':
+        result['map_metrics']['bounded_design']=session.belief.summary()
+        result['map_metrics']['inference_step_trace']=list(session.belief.timings)
+    return result

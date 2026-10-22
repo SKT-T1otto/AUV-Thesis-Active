@@ -38,7 +38,9 @@ def validate_spec(spec,*,mechanism=False):
     from chapter3_bser.experiments.coupled_search_v1.core_config import validate_core_config
     c['new_map_config']=validate_core_config(c['new_map_config'])
     if c['new_map_config']['enabled'] is not True:raise ValueError('experiment NEW map must be explicitly enabled')
-    if c['max_steps']>c['new_map_config']['history_steps']:raise ValueError('complete public evidence history must cover the episode horizon')
+    if (c['new_map_config']['schema']=='ch3.coupled_search.core.v2'
+            and c['max_steps']>c['new_map_config']['history_steps']):
+        raise ValueError('complete public evidence history must cover the episode horizon')
     if 'convergence' in c:
         from chapter3_bser.learning.map_convergence import validate_settings,points
         c['convergence']=validate_settings(c['convergence'])

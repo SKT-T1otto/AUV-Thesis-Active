@@ -8,7 +8,11 @@ from .execution_forecast import PublicExecutionErrors
 class CoupledSearchSession(PublicEvidenceSession):
     def __init__(self, config, vehicle_specs, control_contract):
         super().__init__(config,vehicle_specs,control_contract)
-        self.belief=CoupledBelief(config,control_contract,vehicle_specs)
+        belief_type=CoupledBelief
+        if config.get('schema')=='ch3.coupled_search.core.v3':
+            from .bounded_belief import BoundedCoupledBelief
+            belief_type=BoundedCoupledBelief
+        self.belief=belief_type(config,control_contract,vehicle_specs)
         self.errors=PublicExecutionErrors(config,vehicle_specs,control_contract)
         self.context=None;self.tracker_indices={};self.prediction=None
 
@@ -57,9 +61,10 @@ class CoupledSearchSession(PublicEvidenceSession):
         self.context=context;self.tracker_indices=dict(tracker_indices or {})
 
     def summary(self):
+        from .config import search_planner_id
         result=super().summary()
         result.update(schema='ch3.coupled_search.core_audit.v1',mode='coupled_search',
-            search_planner_id='coupled_search_v2',algorithm_changed=True,estimator_implemented=True,
+            search_planner_id=search_planner_id(self.config),algorithm_changed=True,estimator_implemented=True,
             coupled_belief=self.belief.summary(),execution_error_observations=self.errors.observations,
             prior_is_approximate=True,performance_passed=False)
         return result

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "complete_geometry_comparisons": 2,
+  "compatibility": {
+    "comparisons": 560,
+    "reference_seconds": 0.08975809998810291,
+    "cold_seconds": 0.13337310000497382,
+    "warm_seconds": 0.015759500005515292,
+    "warm_speedup": 5.695491605488157,
+    "false_cases": 48,
+    "results_equal": true,
+    "cache": {
+      "counts": {
+        "prepared_misses": 272,
+        "compatibility_misses": 304,
+        "prepared_hits": 288,
+        "compatibility_hits": 256
+      },
+      "prepared_entries": 272,
+      "compatibility_entries": 304,
+      "prepared_bytes": 4923744,
+      "prepared_peak_bytes": 4923744,
+      "compatibility_bytes": 1318992,
+      "compatibility_peak_bytes": 1318992
+    }
+  },
+  "full_posterior_and_rng_regression_passed": true,
+  "reference_runtime_imports_archived_code": false,
+  "gate": "parity",
+  "source_identity": {
+    "review_sha256": "15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6",
+    "profile": "active_map_cache_v1",
+    "inventory_sha256": "ed5feb5ce6e138af4300dfded4b7c80da4f6fefd69fc3741cd34f178132d44da",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_cache.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_cache_20261022_v1"
+}

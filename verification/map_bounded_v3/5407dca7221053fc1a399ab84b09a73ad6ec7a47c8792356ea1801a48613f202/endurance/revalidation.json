@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "measured_source": {
+    "review_sha256": "e1fba79a54f4255ec470b192670c4c0b706b7d1a3eb4377aa1515567a68b5259",
+    "profile": "active_map_bounded_v3",
+    "inventory_sha256": "b4420040805747d215544a71147b7f7cc5db8802a26d2b96e59ec94476318b2a",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_bounded.v1"
+  },
+  "current_source": {
+    "review_sha256": "5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202",
+    "profile": "active_map_bounded_v3",
+    "inventory_sha256": "fe645a56b6feed13f12eb471ebb75add70ea05ef36a9e59229e92be6c1d21a68",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_bounded.v1"
+  },
+  "changed_files": [
+    "checks/test_bounded_experiment.py",
+    "provenance/map_bounded_evolution.json"
+  ],
+  "runtime_configs_benchmark_and_imported_oracles_byte_identical": true,
+  "reason": "Only the new experimental test fixture validation_count changed from invalid 1 to required minimum 2; evolution hashes updated. All measured runtime/config/tool/oracle bytes are identical. Raw benchmark retains its measured source identity."
+}

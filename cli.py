@@ -13,6 +13,7 @@ COMMANDS = {
     'summarize': 'chapter3_bser.learning.summarize',
     'suite': 'chapter3_bser.learning.suite',
     'map-suite': 'chapter3_bser.learning.map_suite',
+    'bounded-experiment': 'chapter3_bser.learning.bounded_experiment',
 }
 
 

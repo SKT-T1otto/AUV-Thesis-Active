@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "files": 220,
+  "manifest_sha256": "15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6",
+  "baseline_archive_verified": true,
+  "learner_and_physics_byte_identical": true,
+  "all_parent_evidence_immutable": true,
+  "original_geometry_kernel_ast_identical": true,
+  "inference_replay_and_rng_operations_ast_identical": true,
+  "map_algorithm_revision": "coupled_search_v2",
+  "compute_revision": "exact_geometry_cache_v1",
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "15583bfdff62f36feb669473a1b2c7f208a50d57e2414abc8b7493ce7be0bbf6",
+    "profile": "active_map_cache_v1",
+    "inventory_sha256": "ed5feb5ce6e138af4300dfded4b7c80da4f6fefd69fc3741cd34f178132d44da",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_cache.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_cache_20261022_v1"
+}

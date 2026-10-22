@@ -1,6 +1,6 @@
 {
   "schema": "auv.active.check_inventory.v1",
-  "expected_tests": 145,
+  "expected_tests": 192,
   "modules": [
     "checks.test_learning",
     "checks.test_workflow",
@@ -10,7 +10,10 @@
     "checks.test_coupled_search",
     "checks.test_map_suite",
     "checks.test_map_convergence",
-    "checks.test_map_persistence"
+    "checks.test_map_persistence",
+    "checks.test_map_cache",
+    "checks.test_bounded_map",
+    "checks.test_bounded_experiment"
   ],
   "allow_skips": false
 }

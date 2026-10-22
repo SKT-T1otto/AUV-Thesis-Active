@@ -1,0 +1,9 @@
+usage: cli.py [-h] {prepare,run,report} ...
+
+Explicit bounded-map experiments; native fresh policies and paired tasks.
+
+positional arguments:
+  {prepare,run,report}
+
+options:
+  -h, --help            show this help message and exit

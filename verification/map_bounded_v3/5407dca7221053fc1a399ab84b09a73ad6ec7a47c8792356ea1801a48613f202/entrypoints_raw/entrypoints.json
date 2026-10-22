@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202",
+    "profile": "active_map_bounded_v3",
+    "inventory_sha256": "fe645a56b6feed13f12eb471ebb75add70ea05ef36a9e59229e92be6c1d21a68",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_bounded.v1"
+  },
+  "commands": [
+    {
+      "command": [
+        "-m",
+        "cli",
+        "verify"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "bounded-experiment",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "bounded-experiment",
+        "prepare",
+        "--root",
+        "work/bounded_dry_absent",
+        "--spec",
+        "work/missing_spec.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "bounded-experiment",
+        "run",
+        "--root",
+        "work/bounded_dry_absent",
+        "--arms",
+        "full_w64",
+        "--validation",
+        "work/missing_validation.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "bounded-experiment",
+        "report",
+        "--root",
+        "work/bounded_dry_absent",
+        "--output",
+        "work/bounded_report_absent"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "tools.check_bounded_map",
+        "--output",
+        "work/bounded_dry_absent"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "tools.check_map_training",
+        "--bounded",
+        "--output",
+        "work/bounded_dry_absent"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "train",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "map-suite",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "dry_run_outputs_absent": true
+}

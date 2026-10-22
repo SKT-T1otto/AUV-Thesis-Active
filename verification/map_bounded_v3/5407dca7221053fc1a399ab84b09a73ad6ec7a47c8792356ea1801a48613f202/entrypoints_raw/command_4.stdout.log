@@ -1,0 +1,6 @@
+{
+  "executed": false,
+  "command": "report",
+  "root": "work/bounded_dry_absent",
+  "output": "work/bounded_report_absent"
+}

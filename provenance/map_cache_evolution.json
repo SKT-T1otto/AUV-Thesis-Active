@@ -1,0 +1,105 @@
+{
+  "schema": "auv.source_evolution.map_cache.v1",
+  "parent_review_sha256": "3a4c45c21f80c7705e2c8707081e8a6dbbd128190bc4d69d9754ba40f40914d1",
+  "algorithm_changed": false,
+  "map_algorithm_revision": "coupled_search_v2",
+  "compute_revision": "exact_geometry_cache_v1",
+  "changes": [
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/coupled_belief.py",
+      "before_sha256": "93460526cb8be2f4792fefb4f6016e992713fc701ebee96bd92453291c3b6a25",
+      "after_sha256": "e31390c88a592b1f0eee33b7dfcfd2b641428f035c2c4517c0613ecd54ea1ee9",
+      "reason": "Own bounded observation caches per episode and use completed compatibility memo results at the original budget check positions."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/geometry_cache.py",
+      "before_sha256": null,
+      "after_sha256": "3ae5b19eb81e684a7eb29656446d873f74739292cb33fc0c8161a40dad82beba",
+      "reason": "Exact-content immutable scan preprocessing and bounded snapshot/session LRU support; no evidence or posterior truncation."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/geometry_hypotheses.py",
+      "before_sha256": "b7584411a5a0e2235c639dfb23cbbf6ef80e1c031a04104fca69dfeb72cb874a",
+      "after_sha256": "19fde99c18f7da2a12e51b9853cf8d1b69dc580d82322827bf926ed2220335f1",
+      "reason": "Reuse accepted seed/merge/base entries within immutable ray snapshots; preserve original entry and compatibility predicates."
+    },
+    {
+      "path": "chapter3_bser/learning/map_cache_source.py",
+      "before_sha256": null,
+      "after_sha256": "0aad366aefcbad78aea47d74348664a9199f40820ee95f9d9f86072b80eee7d0",
+      "reason": "Verify the successor source inventory and immutable persistence lineage during manual execution."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "e65986abcab2181915cd66f66de1381dbcd219e5da16639295af33e270a84ead",
+      "after_sha256": "e021c7244a9a2979b02239ba805f0b71dd5733c5649395cfa79d62c9bc27de65",
+      "reason": "Select the cache-only successor identity and its independent readiness evidence without changing learner or physics."
+    },
+    {
+      "path": "checks/map_cache_reference.py",
+      "before_sha256": null,
+      "after_sha256": "aed5e440141aa66403408656a9f27155f91762dbbe443068d3fb3a84fc1a8fb4",
+      "reason": "Explicit uncached geometry/compatibility oracle for independent comparison; never imported by runtime."
+    },
+    {
+      "path": "checks/test_map_cache.py",
+      "before_sha256": null,
+      "after_sha256": "85a13e62f3d381b817522f1b6f4a9d25f0a24cf5ab8d5640e99efd7b4227fd56",
+      "reason": "Verify exact results, invalidation, bounded memory, full replay and preserved failure/budget behavior without episodes."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "51baf943b59ddb23d4159cb84f80b2c9b71835b8b55017f2bb617e75f0eb02de",
+      "after_sha256": "88946904eaf76c3742c318af6339640df23b77f3773d545ac7fc8b19038b12f3",
+      "reason": "Extend source negative controls to cache inventory and protected geometry kernel AST."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "fe1a105c33c274fea35e57c8026a16ea1784b061c3e9798771b224fb64b2c717",
+      "after_sha256": "ee0ee4d8fa66c718c1981cf7ded2ce03020d57945f1aeed9be991748e634bfd5",
+      "reason": "Declare the expanded mandatory cache regression inventory; no research parameter changes."
+    },
+    {
+      "path": "provenance/baselines/map_persistence_20261022_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "b08af084743bd8eab455a09a7cf88e9c0cc00939c2fdd879b766d949c4a6c430",
+      "reason": "Freeze the pre-cache persistence source and non-checkpoint evidence, without importing archived implementations."
+    },
+    {
+      "path": "provenance/baselines/map_persistence_20261022_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "878d17a5cee1225a5912716fc51eaa8591742e4c2a6326b90e6455d5229bf63f",
+      "reason": "Freeze the pre-cache persistence source and non-checkpoint evidence, without importing archived implementations."
+    },
+    {
+      "path": "provenance/map_persistence_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "f6e1625248e7b3865a83ea7f28998fb90d467715af741828d062dd7812828e60",
+      "reason": "Pin the unchanged persistence manifest as the immediate immutable parent of cache-only evolution."
+    },
+    {
+      "path": "tools/check_map_cache.py",
+      "before_sha256": null,
+      "after_sha256": "b0f5b124c16fe05e26ae89804fb0b5dc98bbb9c07351b9096c2421f6e156f794",
+      "reason": "Bound pure-data reference/cached parity, call counts, memory and timings; no simulator or weights."
+    },
+    {
+      "path": "tools/map_cache_source.py",
+      "before_sha256": null,
+      "after_sha256": "97f2f76ee385e24fbb08c2e2e61a2d8ab05f2a6309f4e6655c01022a0e745ba8",
+      "reason": "Independently verify source hashes, unchanged kernels/replay operations, protected runtime bytes and frozen parent evidence."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "544bc6dd1038becf578ad7610713d9d14000eff12c726dad6b5f066f4ce29efe",
+      "after_sha256": "1a21831c890baee86b52343ece7119299d5f5c198e513dec54b9bc3bbd8770b8",
+      "reason": "Retain bounded native-map checks for the cache successor during explicit Linux validation."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "5d8d97f9fc467ff6794c938f630350ec0d9936cd62b6846284fb32d45a0a65fa",
+      "after_sha256": "f66448395549f9e786f2bfeda734a0e6f7d99010ed33774268b256a6a1e4a0d6",
+      "reason": "Dispatch independent verification to the new cache-only evolution."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+usage: cli.py [-h] --config CONFIG --output OUTPUT [--execute]
+              [--mechanism-check] [--seed SEED]
+
+options:
+  -h, --help         show this help message and exit
+  --config CONFIG
+  --output OUTPUT
+  --execute
+  --mechanism-check
+  --seed SEED

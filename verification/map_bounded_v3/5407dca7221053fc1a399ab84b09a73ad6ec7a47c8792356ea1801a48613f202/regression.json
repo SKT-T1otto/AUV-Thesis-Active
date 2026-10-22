@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "expected": 192,
+  "tests_run": 192,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202",
+    "profile": "active_map_bounded_v3",
+    "inventory_sha256": "fe645a56b6feed13f12eb471ebb75add70ea05ef36a9e59229e92be6c1d21a68",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_bounded.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_bounded_20261022_v3"
+}

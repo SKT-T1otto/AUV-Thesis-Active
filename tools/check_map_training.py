@@ -18,7 +18,7 @@ def continuous_health(row):
             and (expected<24 or health['last_core_scored_step']>=expected-1))
 
 
-def run(output,*,groups=('OLD_B2','NEW_B2','OLD_B3','NEW_B3')):
+def run(output,*,groups=('OLD_B2','NEW_B2','OLD_B3','NEW_B3'),bounded=False):
     import torch
     from chapter3_bser.learning.map_suite import prepare,load_plan,_record_training,read
     from chapter3_bser.learning.map_report import summarize
@@ -31,6 +31,11 @@ def run(output,*,groups=('OLD_B2','NEW_B2','OLD_B3','NEW_B3')):
     if not output.is_relative_to(ROOT/'work'):raise ValueError('new Active/work output required')
     output.mkdir(parents=True,exist_ok=False);source=verify_reviewed_changes()
     spec=read(ROOT/'configs/map_comparison_v1.json')
+    if bounded:
+        spec['new_map_config']=read(ROOT/'configs/coupled_search_bounded_v3.json')
+        # Deliberately identified short-window fixture, allowing rollover in
+        # <=32 physical steps without changing the formal 64-step default.
+        spec['new_map_config']['history_steps']=16
     spec.pop('convergence',None)
     spec.update(groups=list(groups),seeds=[2729],train_episodes=1,max_steps=32,evaluation_count=1,
                 checkpoint_interval=1,bootstrap_draws=32)
@@ -70,6 +75,10 @@ def run(output,*,groups=('OLD_B2','NEW_B2','OLD_B3','NEW_B3')):
                             raise ValueError('continuous new-map participation failed in '+phase)
                     if train_row['map_metrics']['last_core_scored_step']<24:
                         raise ValueError('long-search fixture must exercise late new-map scoring')
+                    if bounded:
+                        b=train_row['map_metrics']['bounded_design']
+                        if b['window_steps']!=16 or b['retained_history']>16 or b['boundary_step']<1:
+                            raise ValueError('bounded native fixture did not exercise window rollover')
                 completed.append(dict(job=job['name'],map_condition=job['map_condition'],training_steps=summary['environment_steps'],
                     evaluation_steps=eval_row['actual_length'],complete_updates=summary['optimizer_updates'],initial_state=trainer.initial_model_state_sha256,
                     core_proposals=train_row['map_metrics']['core_proposals'],evaluation_policy_unchanged=True,
@@ -82,6 +91,7 @@ def run(output,*,groups=('OLD_B2','NEW_B2','OLD_B3','NEW_B3')):
             physical_steps=sum(r['training_steps']+r['evaluation_steps'] for r in completed),max_episode_steps=32,
             max_complete_updates_per_model=4,checkpoint_file_restore_executed=False,formal_training_started=False,
             jobs=completed,report=report,performance_passed=False)
+        result['bounded_window_fixture']=16 if bounded else None
     except Exception:
         result=dict(passed=False,source=source,episodes_started=started,jobs=completed,traceback=traceback.format_exc(),
                     checkpoint_file_restore_executed=False,formal_training_started=False,performance_passed=False)
@@ -91,9 +101,10 @@ def run(output,*,groups=('OLD_B2','NEW_B2','OLD_B3','NEW_B3')):
 
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',required=True);parser.add_argument('--execute',action='store_true')
+    parser.add_argument('--bounded',action='store_true')
     args=parser.parse_args(argv)
     if not args.execute:print(json.dumps(dict(executed=False,episodes=8,max_steps=32,max_complete_updates_per_model=4,output=args.output)));return
-    result=run(args.output)
+    result=run(args.output,bounded=args.bounded)
     print(json.dumps({k:v for k,v in result.items() if k not in ('jobs','report')},indent=2))
     if not result['passed']:raise SystemExit(1)
 
