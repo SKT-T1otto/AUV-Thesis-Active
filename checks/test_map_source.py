@@ -1,17 +1,26 @@
 """Independent evolution negative controls; no runtime or archived-code imports."""
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 import tempfile
 import unittest
 from project_paths import ROOT
-from tools.map_bounded_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
+from tools.map_route_health_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
+
+
+def source_directory():
+    parent=str(Path(tempfile.gettempdir()).resolve())
+    if os.name=='nt' and not parent.startswith('\\\\?\\'):parent='\\\\?\\'+parent
+    return tempfile.TemporaryDirectory(dir=parent)
 
 
 class MapSource(unittest.TestCase):
     def fixture(self, directory):
-        root = Path(directory)
+        root = Path(directory).resolve()
+        if os.name=='nt' and not str(root).startswith('\\\\?\\'):
+            root=Path('\\\\?\\'+str(root))
         manifest = json.loads((ROOT/MANIFEST).read_text(encoding='utf-8'))
         baseline = json.loads((ROOT/BASELINE/'baseline.json').read_text(encoding='utf-8'))
         names = set(manifest['files']) | {MANIFEST, 'provenance/active_manifest.json'}
@@ -22,20 +31,20 @@ class MapSource(unittest.TestCase):
         return root, manifest
 
     def test_missing_new_module_rejected(self):
-        with tempfile.TemporaryDirectory() as directory:
+        with source_directory() as directory:
             root, manifest = self.fixture(directory)
             (root/'chapter3_bser/experiments/coupled_search_v1/bounded_belief.py').unlink()
             with self.assertRaisesRegex(ValueError, 'inventory mismatch'): verify(root)
 
     def test_parent_archive_and_old_evidence_are_immutable(self):
-        with tempfile.TemporaryDirectory() as directory:
+        with source_directory() as directory:
             root, manifest = self.fixture(directory)
             evidence = root/'verification/rebuild/receipt.json'
             evidence.write_text('{}',encoding='utf-8')
             with self.assertRaisesRegex(ValueError, 'parent evidence changed'): verify(root)
 
     def test_resigned_manifest_cannot_hide_a_physics_change(self):
-        with tempfile.TemporaryDirectory() as directory:
+        with source_directory() as directory:
             root, manifest = self.fixture(directory)
             name = 'core/env/uav_env.py'; source = (root/name).read_text(encoding='utf-8')
             self.assertIn('self._agent_pos += self._agent_vel * self.dt',source)
@@ -56,7 +65,7 @@ class MapSource(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'legacy AST changed'): verify(root)
 
     def test_resigned_manifest_cannot_hide_a_geometry_kernel_change(self):
-        with tempfile.TemporaryDirectory() as directory:
+        with source_directory() as directory:
             root, manifest = self.fixture(directory)
             name='chapter3_bser/experiments/coupled_search_v1/geometry_hypotheses.py'
             path=root/name;source=path.read_text(encoding='utf-8')

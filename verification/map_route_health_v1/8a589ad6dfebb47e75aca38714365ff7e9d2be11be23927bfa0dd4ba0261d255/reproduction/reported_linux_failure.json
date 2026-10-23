@@ -1,0 +1,10 @@
+{
+  "reported_by_user": true,
+  "source_commit": "07a9625c2772fa789490e70ce7423ba64baa809a",
+  "completed_episodes": 20,
+  "completed_environment_steps": 5410,
+  "failing_episode": 21,
+  "environment_step_at_failure": 5436,
+  "error": "continuous coupled-search health contract failed; no completed episode may be published",
+  "original_trained_policy_replayed": false
+}

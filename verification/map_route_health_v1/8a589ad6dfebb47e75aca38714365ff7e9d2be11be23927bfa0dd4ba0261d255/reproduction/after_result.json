@@ -1,0 +1,1374 @@
+{
+  "steps": 32,
+  "summary": {
+    "episode_id": 21,
+    "episode_index": 21,
+    "scenario_id": "unknown_train_m20_0021_short32_probe",
+    "scenario_seed": 2002749,
+    "found": false,
+    "success": false,
+    "success_if_found": false,
+    "found_step": null,
+    "success_step": null,
+    "remaining_steps_after_found": null,
+    "executor_target_received_step": null,
+    "handoff_delay": null,
+    "found_to_target_received_steps": null,
+    "found_to_success_steps": null,
+    "executor_distance_at_handoff": null,
+    "executor_distance_to_target_at_found": null,
+    "executor_distance_to_target_at_received": null,
+    "executor_min_distance_to_target": null,
+    "executor_final_distance_to_target": null,
+    "executor_distance_to_intercept_at_received": null,
+    "executor_min_distance_to_intercept": null,
+    "executor_final_distance_to_intercept": null,
+    "target_prediction_error_at_delivery": null,
+    "mean_target_prediction_error": null,
+    "target_prediction_map_fallback_count": 0,
+    "capture_contact_step_count": 0,
+    "capture_full_hold_step_count": 0,
+    "capture_hold_counter_max": 0,
+    "capture_swept_min_distance": null,
+    "executor_path_unreachable_count": null,
+    "executor_invalid_count": 0,
+    "executor_replan_count": 1,
+    "executor_invalid_assignment_unreachable_count": 0,
+    "executor_invalid_query_unreachable_count": 0,
+    "executor_invalid_cost_increase_count": 0,
+    "executor_invalid_stale_snapshot_deferred_count": 30,
+    "executor_validity_evaluation_count": 1,
+    "executor_validity_deferred_count": 30,
+    "public_target_update_event_count": 0,
+    "public_target_update_accepted_count": 0,
+    "public_target_shift_sum": 0.0,
+    "public_target_shift_mean": null,
+    "public_target_shift_max": null,
+    "environment_public_target_at_handoff": null,
+    "controller_execution_target_at_handoff": null,
+    "installed_executor_tracking_target_at_handoff": null,
+    "controller_to_public_target_error_at_handoff": null,
+    "controller_to_public_target_error_mean": null,
+    "controller_to_public_target_error_final": null,
+    "full_planning_refresh_count": 9,
+    "handoff_forced_refresh_count": 0,
+    "target_shift_forced_refresh_count": 0,
+    "post_found_collision_count": 0,
+    "pre_found_base_reward": 0.6578734526410699,
+    "post_found_base_reward": 0.0,
+    "post_found_shaping_reward": 0.0,
+    "completion_reward_post_tanh": 0.0,
+    "adjusted_episode_reward": 0.16446836316026747,
+    "search_residual_ratio_pre_found": 0.0,
+    "search_residual_ratio_post_found": null,
+    "executor_residual_ratio_pre_found": 0.0,
+    "executor_residual_ratio_post_found": null,
+    "initial_planner_endpoint_fallback_count": 0,
+    "episode_terminated": true,
+    "episode_truncated": false,
+    "termination_reason": "timeout",
+    "terminal_step": 32,
+    "first_collision_step": null,
+    "first_collision_agent_ids": [],
+    "first_collision_phase": null,
+    "collision_records": [],
+    "mission_complete": false,
+    "task_protocol": "collision_terminal_v1",
+    "collision_detection_revision": "segment_closed_aabb_v1",
+    "terminal_reward_revision": "team_failure_override_v1",
+    "terminated": true,
+    "truncated": false,
+    "safe_success": false,
+    "collision_episode": false,
+    "remaining_task_steps": 0,
+    "bootstrap_mask": 0.0,
+    "contact_bonus_count": 0,
+    "hold_bonus_count": 0,
+    "terminal_bonus_count": 0,
+    "discovery_correction_count": 0,
+    "searcher_zeroed_step_count": 0,
+    "reward_objective": "team_mean_v1",
+    "source_reward_revision": "execution_reward_v2_after_terminal_override_v1",
+    "gamma": 0.95,
+    "team_undiscounted_return": 0.16446836316026747,
+    "team_discounted_return": 0.07647940599086651,
+    "source_individual_returns": [
+      0.06602887185363215,
+      0.26248016487807035,
+      0.26637792540714145,
+      0.06298649436212145
+    ],
+    "source_searcher_zeroed_step_count": 0,
+    "source_adjusted_episode_reward": 0.6578734526410699,
+    "planner": {
+      "planner_protocol": "d2_v1",
+      "reference_arm": "D2",
+      "safety_variant": "V4",
+      "safe_counts": {
+        "path_safety_checks": 71,
+        "forced_planning_refreshes": 7,
+        "recovery_failure:ATOMIC_REJECT_MISSING_SEARCH_ROUTE": 5,
+        "recovery_replans": 1
+      },
+      "effect_counts": {
+        "standby_unreachable_queries": 0,
+        "standby_shortage_events": 0
+      },
+      "unresolved_searcher_ids": [],
+      "audit_record_count": 9,
+      "public_evidence": {
+        "schema": "ch3.coupled_search.core_audit.v1",
+        "mode": "coupled_search",
+        "search_planner_id": "coupled_search_bounded_v3",
+        "algorithm_changed": true,
+        "estimator_implemented": true,
+        "valid": true,
+        "error": null,
+        "last_event_sequence": 65,
+        "counts": {
+          "scan_batches": 33,
+          "ray_measurements": 3432,
+          "search_batches": 32,
+          "available_search_batches": 32,
+          "decision_public_snapshots": 32,
+          "public_unroutable_proposals": 7,
+          "core_proposals": 8,
+          "route_versions": 26,
+          "physical_transitions": 32,
+          "negative_observations": 32,
+          "discovery_checks": 32,
+          "terminal_transitions": 1,
+          "core_scored_steps": 31,
+          "last_core_scored_step": 31,
+          "forecast_invalidations": 5
+        },
+        "retained_audit_records": 107,
+        "latest_route_sha256": "ee53bc031583c4fdd0f6cfaf89504b878904f9e886b26cd9051d664c889dfa17",
+        "coupled_belief": {
+          "valid": true,
+          "error": null,
+          "step": 32,
+          "stopped": true,
+          "alpha": [
+            0.2962962962962963,
+            0.3456790123456791,
+            0.35802469135802467
+          ],
+          "history_complete": false,
+          "conditional_ess": [
+            23.999999999999996,
+            28.0,
+            29.0
+          ],
+          "historical_information_carried_by_boundary": true,
+          "retained_history": 32,
+          "window_steps": 64,
+          "boundary_step": 0,
+          "max_retained_history": 32,
+          "last_replay_steps": 0,
+          "max_replay_steps": 0,
+          "max_map_boxes": 14,
+          "last_replay_work": 0,
+          "boundary_array_bytes": 5400,
+          "snapshot_array_bytes": 172800,
+          "retained_snapshots": 32,
+          "retained_event_ids": 65,
+          "counts": {
+            "initializations": 1,
+            "joint_updates": 33,
+            "approximate_geometry_transports": 14
+          },
+          "window_map_frame_bytes": 0,
+          "persistent_map": {
+            "revision": 33,
+            "grid_shape": [
+              20,
+              20,
+              10
+            ],
+            "grid_cells": 4000,
+            "spacing": [
+              1.0,
+              1.0,
+              0.8
+            ],
+            "known_free_cells": 1103,
+            "occupied_cells": 12,
+            "observed_cells": 1115,
+            "hit_evidence_cells": 29,
+            "base_boxes": 8,
+            "state_array_bytes": 40000,
+            "counts": {
+              "scan_batches": 33,
+              "ray_measurements": 3432,
+              "changed_cells": 1144
+            },
+            "resolution_approximation": true
+          },
+          "geometry_counts": {
+            "unknown_boxes_removed": 2,
+            "local_geometry_transactions": 33,
+            "geometry_changes": 15
+          },
+          "first_failure": null,
+          "last_failure": null,
+          "approximate_map_transport": true,
+          "approximate_boundary_proposals": true,
+          "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+          "design_variant": "full"
+        },
+        "execution_error_observations": 32,
+        "prior_is_approximate": true,
+        "performance_passed": false
+      }
+    },
+    "actual_length": 32,
+    "handoff_event_step": null,
+    "handoff_decision_step": null,
+    "repair_version": "ch3.d2.implementation_repair.v2",
+    "repair_switches": {
+      "waypoint_arrival": true,
+      "inactive_actor": true,
+      "hold_residual": true
+    },
+    "waypoint_reward_timing": "arrival_before_reward_v1",
+    "action_safety": {
+      "disabled_agent_steps": 25,
+      "suppressed_nonzero_residuals": 0
+    },
+    "raw_pre_tanh_components": {
+      "reward_find_event": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_early_find": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_completion_event": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_early_completion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_progress": [
+        -3.446331113576889,
+        75.10195422172546,
+        76.7452564239502,
+        31.73765468597412
+      ],
+      "reward_coverage": [
+        36.37499976158142,
+        36.37499976158142,
+        36.37499976158142,
+        0.0
+      ],
+      "reward_time_penalty": [
+        -6.400000095367432,
+        -6.400000095367432,
+        -6.400000095367432,
+        -6.400000095367432
+      ],
+      "reward_energy_penalty": [
+        -0.04885797863880725,
+        -0.038008006173186004,
+        -0.08092174521880224,
+        -0.07435388080921257
+      ],
+      "reward_smoothness_penalty": [
+        -0.06752613214938208,
+        -0.04403448505581764,
+        -0.08482051680130098,
+        -0.06862895283529724
+      ],
+      "reward_collision_penalty": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_separation_penalty": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "team_return_by_phase": {
+      "pre_found": 0.16446836316026747
+    },
+    "observation_risks": {
+      "input_contract": [
+        28,
+        3,
+        124
+      ],
+      "remaining_time_observed": false,
+      "previous_acceleration_observed": false,
+      "full_map_observed": false,
+      "execution_gate_is_network_input": false,
+      "markov_sufficiency_established": false
+    },
+    "safety_guarantee": false,
+    "reward_metric_equivalence_established": false
+  },
+  "health": {
+    "map_condition": {
+      "schema": "auv.active.map_condition.v1",
+      "map_id": "NEW",
+      "search_planner_id": "coupled_search_bounded_v3",
+      "condition_sha256": "853a7fac98c28f9136441decf3732df6a9bfaaeb00808f9d03dacd82ba15beb1",
+      "research_config_sha256": "4eb64aebb3e4501724b779e68ae78cf66258070008b178c0b87b4233b38c445b",
+      "protocol_sha256": "b29bd9de2d6ff5f47b8ad1eb7cd10bbc4f71693621d82eae95bbed53194d8844"
+    },
+    "train_map": "NEW",
+    "eval_map": "NEW",
+    "map_metrics": {
+      "core_proposals": 8,
+      "d2_fallbacks": 0,
+      "path_queries": 226,
+      "compression_max_epsilon": 0.03513053601425003,
+      "core_planning_seconds": 3.027327200077707,
+      "core_planning_p95": 0.5377196050118073,
+      "runtime_step_seconds": 0,
+      "runtime_step_p50": null,
+      "runtime_step_p95": null,
+      "final_filter_valid": true,
+      "search_batches": 32,
+      "available_search_batches": 32,
+      "unavailable_search_batches": 0,
+      "core_scored_steps": 31,
+      "last_core_scored_step": 31,
+      "first_filter_failure": null,
+      "planning_timing_scope": "core successful proposals only; runtime timing includes environment and actor",
+      "bounded_design": {
+        "valid": true,
+        "error": null,
+        "step": 32,
+        "stopped": true,
+        "alpha": [
+          0.2962962962962963,
+          0.3456790123456791,
+          0.35802469135802467
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          23.999999999999996,
+          28.0,
+          29.0
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 32,
+        "window_steps": 64,
+        "boundary_step": 0,
+        "max_retained_history": 32,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 14,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 172800,
+        "retained_snapshots": 32,
+        "retained_event_ids": 65,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 33,
+          "approximate_geometry_transports": 14
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 33,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            0.8
+          ],
+          "known_free_cells": 1103,
+          "occupied_cells": 12,
+          "observed_cells": 1115,
+          "hit_evidence_cells": 29,
+          "base_boxes": 8,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 33,
+            "ray_measurements": 3432,
+            "changed_cells": 1144
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 2,
+          "local_geometry_transactions": 33,
+          "geometry_changes": 15
+        },
+        "first_failure": null,
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "full"
+      },
+      "inference_step_trace": [
+        {
+          "step": 0,
+          "seconds": 0.00881120000849478,
+          "retained_history": 0,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.008047400013310835,
+          "target_and_recovery_seconds": 0.0007518000202253461
+        },
+        {
+          "step": 1,
+          "seconds": 0.008660399995278567,
+          "retained_history": 1,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.007897100003901869,
+          "target_and_recovery_seconds": 0.0007428999815601856
+        },
+        {
+          "step": 2,
+          "seconds": 0.008230699982959777,
+          "retained_history": 2,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.0075702999893110245,
+          "target_and_recovery_seconds": 0.0006391000060830265
+        },
+        {
+          "step": 3,
+          "seconds": 0.007343700010096654,
+          "retained_history": 3,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.0069306000077631325,
+          "target_and_recovery_seconds": 0.00039229998947121203
+        },
+        {
+          "step": 4,
+          "seconds": 0.00812360001145862,
+          "retained_history": 4,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.006985600019106641,
+          "target_and_recovery_seconds": 0.0011171999794896692
+        },
+        {
+          "step": 5,
+          "seconds": 0.007795599987730384,
+          "retained_history": 5,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.006761299999197945,
+          "target_and_recovery_seconds": 0.0010130000009667128
+        },
+        {
+          "step": 6,
+          "seconds": 0.011095899972133338,
+          "retained_history": 6,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.008751200017286465,
+          "target_and_recovery_seconds": 0.002320500003406778
+        },
+        {
+          "step": 7,
+          "seconds": 0.007547200017143041,
+          "retained_history": 7,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.007107499986886978,
+          "target_and_recovery_seconds": 0.0004202999989502132
+        },
+        {
+          "step": 8,
+          "seconds": 0.008262599993031472,
+          "retained_history": 8,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.007311299996217713,
+          "target_and_recovery_seconds": 0.0009297000069636852
+        },
+        {
+          "step": 9,
+          "seconds": 0.008599599997978657,
+          "retained_history": 9,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.0076997000142000616,
+          "target_and_recovery_seconds": 0.0008738999895285815
+        },
+        {
+          "step": 10,
+          "seconds": 0.009070000000065193,
+          "retained_history": 10,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.007768299983581528,
+          "target_and_recovery_seconds": 0.0012798999960068613
+        },
+        {
+          "step": 11,
+          "seconds": 0.008969500020612031,
+          "retained_history": 11,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.00807609999901615,
+          "target_and_recovery_seconds": 0.0008711999980732799
+        },
+        {
+          "step": 12,
+          "seconds": 0.009804800007259473,
+          "retained_history": 12,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 9,
+          "valid": true,
+          "map_seconds": 0.00839780000387691,
+          "target_and_recovery_seconds": 0.0013844000059179962
+        },
+        {
+          "step": 13,
+          "seconds": 0.009836600016569719,
+          "retained_history": 13,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 11,
+          "valid": true,
+          "map_seconds": 0.00792820000788197,
+          "target_and_recovery_seconds": 0.0018856999813579023
+        },
+        {
+          "step": 14,
+          "seconds": 0.008171199995558709,
+          "retained_history": 14,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 11,
+          "valid": true,
+          "map_seconds": 0.007042200013529509,
+          "target_and_recovery_seconds": 0.0011082999990321696
+        },
+        {
+          "step": 15,
+          "seconds": 0.00892069999827072,
+          "retained_history": 15,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 12,
+          "valid": true,
+          "map_seconds": 0.007491700001992285,
+          "target_and_recovery_seconds": 0.0014073000056669116
+        },
+        {
+          "step": 16,
+          "seconds": 0.00877119999495335,
+          "retained_history": 16,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 12,
+          "valid": true,
+          "map_seconds": 0.00767180000548251,
+          "target_and_recovery_seconds": 0.0010790000087581575
+        },
+        {
+          "step": 17,
+          "seconds": 0.009136099979514256,
+          "retained_history": 17,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 13,
+          "valid": true,
+          "map_seconds": 0.007499800005462021,
+          "target_and_recovery_seconds": 0.0016147999849636108
+        },
+        {
+          "step": 18,
+          "seconds": 0.010619000007864088,
+          "retained_history": 18,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 13,
+          "valid": true,
+          "map_seconds": 0.008189299987861887,
+          "target_and_recovery_seconds": 0.002408500004094094
+        },
+        {
+          "step": 19,
+          "seconds": 0.009433800005353987,
+          "retained_history": 19,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.00762440002290532,
+          "target_and_recovery_seconds": 0.00178829999640584
+        },
+        {
+          "step": 20,
+          "seconds": 0.008689899987075478,
+          "retained_history": 20,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.007099400012521073,
+          "target_and_recovery_seconds": 0.0015685000107623637
+        },
+        {
+          "step": 21,
+          "seconds": 0.008748600026592612,
+          "retained_history": 21,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.008183799975086004,
+          "target_and_recovery_seconds": 0.0005439000087790191
+        },
+        {
+          "step": 22,
+          "seconds": 0.007674499996937811,
+          "retained_history": 22,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.0070903000014368445,
+          "target_and_recovery_seconds": 0.0005626000056508929
+        },
+        {
+          "step": 23,
+          "seconds": 0.008983400010038167,
+          "retained_history": 23,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.007578999997349456,
+          "target_and_recovery_seconds": 0.0013832999975420535
+        },
+        {
+          "step": 24,
+          "seconds": 0.007803499989677221,
+          "retained_history": 24,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.0073148999945260584,
+          "target_and_recovery_seconds": 0.0004675000091083348
+        },
+        {
+          "step": 25,
+          "seconds": 0.008387200010474771,
+          "retained_history": 25,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.007890799985034391,
+          "target_and_recovery_seconds": 0.00047670002095401287
+        },
+        {
+          "step": 26,
+          "seconds": 0.00981570000294596,
+          "retained_history": 26,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.007543900021119043,
+          "target_and_recovery_seconds": 0.0022403000039048493
+        },
+        {
+          "step": 27,
+          "seconds": 0.008357199985766783,
+          "retained_history": 27,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.006778899987693876,
+          "target_and_recovery_seconds": 0.00155870002345182
+        },
+        {
+          "step": 28,
+          "seconds": 0.008375000004889444,
+          "retained_history": 28,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.00752499999362044,
+          "target_and_recovery_seconds": 0.0008292999991681427
+        },
+        {
+          "step": 29,
+          "seconds": 0.008632400014903396,
+          "retained_history": 29,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.007440099987434223,
+          "target_and_recovery_seconds": 0.0011719999893102795
+        },
+        {
+          "step": 30,
+          "seconds": 0.00801250000949949,
+          "retained_history": 30,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.0072438000061083585,
+          "target_and_recovery_seconds": 0.0007477999897673726
+        },
+        {
+          "step": 31,
+          "seconds": 0.009399600006872788,
+          "retained_history": 31,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.0077837999851908535,
+          "target_and_recovery_seconds": 0.001594500005012378
+        },
+        {
+          "step": 32,
+          "seconds": 0.008642899978440255,
+          "retained_history": 32,
+          "boundary_step": 0,
+          "replay_steps": 0,
+          "replay_work": 0,
+          "map_boxes": 14,
+          "valid": true,
+          "map_seconds": 0.007568500004708767,
+          "target_and_recovery_seconds": 0.0010509999992791563
+        }
+      ]
+    }
+  },
+  "session": {
+    "schema": "ch3.coupled_search.core_audit.v1",
+    "mode": "coupled_search",
+    "search_planner_id": "coupled_search_bounded_v3",
+    "algorithm_changed": true,
+    "estimator_implemented": true,
+    "valid": true,
+    "error": null,
+    "last_event_sequence": 65,
+    "counts": {
+      "scan_batches": 33,
+      "ray_measurements": 3432,
+      "search_batches": 32,
+      "available_search_batches": 32,
+      "decision_public_snapshots": 32,
+      "public_unroutable_proposals": 7,
+      "core_proposals": 8,
+      "route_versions": 26,
+      "physical_transitions": 32,
+      "negative_observations": 32,
+      "discovery_checks": 32,
+      "terminal_transitions": 1,
+      "core_scored_steps": 31,
+      "last_core_scored_step": 31,
+      "forecast_invalidations": 5
+    },
+    "retained_audit_records": 107,
+    "latest_route_sha256": "ee53bc031583c4fdd0f6cfaf89504b878904f9e886b26cd9051d664c889dfa17",
+    "coupled_belief": {
+      "valid": true,
+      "error": null,
+      "step": 32,
+      "stopped": true,
+      "alpha": [
+        0.2962962962962963,
+        0.3456790123456791,
+        0.35802469135802467
+      ],
+      "history_complete": false,
+      "conditional_ess": [
+        23.999999999999996,
+        28.0,
+        29.0
+      ],
+      "historical_information_carried_by_boundary": true,
+      "retained_history": 32,
+      "window_steps": 64,
+      "boundary_step": 0,
+      "max_retained_history": 32,
+      "last_replay_steps": 0,
+      "max_replay_steps": 0,
+      "max_map_boxes": 14,
+      "last_replay_work": 0,
+      "boundary_array_bytes": 5400,
+      "snapshot_array_bytes": 172800,
+      "retained_snapshots": 32,
+      "retained_event_ids": 65,
+      "counts": {
+        "initializations": 1,
+        "joint_updates": 33,
+        "approximate_geometry_transports": 14
+      },
+      "window_map_frame_bytes": 0,
+      "persistent_map": {
+        "revision": 33,
+        "grid_shape": [
+          20,
+          20,
+          10
+        ],
+        "grid_cells": 4000,
+        "spacing": [
+          1.0,
+          1.0,
+          0.8
+        ],
+        "known_free_cells": 1103,
+        "occupied_cells": 12,
+        "observed_cells": 1115,
+        "hit_evidence_cells": 29,
+        "base_boxes": 8,
+        "state_array_bytes": 40000,
+        "counts": {
+          "scan_batches": 33,
+          "ray_measurements": 3432,
+          "changed_cells": 1144
+        },
+        "resolution_approximation": true
+      },
+      "geometry_counts": {
+        "unknown_boxes_removed": 2,
+        "local_geometry_transactions": 33,
+        "geometry_changes": 15
+      },
+      "first_failure": null,
+      "last_failure": null,
+      "approximate_map_transport": true,
+      "approximate_boundary_proposals": true,
+      "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+      "design_variant": "full"
+    },
+    "execution_error_observations": 32,
+    "prior_is_approximate": true,
+    "performance_passed": false
+  },
+  "audit": [
+    {
+      "kind": "coupled_proposal",
+      "step": 0,
+      "trigger": "INITIALIZE",
+      "target_identity": "522770e9a39399713fffbc80b835d489f85b2f307c03e542aebe16e57486f6d9",
+      "scenario_identity": "4e431ed90544bdf0e8f1eea2baae74178135d8e15569b5966b0f1db6624325a3",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_df10be4d95ce9e7e9d0d"
+      ],
+      "compression": {
+        "1": {
+          "raw": 12,
+          "representatives": 2,
+          "epsilon": 0.01924864120065497,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "2": {
+          "raw": 12,
+          "representatives": 4,
+          "epsilon": 0.011165660959620943,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        }
+      },
+      "combinations": 8,
+      "path_queries": 48,
+      "elapsed_seconds": 0.5649635000154376,
+      "objective": 0.08583777027980355,
+      "detection": 0.09375,
+      "scenario_utilities": [
+        0.09375,
+        0.09375,
+        0.09375
+      ],
+      "scenario_detection": [
+        0.09375,
+        0.09375,
+        0.09375
+      ],
+      "frozen_agents": [],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.109375,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {
+        "0": "invalid_start"
+      }
+    },
+    {
+      "kind": "coupled_proposal",
+      "step": 1,
+      "trigger": "SAFE_SEARCH_RECOVERY",
+      "target_identity": "262f9585d1ff23cee4fb88d29e94c42babde7b6957c0eb30f8ece46725abf53e",
+      "scenario_identity": "f17fbb8fe42154f318275012734611d7104b5dadcb9a25d490e3b612ce4f2dd4",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_df10be4d95ce9e7e9d0d"
+      ],
+      "compression": {
+        "1": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "2": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        }
+      },
+      "combinations": 1,
+      "path_queries": 24,
+      "elapsed_seconds": 0.3518517000193242,
+      "objective": 0.036504397596751906,
+      "detection": 0.04395604395604395,
+      "scenario_utilities": [
+        0.04395604395604396,
+        0.04395604395604396,
+        0.04395604395604396
+      ],
+      "scenario_detection": [
+        0.04395604395604396,
+        0.04395604395604396,
+        0.04395604395604396
+      ],
+      "frozen_agents": [
+        1,
+        2
+      ],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.0625,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {
+        "0": "invalid_start"
+      }
+    },
+    {
+      "kind": "coupled_proposal",
+      "step": 6,
+      "trigger": "BELIEF_SHIFT",
+      "target_identity": "47b11821a314ed8f9a61ab468de65ade2f44f76f9d2b3c460296ca422b180055",
+      "scenario_identity": "6092ab4dfbca27c02c71441748cff4a98e1b8f39a5c00bc8f5851a53cc368bea",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_d609f1f5274406d03efc"
+      ],
+      "compression": {
+        "1": {
+          "raw": 12,
+          "representatives": 4,
+          "epsilon": 0.02371017717374393,
+          "reached_error_target": false,
+          "stopped_by": "representative_cap"
+        },
+        "2": {
+          "raw": 12,
+          "representatives": 4,
+          "epsilon": 0.03513053601425003,
+          "reached_error_target": false,
+          "stopped_by": "representative_cap"
+        }
+      },
+      "combinations": 16,
+      "path_queries": 46,
+      "elapsed_seconds": 0.4871238000050653,
+      "objective": 0.06778447932715331,
+      "detection": 0.07326007326007325,
+      "scenario_utilities": [
+        0.06593406593406594,
+        0.07692307692307693,
+        0.07692307692307693
+      ],
+      "scenario_detection": [
+        0.06593406593406594,
+        0.07692307692307693,
+        0.07692307692307693
+      ],
+      "frozen_agents": [],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.057291666666666664,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {
+        "0": "invalid_start"
+      }
+    },
+    {
+      "kind": "decision",
+      "step": 6,
+      "previous_stored_objective": 0.037079368989916726,
+      "old_current_objective": 0.03714315941199707,
+      "objective": 0.06778447932715331,
+      "installed": true,
+      "reason": "D_ACCEPT_ELIGIBLE_PROPOSAL",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_d609f1f5274406d03efc"
+      ],
+      "standby": [
+        11.0,
+        5.0,
+        4.5
+      ]
+    },
+    {
+      "kind": "coupled_proposal",
+      "step": 7,
+      "trigger": "SAFE_SEARCH_RECOVERY",
+      "target_identity": "1006353163d83ae39289a81f9433be9d52e4d60f131acf62c5aa000ffc628cd4",
+      "scenario_identity": "cc73caacae17c6e999d21a501679fae923316e40c40b0b62a451ea4e105a0e3c",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_d609f1f5274406d03efc"
+      ],
+      "compression": {
+        "1": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "2": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        }
+      },
+      "combinations": 1,
+      "path_queries": 24,
+      "elapsed_seconds": 0.2845151000074111,
+      "objective": 0.06232941581677101,
+      "detection": 0.06593406593406592,
+      "scenario_utilities": [
+        0.06593406593406594,
+        0.06593406593406594,
+        0.06593406593406594
+      ],
+      "scenario_detection": [
+        0.06593406593406594,
+        0.06593406593406594,
+        0.06593406593406594
+      ],
+      "frozen_agents": [
+        1,
+        2
+      ],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.046875,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {
+        "0": "invalid_start"
+      }
+    },
+    {
+      "kind": "coupled_proposal",
+      "step": 12,
+      "trigger": "SAFE_SEARCH_RECOVERY",
+      "target_identity": "3797dd5c95f632ecdfd697a195a9adad5ea9fbb1f2bea7433826fbf2d920c7a7",
+      "scenario_identity": "8c679671f4609d453edf8ffc2109cf8e71b6f3c860a567386a63d9305d22fcf6",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_d609f1f5274406d03efc"
+      ],
+      "compression": {
+        "1": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "2": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        }
+      },
+      "combinations": 1,
+      "path_queries": 24,
+      "elapsed_seconds": 0.2929983999929391,
+      "objective": 0.07457159552701734,
+      "detection": 0.07777777777777778,
+      "scenario_utilities": [
+        0.07777777777777778,
+        0.07777777777777778,
+        0.07777777777777778
+      ],
+      "scenario_detection": [
+        0.07777777777777778,
+        0.07777777777777778,
+        0.07777777777777778
+      ],
+      "frozen_agents": [
+        1,
+        2
+      ],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.0625,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {
+        "0": "invalid_start"
+      }
+    },
+    {
+      "kind": "coupled_proposal",
+      "step": 17,
+      "trigger": "SAFE_SEARCH_RECOVERY",
+      "target_identity": "0eb6ecabff0f1aecdc432cff4cd532230eb0af9f1891f7258780df50797d4be9",
+      "scenario_identity": "7af74a9518949416235fb02ac3d49df121acc0d91194b8d7ada85b27d4478060",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_d609f1f5274406d03efc"
+      ],
+      "compression": {
+        "1": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "2": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        }
+      },
+      "combinations": 1,
+      "path_queries": 24,
+      "elapsed_seconds": 0.290045600006124,
+      "objective": 0.060510748923188674,
+      "detection": 0.06513409961685825,
+      "scenario_utilities": [
+        0.0574712643678161,
+        0.06896551724137932,
+        0.06896551724137932
+      ],
+      "scenario_detection": [
+        0.0574712643678161,
+        0.06896551724137932,
+        0.06896551724137932
+      ],
+      "frozen_agents": [
+        1,
+        2
+      ],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.078125,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {
+        "0": "invalid_start"
+      }
+    },
+    {
+      "kind": "coupled_proposal",
+      "step": 20,
+      "trigger": "SAFE_SEARCH_RECOVERY",
+      "target_identity": "5be3cd930bec16f9fe3de1af887e35ac12cf7c2d7efcd071805fcbe38400dc09",
+      "scenario_identity": "6b952130be4c27f9f19ba8c2b6f95691de79325b8d7df2f0eeed4cdca5964fe5",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_d609f1f5274406d03efc"
+      ],
+      "compression": {
+        "1": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "2": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        }
+      },
+      "combinations": 1,
+      "path_queries": 24,
+      "elapsed_seconds": 0.3255772000120487,
+      "objective": 0.062365432941573026,
+      "detection": 0.06666666666666668,
+      "scenario_utilities": [
+        0.05882352941176472,
+        0.07058823529411766,
+        0.07058823529411766
+      ],
+      "scenario_detection": [
+        0.05882352941176472,
+        0.07058823529411766,
+        0.07058823529411766
+      ],
+      "frozen_agents": [
+        1,
+        2
+      ],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.13541666666666666,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {
+        "0": "invalid_start"
+      }
+    },
+    {
+      "kind": "coupled_proposal",
+      "step": 25,
+      "trigger": "SAFE_SEARCH_RECOVERY",
+      "target_identity": "90c10cab97f76f1c46dfae868d9d4020507c6c88792e65104a42590253a3110f",
+      "scenario_identity": "42734d2491e54fd0146b1ceac35ebfe6d7e921ad29956d026bb6170c029c01f2",
+      "selected_ids": [
+        "coupled_1d4af93f22c863f3c709",
+        "coupled_04697c068307f1748edc",
+        "coupled_d609f1f5274406d03efc"
+      ],
+      "compression": {
+        "0": {
+          "raw": 12,
+          "representatives": 2,
+          "epsilon": 0.019346289020066434,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "1": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "2": {
+          "raw": 1,
+          "representatives": 1,
+          "epsilon": 0.0,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        }
+      },
+      "combinations": 2,
+      "path_queries": 12,
+      "elapsed_seconds": 0.430251900019357,
+      "objective": 0.09380819895702863,
+      "detection": 0.09756097560975609,
+      "scenario_utilities": [
+        0.0975609756097561,
+        0.0975609756097561,
+        0.0975609756097561
+      ],
+      "scenario_detection": [
+        0.0975609756097561,
+        0.0975609756097561,
+        0.0975609756097561
+      ],
+      "frozen_agents": [
+        1,
+        2
+      ],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.10416666666666666,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {}
+    }
+  ],
+  "seconds": 23.41163669998059,
+  "physical_episodes": 1,
+  "max_steps": 32,
+  "optimizer_updates": 0,
+  "checkpoint_restore": false,
+  "scope": "Shortened horizon, zero residual; initialization is model-independent, later actions are not the failed trained policy."
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "auv.source_evolution.map_route_health.v1",
+  "parent_review_sha256": "5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202",
+  "algorithm_changed": true,
+  "map_algorithm_revision": "coupled_search_bounded_v3",
+  "correction": "public_unroutable_start_constraints_v1",
+  "changes": [
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/allocator.py",
+      "before_sha256": "a773d41d20a3747a76962a6864c48795046854c7a9d05d5d84876cf99817f05b",
+      "after_sha256": "cbff116938b0ba891247d0e0bd8fbf14b322844d1e535285381e23186c67ca22",
+      "reason": "For v3 only, constrain initial route groups by proved public-start unreachability; keep original safe hold and atomic rejection semantics, and record excluded starts. V2 retains strict missing-route behavior."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/route_feasibility.py",
+      "before_sha256": null,
+      "after_sha256": "29f2e390b8c0ca6a5ab73021d5ac7609239c0cb783448cf11534da0f904cdd5b",
+      "reason": "Exclude only unassigned public invalid/no-connector starts from v3 candidate groups; reject viable-start shortages, existing-assignment loss and empty active groups."
+    },
+    {
+      "path": "chapter3_bser/learning/map_contract.py",
+      "before_sha256": "6b14f684930ad61ed9effdf00bdd5f267c0de5a964d2e6074288942e3aba79bb",
+      "after_sha256": "79bf6acc7190b0ff48fb4464b17451c9f7bf2162a0899a2a65e279e1f5e28edf",
+      "reason": "Keep every continuous-health predicate; disclose exact failing clauses and save public diagnostics at advance or episode-health failures without model/hidden-state serialization."
+    },
+    {
+      "path": "chapter3_bser/learning/map_route_health_source.py",
+      "before_sha256": null,
+      "after_sha256": "de5fc83c6d7e8e6295375d6d2e53c2a36596bdfee1a178a343b5da65bac6d4cf",
+      "reason": "Verify corrected source inventory and evolution against the immutable published bounded parent."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "33f3d0088ef7ad91650e784ffe6badc7bf0ddc397fc0f3117018def9f11a753e",
+      "after_sha256": "f8adca8514ced2379411b8a06d47376df2f6637b048863394fb9575789c98a72",
+      "reason": "Select corrected source identity and current versioned readiness without rewriting any earlier source/evidence."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "2a583a5c7e809ff5fb7814c793d7c03846961ea66501846fd20ac55f9e1660f1",
+      "after_sha256": "5cd7a47f5e11b7dcf1e84ffecd747962048a4c546c96780ea36f890c2728b24a",
+      "reason": "Bind source negative controls to the corrected successor and unchanged kernel/physics evidence."
+    },
+    {
+      "path": "checks/test_route_health.py",
+      "before_sha256": null,
+      "after_sha256": "4ef999e9e1ee4646cf903931fb59fa590a14454d266e9789c2a178ba861db809",
+      "reason": "Independent graph constraints, unchanged v2 failure, atomic recovery, strict health and diagnostic negative controls without physical episodes."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "be3743e63d9099202119fccbda9d96be4bc84c574fb34125d39cfded91235268",
+      "after_sha256": "6b26ae6e16884bb0b7b0b7ccd53ccee9268a1e58e2e3144691023433f487bd29",
+      "reason": "Require all 207 tests including the public route-health correction."
+    },
+    {
+      "path": "provenance/baselines/map_bounded_20261023_v3/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "bbc8e01930cd9529270760f76ffb201aa5181f3b0a4e0065887d0f579f425239",
+      "reason": "Freeze published v3 source/evidence without nesting earlier ZIPs; existing archives remain immutable hash references."
+    },
+    {
+      "path": "provenance/baselines/map_bounded_20261023_v3/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "51896f06ddc8008cebc9c5d2e1804f92e228c32540003af5879bebeb2e4b2aab",
+      "reason": "Freeze published v3 source/evidence without nesting earlier ZIPs; existing archives remain immutable hash references."
+    },
+    {
+      "path": "provenance/map_bounded_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "2af1ee1ef233de085f980f21f7f7bb0ae3438dd5fa71914d35529b46626f00c3",
+      "reason": "Pin the byte-identical published bounded-v3 parent manifest in successor inventory."
+    },
+    {
+      "path": "tools/map_route_health_source.py",
+      "before_sha256": null,
+      "after_sha256": "340485886be13a41107edd6f01616ae1476c40780848df6ea7fae8f819847f8f",
+      "reason": "Independently verify frozen published parent, unchanged filters/D2/learners/physics and exact correction coverage."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "f31218314bea7c9a3aa07d154a60977c903c7949d12f6a0ed20fad301c697e9d",
+      "after_sha256": "8d65ab06e0dc14f8c019fb8e91ca26a10516f079cfb2800c85d12fb1f4d1f24c",
+      "reason": "Require bounded native map workflow for corrected Linux research source."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "076f2a158bbdd76221f138423aa0e83671b040ec441804bbbc0d440b254d298d",
+      "after_sha256": "4c7b11a505bd8d98b3898e59da785a779f18bd5d7c7ce232c42fb38f4fa895d3",
+      "reason": "Dispatch independent verification to current route-health correction."
+    }
+  ]
+}

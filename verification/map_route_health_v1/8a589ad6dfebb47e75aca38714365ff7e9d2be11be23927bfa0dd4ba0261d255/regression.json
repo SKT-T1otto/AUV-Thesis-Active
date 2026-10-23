@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "expected": 207,
+  "tests_run": 207,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255",
+    "profile": "active_map_route_health_v1",
+    "inventory_sha256": "6d92235ec609d83a1d52b091212d0b06d47ab0ea1e7cced4fe0d34c5d94fd72c",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_route_health.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_route_health_20261023_v1"
+}

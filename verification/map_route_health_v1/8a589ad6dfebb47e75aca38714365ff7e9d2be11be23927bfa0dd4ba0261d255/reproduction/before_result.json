@@ -1,0 +1,638 @@
+{
+  "steps": 25,
+  "summary": {
+    "episode_id": 21,
+    "episode_index": 21,
+    "scenario_id": "unknown_train_m20_0021_short32_probe",
+    "scenario_seed": 2002749,
+    "found": false,
+    "success": false,
+    "success_if_found": false,
+    "found_step": null,
+    "success_step": null,
+    "remaining_steps_after_found": null,
+    "executor_target_received_step": null,
+    "handoff_delay": null,
+    "found_to_target_received_steps": null,
+    "found_to_success_steps": null,
+    "executor_distance_at_handoff": null,
+    "executor_distance_to_target_at_found": null,
+    "executor_distance_to_target_at_received": null,
+    "executor_min_distance_to_target": null,
+    "executor_final_distance_to_target": null,
+    "executor_distance_to_intercept_at_received": null,
+    "executor_min_distance_to_intercept": null,
+    "executor_final_distance_to_intercept": null,
+    "target_prediction_error_at_delivery": null,
+    "mean_target_prediction_error": null,
+    "target_prediction_map_fallback_count": 0,
+    "capture_contact_step_count": 0,
+    "capture_full_hold_step_count": 0,
+    "capture_hold_counter_max": 0,
+    "capture_swept_min_distance": null,
+    "executor_path_unreachable_count": null,
+    "executor_invalid_count": 0,
+    "executor_replan_count": 1,
+    "executor_invalid_assignment_unreachable_count": 0,
+    "executor_invalid_query_unreachable_count": 0,
+    "executor_invalid_cost_increase_count": 0,
+    "executor_invalid_stale_snapshot_deferred_count": 24,
+    "executor_validity_evaluation_count": 0,
+    "executor_validity_deferred_count": 24,
+    "public_target_update_event_count": 0,
+    "public_target_update_accepted_count": 0,
+    "public_target_shift_sum": 0.0,
+    "public_target_shift_mean": null,
+    "public_target_shift_max": null,
+    "environment_public_target_at_handoff": null,
+    "controller_execution_target_at_handoff": null,
+    "installed_executor_tracking_target_at_handoff": null,
+    "controller_to_public_target_error_at_handoff": null,
+    "controller_to_public_target_error_mean": null,
+    "controller_to_public_target_error_final": null,
+    "full_planning_refresh_count": 8,
+    "handoff_forced_refresh_count": 0,
+    "target_shift_forced_refresh_count": 0,
+    "post_found_collision_count": 0,
+    "pre_found_base_reward": -7.511411571875215,
+    "post_found_base_reward": 0.0,
+    "post_found_shaping_reward": 0.0,
+    "completion_reward_post_tanh": 0.0,
+    "adjusted_episode_reward": -1.8778528929688036,
+    "search_residual_ratio_pre_found": 0.0,
+    "search_residual_ratio_post_found": null,
+    "executor_residual_ratio_pre_found": 0.0,
+    "executor_residual_ratio_post_found": null,
+    "initial_planner_endpoint_fallback_count": 0,
+    "episode_terminated": true,
+    "episode_truncated": false,
+    "termination_reason": "obstacle_collision",
+    "terminal_step": 25,
+    "first_collision_step": 25,
+    "first_collision_agent_ids": [
+      1
+    ],
+    "first_collision_phase": "Search",
+    "collision_records": [
+      {
+        "agent_id": 1,
+        "obstacle_id": 2,
+        "position_before": [
+          5.841561317443848,
+          5.4750494956970215,
+          4.601642608642578
+        ],
+        "candidate_position": [
+          6.058140277862549,
+          5.65690279006958,
+          4.450096130371094
+        ],
+        "first_hit_point": [
+          6.054797100838987,
+          5.654095648719238,
+          4.452435446725644
+        ],
+        "hit_fraction": 0.9845637036159985
+      }
+    ],
+    "mission_complete": false,
+    "task_protocol": "collision_terminal_v1",
+    "collision_detection_revision": "segment_closed_aabb_v1",
+    "terminal_reward_revision": "team_failure_override_v1",
+    "terminated": true,
+    "truncated": false,
+    "safe_success": false,
+    "collision_episode": true,
+    "remaining_task_steps": 7,
+    "bootstrap_mask": 0.0,
+    "contact_bonus_count": 0,
+    "hold_bonus_count": 0,
+    "terminal_bonus_count": 0,
+    "discovery_correction_count": 0,
+    "searcher_zeroed_step_count": 0,
+    "reward_objective": "team_mean_v1",
+    "source_reward_revision": "execution_reward_v2_after_terminal_override_v1",
+    "gamma": 0.95,
+    "team_undiscounted_return": -1.8778528929688036,
+    "team_discounted_return": -0.5166340937212357,
+    "source_individual_returns": [
+      -1.973719261430233,
+      -1.7716666283085942,
+      -1.8100529292132705,
+      -1.9559727523301262
+    ],
+    "source_searcher_zeroed_step_count": 0,
+    "source_adjusted_episode_reward": -7.511411571875215,
+    "planner": {
+      "planner_protocol": "d2_v1",
+      "reference_arm": "D2",
+      "safety_variant": "V4",
+      "safe_counts": {
+        "start_preflight:invalid_start": 7,
+        "short_circuited_candidate_pools": 7,
+        "search_candidate_unreachable_queries": 0,
+        "candidate_shortage_events": 0,
+        "path_safety_checks": 50,
+        "forced_planning_refreshes": 6,
+        "recovery_failure:ATOMIC_REJECT_MISSING_SEARCH_ROUTE": 5
+      },
+      "effect_counts": {
+        "standby_unreachable_queries": 0,
+        "standby_shortage_events": 0
+      },
+      "unresolved_searcher_ids": [
+        0
+      ],
+      "audit_record_count": 12,
+      "public_evidence": {
+        "schema": "ch3.coupled_search.core_audit.v1",
+        "mode": "coupled_search",
+        "search_planner_id": "coupled_search_bounded_v3",
+        "algorithm_changed": true,
+        "estimator_implemented": true,
+        "valid": true,
+        "error": null,
+        "last_event_sequence": 50,
+        "counts": {
+          "scan_batches": 25,
+          "ray_measurements": 2600,
+          "search_batches": 25,
+          "available_search_batches": 25,
+          "decision_public_snapshots": 25,
+          "d2_fallbacks": 8,
+          "route_versions": 25,
+          "physical_transitions": 25,
+          "negative_observations": 24,
+          "discovery_checks": 24,
+          "terminal_transitions": 1,
+          "core_scored_steps": 24,
+          "last_core_scored_step": 24
+        },
+        "retained_audit_records": 59,
+        "latest_route_sha256": "ffcea1d09f31fc75fd4e1a1c72c2ce6d09eab9eb5c003d5f6104863a59b916ca",
+        "coupled_belief": {
+          "valid": true,
+          "error": null,
+          "step": 25,
+          "stopped": true,
+          "alpha": [
+            0.29761904761904767,
+            0.3571428571428572,
+            0.3452380952380952
+          ],
+          "history_complete": false,
+          "conditional_ess": [
+            24.999999999999996,
+            30.0,
+            28.99999999999999
+          ],
+          "historical_information_carried_by_boundary": true,
+          "retained_history": 25,
+          "window_steps": 64,
+          "boundary_step": 0,
+          "max_retained_history": 25,
+          "last_replay_steps": 0,
+          "max_replay_steps": 0,
+          "max_map_boxes": 16,
+          "last_replay_work": 0,
+          "boundary_array_bytes": 5400,
+          "snapshot_array_bytes": 135000,
+          "retained_snapshots": 25,
+          "retained_event_ids": 50,
+          "counts": {
+            "initializations": 1,
+            "joint_updates": 26,
+            "approximate_geometry_transports": 12
+          },
+          "window_map_frame_bytes": 0,
+          "persistent_map": {
+            "revision": 25,
+            "grid_shape": [
+              20,
+              20,
+              10
+            ],
+            "grid_cells": 4000,
+            "spacing": [
+              1.0,
+              1.0,
+              0.8
+            ],
+            "known_free_cells": 1018,
+            "occupied_cells": 15,
+            "observed_cells": 1035,
+            "hit_evidence_cells": 30,
+            "base_boxes": 11,
+            "state_array_bytes": 40000,
+            "counts": {
+              "scan_batches": 25,
+              "ray_measurements": 2600,
+              "changed_cells": 1055
+            },
+            "resolution_approximation": true
+          },
+          "geometry_counts": {
+            "unknown_boxes_removed": 1,
+            "local_geometry_transactions": 26,
+            "geometry_changes": 13
+          },
+          "first_failure": null,
+          "last_failure": null,
+          "approximate_map_transport": true,
+          "approximate_boundary_proposals": true,
+          "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+          "design_variant": "full"
+        },
+        "execution_error_observations": 24,
+        "prior_is_approximate": true,
+        "performance_passed": false
+      }
+    },
+    "actual_length": 25,
+    "handoff_event_step": null,
+    "handoff_decision_step": null,
+    "repair_version": "ch3.d2.implementation_repair.v2",
+    "repair_switches": {
+      "waypoint_arrival": true,
+      "inactive_actor": true,
+      "hold_residual": true
+    },
+    "waypoint_reward_timing": "arrival_before_reward_v1",
+    "action_safety": {
+      "disabled_agent_steps": 25,
+      "suppressed_nonzero_residuals": 0
+    },
+    "raw_pre_tanh_components": {
+      "reward_find_event": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_early_find": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_completion_event": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_early_completion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_progress": [
+        -14.10583981871605,
+        73.16844564676285,
+        55.11898231506348,
+        23.599002838134766
+      ],
+      "reward_coverage": [
+        29.5,
+        29.5,
+        29.5,
+        0.0
+      ],
+      "reward_time_penalty": [
+        -5.000000074505806,
+        -5.000000074505806,
+        -5.000000074505806,
+        -5.000000074505806
+      ],
+      "reward_energy_penalty": [
+        -0.0034629764768396853,
+        -0.08512341354071395,
+        -0.06269528239499778,
+        -0.05667615849961294
+      ],
+      "reward_smoothness_penalty": [
+        -6.070854304596196e-05,
+        -0.14321321625902783,
+        -0.0964412731846096,
+        -0.05207570175480214
+      ],
+      "reward_collision_penalty": [
+        0.0,
+        -60.0,
+        0.0,
+        0.0
+      ],
+      "reward_separation_penalty": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "team_return_by_phase": {
+      "pre_found": -1.8778528929688036
+    },
+    "observation_risks": {
+      "input_contract": [
+        28,
+        3,
+        124
+      ],
+      "remaining_time_observed": false,
+      "previous_acceleration_observed": false,
+      "full_map_observed": false,
+      "execution_gate_is_network_input": false,
+      "markov_sufficiency_established": false
+    },
+    "safety_guarantee": false,
+    "reward_metric_equivalence_established": false
+  },
+  "health": {
+    "error": "continuous coupled-search health contract failed; no completed episode may be published"
+  },
+  "session": {
+    "schema": "ch3.coupled_search.core_audit.v1",
+    "mode": "coupled_search",
+    "search_planner_id": "coupled_search_bounded_v3",
+    "algorithm_changed": true,
+    "estimator_implemented": true,
+    "valid": true,
+    "error": null,
+    "last_event_sequence": 50,
+    "counts": {
+      "scan_batches": 25,
+      "ray_measurements": 2600,
+      "search_batches": 25,
+      "available_search_batches": 25,
+      "decision_public_snapshots": 25,
+      "d2_fallbacks": 8,
+      "route_versions": 25,
+      "physical_transitions": 25,
+      "negative_observations": 24,
+      "discovery_checks": 24,
+      "terminal_transitions": 1,
+      "core_scored_steps": 24,
+      "last_core_scored_step": 24
+    },
+    "retained_audit_records": 59,
+    "latest_route_sha256": "ffcea1d09f31fc75fd4e1a1c72c2ce6d09eab9eb5c003d5f6104863a59b916ca",
+    "coupled_belief": {
+      "valid": true,
+      "error": null,
+      "step": 25,
+      "stopped": true,
+      "alpha": [
+        0.29761904761904767,
+        0.3571428571428572,
+        0.3452380952380952
+      ],
+      "history_complete": false,
+      "conditional_ess": [
+        24.999999999999996,
+        30.0,
+        28.99999999999999
+      ],
+      "historical_information_carried_by_boundary": true,
+      "retained_history": 25,
+      "window_steps": 64,
+      "boundary_step": 0,
+      "max_retained_history": 25,
+      "last_replay_steps": 0,
+      "max_replay_steps": 0,
+      "max_map_boxes": 16,
+      "last_replay_work": 0,
+      "boundary_array_bytes": 5400,
+      "snapshot_array_bytes": 135000,
+      "retained_snapshots": 25,
+      "retained_event_ids": 50,
+      "counts": {
+        "initializations": 1,
+        "joint_updates": 26,
+        "approximate_geometry_transports": 12
+      },
+      "window_map_frame_bytes": 0,
+      "persistent_map": {
+        "revision": 25,
+        "grid_shape": [
+          20,
+          20,
+          10
+        ],
+        "grid_cells": 4000,
+        "spacing": [
+          1.0,
+          1.0,
+          0.8
+        ],
+        "known_free_cells": 1018,
+        "occupied_cells": 15,
+        "observed_cells": 1035,
+        "hit_evidence_cells": 30,
+        "base_boxes": 11,
+        "state_array_bytes": 40000,
+        "counts": {
+          "scan_batches": 25,
+          "ray_measurements": 2600,
+          "changed_cells": 1055
+        },
+        "resolution_approximation": true
+      },
+      "geometry_counts": {
+        "unknown_boxes_removed": 1,
+        "local_geometry_transactions": 26,
+        "geometry_changes": 13
+      },
+      "first_failure": null,
+      "last_failure": null,
+      "approximate_map_transport": true,
+      "approximate_boundary_proposals": true,
+      "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+      "design_variant": "full"
+    },
+    "execution_error_observations": 24,
+    "prior_is_approximate": true,
+    "performance_passed": false
+  },
+  "audit": [
+    {
+      "kind": "coupled_fallback",
+      "step": 0,
+      "reason": "missing_public_safe_route",
+      "planner": "d2_v1"
+    },
+    {
+      "kind": "proposal",
+      "step": 0,
+      "trigger": "INITIALIZE",
+      "candidates_by_agent": {
+        "0": 0,
+        "1": 4,
+        "2": 4
+      },
+      "candidate_ids": [
+        "s1_00_0000",
+        "s1_01_0004",
+        "s1_02_0012",
+        "s1_03_0001",
+        "s2_00_0000",
+        "s2_01_0004",
+        "s2_02_0012",
+        "s2_03_0001"
+      ],
+      "frozen_ids": [],
+      "standby_count": 4,
+      "selected_ids": [
+        "s1_00_0000",
+        "s2_01_0004"
+      ],
+      "pure_search_ids": [
+        "s1_00_0000",
+        "s2_01_0004"
+      ],
+      "search_differs_from_pure": false,
+      "standby": [
+        9.0,
+        11.0,
+        4.5
+      ],
+      "executor_reachable": true,
+      "executor_route_time": 14.366714092259837,
+      "objective": 0.14835345720328047,
+      "detection": 0.14835345720328047,
+      "joint_score": 0.09048829122828259,
+      "sequential_joint_score": 0.09048829122828259,
+      "response_time": 9.08459036327215,
+      "installed": false
+    },
+    {
+      "kind": "coupled_fallback",
+      "step": 1,
+      "reason": "missing_public_safe_route",
+      "planner": "d2_v1"
+    },
+    {
+      "kind": "coupled_fallback",
+      "step": 6,
+      "reason": "missing_public_safe_route",
+      "planner": "d2_v1"
+    },
+    {
+      "kind": "proposal",
+      "step": 6,
+      "trigger": "BELIEF_SHIFT",
+      "candidates_by_agent": {
+        "0": 0,
+        "1": 4,
+        "2": 4
+      },
+      "candidate_ids": [
+        "s1_00_0489",
+        "s1_01_0493",
+        "s1_02_0491",
+        "s1_03_0481",
+        "s2_00_0489",
+        "s2_01_0493",
+        "s2_02_0491",
+        "s2_03_0481"
+      ],
+      "frozen_ids": [],
+      "standby_count": 4,
+      "selected_ids": [
+        "s1_03_0481",
+        "s2_03_0481"
+      ],
+      "pure_search_ids": [
+        "s1_03_0481",
+        "s2_03_0481"
+      ],
+      "search_differs_from_pure": false,
+      "standby": [
+        11.0,
+        5.0,
+        4.5
+      ],
+      "executor_reachable": true,
+      "executor_route_time": 8.01632011503569,
+      "objective": 0.5097392580409141,
+      "detection": 0.5097392580409141,
+      "joint_score": 0.37050958008696766,
+      "sequential_joint_score": 0.37050958008696766,
+      "response_time": 5.89551046785908,
+      "installed": false
+    },
+    {
+      "kind": "coupled_fallback",
+      "step": 6,
+      "reason": "core_failed_this_step",
+      "planner": "d2_v1"
+    },
+    {
+      "kind": "stabilized",
+      "step": 6,
+      "selected_ids": [
+        "s1_03_0481",
+        "s2_03_0481"
+      ],
+      "standby": [
+        11.0,
+        5.0,
+        4.5
+      ],
+      "score_before_recompute": 0.5097392580409141,
+      "objective": 0.5097392580409141,
+      "detection": 0.5097392580409141,
+      "joint_score": 0.37050958008696766,
+      "response_time": 5.89551046785908,
+      "installed": false
+    },
+    {
+      "kind": "decision",
+      "step": 6,
+      "previous_stored_objective": 0.06233957953698519,
+      "old_current_objective": 0.062404088800547874,
+      "objective": 0.5097392580409141,
+      "installed": true,
+      "reason": "D_ACCEPT_ELIGIBLE_PROPOSAL",
+      "selected_ids": [
+        "s1_03_0481",
+        "s2_03_0481"
+      ],
+      "standby": [
+        11.0,
+        5.0,
+        4.5
+      ]
+    },
+    {
+      "kind": "coupled_fallback",
+      "step": 7,
+      "reason": "missing_public_safe_route",
+      "planner": "d2_v1"
+    },
+    {
+      "kind": "coupled_fallback",
+      "step": 12,
+      "reason": "missing_public_safe_route",
+      "planner": "d2_v1"
+    },
+    {
+      "kind": "coupled_fallback",
+      "step": 17,
+      "reason": "missing_public_safe_route",
+      "planner": "d2_v1"
+    },
+    {
+      "kind": "coupled_fallback",
+      "step": 20,
+      "reason": "missing_public_safe_route",
+      "planner": "d2_v1"
+    }
+  ],
+  "seconds": 22.160131499986164,
+  "physical_episodes": 1,
+  "max_steps": 32,
+  "optimizer_updates": 0,
+  "checkpoint_restore": false,
+  "scope": "Shortened horizon, zero residual; initialization is model-independent, later actions are not the failed trained policy."
+}

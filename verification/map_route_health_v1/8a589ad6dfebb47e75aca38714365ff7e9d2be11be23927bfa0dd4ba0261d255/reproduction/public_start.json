@@ -1,0 +1,28 @@
+{
+  "starts": [
+    {
+      "agent": 0,
+      "status": "invalid_start",
+      "geometry_point_free": false
+    },
+    {
+      "agent": 1,
+      "status": "ready",
+      "geometry_point_free": true
+    },
+    {
+      "agent": 2,
+      "status": "ready",
+      "geometry_point_free": true
+    }
+  ],
+  "assigned": [
+    1,
+    2
+  ],
+  "held": [
+    0
+  ],
+  "physical_episodes": 1,
+  "physical_steps": 0
+}

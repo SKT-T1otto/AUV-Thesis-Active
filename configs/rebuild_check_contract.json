@@ -1,6 +1,6 @@
 {
   "schema": "auv.active.check_inventory.v1",
-  "expected_tests": 192,
+  "expected_tests": 207,
   "modules": [
     "checks.test_learning",
     "checks.test_workflow",
@@ -13,7 +13,8 @@
     "checks.test_map_persistence",
     "checks.test_map_cache",
     "checks.test_bounded_map",
-    "checks.test_bounded_experiment"
+    "checks.test_bounded_experiment",
+    "checks.test_route_health"
   ],
   "allow_skips": false
 }

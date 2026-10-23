@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "current_source": {
+    "review_sha256": "8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255",
+    "profile": "active_map_route_health_v1",
+    "inventory_sha256": "6d92235ec609d83a1d52b091212d0b06d47ab0ea1e7cced4fe0d34c5d94fd72c",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_route_health.v1"
+  },
+  "scope": "Candidate reproduction preceded final source manifest; functional correction files have not changed since that run. New provenance/check files were added later. Current-source native workflows are recorded separately.",
+  "functional_sha256": {
+    "chapter3_bser/experiments/coupled_search_v1/allocator.py": "cbff116938b0ba891247d0e0bd8fbf14b322844d1e535285381e23186c67ca22",
+    "chapter3_bser/experiments/coupled_search_v1/route_feasibility.py": "29f2e390b8c0ca6a5ab73021d5ac7609239c0cb783448cf11534da0f904cdd5b",
+    "chapter3_bser/learning/map_contract.py": "79bf6acc7190b0ff48fb4464b17451c9f7bf2162a0899a2a65e279e1f5e28edf"
+  }
+}

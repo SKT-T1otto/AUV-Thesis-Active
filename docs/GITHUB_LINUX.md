@@ -2,6 +2,8 @@
 
 当前地图方案为 `coupled_search_bounded_v3`，默认原始窗口64步。实现、七组配置和指标解释见 [有界地图实现与实验](MAP_BOUNDED_V3_20261022.md)。此前 map-suite 六组入口仍保留为 v2 实验；本版有界地图使用 `cli bounded-experiment`。
 
+2026-10-23 的公开起点不可达修正及更新命令见 [路径约束修复说明](MAP_ROUTE_HEALTH_FIX_20261023.md)。此前在07a9625上失败的RUN保持原样，修复后须重新验证并准备独立RUN。
+
 ## 安装与当前版本验证
 
 使用新目录克隆。聊天中给出的完整提交 SHA 是本次发布版本；将下面占位符替换为该 SHA。不要在有旧输出的目录内重置工作树。
@@ -29,7 +31,7 @@ VALIDATION="$CHECK/validation.json"
 cat "$VALIDATION"
 ```
 
-验证结果应有 `passed=true`、`linux_execution=true`、`map_workflow_verified=true`，192项测试无失败/跳过。实际库存以 configs/rebuild_check_contract.json 为准。验证最多执行8回合×32步、4个临时模型各4次完整更新，不恢复检查点文件；W16只用于短回合窗口滑动检查。Windows证据不能代替这次Linux实测。
+验证结果应有 `passed=true`、`linux_execution=true`、`map_workflow_verified=true`，207项测试无失败/跳过。实际库存以 configs/rebuild_check_contract.json 为准。验证最多执行8回合×32步、4个临时模型各4次完整更新，不恢复检查点文件；W16只用于短回合窗口滑动检查。Windows证据不能代替这次Linux实测。
 
 ## 先做 pilot
 

@@ -1,0 +1,149 @@
+{
+  "schema": "auv.active.map_suite.v1",
+  "source_review": {
+    "review_sha256": "8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255",
+    "profile": "active_map_route_health_v1",
+    "inventory_sha256": "6d92235ec609d83a1d52b091212d0b06d47ab0ea1e7cced4fe0d34c5d94fd72c",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_route_health.v1"
+  },
+  "protocol_sha256": "b19e2c0a7571284cd239cff9ad211f43547328ea25ebc034f787270ba64e62bf",
+  "mechanism_only": true,
+  "spec": {
+    "schema": "auv.active.map_experiment_spec.v1",
+    "groups": [
+      "NEW_B2",
+      "NEW_B3"
+    ],
+    "seeds": [
+      2729
+    ],
+    "train_episodes": 1,
+    "max_steps": 32,
+    "evaluation_count": 1,
+    "evaluation_generator_seed": 92729,
+    "training_generator_seed_base": 1000000,
+    "checkpoint_interval": 1,
+    "new_map_config": {
+      "schema": "ch3.coupled_search.core.v3",
+      "enabled": true,
+      "mode": "coupled_search",
+      "event_capacity": 1024,
+      "audit_capacity": 1024,
+      "seed": 827291,
+      "maps": 3,
+      "particles_per_map": 32,
+      "horizon": 16,
+      "execution_scenarios": 3,
+      "raw_routes": 12,
+      "representatives": 4,
+      "path_queries": 72,
+      "proposal_regions": 24,
+      "planning_seconds": 20.0,
+      "inference_seconds": 3.0,
+      "history_steps": 16,
+      "geometry_attempts": 128,
+      "replenish_attempts": 2,
+      "recovery_cooldown": 10,
+      "geometry": {
+        "prior_id": "persistent_voxel_conditional_aabb_v3",
+        "unknown_boxes": 2,
+        "merge_neighbors": 8,
+        "size_min": 0.6,
+        "size_max": 3.0,
+        "cluster_radius": 1.2,
+        "scan_tolerance": 0.25
+      },
+      "target_prior": {
+        "prior_id": "declared_uniform_position_isotropic_velocity_v1",
+        "speed_min": 0.2,
+        "speed_max": 0.8,
+        "stationary_mass": 0.2
+      },
+      "beta": 0.0,
+      "rho": 0.25,
+      "lambda_cost": 0.02,
+      "cost_scale": 120.0,
+      "compression_epsilon": 0.02,
+      "tie_tolerance": 0.001,
+      "execution_history": 8,
+      "execution_error_clip": 0.5,
+      "review_samples": 64,
+      "bounded": {
+        "grid_shape": [
+          20,
+          20,
+          10
+        ],
+        "max_cells": 4096,
+        "max_boxes": 192,
+        "scan_sample_spacing": 0.4,
+        "free_logodds": -0.85,
+        "occupied_logodds": 1.7,
+        "logodds_clip": 6.0,
+        "free_threshold": 0.3,
+        "occupied_threshold": 0.7,
+        "map_memory": "persistent",
+        "boundary_mode": "posterior",
+        "local_recovery": true,
+        "position_jitter": 0.35,
+        "velocity_jitter": 0.08,
+        "resample_ess_fraction": 0.5,
+        "design_variant": "full"
+      }
+    },
+    "bootstrap_draws": 32,
+    "statistics_seed": 20261020
+  },
+  "jobs": [
+    {
+      "name": "NEW_B2_seed2729",
+      "group": "NEW_B2",
+      "map_id": "NEW",
+      "learner": "B2",
+      "seed": 2729,
+      "config": "inputs/NEW_B2_seed2729.json",
+      "train": "jobs/NEW_B2_seed2729/train",
+      "evaluation": "jobs/NEW_B2_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_bounded_v3",
+        "condition_sha256": "506c1866ab61f3c1b5b43e3c35570f8f698d5357e363d49f250ea04548cf359b",
+        "research_config_sha256": "01b3084465aa07897941eb4c224c9065504a87b0c3f9578e8feba2419b650f10",
+        "protocol_sha256": "b19e2c0a7571284cd239cff9ad211f43547328ea25ebc034f787270ba64e62bf"
+      }
+    },
+    {
+      "name": "NEW_B3_seed2729",
+      "group": "NEW_B3",
+      "map_id": "NEW",
+      "learner": "B3",
+      "seed": 2729,
+      "config": "inputs/NEW_B3_seed2729.json",
+      "train": "jobs/NEW_B3_seed2729/train",
+      "evaluation": "jobs/NEW_B3_seed2729/evaluation",
+      "map_condition": {
+        "schema": "auv.active.map_condition.v1",
+        "map_id": "NEW",
+        "search_planner_id": "coupled_search_bounded_v3",
+        "condition_sha256": "506c1866ab61f3c1b5b43e3c35570f8f698d5357e363d49f250ea04548cf359b",
+        "research_config_sha256": "01b3084465aa07897941eb4c224c9065504a87b0c3f9578e8feba2419b650f10",
+        "protocol_sha256": "b19e2c0a7571284cd239cff9ad211f43547328ea25ebc034f787270ba64e62bf"
+      }
+    }
+  ],
+  "assets": {
+    "inputs/evaluation.json": "48ab7c0887abbc0caf4ca80b17b8e2dfe8c95a79c16fb6393f7c50f998012885",
+    "inputs/NEW_B2_seed2729.json": "f8852baaa93e94bd459db2037a357ffbdd3c11ee32ab831785de4238ef2a9019",
+    "inputs/NEW_B3_seed2729.json": "f1158e953171060e5984ce63d3edfa9b84e33d9039ba90997ce76dc52ec66dec",
+    "inputs/spec.json": "a68bf624234b8a3b6d30ade237b7bfaae5fa12934b425eadcae188b30136d45e",
+    "inputs/train_seed2729.json": "1eee72d5e2e00792ef5fe461198317b632d3843aace85f617cc12cffd345c4b1"
+  },
+  "excluded_manifests": [],
+  "training_protocol": "fresh weights; per-seed manifest order; innovation seed=training_seed+episode",
+  "checkpoint_selection": "last fully completed episode",
+  "native_evaluation_only": true,
+  "performance_passed": false,
+  "sha256": "c8cda39d69e59b500c69fb2637b6094f5b4aadd6b0ab3ed9c6b835dbd1b7459f"
+}

@@ -50,25 +50,33 @@ def validate_checkpoint_map(config,payload):
     return expected
 
 
+def _failure_diagnostic(runtime,phase,details):
+    """Best-effort public diagnostics; never serialize model or hidden world."""
+    try:
+        if identity(runtime.config)['search_planner_id']!='coupled_search_bounded_v3':return
+        session=getattr(runtime,'map_research_session',None)
+        if session is None:return
+        import json
+        from pathlib import Path
+        directory=Path(runtime.config['output_dir'])
+        if not directory.is_dir():return
+        allocator=getattr(getattr(runtime,'controller',None),'allocator',None)
+        payload=dict(completed=False,phase=phase,step=runtime.step,details=details,
+            scenario_id=getattr(runtime,'scenario',{}).get('scenario_id'),
+            map_condition=identity(runtime.config),session=session.summary(),
+            belief=session.belief.summary(),trace=list(session.belief.timings),
+            allocator_audit_tail=list(getattr(allocator,'audit',()))[-20:])
+        value=json.dumps(payload,indent=2,allow_nan=False)
+        with (directory/f'map_failure_{time.time_ns()}.json').open('x',encoding='utf-8') as stream:stream.write(value)
+    except Exception:pass  # Logging cannot hide the original failure.
+
+
 def advance(runtime,model,*,explore):
     if 'map_experiment' not in runtime.config:return runtime.advance(model,explore=explore)
     started=time.perf_counter()
     try:return runtime.advance(model,explore=explore)
-    except Exception:
-        # Failure evidence is not a completed episode or a successful receipt.
-        # Logging must never mask the original inference/planning exception.
-        session=getattr(runtime,'map_research_session',None)
-        if identity(runtime.config)['search_planner_id']=='coupled_search_bounded_v3' and session is not None:
-            try:
-                import json
-                from pathlib import Path
-                directory=Path(runtime.config['output_dir'])
-                if directory.is_dir():
-                    path=directory/f'map_failure_{time.time_ns()}.json'
-                    with path.open('x',encoding='utf-8') as stream:
-                        json.dump(dict(completed=False,belief=session.belief.summary(),
-                            trace=list(session.belief.timings)),stream,indent=2,allow_nan=False)
-            except (OSError,ValueError,TypeError):pass
+    except Exception as error:
+        _failure_diagnostic(runtime,'advance',dict(error=repr(error)))
         raise
     finally:
         if not hasattr(runtime,'_map_step_seconds'):runtime._map_step_seconds=[]
@@ -80,11 +88,16 @@ def metrics(runtime):
     condition=identity(runtime.config);session=runtime.map_research_session
     if condition['map_id']=='NEW':
         counts=session.counts
-        if (not session.valid or counts.get('unavailable_search_batches',0)
-                or counts.get('available_search_batches',0)!=counts.get('search_batches',0)
-                or counts.get('core_proposals',0)<1
-                or counts.get('core_scored_steps',0)<max(0,counts.get('search_batches',0)-1)):
-            raise RuntimeError('continuous coupled-search health contract failed; no completed episode may be published')
+        violations=[]
+        if not session.valid:violations.append('public_session_invalid')
+        if counts.get('unavailable_search_batches',0):violations.append('unavailable_search_batches')
+        if counts.get('available_search_batches',0)!=counts.get('search_batches',0):violations.append('search_batch_count_mismatch')
+        if counts.get('core_proposals',0)<1:violations.append('no_core_proposal')
+        if counts.get('core_scored_steps',0)<max(0,counts.get('search_batches',0)-1):violations.append('missing_core_scored_steps')
+        if violations:
+            _failure_diagnostic(runtime,'episode_health',dict(violations=violations,counts=dict(counts)))
+            raise RuntimeError('continuous coupled-search health contract failed: '+','.join(violations)+
+                '; no completed episode may be published')
     audit=getattr(runtime.controller.allocator,'audit',[])
     proposals=[r for r in audit if r.get('kind')=='coupled_proposal']
     elapsed=[r['elapsed_seconds'] for r in proposals]

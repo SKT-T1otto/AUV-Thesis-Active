@@ -1,0 +1,10 @@
+{
+  "executed": false,
+  "command": "run",
+  "root": "work/route_health_dry_absent",
+  "arms": [
+    "full_w64"
+  ],
+  "stage": "all",
+  "validation": "work/missing_validation.json"
+}

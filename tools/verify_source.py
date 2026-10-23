@@ -11,6 +11,9 @@ def digest(value):
 
 def verify(root):
     root = Path(root).resolve()
+    if (root/'provenance/map_route_health_manifest.json').is_file():
+        from tools.map_route_health_source import verify as verify_health
+        return verify_health(root)
     if (root/'provenance/map_bounded_manifest.json').is_file():
         from tools.map_bounded_source import verify as verify_bounded
         return verify_bounded(root)

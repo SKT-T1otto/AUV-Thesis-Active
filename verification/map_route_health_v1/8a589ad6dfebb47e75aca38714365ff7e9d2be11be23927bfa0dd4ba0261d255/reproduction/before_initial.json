@@ -1,0 +1,150 @@
+{
+  "session": {
+    "schema": "ch3.coupled_search.core_audit.v1",
+    "mode": "coupled_search",
+    "search_planner_id": "coupled_search_bounded_v3",
+    "algorithm_changed": true,
+    "estimator_implemented": true,
+    "valid": true,
+    "error": null,
+    "last_event_sequence": 1,
+    "counts": {
+      "scan_batches": 1,
+      "ray_measurements": 104,
+      "search_batches": 1,
+      "available_search_batches": 1,
+      "decision_public_snapshots": 1,
+      "d2_fallbacks": 1,
+      "route_versions": 1
+    },
+    "retained_audit_records": 3,
+    "latest_route_sha256": "ec1aebf3917f713d6e7b4782720731d93135e7bef9969c02126b51502a6e8228",
+    "coupled_belief": {
+      "valid": true,
+      "error": null,
+      "step": 0,
+      "stopped": false,
+      "alpha": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "history_complete": false,
+      "conditional_ess": [
+        32.0,
+        32.0,
+        32.0
+      ],
+      "historical_information_carried_by_boundary": true,
+      "retained_history": 0,
+      "window_steps": 64,
+      "boundary_step": 0,
+      "max_retained_history": 0,
+      "last_replay_steps": 0,
+      "max_replay_steps": 0,
+      "max_map_boxes": 9,
+      "last_replay_work": 0,
+      "boundary_array_bytes": 5400,
+      "snapshot_array_bytes": 0,
+      "retained_snapshots": 0,
+      "retained_event_ids": 1,
+      "counts": {
+        "initializations": 1,
+        "joint_updates": 1
+      },
+      "window_map_frame_bytes": 0,
+      "persistent_map": {
+        "revision": 1,
+        "grid_shape": [
+          20,
+          20,
+          10
+        ],
+        "grid_cells": 4000,
+        "spacing": [
+          1.0,
+          1.0,
+          0.8
+        ],
+        "known_free_cells": 354,
+        "occupied_cells": 7,
+        "observed_cells": 361,
+        "hit_evidence_cells": 8,
+        "base_boxes": 7,
+        "state_array_bytes": 40000,
+        "counts": {
+          "scan_batches": 1,
+          "ray_measurements": 104,
+          "changed_cells": 361
+        },
+        "resolution_approximation": true
+      },
+      "geometry_counts": {
+        "unknown_boxes_removed": 0,
+        "local_geometry_transactions": 1,
+        "geometry_changes": 1
+      },
+      "first_failure": null,
+      "last_failure": null,
+      "approximate_map_transport": true,
+      "approximate_boundary_proposals": true,
+      "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+      "design_variant": "full"
+    },
+    "execution_error_observations": 0,
+    "prior_is_approximate": true,
+    "performance_passed": false
+  },
+  "audit": [
+    {
+      "kind": "coupled_fallback",
+      "step": 0,
+      "reason": "missing_public_safe_route",
+      "planner": "d2_v1"
+    },
+    {
+      "kind": "proposal",
+      "step": 0,
+      "trigger": "INITIALIZE",
+      "candidates_by_agent": {
+        "0": 0,
+        "1": 4,
+        "2": 4
+      },
+      "candidate_ids": [
+        "s1_00_0000",
+        "s1_01_0004",
+        "s1_02_0012",
+        "s1_03_0001",
+        "s2_00_0000",
+        "s2_01_0004",
+        "s2_02_0012",
+        "s2_03_0001"
+      ],
+      "frozen_ids": [],
+      "standby_count": 4,
+      "selected_ids": [
+        "s1_00_0000",
+        "s2_01_0004"
+      ],
+      "pure_search_ids": [
+        "s1_00_0000",
+        "s2_01_0004"
+      ],
+      "search_differs_from_pure": false,
+      "standby": [
+        9.0,
+        11.0,
+        4.5
+      ],
+      "executor_reachable": true,
+      "executor_route_time": 14.366714092259837,
+      "objective": 0.14835345720328047,
+      "detection": 0.14835345720328047,
+      "joint_score": 0.09048829122828259,
+      "sequential_joint_score": 0.09048829122828259,
+      "response_time": 9.08459036327215,
+      "installed": false
+    }
+  ]
+}

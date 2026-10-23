@@ -100,6 +100,11 @@ class CoupledSearchAllocator(EffectAllocator):
         frozen=tuple(r for i,r in sorted(references.items()) if i not in affected)
         routes=routes+frozen
         expected=set(affected)|set(references)
+        held={}
+        if cfg.get('schema')=='ch3.coupled_search.core.v3':
+            from .route_feasibility import feasible_groups
+            expected,held=feasible_groups(live,routes,expected,
+                set() if current is None else {a.agent_id for a in current.search_assignments})
         if not expected or any(not any(r.agent_id==i for r in routes) for i in expected):
             raise ValueError('missing_public_safe_route')
         sigs,forecasts,costs=self._evaluate(context,routes)
@@ -136,6 +141,9 @@ class CoupledSearchAllocator(EffectAllocator):
         union=np.max([sigs[j].values for j in chosen],axis=0)
         row['finite_bank_review_mean_utility']=float(np.mean(union[sample]@context['scenarios'].weights))
         row['review_kind']='independent_resampling_of_same_finite_bank'
+        if cfg.get('schema')=='ch3.coupled_search.core.v3':
+            row['public_unroutable_searchers']=held
+            self.session.counts['public_unroutable_proposals']+=bool(held)
         self.audit.append(row);self.session.records.append(row);self.session.counts['core_proposals']+=1
         self.session.prediction=dict(step=int(state.step),installed_hash=None,
             paths={routes[j].agent_id:tuple(map(tuple,routes[j].candidate.path_points)) for j in chosen},
@@ -155,7 +163,11 @@ class CoupledSearchAllocator(EffectAllocator):
             executor_affected=executor_affected,trigger_reason=trigger_reason)
         if not set(affected_searcher_ids).issubset(state.searcher_ids):return current,False,'ATOMIC_REJECT_UNKNOWN_SEARCHER'
         try:
-            return self._propose(state,current,set(affected_searcher_ids),executor_affected,trigger_reason),True,'COUPLED_ATOMIC_PROPOSAL'
+            proposed=self._propose(state,current,set(affected_searcher_ids),executor_affected,trigger_reason)
+            if (self.research.get('schema')=='ch3.coupled_search.core.v3'
+                    and not set(affected_searcher_ids).issubset(a.agent_id for a in proposed.search_assignments)):
+                return current,False,'ATOMIC_REJECT_MISSING_SEARCH_ROUTE'
+            return proposed,True,'COUPLED_ATOMIC_PROPOSAL'
         except (ValueError,RuntimeError) as error:
             self._fallback(state,error)
             return super().allocate_partial(state,current,affected_searcher_ids=affected_searcher_ids,

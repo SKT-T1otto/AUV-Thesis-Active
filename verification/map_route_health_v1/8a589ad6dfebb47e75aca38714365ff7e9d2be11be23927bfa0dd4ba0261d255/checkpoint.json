@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checkpoint_file_restore_executed": false,
+  "scope": "Two fresh temporary B2/B3 models, four complete updates each, in-memory evaluation preserves policy. Original checkpoint code and old-identity rejection checks unchanged; no diagnostic or file checkpoint was restored.",
+  "jobs": [
+    {
+      "job": "NEW_B2_seed2729",
+      "complete_updates": 4,
+      "initial_state": "73c641ca50e89d2a57683d879f754cf9df4b3a6c737dc489acf9ca36356fe905"
+    },
+    {
+      "job": "NEW_B3_seed2729",
+      "complete_updates": 4,
+      "initial_state": "bbc2970aa47545e1251d4eba147a664b7d464a371dc0a7e5eebc9fc0ac163237"
+    }
+  ],
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255",
+    "profile": "active_map_route_health_v1",
+    "inventory_sha256": "6d92235ec609d83a1d52b091212d0b06d47ab0ea1e7cced4fe0d34c5d94fd72c",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_route_health.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_route_health_20261023_v1"
+}

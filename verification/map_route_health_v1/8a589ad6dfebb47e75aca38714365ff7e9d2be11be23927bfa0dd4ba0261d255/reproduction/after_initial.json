@@ -1,0 +1,150 @@
+{
+  "session": {
+    "schema": "ch3.coupled_search.core_audit.v1",
+    "mode": "coupled_search",
+    "search_planner_id": "coupled_search_bounded_v3",
+    "algorithm_changed": true,
+    "estimator_implemented": true,
+    "valid": true,
+    "error": null,
+    "last_event_sequence": 1,
+    "counts": {
+      "scan_batches": 1,
+      "ray_measurements": 104,
+      "search_batches": 1,
+      "available_search_batches": 1,
+      "decision_public_snapshots": 1,
+      "public_unroutable_proposals": 1,
+      "core_proposals": 1,
+      "route_versions": 1
+    },
+    "retained_audit_records": 3,
+    "latest_route_sha256": "e51b2528ab7c8a91735b2c073bf938994af8b94d3fa689f6b079d65d3d1e7d26",
+    "coupled_belief": {
+      "valid": true,
+      "error": null,
+      "step": 0,
+      "stopped": false,
+      "alpha": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "history_complete": false,
+      "conditional_ess": [
+        32.0,
+        32.0,
+        32.0
+      ],
+      "historical_information_carried_by_boundary": true,
+      "retained_history": 0,
+      "window_steps": 64,
+      "boundary_step": 0,
+      "max_retained_history": 0,
+      "last_replay_steps": 0,
+      "max_replay_steps": 0,
+      "max_map_boxes": 9,
+      "last_replay_work": 0,
+      "boundary_array_bytes": 5400,
+      "snapshot_array_bytes": 0,
+      "retained_snapshots": 0,
+      "retained_event_ids": 1,
+      "counts": {
+        "initializations": 1,
+        "joint_updates": 1
+      },
+      "window_map_frame_bytes": 0,
+      "persistent_map": {
+        "revision": 1,
+        "grid_shape": [
+          20,
+          20,
+          10
+        ],
+        "grid_cells": 4000,
+        "spacing": [
+          1.0,
+          1.0,
+          0.8
+        ],
+        "known_free_cells": 354,
+        "occupied_cells": 7,
+        "observed_cells": 361,
+        "hit_evidence_cells": 8,
+        "base_boxes": 7,
+        "state_array_bytes": 40000,
+        "counts": {
+          "scan_batches": 1,
+          "ray_measurements": 104,
+          "changed_cells": 361
+        },
+        "resolution_approximation": true
+      },
+      "geometry_counts": {
+        "unknown_boxes_removed": 0,
+        "local_geometry_transactions": 1,
+        "geometry_changes": 1
+      },
+      "first_failure": null,
+      "last_failure": null,
+      "approximate_map_transport": true,
+      "approximate_boundary_proposals": true,
+      "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+      "design_variant": "full"
+    },
+    "execution_error_observations": 0,
+    "prior_is_approximate": true,
+    "performance_passed": false
+  },
+  "audit": [
+    {
+      "kind": "coupled_proposal",
+      "step": 0,
+      "trigger": "INITIALIZE",
+      "target_identity": "522770e9a39399713fffbc80b835d489f85b2f307c03e542aebe16e57486f6d9",
+      "scenario_identity": "4e431ed90544bdf0e8f1eea2baae74178135d8e15569b5966b0f1db6624325a3",
+      "selected_ids": [
+        "coupled_04697c068307f1748edc",
+        "coupled_df10be4d95ce9e7e9d0d"
+      ],
+      "compression": {
+        "1": {
+          "raw": 12,
+          "representatives": 2,
+          "epsilon": 0.01924864120065497,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        },
+        "2": {
+          "raw": 12,
+          "representatives": 4,
+          "epsilon": 0.011165660959620943,
+          "reached_error_target": true,
+          "stopped_by": "error_target"
+        }
+      },
+      "combinations": 8,
+      "path_queries": 48,
+      "elapsed_seconds": 0.5649635000154376,
+      "objective": 0.08583777027980355,
+      "detection": 0.09375,
+      "scenario_utilities": [
+        0.09375,
+        0.09375,
+        0.09375
+      ],
+      "scenario_detection": [
+        0.09375,
+        0.09375,
+        0.09375
+      ],
+      "frozen_agents": [],
+      "installed": false,
+      "finite_bank_review_mean_utility": 0.109375,
+      "review_kind": "independent_resampling_of_same_finite_bank",
+      "public_unroutable_searchers": {
+        "0": "invalid_start"
+      }
+    }
+  ]
+}

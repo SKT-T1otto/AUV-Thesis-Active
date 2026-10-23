@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255",
+    "profile": "active_map_route_health_v1",
+    "inventory_sha256": "6d92235ec609d83a1d52b091212d0b06d47ab0ea1e7cced4fe0d34c5d94fd72c",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_route_health.v1"
+  },
+  "commands": [
+    {
+      "command": [
+        "-m",
+        "cli",
+        "verify"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "bounded-experiment",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "bounded-experiment",
+        "prepare",
+        "--root",
+        "work/route_health_dry_absent",
+        "--spec",
+        "work/missing_spec.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "bounded-experiment",
+        "run",
+        "--root",
+        "work/route_health_dry_absent",
+        "--arms",
+        "full_w64",
+        "--validation",
+        "work/missing_validation.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "bounded-experiment",
+        "report",
+        "--root",
+        "work/route_health_dry_absent",
+        "--output",
+        "work/route_health_report_absent"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "tools.check_bounded_map",
+        "--output",
+        "work/route_health_dry_absent"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "tools.check_map_training",
+        "--bounded",
+        "--output",
+        "work/route_health_dry_absent"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "train",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "map-suite",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "dry_run_outputs_absent": true,
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255",
+    "profile": "active_map_route_health_v1",
+    "inventory_sha256": "6d92235ec609d83a1d52b091212d0b06d47ab0ea1e7cced4fe0d34c5d94fd72c",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_route_health.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_route_health_20261023_v1"
+}

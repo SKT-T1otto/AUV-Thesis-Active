@@ -1,0 +1,133 @@
+{
+  "scenario_id": "unknown_train_m20_0021",
+  "pair_group_id": "unknown_train_pair_0021",
+  "scenario_profile": "M20_MOVING_UNKNOWN_MULTI",
+  "scenario_role": "train",
+  "scenario_split": "train",
+  "protocol": "ch3_unknown_map_v1",
+  "scenario_seed": 2002749,
+  "planner_seed": 1236666781,
+  "max_steps": 400,
+  "target_motion_known": true,
+  "target_motion_mode": "constant_velocity_reflect_v1",
+  "target_state_schema": "moving_target_state_v1",
+  "target_motion_seed": 20027310,
+  "initial_agent_positions": [
+    [
+      9.6393121,
+      8.2296462,
+      1.4248077
+    ],
+    [
+      2.8399061,
+      5.5949569,
+      6.9940506
+    ],
+    [
+      14.8980923,
+      6.6027115,
+      6.9639418
+    ],
+    [
+      13.6693639,
+      1.5787937,
+      1.9608397
+    ]
+  ],
+  "initial_executor_wait_point": [
+    3.8188552,
+    9.0664437,
+    2.5288932
+  ],
+  "target_position": [
+    1.4866451,
+    13.2766238,
+    6.1448311
+  ],
+  "target_initial_position": [
+    1.4866451,
+    13.2766238,
+    6.1448311
+  ],
+  "target_initial_velocity": [
+    -0.1141083,
+    -0.1333615,
+    0.2776591
+  ],
+  "use_obstacles": true,
+  "obstacle_layout_id": "custom_aabb_v1",
+  "obstacle_family": "random_multi_aabb_v1",
+  "obstacle_knowledge_mode": "online_unknown",
+  "obstacle_layout_sha256": "8434c1839f93bc4ba8be5845ee85df668178436f4653ad2d0e609d93c87da22c",
+  "obstacle_count": 4,
+  "obstacles": [
+    {
+      "center": [
+        8.7495628,
+        11.3558314,
+        2.4526805
+      ],
+      "size": [
+        1.7901822,
+        2.5655717,
+        3.4118909
+      ]
+    },
+    {
+      "center": [
+        11.9472902,
+        9.7439729,
+        3.5038466
+      ],
+      "size": [
+        1.9221384,
+        4.4524362,
+        4.6602
+      ]
+    },
+    {
+      "center": [
+        6.8966042,
+        6.3924357,
+        4.7093577
+      ],
+      "size": [
+        2.2282453,
+        1.47668,
+        1.7667402
+      ]
+    },
+    {
+      "center": [
+        15.0096313,
+        16.0907887,
+        2.1578966
+      ],
+      "size": [
+        3.2240039,
+        4.9965164,
+        2.1845059
+      ]
+    }
+  ],
+  "planner_grid_size": [
+    10,
+    10,
+    8
+  ],
+  "planner_obstacle_clearance": 0.4,
+  "target_obstacle_clearance": 0.2,
+  "target_capture_radius": 0.8,
+  "target_trajectory_sha256": "65404854d9e915e8978e8e7efb3ee9563b0a4cc9d77236e28b9a12ec0b27e1f0",
+  "target_trajectory_distance": 26.1866498335703,
+  "unknown_map_schema": "shared_logodds_occupancy_v1",
+  "map_sharing_mode": "central_shared_deterministic_v1",
+  "flow_phase_x": 0.0,
+  "flow_phase_y": 0.0,
+  "scenario_schema_version": 1,
+  "connectivity_component_id": "327ac1b61e68ad59",
+  "target_trajectory_reachable": true,
+  "target_trajectory_exact_endpoint_reachable": true,
+  "target_trajectory_max_connector_distance": 1.202491432302794,
+  "target_trajectory_connector_failure_count": 0
+}

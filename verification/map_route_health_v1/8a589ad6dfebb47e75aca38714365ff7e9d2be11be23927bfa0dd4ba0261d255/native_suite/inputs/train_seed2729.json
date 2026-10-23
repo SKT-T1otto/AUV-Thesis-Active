@@ -1,0 +1,96 @@
+{
+  "scenario_profile": "M20_MOVING_UNKNOWN_MULTI",
+  "scenario_split": "train",
+  "scenario_role": "train",
+  "scenario_count": 1,
+  "scenarios": [
+    {
+      "scenario_id": "v2_mechanism_normal_620196",
+      "scenario_seed": 620196,
+      "planner_seed": 620196,
+      "scenario_profile": "M20_MOVING_UNKNOWN_MULTI",
+      "scenario_split": "train",
+      "scenario_role": "train",
+      "protocol": "CH3_UNKNOWN_MAP_V1",
+      "max_steps": 32,
+      "initial_agent_positions": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          5.2,
+          2,
+          2
+        ],
+        [
+          2,
+          5.2,
+          2
+        ],
+        [
+          6,
+          6,
+          2
+        ]
+      ],
+      "initial_executor_wait_point": [
+        8,
+        8,
+        2
+      ],
+      "target_position": [
+        16.0,
+        16.0,
+        2.0
+      ],
+      "target_initial_position": [
+        16.0,
+        16.0,
+        2.0
+      ],
+      "target_initial_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_motion_mode": "constant_velocity_reflect_v1",
+      "target_motion_known": true,
+      "target_motion_seed": 317290,
+      "target_state_schema": "moving_target_state_v1",
+      "use_obstacles": true,
+      "obstacle_layout_id": "custom_aabb_v1",
+      "obstacle_knowledge_mode": "online_unknown",
+      "obstacles": [
+        {
+          "center": [
+            14,
+            14,
+            3
+          ],
+          "size": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "center": [
+            16,
+            5,
+            4
+          ],
+          "size": [
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "flow_phase_x": 0.0,
+      "flow_phase_y": 0.0,
+      "scenario_schema_version": 1
+    }
+  ]
+}

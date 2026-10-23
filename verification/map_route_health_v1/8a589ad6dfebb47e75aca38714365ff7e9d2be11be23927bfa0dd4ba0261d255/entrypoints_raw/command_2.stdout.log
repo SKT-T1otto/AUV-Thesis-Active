@@ -1,0 +1,7 @@
+{
+  "executed": false,
+  "command": "prepare",
+  "root": "work/route_health_dry_absent",
+  "stage": "pilot",
+  "spec": "work/missing_spec.json"
+}

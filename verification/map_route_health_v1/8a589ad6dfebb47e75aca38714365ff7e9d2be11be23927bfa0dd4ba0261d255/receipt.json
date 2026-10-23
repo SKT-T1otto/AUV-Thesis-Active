@@ -1,0 +1,57 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "run_id": "map_route_health_20261023_v1",
+  "source_identity": {
+    "review_sha256": "8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255",
+    "profile": "active_map_route_health_v1",
+    "inventory_sha256": "6d92235ec609d83a1d52b091212d0b06d47ab0ea1e7cced4fe0d34c5d94fd72c",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_route_health.v1"
+  },
+  "gates": {
+    "source": {
+      "path": "verification/map_route_health_v1/8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255/source.json",
+      "sha256": "096cd4ce890118d1e0fc647f907aef747a51f179c1f65168ff5511109a56056c"
+    },
+    "structural": {
+      "path": "verification/map_route_health_v1/8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255/structural.json",
+      "sha256": "e0148b8546d93f5b2056d8fd623701c46d99a4dd55d455dc6854a81dba0df0f6"
+    },
+    "regression": {
+      "path": "verification/map_route_health_v1/8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255/regression.json",
+      "sha256": "6f730ee0706ab0523b13dd233d7de12e49bd182ae9615974fbb75f9eafdab5ac"
+    },
+    "parity": {
+      "path": "verification/map_route_health_v1/8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255/parity.json",
+      "sha256": "cc43b733896aacbb32b5db88598fe9f9b6c434aa7ebe37cf85f446e44e15b001"
+    },
+    "entrypoints": {
+      "path": "verification/map_route_health_v1/8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255/entrypoints.json",
+      "sha256": "7acc436f2f97653ed4f6998322f54e631f615463be3305a5a86df95d3433a86d"
+    },
+    "checkpoint": {
+      "path": "verification/map_route_health_v1/8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255/checkpoint.json",
+      "sha256": "00655911c2fa992c5bbd817bcd7f0e950e48c58e039ac8e6d39c3dd7593ab9e6"
+    },
+    "mechanisms": {
+      "path": "verification/map_route_health_v1/8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255/mechanisms.json",
+      "sha256": "e6a4b1eb9f64cebda01dc02878be3b87e6c6d8431f28a7c929907f41c44baf75"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "historical_e0_passed": false,
+  "performance_passed": false,
+  "linux_tested": false,
+  "scope": "Windows engineering correction and bounded native workflow only. The reported Linux trained policy was not replayed. New Linux validation and fresh native training remain required.",
+  "mechanism_budget": {
+    "episode_initializations": 8,
+    "nonempty_episodes": 6,
+    "total_physical_steps": 185,
+    "max_episode_steps": 32,
+    "temporary_learning_models": 2,
+    "max_complete_updates_per_model": 4,
+    "formal_training_episodes": 0,
+    "checkpoint_files_restored": 0
+  }
+}

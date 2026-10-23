@@ -1,0 +1,25 @@
+{
+  "passed": false,
+  "expected": 207,
+  "tests_run": 207,
+  "failures": [],
+  "errors": [
+    {
+      "test": "test_missing_new_module_rejected (checks.test_map_source.MapSource)",
+      "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_source.py\", line 26, in test_missing_new_module_rejected\n    root, manifest = self.fixture(directory)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_source.py\", line 21, in fixture\n    shutil.copyfile(ROOT/name,target)\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\shutil.py\", line 256, in copyfile\n    with open(dst, 'wb') as fdst:\nFileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\route_health_regression_final1\\\\temporary\\\\tmpm2me_j7t\\\\verification\\\\map_bounded_v3\\\\5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202\\\\native_suite\\\\jobs\\\\OLD_B3_seed2729\\\\evaluation\\\\evaluation_identity.json'\n"
+    },
+    {
+      "test": "test_parent_archive_and_old_evidence_are_immutable (checks.test_map_source.MapSource)",
+      "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_source.py\", line 32, in test_parent_archive_and_old_evidence_are_immutable\n    root, manifest = self.fixture(directory)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_source.py\", line 21, in fixture\n    shutil.copyfile(ROOT/name,target)\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\shutil.py\", line 256, in copyfile\n    with open(dst, 'wb') as fdst:\nFileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\route_health_regression_final1\\\\temporary\\\\tmp66_hsehx\\\\verification\\\\map_bounded_v3\\\\5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202\\\\native_suite\\\\jobs\\\\OLD_B3_seed2729\\\\evaluation\\\\evaluation_identity.json'\n"
+    },
+    {
+      "test": "test_resigned_manifest_cannot_hide_a_geometry_kernel_change (checks.test_map_source.MapSource)",
+      "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_source.py\", line 60, in test_resigned_manifest_cannot_hide_a_geometry_kernel_change\n    root, manifest = self.fixture(directory)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_source.py\", line 21, in fixture\n    shutil.copyfile(ROOT/name,target)\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\shutil.py\", line 256, in copyfile\n    with open(dst, 'wb') as fdst:\nFileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\route_health_regression_final1\\\\temporary\\\\tmpcov5cw58\\\\verification\\\\map_bounded_v3\\\\5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202\\\\native_suite\\\\jobs\\\\OLD_B3_seed2729\\\\evaluation\\\\evaluation_identity.json'\n"
+    },
+    {
+      "test": "test_resigned_manifest_cannot_hide_a_physics_change (checks.test_map_source.MapSource)",
+      "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_source.py\", line 39, in test_resigned_manifest_cannot_hide_a_physics_change\n    root, manifest = self.fixture(directory)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_source.py\", line 21, in fixture\n    shutil.copyfile(ROOT/name,target)\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\shutil.py\", line 256, in copyfile\n    with open(dst, 'wb') as fdst:\nFileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\\\\work\\\\route_health_regression_final1\\\\temporary\\\\tmp3r7mh9p7\\\\verification\\\\map_bounded_v3\\\\5407dca7221053fc1a399ab84b09a73ad6ec7a47c8792356ea1801a48613f202\\\\native_suite\\\\jobs\\\\OLD_B3_seed2729\\\\evaluation\\\\evaluation_identity.json'\n"
+    }
+  ],
+  "skipped": []
+}
