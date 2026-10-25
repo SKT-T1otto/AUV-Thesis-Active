@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6",
+    "profile": "active_map_diagnostics_v1",
+    "inventory_sha256": "3e6ac1d13a57f3737c1599a03730400d0d617733513a317c1f618de6d04fddba",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_diagnostics.v1"
+  },
+  "commands": [
+    {
+      "command": [
+        "-m",
+        "tools.check_map_diagnostics",
+        "--output",
+        "work/must_not_exist_diagnostic_probe"
+      ],
+      "exit_code": 0,
+      "executed": false
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "map-suite",
+        "prepare",
+        "--root",
+        "work/collision_terminal/must_not_exist_diagnostic_plan",
+        "--spec",
+        "configs/map_diagnostics_pilot_v1.json"
+      ],
+      "exit_code": 0,
+      "executed": false
+    },
+    {
+      "command": [
+        "-m",
+        "cli",
+        "map-suite",
+        "summarize",
+        "--root",
+        "missing",
+        "--output",
+        "work/must_not_exist_diagnostic_report",
+        "--groups",
+        "OLD_ZERO",
+        "NEW_ZERO"
+      ],
+      "exit_code": 0,
+      "executed": false
+    }
+  ],
+  "physical_episodes": 0,
+  "models_created": 0,
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6",
+    "profile": "active_map_diagnostics_v1",
+    "inventory_sha256": "3e6ac1d13a57f3737c1599a03730400d0d617733513a317c1f618de6d04fddba",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_diagnostics.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_diagnostics_20261025_v1"
+}

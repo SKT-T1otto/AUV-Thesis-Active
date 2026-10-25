@@ -1,0 +1,3 @@
+group,training_seed,episode,environment_steps,team_discounted_return,found,success,collision
+NEW_B2,2729,1,32,0.1116142692410821,0,0,0
+NEW_B3,2729,1,32,0.11160947967898278,0,0,0

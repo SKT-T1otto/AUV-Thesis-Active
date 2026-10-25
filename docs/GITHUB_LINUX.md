@@ -1,5 +1,7 @@
 # GitHub 版本与 Linux 运行
 
+2026-10-25 诊断版的分阶段实验见 [地图诊断与实验](MAP_DIAGNOSTICS_20261025.md)：复用已有 AUV 环境，先做无训练受控流与 OLD_ZERO/NEW_ZERO 对照，再按需要启动学习组。该配置用 `cli map-suite` 配合显式的 `configs/map_diagnostics_pilot_v1.json` 启用 v3；原默认配置保留。
+
 当前地图方案为 `coupled_search_bounded_v3`，默认原始窗口64步。实现、七组配置和指标解释见 [有界地图实现与实验](MAP_BOUNDED_V3_20261022.md)。此前 map-suite 六组入口仍保留为 v2 实验；本版有界地图使用 `cli bounded-experiment`。
 
 2026-10-23 的公开起点不可达修正及更新命令见 [路径约束修复说明](MAP_ROUTE_HEALTH_FIX_20261023.md)。此前在07a9625上失败的RUN保持原样，修复后须重新验证并准备独立RUN。

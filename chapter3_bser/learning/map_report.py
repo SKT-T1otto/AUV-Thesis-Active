@@ -42,11 +42,15 @@ def csv_file(path,rows):
         writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
 
 
-def summarize(root,output):
+def summarize(root,output,groups=None):
     root=Path(root).resolve();plan=load_plan(root);output=Path(output).resolve()
+    selected=list(plan['spec']['groups'] if groups is None else groups)
+    if not selected or len(selected)!=len(set(selected)) or set(selected)-set(plan['spec']['groups']):
+        raise ValueError('unique prepared report groups required')
     if output.exists():raise FileExistsError(output)
-    evaluations={};replicates=[];pairing=None;training_rows=[];diagnostics=[];validation_rows=[]
+    evaluations={};replicates=[];pairing=None;training_rows=[];diagnostics=[];validation_rows=[];diagnostic_sets=[]
     for job in plan['jobs']:
+        if job['group'] not in selected:continue
         if job['seed'] is not None:trained=training_receipt(root,plan,job)
         else:trained=None
         if job['seed'] is not None and trained is None:raise ValueError('missing completed training: '+job['name'])
@@ -65,6 +69,7 @@ def summarize(root,output):
         if any(r['training_seed']!=expected_seed or r['method']!=method or r['policy_id']!=receipt['policy_id'] for r in rows):raise ValueError('map evaluation learner/seed/policy mismatch')
         for r in rows:
             if r['found_penalized_steps']!=(r['max_steps'] if r['found_step'] is None else r['found_step']):raise ValueError('failure penalty metric changed')
+        diagnostic_sets.append((job['group'],job['seed'],rows))
         metrics=metric_values(rows)
         if any(not np.all(np.isfinite(v)) for v in metrics.values()):raise ValueError('nonfinite map metrics')
         evaluations[(job['group'],job['seed'])]=metrics
@@ -83,7 +88,7 @@ def summarize(root,output):
                     team_discounted_return=r['team_discounted_return'],found=int(r['found_step'] is not None),success=int(r['success']),
                     collision=int(r['termination_reason']=='obstacle_collision')))
     groups=[]
-    for group in plan['spec']['groups']:
+    for group in selected:
         values=[r for r in replicates if r['group']==group]
         row=dict(group=group,training_replicates=0 if group.endswith('_ZERO') else len(values),policies=len(values),scenarios_per_policy=plan['spec']['evaluation_count'])
         if 'convergence' in plan['spec']:
@@ -96,7 +101,7 @@ def summarize(root,output):
     comparisons=[]
     for learner in ('ZERO','B2','B3'):
         old,new='OLD_'+learner,'NEW_'+learner
-        if old not in plan['spec']['groups'] or new not in plan['spec']['groups']:continue
+        if old not in selected or new not in selected:continue
         seeds=[None] if learner=='ZERO' else plan['spec']['seeds']
         for key in METRICS:
             delta=np.stack([evaluations[(new,s)][key]-evaluations[(old,s)][key] for s in seeds])
@@ -104,15 +109,19 @@ def summarize(root,output):
             if learner=='ZERO':ci.update(training_replicates=0,interval_scope='paired held-out-scene uncertainty; no learned policy')
             comparisons.append(dict(comparison=new+' minus '+old,metric=key,**ci))
     result=dict(schema='auv.active.map_summary.v1',source_review=plan['source_review'],plan_sha256=plan['sha256'],complete=True,
+        selected_groups=selected,all_scheduled_groups_reported=set(selected)==set(plan['spec']['groups']),
         native_evaluation_only=True,mechanism_only=plan['mechanism_only'],groups=groups,comparisons=comparisons,
         bootstrap_draws=plan['spec']['bootstrap_draws'],performance_passed=False)
     require_review(plan['source_review']);output.mkdir(parents=True,exist_ok=False)
     write_json(output/'summary.json',result);csv_file(output/'groups.csv',groups);csv_file(output/'per_seed.csv',replicates)
+    from chapter3_bser.learning.map_diagnostics import write_tables
+    write_tables(output,diagnostic_sets)
     csv_file(output/'paired_deltas.csv',comparisons);csv_file(output/'learning_curves.csv',training_rows)
     if diagnostics:
         write_json(output/'convergence.json',dict(per_seed=diagnostics,scope='Exploratory plateau screen; two seeds and 12 validation scenes do not prove convergence.'))
         csv_file(output/'validation_curves.csv',validation_rows)
-    lines=['# OLD / NEW maps with independently adapted ZERO, B2 and B3','','All scheduled native policies completed; this does not assert a performance improvement.','',
+    lines=['# OLD / NEW maps with independently adapted ZERO, B2 and B3','','All selected native policies completed; this does not assert a performance improvement.',
+        'Selected groups: '+', '.join(selected)+'. All planned groups reported: '+str(result['all_scheduled_groups_reported'])+'.','',
         '| Group | Policies | Found | Success | Collision | Penalized found steps |','|---|---:|---:|---:|---:|---:|']
     for r in groups:lines.append(f'| {r["group"]} | {r["policies"]} | {r["found_rate"]:.4f} | {r["success_rate"]:.4f} | {r["collision_rate"]:.4f} | {r["found_penalized_steps"]:.2f} |')
     if diagnostics:

@@ -1,0 +1,68 @@
+{
+  "schema": "auv.active.map_summary.v1",
+  "source_review": {
+    "review_sha256": "3c9d134dd234907aa61b04653a6f5d9081782a3b8939c37fd415c5a75361b07f",
+    "profile": "active_map_diagnostics_v1",
+    "inventory_sha256": "7648284b4a2b615bb2b3d2c75078dc237f5eefee4dde373724429c394e54ab25",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_diagnostics.v1"
+  },
+  "plan_sha256": "222f47a5109b821c7be10a081a44567a0bbf51c591aa355491b1b9572bb5189b",
+  "complete": true,
+  "selected_groups": [
+    "NEW_B2",
+    "NEW_B3"
+  ],
+  "all_scheduled_groups_reported": true,
+  "native_evaluation_only": true,
+  "mechanism_only": true,
+  "groups": [
+    {
+      "group": "NEW_B2",
+      "training_replicates": 1,
+      "policies": 1,
+      "scenarios_per_policy": 1,
+      "found_rate": 1.0,
+      "found_rate_seed_sd": null,
+      "success_rate": 0.0,
+      "success_rate_seed_sd": null,
+      "collision_rate": 0.0,
+      "collision_rate_seed_sd": null,
+      "pre_found_collision_rate": 0.0,
+      "pre_found_collision_rate_seed_sd": null,
+      "found_penalized_steps": 9.0,
+      "found_penalized_steps_seed_sd": null,
+      "team_discounted_return": 0.22724925928037,
+      "team_discounted_return_seed_sd": null,
+      "runtime_seconds": 15.837624399980996,
+      "runtime_seconds_seed_sd": null,
+      "fallbacks": 0.0,
+      "fallbacks_seed_sd": null
+    },
+    {
+      "group": "NEW_B3",
+      "training_replicates": 1,
+      "policies": 1,
+      "scenarios_per_policy": 1,
+      "found_rate": 1.0,
+      "found_rate_seed_sd": null,
+      "success_rate": 0.0,
+      "success_rate_seed_sd": null,
+      "collision_rate": 0.0,
+      "collision_rate_seed_sd": null,
+      "pre_found_collision_rate": 0.0,
+      "pre_found_collision_rate_seed_sd": null,
+      "found_penalized_steps": 9.0,
+      "found_penalized_steps_seed_sd": null,
+      "team_discounted_return": 0.22724597537375357,
+      "team_discounted_return_seed_sd": null,
+      "runtime_seconds": 13.678504199997406,
+      "runtime_seconds_seed_sd": null,
+      "fallbacks": 0.0,
+      "fallbacks_seed_sd": null
+    }
+  ],
+  "comparisons": [],
+  "bootstrap_draws": 32,
+  "performance_passed": false
+}

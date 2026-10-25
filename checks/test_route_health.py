@@ -12,6 +12,13 @@ from chapter3_bser.experiments.coupled_search_v1.allocator import CoupledSearchA
 from chapter3_bser.learning import map_contract as mc
 
 
+def allocator_fixture():
+    from chapter3_bser.experiments.coupled_search_v1.diagnostics import StageAudit,ActivityAudit
+    a=CoupledSearchAllocator.__new__(CoupledSearchAllocator)
+    a.planning_diagnostics=StageAudit();a.session=NS(activity=ActivityAudit());a.failed_step=None
+    return a
+
+
 def state(statuses=('invalid_start','ready','ready')):
     agents=tuple(NS(agent_id=i,role='searcher' if i<3 else 'executor',position=(float(i*3),1.,1.)) for i in range(4))
     endpoints=[]
@@ -21,7 +28,7 @@ def state(statuses=('invalid_start','ready','ready')):
             connectors=(object(),) if status=='ready' else ()))
     graph=NS(endpoint_connectors=endpoints,cell_centers=np.array([[15.,15.,5.]]),
         valid_mask=np.array([True]),component_labels=np.array([0]))
-    return NS(agents=agents,searcher_ids=(0,1,2),planning_graph=graph,target_found=False)
+    return NS(agents=agents,searcher_ids=(0,1,2),planning_graph=graph,target_found=False,step=0)
 
 
 def routes(ids=(1,2)):return tuple(NS(agent_id=i) for i in ids)
@@ -68,19 +75,19 @@ class RouteHealth(unittest.TestCase):
         self.assertEqual(feasible_groups(state(('ready',)*3),routes((0,1,2)),{0,1,2},{0,1,2}),({0,1,2},{}))
 
     def test_partial_recovery_keeps_atomic_rejection_for_unassigned_affected_agent(self):
-        a=CoupledSearchAllocator.__new__(CoupledSearchAllocator);a.research={'schema':'ch3.coupled_search.core.v3'}
+        a=allocator_fixture();a.research={'schema':'ch3.coupled_search.core.v3'}
         old=object();a._propose=lambda *args:NS(search_assignments=(NS(agent_id=1),NS(agent_id=2)))
         result=a.allocate_partial(state(),old,affected_searcher_ids=(0,),trigger_reason='SAFE_SEARCH_RECOVERY')
         self.assertIs(result[0],old);self.assertEqual(result[1:],(False,'ATOMIC_REJECT_MISSING_SEARCH_ROUTE'))
 
     def test_successful_partial_recovery_preserves_the_original_return_contract(self):
-        a=CoupledSearchAllocator.__new__(CoupledSearchAllocator);a.research={'schema':'ch3.coupled_search.core.v3'}
+        a=allocator_fixture();a.research={'schema':'ch3.coupled_search.core.v3'}
         proposed=NS(search_assignments=(NS(agent_id=0),NS(agent_id=1)));a._propose=lambda *args:proposed
         result=a.allocate_partial(state(),object(),affected_searcher_ids=(0,),trigger_reason='SAFE_SEARCH_RECOVERY')
         self.assertIs(result[0],proposed);self.assertEqual(result[1:],(True,'COUPLED_ATOMIC_PROPOSAL'))
 
     def test_v2_keeps_its_original_missing_route_rejection(self):
-        a=CoupledSearchAllocator.__new__(CoupledSearchAllocator);a.research={'schema':'ch3.coupled_search.core.v2'}
+        a=allocator_fixture();a.research={'schema':'ch3.coupled_search.core.v2'}
         s=state();a._context=lambda *_:dict(state=s,targets=None,geometry=None,budget=None);a._references=lambda *_:{}
         with patch('chapter3_bser.experiments.coupled_search_v1.allocator.generate_routes',return_value=routes()),patch(
                 'chapter3_bser.experiments.coupled_search_v1.route_feasibility.feasible_groups',side_effect=AssertionError('v3 hook in v2')):
@@ -107,11 +114,12 @@ class RouteHealth(unittest.TestCase):
 
     def test_advance_failure_records_public_audit_and_preserves_exception(self):
         with tempfile.TemporaryDirectory() as directory:
-            r=runtime(directory)
+            target=Path(directory)/'zero_diagnostics_without_training'
+            r=runtime(target)
             def fail(*args,**kwargs):raise RuntimeError('original_exception')
             r.advance=fail
             with self.assertRaisesRegex(RuntimeError,'original_exception'):mc.advance(r,None,explore=False)
-            value=json.loads(next(Path(directory).glob('map_failure_*.json')).read_text())
+            value=json.loads(next(target.glob('map_failure_*.json')).read_text())
             self.assertEqual(value['phase'],'advance');self.assertEqual(len(value['allocator_audit_tail']),1)
 
     def test_diagnostic_failure_cannot_mask_the_original_error(self):

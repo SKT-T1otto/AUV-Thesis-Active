@@ -3,6 +3,7 @@ import numpy as np
 from .audit import PublicEvidenceSession, installed_route_hash
 from .coupled_belief import CoupledBelief
 from .execution_forecast import PublicExecutionErrors
+from .diagnostics import ActivityAudit
 
 
 class CoupledSearchSession(PublicEvidenceSession):
@@ -15,12 +16,14 @@ class CoupledSearchSession(PublicEvidenceSession):
         self.belief=belief_type(config,control_contract,vehicle_specs)
         self.errors=PublicExecutionErrors(config,vehicle_specs,control_contract)
         self.context=None;self.tracker_indices={};self.prediction=None
+        self.activity=ActivityAudit(config['audit_capacity'])
 
     def consume(self, events):
         evidence=super().consume(events)
         for item in evidence:
             if item.transition is not None:
                 obs=item.transition.payload
+                self.activity.advance(obs,item.physical_step)
                 self.errors.observe(obs,self.context)
                 if self.prediction is not None:
                     age=item.physical_step-self.prediction['step']

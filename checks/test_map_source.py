@@ -7,7 +7,7 @@ import shutil
 import tempfile
 import unittest
 from project_paths import ROOT
-from tools.map_route_health_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
+from tools.map_diagnostic_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
 
 
 def source_directory():
@@ -86,3 +86,20 @@ class MapSource(unittest.TestCase):
             manifest['sha256']=digest({key:value for key,value in manifest.items() if key!='sha256'})
             (root/MANIFEST).write_text(json.dumps(manifest),encoding='utf-8')
             with self.assertRaisesRegex(ValueError,'protected geometry kernel changed'):verify(root)
+
+    def test_observer_removal_cannot_hide_a_posterior_change(self):
+        with source_directory() as directory:
+            root,manifest=self.fixture(directory)
+            name='chapter3_bser/experiments/coupled_search_v1/bounded_belief.py'
+            path=root/name;source=path.read_text(encoding='utf-8')
+            self.assertIn('raw=self.omega*likelihood',source)
+            path.write_text(source.replace('raw=self.omega*likelihood','raw=self.omega*likelihood+0.01'),encoding='utf-8')
+            changed_hash=hashlib.sha256(path.read_bytes()).hexdigest()
+            evolution=json.loads((root/EVOLUTION).read_text(encoding='utf-8'))
+            next(r for r in evolution['changes'] if r['path']==name)['after_sha256']=changed_hash
+            (root/EVOLUTION).write_text(json.dumps(evolution),encoding='utf-8')
+            manifest['files'][name]=changed_hash
+            manifest['files'][EVOLUTION]=hashlib.sha256((root/EVOLUTION).read_bytes()).hexdigest()
+            manifest['sha256']=digest({k:v for k,v in manifest.items() if k!='sha256'})
+            (root/MANIFEST).write_text(json.dumps(manifest),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'observer changed algorithm AST'):verify(root)

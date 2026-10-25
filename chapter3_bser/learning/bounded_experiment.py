@@ -97,10 +97,18 @@ def report(root,output):
                         recoveries=counts.get('local_recoveries',0),replay_work=counts.get('bounded_replay_steps',0),
                         transports=counts.get('approximate_geometry_transports',0),
                         **timing_bands(health.get('inference_step_trace',[]))))
-            status.append(dict(arm=arm,complete=True,error=None))
+            status.append(dict(arm=arm,complete=True,error=None,reported_failures=None))
         except (OSError,ValueError,RuntimeError,KeyError) as error:
             # Preserve partial/failure files in their original job directories.
-            status.append(dict(arm=arm,complete=False,error=str(error)))
+            failures=[]
+            for path in sorted((root/arm/'jobs').rglob('failure.json')):
+                try:
+                    failure=suite.read(path)
+                    failures.append(dict(path=path.relative_to(root).as_posix(),
+                        error=failure.get('error'),environment_step=failure.get('environment_step')))
+                except (OSError,ValueError):pass
+            status.append(dict(arm=arm,complete=False,error=str(error),
+                reported_failures=json.dumps(failures) if failures else None))
     stage=index['matrix']['stages'][index['stage']]
     for arm in index['plans']:
         if arm=='full_w64':continue

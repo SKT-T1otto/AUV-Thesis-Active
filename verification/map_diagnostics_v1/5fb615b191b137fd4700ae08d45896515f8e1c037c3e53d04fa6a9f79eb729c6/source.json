@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "files": 254,
+  "manifest_sha256": "5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6",
+  "baseline_archive_verified": true,
+  "all_parent_evidence_immutable": true,
+  "learner_and_physics_byte_identical": true,
+  "original_d2_byte_identical": true,
+  "algorithm_ast_parity": true,
+  "geometry_kernels_byte_identical": true,
+  "strict_health_predicates_preserved": true,
+  "map_algorithm_revision": "coupled_search_bounded_v3",
+  "compute_revision": "diagnostics_v1",
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6",
+    "profile": "active_map_diagnostics_v1",
+    "inventory_sha256": "3e6ac1d13a57f3737c1599a03730400d0d617733513a317c1f618de6d04fddba",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_diagnostics.v1"
+  },
+  "exit_code": 0,
+  "run_id": "map_diagnostics_20261025_v1"
+}

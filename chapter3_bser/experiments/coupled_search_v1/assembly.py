@@ -35,6 +35,7 @@ def installed(owner):
     if session.config['mode'] == 'coupled_search':
         indices = {i: owner.bridge.path_tracker.snapshot(i).next_index for i in range(3)}
         session.installed(owner.guidance, indices)
+        session.activity.install(owner.guidance,owner.controller.current_allocation)
     else:
         session.installed(owner.guidance)
 

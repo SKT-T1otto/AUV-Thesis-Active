@@ -1,0 +1,20 @@
+{
+  "source_manifest": "8e0930652ac5e41ef6825b5155aac10f022b667e8152462d7fe6c4f2a0c59e78",
+  "regression": {
+    "passed": false,
+    "expected": 224,
+    "tests_run": 224,
+    "failures": [],
+    "errors": [
+      {
+        "test": "test_full_six_group_report_with_diagnostics_and_safe_reentry (checks.test_map_convergence.MapConvergence)",
+        "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_convergence.py\", line 181, in test_full_six_group_report_with_diagnostics_and_safe_reentry\n    report=summarize(root,root/'report')\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\chapter3_bser\\learning\\map_report.py\", line 113, in summarize\n    write_tables(output,diagnostic_sets)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\chapter3_bser\\learning\\map_diagnostics.py\", line 51, in write_tables\n    data=tables(sets)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\chapter3_bser\\learning\\map_diagnostics.py\", line 12, in tables\n    found=row['found_step'];length=row['actual_length']\nKeyError: 'actual_length'\n"
+      },
+      {
+        "test": "test_six_group_native_report_uses_seeds_and_paired_scenes (checks.test_map_suite.MapSuite)",
+        "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_suite.py\", line 163, in test_six_group_native_report_uses_seeds_and_paired_scenes\n    root,plan=fixture(folder);synthetic_results(root,plan);result=summarize(root,Path(folder)/'report')\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\chapter3_bser\\learning\\map_report.py\", line 113, in summarize\n    write_tables(output,diagnostic_sets)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\chapter3_bser\\learning\\map_diagnostics.py\", line 51, in write_tables\n    data=tables(sets)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\chapter3_bser\\learning\\map_diagnostics.py\", line 12, in tables\n    found=row['found_step'];length=row['actual_length']\nKeyError: 'actual_length'\n"
+      }
+    ],
+    "skipped": []
+  }
+}

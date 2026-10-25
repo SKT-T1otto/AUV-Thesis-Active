@@ -24,7 +24,10 @@ class CoupledController(EffectController):
         # follows the existing events/cooldowns and safety stabilization.
         if not state.target_found:
             result=super().step(state,mission_context)
+            self.allocator.session.activity.decision(state.step,result,state.target_found)
             if int(state.step) not in self.allocator.scored_steps:
                 raise RuntimeError('coupled_search_scoring_unavailable: step='+str(state.step))
             return result
-        return OnlineBSERController.step(self,state,mission_context)
+        result=OnlineBSERController.step(self,state,mission_context)
+        self.allocator.session.activity.decision(state.step,result,state.target_found)
+        return result

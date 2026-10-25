@@ -1,0 +1,89 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6",
+    "profile": "active_map_diagnostics_v1",
+    "inventory_sha256": "3e6ac1d13a57f3737c1599a03730400d0d617733513a317c1f618de6d04fddba",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_diagnostics.v1"
+  },
+  "run_id": "map_diagnostics_20261025_v1",
+  "gates": {
+    "source": {
+      "path": "verification/map_diagnostics_v1/5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6/source.json",
+      "sha256": "092a6393f92934c52ca3b44d52b401e2926aca819b7b4989137608a1c47ccb75"
+    },
+    "structural": {
+      "path": "verification/map_diagnostics_v1/5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6/structural.json",
+      "sha256": "f193a9be7ed4971d8f3b6615c6701c4434a81801de4f85df58c804f2bb64e484"
+    },
+    "regression": {
+      "path": "verification/map_diagnostics_v1/5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6/regression.json",
+      "sha256": "a7912ac3c59b609b553b5757f6f3e7bcd2a38327e396e46d0b4c626c922d3c67"
+    },
+    "parity": {
+      "path": "verification/map_diagnostics_v1/5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6/parity.json",
+      "sha256": "c42b4401901ce677b888b52dc7953e6f513ada39d983b53ec592681047051a5d"
+    },
+    "entrypoints": {
+      "path": "verification/map_diagnostics_v1/5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6/entrypoints.json",
+      "sha256": "78331fb7cb1f752582ba8eb928dfe43f2619557930181715fd6f07f4cf77237c"
+    },
+    "checkpoint": {
+      "path": "verification/map_diagnostics_v1/5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6/checkpoint.json",
+      "sha256": "97667be636fbf776d5458eef95ab3a44422fc6d1bf0017f10f92bac6665d4cc9"
+    },
+    "mechanisms": {
+      "path": "verification/map_diagnostics_v1/5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6/mechanisms.json",
+      "sha256": "d3e5ef4bb7b591514140aa99ef2b88e7adf2cf7cb54481bbf634e6f1c522b70d"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "historical_e0_passed": false,
+  "performance_passed": false,
+  "linux_tested": false,
+  "scope": "Windows diagnostic checks. Native/probe runs precede only a failure-directory creation fix, with explicit production-byte/function binding; final-source regression covers that branch. New Linux validation and manual research remain required.",
+  "mechanism_budget": {
+    "passed": true,
+    "episode_initializations": 8,
+    "physical_steps": 256,
+    "max_episode_steps": 32,
+    "temporary_learning_models": 4,
+    "max_complete_updates_per_model": 4,
+    "checkpoint_files_restored": 0,
+    "current_source_native_episodes": 0,
+    "functionally_bound_native_episodes": 4,
+    "prior_diagnostic_revision_native_episodes": 4,
+    "source_binding": {
+      "passed": true,
+      "candidate_source": {
+        "review_sha256": "3c9d134dd234907aa61b04653a6f5d9081782a3b8939c37fd415c5a75361b07f",
+        "profile": "active_map_diagnostics_v1",
+        "inventory_sha256": "7648284b4a2b615bb2b3d2c75078dc237f5eefee4dde373724429c394e54ab25",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.map_diagnostics.v1"
+      },
+      "current_source": {
+        "review_sha256": "5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6",
+        "profile": "active_map_diagnostics_v1",
+        "inventory_sha256": "3e6ac1d13a57f3737c1599a03730400d0d617733513a317c1f618de6d04fddba",
+        "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+        "distribution": "auv.active_source.map_diagnostics.v1"
+      },
+      "production_snapshot_sha256": "0d498d12815409b788ee6141ca6b736a8f312cb292cd13ff09ee491da03bfee1",
+      "production_files_checked": 150,
+      "changed_production_files": [
+        "chapter3_bser/learning/map_contract.py"
+      ],
+      "all_other_production_bytes_identical": true,
+      "successful_runtime_functions_ast_identical": true,
+      "scope": "Native runs and the same-input probe preceded only creation of a missing ZERO diagnostic output directory and its regression fixture update. Final regression independently exercises the failure-only directory branch. No numerical, guidance, RNG or successful-runtime code changed, and no checkpoint is relabelled."
+    },
+    "probe_cases": 12,
+    "probe_batched_inputs": 384,
+    "probe_physical_episodes": 0,
+    "public_stream_sha256": "6ebb7b1c35a59f4677b2e8b012cd1722f050059aae2dcecaff32f588c028855c",
+    "probe_scope": "Synthetic public rays and detector trajectories are independently specified. Internal faults test mechanisms, not physical consistency, natural recovery frequency or task performance."
+  }
+}

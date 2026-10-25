@@ -1,0 +1,3 @@
+group,training_seed,scenario_id,actual_length,found_step,success,termination_reason,pre_found_collision,search_physical_steps,execution_physical_steps,diagnostics_available,search_batches,core_scored_steps,eligible_scored_steps,scored_coverage,core_proposals,fallback_records,accepted_coupled_proposals,proposal_acceptance_fraction,fallback_decision_steps,fallback_decision_fraction,search_agent_steps,coupled_exact_agent_steps,coupled_modified_agent_steps,d2_agent_steps,hold_agent_steps,unknown_agent_steps,coupled_exact_fraction
+NEW_B2,2729,map_persistence_eval,32,9,False,timeout,False,9,23,True,9,8,8,1.0,1,0,1,1.0,0,0.0,27,27,0,0,0,0,1.0
+NEW_B3,2729,map_persistence_eval,32,9,False,timeout,False,9,23,True,9,8,8,1.0,1,0,1,1.0,0,0.0,27,27,0,0,0,0,1.0

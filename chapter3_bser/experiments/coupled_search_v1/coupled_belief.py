@@ -7,6 +7,7 @@ from .geometry_cache import ObservationCache
 from .numerics import Budget, BudgetExceeded, digest, locked, probabilities, swept_distances
 from .types import TargetForecast
 from .target_particles import propagate
+from .diagnostics import StageAudit, observe_inference
 
 
 class CoupledBelief:
@@ -22,6 +23,7 @@ class CoupledBelief:
         self.alpha=None;self.omega=None
         self.valid=False;self.error='not_initialized';self.stopped=False;self.retry_at=0
         self.first_failure=None;self.last_failure=None
+        self.inference_diagnostics=StageAudit(config['audit_capacity'])
 
     def initialize_hypotheses(self, maps, positions, velocities, alpha, omega, *, step=0):
         """Explicit finite prior injection, also used by independent analytic checks."""
@@ -98,17 +100,21 @@ class CoupledBelief:
         scans=[e.payload for item in self.history for e in item.scans]
         if not self.history or self.history[0].physical_step!=0:
             raise ValueError('replay_requires_initial_public_scan')
+        self.inference_diagnostics.stage('geometry_rebuild')
         maps=self.geometry.propose(scans,budget)
         saved=(self.maps,self.positions,self.velocities,self.alpha,self.omega,self.step,self.valid,self.stopped)
         try:
+            self.inference_diagnostics.stage('prior')
             self._prior(maps,budget)
             self.stopped=False
+            self.inference_diagnostics.stage('full_history_replay')
             for item in self.history:self._update(item,budget,replay=True)
             self.counts['full_history_replays']+=1
         except (ValueError,RuntimeError):
             (self.maps,self.positions,self.velocities,self.alpha,self.omega,self.step,self.valid,self.stopped)=saved
             raise
 
+    @observe_inference
     def consume(self, evidence):
         ids=tuple(e.event_id for e in evidence.scans)+(() if evidence.transition is None else (evidence.transition.event_id,))
         if ids and all(e in self.seen for e in ids):
@@ -121,11 +127,13 @@ class CoupledBelief:
         budget=Budget(self.config['inference_seconds'])
         if not self.valid and evidence.physical_step<self.retry_at:return
         try:
+            self.inference_diagnostics.stage('incremental_update')
             if self.valid:self._update(evidence,budget)
             else:self._rebuild(budget)
             self.valid=True;self.error=None
             return
         except (ValueError,RuntimeError) as error:
+            self.inference_diagnostics.note_failure(error)
             self.valid=False;self.error=str(error);self.counts['inference_failures']+=1
             self.last_failure=dict(step=evidence.physical_step,reason=str(error),phase='incremental' if self.maps else 'initialization')
             if self.first_failure is None:self.first_failure=dict(self.last_failure)
@@ -133,7 +141,9 @@ class CoupledBelief:
             try:
                 budget.check();self._rebuild(budget)
                 self.valid=True;self.error=None;self.counts['replenishments']+=1;return
-            except (ValueError,RuntimeError) as error:self.error=str(error)
+            except (ValueError,RuntimeError) as error:
+                self.inference_diagnostics.note_failure(error)
+                self.error=str(error)
         self.retry_at=evidence.physical_step+self.config['recovery_cooldown']
 
     @property

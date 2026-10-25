@@ -31,7 +31,7 @@ def source_files(root):
                  'provenance/map_core_manifest.json','provenance/map_experiment_evolution.json',
                  'provenance/map_experiment_manifest.json','provenance/map_convergence_evolution.json',
                  'provenance/map_convergence_manifest.json','provenance/map_persistence_evolution.json',
-                 'provenance/map_cache_evolution.json','provenance/map_bounded_evolution.json','provenance/map_route_health_evolution.json'):
+                 'provenance/map_cache_evolution.json','provenance/map_bounded_evolution.json','provenance/map_route_health_evolution.json','provenance/map_diagnostics_evolution.json'):
         if (root/name).is_file():files[name]=hashlib.sha256((root/name).read_bytes()).hexdigest()
     if (root/'provenance/map_cache_manifest.json').is_file():
         name='provenance/map_persistence_manifest.json'
@@ -42,6 +42,9 @@ def source_files(root):
     if (root/'provenance/map_route_health_manifest.json').is_file():
         name='provenance/map_bounded_manifest.json'
         files[name]=hashlib.sha256((root/name).read_bytes()).hexdigest()
+    if (root/'provenance/map_diagnostics_manifest.json').is_file():
+        name='provenance/map_route_health_manifest.json'
+        files[name]=hashlib.sha256((root/name).read_bytes()).hexdigest()
     for path in (root/'scripts').rglob('*.sh'):
         files[path.relative_to(root).as_posix()]=hashlib.sha256(path.read_bytes()).hexdigest()
     return files
@@ -50,6 +53,9 @@ def source_files(root):
 def verify_reviewed_changes(root=ROOT):
     root = Path(root).resolve()
     try:
+        if (root/'provenance/map_diagnostics_manifest.json').is_file():
+            from chapter3_bser.learning.map_diagnostic_source import verify
+            return verify(root,source_files(root),canonical_digest)
         if (root/'provenance/map_route_health_manifest.json').is_file():
             from chapter3_bser.learning.map_route_health_source import verify
             return verify(root,source_files(root),canonical_digest)
@@ -115,13 +121,13 @@ def require_review(identity):
 def research_readiness(identity, root=ROOT):
     root = Path(root).resolve()
     try:
-        folder = {'active_map_route_health_v1':'verification/map_route_health_v1','active_map_bounded_v3':'verification/map_bounded_v3','active_map_cache_v1':'verification/map_cache_v1','active_map_persistence_v1':'verification/map_persistence_v1','active_map_convergence_v1':'verification/map_convergence_v1','active_map_experiment_v1':'verification/map_experiment_v1','active_map_core_v1':'verification/map_core_v1',
+        folder = {'active_map_diagnostics_v1':'verification/map_diagnostics_v1','active_map_route_health_v1':'verification/map_route_health_v1','active_map_bounded_v3':'verification/map_bounded_v3','active_map_cache_v1':'verification/map_cache_v1','active_map_persistence_v1':'verification/map_persistence_v1','active_map_convergence_v1':'verification/map_convergence_v1','active_map_experiment_v1':'verification/map_experiment_v1','active_map_core_v1':'verification/map_core_v1',
                   'active_map_interface_v1':'verification/map_stage1'}.get(identity.get('profile'),'verification/rebuild')
-        if identity.get('profile') in ('active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1'):
+        if identity.get('profile') in ('active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1','active_map_diagnostics_v1'):
             revision=root/folder/identity['review_sha256']
             if (revision/'receipt.json').is_file():folder=revision.relative_to(root).as_posix()
         receipt = json.loads((root / folder / 'receipt.json').read_text(encoding='utf-8'))
-        gates = GATES + ('mechanisms',) if identity.get('profile') in ('active_map_core_v1','active_map_experiment_v1','active_map_convergence_v1','active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1') else GATES
+        gates = GATES + ('mechanisms',) if identity.get('profile') in ('active_map_core_v1','active_map_experiment_v1','active_map_convergence_v1','active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1','active_map_diagnostics_v1') else GATES
         if (receipt.get('schema') != 'auv.active.rebuild.readiness.v1' or receipt.get('source_identity') != identity
                 or receipt.get('manual_research_execution_allowed') is not True or receipt.get('performance_passed') is not False
                 or receipt.get('historical_acceptance_transferred') is not False or set(receipt.get('gates', {})) != set(gates)):

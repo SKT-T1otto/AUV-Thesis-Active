@@ -1,0 +1,164 @@
+{
+  "schema": "auv.source_evolution.map_diagnostics.v1",
+  "parent_review_sha256": "8a589ad6dfebb47e75aca38714365ff7e9d2be11be23927bfa0dd4ba0261d255",
+  "algorithm_changed": false,
+  "map_algorithm_revision": "coupled_search_bounded_v3",
+  "changes": [
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/allocator.py",
+      "before_sha256": "cbff116938b0ba891247d0e0bd8fbf14b322844d1e535285381e23186c67ca22",
+      "after_sha256": "c0319da5b302085923210a3b855c9e310cc26d6665d79f6a9b5c751008b45c1a",
+      "reason": "Observe proposal and scoring attempts including failures; record public fallback causes without changing allocation decisions."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/assembly.py",
+      "before_sha256": "5427639baccbfad3502a5ef6ac8f307d92b4cc260f91a35944c92faad718f0d5",
+      "after_sha256": "4104e3f507763601c77240169018b77ca2774cf017c8aa4850e07e26af1ff66a",
+      "reason": "Observe actual installed guidance after the original safety bridge, including initial allocation provenance."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/bounded_belief.py",
+      "before_sha256": "361e749173dab3b25ab15f109822cb044e95b3df04cb5244d07bf80265e6db13",
+      "after_sha256": "66f0198fa992110e29d8614eaaadfad57e0ff293ee00750fed55efcfebdfec01",
+      "reason": "Observe v3 scan, geometry, target, recovery seed and window replay phases, preserving initial depletion causes through final budget failures."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/controller.py",
+      "before_sha256": "294f2d3ff9d55734f639bf1f8bb54d7accddd97d6f319a8da880c91b3cffe8ef",
+      "after_sha256": "8b78e1a3970c4df69a8821fe97916e6d615be322d1f5e09f38dd110c6e4c7996",
+      "reason": "Observe accepted/rejected controller results and reasons; retain original event/cooldown and found-target behavior."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/coupled_belief.py",
+      "before_sha256": "e31390c88a592b1f0eee33b7dfcfd2b641428f035c2c4517c0613ecd54ea1ee9",
+      "after_sha256": "3014032ce7c58a76249029c16e4f81c554660df24b634a3246d4f2a9108ad561",
+      "reason": "Observe v2 incremental, prior, geometry and full-history replay phases while preserving numerical/control AST."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/diagnostics.py",
+      "before_sha256": null,
+      "after_sha256": "aa77943598f8736ba6b1cbaf4cb9110a9a15ce138abd70b71e84766e51ef08ff",
+      "reason": "Bounded public observers distinguish failed compute attempts, first failure causes, accepted and installed routes, safety modifications and next-transition execution; no random draws or decision mutation."
+    },
+    {
+      "path": "chapter3_bser/experiments/coupled_search_v1/session.py",
+      "before_sha256": "e0e8f05a18e6e9795afad73d1bb3629efcb359266a86a2d8a7d3731b4104ddbe",
+      "after_sha256": "1aec78ac4eaefb34abc911fb4042376f746c39906672dfb793195e08c4b3ff31",
+      "reason": "Count actual public physical transitions under the previously installed guidance."
+    },
+    {
+      "path": "chapter3_bser/learning/bounded_experiment.py",
+      "before_sha256": "c120748e97523c871e969c08104f0fdd69b136406e12df2d3968f87e65376adb",
+      "after_sha256": "71fddccf580171f9dce0354aa2dda11c80a46a332589370f5e6a763ea13eac58",
+      "reason": "Keep reported runtime failures visible alongside missing final evaluation receipts in incomplete arms."
+    },
+    {
+      "path": "chapter3_bser/learning/map_contract.py",
+      "before_sha256": "79bf6acc7190b0ff48fb4464b17451c9f7bf2162a0899a2a65e279e1f5e28edf",
+      "after_sha256": "1222b9f00b463cd4b3afe1b4d1922ec71cc4301f6dc99daeb4329a4a942a3fd0",
+      "reason": "Persist bounded diagnostics on successful and failed v2/v3 episodes while preserving every strict health predicate."
+    },
+    {
+      "path": "chapter3_bser/learning/map_diagnostic_source.py",
+      "before_sha256": null,
+      "after_sha256": "1d9dd664adb6711f3a06657b05a794131879b18ee003f3697faddbe5ea6bc99e",
+      "reason": "Bind runtime source identity and exact evolution to the immutable published route-health parent."
+    },
+    {
+      "path": "chapter3_bser/learning/map_diagnostics.py",
+      "before_sha256": null,
+      "after_sha256": "a6fc79df7a8c288fef015702fc08fb26ce1ad0a7016266b2fe1cc0fb0c2fc29e",
+      "reason": "Report search/execution phases, score coverage, installed path execution and failed compute attempts; unavailable historical diagnostics remain blank."
+    },
+    {
+      "path": "chapter3_bser/learning/map_report.py",
+      "before_sha256": "047c4ba9e5b9e543b604e2fcfbcdd02eabe8f77a193bfa44eb897a2d00194b6e",
+      "after_sha256": "84b5b09cef11a6e10310bc522f3c12b5d53005b70d6003bf30f1c1f155f29bba",
+      "reason": "Write diagnostic CSVs from the same verified native episode rows."
+    },
+    {
+      "path": "chapter3_bser/learning/map_suite.py",
+      "before_sha256": "c14684a30b7758fc9ff6e30093921a2f8bcc139a77184465253c59f1991c4ae7",
+      "after_sha256": "3ad1c2db6a22633f5bc641d6d4ed1ea40d48de05b0689f5199a272aa4413fa4f",
+      "reason": "Expose selected-group summaries after verified ZERO or learner stages without requiring unrelated jobs to complete."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "f8adca8514ced2379411b8a06d47376df2f6637b048863394fb9575789c98a72",
+      "after_sha256": "86fe9ea09225b22360707da58fc595042fdc1c9bfe039375fb3285108ee3cd8a",
+      "reason": "Select diagnostic source and versioned readiness while preserving old manifests and evidence."
+    },
+    {
+      "path": "checks/test_map_diagnostics.py",
+      "before_sha256": null,
+      "after_sha256": "1adb7d3fd74f5b3feb37a7a0aec57a759a134b52e0dbafee543b0a5a0ec89d44",
+      "reason": "Independent failure-cause, accepted-path/hold/rejection, transition counting, bounded storage, numerical/RNG transparency and dry-run oracles without episodes."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "5cd7a47f5e11b7dcf1e84ffecd747962048a4c546c96780ea36f890c2728b24a",
+      "after_sha256": "24670d93f258829f66e3721140d44a3aa7a71c2a2ad16904698eb768cdcc5ffd",
+      "reason": "Retarget immutable-parent/source negative controls to the diagnostic-only successor."
+    },
+    {
+      "path": "checks/test_route_health.py",
+      "before_sha256": "4ef999e9e1ee4646cf903931fb59fa590a14454d266e9789c2a178ba861db809",
+      "after_sha256": "75d092dbd9f8ca0aa0abe3445788e88d560dfb4a0250ec1547fbf681c433dc2d",
+      "reason": "Complete constructor-bypassing public state fixtures with observer fields and step clock; original rejection/health assertions unchanged."
+    },
+    {
+      "path": "configs/map_diagnostics_pilot_v1.json",
+      "before_sha256": null,
+      "after_sha256": "c7b92088d010476eb12d88927d0e718a211d9c0ab21d99cdcf71462886d21151",
+      "reason": "Stage original D2 versus bounded-v3 ZERO/B2/B3 paired development research with unchanged 30-episode pilot and kernel scale."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "6b26ae6e16884bb0b7b0b7ccd53ccee9268a1e58e2e3144691023433f487bd29",
+      "after_sha256": "6cff8467a31bdddbba44132310948c6d333c852ea4def94e96cd2be90cfb76af",
+      "reason": "Require the complete 228-test inventory with no skips."
+    },
+    {
+      "path": "provenance/baselines/map_route_health_20261025_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "5bd14d5af16593429238efb55fa726d2c675cf851d833ada778b120bd33898b3",
+      "reason": "Freeze the published route-health source/evidence; prior ZIPs remain immutable external hashes instead of nested copies."
+    },
+    {
+      "path": "provenance/baselines/map_route_health_20261025_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "8c3c5d4a4e0fc65f57987ff35bbd758bbecfe39ad1a606581904c634203b1bcc",
+      "reason": "Freeze the published route-health source/evidence; prior ZIPs remain immutable external hashes instead of nested copies."
+    },
+    {
+      "path": "provenance/map_route_health_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "5f54215f634c8b105655ab7bc945db11123dbe19d73236dbf1fab2f06a3b5e98",
+      "reason": "Pin the unchanged published route-health manifest as parent."
+    },
+    {
+      "path": "tools/check_map_diagnostics.py",
+      "before_sha256": null,
+      "after_sha256": "7c181e83091840b4a776d38c9544fe663d3f32ca8ef04376660a7a7ca4807a90",
+      "reason": "Explicit same-input synthetic long-stream matrix with target/geometry depletion, disabled-recovery negative control and phase traces; zero physical episodes/models."
+    },
+    {
+      "path": "tools/map_diagnostic_source.py",
+      "before_sha256": null,
+      "after_sha256": "91b53fb24beb34786fe6ec5172d29d83b04b7bfb11cd73f6f4b7f3f1f83d1746",
+      "reason": "Independently verify immutable parent, algorithm AST after observer removal, exact D2/physics/learner/kernel bytes, strict health and evolution coverage."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "8d65ab06e0dc14f8c019fb8e91ca26a10516f079cfb2800c85d12fb1f4d1f24c",
+      "after_sha256": "cb848e7402a64b5bc703df8ed82074de1af38480a01a59d0dea76a266b55e252",
+      "reason": "Require current Linux bounded map workflow for diagnostic successor."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "4c7b11a505bd8d98b3898e59da785a779f18bd5d7c7ce232c42fb38f4fa895d3",
+      "after_sha256": "f99b6829b44a3f6d138e2b61cec959bcbd5531fa077d690db311fde32e96082d",
+      "reason": "Dispatch independent current-source verification to diagnostic-only successor."
+    }
+  ]
+}

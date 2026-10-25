@@ -13,6 +13,7 @@ from .types import RouteProposal
 from .region_proposals import generate_routes, remaining_cost
 from .execution_forecast import forecast_route
 from .discovery import signature, compress, select_team, team_score
+from .diagnostics import StageAudit, observe_planning, observe_allocation
 
 
 class CoupledSearchAllocator(EffectAllocator):
@@ -21,8 +22,12 @@ class CoupledSearchAllocator(EffectAllocator):
         self.session=self.owner.map_research_session;self.research=self.session.config
         self.decision=None;self.failed_step=None;self.core_active=False
         self.scored_steps=set()
+        self.planning_diagnostics=StageAudit(self.research['audit_capacity'])
 
     def _fallback(self,state,error):
+        self.planning_diagnostics.note_failure(error)
+        self.session.activity.fallback(state.step,error)
+        self.planning_diagnostics.stage('d2_fallback')
         self.core_active=False;self.failed_step=int(state.step);self.decision=None
         self.session.counts['d2_fallbacks']+=1
         row=dict(kind='coupled_fallback',step=int(state.step),reason=str(error),planner='d2_v1')
@@ -37,8 +42,10 @@ class CoupledSearchAllocator(EffectAllocator):
         budget=Budget(self.research['planning_seconds'],queries=self.research['path_queries'])
         # Copy current PUBLIC arrays and graph without changing the original
         # provider's refresh schedule or grafting private beliefs into it.
+        self.planning_diagnostics.stage('public_snapshot')
         live=self.owner.planning_views.search(extract_planning_state(self.owner.env));budget.check()
         self.session.counts['decision_public_snapshots']+=1
+        self.planning_diagnostics.stage('target_forecast')
         targets=self.session.belief.forecast(budget);scenarios=self.session.errors.scenarios(state.step)
         self.decision=dict(step=int(state.step),state=live,targets=targets,scenarios=scenarios,budget=budget,
             geometry=PublicGeometry(live,self.owner.planning_views.clearance),cache={})
@@ -67,6 +74,7 @@ class CoupledSearchAllocator(EffectAllocator):
 
     def _evaluate(self,context,routes):
         signatures=[];forecasts=[];costs=[];cfg=self.research
+        self.planning_diagnostics.stage('route_forecast_and_signature')
         for route in routes:
             c=route.candidate
             key=(route.agent_id,tuple(map(tuple,c.path_points)),tuple(c.waypoint),route.tracker_index,route.reference,route.blocked)
@@ -84,6 +92,7 @@ class CoupledSearchAllocator(EffectAllocator):
 
     def _score(self,context,routes):
         sigs,forecasts,costs=self._evaluate(context,routes)
+        self.planning_diagnostics.stage('team_score')
         score=team_score(sigs,context['targets'].weights,context['scenarios'].weights,costs,
                          rho=self.research['rho'],lambda_cost=self.research['lambda_cost'])
         return score,forecasts
@@ -93,9 +102,11 @@ class CoupledSearchAllocator(EffectAllocator):
         y=best_standby(selected,standbys,original)
         return executor or self.execution.assign_standby(state,y),response_diagnostics(selected,y,original).conditional_reachable_response_time
 
+    @observe_planning('proposal')
     def _propose(self,state,current,affected,executor_affected,trigger):
         context=self._context(state);live=context['state'];cfg=self.research;budget=context['budget']
         references=self._references(context,current)
+        self.planning_diagnostics.stage('route_generation')
         routes=generate_routes(live,context['targets'],affected,references,cfg,context['geometry'],budget)
         frozen=tuple(r for i,r in sorted(references.items()) if i not in affected)
         routes=routes+frozen
@@ -108,6 +119,7 @@ class CoupledSearchAllocator(EffectAllocator):
         if not expected or any(not any(r.agent_id==i for r in routes) for i in expected):
             raise ValueError('missing_public_safe_route')
         sigs,forecasts,costs=self._evaluate(context,routes)
+        self.planning_diagnostics.stage('compression')
         groups=[];compression={}
         for i in sorted(expected):
             indices=tuple(j for j,r in enumerate(routes) if r.agent_id==i)
@@ -117,10 +129,12 @@ class CoupledSearchAllocator(EffectAllocator):
             groups.append(tuple(indices[k] for k in local.indices))
             compression[str(i)]=dict(raw=len(indices),representatives=len(local.indices),epsilon=local.epsilon,
                 reached_error_target=local.reached_error_target,stopped_by=local.stopped_by)
+        self.planning_diagnostics.stage('team_selection')
         chosen,score,count=select_team(groups,sigs,context['targets'].weights,context['scenarios'].weights,costs,
             rho=cfg['rho'],lambda_cost=cfg['lambda_cost'],budget=budget)
         selected=tuple(routes[j].candidate for j in chosen)
         # Executor standby selection still uses the original D2 context.
+        self.planning_diagnostics.stage('executor_standby')
         standbys,executor=self.standby_pool(state,current,movable=executor_affected) if current else self.standby_pool(state)
         if not standbys:raise ValueError('missing_original_standby')
         self.last_standbys=tuple(standbys);self.standby_may_change=executor is None
@@ -151,6 +165,7 @@ class CoupledSearchAllocator(EffectAllocator):
             forecasts={routes[j].agent_id:forecasts[j] for j in chosen})
         return allocation
 
+    @observe_allocation
     def allocate(self,state,*,trigger_reason='online'):
         if state.target_found:return super().allocate(state,trigger_reason=trigger_reason)
         current=getattr(getattr(self.owner,'controller',None),'current_allocation',None)
@@ -158,6 +173,7 @@ class CoupledSearchAllocator(EffectAllocator):
         except (ValueError,RuntimeError) as error:
             self._fallback(state,error);return super().allocate(state,trigger_reason=trigger_reason)
 
+    @observe_allocation
     def allocate_partial(self,state,current,*,affected_searcher_ids=(),executor_affected=False,trigger_reason):
         if state.target_found:return super().allocate_partial(state,current,affected_searcher_ids=affected_searcher_ids,
             executor_affected=executor_affected,trigger_reason=trigger_reason)
@@ -173,6 +189,7 @@ class CoupledSearchAllocator(EffectAllocator):
             return super().allocate_partial(state,current,affected_searcher_ids=affected_searcher_ids,
                 executor_affected=executor_affected,trigger_reason=trigger_reason)
 
+    @observe_planning('rescore')
     def rescore(self,state,allocation,*,finalize=False):
         if state.target_found or allocation.search_frozen:return allocation
         try:

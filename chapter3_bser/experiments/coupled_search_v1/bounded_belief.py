@@ -12,6 +12,7 @@ from .coupled_belief import CoupledBelief
 from .persistent_map import PersistentVoxelMap,LocalGeometryBank
 from .numerics import Budget,digest
 from .target_particles import propagate
+from .diagnostics import observe_inference
 
 
 @dataclass(frozen=True)
@@ -133,7 +134,9 @@ class BoundedCoupledBelief(CoupledBelief):
         for _ in range(self.config['replenish_attempts']):
             budget.check();self.counts['local_recovery_attempts']+=1
             try:
+                self.inference_diagnostics.stage('recovery_seed')
                 self._seed_from_boundary(maps,budget);self.stopped=False;snapshots=[];attempt_steps=0
+                self.inference_diagnostics.stage('window_replay')
                 for item in self.history:
                     budget.check();attempt_steps+=1;self.last_replay_work+=1
                     self.last_replay_steps=attempt_steps;self.max_replay_steps=max(self.max_replay_steps,attempt_steps)
@@ -142,9 +145,12 @@ class BoundedCoupledBelief(CoupledBelief):
                 self.snapshots=deque(snapshots)
                 self.counts['local_recoveries']+=1
                 return
-            except (ValueError,RuntimeError) as failure:error=failure
+            except (ValueError,RuntimeError) as failure:
+                self.inference_diagnostics.note_failure(failure)
+                error=failure
         raise ValueError('bounded_recovery_exhausted:'+str(error))
 
+    @observe_inference
     def consume(self,evidence):
         ids=tuple(event.event_id for event in evidence.scans)+(() if evidence.transition is None else (evidence.transition.event_id,))
         if ids and all(event in self.seen for event in ids):self.counts['duplicate_packets']+=1;return
@@ -165,14 +171,17 @@ class BoundedCoupledBelief(CoupledBelief):
         self.max_retained_history=max(self.max_retained_history,len(self.history));self.last_replay_steps=0;self.last_replay_work=0
         try:
             phase_start=time.perf_counter()
+            self.inference_diagnostics.stage('scan_and_map_memory')
             if self.config['bounded']['map_memory']=='window_ablation':
                 frame=self.memory.observe([event.payload for event in evidence.scans],budget)
                 self.map_frames.append(frame)
                 self.memory.replace_window(self.map_frames,frame,budget)
             else:self.memory.ingest([event.payload for event in evidence.scans],budget)
+            self.inference_diagnostics.stage('geometry_repair')
             maps,changed=self.geometry.repair(budget);phase['map_seconds']=time.perf_counter()-phase_start
             self.max_boxes=max(self.max_boxes,max(map(len,(geometry.boxes for geometry in maps)),default=0))
             budget.check();phase_start=time.perf_counter()
+            self.inference_diagnostics.stage('target_update')
             if self.boundary is None:
                 if evidence.physical_step!=0:raise ValueError('initial_public_scan_required')
                 self._prior(maps,budget);self.boundary=self._snapshot();self.counts['initializations']+=1
@@ -183,6 +192,7 @@ class BoundedCoupledBelief(CoupledBelief):
                     self._target_update(evidence,budget)
                     self.snapshots.append(self._snapshot())
                 except ValueError as failure:
+                    self.inference_diagnostics.note_failure(failure)
                     if str(failure) not in ('bounded_target_zero_mass','bounded_geometry_transport_zero_mass'):raise
                     self.counts['local_recovery_triggers']+=1
                     if self.first_failure is None:self.first_failure=dict(step=evidence.physical_step,reason=str(failure),phase='local')
@@ -190,6 +200,7 @@ class BoundedCoupledBelief(CoupledBelief):
             phase['target_and_recovery_seconds']=time.perf_counter()-phase_start
             budget.check();self.valid=True;self.error=None;self.counts['joint_updates']+=1
         except (ValueError,RuntimeError) as error:
+            self.inference_diagnostics.note_failure(error)
             if saved is not None:self._restore(saved)
             self.valid=False;self.error=str(error);self.counts['inference_failures']+=1
             self.last_failure=dict(step=evidence.physical_step,reason=str(error),phase='bounded')

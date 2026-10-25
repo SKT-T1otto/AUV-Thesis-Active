@@ -102,7 +102,7 @@ def run(output, *, require_linux=False, expected_commit=None):
         research_readiness(source)
         result['source'] = source
         result['versions'] = {name: importlib.metadata.version(name) for name in ('numpy', 'torch')}
-        map_workflow=source.get('profile') in ('active_map_experiment_v1','active_map_convergence_v1','active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1')
+        map_workflow=source.get('profile') in ('active_map_experiment_v1','active_map_convergence_v1','active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1','active_map_diagnostics_v1')
         command = [sys.executable, '-m', 'tools.run_checks', '--output', str(output / 'checks'), '--execute',
                    '--map-workflow' if map_workflow else '--rollout']
         env = os.environ.copy()

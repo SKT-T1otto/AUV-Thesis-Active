@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "candidate_source": {
+    "review_sha256": "3c9d134dd234907aa61b04653a6f5d9081782a3b8939c37fd415c5a75361b07f",
+    "profile": "active_map_diagnostics_v1",
+    "inventory_sha256": "7648284b4a2b615bb2b3d2c75078dc237f5eefee4dde373724429c394e54ab25",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_diagnostics.v1"
+  },
+  "current_source": {
+    "review_sha256": "5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6",
+    "profile": "active_map_diagnostics_v1",
+    "inventory_sha256": "3e6ac1d13a57f3737c1599a03730400d0d617733513a317c1f618de6d04fddba",
+    "parent_commit": "7510ca9006a620c0b52db5563e41b10c15e3fc43",
+    "distribution": "auv.active_source.map_diagnostics.v1"
+  },
+  "production_snapshot_sha256": "0d498d12815409b788ee6141ca6b736a8f312cb292cd13ff09ee491da03bfee1",
+  "production_files_checked": 150,
+  "changed_production_files": [
+    "chapter3_bser/learning/map_contract.py"
+  ],
+  "all_other_production_bytes_identical": true,
+  "successful_runtime_functions_ast_identical": true,
+  "scope": "Native runs and the same-input probe preceded only creation of a missing ZERO diagnostic output directory and its regression fixture update. Final regression independently exercises the failure-only directory branch. No numerical, guidance, RNG or successful-runtime code changed, and no checkpoint is relabelled."
+}

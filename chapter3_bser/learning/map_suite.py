@@ -310,6 +310,7 @@ def main(argv=None):
     launch=subs.add_parser('run');launch.add_argument('--root',required=True);launch.add_argument('--stage',choices=('train','diagnose','evaluate','all'),default='all')
     launch.add_argument('--groups',nargs='+',choices=GROUPS);launch.add_argument('--seeds',nargs='+',type=int);launch.add_argument('--validation')
     summary=subs.add_parser('summarize');summary.add_argument('--root',required=True);summary.add_argument('--output',required=True)
+    summary.add_argument('--groups',nargs='+',choices=GROUPS)
     for sub in (prep,launch,summary):sub.add_argument('--execute',action='store_true')
     args=vars(p.parse_args(argv));execute=args.pop('execute');command=args.pop('command')
     if not execute:result=dict(executed=False,command=command,**args)
