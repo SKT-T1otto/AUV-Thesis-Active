@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checkpoint_files_restored": 0,
+  "learner_state_format_unchanged": true,
+  "native_condition_relabel_negative_controls_passed": true,
+  "actual_phase_mask_and_actor_resumption_test": "checks.test_executor_recovery.ExecutorRecovery.test_actual_b2_b3_actor_and_replay_respect_search_gate_then_resume",
+  "updates_per_new_unit_model": 2,
+  "scope": "Fresh unit models only; no learned checkpoint restore or native environment training.",
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950",
+    "profile": "active_executor_recovery_v2",
+    "inventory_sha256": "521fff7b12ef630a0b243731b29713ed456643184104065655abf8aa6f83c2b2",
+    "parent_commit": "aef6833a6b80dcede92561b6497aafc1d5ad60e7",
+    "distribution": "auv.active_source.executor_recovery.v2"
+  },
+  "exit_code": 0,
+  "run_id": "executor_recovery_old_v2"
+}

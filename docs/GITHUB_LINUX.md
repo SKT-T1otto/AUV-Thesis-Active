@@ -1,5 +1,7 @@
 # GitHub 版本与 Linux 运行
 
+当前下一轮为 [老地图执行器闭环 v2](EXECUTOR_RECOVERY_V2.md)：使用 `cli executor-experiment`，仅 OLD_ZERO 两组、24次评估，无新地图信念会话及环境训练。上一轮四组诊断仍保留。
+
 2026-10-26 搜索期执行器待命修补见 [待命保护与四组 ZERO 对照](EXECUTOR_STANDBY_20261026.md)。已有 Linux 克隆请直接在原目录 fetch/checkout，继续使用 AUV 环境；按该文运行新的 `standby-experiment`，不必再次克隆或新建 Conda 环境。
 
 2026-10-25 诊断版的分阶段实验见 [地图诊断与实验](MAP_DIAGNOSTICS_20261025.md)：复用已有 AUV 环境，先做无训练受控流与 OLD_ZERO/NEW_ZERO 对照，再按需要启动学习组。该配置用 `cli map-suite` 配合显式的 `configs/map_diagnostics_pilot_v1.json` 启用 v3；原默认配置保留。

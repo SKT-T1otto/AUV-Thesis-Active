@@ -1,0 +1,146 @@
+{
+  "schema": "auv.source_evolution.executor_recovery.v2",
+  "parent_review_sha256": "f7f1ae9271cc744de6e769fbb705d3227b06f1e6935bba51bbc5812a76440d97",
+  "algorithm_changed": true,
+  "scope": "OLD-only executor moving/anchored recovery plus explicit search-phase residual mask; original algorithms and v1 guard retained.",
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/executor_experiment.py",
+      "before_sha256": null,
+      "after_sha256": "4cd772a7d54d98c6b198f77256feaecadeecc89f5c098c9b1b21711fe69dcf63",
+      "reason": "Prepare and verify only OLD_ZERO paired baseline/recovery evaluations, zero training jobs; report all-phase executor and team collisions, success, dwell/recovery/unverified counts and timing."
+    },
+    {
+      "path": "chapter3_bser/learning/executor_recovery_source.py",
+      "before_sha256": null,
+      "after_sha256": "99504b56dbed9269c56bddbf9e2504517bd671a8d14a61ed49ec44a0b5d04e0e",
+      "reason": "Bind exact successor inventory/evolution to published standby v1 parent."
+    },
+    {
+      "path": "chapter3_bser/learning/map_contract.py",
+      "before_sha256": "9c50671e9453b5e5833804c855263d2091c431f33ab0dda6f1fe2ed1c0bc801f",
+      "after_sha256": "0ca7ac945b7b4c6da7ab41e4f9454fb0f0b7ae7df8bc5493be961e3c4fc68afb",
+      "reason": "Validate versioned executor options, reject recovery v2 with NEW map, and bind the condition to native source/checkpoint identity; complete original health metrics AST unchanged."
+    },
+    {
+      "path": "chapter3_bser/learning/map_suite.py",
+      "before_sha256": "73462f9ce9e5df47f4730ff21a61681663c84b47f37659d3d1a3263bb66b9436",
+      "after_sha256": "9253d59da9f72b12d3a34a5770fc33f09a389cf5921c2559ca89fb7e7a60290f",
+      "reason": "Accept validated v2 settings only with OLD experimental groups; preserve original default/native map configuration paths."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "1f4dca055619a489c8d1e54d63816ac3d796e542a8130b2dfe3aa31777e16d71",
+      "after_sha256": "7264a48467a288fcfc949b559644584585e011813718f855e9dc9276ee1f5d10",
+      "reason": "Select recovery source and seven versioned readiness gates without changing old manifests/evidence."
+    },
+    {
+      "path": "chapter3_bser/learning/runtime.py",
+      "before_sha256": "c644ee8b385bf18002952e39de9f1dd326a2fdf60bea74267852180979f85e80",
+      "after_sha256": "e556534bb63a1875a3b6e03d3c503274362f7c516419ecdefd90796ac96e4fa2",
+      "reason": "Add only an opt-in executor search residual gate; original replay and actor-update masks handle unapplied actions and reactivate after discovery."
+    },
+    {
+      "path": "chapter3_bser/planner_factory.py",
+      "before_sha256": "95a12917c73f362270b5f14eb388ac0c16620f23795c3e13cbca820f960c0858",
+      "after_sha256": "45fb57e0858be6f2cd0e6823c6758133a6dac2a7371d1a9e62806eb9ef52f5ef",
+      "reason": "Explicitly construct recovery v2 only under its versioned condition and export separate diagnostics; old/no-guard and v1 bridges remain available."
+    },
+    {
+      "path": "chapter3_bser/safety/executor_public.py",
+      "before_sha256": null,
+      "after_sha256": "cea301d58545e7c04e1969cd1a4b8161db8053a91e00452a0f0b8d9d868970ef",
+      "reason": "Read current shared public free/occupied voxels, exact unknown-voxel segment checks on a small cell bounding box and fresh continuous endpoint queries without mutating original D2 refresh schedule."
+    },
+    {
+      "path": "chapter3_bser/safety/executor_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "30cab366159e170cb5afc0b89d07b2e7d9c167df876a06a75682b4c3a80adf05",
+      "reason": "Separate MOVE/RECOVER/HOLD/UNVERIFIED states, fixed anchors, observed velocity-increment estimate, bounded disturbed motion and stopping checks, safe resume hysteresis and fresh-endpoint retry throttling. Prefer verified original tracking intent; shorten only when rejected. Preserve original post-found control."
+    },
+    {
+      "path": "chapter3_bser/safety/executor_recovery_options.py",
+      "before_sha256": null,
+      "after_sha256": "e08f4b84615b60f02a521ef050629254da83c107e2556507005b5bf16d4df918",
+      "reason": "Version and bound OLD-only navigation settings and explicit executor_search_residual mode; preserve validation of immutable v1 options."
+    },
+    {
+      "path": "checks/test_executor_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "e3388176f63e07e3f0d04c28e476213f174053316a6233f4b4f576be226aac74",
+      "reason": "Independent closed-voxel oracle, public endpoint/current-time query, fixed-anchor retention, unknown-space rejection, observed perturbation and actual B2/B3 replay/actor masking/resumption tests; no physical episodes or file restore."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "e1e1c7b29b21d3c7d4380b30d45354eb262390c0bada81ef33e859575522b30b",
+      "after_sha256": "75ad9412f267e005922663764dd21916153647d173a904609b9ae56834da6f07",
+      "reason": "Retarget frozen-parent and re-signed negative source/evidence controls to recovery successor."
+    },
+    {
+      "path": "cli.py",
+      "before_sha256": "df48115a9679347aed12b79ffc2232b9951dc86e20e13520872ab439633b6efa",
+      "after_sha256": "7d79f67b25d07bbcf409bd4e96d1658c597ac8c68c68bb3286cee7b0f5509bba",
+      "reason": "Expose explicit-execute executor-experiment prepare/run/report commands."
+    },
+    {
+      "path": "configs/executor_recovery_pilot_v2.json",
+      "before_sha256": null,
+      "after_sha256": "10b52a906ddb2386ac7555cc79222d040110479b45fbed4dbdf74b324f30563a",
+      "reason": "Two OLD-only ZERO arms on the same 12 development scenarios, 400-step horizons; new belief session remains disabled."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "55d18ed23cfbac1812142abe3c162d5c7dfdeb3b1ec69acce1c2e78f20c3356a",
+      "after_sha256": "d0bd2e5a1ce794929c696a45ff900f3c8a06e10d6f8754d23f3f522e377f684b",
+      "reason": "Require all 252 regression tests with no skips."
+    },
+    {
+      "path": "provenance/baselines/executor_standby_20261027_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "33f8f92774d82c4a7d17321a81b5cdc8fc873242cc093cb3301c618421876251",
+      "reason": "Freeze parent source/docs; retain previous immutable provenance/evidence through exact external hash references instead of nesting archives or copying evidence again."
+    },
+    {
+      "path": "provenance/baselines/executor_standby_20261027_v1/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "c3eb047575a0c9bb9b3621cf2a314b2938d36abe6b810bdf67b2ce4534193d2d",
+      "reason": "Freeze parent source/docs; retain previous immutable provenance/evidence through exact external hash references instead of nesting archives or copying evidence again."
+    },
+    {
+      "path": "provenance/executor_standby_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "18a0a14429baa95e7be1e3e8a94c8215bc2f87c1d906d8df67af7eee8c64bec2",
+      "reason": "Pin unchanged published v1 parent."
+    },
+    {
+      "path": "tools/check_executor_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "f9defc6c5ae65ea11e3f5d9a36947de4088452f2287b0ac3cc6aabc5f99574ef",
+      "reason": "Explicit eight 32-step OLD-only ZERO native probes with residual-gate, dual-view, no-new-map and physical budget checks; no learned checkpoint restore."
+    },
+    {
+      "path": "tools/executor_recovery_source.py",
+      "before_sha256": null,
+      "after_sha256": "9c975f9ee510431e745a1892c11dbadda8e21592e3b5ff5367f65a7b2357072b",
+      "reason": "Independently verify archived mutable parent sources/docs and all immutable evidence hash references; protect original D2, physics, all learner optimizers and v1 guard; restrict runtime leaf change to explicit gate."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "e137491497c3f510e0bf7f6795d75d0597bd3d66d7c6a33d3a5fadc821997b8f",
+      "after_sha256": "fad9eee34a8b31bfe4555a02bcfec750d7cc754f7acbc1e7e8202d67f5c03671",
+      "reason": "Expose mutually exclusive bounded recovery workflow with the full regression inventory."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "3d41d46a3e6b1196530e73f3724019be2edc36493c37268df8c409f9e9697c0b",
+      "after_sha256": "ffb21f6f3bec45a29e8f40402608d9ca0623343a533af4fc43e7694d0381f70d",
+      "reason": "Require current OLD-only recovery native workflow during explicit actual-Linux checkout validation."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "ff48f515d7d41e57f2934153f90b83549bde30e63d5ff0c0857fd5a679929edf",
+      "after_sha256": "5716d17d18d770e1731ff3e465d47b9c1606182a76e2364c271a2de26dba0f4e",
+      "reason": "Dispatch independent successor source verification."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "original_d2_byte_identical": true,
+  "physics_and_learner_optimizers_byte_identical": true,
+  "original_v1_guard_byte_identical": true,
+  "strict_health_function_unchanged": true,
+  "explicit_runtime_gate_change": true,
+  "original_safe_tracking_unit_test_passed": true,
+  "full_trajectory_equivalence_claimed": false,
+  "gate": "parity",
+  "source_identity": {
+    "review_sha256": "ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950",
+    "profile": "active_executor_recovery_v2",
+    "inventory_sha256": "521fff7b12ef630a0b243731b29713ed456643184104065655abf8aa6f83c2b2",
+    "parent_commit": "aef6833a6b80dcede92561b6497aafc1d5ad60e7",
+    "distribution": "auv.active_source.executor_recovery.v2"
+  },
+  "exit_code": 0,
+  "run_id": "executor_recovery_old_v2"
+}

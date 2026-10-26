@@ -13,8 +13,10 @@ def validate_condition(value):
         raise ValueError('complete map experiment condition required')
     c=copy.deepcopy(value)
     if 'executor_safety' in c:
-        from chapter3_bser.safety.executor_standby import validate_options
+        from chapter3_bser.safety.executor_recovery_options import validate_options, SCHEMA as RECOVERY_SCHEMA
         c['executor_safety']=validate_options(c['executor_safety'])
+        if c['executor_safety']['schema']==RECOVERY_SCHEMA and c['map_id']!='OLD':
+            raise ValueError('executor recovery v2 must first be evaluated with the OLD map')
     if c['schema']!=SCHEMA or c['map_id'] not in ('OLD','NEW') or not isinstance(c['protocol_sha256'],str) or not re.fullmatch('[0-9a-f]{64}',c['protocol_sha256']):
         raise ValueError('invalid map experiment identity')
     if c['map_id']=='OLD':

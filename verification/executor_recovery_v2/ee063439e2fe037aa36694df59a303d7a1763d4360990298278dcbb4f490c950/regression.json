@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "expected": 252,
+  "tests_run": 252,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950",
+    "profile": "active_executor_recovery_v2",
+    "inventory_sha256": "521fff7b12ef630a0b243731b29713ed456643184104065655abf8aa6f83c2b2",
+    "parent_commit": "aef6833a6b80dcede92561b6497aafc1d5ad60e7",
+    "distribution": "auv.active_source.executor_recovery.v2"
+  },
+  "exit_code": 0,
+  "run_id": "executor_recovery_old_v2"
+}

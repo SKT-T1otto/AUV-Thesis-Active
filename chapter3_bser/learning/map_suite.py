@@ -27,8 +27,10 @@ def validate_spec(spec,*,mechanism=False):
           'training_generator_seed_base','checkpoint_interval','new_map_config','bootstrap_draws','statistics_seed'}
     if not isinstance(c,dict) or set(c)-{'convergence','executor_safety'}!=keys or c['schema']!=SPEC_SCHEMA:raise ValueError('complete map experiment specification required')
     if 'executor_safety' in c:
-        from chapter3_bser.safety.executor_standby import validate_options
+        from chapter3_bser.safety.executor_recovery_options import validate_options, SCHEMA as RECOVERY_SCHEMA
         c['executor_safety']=validate_options(c['executor_safety'])
+        if c['executor_safety']['schema']==RECOVERY_SCHEMA and any(not g.startswith('OLD_') for g in c['groups']):
+            raise ValueError('executor recovery v2 requires OLD-only experimental groups')
     if (not isinstance(c['groups'],list) or not c['groups'] or len(set(c['groups']))!=len(c['groups']) or set(c['groups'])-set(GROUPS)
             or not isinstance(c['seeds'],list) or not c['seeds'] or len(set(c['seeds']))!=len(c['seeds'])
             or any(type(s) is not int or not 0<=s<2**31 for s in c['seeds'])):raise ValueError('unique supported groups and training seeds required')

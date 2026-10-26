@@ -1,0 +1,165 @@
+"""Old-map executor MOVE/RECOVER/HOLD loop using public observations only."""
+from collections import Counter,deque
+from dataclasses import replace
+import time
+import numpy as np
+from chapter3_bser.controllers.path_tracker import PathTracker
+from chapter3_bser.safety.safe_guidance import SafetyBridge
+from chapter3_bser.safety.executor_standby import signature
+from chapter3_bser.safety.executor_recovery_options import validate_options
+from chapter3_bser.safety.executor_public import ExecutorGeometry,query_route
+from chapter3_bser.experiments.coupled_search_v1.execution_forecast import nominal_step
+
+
+def check_motion(geometry,position,velocity,target,spec,contract,error,*,moving=8,braking=16):
+    """Bounded disturbed tracking, then braking toward one FIXED anchor."""
+    p,v=np.asarray(position,float).copy(),np.asarray(velocity,float).copy()
+    initial=geometry.clearance(p);relaxed=not geometry.padded.point_free(p)
+    minimum=initial;anchor=np.asarray(target,float).copy();first=None
+    for k in range(moving+braking):
+        if k==moving and moving:anchor=p.copy()
+        end,new_v=nominal_step(p,v,anchor,spec,contract,error=error)
+        if first is None:first=end.copy()
+        distance=geometry.clearance(end)
+        if not geometry.segment(p,end,relaxed=relaxed):
+            return dict(valid=False,reason='unknown_or_occupied',bad_step=k+1,first=first,clearance=minimum)
+        if relaxed and distance<initial-1e-6:
+            return dict(valid=False,reason='shrinking_recovery_clearance',bad_step=k+1,first=first,clearance=minimum)
+        minimum=min(minimum,distance);p,v=end,new_v
+    speed=float(np.linalg.norm(v))
+    valid=speed<=.2 and (not relaxed or geometry.clearance(p)>=initial+.05)
+    return dict(valid=valid,reason='checked' if valid else 'unsettled_or_no_clearance_gain',
+        bad_step=None,first=first,clearance=minimum,final_speed=speed,endpoint=p)
+
+
+class ExecutorRecoveryBridge(SafetyBridge):
+    def __init__(self,owner):
+        super().__init__(owner)
+        self.options=validate_options(owner.config['map_experiment']['executor_safety'])
+        self.spec=owner.env.get_public_vehicle_specs()[3]
+        self.contract=dict(owner.env.get_public_control_contract())
+        self.contract['prior_strength_search']=self.contract['prior_strength_executor']
+        self.mode='MOVE';self.anchor=None;self.entered=0;self.valid_streak=0
+        self.route=None;self.route_key=None;self.tracker=PathTracker(threshold=.35)
+        self.last_query=-100;self.query_goal=None;self.last_failure=None
+        self.errors=deque(maxlen=8);self.previous=None;self.error=np.zeros(3)
+        self.safe_positions=deque(maxlen=8);self.trace=deque(maxlen=64);self.counts=Counter()
+        self.total_seconds=0.;self.max_seconds=0.
+
+    def _observe(self,agent,step):
+        if self.previous is not None and step==self.previous['step']+1:
+            old=self.previous
+            _,pred=nominal_step(old['position'],old['velocity'],old['target'],self.spec,self.contract)
+            # Saturation/wall responses cannot identify an external increment.
+            if (np.linalg.norm(old['velocity'][:2])<.98*self.spec['v_xy_max']
+                and np.linalg.norm(np.asarray(agent.velocity)[:2])<.98*self.spec['v_xy_max']):
+                self.errors.append(np.clip(np.asarray(agent.velocity)-pred,-.06,.06))
+                self.error=np.mean(self.errors,axis=0)
+                self.counts['public_error_observations']+=1
+
+    def _check(self,geometry,agent,target,*,moving):
+        self.counts['predictions']+=1
+        return check_motion(geometry,agent.position,agent.velocity,target,self.spec,self.contract,self.error,
+            moving=self.options['motion_steps'] if moving else 0,braking=self.options['braking_steps'])
+
+    def _near_target(self,position,target,factor=1.):
+        p=np.asarray(position,float);delta=np.asarray(target,float)-p
+        length=float(np.linalg.norm(delta));limit=self.options['tracking_distance']*factor
+        return tuple(p+delta*min(1.,limit/max(1e-12,length)))
+
+    def _navigation(self,geometry,agent,path,goal):
+        tracking=self.tracker.tracking_target(3,agent.position,path,goal)
+        for factor in (1.,.5,.25):
+            target=self._near_target(agent.position,tracking,factor)
+            result=self._check(geometry,agent,target,moving=True)
+            if result['valid']:return target,result
+        return None,result
+
+    def _recover(self,geometry,agent):
+        p,v=np.asarray(agent.position,float),np.asarray(agent.velocity,float)
+        backward=-v/max(1e-9,float(np.linalg.norm(v)))
+        lateral=np.array([-v[1],v[0],0.]);lateral/=max(1e-9,float(np.linalg.norm(lateral)))
+        if np.linalg.norm(lateral)<.1:lateral=np.array([0.,1.,0.])
+        history=self.safe_positions[-1] if self.safe_positions else p
+        candidates=[self.anchor,p,p+.8*geometry.outward(p),p+.9*backward,history,p+.6*lateral,p-.6*lateral]
+        seen=set();best=None
+        for i,value in enumerate(candidates):
+            if value is None:continue
+            target=tuple(float(x) for x in value)
+            if target in seen:continue
+            seen.add(target);result=self._check(geometry,agent,target,moving=False)
+            if result['valid']:
+                # Keep a valid existing anchor, avoiding a target which drifts
+                # with the agent. Otherwise prefer clearance, then short travel.
+                if i==0:return target,result
+                score=(min(5.,result['clearance']),-float(np.linalg.norm(np.asarray(target)-p)))
+                if best is None or score>best[0]:best=(score,target,result)
+        if best is not None:return best[1],best[2]
+        # No teleport, velocity reset or fake 'safe' fallback. Preserve a fixed
+        # braking target and expose the unverified emergency state to the report.
+        target=self.anchor if self.anchor is not None else tuple(p+.9*backward)
+        return tuple(target),dict(valid=False,reason='no_verified_recovery',bad_step=None)
+
+    def compile_guidance(self,allocation,planning_state,mission_context,*,decision_reason=None):
+        started=time.perf_counter()
+        try:return self._compile(allocation,planning_state,mission_context,decision_reason=decision_reason)
+        finally:
+            elapsed=time.perf_counter()-started;self.total_seconds+=elapsed;self.max_seconds=max(self.max_seconds,elapsed)
+
+    def _compile(self,allocation,state,mission,*,decision_reason):
+        context=super().compile_guidance(allocation,state,mission,decision_reason=decision_reason)
+        if mission.target_found or state.target_found or mission.mission_complete:
+            if self.previous is not None:
+                self.trace.append(dict(step=int(state.step),mode='HANDOFF_EXIT',anchor=self.anchor))
+            self.previous=None;self.route=None;self.anchor=None;self.mode='INACTIVE'
+            return context
+        geometry=ExecutorGeometry(self.owner);live=geometry.live
+        if int(live.step)!=int(state.step):raise ValueError('executor recovery requires current public geometry')
+        agent=next(a for a in live.agents if a.agent_id==state.executor_id)
+        step=int(live.step);self._observe(agent,step);self.counts['checks']+=1
+        original=allocation.executor_assignment;key=signature(original)
+        if self.route_key!=key:self.route=None;self.tracker.reset(3);self.route_key=key
+        item=next(a for a in context.agent_assignments if a.agent_id==state.executor_id)
+        path=self.route if self.route is not None else original.path
+        target,result=self._navigation(geometry,agent,path,original.target_region) if original.reachable or self.route is not None else (None,dict(reason='unreachable_assignment'))
+        if target is None and (step-self.last_query>=self.options['route_retry_steps'] or self.query_goal!=key):
+            route,fresh_step=query_route(self.owner,original.target_region)
+            if fresh_step!=step:raise ValueError('stale executor route snapshot')
+            self.last_query=step;self.query_goal=key;self.counts['route_queries']+=1
+            self.last_failure=route.failure_reason
+            if route.reachable:
+                self.route=tuple(tuple(float(x) for x in p) for p in route.path_points)
+                self.tracker.reset(3)
+                target,result=self._navigation(geometry,agent,self.route,original.target_region)
+                if target is not None:self.counts['route_repairs']+=1
+            else:self.counts['route_failure:'+str(route.failure_reason)]+=1
+        self.valid_streak=self.valid_streak+1 if target is not None else 0
+        recovering=self.mode in ('HOLD','RECOVER','UNVERIFIED')
+        resume=(not recovering or (step-self.entered>=3 and self.valid_streak>=2 and np.linalg.norm(agent.velocity)<.25))
+        if target is not None and resume:
+            self.mode='MOVE';self.anchor=None
+            item=replace(item,tracking_waypoint=target,hold_position=tuple(agent.position),hold_state=False,reachable=True)
+            if geometry.segment(agent.position,agent.position):
+                if not self.safe_positions or np.linalg.norm(np.asarray(agent.position)-self.safe_positions[-1])>.25:
+                    self.safe_positions.append(tuple(agent.position))
+        else:
+            if not recovering:self.entered=step
+            target,result=self._recover(geometry,agent);self.anchor=tuple(target)
+            if not result['valid']:self.mode='UNVERIFIED'
+            elif np.linalg.norm(np.asarray(agent.position)-target)<.2 and np.linalg.norm(agent.velocity)<.2:self.mode='HOLD'
+            else:self.mode='RECOVER'
+            item=replace(item,planned_path=(),tracking_waypoint=target,hold_position=target,hold_state=True,reachable=False)
+        self.counts['mode:'+self.mode]+=1
+        self.previous=dict(step=step,position=tuple(agent.position),velocity=tuple(agent.velocity),target=tuple(target))
+        self.trace.append(dict(self.previous,mode=self.mode,anchor=self.anchor,map_revision=geometry.revision,
+            observed_error=self.error.tolist(),prediction_reason=result['reason'],bad_prediction_step=result.get('bad_step'),
+            route_failure=self.last_failure,valid_route_streak=self.valid_streak))
+        executor=replace(context.executor_assignment,planned_path=item.planned_path,tracking_waypoint=item.tracking_waypoint,
+            hold_position=item.hold_position,hold_state=item.hold_state,reachable=item.reachable)
+        return replace(context,agent_assignments=tuple(item if a.agent_id==3 else a for a in context.agent_assignments),executor_assignment=executor)
+
+    def summary(self):
+        return dict(schema=self.options['schema'],options=self.options,counts=dict(self.counts),mode=self.mode,
+            anchor=self.anchor,trace=list(self.trace),observed_error=self.error.tolist(),
+            compile_seconds=self.total_seconds,max_compile_seconds=self.max_seconds,safety_guarantee=False,
+            scope='Old public map; known-free motion; estimated external velocity increment; original post-found control.')

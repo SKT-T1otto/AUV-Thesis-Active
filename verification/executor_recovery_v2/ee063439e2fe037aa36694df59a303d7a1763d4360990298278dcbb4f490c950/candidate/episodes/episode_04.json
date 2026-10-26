@@ -1,0 +1,291 @@
+{
+  "episode_id": 0,
+  "episode_index": 0,
+  "scenario_id": "eval_gen827699__unknown_validation_m20_0012",
+  "scenario_seed": 827710,
+  "found": false,
+  "success": false,
+  "success_if_found": false,
+  "found_step": null,
+  "success_step": null,
+  "remaining_steps_after_found": null,
+  "executor_target_received_step": null,
+  "handoff_delay": null,
+  "found_to_target_received_steps": null,
+  "found_to_success_steps": null,
+  "executor_distance_at_handoff": null,
+  "executor_distance_to_target_at_found": null,
+  "executor_distance_to_target_at_received": null,
+  "executor_min_distance_to_target": null,
+  "executor_final_distance_to_target": null,
+  "executor_distance_to_intercept_at_received": null,
+  "executor_min_distance_to_intercept": null,
+  "executor_final_distance_to_intercept": null,
+  "target_prediction_error_at_delivery": null,
+  "mean_target_prediction_error": null,
+  "target_prediction_map_fallback_count": 0,
+  "capture_contact_step_count": 0,
+  "capture_full_hold_step_count": 0,
+  "capture_hold_counter_max": 0,
+  "capture_swept_min_distance": null,
+  "executor_path_unreachable_count": null,
+  "executor_invalid_count": 0,
+  "executor_replan_count": 1,
+  "executor_invalid_assignment_unreachable_count": 0,
+  "executor_invalid_query_unreachable_count": 0,
+  "executor_invalid_cost_increase_count": 0,
+  "executor_invalid_stale_snapshot_deferred_count": 27,
+  "executor_validity_evaluation_count": 4,
+  "executor_validity_deferred_count": 27,
+  "public_target_update_event_count": 0,
+  "public_target_update_accepted_count": 0,
+  "public_target_shift_sum": 0.0,
+  "public_target_shift_mean": null,
+  "public_target_shift_max": null,
+  "environment_public_target_at_handoff": null,
+  "controller_execution_target_at_handoff": null,
+  "installed_executor_tracking_target_at_handoff": null,
+  "controller_to_public_target_error_at_handoff": null,
+  "controller_to_public_target_error_mean": null,
+  "controller_to_public_target_error_final": null,
+  "full_planning_refresh_count": 7,
+  "handoff_forced_refresh_count": 0,
+  "target_shift_forced_refresh_count": 0,
+  "post_found_collision_count": 0,
+  "pre_found_base_reward": 0.8870810577645898,
+  "post_found_base_reward": 0.0,
+  "post_found_shaping_reward": 0.0,
+  "completion_reward_post_tanh": 0.0,
+  "adjusted_episode_reward": 0.22177026444114745,
+  "search_residual_ratio_pre_found": 0.0,
+  "search_residual_ratio_post_found": null,
+  "executor_residual_ratio_pre_found": 0.0,
+  "executor_residual_ratio_post_found": null,
+  "initial_planner_endpoint_fallback_count": 0,
+  "episode_terminated": true,
+  "episode_truncated": false,
+  "termination_reason": "timeout",
+  "terminal_step": 32,
+  "first_collision_step": null,
+  "first_collision_agent_ids": [],
+  "first_collision_phase": null,
+  "collision_records": [],
+  "mission_complete": false,
+  "task_protocol": "collision_terminal_v1",
+  "collision_detection_revision": "segment_closed_aabb_v1",
+  "terminal_reward_revision": "team_failure_override_v1",
+  "terminated": true,
+  "truncated": false,
+  "safe_success": false,
+  "collision_episode": false,
+  "remaining_task_steps": 0,
+  "bootstrap_mask": 0.0,
+  "contact_bonus_count": 0,
+  "hold_bonus_count": 0,
+  "terminal_bonus_count": 0,
+  "discovery_correction_count": 0,
+  "searcher_zeroed_step_count": 0,
+  "reward_objective": "team_mean_v1",
+  "source_reward_revision": "execution_reward_v2_after_terminal_override_v1",
+  "gamma": 0.95,
+  "team_undiscounted_return": 0.22177026444114745,
+  "team_discounted_return": 0.11399125360134393,
+  "source_individual_returns": [
+    0.37477531423792243,
+    0.3234469380695373,
+    0.16942820061285602,
+    0.01943061211204622
+  ],
+  "source_searcher_zeroed_step_count": 0,
+  "source_adjusted_episode_reward": 0.8870810577645898,
+  "planner": {
+    "planner_protocol": "d2_v1",
+    "reference_arm": "D2",
+    "safety_variant": "V4",
+    "safe_counts": {
+      "search_candidate_unreachable_queries": 0,
+      "candidate_shortage_events": 0,
+      "path_safety_checks": 96,
+      "forced_planning_refreshes": 5,
+      "start_preflight:invalid_start": 4,
+      "short_circuited_candidate_pools": 4,
+      "unsafe_search_paths": 16,
+      "safety_route_queries": 16,
+      "safety_route_failures": 16,
+      "safety_route_failure:invalid_start": 4,
+      "safety_braking_agent_steps": 16,
+      "safety_route_failure:no_start_connector": 12
+    },
+    "effect_counts": {
+      "standby_unreachable_queries": 0,
+      "standby_shortage_events": 0
+    },
+    "unresolved_searcher_ids": [
+      2
+    ],
+    "audit_record_count": 8
+  },
+  "actual_length": 32,
+  "handoff_event_step": null,
+  "handoff_decision_step": null,
+  "repair_version": "ch3.d2.implementation_repair.v2",
+  "repair_switches": {
+    "waypoint_arrival": true,
+    "inactive_actor": true,
+    "hold_residual": true
+  },
+  "waypoint_reward_timing": "arrival_before_reward_v1",
+  "action_safety": {
+    "disabled_agent_steps": 16,
+    "suppressed_nonzero_residuals": 0
+  },
+  "raw_pre_tanh_components": {
+    "reward_find_event": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_early_find": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_completion_event": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_early_completion": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_progress": [
+      116.91596937179565,
+      96.24286723136902,
+      34.5989266037941,
+      14.235169410705566
+    ],
+    "reward_coverage": [
+      39.74999988079071,
+      39.74999988079071,
+      39.74999988079071,
+      0.0
+    ],
+    "reward_time_penalty": [
+      -6.400000095367432,
+      -6.400000095367432,
+      -6.400000095367432,
+      -6.400000095367432
+    ],
+    "reward_energy_penalty": [
+      -0.1580035546212457,
+      -0.0837654198257951,
+      -0.0715559250820661,
+      -0.02880065218778327
+    ],
+    "reward_smoothness_penalty": [
+      -0.18761548409383977,
+      -0.1245714858585103,
+      -0.10144831709800428,
+      -0.034107933526343004
+    ],
+    "reward_collision_penalty": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_separation_penalty": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "team_return_by_phase": {
+    "pre_found": 0.22177026444114745
+  },
+  "observation_risks": {
+    "input_contract": [
+      28,
+      3,
+      124
+    ],
+    "remaining_time_observed": false,
+    "previous_acceleration_observed": false,
+    "full_map_observed": false,
+    "execution_gate_is_network_input": false,
+    "markov_sufficiency_established": false
+  },
+  "safety_guarantee": false,
+  "reward_metric_equivalence_established": false,
+  "map_condition": {
+    "schema": "auv.active.map_condition.v1",
+    "map_id": "OLD",
+    "search_planner_id": "d2_v1",
+    "condition_sha256": "7982a8086199f1557e2227b99c2be3ed132a96e859b4f03f93ddc226663d95ea",
+    "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "protocol_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "executor_safety": {
+      "schema": "ch3.executor_recovery.v2",
+      "enabled": false,
+      "motion_steps": 8,
+      "braking_steps": 16,
+      "route_retry_steps": 5,
+      "tracking_distance": 0.9,
+      "recovery_candidates": 7,
+      "require_known_free": true,
+      "executor_search_residual": "disabled"
+    }
+  },
+  "train_map": "OLD",
+  "eval_map": "OLD",
+  "map_metrics": {
+    "core_proposals": 0,
+    "d2_fallbacks": 0,
+    "path_queries": 0,
+    "compression_max_epsilon": null,
+    "core_planning_seconds": 0,
+    "core_planning_p95": null,
+    "runtime_step_seconds": 25.332984600005148,
+    "runtime_step_p50": 0.445254100000966,
+    "runtime_step_p95": 2.6721052250000863,
+    "final_filter_valid": null,
+    "search_batches": 0,
+    "available_search_batches": 0,
+    "unavailable_search_batches": 0,
+    "core_scored_steps": 0,
+    "last_core_scored_step": null,
+    "first_filter_failure": null,
+    "planning_timing_scope": "core successful proposals only; runtime timing includes environment and actor",
+    "diagnostics": {
+      "schema": "auv.active.map_diagnostics.v1",
+      "inference": null,
+      "planning": null,
+      "activity": null
+    }
+  },
+  "policy_id": "old_executor_zero_mechanism",
+  "method": "D2",
+  "scenario_sha256": "c976e732fbf66e53672d13b4132a00ae716e7c193599016175a12de55764d243",
+  "trajectory_complete": true,
+  "environment_innovation_seed": 827710,
+  "max_steps": 32,
+  "pre_found_collision": false,
+  "found_penalized_steps": 32,
+  "source_review": {
+    "review_sha256": "40e20e1c3f47afe8913420b4067154fcea8afdf81415c9e8f8277b8a495caff3",
+    "profile": "active_executor_recovery_v2",
+    "inventory_sha256": "e4afbc296b3674b1cf67a21a3465feb3bb6153219ff26e584d9714c8cbc3eb25",
+    "parent_commit": "aef6833a6b80dcede92561b6497aafc1d5ad60e7",
+    "distribution": "auv.active_source.executor_recovery.v2"
+  },
+  "training_seed": null,
+  "mechanism_only": true,
+  "performance_passed": false
+}

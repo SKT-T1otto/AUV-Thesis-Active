@@ -1,0 +1,99 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950",
+    "profile": "active_executor_recovery_v2",
+    "inventory_sha256": "521fff7b12ef630a0b243731b29713ed456643184104065655abf8aa6f83c2b2",
+    "parent_commit": "aef6833a6b80dcede92561b6497aafc1d5ad60e7",
+    "distribution": "auv.active_source.executor_recovery.v2"
+  },
+  "run_id": "executor_recovery_old_v2",
+  "gates": {
+    "source": {
+      "path": "verification/executor_recovery_v2/ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950/source.json",
+      "sha256": "868e9026a65674367bb343e2b5032c27a906176a33ed0b0cd2e00198de06ded4"
+    },
+    "structural": {
+      "path": "verification/executor_recovery_v2/ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950/structural.json",
+      "sha256": "4d17e63c85b91dc0399f0681bd96928d96e0f23697f8c1ffc69d00b608dcd728"
+    },
+    "regression": {
+      "path": "verification/executor_recovery_v2/ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950/regression.json",
+      "sha256": "cb56ab34a90cdafd69fb3614f74dc6f49ea6db49346c7d637a42d98015c7b10c"
+    },
+    "parity": {
+      "path": "verification/executor_recovery_v2/ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950/parity.json",
+      "sha256": "8b1430b6577087bf4fdf0c482e347bd34eb922296fb6f9145ef06032feb1fe1f"
+    },
+    "entrypoints": {
+      "path": "verification/executor_recovery_v2/ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950/entrypoints.json",
+      "sha256": "1960329788ca3ab1d6efe5433e2af7700357181877338d24973db41fbc9facb0"
+    },
+    "checkpoint": {
+      "path": "verification/executor_recovery_v2/ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950/checkpoint.json",
+      "sha256": "0f76c05a87135f06d641be66170743720b80af9e032ddee405185ae2b68b9dd5"
+    },
+    "mechanisms": {
+      "path": "verification/executor_recovery_v2/ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950/mechanisms.json",
+      "sha256": "ff6ade17eda393e251463b7895d34d19fc4240ecc84b14ba53821275183952b7"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "historical_acceptance_transferred": false,
+  "historical_e0_passed": false,
+  "performance_passed": false,
+  "linux_tested": false,
+  "mechanism_budget": {
+    "passed": true,
+    "episode_initializations": 8,
+    "physical_steps": 243,
+    "max_episode_steps": 32,
+    "native_learning_models": 0,
+    "checkpoint_files_restored": 0,
+    "max_complete_updates_per_model": 4,
+    "new_phase_gate_unit_models": 2,
+    "new_phase_gate_complete_updates_per_model": 2,
+    "current_source_native_episodes": 0,
+    "candidate_native_episodes": 8,
+    "interface_binding": {
+      "passed": true,
+      "scope": "shared implementation/interface wiring only; NOT trajectory/outcome equivalence",
+      "candidate_source": {
+        "review_sha256": "40e20e1c3f47afe8913420b4067154fcea8afdf81415c9e8f8277b8a495caff3",
+        "profile": "active_executor_recovery_v2",
+        "inventory_sha256": "e4afbc296b3674b1cf67a21a3465feb3bb6153219ff26e584d9714c8cbc3eb25",
+        "parent_commit": "aef6833a6b80dcede92561b6497aafc1d5ad60e7",
+        "distribution": "auv.active_source.executor_recovery.v2"
+      },
+      "current_source": {
+        "review_sha256": "ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950",
+        "profile": "active_executor_recovery_v2",
+        "inventory_sha256": "521fff7b12ef630a0b243731b29713ed456643184104065655abf8aa6f83c2b2",
+        "parent_commit": "aef6833a6b80dcede92561b6497aafc1d5ad60e7",
+        "distribution": "auv.active_source.executor_recovery.v2"
+      },
+      "changed_files": [
+        "chapter3_bser/safety/executor_recovery.py",
+        "checks/test_executor_recovery.py",
+        "configs/rebuild_check_contract.json",
+        "provenance/executor_recovery_evolution.json",
+        "tools/check_executor_recovery.py"
+      ],
+      "native_outcomes_relabelled": false,
+      "final_revision_native_episodes": 0,
+      "changed_navigation_selection": "Prefer checked original tracking target before applying shorter lookahead; do not globally change speed or original waypoint threshold.",
+      "unchanged": "Public geometry/unknown tests, disturbance estimator, fixed-anchor recovery, route endpoint builder, residual gates and all other runtime production bytes.",
+      "candidate_team_regression": {
+        "scenario": "0012",
+        "step": 19,
+        "agent": 2
+      },
+      "final_outcomes_pending": true,
+      "actual_linux_current_native_validation_required": true
+    },
+    "observed_candidate_team_regression": true,
+    "navigation_performance_accepted": false,
+    "scope": "Final-source regression checks public geometry, recovery, original-safe-intent preservation and actual B2/B3 masked updates. Candidate native records establish shared runtime wiring; final navigation selection requires actual Linux validation."
+  },
+  "scope": "Engineering readiness for explicit OLD-only manual research, NOT stable-navigation acceptance. Final unit source differs from candidate native source only in documented selection/reporting changes; current Linux native validation and 400-step paired pilot required."
+}

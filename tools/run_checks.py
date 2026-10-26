@@ -137,10 +137,11 @@ def main():
     parser.add_argument('--output',required=True);parser.add_argument('--execute',action='store_true');parser.add_argument('--rollout',action='store_true')
     parser.add_argument('--map-workflow',action='store_true')
     parser.add_argument('--standby-workflow',action='store_true')
+    parser.add_argument('--recovery-workflow',action='store_true')
     args=parser.parse_args()
     if not args.execute:
-        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow)));return
-    if sum((args.rollout,args.map_workflow,args.standby_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
+        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow,recovery_workflow=args.recovery_workflow)));return
+    if sum((args.rollout,args.map_workflow,args.standby_workflow,args.recovery_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
     output=Path(args.output).resolve()
     if output.is_relative_to(ROOT) and not output.is_relative_to(ROOT/'work'):
         raise ValueError('in-project verification output must stay under work/')
@@ -162,6 +163,11 @@ def main():
             result['workflow']=check_standby(output/'executor_standby')
             write(output/'workflow.json',result['workflow'])
             if not result['workflow']['passed']:raise RuntimeError('executor standby workflow failed')
+        if args.recovery_workflow:
+            from tools.check_executor_recovery import run as check_recovery
+            result['workflow']=check_recovery(output/'executor_recovery')
+            write(output/'workflow.json',result['workflow'])
+            if not result['workflow']['passed']:raise RuntimeError('executor recovery workflow failed')
         result['passed']=True
     except Exception:
         import traceback
