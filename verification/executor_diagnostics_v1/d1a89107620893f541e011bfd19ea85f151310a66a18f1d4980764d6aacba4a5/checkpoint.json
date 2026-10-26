@@ -1,0 +1,18 @@
+{
+  "learner_and_checkpoint_format_bytes_unchanged": true,
+  "native_checkpoint_files_restored": 0,
+  "native_learning_models": 0,
+  "old_checkpoint_relabelling_allowed": false,
+  "scope": "Existing bounded in-memory learner regression tests retained; diagnostic workflow creates no learned model or checkpoint.",
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+    "profile": "active_executor_diagnostics_v1",
+    "inventory_sha256": "7ee71b04546b2a47a51e5e03cf1a4fb3f001f320f8db6890426eed847f7bb7b2",
+    "parent_commit": "a5ab10de1ede2fbaf7802186ead5900ccd4ec266",
+    "distribution": "auv.active_source.executor_diagnostics.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "executor_passive_diagnostics_v1"
+}

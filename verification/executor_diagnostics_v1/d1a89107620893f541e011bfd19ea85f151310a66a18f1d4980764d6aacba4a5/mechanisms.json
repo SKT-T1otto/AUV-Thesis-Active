@@ -1,0 +1,30 @@
+{
+  "report": "native_workflow.json",
+  "sha256": "902bf6b9e13a4e820e713fed178588b96a53416da1e698d7498fec912f4587b3",
+  "environment_initializations": 6,
+  "physical_steps": 192,
+  "max_episode_steps": 32,
+  "max_complete_updates_per_model": 0,
+  "native_learning_models": 0,
+  "checkpoint_files_restored": 0,
+  "full_82_96_step_reproduction_executed": false,
+  "v2_navigation_validated": false,
+  "scope": "Paired plain/recorded OLD prefixes: original 0002/0006 and v1 0011; no v2 control or long-horizon performance evidence",
+  "posthoc_synthetic_oracle": {
+    "report": "posthoc_oracle_smoke.json",
+    "sha256": "a9631f7ef8e28a88982ed2f74bc0abcedf1966ba3df765fa0dde20b56381de55",
+    "additional_environment_initializations": 0,
+    "historical_reproduction": false
+  },
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+    "profile": "active_executor_diagnostics_v1",
+    "inventory_sha256": "7ee71b04546b2a47a51e5e03cf1a4fb3f001f320f8db6890426eed847f7bb7b2",
+    "parent_commit": "a5ab10de1ede2fbaf7802186ead5900ccd4ec266",
+    "distribution": "auv.active_source.executor_diagnostics.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "executor_passive_diagnostics_v1"
+}

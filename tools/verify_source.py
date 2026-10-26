@@ -11,6 +11,9 @@ def digest(value):
 
 def verify(root):
     root = Path(root).resolve()
+    if (root/'provenance/executor_diagnostics_manifest.json').is_file():
+        from tools.executor_diagnostics_source import verify as verify_executor_diagnostics
+        return verify_executor_diagnostics(root)
     if (root/'provenance/executor_recovery_manifest.json').is_file():
         from tools.executor_recovery_source import verify as verify_recovery
         return verify_recovery(root)

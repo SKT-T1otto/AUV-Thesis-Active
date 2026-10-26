@@ -1,0 +1,17 @@
+{
+  "report": "regression/structural.json",
+  "sha256": "27978f349a44e43906cd9c8aecaa39d31e4be720731410810f7e5147f17ab66f",
+  "runtime_does_not_import_tools": true,
+  "source_metadata_only": true,
+  "gate": "structural",
+  "source_identity": {
+    "review_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+    "profile": "active_executor_diagnostics_v1",
+    "inventory_sha256": "7ee71b04546b2a47a51e5e03cf1a4fb3f001f320f8db6890426eed847f7bb7b2",
+    "parent_commit": "a5ab10de1ede2fbaf7802186ead5900ccd4ec266",
+    "distribution": "auv.active_source.executor_diagnostics.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "executor_passive_diagnostics_v1"
+}

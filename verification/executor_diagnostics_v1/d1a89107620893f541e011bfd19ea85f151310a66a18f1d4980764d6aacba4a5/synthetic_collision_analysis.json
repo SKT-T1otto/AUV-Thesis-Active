@@ -1,0 +1,463 @@
+{
+  "completed": true,
+  "executor_collision": true,
+  "collision": {
+    "agent_id": 3,
+    "obstacle_id": 0,
+    "position_before": [
+      3.7806551456451416,
+      2.30629301071167,
+      6.26982307434082
+    ],
+    "candidate_position": [
+      3.7637991905212402,
+      2.3296093940734863,
+      6.276101112365723
+    ],
+    "first_hit_point": [
+      3.773912763595581,
+      2.3156195640563966,
+      6.272334289550781
+    ],
+    "hit_fraction": 0.4000000000000038
+  },
+  "causal_ranking_established": false,
+  "evidence_scope": "observational facts plus explicitly labelled offline counterfactuals",
+  "ground_truth_used_only_after_runtime_close": true,
+  "physical_steps": 1,
+  "motion_audit": {
+    "steps": 1,
+    "max_prior_reconstruction_error": 2.9802322387695312e-08,
+    "actual_navigation_mismatch_steps": [],
+    "nonzero_learned_residual_steps": []
+  },
+  "collision_step": 1,
+  "collision_phase": "Search",
+  "obstacle_lower": [
+    2.772227168083191,
+    2.3156195640563966,
+    5.2729620933532715
+  ],
+  "obstacle_upper": [
+    4.772227168083191,
+    2.3202828407287597,
+    7.2729620933532715
+  ],
+  "collision_frame": {
+    "step_before": 0,
+    "position": [
+      3.7806551456451416,
+      2.30629301071167,
+      6.26982307434082
+    ],
+    "semantic_target": [
+      9.0,
+      9.0,
+      3.5
+    ],
+    "tracking_target": [
+      3.0,
+      3.0,
+      6.5
+    ],
+    "distance_to_semantic_target": 8.928560568774722,
+    "semantic_target_clearance": 8.101609656767236,
+    "position_clearance": 0.009326553344726651,
+    "tracking_segment": {
+      "available": true,
+      "min_clearance": 0.0,
+      "intersections": [
+        {
+          "segment": 0,
+          "fraction": 0.013444514022115746
+        }
+      ]
+    },
+    "actual_motion": {
+      "available": true,
+      "min_clearance": 0.0,
+      "intersections": [
+        {
+          "segment": 0,
+          "fraction": 0.4000000000000038
+        }
+      ]
+    },
+    "full_semantic_path": {
+      "available": true,
+      "min_clearance": 0.0,
+      "intersections": [
+        {
+          "segment": 0,
+          "fraction": 0.013444514022115746
+        }
+      ]
+    },
+    "remaining_original_path": {
+      "available": true,
+      "min_clearance": 0.6797171592712403,
+      "intersections": []
+    },
+    "remaining_with_current_connector": {
+      "available": true,
+      "min_clearance": 0.0,
+      "intersections": [
+        {
+          "segment": 0,
+          "fraction": 0.013444514022115746
+        }
+      ]
+    },
+    "distance_to_original_polyline": 0.0,
+    "hold": false,
+    "reachable": true,
+    "path_index": 1,
+    "threshold": 0.75,
+    "cached_map_revision": 1,
+    "live_map_revision": 1,
+    "provider_refresh": {
+      "_last_full_refresh_step": 0,
+      "_last_full_refresh_executor_target": null,
+      "_last_snapshot_full_refresh": true,
+      "_last_refresh_reason": "INITIALIZE",
+      "_full_refresh_count": 1,
+      "_handoff_forced_refresh_count": 0,
+      "_target_shift_forced_refresh_count": 0
+    },
+    "controller_detection": {},
+    "public_tracking": {
+      "live": {
+        "touched_cells": [
+          94
+        ],
+        "occupied_cells": [],
+        "unknown_cells": [],
+        "padded_occupied_cells": [],
+        "classification": "independent exact closed voxel oracle, not the original sampled predicate"
+      },
+      "cached": {
+        "touched_cells": [
+          94
+        ],
+        "occupied_cells": [],
+        "unknown_cells": [],
+        "padded_occupied_cells": [],
+        "classification": "independent exact closed voxel oracle, not the original sampled predicate"
+      }
+    },
+    "sampled_live_tracking": {
+      "sampled_cells": [
+        94
+      ],
+      "occupied_samples": [],
+      "accepted": true
+    },
+    "guard_last": null,
+    "motion": {
+      "actual_tracking_target": [
+        3.0,
+        3.0,
+        6.5
+      ],
+      "velocity_before": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_prior_acceleration": [
+        -0.536700427532196,
+        0.47692352533340454,
+        0.1438605785369873
+      ],
+      "prior_reconstruction_max_abs_error": 2.9802322387695312e-08,
+      "actual_residual_acceleration": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_acceleration": [
+        -0.536700427532196,
+        0.47692352533340454,
+        0.1438605785369873
+      ],
+      "candidate_velocity": [
+        -0.08427977561950684,
+        0.11658191680908203,
+        0.03139019012451172
+      ],
+      "no_flow_one_step_velocity": [
+        -0.10390520277023316,
+        0.09233239450454712,
+        0.031391054153442385
+      ],
+      "inferred_horizontal_disturbance": [
+        0.0981271357536316,
+        0.12124761152267453
+      ],
+      "disturbance_identifiable": true,
+      "disturbance_scope": "inferred from recorded transition; includes float/integration error; not hidden flow truth",
+      "speed_clipped": false,
+      "at_wall": false,
+      "actual_navigation_matches_installed_tracking": true,
+      "learned_residual_zero": true
+    }
+  },
+  "earliest_remaining_path_true_intersection": null,
+  "earliest_live_tracking_occupied": null,
+  "earliest_cached_tracking_occupied": null,
+  "earliest_tracking_sample_disagreement": null,
+  "earliest_hold": null,
+  "last_16_steps": [
+    {
+      "step_before": 0,
+      "position": [
+        3.7806551456451416,
+        2.30629301071167,
+        6.26982307434082
+      ],
+      "semantic_target": [
+        9.0,
+        9.0,
+        3.5
+      ],
+      "tracking_target": [
+        3.0,
+        3.0,
+        6.5
+      ],
+      "distance_to_semantic_target": 8.928560568774722,
+      "semantic_target_clearance": 8.101609656767236,
+      "position_clearance": 0.009326553344726651,
+      "tracking_segment": {
+        "available": true,
+        "min_clearance": 0.0,
+        "intersections": [
+          {
+            "segment": 0,
+            "fraction": 0.013444514022115746
+          }
+        ]
+      },
+      "actual_motion": {
+        "available": true,
+        "min_clearance": 0.0,
+        "intersections": [
+          {
+            "segment": 0,
+            "fraction": 0.4000000000000038
+          }
+        ]
+      },
+      "full_semantic_path": {
+        "available": true,
+        "min_clearance": 0.0,
+        "intersections": [
+          {
+            "segment": 0,
+            "fraction": 0.013444514022115746
+          }
+        ]
+      },
+      "remaining_original_path": {
+        "available": true,
+        "min_clearance": 0.6797171592712403,
+        "intersections": []
+      },
+      "remaining_with_current_connector": {
+        "available": true,
+        "min_clearance": 0.0,
+        "intersections": [
+          {
+            "segment": 0,
+            "fraction": 0.013444514022115746
+          }
+        ]
+      },
+      "distance_to_original_polyline": 0.0,
+      "hold": false,
+      "reachable": true,
+      "path_index": 1,
+      "threshold": 0.75,
+      "cached_map_revision": 1,
+      "live_map_revision": 1,
+      "provider_refresh": {
+        "_last_full_refresh_step": 0,
+        "_last_full_refresh_executor_target": null,
+        "_last_snapshot_full_refresh": true,
+        "_last_refresh_reason": "INITIALIZE",
+        "_full_refresh_count": 1,
+        "_handoff_forced_refresh_count": 0,
+        "_target_shift_forced_refresh_count": 0
+      },
+      "controller_detection": {},
+      "public_tracking": {
+        "live": {
+          "touched_cells": [
+            94
+          ],
+          "occupied_cells": [],
+          "unknown_cells": [],
+          "padded_occupied_cells": [],
+          "classification": "independent exact closed voxel oracle, not the original sampled predicate"
+        },
+        "cached": {
+          "touched_cells": [
+            94
+          ],
+          "occupied_cells": [],
+          "unknown_cells": [],
+          "padded_occupied_cells": [],
+          "classification": "independent exact closed voxel oracle, not the original sampled predicate"
+        }
+      },
+      "sampled_live_tracking": {
+        "sampled_cells": [
+          94
+        ],
+        "occupied_samples": [],
+        "accepted": true
+      },
+      "guard_last": null,
+      "motion": {
+        "actual_tracking_target": [
+          3.0,
+          3.0,
+          6.5
+        ],
+        "velocity_before": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_prior_acceleration": [
+          -0.536700427532196,
+          0.47692352533340454,
+          0.1438605785369873
+        ],
+        "prior_reconstruction_max_abs_error": 2.9802322387695312e-08,
+        "actual_residual_acceleration": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_acceleration": [
+          -0.536700427532196,
+          0.47692352533340454,
+          0.1438605785369873
+        ],
+        "candidate_velocity": [
+          -0.08427977561950684,
+          0.11658191680908203,
+          0.03139019012451172
+        ],
+        "no_flow_one_step_velocity": [
+          -0.10390520277023316,
+          0.09233239450454712,
+          0.031391054153442385
+        ],
+        "inferred_horizontal_disturbance": [
+          0.0981271357536316,
+          0.12124761152267453
+        ],
+        "disturbance_identifiable": true,
+        "disturbance_scope": "inferred from recorded transition; includes float/integration error; not hidden flow truth",
+        "speed_clipped": false,
+        "at_wall": false,
+        "actual_navigation_matches_installed_tracking": true,
+        "learned_residual_zero": true
+      }
+    }
+  ],
+  "braking_counterfactuals": [
+    {
+      "step_before": 0,
+      "available": true,
+      "first_collision": {
+        "predicted_step": 2,
+        "obstacle_id": 0
+      },
+      "min_true_clearance": 0.0,
+      "final_speed": 0.03667835446233355,
+      "steps": 16,
+      "scope": "OFFLINE fixed-anchor nominal brake with frozen inferred disturbance; ground truth only after close; not a rerun or proof of causality"
+    }
+  ],
+  "hypotheses": {
+    "target_margin": {
+      "distance": 8.928560568774722,
+      "clearance": 8.101609656767236,
+      "status": "requires target distance and residence history; no threshold-based blame"
+    },
+    "path_geometry": {
+      "remaining_path_intersects": false,
+      "tracking_connector_intersects": true
+    },
+    "map_or_staleness": {
+      "live_occupied": [],
+      "cached_occupied": [],
+      "unknown": [],
+      "detection": {}
+    },
+    "tracking_motion": {
+      "distance_to_original_polyline": 0.0,
+      "motion_intersects": true,
+      "motion": {
+        "actual_tracking_target": [
+          3.0,
+          3.0,
+          6.5
+        ],
+        "velocity_before": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_prior_acceleration": [
+          -0.536700427532196,
+          0.47692352533340454,
+          0.1438605785369873
+        ],
+        "prior_reconstruction_max_abs_error": 2.9802322387695312e-08,
+        "actual_residual_acceleration": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_acceleration": [
+          -0.536700427532196,
+          0.47692352533340454,
+          0.1438605785369873
+        ],
+        "candidate_velocity": [
+          -0.08427977561950684,
+          0.11658191680908203,
+          0.03139019012451172
+        ],
+        "no_flow_one_step_velocity": [
+          -0.10390520277023316,
+          0.09233239450454712,
+          0.031391054153442385
+        ],
+        "inferred_horizontal_disturbance": [
+          0.0981271357536316,
+          0.12124761152267453
+        ],
+        "disturbance_identifiable": true,
+        "disturbance_scope": "inferred from recorded transition; includes float/integration error; not hidden flow truth",
+        "speed_clipped": false,
+        "at_wall": false,
+        "actual_navigation_matches_installed_tracking": true,
+        "learned_residual_zero": true
+      }
+    },
+    "braking_or_drift": {
+      "hold": false,
+      "velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guard": null
+    }
+  }
+}

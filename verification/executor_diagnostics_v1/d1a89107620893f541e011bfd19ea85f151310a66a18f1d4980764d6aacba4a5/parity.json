@@ -1,0 +1,57 @@
+{
+  "runtime_algorithm_bytes_unchanged": true,
+  "paired_prefixes": [
+    {
+      "name": "baseline_0002",
+      "exact_step_signature_parity": true,
+      "behavioral_summary_parity": true,
+      "ignored_wall_timer_fields": [
+        "compile_seconds",
+        "max_compile_seconds"
+      ],
+      "passed": true,
+      "physical_steps": 64
+    },
+    {
+      "name": "baseline_0006",
+      "exact_step_signature_parity": true,
+      "behavioral_summary_parity": true,
+      "ignored_wall_timer_fields": [
+        "compile_seconds",
+        "max_compile_seconds"
+      ],
+      "passed": true,
+      "physical_steps": 64
+    },
+    {
+      "name": "guard_v1_0011",
+      "exact_step_signature_parity": true,
+      "behavioral_summary_parity": true,
+      "ignored_wall_timer_fields": [
+        "compile_seconds",
+        "max_compile_seconds"
+      ],
+      "passed": true,
+      "physical_steps": 64
+    }
+  ],
+  "environment_initializations": 6,
+  "physical_steps": 192,
+  "max_episode_steps": 32,
+  "full_trajectory_equivalence_to_historical_linux_claimed": false,
+  "ignored_only_wall_timer_fields": [
+    "compile_seconds",
+    "max_compile_seconds"
+  ],
+  "gate": "parity",
+  "source_identity": {
+    "review_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+    "profile": "active_executor_diagnostics_v1",
+    "inventory_sha256": "7ee71b04546b2a47a51e5e03cf1a4fb3f001f320f8db6890426eed847f7bb7b2",
+    "parent_commit": "a5ab10de1ede2fbaf7802186ead5900ccd4ec266",
+    "distribution": "auv.active_source.executor_diagnostics.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "executor_passive_diagnostics_v1"
+}

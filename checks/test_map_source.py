@@ -7,7 +7,7 @@ import shutil
 import tempfile
 import unittest
 from project_paths import ROOT
-from tools.executor_recovery_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
+from tools.executor_diagnostics_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
 
 
 def source_directory():

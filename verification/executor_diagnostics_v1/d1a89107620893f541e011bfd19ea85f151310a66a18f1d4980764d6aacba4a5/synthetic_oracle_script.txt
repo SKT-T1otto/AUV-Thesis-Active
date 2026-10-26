@@ -1,0 +1,49 @@
+"""Synthetic terminal-frame smoke test; NO simulator or historical claim."""
+import copy
+import json
+from pathlib import Path
+import shutil
+import numpy as np
+from tools import executor_trace as t
+from tools import executor_trace_analysis as a
+
+root=Path.cwd()/'work/executor_posthoc_oracle01'
+root.mkdir(exist_ok=False)
+original=Path.cwd()/'work/executor_diagnostics_native01/baseline_0002/recorded'
+recording=root/'synthetic_recording'
+shutil.copytree(original,recording)
+frame=json.loads((recording/'trace.jsonl').read_text().splitlines()[0])
+p=np.asarray(frame['physical_step']['before']['physical']['_agent_pos'][3])
+q=np.asarray(frame['physical_step']['after']['_agent_pos'][3])
+axis=int(np.argmax(np.abs(q-p)))
+if abs(q[axis]-p[axis])<1e-8:raise ValueError('moving prefix required for fixture')
+center=(p+q)/2
+half=np.ones(3);half[axis]=abs(q[axis]-p[axis])*.1
+tau=a.slab(p,q,center-half,center+half)
+hit=dict(agent_id=3,obstacle_id=0,position_before=p.tolist(),candidate_position=q.tolist(),
+    first_hit_point=(p+tau*(q-p)).tolist(),hit_fraction=tau)
+frame['physical_step']['collisions']=[hit]
+frame['physical_step']['after']['_agent_pos'][3]=hit['first_hit_point']
+frame['physical_step']['after']['_agent_vel'][3]=[0.,0.,0.]
+frame['synthetic_unit_oracle']=True
+(recording/'trace.jsonl').write_text(json.dumps(frame)+'\n',encoding='utf-8')
+summary=t.read(recording/'episode.json')
+summary.update(actual_length=1,found_step=None,success=False,termination_reason='obstacle_collision',
+    first_collision_step=1,first_collision_phase='Search',first_collision_agent_ids=[3],collision_records=[hit])
+(recording/'episode.json').write_text(json.dumps(summary),encoding='utf-8')
+(recording/'signatures.json').write_text(json.dumps(['0'*64,'1'*64]),encoding='utf-8')
+receipt=t.read(recording/'recording.json')
+receipt.update(physical_steps=1,snapshot_checks=1,forwarded_physics_calls=1,synthetic_unit_oracle=True)
+receipt['files']={f.relative_to(recording).as_posix():t.sha(f) for f in recording.rglob('*') if f.is_file() and f.name!='recording.json'}
+(recording/'recording.json').write_text(json.dumps(receipt),encoding='utf-8')
+scene=dict(obstacles=[dict(center=center.tolist(),size=(half*2).tolist())])
+result=a.analyze_episode(recording,scene,root/'analysis')
+if not result['executor_collision'] or result['collision_step']!=1 or not result['collision_frame']['actual_motion']['intersections']:
+    raise ValueError('collision report failed synthetic geometric oracle')
+if not result['braking_counterfactuals'] or result['causal_ranking_established']:
+    raise ValueError('posthoc scope/causal statement incorrect')
+t.write(root/'smoke.json',dict(passed=True,source_recording_sha256=t.sha(original/'recording.json'),
+    analysis_sha256=t.sha(root/'analysis/analysis.json'),script_sha256=t.sha(__file__),
+    environment_initializations=0,training=False,historical_reproduction=False,
+    synthetic_unit_oracle=True,physical_model_validation=result['motion_audit']))
+print(json.dumps(t.read(root/'smoke.json'),indent=2))

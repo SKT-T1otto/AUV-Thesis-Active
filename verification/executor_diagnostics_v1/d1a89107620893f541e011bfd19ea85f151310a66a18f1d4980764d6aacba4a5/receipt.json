@@ -1,0 +1,44 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+    "profile": "active_executor_diagnostics_v1",
+    "inventory_sha256": "7ee71b04546b2a47a51e5e03cf1a4fb3f001f320f8db6890426eed847f7bb7b2",
+    "parent_commit": "a5ab10de1ede2fbaf7802186ead5900ccd4ec266",
+    "distribution": "auv.active_source.executor_diagnostics.v1"
+  },
+  "run_id": "executor_passive_diagnostics_v1",
+  "gates": {
+    "source": {
+      "path": "verification/executor_diagnostics_v1/d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5/source.json",
+      "sha256": "0ee0e34586ba6fba291f1105ca8eabfafc870df96cf84a6357a60d08fd0354e3"
+    },
+    "structural": {
+      "path": "verification/executor_diagnostics_v1/d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5/structural.json",
+      "sha256": "e7ac959df34aef1c0e692fb4d55122818b15ca3b54ffbe0f9ad5142b7f77b598"
+    },
+    "regression": {
+      "path": "verification/executor_diagnostics_v1/d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5/regression.json",
+      "sha256": "fa9ba3d412f442119bf25796c31365e9e42262fc2b3553950e79e12c86a8afd0"
+    },
+    "parity": {
+      "path": "verification/executor_diagnostics_v1/d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5/parity.json",
+      "sha256": "3f27203de2ea28858d6e81309591b20f3c7609259220622f15abc1c392a3ac6a"
+    },
+    "entrypoints": {
+      "path": "verification/executor_diagnostics_v1/d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5/entrypoints.json",
+      "sha256": "69f92aa6258f938dd3199d47858ae2903c051c2ac6777e4a2e42aa28aabdbe10"
+    },
+    "checkpoint": {
+      "path": "verification/executor_diagnostics_v1/d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5/checkpoint.json",
+      "sha256": "5a528c3e4ce84cbb907353857a3ea74161230fb9b517dfbe9e1403bcf98b9d5e"
+    },
+    "mechanisms": {
+      "path": "verification/executor_diagnostics_v1/d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5/mechanisms.json",
+      "sha256": "78fa1cac48e2cd94fab68fd53fb4516d8434c1271e212969c29f5de07ad197fb"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "performance_passed": false,
+  "historical_acceptance_transferred": false
+}

@@ -138,10 +138,11 @@ def main():
     parser.add_argument('--map-workflow',action='store_true')
     parser.add_argument('--standby-workflow',action='store_true')
     parser.add_argument('--recovery-workflow',action='store_true')
+    parser.add_argument('--executor-diagnostics-workflow',action='store_true')
     args=parser.parse_args()
     if not args.execute:
-        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow,recovery_workflow=args.recovery_workflow)));return
-    if sum((args.rollout,args.map_workflow,args.standby_workflow,args.recovery_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
+        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow,recovery_workflow=args.recovery_workflow,executor_diagnostics_workflow=args.executor_diagnostics_workflow)));return
+    if sum((args.rollout,args.map_workflow,args.standby_workflow,args.recovery_workflow,args.executor_diagnostics_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
     output=Path(args.output).resolve()
     if output.is_relative_to(ROOT) and not output.is_relative_to(ROOT/'work'):
         raise ValueError('in-project verification output must stay under work/')
@@ -168,6 +169,11 @@ def main():
             result['workflow']=check_recovery(output/'executor_recovery')
             write(output/'workflow.json',result['workflow'])
             if not result['workflow']['passed']:raise RuntimeError('executor recovery workflow failed')
+        if args.executor_diagnostics_workflow:
+            from tools.check_executor_diagnostics import run as check_diagnostics
+            result['workflow']=check_diagnostics(output/'executor_diagnostics')
+            write(output/'workflow.json',result['workflow'])
+            if not result['workflow']['passed']:raise RuntimeError('executor diagnostic workflow failed')
         result['passed']=True
     except Exception:
         import traceback

@@ -1,0 +1,27 @@
+{
+  "independent": {
+    "passed": true,
+    "files": 289,
+    "manifest_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+    "algorithm_changed": false,
+    "all_parent_evidence_immutable": true,
+    "physics_navigation_reward_and_learning_bytes_unchanged": true,
+    "original_d2_v1_v2_bytes_unchanged": true,
+    "source_admission_preserved": true,
+    "scope": "Passive OLD_ZERO recording, historical reproduction, independent posthoc analysis, and verification metadata"
+  },
+  "algorithm_changed": false,
+  "all_parent_evidence_immutable": true,
+  "review_notes_sha256": "af48b7be4c6d2aeec6219d7b7fee88cb2e156189b80d80081c38d514a7624ee6",
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+    "profile": "active_executor_diagnostics_v1",
+    "inventory_sha256": "7ee71b04546b2a47a51e5e03cf1a4fb3f001f320f8db6890426eed847f7bb7b2",
+    "parent_commit": "a5ab10de1ede2fbaf7802186ead5900ccd4ec266",
+    "distribution": "auv.active_source.executor_diagnostics.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "executor_passive_diagnostics_v1"
+}

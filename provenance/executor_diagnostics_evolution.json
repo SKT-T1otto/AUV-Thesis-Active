@@ -1,0 +1,110 @@
+{
+  "schema": "auv.executor_diagnostics.evolution.v1",
+  "parent_review_sha256": "ee063439e2fe037aa36694df59a303d7a1763d4360990298278dcbb4f490c950",
+  "parent_commit": "a5ab10de1ede2fbaf7802186ead5900ccd4ec266",
+  "algorithm_changed": false,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/executor_diagnostics_source.py",
+      "before_sha256": null,
+      "after_sha256": "5ee22cc810f4cbab2d2db0d7e1f2ceebc39ddc9d2530550c83b61ad58a751f1e",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "7264a48467a288fcfc949b559644584585e011813718f855e9dc9276ee1f5d10",
+      "after_sha256": "221df65dcc9cff84ad7c593f1cb33a8d793d4d3b8129f63100e6f031498c7c75",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "checks/test_executor_diagnostics.py",
+      "before_sha256": null,
+      "after_sha256": "af0763fe7498dcdab7bd02ebf1889129ee3b6f525ba540143b4b6f7768b39bb4",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "75ad9412f267e005922663764dd21916153647d173a904609b9ae56834da6f07",
+      "after_sha256": "d90e1c593b227c9a6bfcd713b0aa5b471f134e61ea1f39b80d74193724151e4f",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "cli.py",
+      "before_sha256": "7d79f67b25d07bbcf409bd4e96d1658c597ac8c68c68bb3286cee7b0f5509bba",
+      "after_sha256": "de8e24bc02f619442fcd5d4f2b89d680f7190058eeecccdae5ddbf727490ca6e",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "d0bd2e5a1ce794929c696a45ff900f3c8a06e10d6f8754d23f3f522e377f684b",
+      "after_sha256": "ae5c0f86b8f287b2d2e20980ed2076d865aff476fe204d113cd8aa3e5be8f75d",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "provenance/baselines/executor_recovery_20261026_v2/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "41a60be075982e2de24676a4760deca639256f84af4b89f4d9c2afe69549c0f3",
+      "reason": "Immutable a5ab10d source archive and external parent evidence references."
+    },
+    {
+      "path": "provenance/baselines/executor_recovery_20261026_v2/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "75675ce925fef74d5dcef8483125d5abd156dd5fa876e272364fc69e1acd0617",
+      "reason": "Immutable a5ab10d source archive and external parent evidence references."
+    },
+    {
+      "path": "provenance/executor_recovery_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "6f5a7a2c3b8e69817306288da3bb3e0e14db43dcd053672161278e159fc2a7b0",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "tools/check_executor_diagnostics.py",
+      "before_sha256": null,
+      "after_sha256": "89a5dcba6f580efeabb0ac1d3cafcb45a9b7af669db1f301718c21285c5fa7b5",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "tools/executor_diagnostics.py",
+      "before_sha256": null,
+      "after_sha256": "53821238fc52412041cf6d2c23540e397834482823ebf98951fb9f2ddd983a5c",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "tools/executor_diagnostics_source.py",
+      "before_sha256": null,
+      "after_sha256": "69f3b6bcb0ac6f93f38d914eac71eac1b3208a957958315ef3aea73292347bcb",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "tools/executor_trace.py",
+      "before_sha256": null,
+      "after_sha256": "1c71e6886c8ff5c8840b165378f10e9f1d3f72d9e45c67a8bdfb1b463c66b162",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "tools/executor_trace_analysis.py",
+      "before_sha256": null,
+      "after_sha256": "c80df9c279267259ed36c739702dc5026d768901933425e9c730ca2e12c73e41",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "fad9eee34a8b31bfe4555a02bcfec750d7cc754f7acbc1e7e8202d67f5c03671",
+      "after_sha256": "35bc2a7ab4b95a98cda14e347635109ce94b259743aae5819af3210a42e8b76c",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "ffb21f6f3bec45a29e8f40402608d9ca0623343a533af4fc43e7694d0381f70d",
+      "after_sha256": "e0de3d5a0e89b59943df5bf39d3b45ce7af18e566277fd83b75cf64516e24f3d",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "5716d17d18d770e1731ff3e465d47b9c1606182a76e2364c271a2de26dba0f4e",
+      "after_sha256": "6d7cb0f10c3254e3ceba4a643c584074026a110dde342f594922e90cb5b7c1b2",
+      "reason": "Independent passive executor diagnosis and its verification; original physical/navigation/learning behavior preserved."
+    }
+  ]
+}

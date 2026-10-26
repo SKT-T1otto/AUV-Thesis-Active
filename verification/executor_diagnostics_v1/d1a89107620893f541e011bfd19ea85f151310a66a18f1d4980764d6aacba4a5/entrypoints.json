@@ -1,0 +1,17 @@
+{
+  "report": "entrypoint_results.json",
+  "sha256": "3feafb0d82ed6c7899e60834b1f9edf2081e6f7bf8d76868f33f9d5192e48e69",
+  "commands": 6,
+  "dry_run_output_absent": true,
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+    "profile": "active_executor_diagnostics_v1",
+    "inventory_sha256": "7ee71b04546b2a47a51e5e03cf1a4fb3f001f320f8db6890426eed847f7bb7b2",
+    "parent_commit": "a5ab10de1ede2fbaf7802186ead5900ccd4ec266",
+    "distribution": "auv.active_source.executor_diagnostics.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "executor_passive_diagnostics_v1"
+}

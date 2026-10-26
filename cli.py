@@ -16,6 +16,7 @@ COMMANDS = {
     'bounded-experiment': 'chapter3_bser.learning.bounded_experiment',
     'standby-experiment': 'chapter3_bser.learning.standby_experiment',
     'executor-experiment': 'chapter3_bser.learning.executor_experiment',
+    'executor-diagnose': 'tools.executor_diagnostics',
 }
 
 

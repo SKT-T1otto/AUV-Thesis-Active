@@ -1,0 +1,22 @@
+{
+  "algorithm_changed": false,
+  "runtime_protection": "Every existing core/chapter3 source is byte-identical to a5ab10d except provenance metadata; metadata AST normalizes exactly to parent.",
+  "changes": {
+    "tools/executor_trace.py": "Read stored state; forward physics/controller/guidance once; restore hooks; hash and validate complete recordings.",
+    "tools/executor_trace_analysis.py": "Pure post-close numerical geometry, sampled predicate comparison and explicitly approximate braking counterfactuals; no environment construction.",
+    "tools/executor_diagnostics.py": "Freeze verified historical inputs, run paired native OLD ZERO evaluations behind current Linux admission, and verify posthoc evidence.",
+    "tools/check_executor_diagnostics.py": "Six current-source ZERO initializations, each <=32 steps; paired plain/recorded prefixes; no model or restore.",
+    "checks/test_executor_diagnostics.py": "36 new numeric, tap-forwarding, tamper, gate and synthetic report integration tests; no physical initialization.",
+    "checks/test_map_source.py": "Point existing independent negative controls at current successor verifier.",
+    "configs/rebuild_check_contract.json": "Exact regression inventory 252 -> 288; no learning or environment config change.",
+    "chapter3_bser/learning/provenance.py": "Only source inventory/identity/readiness-profile metadata extended; original admission functions protected.",
+    "chapter3_bser/learning/executor_diagnostics_source.py": "New exact source/evolution identity verifier, no policy behavior.",
+    "tools/executor_diagnostics_source.py": "Independent parent archive, byte/AST protection, evolution and runtime-import boundary checks.",
+    "tools/run_checks.py": "Mutually exclusive bounded diagnostic workflow; existing workflows retained.",
+    "tools/validate_checkout.py": "Select diagnostic prefix workflow for this source profile while retaining current-commit/package/Linux gates.",
+    "tools/verify_source.py": "Dispatch current independent successor verifier.",
+    "cli.py": "Expose explicit nonexecuting-by-default diagnostic commands.",
+    "provenance/executor_recovery_manifest.json": "Index the existing immutable parent manifest in the new inventory; parent file itself unchanged.",
+    "provenance/baselines/executor_recovery_20261026_v2": "Archive exact published source/docs as data; reference published evidence and nested baselines immutably."
+  }
+}

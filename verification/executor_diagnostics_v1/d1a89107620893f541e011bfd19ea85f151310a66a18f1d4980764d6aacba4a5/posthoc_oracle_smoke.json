@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "source_recording_sha256": "c121121eb3b2895c31f96b0d0510c6eec6699d5ef6bba4d36f3a1452689889b1",
+  "analysis_sha256": "67f033c9b7a517968a26a5984e12bee60113eb3a7f248b3ce48598c2b4382f09",
+  "script_sha256": "90c178ea3ccf85986003f77080adec34816894d0d740855e62a0d3524f9ce3ef",
+  "environment_initializations": 0,
+  "training": false,
+  "historical_reproduction": false,
+  "synthetic_unit_oracle": true,
+  "physical_model_validation": {
+    "steps": 1,
+    "max_prior_reconstruction_error": 2.9802322387695312e-08,
+    "actual_navigation_mismatch_steps": [],
+    "nonzero_learned_residual_steps": []
+  }
+}

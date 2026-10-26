@@ -1,0 +1,110 @@
+[
+  {
+    "command": [
+      "-m",
+      "cli",
+      "executor-diagnose",
+      "prepare",
+      "--root",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "--experiment",
+      "missing"
+    ],
+    "result": {
+      "executed": false,
+      "command": "prepare",
+      "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "experiment": "missing",
+      "cases": null
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "cli",
+      "executor-diagnose",
+      "run",
+      "--root",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "--validation",
+      "missing"
+    ],
+    "result": {
+      "executed": false,
+      "command": "run",
+      "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "validation": "missing"
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "cli",
+      "executor-diagnose",
+      "report",
+      "--root",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created\\report"
+    ],
+    "result": {
+      "executed": false,
+      "command": "report",
+      "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created\\report"
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.check_executor_diagnostics",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created"
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.run_checks",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "--executor-diagnostics-workflow"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "rollout": false,
+      "map_workflow": false,
+      "standby_workflow": false,
+      "recovery_workflow": false,
+      "executor_diagnostics_workflow": true
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.validate_checkout",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "--require-linux"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\executor_diagnostics_dry_run_never_created",
+      "index_only": false,
+      "require_linux": true,
+      "expected_commit": null,
+      "execute": false
+    },
+    "exit_code": 0
+  }
+]
