@@ -1,5 +1,7 @@
 # GitHub 版本与 Linux 运行
 
+2026-10-26 搜索期执行器待命修补见 [待命保护与四组 ZERO 对照](EXECUTOR_STANDBY_20261026.md)。已有 Linux 克隆请直接在原目录 fetch/checkout，继续使用 AUV 环境；按该文运行新的 `standby-experiment`，不必再次克隆或新建 Conda 环境。
+
 2026-10-25 诊断版的分阶段实验见 [地图诊断与实验](MAP_DIAGNOSTICS_20261025.md)：复用已有 AUV 环境，先做无训练受控流与 OLD_ZERO/NEW_ZERO 对照，再按需要启动学习组。该配置用 `cli map-suite` 配合显式的 `configs/map_diagnostics_pilot_v1.json` 启用 v3；原默认配置保留。
 
 当前地图方案为 `coupled_search_bounded_v3`，默认原始窗口64步。实现、七组配置和指标解释见 [有界地图实现与实验](MAP_BOUNDED_V3_20261022.md)。此前 map-suite 六组入口仍保留为 v2 实验；本版有界地图使用 `cli bounded-experiment`。

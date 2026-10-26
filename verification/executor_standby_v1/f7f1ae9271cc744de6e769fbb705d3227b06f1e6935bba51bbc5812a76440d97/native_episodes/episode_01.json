@@ -1,0 +1,1255 @@
+{
+  "episode_id": 0,
+  "episode_index": 0,
+  "scenario_id": "eval_gen827699__unknown_validation_m20_0011",
+  "scenario_seed": 827709,
+  "found": false,
+  "success": false,
+  "success_if_found": false,
+  "found_step": null,
+  "success_step": null,
+  "remaining_steps_after_found": null,
+  "executor_target_received_step": null,
+  "handoff_delay": null,
+  "found_to_target_received_steps": null,
+  "found_to_success_steps": null,
+  "executor_distance_at_handoff": null,
+  "executor_distance_to_target_at_found": null,
+  "executor_distance_to_target_at_received": null,
+  "executor_min_distance_to_target": null,
+  "executor_final_distance_to_target": null,
+  "executor_distance_to_intercept_at_received": null,
+  "executor_min_distance_to_intercept": null,
+  "executor_final_distance_to_intercept": null,
+  "target_prediction_error_at_delivery": null,
+  "mean_target_prediction_error": null,
+  "target_prediction_map_fallback_count": 0,
+  "capture_contact_step_count": 0,
+  "capture_full_hold_step_count": 0,
+  "capture_hold_counter_max": 0,
+  "capture_swept_min_distance": null,
+  "executor_path_unreachable_count": null,
+  "executor_invalid_count": 0,
+  "executor_replan_count": 1,
+  "executor_invalid_assignment_unreachable_count": 0,
+  "executor_invalid_query_unreachable_count": 0,
+  "executor_invalid_cost_increase_count": 0,
+  "executor_invalid_stale_snapshot_deferred_count": 31,
+  "executor_validity_evaluation_count": 0,
+  "executor_validity_deferred_count": 31,
+  "public_target_update_event_count": 0,
+  "public_target_update_accepted_count": 0,
+  "public_target_shift_sum": 0.0,
+  "public_target_shift_mean": null,
+  "public_target_shift_max": null,
+  "environment_public_target_at_handoff": null,
+  "controller_execution_target_at_handoff": null,
+  "installed_executor_tracking_target_at_handoff": null,
+  "controller_to_public_target_error_at_handoff": null,
+  "controller_to_public_target_error_mean": null,
+  "controller_to_public_target_error_final": null,
+  "full_planning_refresh_count": 2,
+  "handoff_forced_refresh_count": 0,
+  "target_shift_forced_refresh_count": 0,
+  "post_found_collision_count": 0,
+  "pre_found_base_reward": 1.1569082522764802,
+  "post_found_base_reward": 0.0,
+  "post_found_shaping_reward": 0.0,
+  "completion_reward_post_tanh": 0.0,
+  "adjusted_episode_reward": 0.28922706306912005,
+  "search_residual_ratio_pre_found": 0.0,
+  "search_residual_ratio_post_found": null,
+  "executor_residual_ratio_pre_found": 0.0,
+  "executor_residual_ratio_post_found": null,
+  "initial_planner_endpoint_fallback_count": 0,
+  "episode_terminated": true,
+  "episode_truncated": false,
+  "termination_reason": "timeout",
+  "terminal_step": 32,
+  "first_collision_step": null,
+  "first_collision_agent_ids": [],
+  "first_collision_phase": null,
+  "collision_records": [],
+  "mission_complete": false,
+  "task_protocol": "collision_terminal_v1",
+  "collision_detection_revision": "segment_closed_aabb_v1",
+  "terminal_reward_revision": "team_failure_override_v1",
+  "terminated": true,
+  "truncated": false,
+  "safe_success": false,
+  "collision_episode": false,
+  "remaining_task_steps": 0,
+  "bootstrap_mask": 0.0,
+  "contact_bonus_count": 0,
+  "hold_bonus_count": 0,
+  "terminal_bonus_count": 0,
+  "discovery_correction_count": 0,
+  "searcher_zeroed_step_count": 0,
+  "reward_objective": "team_mean_v1",
+  "source_reward_revision": "execution_reward_v2_after_terminal_override_v1",
+  "gamma": 0.95,
+  "team_undiscounted_return": 0.28922706306912005,
+  "team_discounted_return": 0.1363921290212091,
+  "source_individual_returns": [
+    0.4858008122537285,
+    0.3308254850562662,
+    0.29336410225369036,
+    0.046917845465941355
+  ],
+  "source_searcher_zeroed_step_count": 0,
+  "source_adjusted_episode_reward": 1.1569082522764802,
+  "planner": {
+    "planner_protocol": "d2_v1",
+    "reference_arm": "D2",
+    "safety_variant": "V4",
+    "safe_counts": {
+      "search_candidate_unreachable_queries": 0,
+      "candidate_shortage_events": 0,
+      "path_safety_checks": 96
+    },
+    "effect_counts": {
+      "standby_unreachable_queries": 0,
+      "standby_shortage_events": 0
+    },
+    "unresolved_searcher_ids": [],
+    "audit_record_count": 4,
+    "executor_standby_guard": {
+      "schema": "ch3.executor_standby_guard.v1",
+      "options": {
+        "schema": "ch3.executor_standby_guard.v1",
+        "enabled": true,
+        "motion_steps": 8,
+        "braking_steps": 16
+      },
+      "counts": {
+        "prediction_calls": 32,
+        "checks": 32,
+        "rejected:path": 6,
+        "route_queries": 6,
+        "route_failure:no_start_connector": 6,
+        "nominal_braking_checked": 6
+      },
+      "last_search_guidance": {
+        "step": 31,
+        "status": "route_checked",
+        "cause": null,
+        "position": [
+          14.719525337219238,
+          15.399025917053223,
+          4.501600742340088
+        ],
+        "velocity": [
+          0.028300557285547256,
+          -0.8268657922744751,
+          0.025250380858778954
+        ],
+        "target": [
+          11.0,
+          11.0,
+          4.5
+        ],
+        "tracking": [
+          15.0,
+          13.0,
+          4.5
+        ],
+        "hold": false,
+        "reachable": true,
+        "original_reachable": true,
+        "route_failure": null
+      },
+      "trace": [
+        {
+          "step": 0,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            17.226137161254883,
+            18.657411575317383,
+            4.236938953399658
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            17.0,
+            19.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 1,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            17.21292495727539,
+            18.660791397094727,
+            4.24399995803833
+          ],
+          "velocity": [
+            -0.06605732440948486,
+            0.01689940318465233,
+            0.03530425950884819
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 2,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            17.161968231201172,
+            18.627334594726562,
+            4.256270408630371
+          ],
+          "velocity": [
+            -0.25478342175483704,
+            -0.1672835499048233,
+            0.0613517239689827
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 3,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            17.074478149414062,
+            18.55817222595215,
+            4.272216320037842
+          ],
+          "velocity": [
+            -0.43745481967926025,
+            -0.3458135426044464,
+            0.07972929626703262
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 4,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.951629638671875,
+            18.461700439453125,
+            4.290581703186035
+          ],
+          "velocity": [
+            -0.614240825176239,
+            -0.4823575019836426,
+            0.09182809293270111
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 5,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.80057144165039,
+            18.34457015991211,
+            4.3103532791137695
+          ],
+          "velocity": [
+            -0.7552863955497742,
+            -0.5856521725654602,
+            0.09885705262422562
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 6,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.63144302368164,
+            18.214218139648438,
+            4.330724716186523
+          ],
+          "velocity": [
+            -0.845641016960144,
+            -0.6517583727836609,
+            0.101857490837574
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 7,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.45320701599121,
+            18.07721710205078,
+            4.351068496704102
+          ],
+          "velocity": [
+            -0.8911846876144409,
+            -0.6850053071975708,
+            0.10171842575073242
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 8,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.27288055419922,
+            17.93870735168457,
+            4.370906829833984
+          ],
+          "velocity": [
+            -0.9016329646110535,
+            -0.6925471425056458,
+            0.09919160604476929
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 9,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.095829010009766,
+            17.80261993408203,
+            4.389888286590576
+          ],
+          "velocity": [
+            -0.8852599859237671,
+            -0.6804376244544983,
+            0.09490641951560974
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 10,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            15.926021575927734,
+            17.6718692779541,
+            4.407764911651611
+          ],
+          "velocity": [
+            -0.8490354418754578,
+            -0.6537516713142395,
+            0.08938401937484741
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 11,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            15.76626968383789,
+            17.54852867126465,
+            4.424375057220459
+          ],
+          "velocity": [
+            -0.7987601161003113,
+            -0.6166996359825134,
+            0.08305084705352783
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 12,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            15.618430137634277,
+            17.43398094177246,
+            4.439625263214111
+          ],
+          "velocity": [
+            -0.7391988039016724,
+            -0.5727345943450928,
+            0.07625089585781097
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 13,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            15.483589172363281,
+            17.329050064086914,
+            4.453476905822754
+          ],
+          "velocity": [
+            -0.6742068529129028,
+            -0.5246508717536926,
+            0.06925728172063828
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            13.0,
+            15.0,
+            3.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 14,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            15.328490257263184,
+            17.199172973632812,
+            4.446519374847412
+          ],
+          "velocity": [
+            -0.7754946947097778,
+            -0.6493900418281555,
+            -0.034787073731422424
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.328490257263184,
+            17.199172973632812,
+            4.446519374847412
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 15,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            15.20273494720459,
+            17.094100952148438,
+            4.442020416259766
+          ],
+          "velocity": [
+            -0.628777801990509,
+            -0.5253618955612183,
+            -0.022493835538625717
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.20273494720459,
+            17.094100952148438,
+            4.442020416259766
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 16,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            15.101266860961914,
+            17.007715225219727,
+            4.439393997192383
+          ],
+          "velocity": [
+            -0.5073408484458923,
+            -0.43192997574806213,
+            -0.013131305575370789
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.101266860961914,
+            17.007715225219727,
+            4.439393997192383
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 17,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            15.018204689025879,
+            16.935407638549805,
+            4.4381937980651855
+          ],
+          "velocity": [
+            -0.41531315445899963,
+            -0.3615383207798004,
+            -0.006000802386552095
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.018204689025879,
+            16.935407638549805,
+            4.4381937980651855
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 18,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            14.949097633361816,
+            16.873706817626953,
+            4.438079833984375
+          ],
+          "velocity": [
+            -0.34553414583206177,
+            -0.3085021376609802,
+            -0.0005702110938727856
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            14.949097633361816,
+            16.873706817626953,
+            4.438079833984375
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 19,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            14.890580177307129,
+            16.819997787475586,
+            4.438793182373047
+          ],
+          "velocity": [
+            -0.2925887107849121,
+            -0.26854208111763,
+            0.0035657272674143314
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            14.890580177307129,
+            16.819997787475586,
+            4.438793182373047
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 20,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.840104103088379,
+            16.772310256958008,
+            4.440136432647705
+          ],
+          "velocity": [
+            -0.25238072872161865,
+            -0.23843567073345184,
+            0.0067156581208109856
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 21,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.79999828338623,
+            16.735219955444336,
+            4.443384170532227
+          ],
+          "velocity": [
+            -0.20052920281887054,
+            -0.18544995784759521,
+            0.016238410025835037
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 22,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.768823623657227,
+            16.66118812561035,
+            4.448005199432373
+          ],
+          "velocity": [
+            -0.1558741331100464,
+            -0.3701602518558502,
+            0.023104457184672356
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 23,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.74528980255127,
+            16.553911209106445,
+            4.453561782836914
+          ],
+          "velocity": [
+            -0.11766710132360458,
+            -0.5363819599151611,
+            0.02778373658657074
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 24,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.728255271911621,
+            16.42438507080078,
+            4.4596991539001465
+          ],
+          "velocity": [
+            -0.08517365902662277,
+            -0.6476269364356995,
+            0.030686240643262863
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 25,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.716710090637207,
+            16.281505584716797,
+            4.466132640838623
+          ],
+          "velocity": [
+            -0.05772387236356735,
+            -0.7143949866294861,
+            0.03216644003987312
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 26,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.709768295288086,
+            16.13234519958496,
+            4.472638130187988
+          ],
+          "velocity": [
+            -0.03471006825566292,
+            -0.7457991242408752,
+            0.03252817690372467
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 27,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.706650733947754,
+            15.982412338256836,
+            4.479043960571289
+          ],
+          "velocity": [
+            -0.015586046501994133,
+            -0.7496625185012817,
+            0.03202952444553375
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 28,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.706677436828613,
+            15.83588695526123,
+            4.4852213859558105
+          ],
+          "velocity": [
+            0.00013553909957408905,
+            -0.7326257824897766,
+            0.030887454748153687
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 29,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.70925521850586,
+            15.69583511352539,
+            4.491077899932861
+          ],
+          "velocity": [
+            0.012886779382824898,
+            -0.700259804725647,
+            0.02928254008293152
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 30,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.713865280151367,
+            15.564398765563965,
+            4.496550559997559
+          ],
+          "velocity": [
+            0.023049622774124146,
+            -0.6571794152259827,
+            0.027363311499357224
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            13.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 31,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.719525337219238,
+            15.399025917053223,
+            4.501600742340088
+          ],
+          "velocity": [
+            0.028300557285547256,
+            -0.8268657922744751,
+            0.025250380858778954
+          ],
+          "target": [
+            11.0,
+            11.0,
+            4.5
+          ],
+          "tracking": [
+            15.0,
+            13.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        }
+      ],
+      "safety_guarantee": false,
+      "compile_seconds": 0.3641668000000209,
+      "max_compile_seconds": 0.01919339999949443,
+      "prediction_scope": "public occupied voxels; nominal executor prior; excludes unknown flow and learned residual"
+    }
+  },
+  "actual_length": 32,
+  "handoff_event_step": null,
+  "handoff_decision_step": null,
+  "repair_version": "ch3.d2.implementation_repair.v2",
+  "repair_switches": {
+    "waypoint_arrival": true,
+    "inactive_actor": true,
+    "hold_residual": true
+  },
+  "waypoint_reward_timing": "arrival_before_reward_v1",
+  "action_safety": {
+    "disabled_agent_steps": 6,
+    "suppressed_nonzero_residuals": 0
+  },
+  "raw_pre_tanh_components": {
+    "reward_find_event": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_early_find": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_completion_event": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_early_completion": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_progress": [
+      164.82476449012756,
+      102.44760370254517,
+      87.48323345184326,
+      25.39102441072464
+    ],
+    "reward_coverage": [
+      36.41285300254822,
+      36.49999988079071,
+      36.41285300254822,
+      0.0
+    ],
+    "reward_time_penalty": [
+      -6.400000095367432,
+      -6.400000095367432,
+      -6.400000095367432,
+      -6.400000095367432
+    ],
+    "reward_energy_penalty": [
+      -0.23146828991593793,
+      -0.1082097553589847,
+      -0.07170082546508638,
+      -0.07023491887753153
+    ],
+    "reward_smoothness_penalty": [
+      -0.2671465184757835,
+      -0.10301668425017851,
+      -0.074731589617274,
+      -0.15358424151963845
+    ],
+    "reward_collision_penalty": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_separation_penalty": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "team_return_by_phase": {
+    "pre_found": 0.28922706306912005
+  },
+  "observation_risks": {
+    "input_contract": [
+      28,
+      3,
+      124
+    ],
+    "remaining_time_observed": false,
+    "previous_acceleration_observed": false,
+    "full_map_observed": false,
+    "execution_gate_is_network_input": false,
+    "markov_sufficiency_established": false
+  },
+  "safety_guarantee": false,
+  "reward_metric_equivalence_established": false,
+  "map_condition": {
+    "schema": "auv.active.map_condition.v1",
+    "map_id": "OLD",
+    "search_planner_id": "d2_v1",
+    "condition_sha256": "821e9e794d72ffad287dfe608b3d045003c0862eed3110571ffdde9d04a56f8b",
+    "research_config_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "protocol_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "executor_safety": {
+      "schema": "ch3.executor_standby_guard.v1",
+      "enabled": true,
+      "motion_steps": 8,
+      "braking_steps": 16
+    }
+  },
+  "train_map": "OLD",
+  "eval_map": "OLD",
+  "map_metrics": {
+    "core_proposals": 0,
+    "d2_fallbacks": 0,
+    "path_queries": 0,
+    "compression_max_epsilon": null,
+    "core_planning_seconds": 0,
+    "core_planning_p95": null,
+    "runtime_step_seconds": 10.902573400006077,
+    "runtime_step_p50": 0.2546341499992195,
+    "runtime_step_p95": 0.4412931750003735,
+    "final_filter_valid": null,
+    "search_batches": 0,
+    "available_search_batches": 0,
+    "unavailable_search_batches": 0,
+    "core_scored_steps": 0,
+    "last_core_scored_step": null,
+    "first_filter_failure": null,
+    "planning_timing_scope": "core successful proposals only; runtime timing includes environment and actor",
+    "diagnostics": {
+      "schema": "auv.active.map_diagnostics.v1",
+      "inference": null,
+      "planning": null,
+      "activity": null
+    }
+  },
+  "policy_id": "standby_zero_mechanism",
+  "method": "D2",
+  "scenario_sha256": "f38f70d2f8e163ee8abcda5e0382c7b748940dc78a817d1933fe34f75767dac5",
+  "trajectory_complete": true,
+  "environment_innovation_seed": 827709,
+  "max_steps": 32,
+  "pre_found_collision": false,
+  "found_penalized_steps": 32,
+  "source_review": {
+    "review_sha256": "f7f1ae9271cc744de6e769fbb705d3227b06f1e6935bba51bbc5812a76440d97",
+    "profile": "active_executor_standby_v1",
+    "inventory_sha256": "3ec88ac4d60b76b6652151bd51eafb2029c47d4ab506a67436c84cd88dcef937",
+    "parent_commit": "72b0167c5c516a43fdd60018ceb955b562525008",
+    "distribution": "auv.active_source.executor_standby.v1"
+  },
+  "training_seed": null,
+  "mechanism_only": true,
+  "performance_passed": false
+}

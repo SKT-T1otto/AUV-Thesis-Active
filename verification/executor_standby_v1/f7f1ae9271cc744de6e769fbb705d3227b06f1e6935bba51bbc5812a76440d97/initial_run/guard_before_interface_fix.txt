@@ -1,0 +1,162 @@
+"""Opt-in public-map protection for the executor before target discovery.
+
+This changes navigation intent only. Nominal predictions exclude unknown flow
+and learned residuals; neither a checked path nor a hold guarantees safety.
+"""
+from collections import Counter, deque
+from dataclasses import replace
+import time
+import numpy as np
+from chapter3_bser.controllers.path_tracker import PathTracker
+from chapter3_bser.safety.safe_guidance import SafetyBridge
+from chapter3_bser.safety.public_geometry import PublicGeometry
+from chapter3_bser.experiments.coupled_search_v1.execution_forecast import nominal_step
+from core.mapping.travel_cost_service import TravelCostService
+
+SCHEMA = 'ch3.executor_standby_guard.v1'
+OPTIONS = dict(schema=SCHEMA, enabled=True, motion_steps=8, braking_steps=16)
+
+
+def validate_options(value):
+    if (not isinstance(value, dict) or set(value) != set(OPTIONS)
+            or value['schema'] != SCHEMA or type(value['enabled']) is not bool
+            or type(value['motion_steps']) is not int or value['motion_steps'] != 8
+            or type(value['braking_steps']) is not int or value['braking_steps'] != 16):
+        raise ValueError('versioned executor standby guard options required')
+    return dict(value)
+
+
+def signature(item):
+    return (item.executor_id, item.source, item.target_region, item.path,
+            item.reachable, item.failure_reason)
+
+
+def motion_check(geometry, position, velocity, path, target, spec, contract,
+                 threshold, motion_steps=8, braking_steps=16):
+    """Bounded nominal path tracking followed by receding-position braking."""
+    # nominal_step is shared with the map forecaster, but the executor has its
+    # own prior gain. Never use the searcher gain for an executor prediction.
+    contract = dict(contract, prior_strength_search=contract['prior_strength_executor'])
+    p, v = np.asarray(position, float), np.asarray(velocity, float)
+    path = tuple(path)
+    index = 0
+    for k in range(motion_steps + braking_steps):
+        aim = (path[index] if index < len(path) else target) if k < motion_steps else p
+        end, new_v = nominal_step(p, v, aim, spec, contract)
+        if not geometry.segment_free(p, end):
+            return False, 'motion' if k < motion_steps else 'braking'
+        p, v = end, new_v
+        if k < motion_steps and index < len(path) and np.linalg.norm(p - path[index]) < threshold:
+            index += 1
+    return True, 'nominal_checked'
+
+
+class ExecutorStandbyBridge(SafetyBridge):
+    def __init__(self, owner):
+        super().__init__(owner)
+        self.options = validate_options(owner.config['map_experiment']['executor_safety'])
+        self.spec = owner.env.get_public_vehicle_specs()[3]
+        self.contract = owner.env.get_public_control_contract()
+        self.counts = Counter()
+        self.trace = deque(maxlen=64)
+        self._executor_override = None
+        self._last = None
+        self.total_seconds = 0.
+        self.max_seconds = 0.
+
+    def _predict(self, geometry, agent, path, target, *, braking=False):
+        self.counts['prediction_calls'] += 1
+        return motion_check(geometry, agent.position, agent.velocity, path, target,
+            self.spec, self.contract, self.path_tracker.threshold,
+            0 if braking else self.options['motion_steps'], self.options['braking_steps'])
+
+    def compile_guidance(self, allocation, planning_state, mission_context, *, decision_reason=None):
+        started = time.perf_counter()
+        try:
+            return self._compile(allocation, planning_state, mission_context, decision_reason=decision_reason)
+        finally:
+            elapsed = time.perf_counter() - started
+            self.total_seconds += elapsed
+            self.max_seconds = max(self.max_seconds, elapsed)
+
+    def _compile(self, allocation, planning_state, mission_context, *, decision_reason=None):
+        original = allocation.executor_assignment
+        key = signature(original)
+        if self._executor_override is not None and self._executor_override[0] != key:
+            self._executor_override = None
+        active = not (mission_context.target_found or planning_state.target_found or mission_context.mission_complete)
+        if not active:
+            self._executor_override = None
+        effective = allocation
+        if active and self._executor_override is not None:
+            effective = replace(allocation, executor_assignment=self._executor_override[1])
+        context = super().compile_guidance(effective, planning_state, mission_context, decision_reason=decision_reason)
+        if not active:
+            return context
+        live = self.owner.planning_views.live()
+        if int(live.step) != int(planning_state.step):
+            raise ValueError('executor safety requires current public geometry')
+        agent = next(a for a in live.agents if a.agent_id == live.executor_id)
+        item = next(a for a in context.agent_assignments if a.agent_id == live.executor_id)
+        geometry = PublicGeometry(live, self.owner.planning_views.clearance)
+        position = tuple(float(x) for x in agent.position)
+        remaining = self.path_tracker.snapshot(agent.agent_id).remaining_path_points
+        path_safe = (item.reachable and not item.hold_state
+                     and geometry.segment_free(position, item.tracking_waypoint)
+                     and geometry.path_free((position, *remaining)))
+        predicted, cause = self._predict(geometry, agent, remaining, item.final_waypoint) if path_safe else (False, 'path')
+        status = 'route_checked'
+        self.counts['checks'] += 1
+        route_failure = None
+        if not (path_safe and predicted):
+            self.counts['rejected:' + cause] += 1
+            # At most one fresh public A* query in this compilation. A successful
+            # override survives until assignment change, but is rechecked above.
+            route = TravelCostService(self.owner.planning_views.search(self.owner.state)).query(
+                position, original.target_region, agent)
+            self.counts['route_queries'] += 1
+            route_failure = route.failure_reason
+            replacement = None
+            if route.reachable and geometry.path_free((position, *route.path_points)):
+                path = tuple(tuple(float(x) for x in p) for p in route.path_points)
+                probe = PathTracker(threshold=self.path_tracker.threshold)
+                tracking = probe.tracking_target(agent.agent_id, position, path, original.target_region)
+                tail = probe.snapshot(agent.agent_id).remaining_path_points
+                valid, _ = self._predict(geometry, agent, tail, original.target_region)
+                if geometry.segment_free(position, tracking) and valid:
+                    updated = replace(original, path=path, path_cell_indices=tuple(route.path_cell_indices),
+                        estimated_arrival_time=float(route.physical_travel_time), planning_cost=float(route.planning_cost),
+                        reachable=True, failure_reason=None)
+                    self._executor_override = (key, updated)
+                    self.path_tracker.reset(agent.agent_id)
+                    tracking = self.path_tracker.tracking_target(agent.agent_id, position, path, original.target_region)
+                    replacement = replace(item, planned_path=path, tracking_waypoint=tracking,
+                        hold_position=position, hold_state=False, reachable=True)
+                    status = 'route_repaired'
+                    self.counts['route_repairs'] += 1
+            if replacement is None:
+                route_failure = route_failure or 'public_geometry_or_nominal_prediction_rejected'
+                self.counts['route_failure:' + route_failure] += 1
+                self._executor_override = None
+                braking_safe, _ = self._predict(geometry, agent, (), position, braking=True)
+                status = 'nominal_braking_checked' if braking_safe else 'unverified_braking'
+                self.counts[status] += 1
+                replacement = replace(item, planned_path=(), tracking_waypoint=position,
+                    hold_position=position, hold_state=True, reachable=False)
+            item = replacement
+        self._last = dict(step=int(live.step), status=status, cause=None if status == 'route_checked' else cause,
+            position=position, velocity=tuple(float(x) for x in agent.velocity), target=item.final_waypoint,
+            tracking=item.tracking_waypoint, hold=item.hold_state, reachable=item.reachable)
+        self._last.update(original_reachable=original.reachable, route_failure=route_failure)
+        self.trace.append(dict(self._last))
+        executor = replace(context.executor_assignment, planned_path=item.planned_path,
+            tracking_waypoint=item.tracking_waypoint, hold_position=item.hold_position,
+            hold_state=item.hold_state, reachable=item.reachable)
+        return replace(context, agent_assignments=tuple(item if a.agent_id == live.executor_id else a
+                       for a in context.agent_assignments), executor_assignment=executor)
+
+    def summary(self):
+        return dict(schema=SCHEMA, options=self.options, counts=dict(self.counts),
+            last_search_guidance=self._last, trace=list(self.trace), safety_guarantee=False,
+            compile_seconds=self.total_seconds, max_compile_seconds=self.max_seconds,
+            prediction_scope='public occupied voxels; nominal executor prior; excludes unknown flow and learned residual')

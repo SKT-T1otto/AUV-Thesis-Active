@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "files": 265,
+  "manifest_sha256": "f7f1ae9271cc744de6e769fbb705d3227b06f1e6935bba51bbc5812a76440d97",
+  "baseline_archive_verified": true,
+  "all_parent_evidence_immutable": true,
+  "learner_and_physics_byte_identical": true,
+  "original_d2_byte_identical": true,
+  "geometry_kernels_byte_identical": true,
+  "strict_health_predicates_preserved": true,
+  "algorithm_changed": true,
+  "change_scope": "opt-in search-phase executor navigation guard",
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "f7f1ae9271cc744de6e769fbb705d3227b06f1e6935bba51bbc5812a76440d97",
+    "profile": "active_executor_standby_v1",
+    "inventory_sha256": "3ec88ac4d60b76b6652151bd51eafb2029c47d4ab506a67436c84cd88dcef937",
+    "parent_commit": "72b0167c5c516a43fdd60018ceb955b562525008",
+    "distribution": "auv.active_source.executor_standby.v1"
+  },
+  "exit_code": 0,
+  "run_id": "executor_standby_20261026_v1"
+}

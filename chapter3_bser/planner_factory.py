@@ -39,6 +39,11 @@ def build_controller(owner, parent):
 
 
 def build_bridge(owner):
+    options = owner.config.get('map_experiment', {}).get('executor_safety')
+    if options is not None:
+        from chapter3_bser.safety.executor_standby import validate_options, ExecutorStandbyBridge
+        if validate_options(options)['enabled']:
+            return ExecutorStandbyBridge(owner)
     return d2.build_bridge(owner)
 
 
@@ -46,4 +51,7 @@ def diagnostics(owner):
     result = d2.diagnostics(owner)
     if owner.map_research_session is not None:
         result['public_evidence'] = owner.map_research_session.summary()
+    options = owner.config.get('map_experiment', {}).get('executor_safety')
+    if options is not None and options['enabled']:
+        result['executor_standby_guard'] = owner.bridge.summary()
     return result

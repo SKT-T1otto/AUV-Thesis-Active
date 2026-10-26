@@ -7,7 +7,7 @@ import shutil
 import tempfile
 import unittest
 from project_paths import ROOT
-from tools.map_diagnostic_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
+from tools.executor_standby_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
 
 
 def source_directory():
@@ -96,7 +96,7 @@ class MapSource(unittest.TestCase):
             path.write_text(source.replace('raw=self.omega*likelihood','raw=self.omega*likelihood+0.01'),encoding='utf-8')
             changed_hash=hashlib.sha256(path.read_bytes()).hexdigest()
             evolution=json.loads((root/EVOLUTION).read_text(encoding='utf-8'))
-            next(r for r in evolution['changes'] if r['path']==name)['after_sha256']=changed_hash
+            evolution['changes'].append(dict(path=name,before_sha256=manifest['files'][name],after_sha256=changed_hash,reason='negative control'))
             (root/EVOLUTION).write_text(json.dumps(evolution),encoding='utf-8')
             manifest['files'][name]=changed_hash
             manifest['files'][EVOLUTION]=hashlib.sha256((root/EVOLUTION).read_bytes()).hexdigest()

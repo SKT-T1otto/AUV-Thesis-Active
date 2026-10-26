@@ -25,7 +25,10 @@ def validate_spec(spec,*,mechanism=False):
     c=copy.deepcopy(spec)
     keys={'schema','groups','seeds','train_episodes','max_steps','evaluation_count','evaluation_generator_seed',
           'training_generator_seed_base','checkpoint_interval','new_map_config','bootstrap_draws','statistics_seed'}
-    if not isinstance(c,dict) or set(c)-{'convergence'}!=keys or c['schema']!=SPEC_SCHEMA:raise ValueError('complete map experiment specification required')
+    if not isinstance(c,dict) or set(c)-{'convergence','executor_safety'}!=keys or c['schema']!=SPEC_SCHEMA:raise ValueError('complete map experiment specification required')
+    if 'executor_safety' in c:
+        from chapter3_bser.safety.executor_standby import validate_options
+        c['executor_safety']=validate_options(c['executor_safety'])
     if (not isinstance(c['groups'],list) or not c['groups'] or len(set(c['groups']))!=len(c['groups']) or set(c['groups'])-set(GROUPS)
             or not isinstance(c['seeds'],list) or not c['seeds'] or len(set(c['seeds']))!=len(c['seeds'])
             or any(type(s) is not int or not 0<=s<2**31 for s in c['seeds'])):raise ValueError('unique supported groups and training seeds required')
@@ -74,6 +77,7 @@ def _config_for(root,job,spec,mechanism):
         map_experiment=dict(schema=MAP_SCHEMA,map_id=job['map_id'],research_config=None if job['map_id']=='OLD' else spec['new_map_config'],
                             protocol_sha256=digest(dict(spec=spec,mechanism_only=bool(mechanism),protocol='native_maps_fresh_paired_order_v1'))),
         output_dir=str(root/f'jobs/{job["name"]}/train'),max_total_environment_steps=min(256,spec['max_steps']*spec['train_episodes']) if mechanism else None)
+    if 'executor_safety' in spec:c['map_experiment']['executor_safety']=copy.deepcopy(spec['executor_safety'])
     if mechanism:c['rl'].update(batch_size=4,warmup_steps=max(4,spec['max_steps']//2),update_frequency=max(4,spec['max_steps']//2))
     if job['seed'] is not None:
         path=root/f'inputs/train_seed{job["seed"]}.json'

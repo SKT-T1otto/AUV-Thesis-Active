@@ -14,6 +14,7 @@ COMMANDS = {
     'suite': 'chapter3_bser.learning.suite',
     'map-suite': 'chapter3_bser.learning.map_suite',
     'bounded-experiment': 'chapter3_bser.learning.bounded_experiment',
+    'standby-experiment': 'chapter3_bser.learning.standby_experiment',
 }
 
 

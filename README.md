@@ -43,6 +43,7 @@ python -m cli verify
 D2是零RL残差对照，不训练神经网络。来源身份独立，不直接接收旧目录checkpoint。
 
 当前重建证据见 [REBUILD](docs/REBUILD.md)，逐文件职责见 [CODE_MAP](docs/CODE_MAP.md)。
+搜索期执行器待命安全修补及四组 ZERO 对照见 [待命保护实验](docs/EXECUTOR_STANDBY_20261026.md)。原地图与新地图均保留保护关闭的基线。
 已知奖励/障碍问题见 [KNOWN_LIMITS](docs/KNOWN_LIMITS.md)；重建不保证强化学习提升性能。
 历史E0验收、正式性能结论均未通过本次重建转移。
 

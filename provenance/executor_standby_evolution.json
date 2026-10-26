@@ -1,0 +1,128 @@
+{
+  "schema": "auv.source_evolution.executor_standby.v1",
+  "parent_review_sha256": "5fb615b191b137fd4700ae08d45896515f8e1c037c3e53d04fa6a9f79eb729c6",
+  "algorithm_changed": true,
+  "scope": "Opt-in search-phase executor public route and nominal braking checks; original guard-off D2 and map kernels retained.",
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/executor_standby_source.py",
+      "before_sha256": null,
+      "after_sha256": "5514e681373bd1e0d5d10150bb730e53ace18a7ae3b88c21ddea9e639bd9b5fd",
+      "reason": "Bind successor identity/evolution to immutable published diagnostic parent."
+    },
+    {
+      "path": "chapter3_bser/learning/map_contract.py",
+      "before_sha256": "1222b9f00b463cd4b3afe1b4d1922ec71cc4301f6dc99daeb4329a4a942a3fd0",
+      "after_sha256": "9c50671e9453b5e5833804c855263d2091c431f33ab0dda6f1fe2ed1c0bc801f",
+      "reason": "Validate optional versioned executor condition and bind it to native checkpoint/evaluation identity; legacy conditions retain exact identity and health predicates."
+    },
+    {
+      "path": "chapter3_bser/learning/map_suite.py",
+      "before_sha256": "3ad1c2db6a22633f5bc641d6d4ed1ea40d48de05b0689f5199a272aa4413fa4f",
+      "after_sha256": "73462f9ce9e5df47f4730ff21a61681663c84b47f37659d3d1a3263bb66b9436",
+      "reason": "Propagate explicit guard condition into each immutable native experiment config, keeping all original defaults and budgets."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "86fe9ea09225b22360707da58fc595042fdc1c9bfe039375fb3285108ee3cd8a",
+      "after_sha256": "1f4dca055619a489c8d1e54d63816ac3d796e542a8130b2dfe3aa31777e16d71",
+      "reason": "Versioned successor dispatch, inventory and seven-gate readiness without changing earlier source manifests/evidence."
+    },
+    {
+      "path": "chapter3_bser/learning/standby_experiment.py",
+      "before_sha256": null,
+      "after_sha256": "a3cfb8dcb8b148681098702888994e223e0158e327c461818277eef0e9bfaeec",
+      "reason": "Prepare and verify four paired ZERO controls on shared physical scenarios; report executor Search collisions separately from missing standby and other fallback records."
+    },
+    {
+      "path": "chapter3_bser/planner_factory.py",
+      "before_sha256": "9f06906741698b7a6bebca5d5ffad3adc50b09ef528461f895fcd329bb25c8d1",
+      "after_sha256": "95a12917c73f362270b5f14eb388ac0c16620f23795c3e13cbca820f960c0858",
+      "reason": "Construct the new bridge only under an explicit validated enabled option and export its diagnostics; absent/disabled retains original bridge."
+    },
+    {
+      "path": "chapter3_bser/safety/executor_standby.py",
+      "before_sha256": null,
+      "after_sha256": "1b6ead6baebb142fb3f29dc538faf51cc9c722d722c394bcc5b3a008ad425279",
+      "reason": "Versioned opt-in executor-only Search guidance: latest-public path checks, at most one A* query per compilation, bounded nominal tracking/braking prediction, immutable intent replacement, 64-record diagnostics. No physics/action/reward change; unknown flow/residuals excluded explicitly."
+    },
+    {
+      "path": "checks/test_executor_standby.py",
+      "before_sha256": null,
+      "after_sha256": "6e28c9d8900bebca1cbb703391f4b5018479de6039942f0d79aa56a33517b2e3",
+      "reason": "Independent public-obstacle, inertial stopping, dual executor-view consistency, bounded predictor, immutable allocation, cache invalidation, found-phase bypass, identity and baseline controls; zero episodes."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "24670d93f258829f66e3721140d44a3aa7a71c2a2ad16904698eb768cdcc5ffd",
+      "after_sha256": "e1e1c7b29b21d3c7d4380b30d45354eb262390c0bada81ef33e859575522b30b",
+      "reason": "Retarget immutable-parent and re-signed source negative controls to the explicitly behavioral standby successor."
+    },
+    {
+      "path": "cli.py",
+      "before_sha256": "81038b06467c60f6f7e1513bbac3b352172d5aa045703b82aa7b4b9441c7b5ce",
+      "after_sha256": "df48115a9679347aed12b79ffc2232b9951dc86e20e13520872ab439633b6efa",
+      "reason": "Expose explicit-execute standby-experiment prepare/run/report command."
+    },
+    {
+      "path": "configs/executor_standby_pilot_v1.json",
+      "before_sha256": null,
+      "after_sha256": "738ace66bc91f645219f308f96ac0d3106640d3e927d2e9a8e9a1f80f0d74995",
+      "reason": "Reuse 12 development scenes at 400 steps with full W64 map kernels; only original/new ZERO references, no training jobs."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "6cff8467a31bdddbba44132310948c6d333c852ea4def94e96cd2be90cfb76af",
+      "after_sha256": "55d18ed23cfbac1812142abe3c162d5c7dfdeb3b1ec69acce1c2e78f20c3356a",
+      "reason": "Require all 238 regression tests and reject skips."
+    },
+    {
+      "path": "provenance/baselines/map_diagnostics_20261026_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "0009c9737f183d869d53d14fe2a9c924ba08f9833422a257f0d098529619ee0a",
+      "reason": "Freeze published diagnostic source/evidence without nested copies of older immutable ZIP archives."
+    },
+    {
+      "path": "provenance/baselines/map_diagnostics_20261026_v1/source_and_evidence.zip",
+      "before_sha256": null,
+      "after_sha256": "2244f676b8ca9196af4d12ef5dc280db04a7d428f73d1b250d271cff47577c58",
+      "reason": "Freeze published diagnostic source/evidence without nested copies of older immutable ZIP archives."
+    },
+    {
+      "path": "provenance/map_diagnostics_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "a025380e5258dd7d0990ae6f3c2f7bec66f1a738dbc7d91d2dddc7e716767a44",
+      "reason": "Pin immutable published diagnostics parent."
+    },
+    {
+      "path": "tools/check_executor_standby.py",
+      "before_sha256": null,
+      "after_sha256": "8780f764473a3195eeba53f3da6e45acbe6b3e04f303c8d88d0c60de1f510c9f",
+      "reason": "At most eight 32-step ZERO physical probes on two reused development scenes across original/new maps and guard off/on; no learning or checkpoint restore."
+    },
+    {
+      "path": "tools/executor_standby_source.py",
+      "before_sha256": null,
+      "after_sha256": "50285ff6fc238cf7d58d6527cfcc6ae009bb95b6792fd880956cf14b80f6bcdb",
+      "reason": "Independent frozen-parent/evidence verification and byte-exact protection for all original runtime except reviewed assembly/condition/spec/provenance integration; complete health function unchanged."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "7f8f31a110fcea59af929d54c9f633ba083ea49b3e7affd7896540367cfa458b",
+      "after_sha256": "e137491497c3f510e0bf7f6795d75d0597bd3d66d7c6a33d3a5fadc821997b8f",
+      "reason": "Expose mutually exclusive bounded standby workflow in current regression harness."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "cb848e7402a64b5bc703df8ed82074de1af38480a01a59d0dea76a266b55e252",
+      "after_sha256": "3d41d46a3e6b1196530e73f3724019be2edc36493c37268df8c409f9e9697c0b",
+      "reason": "Use standby workflow for actual-Linux validation of this successor, preserving source/package/readiness gates."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "f99b6829b44a3f6d138e2b61cec959bcbd5531fa077d690db311fde32e96082d",
+      "after_sha256": "ff48f515d7d41e57f2934153f90b83549bde30e63d5ff0c0857fd5a679929edf",
+      "reason": "Dispatch current independent verifier to standby successor."
+    }
+  ]
+}

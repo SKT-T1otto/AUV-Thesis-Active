@@ -9,9 +9,12 @@ SCHEMA='auv.active.map_condition.v1'
 
 
 def validate_condition(value):
-    if not isinstance(value,dict) or set(value)!={'schema','map_id','research_config','protocol_sha256'}:
+    if not isinstance(value,dict) or set(value)-{'executor_safety'}!={'schema','map_id','research_config','protocol_sha256'}:
         raise ValueError('complete map experiment condition required')
     c=copy.deepcopy(value)
+    if 'executor_safety' in c:
+        from chapter3_bser.safety.executor_standby import validate_options
+        c['executor_safety']=validate_options(c['executor_safety'])
     if c['schema']!=SCHEMA or c['map_id'] not in ('OLD','NEW') or not isinstance(c['protocol_sha256'],str) or not re.fullmatch('[0-9a-f]{64}',c['protocol_sha256']):
         raise ValueError('invalid map experiment identity')
     if c['map_id']=='OLD':
@@ -27,8 +30,10 @@ def identity(config):
     if 'map_experiment' not in config:return None
     c=validate_condition(config['map_experiment'])
     from chapter3_bser.experiments.coupled_search_v1.config import search_planner_id
-    return dict(schema=SCHEMA,map_id=c['map_id'],search_planner_id=search_planner_id(c['research_config']),
+    result=dict(schema=SCHEMA,map_id=c['map_id'],search_planner_id=search_planner_id(c['research_config']),
                 condition_sha256=digest(c),research_config_sha256=digest(c['research_config']),protocol_sha256=c['protocol_sha256'])
+    if 'executor_safety' in c:result['executor_safety']=c['executor_safety']
+    return result
 
 
 def research_config(config):

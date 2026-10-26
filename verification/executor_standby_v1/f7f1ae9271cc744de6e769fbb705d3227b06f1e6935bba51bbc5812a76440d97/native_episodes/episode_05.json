@@ -1,0 +1,3412 @@
+{
+  "episode_id": 0,
+  "episode_index": 0,
+  "scenario_id": "eval_gen827699__unknown_validation_m20_0011",
+  "scenario_seed": 827709,
+  "found": false,
+  "success": false,
+  "success_if_found": false,
+  "found_step": null,
+  "success_step": null,
+  "remaining_steps_after_found": null,
+  "executor_target_received_step": null,
+  "handoff_delay": null,
+  "found_to_target_received_steps": null,
+  "found_to_success_steps": null,
+  "executor_distance_at_handoff": null,
+  "executor_distance_to_target_at_found": null,
+  "executor_distance_to_target_at_received": null,
+  "executor_min_distance_to_target": null,
+  "executor_final_distance_to_target": null,
+  "executor_distance_to_intercept_at_received": null,
+  "executor_min_distance_to_intercept": null,
+  "executor_final_distance_to_intercept": null,
+  "target_prediction_error_at_delivery": null,
+  "mean_target_prediction_error": null,
+  "target_prediction_map_fallback_count": 0,
+  "capture_contact_step_count": 0,
+  "capture_full_hold_step_count": 0,
+  "capture_hold_counter_max": 0,
+  "capture_swept_min_distance": null,
+  "executor_path_unreachable_count": null,
+  "executor_invalid_count": 0,
+  "executor_replan_count": 0,
+  "executor_invalid_assignment_unreachable_count": 0,
+  "executor_invalid_query_unreachable_count": 0,
+  "executor_invalid_cost_increase_count": 0,
+  "executor_invalid_stale_snapshot_deferred_count": 31,
+  "executor_validity_evaluation_count": 0,
+  "executor_validity_deferred_count": 31,
+  "public_target_update_event_count": 0,
+  "public_target_update_accepted_count": 0,
+  "public_target_shift_sum": 0.0,
+  "public_target_shift_mean": null,
+  "public_target_shift_max": null,
+  "environment_public_target_at_handoff": null,
+  "controller_execution_target_at_handoff": null,
+  "installed_executor_tracking_target_at_handoff": null,
+  "controller_to_public_target_error_at_handoff": null,
+  "controller_to_public_target_error_mean": null,
+  "controller_to_public_target_error_final": null,
+  "full_planning_refresh_count": 4,
+  "handoff_forced_refresh_count": 0,
+  "target_shift_forced_refresh_count": 0,
+  "post_found_collision_count": 0,
+  "pre_found_base_reward": 1.055856523104012,
+  "post_found_base_reward": 0.0,
+  "post_found_shaping_reward": 0.0,
+  "completion_reward_post_tanh": 0.0,
+  "adjusted_episode_reward": 0.263964130776003,
+  "search_residual_ratio_pre_found": 0.0,
+  "search_residual_ratio_post_found": null,
+  "executor_residual_ratio_pre_found": 0.0,
+  "executor_residual_ratio_post_found": null,
+  "initial_planner_endpoint_fallback_count": 0,
+  "episode_terminated": true,
+  "episode_truncated": false,
+  "termination_reason": "timeout",
+  "terminal_step": 32,
+  "first_collision_step": null,
+  "first_collision_agent_ids": [],
+  "first_collision_phase": null,
+  "collision_records": [],
+  "mission_complete": false,
+  "task_protocol": "collision_terminal_v1",
+  "collision_detection_revision": "segment_closed_aabb_v1",
+  "terminal_reward_revision": "team_failure_override_v1",
+  "terminated": true,
+  "truncated": false,
+  "safe_success": false,
+  "collision_episode": false,
+  "remaining_task_steps": 0,
+  "bootstrap_mask": 0.0,
+  "contact_bonus_count": 0,
+  "hold_bonus_count": 0,
+  "terminal_bonus_count": 0,
+  "discovery_correction_count": 0,
+  "searcher_zeroed_step_count": 0,
+  "reward_objective": "team_mean_v1",
+  "source_reward_revision": "execution_reward_v2_after_terminal_override_v1",
+  "gamma": 0.95,
+  "team_undiscounted_return": 0.263964130776003,
+  "team_discounted_return": 0.12954681714080696,
+  "source_individual_returns": [
+    0.440939112304477,
+    0.26667035510763526,
+    0.30132920085452497,
+    0.046917845465941355
+  ],
+  "source_searcher_zeroed_step_count": 0,
+  "source_adjusted_episode_reward": 1.055856523104012,
+  "planner": {
+    "planner_protocol": "d2_v1",
+    "reference_arm": "D2",
+    "safety_variant": "V4",
+    "safe_counts": {
+      "path_safety_checks": 96,
+      "forced_planning_refreshes": 2
+    },
+    "effect_counts": {
+      "standby_unreachable_queries": 0,
+      "standby_shortage_events": 0
+    },
+    "unresolved_searcher_ids": [],
+    "audit_record_count": 7,
+    "public_evidence": {
+      "schema": "ch3.coupled_search.core_audit.v1",
+      "mode": "coupled_search",
+      "search_planner_id": "coupled_search_bounded_v3",
+      "algorithm_changed": true,
+      "estimator_implemented": true,
+      "valid": true,
+      "error": null,
+      "last_event_sequence": 65,
+      "counts": {
+        "scan_batches": 33,
+        "ray_measurements": 3432,
+        "search_batches": 32,
+        "available_search_batches": 32,
+        "decision_public_snapshots": 32,
+        "public_unroutable_proposals": 0,
+        "core_proposals": 4,
+        "route_versions": 8,
+        "physical_transitions": 32,
+        "negative_observations": 32,
+        "discovery_checks": 32,
+        "terminal_transitions": 1,
+        "core_scored_steps": 31,
+        "last_core_scored_step": 31,
+        "forecast_invalidations": 1
+      },
+      "retained_audit_records": 124,
+      "latest_route_sha256": "ad6014cd9d31b1464b86f10b52b189d4aef208c5dd15ec8158822410a743f583",
+      "coupled_belief": {
+        "valid": true,
+        "error": null,
+        "step": 32,
+        "stopped": true,
+        "alpha": [
+          0.303030303030303,
+          0.33333333333333337,
+          0.36363636363636365
+        ],
+        "history_complete": false,
+        "conditional_ess": [
+          20.000000000000004,
+          22.0,
+          23.999999999999996
+        ],
+        "historical_information_carried_by_boundary": true,
+        "retained_history": 32,
+        "window_steps": 64,
+        "boundary_step": 0,
+        "max_retained_history": 32,
+        "last_replay_steps": 0,
+        "max_replay_steps": 0,
+        "max_map_boxes": 14,
+        "last_replay_work": 0,
+        "boundary_array_bytes": 5400,
+        "snapshot_array_bytes": 172800,
+        "retained_snapshots": 32,
+        "retained_event_ids": 65,
+        "counts": {
+          "initializations": 1,
+          "joint_updates": 33,
+          "approximate_geometry_transports": 20
+        },
+        "window_map_frame_bytes": 0,
+        "persistent_map": {
+          "revision": 33,
+          "grid_shape": [
+            20,
+            20,
+            10
+          ],
+          "grid_cells": 4000,
+          "spacing": [
+            1.0,
+            1.0,
+            0.8
+          ],
+          "known_free_cells": 1701,
+          "occupied_cells": 12,
+          "observed_cells": 1717,
+          "hit_evidence_cells": 39,
+          "base_boxes": 12,
+          "state_array_bytes": 40000,
+          "counts": {
+            "scan_batches": 33,
+            "ray_measurements": 3432,
+            "changed_cells": 1758
+          },
+          "resolution_approximation": true
+        },
+        "geometry_counts": {
+          "unknown_boxes_removed": 6,
+          "local_geometry_transactions": 33,
+          "geometry_changes": 21
+        },
+        "first_failure": null,
+        "last_failure": null,
+        "approximate_map_transport": true,
+        "approximate_boundary_proposals": true,
+        "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+        "design_variant": "full"
+      },
+      "execution_error_observations": 32,
+      "prior_is_approximate": true,
+      "performance_passed": false
+    },
+    "executor_standby_guard": {
+      "schema": "ch3.executor_standby_guard.v1",
+      "options": {
+        "schema": "ch3.executor_standby_guard.v1",
+        "enabled": true,
+        "motion_steps": 8,
+        "braking_steps": 16
+      },
+      "counts": {
+        "prediction_calls": 32,
+        "checks": 32,
+        "rejected:path": 7,
+        "route_queries": 7,
+        "route_failure:no_start_connector": 6,
+        "nominal_braking_checked": 6,
+        "route_repairs": 1
+      },
+      "last_search_guidance": {
+        "step": 31,
+        "status": "route_checked",
+        "cause": null,
+        "position": [
+          14.719525337219238,
+          15.399025917053223,
+          4.501600742340088
+        ],
+        "velocity": [
+          0.028300557285547256,
+          -0.8268657922744751,
+          0.025250380858778954
+        ],
+        "target": [
+          9.0,
+          11.0,
+          3.5
+        ],
+        "tracking": [
+          15.0,
+          13.0,
+          4.5
+        ],
+        "hold": false,
+        "reachable": true,
+        "original_reachable": true,
+        "route_failure": null
+      },
+      "trace": [
+        {
+          "step": 0,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            17.226137161254883,
+            18.657411575317383,
+            4.236938953399658
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            17.0,
+            19.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 1,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            17.21292495727539,
+            18.660791397094727,
+            4.24399995803833
+          ],
+          "velocity": [
+            -0.06605732440948486,
+            0.01689940318465233,
+            0.03530425950884819
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 2,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            17.161968231201172,
+            18.627334594726562,
+            4.256270408630371
+          ],
+          "velocity": [
+            -0.25478342175483704,
+            -0.1672835499048233,
+            0.0613517239689827
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 3,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            17.074478149414062,
+            18.55817222595215,
+            4.272216320037842
+          ],
+          "velocity": [
+            -0.43745481967926025,
+            -0.3458135426044464,
+            0.07972929626703262
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 4,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.951629638671875,
+            18.461700439453125,
+            4.290581703186035
+          ],
+          "velocity": [
+            -0.614240825176239,
+            -0.4823575019836426,
+            0.09182809293270111
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 5,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.80057144165039,
+            18.34457015991211,
+            4.3103532791137695
+          ],
+          "velocity": [
+            -0.7552863955497742,
+            -0.5856521725654602,
+            0.09885705262422562
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 6,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.63144302368164,
+            18.214218139648438,
+            4.330724716186523
+          ],
+          "velocity": [
+            -0.845641016960144,
+            -0.6517583727836609,
+            0.101857490837574
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 7,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.45320701599121,
+            18.07721710205078,
+            4.351068496704102
+          ],
+          "velocity": [
+            -0.8911846876144409,
+            -0.6850053071975708,
+            0.10171842575073242
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 8,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.27288055419922,
+            17.93870735168457,
+            4.370906829833984
+          ],
+          "velocity": [
+            -0.9016329646110535,
+            -0.6925471425056458,
+            0.09919160604476929
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 9,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            16.095829010009766,
+            17.80261993408203,
+            4.389888286590576
+          ],
+          "velocity": [
+            -0.8852599859237671,
+            -0.6804376244544983,
+            0.09490641951560974
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 10,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            15.926021575927734,
+            17.6718692779541,
+            4.407764911651611
+          ],
+          "velocity": [
+            -0.8490354418754578,
+            -0.6537516713142395,
+            0.08938401937484741
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 11,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            15.76626968383789,
+            17.54852867126465,
+            4.424375057220459
+          ],
+          "velocity": [
+            -0.7987601161003113,
+            -0.6166996359825134,
+            0.08305084705352783
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 12,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            15.618430137634277,
+            17.43398094177246,
+            4.439625263214111
+          ],
+          "velocity": [
+            -0.7391988039016724,
+            -0.5727345943450928,
+            0.07625089585781097
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 13,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            15.483589172363281,
+            17.329050064086914,
+            4.453476905822754
+          ],
+          "velocity": [
+            -0.6742068529129028,
+            -0.5246508717536926,
+            0.06925728172063828
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            13.0,
+            15.0,
+            3.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 14,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            15.328490257263184,
+            17.199172973632812,
+            4.446519374847412
+          ],
+          "velocity": [
+            -0.7754946947097778,
+            -0.6493900418281555,
+            -0.034787073731422424
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.328490257263184,
+            17.199172973632812,
+            4.446519374847412
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 15,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            15.20273494720459,
+            17.094100952148438,
+            4.442020416259766
+          ],
+          "velocity": [
+            -0.628777801990509,
+            -0.5253618955612183,
+            -0.022493835538625717
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.20273494720459,
+            17.094100952148438,
+            4.442020416259766
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 16,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            15.101266860961914,
+            17.007715225219727,
+            4.439393997192383
+          ],
+          "velocity": [
+            -0.5073408484458923,
+            -0.43192997574806213,
+            -0.013131305575370789
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.101266860961914,
+            17.007715225219727,
+            4.439393997192383
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 17,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            15.018204689025879,
+            16.935407638549805,
+            4.4381937980651855
+          ],
+          "velocity": [
+            -0.41531315445899963,
+            -0.3615383207798004,
+            -0.006000802386552095
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.018204689025879,
+            16.935407638549805,
+            4.4381937980651855
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 18,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            14.949097633361816,
+            16.873706817626953,
+            4.438079833984375
+          ],
+          "velocity": [
+            -0.34553414583206177,
+            -0.3085021376609802,
+            -0.0005702110938727856
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            14.949097633361816,
+            16.873706817626953,
+            4.438079833984375
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 19,
+          "status": "nominal_braking_checked",
+          "cause": "path",
+          "position": [
+            14.890580177307129,
+            16.819997787475586,
+            4.438793182373047
+          ],
+          "velocity": [
+            -0.2925887107849121,
+            -0.26854208111763,
+            0.0035657272674143314
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            14.890580177307129,
+            16.819997787475586,
+            4.438793182373047
+          ],
+          "hold": true,
+          "reachable": false,
+          "original_reachable": true,
+          "route_failure": "no_start_connector"
+        },
+        {
+          "step": 20,
+          "status": "route_repaired",
+          "cause": "path",
+          "position": [
+            14.840104103088379,
+            16.772310256958008,
+            4.440136432647705
+          ],
+          "velocity": [
+            -0.25238072872161865,
+            -0.23843567073345184,
+            0.0067156581208109856
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            17.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 21,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.79999828338623,
+            16.735219955444336,
+            4.443384170532227
+          ],
+          "velocity": [
+            -0.20052920281887054,
+            -0.18544995784759521,
+            0.016238410025835037
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 22,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.768823623657227,
+            16.66118812561035,
+            4.448005199432373
+          ],
+          "velocity": [
+            -0.1558741331100464,
+            -0.3701602518558502,
+            0.023104457184672356
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 23,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.74528980255127,
+            16.553911209106445,
+            4.453561782836914
+          ],
+          "velocity": [
+            -0.11766710132360458,
+            -0.5363819599151611,
+            0.02778373658657074
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 24,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.728255271911621,
+            16.42438507080078,
+            4.4596991539001465
+          ],
+          "velocity": [
+            -0.08517365902662277,
+            -0.6476269364356995,
+            0.030686240643262863
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 25,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.716710090637207,
+            16.281505584716797,
+            4.466132640838623
+          ],
+          "velocity": [
+            -0.05772387236356735,
+            -0.7143949866294861,
+            0.03216644003987312
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 26,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.709768295288086,
+            16.13234519958496,
+            4.472638130187988
+          ],
+          "velocity": [
+            -0.03471006825566292,
+            -0.7457991242408752,
+            0.03252817690372467
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 27,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.706650733947754,
+            15.982412338256836,
+            4.479043960571289
+          ],
+          "velocity": [
+            -0.015586046501994133,
+            -0.7496625185012817,
+            0.03202952444553375
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 28,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.706677436828613,
+            15.83588695526123,
+            4.4852213859558105
+          ],
+          "velocity": [
+            0.00013553909957408905,
+            -0.7326257824897766,
+            0.030887454748153687
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 29,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.70925521850586,
+            15.69583511352539,
+            4.491077899932861
+          ],
+          "velocity": [
+            0.012886779382824898,
+            -0.700259804725647,
+            0.02928254008293152
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 30,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.713865280151367,
+            15.564398765563965,
+            4.496550559997559
+          ],
+          "velocity": [
+            0.023049622774124146,
+            -0.6571794152259827,
+            0.027363311499357224
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            13.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        },
+        {
+          "step": 31,
+          "status": "route_checked",
+          "cause": null,
+          "position": [
+            14.719525337219238,
+            15.399025917053223,
+            4.501600742340088
+          ],
+          "velocity": [
+            0.028300557285547256,
+            -0.8268657922744751,
+            0.025250380858778954
+          ],
+          "target": [
+            9.0,
+            11.0,
+            3.5
+          ],
+          "tracking": [
+            15.0,
+            13.0,
+            4.5
+          ],
+          "hold": false,
+          "reachable": true,
+          "original_reachable": true,
+          "route_failure": null
+        }
+      ],
+      "safety_guarantee": false,
+      "compile_seconds": 1.8113835999920411,
+      "max_compile_seconds": 0.2782606000000669,
+      "prediction_scope": "public occupied voxels; nominal executor prior; excludes unknown flow and learned residual"
+    }
+  },
+  "actual_length": 32,
+  "handoff_event_step": null,
+  "handoff_decision_step": null,
+  "repair_version": "ch3.d2.implementation_repair.v2",
+  "repair_switches": {
+    "waypoint_arrival": true,
+    "inactive_actor": true,
+    "hold_residual": true
+  },
+  "waypoint_reward_timing": "arrival_before_reward_v1",
+  "action_safety": {
+    "disabled_agent_steps": 6,
+    "suppressed_nonzero_residuals": 0
+  },
+  "raw_pre_tanh_components": {
+    "reward_find_event": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_early_find": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_completion_event": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_early_completion": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_progress": [
+      142.48624300956726,
+      72.50069785118103,
+      86.35343933105469,
+      25.39102441072464
+    ],
+    "reward_coverage": [
+      40.75000035762787,
+      40.75000035762787,
+      40.75000035762787,
+      0.0
+    ],
+    "reward_time_penalty": [
+      -6.400000095367432,
+      -6.400000095367432,
+      -6.400000095367432,
+      -6.400000095367432
+    ],
+    "reward_energy_penalty": [
+      -0.21544213755987585,
+      -0.10234225605381653,
+      -0.07003721040018718,
+      -0.07023491887753153
+    ],
+    "reward_smoothness_penalty": [
+      -0.22600114799479343,
+      -0.0757295747880562,
+      -0.09672253964163247,
+      -0.15358424151963845
+    ],
+    "reward_collision_penalty": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reward_separation_penalty": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "team_return_by_phase": {
+    "pre_found": 0.263964130776003
+  },
+  "observation_risks": {
+    "input_contract": [
+      28,
+      3,
+      124
+    ],
+    "remaining_time_observed": false,
+    "previous_acceleration_observed": false,
+    "full_map_observed": false,
+    "execution_gate_is_network_input": false,
+    "markov_sufficiency_established": false
+  },
+  "safety_guarantee": false,
+  "reward_metric_equivalence_established": false,
+  "map_condition": {
+    "schema": "auv.active.map_condition.v1",
+    "map_id": "NEW",
+    "search_planner_id": "coupled_search_bounded_v3",
+    "condition_sha256": "934706d34d9c9cb4ae59baae7cd9deb63be39301d55698e7ebb1b35add7e6561",
+    "research_config_sha256": "4eb64aebb3e4501724b779e68ae78cf66258070008b178c0b87b4233b38c445b",
+    "protocol_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "executor_safety": {
+      "schema": "ch3.executor_standby_guard.v1",
+      "enabled": true,
+      "motion_steps": 8,
+      "braking_steps": 16
+    }
+  },
+  "train_map": "NEW",
+  "eval_map": "NEW",
+  "map_metrics": {
+    "core_proposals": 4,
+    "d2_fallbacks": 0,
+    "path_queries": 58,
+    "compression_max_epsilon": 0.022219295717552347,
+    "core_planning_seconds": 4.053544499998679,
+    "core_planning_p95": 1.4404457249994265,
+    "runtime_step_seconds": 28.17842109999765,
+    "runtime_step_p50": 0.8088469000003897,
+    "runtime_step_p95": 1.2928821449998396,
+    "final_filter_valid": true,
+    "search_batches": 32,
+    "available_search_batches": 32,
+    "unavailable_search_batches": 0,
+    "core_scored_steps": 31,
+    "last_core_scored_step": 31,
+    "first_filter_failure": null,
+    "planning_timing_scope": "core successful proposals only; runtime timing includes environment and actor",
+    "diagnostics": {
+      "schema": "auv.active.map_diagnostics.v1",
+      "inference": {
+        "counts": {
+          "attempts": 33,
+          "completed": 33
+        },
+        "failure_reasons": {},
+        "phase_seconds": {
+          "entry": 0.0017163000029540854,
+          "scan_and_map_memory": 0.602586999992127,
+          "geometry_repair": 0.07426070000656182,
+          "target_update": 0.06680609999966691
+        },
+        "first_failure": null,
+        "retained_attempts": 33,
+        "trace_truncated": false,
+        "retained_p95": 0.027788660001533568,
+        "retained_max": 0.030404400000406895,
+        "trace": [
+          {
+            "step": 0,
+            "operation": "inference",
+            "seconds": 0.023407300001053954,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.739999970595818e-05,
+              "scan_and_map_memory": 0.01966260000153852,
+              "geometry_repair": 0.002552399999331101,
+              "target_update": 0.0011737000004359288
+            },
+            "retained_history": 0,
+            "replay_work": 0
+          },
+          {
+            "step": 1,
+            "operation": "inference",
+            "seconds": 0.020046199999342207,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.97000003431458e-05,
+              "scan_and_map_memory": 0.016826099999889266,
+              "geometry_repair": 0.0018199999994976679,
+              "target_update": 0.0013586000004579546
+            },
+            "retained_history": 1,
+            "replay_work": 0
+          },
+          {
+            "step": 2,
+            "operation": "inference",
+            "seconds": 0.020700400000350783,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 4.4099999286117963e-05,
+              "scan_and_map_memory": 0.017215699999724166,
+              "geometry_repair": 0.001977400001123897,
+              "target_update": 0.001462300000639516
+            },
+            "retained_history": 2,
+            "replay_work": 0
+          },
+          {
+            "step": 3,
+            "operation": "inference",
+            "seconds": 0.021545999999943888,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.590000051190145e-05,
+              "scan_and_map_memory": 0.01828679999925953,
+              "geometry_repair": 0.0021295999995345483,
+              "target_update": 0.0010927000002993736
+            },
+            "retained_history": 3,
+            "replay_work": 0
+          },
+          {
+            "step": 4,
+            "operation": "inference",
+            "seconds": 0.020293399998990935,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.499999911582563e-05,
+              "scan_and_map_memory": 0.017857099999673665,
+              "geometry_repair": 0.0014172999999573221,
+              "target_update": 0.0009831000006670365
+            },
+            "retained_history": 4,
+            "replay_work": 0
+          },
+          {
+            "step": 5,
+            "operation": "inference",
+            "seconds": 0.02012979999926756,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 4.0099999750964344e-05,
+              "scan_and_map_memory": 0.017384999999194406,
+              "geometry_repair": 0.0014752000006410526,
+              "target_update": 0.001228600000104052
+            },
+            "retained_history": 5,
+            "replay_work": 0
+          },
+          {
+            "step": 6,
+            "operation": "inference",
+            "seconds": 0.020999899999878835,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.49000001733657e-05,
+              "scan_and_map_memory": 0.017638499999520718,
+              "geometry_repair": 0.001666500000283122,
+              "target_update": 0.0016589999995630933
+            },
+            "retained_history": 6,
+            "replay_work": 0
+          },
+          {
+            "step": 7,
+            "operation": "inference",
+            "seconds": 0.010574899999483023,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 4.13999987358693e-05,
+              "scan_and_map_memory": 0.008300999999846681,
+              "geometry_repair": 0.0011363000012352131,
+              "target_update": 0.0010843000000022585
+            },
+            "retained_history": 7,
+            "replay_work": 0
+          },
+          {
+            "step": 8,
+            "operation": "inference",
+            "seconds": 0.021854099999472965,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.49000001733657e-05,
+              "scan_and_map_memory": 0.0188598999993701,
+              "geometry_repair": 0.00196219999997993,
+              "target_update": 0.0009962000003724825
+            },
+            "retained_history": 8,
+            "replay_work": 0
+          },
+          {
+            "step": 9,
+            "operation": "inference",
+            "seconds": 0.021641799999997602,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.49000001733657e-05,
+              "scan_and_map_memory": 0.01790169999912905,
+              "geometry_repair": 0.002053700000033132,
+              "target_update": 0.0016500000001542503
+            },
+            "retained_history": 9,
+            "replay_work": 0
+          },
+          {
+            "step": 10,
+            "operation": "inference",
+            "seconds": 0.024234999998952844,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.6100000215810724e-05,
+              "scan_and_map_memory": 0.020540499999697204,
+              "geometry_repair": 0.0015239000003930414,
+              "target_update": 0.002133500000127242
+            },
+            "retained_history": 10,
+            "replay_work": 0
+          },
+          {
+            "step": 11,
+            "operation": "inference",
+            "seconds": 0.02126470000075642,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.80000001314329e-05,
+              "scan_and_map_memory": 0.018696600000112085,
+              "geometry_repair": 0.0015375999992102152,
+              "target_update": 0.0009915999999066116
+            },
+            "retained_history": 11,
+            "replay_work": 0
+          },
+          {
+            "step": 12,
+            "operation": "inference",
+            "seconds": 0.030404400000406895,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.570000080799218e-05,
+              "scan_and_map_memory": 0.024033499999859487,
+              "geometry_repair": 0.003425200000492623,
+              "target_update": 0.0029086999984428985
+            },
+            "retained_history": 12,
+            "replay_work": 0
+          },
+          {
+            "step": 13,
+            "operation": "inference",
+            "seconds": 0.022246299999096664,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.3999998777289875e-05,
+              "scan_and_map_memory": 0.018344900001466158,
+              "geometry_repair": 0.002268000000185566,
+              "target_update": 0.0015984999990905635
+            },
+            "retained_history": 13,
+            "replay_work": 0
+          },
+          {
+            "step": 14,
+            "operation": "inference",
+            "seconds": 0.02275510000072245,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 4.4800000978284515e-05,
+              "scan_and_map_memory": 0.018347899998843786,
+              "geometry_repair": 0.003151400000206195,
+              "target_update": 0.0012096999998902902
+            },
+            "retained_history": 14,
+            "replay_work": 0
+          },
+          {
+            "step": 15,
+            "operation": "inference",
+            "seconds": 0.020121999999901163,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 4.5900000259280205e-05,
+              "scan_and_map_memory": 0.017724699999234872,
+              "geometry_repair": 0.0014870000013615936,
+              "target_update": 0.0008631999990029726
+            },
+            "retained_history": 15,
+            "replay_work": 0
+          },
+          {
+            "step": 16,
+            "operation": "inference",
+            "seconds": 0.023659099999349564,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.97000003431458e-05,
+              "scan_and_map_memory": 0.018254299999171053,
+              "geometry_repair": 0.0026474999995116377,
+              "target_update": 0.0027164000002812827
+            },
+            "retained_history": 16,
+            "replay_work": 0
+          },
+          {
+            "step": 17,
+            "operation": "inference",
+            "seconds": 0.023782700000083423,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.990000004705507e-05,
+              "scan_and_map_memory": 0.018237199999930453,
+              "geometry_repair": 0.0025746999999682885,
+              "target_update": 0.00292990000161808
+            },
+            "retained_history": 17,
+            "replay_work": 0
+          },
+          {
+            "step": 18,
+            "operation": "inference",
+            "seconds": 0.02199060000020836,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.910000123141799e-05,
+              "scan_and_map_memory": 0.018051199998808443,
+              "geometry_repair": 0.0025814000000536907,
+              "target_update": 0.001317899999776273
+            },
+            "retained_history": 18,
+            "replay_work": 0
+          },
+          {
+            "step": 19,
+            "operation": "inference",
+            "seconds": 0.022468799999842304,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.9000000469968654e-05,
+              "scan_and_map_memory": 0.019886899999619345,
+              "geometry_repair": 0.0016752000010455959,
+              "target_update": 0.0008665999994263984
+            },
+            "retained_history": 19,
+            "replay_work": 0
+          },
+          {
+            "step": 20,
+            "operation": "inference",
+            "seconds": 0.023520599999756087,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.620000097726006e-05,
+              "scan_and_map_memory": 0.018456799998602946,
+              "geometry_repair": 0.002055500001006294,
+              "target_update": 0.002970899999127141
+            },
+            "retained_history": 20,
+            "replay_work": 0
+          },
+          {
+            "step": 21,
+            "operation": "inference",
+            "seconds": 0.022548099999767146,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 5.3499999921768904e-05,
+              "scan_and_map_memory": 0.01820140000018,
+              "geometry_repair": 0.001739100000122562,
+              "target_update": 0.002553000000261818
+            },
+            "retained_history": 21,
+            "replay_work": 0
+          },
+          {
+            "step": 22,
+            "operation": "inference",
+            "seconds": 0.022904700001163292,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.930000093532726e-05,
+              "scan_and_map_memory": 0.019350200000189943,
+              "geometry_repair": 0.0019659999998111743,
+              "target_update": 0.0015480999991268618
+            },
+            "retained_history": 22,
+            "replay_work": 0
+          },
+          {
+            "step": 23,
+            "operation": "inference",
+            "seconds": 0.022501699999338598,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 4.0699998862692155e-05,
+              "scan_and_map_memory": 0.019127499999740394,
+              "geometry_repair": 0.002373299999817391,
+              "target_update": 0.0009592000005795853
+            },
+            "retained_history": 23,
+            "replay_work": 0
+          },
+          {
+            "step": 24,
+            "operation": "inference",
+            "seconds": 0.029327900001590024,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 0.0004984000006515998,
+              "scan_and_map_memory": 0.019509199999447446,
+              "geometry_repair": 0.007790900001054979,
+              "target_update": 0.0015284999990399228
+            },
+            "retained_history": 24,
+            "replay_work": 0
+          },
+          {
+            "step": 25,
+            "operation": "inference",
+            "seconds": 0.023334100000283797,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.5799999750452116e-05,
+              "scan_and_map_memory": 0.01863269999921613,
+              "geometry_repair": 0.002269200000228011,
+              "target_update": 0.00239520000104676
+            },
+            "retained_history": 25,
+            "replay_work": 0
+          },
+          {
+            "step": 26,
+            "operation": "inference",
+            "seconds": 0.02220390000002226,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.569999898900278e-05,
+              "scan_and_map_memory": 0.018251800000143703,
+              "geometry_repair": 0.0017810999997891486,
+              "target_update": 0.0021343000007618684
+            },
+            "retained_history": 26,
+            "replay_work": 0
+          },
+          {
+            "step": 27,
+            "operation": "inference",
+            "seconds": 0.01968930000111868,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.680000008898787e-05,
+              "scan_and_map_memory": 0.016676600000209874,
+              "geometry_repair": 0.0019494000007398427,
+              "target_update": 0.0010255999986839015
+            },
+            "retained_history": 27,
+            "replay_work": 0
+          },
+          {
+            "step": 28,
+            "operation": "inference",
+            "seconds": 0.026762500001495937,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.5000000934815034e-05,
+              "scan_and_map_memory": 0.01869319999968866,
+              "geometry_repair": 0.0018636000004335074,
+              "target_update": 0.006169500000396511
+            },
+            "retained_history": 28,
+            "replay_work": 0
+          },
+          {
+            "step": 29,
+            "operation": "inference",
+            "seconds": 0.02590290000080131,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.530000140017364e-05,
+              "scan_and_map_memory": 0.01803209999889077,
+              "geometry_repair": 0.002452900000207592,
+              "target_update": 0.005381400000260328
+            },
+            "retained_history": 29,
+            "replay_work": 0
+          },
+          {
+            "step": 30,
+            "operation": "inference",
+            "seconds": 0.02566830000068876,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 4.199999966658652e-05,
+              "scan_and_map_memory": 0.0200819000001502,
+              "geometry_repair": 0.0025186000002577202,
+              "target_update": 0.0030246999995142687
+            },
+            "retained_history": 30,
+            "replay_work": 0
+          },
+          {
+            "step": 31,
+            "operation": "inference",
+            "seconds": 0.025249199999962002,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.870000000461005e-05,
+              "scan_and_map_memory": 0.018551500001194654,
+              "geometry_repair": 0.001869599998826743,
+              "target_update": 0.004786200001035468
+            },
+            "retained_history": 31,
+            "replay_work": 0
+          },
+          {
+            "step": 32,
+            "operation": "inference",
+            "seconds": 0.02168349999919883,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 3.839999953925144e-05,
+              "scan_and_map_memory": 0.01697000000058324,
+              "geometry_repair": 0.002569000000221422,
+              "target_update": 0.00210499999957392
+            },
+            "retained_history": 32,
+            "replay_work": 0
+          }
+        ]
+      },
+      "planning": {
+        "counts": {
+          "attempts": 37,
+          "completed": 37
+        },
+        "failure_reasons": {},
+        "phase_seconds": {
+          "entry": 0.008858600005623884,
+          "public_snapshot": 16.579760199998418,
+          "target_forecast": 0.9737663000032626,
+          "route_generation": 0.6419137999982922,
+          "route_forecast_and_signature": 2.1184555999989243,
+          "compression": 0.006968500001676148,
+          "team_selection": 0.003834099998130114,
+          "executor_standby": 0.14477940000142553,
+          "team_score": 0.006592599997020443
+        },
+        "first_failure": null,
+        "retained_attempts": 37,
+        "trace_truncated": false,
+        "retained_p95": 0.6547994799995649,
+        "retained_max": 1.5215147999988403,
+        "trace": [
+          {
+            "step": 0,
+            "operation": "proposal",
+            "seconds": 1.5215147999988403,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.0099998689838685e-05,
+              "public_snapshot": 0.5438735999996425,
+              "target_forecast": 0.01604320000114967,
+              "route_generation": 0.34396729999934905,
+              "route_forecast_and_signature": 0.5325334000008297,
+              "compression": 0.005188699999052915,
+              "team_selection": 0.0034389000011287862,
+              "executor_standby": 0.0764577999998437
+            }
+          },
+          {
+            "step": 1,
+            "operation": "rescore",
+            "seconds": 0.5674972000015259,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.3700000636163168e-05,
+              "public_snapshot": 0.4997994999994262,
+              "target_forecast": 0.023071600000548642,
+              "route_forecast_and_signature": 0.04443630000059784,
+              "team_score": 0.0001750999999785563
+            }
+          },
+          {
+            "step": 2,
+            "operation": "rescore",
+            "seconds": 0.614103800000521,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.0300000212737359e-05,
+              "public_snapshot": 0.562528200000088,
+              "target_forecast": 0.020476600000620238,
+              "route_forecast_and_signature": 0.03091359999962151,
+              "team_score": 0.00017409999964002054
+            }
+          },
+          {
+            "step": 3,
+            "operation": "rescore",
+            "seconds": 0.6031648000007408,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 9.299999874201603e-06,
+              "public_snapshot": 0.5334416000005149,
+              "target_forecast": 0.02374939999936032,
+              "route_forecast_and_signature": 0.04579899999953341,
+              "team_score": 0.00016450000111944973
+            }
+          },
+          {
+            "step": 4,
+            "operation": "rescore",
+            "seconds": 0.5381147000007331,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 9.60000033956021e-06,
+              "public_snapshot": 0.4699951000002329,
+              "target_forecast": 0.023552900000140653,
+              "route_forecast_and_signature": 0.044065000000045984,
+              "team_score": 0.0004900000003544847
+            }
+          },
+          {
+            "step": 5,
+            "operation": "rescore",
+            "seconds": 0.6045556000008219,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.5000001440057531e-05,
+              "public_snapshot": 0.5377449999996315,
+              "target_forecast": 0.022014000000126543,
+              "route_forecast_and_signature": 0.044601699999475386,
+              "team_score": 0.00017889999980980065
+            }
+          },
+          {
+            "step": 6,
+            "operation": "rescore",
+            "seconds": 0.5444065000010596,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 9.699999282020144e-06,
+              "public_snapshot": 0.4696226000014576,
+              "target_forecast": 0.02481679999982589,
+              "route_forecast_and_signature": 0.049750500000300235,
+              "team_score": 0.00020570000015140977
+            }
+          },
+          {
+            "step": 7,
+            "operation": "rescore",
+            "seconds": 0.6294624999991356,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.5499999790336005e-05,
+              "public_snapshot": 0.5738935000008496,
+              "target_forecast": 0.022918299999219016,
+              "route_forecast_and_signature": 0.032175500000448665,
+              "team_score": 0.00045849999878555536
+            }
+          },
+          {
+            "step": 8,
+            "operation": "rescore",
+            "seconds": 0.5243420999995578,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.1599999197642319e-05,
+              "public_snapshot": 0.4649270999998407,
+              "target_forecast": 0.02425310000035097,
+              "route_forecast_and_signature": 0.03497080000124697,
+              "team_score": 0.00017839999964053277
+            }
+          },
+          {
+            "step": 9,
+            "operation": "rescore",
+            "seconds": 0.5794691999999486,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.0300000212737359e-05,
+              "public_snapshot": 0.5248137999988103,
+              "target_forecast": 0.022562800000741845,
+              "route_forecast_and_signature": 0.03190619999986666,
+              "team_score": 0.00017520000074000563
+            }
+          },
+          {
+            "step": 10,
+            "operation": "rescore",
+            "seconds": 0.5269680999990669,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.0300000212737359e-05,
+              "public_snapshot": 0.46744529999887163,
+              "target_forecast": 0.023668300000281306,
+              "route_forecast_and_signature": 0.035654600000270875,
+              "team_score": 0.0001885999990918208
+            }
+          },
+          {
+            "step": 11,
+            "operation": "rescore",
+            "seconds": 0.5907999000010022,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 8.800001523923129e-06,
+              "public_snapshot": 0.5367790000000241,
+              "target_forecast": 0.02213549999942188,
+              "route_forecast_and_signature": 0.031700999999884516,
+              "team_score": 0.00017459999980928842
+            }
+          },
+          {
+            "step": 12,
+            "operation": "rescore",
+            "seconds": 0.5504971999998816,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.449999945180025e-05,
+              "public_snapshot": 0.4829477000002953,
+              "target_forecast": 0.03263809999953082,
+              "route_forecast_and_signature": 0.03471770000032848,
+              "team_score": 0.0001781999999366235
+            }
+          },
+          {
+            "step": 13,
+            "operation": "rescore",
+            "seconds": 0.6142695999988064,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 8.899998647393659e-06,
+              "public_snapshot": 0.5570048999998107,
+              "target_forecast": 0.025029000000358792,
+              "route_forecast_and_signature": 0.03202690000034636,
+              "team_score": 0.00019880000036209822
+            }
+          },
+          {
+            "step": 14,
+            "operation": "rescore",
+            "seconds": 0.5742284000007203,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.4700000974698924e-05,
+              "public_snapshot": 0.5021560999994108,
+              "target_forecast": 0.025667699999758042,
+              "route_forecast_and_signature": 0.046210600001359126,
+              "team_score": 0.00017829999887908343
+            }
+          },
+          {
+            "step": 15,
+            "operation": "rescore",
+            "seconds": 0.6246331000002101,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 7.5000007200287655e-06,
+              "public_snapshot": 0.5526394999997137,
+              "target_forecast": 0.024946499999714433,
+              "route_forecast_and_signature": 0.046856900000420865,
+              "team_score": 0.00018169999930250924
+            }
+          },
+          {
+            "step": 16,
+            "operation": "rescore",
+            "seconds": 0.5579560000005586,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.4299999747890979e-05,
+              "public_snapshot": 0.48135980000006384,
+              "target_forecast": 0.03039580000040587,
+              "route_forecast_and_signature": 0.0460120999996434,
+              "team_score": 0.00017300000035902485
+            }
+          },
+          {
+            "step": 17,
+            "operation": "rescore",
+            "seconds": 0.6513945999995485,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 9.100000170292333e-06,
+              "public_snapshot": 0.5750664999995934,
+              "target_forecast": 0.030849900000248454,
+              "route_forecast_and_signature": 0.04528969999955734,
+              "team_score": 0.00017839999964053277
+            }
+          },
+          {
+            "step": 18,
+            "operation": "rescore",
+            "seconds": 0.6318470999995043,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.0199999451288022e-05,
+              "public_snapshot": 0.5541640000010375,
+              "target_forecast": 0.03223179999986314,
+              "route_forecast_and_signature": 0.04526540000006207,
+              "team_score": 0.00017470000057073776
+            }
+          },
+          {
+            "step": 19,
+            "operation": "rescore",
+            "seconds": 0.5376777000001312,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.1599999197642319e-05,
+              "public_snapshot": 0.4540323000001081,
+              "target_forecast": 0.03333580000071379,
+              "route_forecast_and_signature": 0.05011190000004717,
+              "team_score": 0.00018509999972593505
+            }
+          },
+          {
+            "step": 20,
+            "operation": "rescore",
+            "seconds": 0.5457310000001598,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.4500001270789653e-05,
+              "public_snapshot": 0.4730125999994925,
+              "target_forecast": 0.030799500000284752,
+              "route_forecast_and_signature": 0.04169489999912912,
+              "team_score": 0.00020849999964411836
+            }
+          },
+          {
+            "step": 20,
+            "operation": "proposal",
+            "seconds": 0.0913894999994227,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 0.0009430999998585321,
+              "route_generation": 0.04431969999859575,
+              "route_forecast_and_signature": 5.430000055639539e-05,
+              "compression": 0.0003116000007139519,
+              "team_selection": 0.00013349999971978832,
+              "executor_standby": 0.04562570000052801
+            }
+          },
+          {
+            "step": 21,
+            "operation": "rescore",
+            "seconds": 0.6684189999996306,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.3800001397612505e-05,
+              "public_snapshot": 0.5891560000000027,
+              "target_forecast": 0.03341829999953916,
+              "route_forecast_and_signature": 0.04565480000019306,
+              "team_score": 0.00017499999921710696
+            }
+          },
+          {
+            "step": 22,
+            "operation": "rescore",
+            "seconds": 0.5777520999999979,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 9.999999747378752e-06,
+              "public_snapshot": 0.4903611000008823,
+              "target_forecast": 0.03906049999932293,
+              "route_forecast_and_signature": 0.04815070000040578,
+              "team_score": 0.00016879999930097256
+            }
+          },
+          {
+            "step": 23,
+            "operation": "rescore",
+            "seconds": 0.6358743000000686,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 9.60000033956021e-06,
+              "public_snapshot": 0.5535930000005465,
+              "target_forecast": 0.03753630000028352,
+              "route_forecast_and_signature": 0.044560700000147335,
+              "team_score": 0.000173700000232202
+            }
+          },
+          {
+            "step": 24,
+            "operation": "rescore",
+            "seconds": 0.6236049000017374,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.5000001440057531e-05,
+              "public_snapshot": 0.5380482000000484,
+              "target_forecast": 0.04032569999981206,
+              "route_forecast_and_signature": 0.045037599998977385,
+              "team_score": 0.00017740000112098642
+            }
+          },
+          {
+            "step": 24,
+            "operation": "proposal",
+            "seconds": 0.333373000001302,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 0.001602100001036888,
+              "route_generation": 0.1307464000001346,
+              "route_forecast_and_signature": 0.1891667999989295,
+              "compression": 0.0007356000005529495,
+              "team_selection": 0.0001283999990846496,
+              "executor_standby": 0.010991900000590249
+            }
+          },
+          {
+            "step": 24,
+            "operation": "rescore",
+            "seconds": 0.0018718000010267133,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 0.001686500001596869,
+              "route_forecast_and_signature": 3.849999848171137e-05,
+              "team_score": 0.00014569999984814785
+            }
+          },
+          {
+            "step": 25,
+            "operation": "rescore",
+            "seconds": 0.5710460999998759,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.3099999705445953e-05,
+              "public_snapshot": 0.48902520000046934,
+              "target_forecast": 0.03616449999935867,
+              "route_forecast_and_signature": 0.04567190000125265,
+              "team_score": 0.00017039999875123613
+            }
+          },
+          {
+            "step": 26,
+            "operation": "rescore",
+            "seconds": 0.5587046000000555,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 9.499999578110874e-06,
+              "public_snapshot": 0.4718339000010019,
+              "target_forecast": 0.0409153000000515,
+              "route_forecast_and_signature": 0.04576189999897906,
+              "team_score": 0.00018290000116394367
+            }
+          },
+          {
+            "step": 27,
+            "operation": "rescore",
+            "seconds": 0.6094990999990841,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 8.299999535665847e-06,
+              "public_snapshot": 0.5213772999995854,
+              "target_forecast": 0.04279640000095242,
+              "route_forecast_and_signature": 0.045122300000002724,
+              "team_score": 0.0001936999997269595
+            }
+          },
+          {
+            "step": 28,
+            "operation": "rescore",
+            "seconds": 0.6303950999990775,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 9.499999578110874e-06,
+              "public_snapshot": 0.5535165999990568,
+              "target_forecast": 0.04556420000153594,
+              "route_forecast_and_signature": 0.03111939999871538,
+              "team_score": 0.0001843999998527579
+            }
+          },
+          {
+            "step": 29,
+            "operation": "rescore",
+            "seconds": 0.6236912999993365,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.720000000204891e-05,
+              "public_snapshot": 0.5479121999997005,
+              "target_forecast": 0.04236019999916607,
+              "route_forecast_and_signature": 0.03319600000031642,
+              "team_score": 0.00020450000010896474
+            }
+          },
+          {
+            "step": 29,
+            "operation": "proposal",
+            "seconds": 0.2702871999990748,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 0.0012979000002815155,
+              "route_generation": 0.12288040000021283,
+              "route_forecast_and_signature": 0.13353709999864805,
+              "compression": 0.0007326000013563316,
+              "team_selection": 0.00013329999819688965,
+              "executor_standby": 0.011704000000463566
+            }
+          },
+          {
+            "step": 29,
+            "operation": "rescore",
+            "seconds": 0.003148799998598406,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 0.0029562999989138916,
+              "route_forecast_and_signature": 3.930000093532726e-05,
+              "team_score": 0.0001522999991721008
+            }
+          },
+          {
+            "step": 30,
+            "operation": "rescore",
+            "seconds": 0.5470143000002281,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.320000046689529e-05,
+              "public_snapshot": 0.47188829999868176,
+              "target_forecast": 0.04204890000073647,
+              "route_forecast_and_signature": 0.032802399999127374,
+              "team_score": 0.00026020000041171443
+            }
+          },
+          {
+            "step": 31,
+            "operation": "rescore",
+            "seconds": 0.6062666000016179,
+            "completed": true,
+            "error": null,
+            "failure_phase": null,
+            "first_exception": null,
+            "exceptions": [],
+            "phases": {
+              "entry": 1.4000001101521775e-05,
+              "public_snapshot": 0.5358006999995268,
+              "target_forecast": 0.03841939999983879,
+              "route_forecast_and_signature": 0.03184820000024047,
+              "team_score": 0.0001833000005717622
+            }
+          }
+        ]
+      },
+      "activity": {
+        "counts": {
+          "accepted_coupled_proposals": 1,
+          "search_physical_steps": 32,
+          "search_agent_steps": 96,
+          "coupled_exact_agent_steps": 96
+        },
+        "decision_reasons": {
+          "NO_REPLAN_EVENT": 22,
+          "COUPLED_PRESERVE_REFERENCE_TIE": 1,
+          "REJECT_NO_ASSIGNMENT_CHANGE": 2,
+          "REJECT_EVENT_COOLDOWN": 6
+        },
+        "fallback_reasons": {},
+        "fallback_search_steps": 0,
+        "first_fallback_reasons": {},
+        "first_fallback": null,
+        "coupled_exact_agent_step_fraction": 1.0,
+        "movement_distance_by_source": {
+          "coupled_exact": 19.179078041580958
+        },
+        "trace": [
+          {
+            "step": 1,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 2,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 3,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 4,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 5,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 6,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 7,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 8,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 9,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 10,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 11,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 12,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 13,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 14,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 15,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 16,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 17,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 18,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 19,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 20,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 21,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 22,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 23,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 24,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 25,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 26,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 27,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 28,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 29,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 30,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 31,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          },
+          {
+            "step": 32,
+            "phase": "search",
+            "sources": {
+              "0": "coupled_exact",
+              "1": "coupled_exact",
+              "2": "coupled_exact"
+            }
+          }
+        ],
+        "trace_truncated": false,
+        "scope": "Public physical transitions under installed guidance; modified paths and holds are separate. Not causal action attribution."
+      }
+    },
+    "bounded_design": {
+      "valid": true,
+      "error": null,
+      "step": 32,
+      "stopped": true,
+      "alpha": [
+        0.303030303030303,
+        0.33333333333333337,
+        0.36363636363636365
+      ],
+      "history_complete": false,
+      "conditional_ess": [
+        20.000000000000004,
+        22.0,
+        23.999999999999996
+      ],
+      "historical_information_carried_by_boundary": true,
+      "retained_history": 32,
+      "window_steps": 64,
+      "boundary_step": 0,
+      "max_retained_history": 32,
+      "last_replay_steps": 0,
+      "max_replay_steps": 0,
+      "max_map_boxes": 14,
+      "last_replay_work": 0,
+      "boundary_array_bytes": 5400,
+      "snapshot_array_bytes": 172800,
+      "retained_snapshots": 32,
+      "retained_event_ids": 65,
+      "counts": {
+        "initializations": 1,
+        "joint_updates": 33,
+        "approximate_geometry_transports": 20
+      },
+      "window_map_frame_bytes": 0,
+      "persistent_map": {
+        "revision": 33,
+        "grid_shape": [
+          20,
+          20,
+          10
+        ],
+        "grid_cells": 4000,
+        "spacing": [
+          1.0,
+          1.0,
+          0.8
+        ],
+        "known_free_cells": 1701,
+        "occupied_cells": 12,
+        "observed_cells": 1717,
+        "hit_evidence_cells": 39,
+        "base_boxes": 12,
+        "state_array_bytes": 40000,
+        "counts": {
+          "scan_batches": 33,
+          "ray_measurements": 3432,
+          "changed_cells": 1758
+        },
+        "resolution_approximation": true
+      },
+      "geometry_counts": {
+        "unknown_boxes_removed": 6,
+        "local_geometry_transactions": 33,
+        "geometry_changes": 21
+      },
+      "first_failure": null,
+      "last_failure": null,
+      "approximate_map_transport": true,
+      "approximate_boundary_proposals": true,
+      "geometry_prior": "persistent_voxel_conditional_aabb_v3",
+      "design_variant": "full"
+    },
+    "inference_step_trace": [
+      {
+        "step": 0,
+        "seconds": 0.023387699999148026,
+        "retained_history": 0,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 4,
+        "valid": true,
+        "map_seconds": 0.02220820000002277,
+        "target_and_recovery_seconds": 0.0011639000003924593
+      },
+      {
+        "step": 1,
+        "seconds": 0.019901400000890135,
+        "retained_history": 1,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 4,
+        "valid": true,
+        "map_seconds": 0.018638900000951253,
+        "target_and_recovery_seconds": 0.0012279000002308749
+      },
+      {
+        "step": 2,
+        "seconds": 0.02067410000017844,
+        "retained_history": 2,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 4,
+        "valid": true,
+        "map_seconds": 0.019185199998901226,
+        "target_and_recovery_seconds": 0.001452100001188228
+      },
+      {
+        "step": 3,
+        "seconds": 0.021521900000152527,
+        "retained_history": 3,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.020409799999470124,
+        "target_and_recovery_seconds": 0.0010823000011441763
+      },
+      {
+        "step": 4,
+        "seconds": 0.02027249999991909,
+        "retained_history": 4,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.0192683000004763,
+        "target_and_recovery_seconds": 0.000973399999566027
+      },
+      {
+        "step": 5,
+        "seconds": 0.020102300000871764,
+        "retained_history": 5,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.01885309999852325,
+        "target_and_recovery_seconds": 0.0012164999989181524
+      },
+      {
+        "step": 6,
+        "seconds": 0.020975999999791384,
+        "retained_history": 6,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.019295899999633548,
+        "target_and_recovery_seconds": 0.0016468000012537232
+      },
+      {
+        "step": 7,
+        "seconds": 0.010514599998714402,
+        "retained_history": 7,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.009431700000277488,
+        "target_and_recovery_seconds": 0.0010583000002952758
+      },
+      {
+        "step": 8,
+        "seconds": 0.021831700001712306,
+        "retained_history": 8,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.0208150000016758,
+        "target_and_recovery_seconds": 0.0009855999996943865
+      },
+      {
+        "step": 9,
+        "seconds": 0.021616300000459887,
+        "retained_history": 9,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.01994369999920309,
+        "target_and_recovery_seconds": 0.0016380000015487894
+      },
+      {
+        "step": 10,
+        "seconds": 0.024211199999626842,
+        "retained_history": 10,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.022057899999708752,
+        "target_and_recovery_seconds": 0.0021217000012256904
+      },
+      {
+        "step": 11,
+        "seconds": 0.021239199999399716,
+        "retained_history": 11,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.02022719999877154,
+        "target_and_recovery_seconds": 0.0009812999996938743
+      },
+      {
+        "step": 12,
+        "seconds": 0.030380000000150176,
+        "retained_history": 12,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.02744889999848965,
+        "target_and_recovery_seconds": 0.0028962999986106297
+      },
+      {
+        "step": 13,
+        "seconds": 0.022224599999390193,
+        "retained_history": 13,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.02060439999877417,
+        "target_and_recovery_seconds": 0.0015879999991739169
+      },
+      {
+        "step": 14,
+        "seconds": 0.022725000000718865,
+        "retained_history": 14,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.021490599998287507,
+        "target_and_recovery_seconds": 0.001195900000311667
+      },
+      {
+        "step": 15,
+        "seconds": 0.02009419999922102,
+        "retained_history": 15,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 5,
+        "valid": true,
+        "map_seconds": 0.019204600001103245,
+        "target_and_recovery_seconds": 0.000848900001074071
+      },
+      {
+        "step": 16,
+        "seconds": 0.023629699999219156,
+        "retained_history": 16,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 6,
+        "valid": true,
+        "map_seconds": 0.020890300000246498,
+        "target_and_recovery_seconds": 0.0027024999999412103
+      },
+      {
+        "step": 17,
+        "seconds": 0.023756399999911082,
+        "retained_history": 17,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 6,
+        "valid": true,
+        "map_seconds": 0.020805699999982608,
+        "target_and_recovery_seconds": 0.0029178000004321802
+      },
+      {
+        "step": 18,
+        "seconds": 0.021967900000163354,
+        "retained_history": 18,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 6,
+        "valid": true,
+        "map_seconds": 0.02062599999953818,
+        "target_and_recovery_seconds": 0.0013067999989289092
+      },
+      {
+        "step": 19,
+        "seconds": 0.022442399998908513,
+        "retained_history": 19,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 6,
+        "valid": true,
+        "map_seconds": 0.02155479999964882,
+        "target_and_recovery_seconds": 0.0008544000011170283
+      },
+      {
+        "step": 20,
+        "seconds": 0.02349560000038764,
+        "retained_history": 20,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 6,
+        "valid": true,
+        "map_seconds": 0.020506400000158465,
+        "target_and_recovery_seconds": 0.0029572000003099674
+      },
+      {
+        "step": 21,
+        "seconds": 0.02251070000056643,
+        "retained_history": 21,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 8,
+        "valid": true,
+        "map_seconds": 0.019933600000513252,
+        "target_and_recovery_seconds": 0.0025408999990759185
+      },
+      {
+        "step": 22,
+        "seconds": 0.02287889999934123,
+        "retained_history": 22,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 9,
+        "valid": true,
+        "map_seconds": 0.02130810000016936,
+        "target_and_recovery_seconds": 0.0015371000008599367
+      },
+      {
+        "step": 23,
+        "seconds": 0.022475900001154514,
+        "retained_history": 23,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 9,
+        "valid": true,
+        "map_seconds": 0.021493899999768473,
+        "target_and_recovery_seconds": 0.0009481000015512109
+      },
+      {
+        "step": 24,
+        "seconds": 0.02930480000031821,
+        "retained_history": 24,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 9,
+        "valid": true,
+        "map_seconds": 0.027292400000078487,
+        "target_and_recovery_seconds": 0.001517799999419367
+      },
+      {
+        "step": 25,
+        "seconds": 0.023305900000195834,
+        "retained_history": 25,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 9,
+        "valid": true,
+        "map_seconds": 0.020893799999612384,
+        "target_and_recovery_seconds": 0.002378199998929631
+      },
+      {
+        "step": 26,
+        "seconds": 0.02218139999968116,
+        "retained_history": 26,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 10,
+        "valid": true,
+        "map_seconds": 0.020027299999128445,
+        "target_and_recovery_seconds": 0.0021231999999145046
+      },
+      {
+        "step": 27,
+        "seconds": 0.019666299998789327,
+        "retained_history": 27,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 10,
+        "valid": true,
+        "map_seconds": 0.018619200000102865,
+        "target_and_recovery_seconds": 0.0010156000007555122
+      },
+      {
+        "step": 28,
+        "seconds": 0.02673499999946216,
+        "retained_history": 28,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 11,
+        "valid": true,
+        "map_seconds": 0.020549900000332855,
+        "target_and_recovery_seconds": 0.006153299998914008
+      },
+      {
+        "step": 29,
+        "seconds": 0.025879200000417768,
+        "retained_history": 29,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 12,
+        "valid": true,
+        "map_seconds": 0.020477699999901233,
+        "target_and_recovery_seconds": 0.005369599999539787
+      },
+      {
+        "step": 30,
+        "seconds": 0.02563920000102371,
+        "retained_history": 30,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 12,
+        "valid": true,
+        "map_seconds": 0.022594000000026426,
+        "target_and_recovery_seconds": 0.0030114000001049135
+      },
+      {
+        "step": 31,
+        "seconds": 0.02520129999902565,
+        "retained_history": 31,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 12,
+        "valid": true,
+        "map_seconds": 0.02041529999951308,
+        "target_and_recovery_seconds": 0.0047529999992548255
+      },
+      {
+        "step": 32,
+        "seconds": 0.021657799999957206,
+        "retained_history": 32,
+        "boundary_step": 0,
+        "replay_steps": 0,
+        "replay_work": 0,
+        "map_boxes": 14,
+        "valid": true,
+        "map_seconds": 0.01953259999936563,
+        "target_and_recovery_seconds": 0.0020924999989802018
+      }
+    ]
+  },
+  "policy_id": "standby_zero_mechanism",
+  "method": "D2",
+  "scenario_sha256": "f38f70d2f8e163ee8abcda5e0382c7b748940dc78a817d1933fe34f75767dac5",
+  "trajectory_complete": true,
+  "environment_innovation_seed": 827709,
+  "max_steps": 32,
+  "pre_found_collision": false,
+  "found_penalized_steps": 32,
+  "source_review": {
+    "review_sha256": "f7f1ae9271cc744de6e769fbb705d3227b06f1e6935bba51bbc5812a76440d97",
+    "profile": "active_executor_standby_v1",
+    "inventory_sha256": "3ec88ac4d60b76b6652151bd51eafb2029c47d4ab506a67436c84cd88dcef937",
+    "parent_commit": "72b0167c5c516a43fdd60018ceb955b562525008",
+    "distribution": "auv.active_source.executor_standby.v1"
+  },
+  "training_seed": null,
+  "mechanism_only": true,
+  "performance_passed": false
+}
