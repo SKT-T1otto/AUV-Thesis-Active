@@ -1,0 +1,105 @@
+{
+  "schema": "auv.safe_rl_transport.evolution.v1",
+  "parent_review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+  "parent_commit": "b57d8e5c9f776c912138a71dc613e3bfa4f29fa4",
+  "algorithm_changed": false,
+  "verification_only": true,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "3cca52d6db46040dada215c690ba7736c11bf73a4f66176b6fa7bc548618c10e",
+      "after_sha256": "c264c5e4ad92b629bd82f503e93277722e7b4b03ac82770b7580c06913330301",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "chapter3_bser/learning/safe_rl_transport_source.py",
+      "before_sha256": null,
+      "after_sha256": "cc3dec98f4540dc170d2e2bdb0f9ead7de23296e297bda473a409939d64e7e58",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "11791957b27dcf3753f66eb0dc8f7c9d85576b61c40dd74696d25e76b5fcfae7",
+      "after_sha256": "d90b3a58b4730a20e3f62549f5e4a89b1df95dad17e16b1436754636054280ba",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "checks/test_safe_rl_transport.py",
+      "before_sha256": null,
+      "after_sha256": "480166a673c0288e4a6a89d1e6a468b06ffee0cd5303b137e35cd1b4cfc81016",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "checks/test_safe_rl_validation.py",
+      "before_sha256": "772444f54851966a5d9ba3b8340928a7e0176b5eda89cd1113760fcebb1f4bb0",
+      "after_sha256": "1bfafaacea3f5614753a05f9263f29492966e9dee68d5ed5d0542775502ac7aa",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "fdd24a5bf9fe8b024590e36408f5a4424bcef23ec3944327c4bb335c4cfe1c34",
+      "after_sha256": "7e2a22dd94eeea14d7fbf1f60a2ac0c9f87dc0b02013e2078da8a8687db3eb40",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "provenance/baselines/safe_rl_recovery_20261027_v2/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "0bd7ff957070ca61dc6d57a540a4cc7523cf1a403ff212b1230ab5c9a83f964b",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "provenance/baselines/safe_rl_recovery_20261027_v2/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "0a4087d04b5fb4a35ede254cac2824c4db5d8b538fd30638b8e9db54452e6e81",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "provenance/safe_rl_recovery_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "053cb407c5d5a365152db444fc83f36f9854618f3bf694ca46b1b8cb87bbe777",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "tools/check_process.py",
+      "before_sha256": null,
+      "after_sha256": "2df0595b62d620db530ea7e4a8ac68748d0db9f1385324a60e361a68cfd799cd",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "tools/check_safe_rl.py",
+      "before_sha256": "f63acbb57cae43d34f6ca1f1ad57aa161f44190761b6ff992fbc49dabfacd6c6",
+      "after_sha256": "3e7c7046496e8e99fae88109ec37ca096a382b603da4326be5b11b28738baa6e",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "600ccff57316e19c6f21a09ad4006e54cbe7e734f0eb3b31821b54e6a4d04247",
+      "after_sha256": "56f44cdce9dae0cd835a1b02187b665d19fb7b26189c382165909b9fb32e5825",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "tools/safe_rl_resume.py",
+      "before_sha256": null,
+      "after_sha256": "ccdd3f55bde32a569ffffb5cc7a2374ffe302dd565e7a9d11c4ff2cf8fb4157c",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "tools/safe_rl_transport_source.py",
+      "before_sha256": null,
+      "after_sha256": "605cfe85b61258b213d34dc70d54dbb427d3290f4c68372abb9bce044d6a5b50",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "098fa03b9bea5a00a63b50884bbad8da7bf2631c8f5ef7e266c045cbfdc12f39",
+      "after_sha256": "1037b0cd4b7134493d27e43e9b800ad09791020293479d5a16d7ba1a4f54621c",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "01e22c3f5b91c8ba31fd7fa5dd9f997e34614f7290affd5857d7eba997fce37e",
+      "after_sha256": "27b02eae006bccb417111e0ffa14c3ebc46850c9ef216c8df224736fb74ee3cf",
+      "reason": "Verification transport only: streaming logs, explicit wall timeout and checked immutable prefix continuation; all algorithms unchanged."
+    }
+  ]
+}

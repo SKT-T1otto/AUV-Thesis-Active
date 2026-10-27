@@ -53,16 +53,19 @@ def regression(output):
     import tempfile
     expected = json.loads((ROOT/'configs/rebuild_check_contract.json').read_text())['expected_tests']
     suite = unittest.defaultTestLoader.discover(str(ROOT/'checks'), pattern='test_*.py', top_level_dir=str(ROOT))
-    log = io.StringIO()
+    class Tee:
+        def __init__(self,file):self.file=file
+        def write(self,value):self.file.write(value);self.file.flush();sys.stdout.write(value);sys.stdout.flush()
+        def flush(self):self.file.flush();sys.stdout.flush()
     temporary = output / 'temporary'
     temporary.mkdir(exist_ok=False)
     previous = tempfile.tempdir
     try:
         tempfile.tempdir = str(temporary.resolve())
-        result = unittest.TextTestRunner(stream=log, verbosity=2).run(suite)
+        with (output/'unittest.log').open('x',encoding='utf-8') as log:
+            result = unittest.TextTestRunner(stream=Tee(log), verbosity=2).run(suite)
     finally:
         tempfile.tempdir = previous
-    (output/'unittest.log').write_text(log.getvalue(), encoding='utf-8')
     return dict(passed=result.wasSuccessful() and result.testsRun == expected and not result.skipped,
                 expected=expected, tests_run=result.testsRun,
                 failures=[dict(test=str(t), traceback=error) for t,error in result.failures],
@@ -140,18 +143,23 @@ def main():
     parser.add_argument('--recovery-workflow',action='store_true')
     parser.add_argument('--executor-diagnostics-workflow',action='store_true')
     parser.add_argument('--safe-rl-workflow',action='store_true')
+    parser.add_argument('--safe-rl-prefix')
     args=parser.parse_args()
     if not args.execute:
         print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow,recovery_workflow=args.recovery_workflow,executor_diagnostics_workflow=args.executor_diagnostics_workflow,safe_rl_workflow=args.safe_rl_workflow)));return
     if sum((args.rollout,args.map_workflow,args.standby_workflow,args.recovery_workflow,args.executor_diagnostics_workflow,args.safe_rl_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
+    if args.safe_rl_prefix and not args.safe_rl_workflow:parser.error('--safe-rl-prefix requires --safe-rl-workflow')
     output=Path(args.output).resolve()
     if output.is_relative_to(ROOT) and not output.is_relative_to(ROOT/'work'):
         raise ValueError('in-project verification output must stay under work/')
     output.mkdir(parents=True,exist_ok=False)
     result=dict(schema='auv.active.checks.v1',passed=False,python=sys.version,platform=platform.platform(),command=sys.argv)
     try:
+        print('[checks] structural verification starting',flush=True)
         result['structural']=structural();write(output/'structural.json',result['structural'])
+        print('[checks] regression starting; unittest.log is written live',flush=True)
         result['regression']=regression(output);write(output/'regression.json',result['regression'])
+        print('[checks] regression completed',flush=True)
         if not result['regression']['passed']:raise RuntimeError('regression failed, skipped, or test inventory incomplete')
         if args.rollout:
             result['workflow']=bounded_workflow(output);write(output/'workflow.json',result['workflow'])
@@ -177,7 +185,7 @@ def main():
             if not result['workflow']['passed']:raise RuntimeError('executor diagnostic workflow failed')
         if args.safe_rl_workflow:
             from tools.check_safe_rl import run as check_safety
-            result['workflow']=check_safety(output/'safe_rl')
+            result['workflow']=check_safety(output/'safe_rl',prefix=args.safe_rl_prefix)
             write(output/'workflow.json',result['workflow'])
             if not result['workflow']['passed']:raise RuntimeError('safety-RL workflow failed')
         result['passed']=True

@@ -1,0 +1,16 @@
+{
+  "report": "regression/structural.json",
+  "sha256": "d6801e6e2e6336546b2118f63b01e76da4d11112d1484c2204bdb7d0a3e87b82",
+  "runtime_does_not_import_tools": true,
+  "gate": "structural",
+  "source_identity": {
+    "review_sha256": "b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe",
+    "profile": "active_safe_rl_transport_v1",
+    "inventory_sha256": "80d9566a3f734c4cbad437f980a8ba281d6833894777082a998213d32cc8325f",
+    "parent_commit": "b57d8e5c9f776c912138a71dc613e3bfa4f29fa4",
+    "distribution": "auv.active_source.safe_rl_transport.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_live_transport_and_checked_prefix_v1"
+}

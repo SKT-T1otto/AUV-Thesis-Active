@@ -1,0 +1,44 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe",
+    "profile": "active_safe_rl_transport_v1",
+    "inventory_sha256": "80d9566a3f734c4cbad437f980a8ba281d6833894777082a998213d32cc8325f",
+    "parent_commit": "b57d8e5c9f776c912138a71dc613e3bfa4f29fa4",
+    "distribution": "auv.active_source.safe_rl_transport.v1"
+  },
+  "run_id": "safe_rl_live_transport_and_checked_prefix_v1",
+  "gates": {
+    "source": {
+      "path": "verification/safe_rl_transport_v1/b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe/source.json",
+      "sha256": "78e9abf3c9499d4e8bc2b4844dc1ee20dc9439a377f7c9218bedee0374c3f0fa"
+    },
+    "structural": {
+      "path": "verification/safe_rl_transport_v1/b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe/structural.json",
+      "sha256": "56f803f61faa356c7f8429406cf07a292fd2c8aca1f5584e35400ce84069f13c"
+    },
+    "regression": {
+      "path": "verification/safe_rl_transport_v1/b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe/regression.json",
+      "sha256": "7ebd0189abce2d57cb6d9a4eabd8c85bf0e47f1b833586dc62f133b80885a9bc"
+    },
+    "parity": {
+      "path": "verification/safe_rl_transport_v1/b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe/parity.json",
+      "sha256": "7ea70c3ee86e7f9a67da50499a503233398eaa48e698b093f9c2d3e9892c3b90"
+    },
+    "entrypoints": {
+      "path": "verification/safe_rl_transport_v1/b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe/entrypoints.json",
+      "sha256": "0dee47c7c2cc7424731a19547496f6bc69226093788fe7a7c24b797d981fbb61"
+    },
+    "checkpoint": {
+      "path": "verification/safe_rl_transport_v1/b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe/checkpoint.json",
+      "sha256": "abd31b557cffe755fbb6e14230d3cbc7279179b57b279dbc4dac889162929f72"
+    },
+    "mechanisms": {
+      "path": "verification/safe_rl_transport_v1/b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe/mechanisms.json",
+      "sha256": "8870f10de0ffd8a4709a07934071ebdf41d5b39a4089fb43db5a27f1932c390d"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "performance_passed": false,
+  "historical_acceptance_transferred": false
+}

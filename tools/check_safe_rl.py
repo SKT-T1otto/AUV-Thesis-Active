@@ -46,11 +46,11 @@ def fixture_learning(options):
     metrics=[learner.update() for _ in range(4)]
     return learner,options,metrics
 
-def run(output):
+def run(output,*,prefix=None):
     output=Path(output).resolve()
     if not output.is_relative_to(ROOT/'work'):raise ValueError('bounded output must stay under work')
     output.mkdir(parents=True,exist_ok=False);source=verify_reviewed_changes();options=validate()
-    from tools.safe_rl_recovery_source import verify as verify_runtime_bytes
+    from tools.safe_rl_transport_source import verify as verify_runtime_bytes
     protection=verify_runtime_bytes(ROOT)
     torch.set_num_threads(1)
     generated=build_scenario_manifests(count=12,generator_seed=827699,split='validation',profiles=['M20_MOVING_UNKNOWN_MULTI'])['M20_MOVING_UNKNOWN_MULTI']['scenarios']
@@ -61,8 +61,18 @@ def run(output):
         research_training=False,full_82_96_step_regression=False,safety_guarantee=False,performance_passed=False,
         environment=environment(),parent_runtime_byte_protection=protection)
     starts=steps=0;records=[];baseline=None;baseline_signatures=[]
+    inherited_steps=inherited_starts=0
+    if prefix is not None:
+        from tools.safe_rl_resume import load_prefix,claim_prefix
+        borrowed=load_prefix(prefix)
+        claim=claim_prefix(borrowed['receipt'],output)
+        starts=inherited_starts=5;steps=inherited_steps=160;records=borrowed['records']
+        result.update(inherited_prefix=borrowed['receipt'],prefix_claim=claim,same_host_parity=borrowed['same_host_parity'],
+            archived_reference_comparison=borrowed['archived_reference_comparison'])
+        write(output/'inherited_prefix.json',borrowed['receipt'])
+        print('[safe-RL] verified five parent cases; executing only two remaining cases',flush=True)
     try:
-        for name,index,mode in planned:
+        for name,index,mode in planned[inherited_starts:]:
             require_review(source);scene=copy.deepcopy(generated[index]);scene.update(max_steps=32,scenario_role='eval',scenario_split='eval')
             scene['scenario_id']='eval_gen827699__'+scene['scenario_id']
             if mode=='buffer':scene=near_buffer_scene(scene)
@@ -90,6 +100,7 @@ def run(output):
                     runtime.env.install_guidance(runtime.guidance);runtime.observations=runtime.env.refresh_observation_after_guidance()
                 while not runtime.terminal:
                     row=runtime.advance(ZeroResidualPolicy(),explore=False);steps+=1
+                    if runtime.step%8==0:print(f'[safe-RL] {name}: {runtime.step}/32 physical steps',flush=True)
                     public=runtime.env.get_agent_state()
                     frames.append(dict(t=row['t'],positions=public.positions,velocities=public.velocities,rewards=row['rewards'].tolist(),
                         tracking=[x.tracking_waypoint for x in runtime.guidance.agent_assignments]))
@@ -121,19 +132,25 @@ def run(output):
                     write(directory/'acceptance.json',acceptance)
                 if mode=='learned' and learner.updates!=4:raise ValueError('temporary model exceeded four updates')
                 records.append(dict(case=name,mode=mode,physical_steps=runtime.step,termination_reason=summary['termination_reason'],success=summary['success'],
-                    collision_agents=summary.get('first_collision_agent_ids',[]),safety_counts=summary.get('safety_rl',{}).get('counts',{})))
+                    collision_agents=summary.get('first_collision_agent_ids',[]),safety_counts=summary.get('safety_rl',{}).get('counts',{}),
+                    evidence_origin='current_execution',source_identity=source))
+                print(f'[safe-RL] {name}: completed',flush=True)
             finally:
                 if runtime is not None:runtime.close()
+        if prefix is not None:
+            from tools.safe_rl_resume import require_prefix_unchanged
+            require_prefix_unchanged(borrowed['receipt'])
         require_review(source);result.update(passed=True,records=records,speed_audit=speed_audit(),baseline_same_host_repeat_exact=True,
             parent_cross_host_identity_claimed=False,composition_numerical_parity=True)
     except Exception:result['traceback']=traceback.format_exc()
-    result.update(environment_initializations=starts,physical_steps=steps,additional_physical_steps=steps)
+    result.update(environment_initializations=starts,physical_steps=steps,additional_physical_steps=steps-inherited_steps,
+        additional_environment_initializations=starts-inherited_starts)
     if starts>8 or steps>256:result.update(passed=False,budget_violation=True)
     write(output/'safe_rl_workflow.json',result);return result
 
 def main(argv=None):
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',required=True);p.add_argument('--execute',action='store_true');a=p.parse_args(argv)
-    result=run(a.output) if a.execute else dict(executed=False,output=a.output)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',required=True);p.add_argument('--prefix');p.add_argument('--execute',action='store_true');a=p.parse_args(argv)
+    result=run(a.output,prefix=a.prefix) if a.execute else dict(executed=False,output=a.output,prefix=a.prefix)
     print(json.dumps(result,indent=2))
     if a.execute and not result['passed']:raise SystemExit(1)
 if __name__=='__main__':main()

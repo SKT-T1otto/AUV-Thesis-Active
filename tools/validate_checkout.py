@@ -83,7 +83,7 @@ def verify_clean_commit(root, expected=None):
     return dict(head=head, clean=True, index=verify_index(root))
 
 
-def run(output, *, require_linux=False, expected_commit=None):
+def run(output, *, require_linux=False, expected_commit=None,checks_timeout=3600,safe_rl_prefix=None):
     output = Path(output).resolve()
     if not output.is_relative_to(ROOT / 'work'):
         raise ValueError('validation output must be under this checkout work/')
@@ -102,22 +102,27 @@ def run(output, *, require_linux=False, expected_commit=None):
         research_readiness(source)
         result['source'] = source
         result['versions'] = {name: importlib.metadata.version(name) for name in ('numpy', 'torch')}
-        safety_workflow=source.get('profile') in ('active_safe_rl_recovery_v2','active_safe_rl_v1','active_safe_rl_validation_v1')
+        safety_workflow=source.get('profile') in ('active_safe_rl_transport_v1','active_safe_rl_recovery_v2','active_safe_rl_v1','active_safe_rl_validation_v1')
         diagnostics_workflow=source.get('profile')=='active_executor_diagnostics_v1'
         recovery_workflow=source.get('profile')=='active_executor_recovery_v2'
         standby_workflow=source.get('profile')=='active_executor_standby_v1'
         map_workflow=safety_workflow or diagnostics_workflow or recovery_workflow or standby_workflow or source.get('profile') in ('active_map_experiment_v1','active_map_convergence_v1','active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1','active_map_diagnostics_v1')
         command = [sys.executable, '-m', 'tools.run_checks', '--output', str(output / 'checks'), '--execute',
                    '--safe-rl-workflow' if safety_workflow else '--executor-diagnostics-workflow' if diagnostics_workflow else '--recovery-workflow' if recovery_workflow else '--standby-workflow' if standby_workflow else '--map-workflow' if map_workflow else '--rollout']
+        if safe_rl_prefix:
+            if not safety_workflow:raise ValueError('prefix continuation requires safety workflow')
+            from tools.safe_rl_resume import load_prefix
+            load_prefix(safe_rl_prefix)
+            command+=['--safe-rl-prefix',str(Path(safe_rl_prefix).resolve())]
         env = os.environ.copy()
         env.pop('PYTHONPATH', None)
-        env.update(OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',
+        env.update(OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1',PYTHONUNBUFFERED='1',
                    PYTHONIOENCODING='utf-8', PYTHONDONTWRITEBYTECODE='1')
-        child = subprocess.run(command, cwd=ROOT, env=env, capture_output=True, timeout=900)
-        (output / 'checks.stdout.log').write_bytes(child.stdout)
-        (output / 'checks.stderr.log').write_bytes(child.stderr)
-        result['child'] = dict(command=command, exit_code=child.returncode)
-        if child.returncode:
+        from tools.check_process import run_checks_process
+        print(f'[validation] starting bounded checks; wall timeout={checks_timeout}s',flush=True)
+        result['child']=run_checks_process(command,cwd=ROOT,env=env,output=output,timeout=checks_timeout)
+        if result['child']['timed_out']:raise TimeoutError('bounded checks wall timeout; partial stdout/stderr retained')
+        if result['child']['exit_code']:
             raise RuntimeError('bounded checks failed; see checks.stdout.log and checks.stderr.log')
         checks = json.loads((output / 'checks/checks.json').read_text(encoding='utf-8'))
         expected = json.loads((ROOT / 'configs/rebuild_check_contract.json').read_text(encoding='utf-8'))['expected_tests']
@@ -127,7 +132,9 @@ def run(output, *, require_linux=False, expected_commit=None):
                 or checks.get('workflow', {}).get('passed') is not True):
             raise ValueError('incomplete bounded verification evidence')
         result['checks'] = dict(passed=True, tests_run=expected, additional_physical_steps=checks['workflow'].get('additional_physical_steps',checks['workflow'].get('physical_steps')),
-                               max_complete_updates_per_model=checks['workflow']['max_complete_updates_per_model'])
+            environment_initializations=checks['workflow'].get('environment_initializations'),
+            additional_environment_initializations=checks['workflow'].get('additional_environment_initializations'),
+            max_complete_updates_per_model=checks['workflow']['max_complete_updates_per_model'])
         result['map_workflow_verified']=map_workflow and checks['workflow'].get('checkpoint_file_restore_executed') is False
         if verify_reviewed_changes() != source:
             raise ValueError('source changed during validation')
@@ -147,6 +154,8 @@ def main():
     parser.add_argument('--index-only', action='store_true')
     parser.add_argument('--require-linux', action='store_true')
     parser.add_argument('--expected-commit')
+    parser.add_argument('--checks-timeout',type=int,default=3600)
+    parser.add_argument('--safe-rl-prefix')
     parser.add_argument('--execute', action='store_true')
     args = parser.parse_args()
     if not args.execute:
@@ -157,7 +166,8 @@ def main():
         return
     if not args.output:
         parser.error('--output is required for full validation')
-    result = run(args.output, require_linux=args.require_linux, expected_commit=args.expected_commit)
+    result = run(args.output, require_linux=args.require_linux, expected_commit=args.expected_commit,
+        checks_timeout=args.checks_timeout,safe_rl_prefix=args.safe_rl_prefix)
     print(json.dumps(result, indent=2, ensure_ascii=False))
     raise SystemExit(0 if result['passed'] else 1)
 

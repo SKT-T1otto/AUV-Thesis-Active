@@ -1,0 +1,25 @@
+{
+  "parent_source_identity": {
+    "review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "profile": "active_safe_rl_recovery_v2",
+    "inventory_sha256": "035e483a77e1fe362d3ffed923fbe0511e76b4072b38098eed114f4757e020a0",
+    "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+    "distribution": "auv.active_source.safe_rl_recovery.v2"
+  },
+  "parent_report": "verification/safe_rl_recovery_v2/088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41/parity.json",
+  "parent_report_sha256": "e158ce79081a59f368b32d694317d3c555246743f7073150dbdeb759bdf465b1",
+  "all_parent_runtime_bytes_unchanged": true,
+  "current_native_rerun": false,
+  "cross_platform_identity_claimed": false,
+  "gate": "parity",
+  "source_identity": {
+    "review_sha256": "b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe",
+    "profile": "active_safe_rl_transport_v1",
+    "inventory_sha256": "80d9566a3f734c4cbad437f980a8ba281d6833894777082a998213d32cc8325f",
+    "parent_commit": "b57d8e5c9f776c912138a71dc613e3bfa4f29fa4",
+    "distribution": "auv.active_source.safe_rl_transport.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_live_transport_and_checked_prefix_v1"
+}

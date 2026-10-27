@@ -1,0 +1,33 @@
+{
+  "origin": "User pasted Linux terminal output; not independently executed here",
+  "parent_commit": "b57d8e5c9f776c912138a71dc613e3bfa4f29fa4",
+  "source_review": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+  "output": "work/safe_rl_recovery_checkout_20261027_193702",
+  "package_and_git_passed": true,
+  "regression": {
+    "passed": true,
+    "tests_run": 363,
+    "elapsed_seconds": 320.421,
+    "failures": [],
+    "errors": []
+  },
+  "timeout_seconds": 900,
+  "observed_initialization_reservations": 5,
+  "observed_completed_cases": 5,
+  "observed_physical_steps": 160,
+  "collision_agents_per_completed_case": [
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "processes_remaining": false,
+  "missing_cases": [
+    "fault_all_four",
+    "buffer_exit_all_four"
+  ],
+  "full_research_evaluation_started": false,
+  "original_failed_validation_remains_failed": true,
+  "original_outputs_must_remain_immutable": true
+}

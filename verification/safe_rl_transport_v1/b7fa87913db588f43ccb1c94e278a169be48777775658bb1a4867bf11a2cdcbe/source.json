@@ -1,0 +1,26 @@
+{
+  "independent": {
+    "passed": true,
+    "files": 334,
+    "manifest_sha256": "b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe",
+    "algorithm_changed": false,
+    "all_parent_runtime_bytes_unchanged": true,
+    "source_admission_metadata_only": true,
+    "all_parent_evidence_immutable": true,
+    "scope": "Streaming timeout handling and explicit immutable-parent prefix continuation only; all algorithms unchanged"
+  },
+  "review_notes_sha256": "0e088d3edd7bbb6db960c6ce08a605d6dbf040e71fc53f37dff0259d04a785a0",
+  "algorithm_changed": false,
+  "parent_evidence_immutable": true,
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe",
+    "profile": "active_safe_rl_transport_v1",
+    "inventory_sha256": "80d9566a3f734c4cbad437f980a8ba281d6833894777082a998213d32cc8325f",
+    "parent_commit": "b57d8e5c9f776c912138a71dc613e3bfa4f29fa4",
+    "distribution": "auv.active_source.safe_rl_transport.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_live_transport_and_checked_prefix_v1"
+}

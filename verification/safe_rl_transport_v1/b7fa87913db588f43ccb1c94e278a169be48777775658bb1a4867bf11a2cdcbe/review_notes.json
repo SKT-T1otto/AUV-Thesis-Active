@@ -1,0 +1,14 @@
+{
+  "algorithm_changed": false,
+  "all_parent_runtime_bytes_unchanged": true,
+  "change": "Live stdout/stderr and unittest logs, wall timeout3600s configurable up to7200s, checked immutable five-case parent prefix followed by only two remaining cases.",
+  "native_evidence": "Explicit parent identity088a5dc; no new physical environment execution in this release. Tests use recorded data and mocked suffix factories only.",
+  "borrowed_results_relabelled": false,
+  "checkpoint_restore": false,
+  "task_and_safety_training_started": false,
+  "no_controller_reward_rl_or_dynamics_changes": true,
+  "original_learning_findings_3_4_6_still_unresolved": true,
+  "prefix_admission": "Exact b57d8e5 timeout root, matching host/Python/libraries,363 clean parent tests, exactly five completed32-step cases, same-host signatures and numerical composition rechecked, original safety acceptance rechecked. Hash every borrowed file. One continuation claim reserves the remaining two starts.",
+  "new_regression": "Current full regression is rerun; parent363 tests are not substituted for the current regression.",
+  "limits": "This is an engineering-validation transport fix, not proof of full400-step task performance. Actual Linux continuation is still user-executed."
+}
