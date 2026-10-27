@@ -1,0 +1,19 @@
+{
+  "report": "regression/regression.json",
+  "sha256": "9c03b22f21c3bb43c0376fbbe53a35f8c118fbb7b58085d9717dbef8c8d3ae75",
+  "tests_run": 363,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "profile": "active_safe_rl_recovery_v2",
+    "inventory_sha256": "035e483a77e1fe362d3ffed923fbe0511e76b4072b38098eed114f4757e020a0",
+    "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+    "distribution": "auv.active_source.safe_rl_recovery.v2"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_recovery_repairs_1_2_5_v2"
+}

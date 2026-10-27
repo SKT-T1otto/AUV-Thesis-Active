@@ -1,0 +1,78 @@
+{
+  "same_host_exact": {
+    "passed": true,
+    "scope": "same host, same source, same inputs and seeds; full state/RNG/map/guidance signatures",
+    "physical_steps_per_run": 32,
+    "comparison": {
+      "exact": true,
+      "current_count": 33,
+      "reference_count": 33,
+      "mismatch_count": 0,
+      "first_mismatch_index": null
+    },
+    "parent_cross_host_identity_claimed": false
+  },
+  "archived_reference_comparison": {
+    "scope": "cross-host published archive diagnostic; not a baseline admission gate",
+    "admission_gate": false,
+    "current_environment": {
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.6",
+      "torch": "2.11.0+cu126",
+      "device": "cpu",
+      "torch_threads": 1
+    },
+    "reference_environment": {
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+      "library_versions": "not recorded"
+    },
+    "signatures": {
+      "exact": true,
+      "current_count": 33,
+      "reference_count": 33,
+      "mismatch_count": 0,
+      "first_mismatch_index": null
+    },
+    "physical": {
+      "current_frames": 32,
+      "reference_frames": 32,
+      "complete": true,
+      "shape_errors": [],
+      "max_absolute_errors": {
+        "positions": 0.0,
+        "velocities": 0.0,
+        "rewards": 0.0,
+        "tracking": 0.0
+      },
+      "numerically_close_at_5e_5": true,
+      "tolerance_scope": "diagnostic comparison only; does not change same-host exact parity or composition admission"
+    },
+    "difference_cause": "not inferred from aggregate hash or frame errors",
+    "cross_platform_bitwise_reproducibility_established": false
+  },
+  "external_nominal_composition_parity": {
+    "passed": true,
+    "max_errors": {
+      "positions": 4.76837158203125e-07,
+      "velocities": 3.5762786865234375e-07,
+      "rewards": 5.122274160385132e-09,
+      "tracking": 0.0
+    },
+    "scope": "32-step numerical physical/reward/guidance parity; diagnostic prior/residual decomposition differs by explicit contract"
+  },
+  "task_runtime_bytes_unchanged": true,
+  "cross_platform_identity_claimed": false,
+  "gate": "parity",
+  "source_identity": {
+    "review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "profile": "active_safe_rl_recovery_v2",
+    "inventory_sha256": "035e483a77e1fe362d3ffed923fbe0511e76b4072b38098eed114f4757e020a0",
+    "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+    "distribution": "auv.active_source.safe_rl_recovery.v2"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_recovery_repairs_1_2_5_v2"
+}

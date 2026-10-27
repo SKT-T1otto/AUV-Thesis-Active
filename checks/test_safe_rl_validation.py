@@ -57,12 +57,12 @@ class SafeRLValidation(unittest.TestCase):
             self.assertFalse(r['admission_gate']);self.assertFalse(r['signatures']['exact'])
             self.assertTrue(r['physical']['numerically_close_at_5e_5'])
             self.assertFalse(r['cross_platform_bitwise_reproducibility_established'])
-    def test_resigning_manifest_cannot_change_safety_algorithm(self):
+    def test_resigning_manifest_cannot_change_unrepaired_safety_learner(self):
         from checks import test_map_source as sources
-        from tools.safe_rl_validation_source import MANIFEST,EVOLUTION,verify,digest
+        from tools.safe_rl_recovery_source import MANIFEST,EVOLUTION,verify,digest
         with sources.source_directory() as directory:
             root,manifest=sources.MapSource().fixture(directory)
-            name='chapter3_bser/safe_rl/control.py';p=root/name;p.write_bytes(p.read_bytes()+b'\n# invalid verification-only algorithm edit\n')
+            name='chapter3_bser/safe_rl/learner.py';p=root/name;p.write_bytes(p.read_bytes()+b'\n# invalid verification-only algorithm edit\n')
             h=hashlib.sha256(p.read_bytes()).hexdigest();e=json.loads((root/EVOLUTION).read_text(encoding='utf-8'))
             e['changes'].append(dict(path=name,before_sha256=manifest['files'][name],after_sha256=h,reason='negative control'))
             (root/EVOLUTION).write_text(json.dumps(e),encoding='utf-8');manifest['files'][name]=h

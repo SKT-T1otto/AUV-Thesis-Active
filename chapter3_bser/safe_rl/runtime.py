@@ -18,7 +18,7 @@ class SafetyRuntime(RepairedMissionRuntime):
         self.safety_options=validate(options)
         self.collection_only=bool(collection_only)
         if config.get('map_experiment',{}).get('map_id','OLD')!='OLD' or config.get('map_experiment',{}).get('research_config') is not None:
-            raise ValueError('safety RL v1 requires OLD research_config=None')
+            raise ValueError('safety RL v2 requires OLD research_config=None')
         guard=config.get('map_experiment',{}).get('executor_safety')
         if guard is not None and guard.get('enabled'):raise ValueError('do not combine v1/v2 executor guards with all-agent safety RL')
         self._safety_episode_id=episode_id
@@ -81,7 +81,7 @@ class SafetyRuntime(RepairedMissionRuntime):
 
     def summary(self):
         row=super().summary();c=self.safety_controller
-        row.update(method='D2_ZERO_nominal_collection_v1' if self.collection_only else 'D2_ALL_AGENT_SAFE_RL_v1' if c.learner is not None else 'D2_ALL_AGENT_RULE_SAFETY_v1',
+        row.update(method='D2_ZERO_nominal_collection_v2' if self.collection_only else 'D2_ALL_AGENT_SAFE_RL_v2' if c.learner is not None else 'D2_ALL_AGENT_RULE_SAFETY_v2',
             task_reference='D2_ZERO',task_network_trained=False)
         row['safety_rl']=dict(schema=SCHEMA,options=self.safety_options,counts=dict(c.counts),
             navigation_counts=dict(self.safety_bridge.counts),navigation_trace=list(self.safety_bridge.trace),

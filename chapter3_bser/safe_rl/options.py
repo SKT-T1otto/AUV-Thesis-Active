@@ -2,7 +2,7 @@
 import copy
 import math
 
-SCHEMA = 'auv.invalid_goal_safe_rl.v1'
+SCHEMA = 'auv.invalid_goal_safe_rl.v2'
 FRAME_DIM = 48
 DEFAULTS = dict(schema=SCHEMA, history=4, hidden_dim=128, horizon=32,
     clearance=.4, hit_padding=.12, flow_component_bound=.18, reaction_steps=1,

@@ -16,13 +16,15 @@ from core.scenarios.ch3_generator_impl import build_scenario_manifests
 from tools.executor_trace import signature
 from tools.audit_safe_speed import run as speed_audit
 from tools.safe_rl_validation import require_same_host_repeat,archived_report,environment
+from tools.safe_rl_acceptance import near_buffer_scene,require_recoverable_case
 
 def write(path,value):
     with Path(path).open('x',encoding='utf-8') as f:json.dump(value,f,indent=2,ensure_ascii=False,allow_nan=False)
 
 def fault_guidance(context,goal,positions):
-    assignments=tuple(replace(x,final_waypoint=tuple(goal),planned_path=(tuple(positions[x.agent_id]),tuple(goal)),
-        tracking_waypoint=tuple(goal),hold_state=False,reachable=True) for x in context.agent_assignments)
+    def point(i):return tuple(goal[i] if isinstance(goal,dict) else goal)
+    assignments=tuple(replace(x,final_waypoint=point(x.agent_id),planned_path=(tuple(positions[x.agent_id]),point(x.agent_id)),
+        tracking_waypoint=point(x.agent_id),hold_state=False,reachable=True) for x in context.agent_assignments)
     return replace(context,agent_assignments=assignments)
 
 class FaultBridge:
@@ -48,12 +50,12 @@ def run(output):
     output=Path(output).resolve()
     if not output.is_relative_to(ROOT/'work'):raise ValueError('bounded output must stay under work')
     output.mkdir(parents=True,exist_ok=False);source=verify_reviewed_changes();options=validate()
-    from tools.safe_rl_validation_source import verify as verify_runtime_bytes
+    from tools.safe_rl_recovery_source import verify as verify_runtime_bytes
     protection=verify_runtime_bytes(ROOT)
     torch.set_num_threads(1)
     generated=build_scenario_manifests(count=12,generator_seed=827699,split='validation',profiles=['M20_MOVING_UNKNOWN_MULTI'])['M20_MOVING_UNKNOWN_MULTI']['scenarios']
     planned=[('baseline_0002',1,'baseline'),('baseline_repeat_0002',1,'repeat'),('composition_0002',1,'collection'),('rule_0002',1,'rule'),
-             ('rule_0006',5,'rule'),('fault_all_four',1,'fault'),('learned_fixture_0006',5,'learned')]
+             ('rule_0006',5,'rule'),('fault_all_four',1,'fault'),('buffer_exit_all_four',1,'buffer')]
     result=dict(passed=False,source=source,planned_environment_initializations=len(planned),max_episode_steps=32,
         checkpoint_file_restore_executed=False,max_complete_updates_per_model=4,task_training=False,
         research_training=False,full_82_96_step_regression=False,safety_guarantee=False,performance_passed=False,
@@ -63,6 +65,7 @@ def run(output):
         for name,index,mode in planned:
             require_review(source);scene=copy.deepcopy(generated[index]);scene.update(max_steps=32,scenario_role='eval',scenario_split='eval')
             scene['scenario_id']='eval_gen827699__'+scene['scenario_id']
+            if mode=='buffer':scene=near_buffer_scene(scene)
             config=json.loads((ROOT/'configs/b2_mechanism.json').read_text())
             config.update(max_steps=32,total_main_trajectories=1,max_total_environment_steps=32,
                 output_dir=str(output/'unused_task_training'))
@@ -77,10 +80,11 @@ def run(output):
                 if mode in ('baseline','repeat'):runtime=RepairedMissionRuntime(config,scene,seed=int(scene['scenario_seed']))
                 else:runtime=SafetyRuntime(config,scene,seed=int(scene['scenario_seed']),options=local_options,learner=learner,collection_only=mode=='collection')
                 if mode in ('baseline','repeat'):signatures.append(signature(runtime))
-                if mode=='fault':
+                initial_positions=runtime.env.get_agent_state().positions
+                if mode in ('fault','buffer'):
                     # True geometry ONLY chooses an offline fault input. Controller
                     # receives the point, never the obstacle or its dimensions.
-                    goal=tuple(scene['obstacles'][0]['center'])
+                    goal={i:tuple(box['center']) for i,box in enumerate(scene['obstacles'])} if mode=='buffer' else tuple(scene['obstacles'][0]['center'])
                     runtime.safety_bridge.inner=FaultBridge(runtime.safety_bridge.inner,goal,runtime.env)
                     runtime.guidance=fault_guidance(runtime.guidance,goal,runtime.env.get_agent_state().positions)
                     runtime.env.install_guidance(runtime.guidance);runtime.observations=runtime.env.refresh_observation_after_guidance()
@@ -113,6 +117,8 @@ def run(output):
                     write(directory/'composition_parity.json',dict(passed=True,max_errors=errors,scope='32-step numerical physical/reward/guidance parity; diagnostic prior/residual decomposition differs by explicit contract'))
                 if mode not in ('baseline','repeat','collection'):
                     if summary['safety_rl']['counts'].get('agent_checks')!=4*runtime.step:raise ValueError('per-physical-step all-role checks incomplete')
+                    acceptance=require_recoverable_case(summary,frames,initial_positions,near_buffer=mode=='buffer')
+                    write(directory/'acceptance.json',acceptance)
                 if mode=='learned' and learner.updates!=4:raise ValueError('temporary model exceeded four updates')
                 records.append(dict(case=name,mode=mode,physical_steps=runtime.step,termination_reason=summary['termination_reason'],success=summary['success'],
                     collision_agents=summary.get('first_collision_agent_ids',[]),safety_counts=summary.get('safety_rl',{}).get('counts',{})))

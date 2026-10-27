@@ -1,0 +1,100 @@
+{
+  "algorithm_changed": true,
+  "authorized_audit_findings": [
+    1,
+    2,
+    5
+  ],
+  "unresolved_audit_findings": [
+    3,
+    4,
+    6
+  ],
+  "task_runtime_unchanged": true,
+  "safety_feature_ast_unchanged": true,
+  "safety_learner_and_dataset_bytes_unchanged": true,
+  "recovery": "Separate outward supporting-plane egress and finite braking probes for existing buffer violations; original strict ordinary geometry unchanged.",
+  "lifecycle": "Reached/expired staging routes release and retry; pending retries survive throttle, hold anchors latch, phase/goal changes release stale routes.",
+  "acceptance": {
+    "rule_0002": {
+      "passed": true,
+      "collision_free": true,
+      "all_roles_checked": true,
+      "path_length": [
+        0.765794390988948,
+        3.8498063021342306,
+        3.8617449552495944,
+        3.555083326994592
+      ],
+      "net_displacement": [
+        0.4167643580863628,
+        2.3213776135875266,
+        2.1426830704558104,
+        2.5953651137679197
+      ],
+      "near_buffer_all_roles": false,
+      "scope": "32-step curated recoverable mechanisms only; no full-episode safety or task-success claim"
+    },
+    "rule_0006": {
+      "passed": true,
+      "collision_free": true,
+      "all_roles_checked": true,
+      "path_length": [
+        4.66423234857096,
+        5.816083792335239,
+        5.779415828477581,
+        0.45267542561933527
+      ],
+      "net_displacement": [
+        3.6404775185496017,
+        3.248850356439572,
+        5.184719775994306,
+        0.31667348167139425
+      ],
+      "near_buffer_all_roles": false,
+      "scope": "32-step curated recoverable mechanisms only; no full-episode safety or task-success claim"
+    },
+    "fault_all_four": {
+      "passed": true,
+      "collision_free": true,
+      "all_roles_checked": true,
+      "path_length": [
+        0.6087688447884574,
+        3.680577002270298,
+        3.9001779168332313,
+        4.328858206733323
+      ],
+      "net_displacement": [
+        0.25243335224745345,
+        1.8436650913969252,
+        3.6900640650377956,
+        3.402712385689878
+      ],
+      "near_buffer_all_roles": false,
+      "scope": "32-step curated recoverable mechanisms only; no full-episode safety or task-success claim"
+    },
+    "buffer_exit_all_four": {
+      "passed": true,
+      "collision_free": true,
+      "all_roles_checked": true,
+      "path_length": [
+        1.3340099398895815,
+        1.5766672241314559,
+        1.1463104719146218,
+        1.1197871133038229
+      ],
+      "net_displacement": [
+        0.9563452525463213,
+        1.1854290094122968,
+        0.9012125755443017,
+        0.9204500099011066
+      ],
+      "near_buffer_all_roles": true,
+      "scope": "32-step curated recoverable mechanisms only; no full-episode safety or task-success claim"
+    }
+  },
+  "learning_admission_suspended": true,
+  "checkpoint_files_restored": 0,
+  "limits": "Constant bounded-flow corner probes are not a theorem for arbitrary time-varying disturbance or unseen surfaces. Curated32-step noncollision/motion is not full82/96-step or400-step mission acceptance.",
+  "earlier_regression_attempt": "An unsealed candidate was edited during its regression run; source drift errors were expected. Discarded, no native environments initialized by that attempt. Only the sealed current regression below is admitted."
+}

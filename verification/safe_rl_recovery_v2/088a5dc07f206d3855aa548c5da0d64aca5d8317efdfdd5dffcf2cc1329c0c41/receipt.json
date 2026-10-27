@@ -1,0 +1,44 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "profile": "active_safe_rl_recovery_v2",
+    "inventory_sha256": "035e483a77e1fe362d3ffed923fbe0511e76b4072b38098eed114f4757e020a0",
+    "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+    "distribution": "auv.active_source.safe_rl_recovery.v2"
+  },
+  "run_id": "safe_rl_recovery_repairs_1_2_5_v2",
+  "gates": {
+    "source": {
+      "path": "verification/safe_rl_recovery_v2/088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41/source.json",
+      "sha256": "e1fb32345e4016a86f6c1a18afadc436c3f2caac76c8f0541644231195202deb"
+    },
+    "structural": {
+      "path": "verification/safe_rl_recovery_v2/088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41/structural.json",
+      "sha256": "8d3f7561eed49f07d259c56f596ee8040ae8a013e0849e193c744da724fb8fb2"
+    },
+    "regression": {
+      "path": "verification/safe_rl_recovery_v2/088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41/regression.json",
+      "sha256": "111d8eee0c044d81cd4bc25ca6e8a770b78749f4817587caf9b28dc0701137c4"
+    },
+    "parity": {
+      "path": "verification/safe_rl_recovery_v2/088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41/parity.json",
+      "sha256": "e158ce79081a59f368b32d694317d3c555246743f7073150dbdeb759bdf465b1"
+    },
+    "entrypoints": {
+      "path": "verification/safe_rl_recovery_v2/088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41/entrypoints.json",
+      "sha256": "a41014f5780c15253202897e681b327d44475857da3fbff5f27dbb28381e8553"
+    },
+    "checkpoint": {
+      "path": "verification/safe_rl_recovery_v2/088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41/checkpoint.json",
+      "sha256": "294e86f3bd08a1771d1df41e218e3f479feac173eae93de571ca90f2c075aa11"
+    },
+    "mechanisms": {
+      "path": "verification/safe_rl_recovery_v2/088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41/mechanisms.json",
+      "sha256": "44fe18e32b468b9e5762a725d37e7f80fc51005764f754844d051e9e76b4c72d"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "performance_passed": false,
+  "historical_acceptance_transferred": false
+}

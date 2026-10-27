@@ -1,0 +1,27 @@
+{
+  "independent": {
+    "passed": true,
+    "files": 325,
+    "manifest_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "algorithm_changed": true,
+    "task_runtime_bytes_unchanged": true,
+    "unrepaired_learning_bytes_unchanged": true,
+    "source_admission_metadata_only": true,
+    "all_parent_evidence_immutable": true,
+    "scope": "Authorized buffer exit and staging lifecycle repairs; task reward/dynamics and safety learner unchanged"
+  },
+  "review_notes_sha256": "3d2091c9c1e07c898902418e24aaf572a4253de716d843eb4c795b5133e25fed",
+  "algorithm_changed": true,
+  "parent_evidence_immutable": true,
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "profile": "active_safe_rl_recovery_v2",
+    "inventory_sha256": "035e483a77e1fe362d3ffed923fbe0511e76b4072b38098eed114f4757e020a0",
+    "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+    "distribution": "auv.active_source.safe_rl_recovery.v2"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_recovery_repairs_1_2_5_v2"
+}

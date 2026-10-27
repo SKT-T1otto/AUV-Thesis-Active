@@ -1,0 +1,285 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "profile": "active_safe_rl_recovery_v2",
+    "inventory_sha256": "035e483a77e1fe362d3ffed923fbe0511e76b4072b38098eed114f4757e020a0",
+    "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+    "distribution": "auv.active_source.safe_rl_recovery.v2"
+  },
+  "planned_environment_initializations": 7,
+  "max_episode_steps": 32,
+  "checkpoint_file_restore_executed": false,
+  "max_complete_updates_per_model": 4,
+  "task_training": false,
+  "research_training": false,
+  "full_82_96_step_regression": false,
+  "safety_guarantee": false,
+  "performance_passed": false,
+  "environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.2.6",
+    "torch": "2.11.0+cu126",
+    "device": "cpu",
+    "torch_threads": 1
+  },
+  "parent_runtime_byte_protection": {
+    "passed": true,
+    "files": 325,
+    "manifest_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "algorithm_changed": true,
+    "task_runtime_bytes_unchanged": true,
+    "unrepaired_learning_bytes_unchanged": true,
+    "source_admission_metadata_only": true,
+    "all_parent_evidence_immutable": true,
+    "scope": "Authorized buffer exit and staging lifecycle repairs; task reward/dynamics and safety learner unchanged"
+  },
+  "archived_reference_comparison": {
+    "scope": "cross-host published archive diagnostic; not a baseline admission gate",
+    "admission_gate": false,
+    "current_environment": {
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+      "numpy": "2.2.6",
+      "torch": "2.11.0+cu126",
+      "device": "cpu",
+      "torch_threads": 1
+    },
+    "reference_environment": {
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+      "library_versions": "not recorded"
+    },
+    "signatures": {
+      "exact": true,
+      "current_count": 33,
+      "reference_count": 33,
+      "mismatch_count": 0,
+      "first_mismatch_index": null
+    },
+    "physical": {
+      "current_frames": 32,
+      "reference_frames": 32,
+      "complete": true,
+      "shape_errors": [],
+      "max_absolute_errors": {
+        "positions": 0.0,
+        "velocities": 0.0,
+        "rewards": 0.0,
+        "tracking": 0.0
+      },
+      "numerically_close_at_5e_5": true,
+      "tolerance_scope": "diagnostic comparison only; does not change same-host exact parity or composition admission"
+    },
+    "difference_cause": "not inferred from aggregate hash or frame errors",
+    "cross_platform_bitwise_reproducibility_established": false
+  },
+  "same_host_parity": {
+    "passed": true,
+    "scope": "same host, same source, same inputs and seeds; full state/RNG/map/guidance signatures",
+    "physical_steps_per_run": 32,
+    "comparison": {
+      "exact": true,
+      "current_count": 33,
+      "reference_count": 33,
+      "mismatch_count": 0,
+      "first_mismatch_index": null
+    },
+    "parent_cross_host_identity_claimed": false
+  },
+  "records": [
+    {
+      "case": "baseline_0002",
+      "mode": "baseline",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "safety_counts": {}
+    },
+    {
+      "case": "baseline_repeat_0002",
+      "mode": "repeat",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "safety_counts": {}
+    },
+    {
+      "case": "composition_0002",
+      "mode": "collection",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "safety_counts": {
+        "agent_checks": 128,
+        "agent_0:GOVERNED": 22,
+        "agent_1:NOMINAL": 13,
+        "agent_2:NOMINAL": 21,
+        "agent_3:NOMINAL": 18,
+        "agent_1:GOVERNED": 19,
+        "agent_0:ANCHOR": 1,
+        "agent_0:UNCERTIFIED_BRAKE": 6,
+        "agent_3:GOVERNED": 14,
+        "agent_2:GOVERNED": 11,
+        "agent_0:BUFFER_EXIT": 3
+      }
+    },
+    {
+      "case": "rule_0002",
+      "mode": "rule",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "safety_counts": {
+        "agent_checks": 128,
+        "agent_0:GOVERNED": 22,
+        "agent_1:NOMINAL": 27,
+        "agent_2:NOMINAL": 29,
+        "agent_3:NOMINAL": 32,
+        "agent_1:GOVERNED": 5,
+        "agent_0:NOMINAL": 8,
+        "agent_0:BUFFER_EXIT": 2,
+        "agent_2:GOVERNED": 3
+      }
+    },
+    {
+      "case": "rule_0006",
+      "mode": "rule",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "safety_counts": {
+        "agent_checks": 128,
+        "agent_0:NOMINAL": 28,
+        "agent_1:NOMINAL": 32,
+        "agent_2:NOMINAL": 28,
+        "agent_3:NOMINAL": 12,
+        "agent_3:GOVERNED": 7,
+        "agent_3:BRAKE": 13,
+        "agent_0:GOVERNED": 4,
+        "agent_2:GOVERNED": 4
+      }
+    },
+    {
+      "case": "fault_all_four",
+      "mode": "fault",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "safety_counts": {
+        "agent_checks": 128,
+        "agent_0:GOVERNED": 25,
+        "agent_1:NOMINAL": 27,
+        "agent_2:NOMINAL": 24,
+        "agent_3:NOMINAL": 27,
+        "agent_1:GOVERNED": 5,
+        "agent_0:NOMINAL": 5,
+        "agent_2:GOVERNED": 8,
+        "agent_3:GOVERNED": 5,
+        "agent_0:ANCHOR": 1,
+        "agent_0:BUFFER_EXIT": 1
+      }
+    },
+    {
+      "case": "buffer_exit_all_four",
+      "mode": "buffer",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "safety_counts": {
+        "agent_checks": 128,
+        "agent_0:BUFFER_EXIT": 10,
+        "agent_1:BUFFER_EXIT": 10,
+        "agent_2:BUFFER_EXIT": 10,
+        "agent_3:BUFFER_EXIT": 10,
+        "agent_0:GOVERNED": 4,
+        "agent_1:GOVERNED": 7,
+        "agent_2:GOVERNED": 5,
+        "agent_3:GOVERNED": 5,
+        "agent_0:NOMINAL": 18,
+        "agent_1:NOMINAL": 15,
+        "agent_2:NOMINAL": 17,
+        "agent_3:NOMINAL": 17
+      }
+    }
+  ],
+  "speed_audit": {
+    "schema": "auv.safe_speed.audit.v1",
+    "environment_initializations": 0,
+    "physics_steps": 0,
+    "flow_component_bound": 0.18,
+    "dt": 0.2,
+    "reaction_steps": 1,
+    "margin": 0.52,
+    "rows": [
+      {
+        "agent_id": 0,
+        "name": "search_fast",
+        "physical_v_xy_max": 2.8,
+        "full_sensor_range": 4.5,
+        "available_distance_after_margin": 3.9799999999999995,
+        "horizontal_reaction_and_stop_bound": 4.965242492094118,
+        "vertical_reaction_and_stop_bound": 1.4717355371900827,
+        "independent_axis_bounds_fit_range": false,
+        "horizontal_speed_cap_at_full_range": 2.4699024029076098,
+        "distance_at_20_step_refresh": 11.200000000000001,
+        "scope": "Conservative independent-axis model audit; not proof of ray coverage or combined 3D trajectory safety"
+      },
+      {
+        "agent_id": 1,
+        "name": "search_balanced",
+        "physical_v_xy_max": 2.2,
+        "full_sensor_range": 4.5,
+        "available_distance_after_margin": 3.9799999999999995,
+        "horizontal_reaction_and_stop_bound": 4.234395058854622,
+        "vertical_reaction_and_stop_bound": 1.1409602845287492,
+        "independent_axis_bounds_fit_range": false,
+        "horizontal_speed_cap_at_full_range": 2.1251241191755987,
+        "distance_at_20_step_refresh": 8.8,
+        "scope": "Conservative independent-axis model audit; not proof of ray coverage or combined 3D trajectory safety"
+      },
+      {
+        "agent_id": 2,
+        "name": "search_precise",
+        "physical_v_xy_max": 1.8,
+        "full_sensor_range": 4.5,
+        "available_distance_after_margin": 3.9799999999999995,
+        "horizontal_reaction_and_stop_bound": 3.331885606642022,
+        "vertical_reaction_and_stop_bound": 1.0090384615384616,
+        "independent_axis_bounds_fit_range": true,
+        "horizontal_speed_cap_at_full_range": 1.7999999995809048,
+        "distance_at_20_step_refresh": 7.2,
+        "scope": "Conservative independent-axis model audit; not proof of ray coverage or combined 3D trajectory safety"
+      },
+      {
+        "agent_id": 3,
+        "name": "executor",
+        "physical_v_xy_max": 1.5,
+        "full_sensor_range": 4.5,
+        "available_distance_after_margin": 3.9799999999999995,
+        "horizontal_reaction_and_stop_bound": 2.764120934570365,
+        "vertical_reaction_and_stop_bound": 0.8584789515488482,
+        "independent_axis_bounds_fit_range": true,
+        "horizontal_speed_cap_at_full_range": 1.499999999650754,
+        "distance_at_20_step_refresh": 6.0,
+        "scope": "Conservative independent-axis model audit; not proof of ray coverage or combined 3D trajectory safety"
+      }
+    ],
+    "safety_guarantee": false,
+    "scope": "Conservative drag-discarding reaction+discretization+stop audit, independent axes. Actual ray coverage may be less than4.5m; runtime uses current evidence and separately checks combined3D motion."
+  },
+  "baseline_same_host_repeat_exact": true,
+  "parent_cross_host_identity_claimed": false,
+  "composition_numerical_parity": true,
+  "environment_initializations": 7,
+  "physical_steps": 224,
+  "additional_physical_steps": 224
+}

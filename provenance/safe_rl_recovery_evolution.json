@@ -1,0 +1,138 @@
+{
+  "schema": "auv.safe_rl_recovery.evolution.v2",
+  "parent_review_sha256": "90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098",
+  "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+  "algorithm_changed": true,
+  "authorized_audit_findings": [
+    1,
+    2,
+    5
+  ],
+  "unresolved_audit_findings": [
+    3,
+    4,
+    6
+  ],
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "285da97f8c66ac0a6f3be47df74ba9ec941918e4a9031f083b3902b15ba21c9c",
+      "after_sha256": "3cca52d6db46040dada215c690ba7736c11bf73a4f66176b6fa7bc548618c10e",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "chapter3_bser/learning/safe_rl_recovery_source.py",
+      "before_sha256": null,
+      "after_sha256": "485c69014967599a6fe173286ad80c987e955d4bc495dc53c9ed8608b5ea069f",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/buffer_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "7ec2e01dc6f3da02cc2bec1551e500064ec7a3bb14ce9066fe46aac2523bce66",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/control.py",
+      "before_sha256": "548dddd404aa08ebe44cf50f006b4e5a12877a73e29dba4040a5978e307df980",
+      "after_sha256": "6458002209d12cc6cfda537bcefeff6d54ea15007bbceed294b5a39a15fb7ce0",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/navigation.py",
+      "before_sha256": "06dd046a49223b27fb750c045cfef71aef1656387fb8f18e409836f46d356257",
+      "after_sha256": "2c0b9d57cdd44ac3ab18c7176d9afecf19c6bf5a3969ac21f248482fc730c898",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/options.py",
+      "before_sha256": "cd570231415bd4f5c6c8285812557e5cbf0147d7a31332b7452cf9739b8c5423",
+      "after_sha256": "11352fa2188a886cd2156495ecb58ea99641e7281b5f72cd764069126c670a37",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/runtime.py",
+      "before_sha256": "fee56c90f2dac1d00763d31da771fb2cb327b474b989e8cbdd1d61016ebf7367",
+      "after_sha256": "8b450ed3faa2e27fbee94665b69fb1a762b61b1239440d27b99618b7057235be",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/workflow.py",
+      "before_sha256": "11249136beec5f6f6e06eacb3b6b664903f7249362084b4ea8d06e4a310db816",
+      "after_sha256": "f2092f87194de245ad4f0082b20b9eada8c7793e039e8597b10221f9b2fa3292",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "d3f02cd6eeae3201319f81b5bc250390253262a3536a70d257c3060ce006804b",
+      "after_sha256": "11791957b27dcf3753f66eb0dc8f7c9d85576b61c40dd74696d25e76b5fcfae7",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "checks/test_safe_rl_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "6bd7d646acea959241842961d9df45abd385e542b63662c6f1600e3fb71afcf4",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "checks/test_safe_rl_validation.py",
+      "before_sha256": "a7461d829a02e927f35f6683c5b24dc0668e5e0cde353d8c05e011299148f270",
+      "after_sha256": "772444f54851966a5d9ba3b8340928a7e0176b5eda89cd1113760fcebb1f4bb0",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "c5b1eb7dc726113e71dbc211ff95b89f587a34e411bfcad61bee99cbe478c194",
+      "after_sha256": "fdd24a5bf9fe8b024590e36408f5a4424bcef23ec3944327c4bb335c4cfe1c34",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "provenance/baselines/safe_rl_validation_20261027_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "bfc8adf03d2c356808b58468c4dadce5328148af8384c035fb2f91c2f2de4a3d",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "provenance/baselines/safe_rl_validation_20261027_v1/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "324a526a9092192e98015c3804d4ebdf7bc7d8d51979c2c70718df209dd73173",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "provenance/safe_rl_validation_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "d117c2b84f039304919b3c9fed5eb669532245c59d47e2b0184008b75a0fead0",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "tools/check_safe_rl.py",
+      "before_sha256": "742b18e5c56f50463a82bee23a072eca08e9059cc0757a7ef49fac1f62c816c9",
+      "after_sha256": "f63acbb57cae43d34f6ca1f1ad57aa161f44190761b6ff992fbc49dabfacd6c6",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "tools/safe_rl_acceptance.py",
+      "before_sha256": null,
+      "after_sha256": "dba219788fdc96d58153e021a12a4dd2daaba868c1b08ba574dd2b382ba9ed06",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "tools/safe_rl_recovery_source.py",
+      "before_sha256": null,
+      "after_sha256": "0fdf4413c87ca4731016a85d99bd3a9454f9e70a282b3bc09df0db0eaa263538",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "7999eceaa306e1cdeb3670d2d7bb48f9543a1128c48f1b91cb761a628bbcf847",
+      "after_sha256": "098fa03b9bea5a00a63b50884bbad8da7bf2631c8f5ef7e266c045cbfdc12f39",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "bff4d481bc99d3b536b4724ca6bcd2c953acde49a35f7d2e0efa9e4283417791",
+      "after_sha256": "01e22c3f5b91c8ba31fd7fa5dd9f997e34614f7290affd5857d7eba997fce37e",
+      "reason": "Authorized fixes1/2/5: bounded-flow buffer exit, staging lifecycle, collision/progress acceptance; unchanged task and safety-learning identities protected separately."
+    }
+  ]
+}

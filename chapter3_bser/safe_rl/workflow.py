@@ -54,6 +54,8 @@ def inputs(config_path,manifest_path,*,training,episodes,cases=None):
 
 
 def execute(args):
+    if args.command=='train' or args.mode=='learned' or args.policy:
+        raise ValueError('safety learning admission suspended: audit findings3/4/6 remain unresolved; use rule evaluation')
     identity=admission(args.validation);options=validate(read(args.options) if args.options else None)
     torch.set_num_threads(1)
     training=args.command=='train';collecting=args.command=='collect'

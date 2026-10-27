@@ -1,0 +1,102 @@
+{
+  "report": "native_workflow.json",
+  "sha256": "f90bde8cc3f867123e263172daa58eb6687132edd37382d06ebd551d3f36ef23",
+  "environment_initializations": 7,
+  "physical_steps": 224,
+  "max_episode_steps": 32,
+  "max_complete_updates_per_model": 4,
+  "actual_native_optimizer_updates": 0,
+  "checkpoint_files_restored": 0,
+  "curated_acceptance": {
+    "rule_0002": {
+      "passed": true,
+      "collision_free": true,
+      "all_roles_checked": true,
+      "path_length": [
+        0.765794390988948,
+        3.8498063021342306,
+        3.8617449552495944,
+        3.555083326994592
+      ],
+      "net_displacement": [
+        0.4167643580863628,
+        2.3213776135875266,
+        2.1426830704558104,
+        2.5953651137679197
+      ],
+      "near_buffer_all_roles": false,
+      "scope": "32-step curated recoverable mechanisms only; no full-episode safety or task-success claim"
+    },
+    "rule_0006": {
+      "passed": true,
+      "collision_free": true,
+      "all_roles_checked": true,
+      "path_length": [
+        4.66423234857096,
+        5.816083792335239,
+        5.779415828477581,
+        0.45267542561933527
+      ],
+      "net_displacement": [
+        3.6404775185496017,
+        3.248850356439572,
+        5.184719775994306,
+        0.31667348167139425
+      ],
+      "near_buffer_all_roles": false,
+      "scope": "32-step curated recoverable mechanisms only; no full-episode safety or task-success claim"
+    },
+    "fault_all_four": {
+      "passed": true,
+      "collision_free": true,
+      "all_roles_checked": true,
+      "path_length": [
+        0.6087688447884574,
+        3.680577002270298,
+        3.9001779168332313,
+        4.328858206733323
+      ],
+      "net_displacement": [
+        0.25243335224745345,
+        1.8436650913969252,
+        3.6900640650377956,
+        3.402712385689878
+      ],
+      "near_buffer_all_roles": false,
+      "scope": "32-step curated recoverable mechanisms only; no full-episode safety or task-success claim"
+    },
+    "buffer_exit_all_four": {
+      "passed": true,
+      "collision_free": true,
+      "all_roles_checked": true,
+      "path_length": [
+        1.3340099398895815,
+        1.5766672241314559,
+        1.1463104719146218,
+        1.1197871133038229
+      ],
+      "net_displacement": [
+        0.9563452525463213,
+        1.1854290094122968,
+        0.9012125755443017,
+        0.9204500099011066
+      ],
+      "near_buffer_all_roles": true,
+      "scope": "32-step curated recoverable mechanisms only; no full-episode safety or task-success claim"
+    }
+  },
+  "full_82_96_step_regression": false,
+  "performance_passed": false,
+  "safety_guarantee": false,
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "profile": "active_safe_rl_recovery_v2",
+    "inventory_sha256": "035e483a77e1fe362d3ffed923fbe0511e76b4072b38098eed114f4757e020a0",
+    "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+    "distribution": "auv.active_source.safe_rl_recovery.v2"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_recovery_repairs_1_2_5_v2"
+}

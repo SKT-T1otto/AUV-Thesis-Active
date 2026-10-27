@@ -1,0 +1,18 @@
+{
+  "checkpoint_files_restored": 0,
+  "old_checkpoint_relabelling_allowed": false,
+  "task_and_safety_learner_bytes_unchanged": true,
+  "no_research_training_executed": true,
+  "new_schema": "auv.invalid_goal_safe_rl.v2",
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "088a5dc07f206d3855aa548c5da0d64aca5d8317efdfdd5dffcf2cc1329c0c41",
+    "profile": "active_safe_rl_recovery_v2",
+    "inventory_sha256": "035e483a77e1fe362d3ffed923fbe0511e76b4072b38098eed114f4757e020a0",
+    "parent_commit": "5ed20460e5b6a98642a39b6844790e82d38f3bf1",
+    "distribution": "auv.active_source.safe_rl_recovery.v2"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_recovery_repairs_1_2_5_v2"
+}

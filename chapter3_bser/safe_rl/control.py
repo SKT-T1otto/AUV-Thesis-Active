@@ -4,6 +4,7 @@ import numpy as np
 from chapter3_bser.safe_rl.options import FRAME_DIM
 from chapter3_bser.safe_rl.dynamics import prior,nominal,limits,brake,integrate,stopping_bound,speed_limit
 from chapter3_bser.safe_rl.evidence import ScanEvidence,EvidenceGeometry
+from chapter3_bser.safe_rl.buffer_recovery import buffer_exit
 
 
 class SafetyController:
@@ -112,7 +113,11 @@ class SafetyController:
                 if learned is not None:candidates.append(('LEARNED_RECOVERY',learned))
                 candidates.extend([('GOVERNED',ugovern),('ANCHOR',anchor_acc),('BRAKE',brake(v,spec,dt,self.flow[i])),('ESCAPE',escape)])
                 violation=max(0.,np.linalg.norm(v[:2])-caps[0])+max(0.,abs(v[2])-caps[1])
+                exit_result=buffer_exit(p,v,spec,geometry,self.contract,o,self.flow[i])
+                if exit_result is not None:
+                    chosen,check=exit_result;mode='BUFFER_EXIT';accepted=True
                 for label,u in candidates:
+                    if accepted:break
                     next_velocity=integrate(p,v,u,spec,dt,self.flow[i])[1]
                     next_violation=max(0.,np.linalg.norm(next_velocity[:2])-caps[0])+max(0.,abs(next_velocity[2])-caps[1])
                     if next_violation>1e-6 and next_violation>=violation-1e-8:continue
