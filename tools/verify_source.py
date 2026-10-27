@@ -11,6 +11,9 @@ def digest(value):
 
 def verify(root):
     root = Path(root).resolve()
+    if (root/'provenance/reach_avoid_manifest.json').is_file():
+        from tools.reach_avoid_source import verify as verify_reach_avoid
+        return verify_reach_avoid(root)
     if (root/'provenance/safe_rl_transport_manifest.json').is_file():
         from tools.safe_rl_transport_source import verify as verify_transport
         return verify_transport(root)

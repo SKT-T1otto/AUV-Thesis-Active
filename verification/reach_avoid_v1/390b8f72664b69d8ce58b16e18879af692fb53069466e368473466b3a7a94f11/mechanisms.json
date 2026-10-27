@@ -1,0 +1,104 @@
+{
+  "report": "native_workflow.json",
+  "sha256": "fc8bd1890dc3535ffc7651081a3ad26f412ba278c45aba9ce4336004933e50b6",
+  "environment_initializations": 4,
+  "physical_steps": 104,
+  "global_budget_report": "global_budget.json",
+  "global_budget_sha256": "d5d56b2f57eeb01c1e842282fe54dcdd29926434f81860d337c91a8cc9831028",
+  "max_episode_steps": 32,
+  "max_complete_updates_per_model": 4,
+  "synthetic_auxiliary_updates": 4,
+  "task_network_updates": 0,
+  "checkpoint_files_restored": 0,
+  "curated_acceptance": {
+    "learned_wiring_0002": {
+      "passed": true,
+      "collision_free": true,
+      "physical_steps": 32,
+      "path_length": [
+        0.8124667535834701,
+        4.447698996744394,
+        5.180532176503759,
+        6.106788320542235
+      ],
+      "net_displacement": [
+        0.8113522543057793,
+        4.291990124193867,
+        4.995477488018983,
+        6.011751337326979
+      ],
+      "original_completion_protocol": true,
+      "scope": "Curated <=32-step mechanisms; not full-episode effectiveness or a safety guarantee"
+    },
+    "fault_all_four": {
+      "passed": true,
+      "collision_free": true,
+      "physical_steps": 32,
+      "path_length": [
+        0.8124667535834701,
+        5.668300115277939,
+        4.189257194975476,
+        5.372788380736619
+      ],
+      "net_displacement": [
+        0.8113522543057793,
+        5.41645790661621,
+        4.135116404373424,
+        5.189988822421005
+      ],
+      "original_completion_protocol": true,
+      "scope": "Curated <=32-step mechanisms; not full-episode effectiveness or a safety guarantee"
+    },
+    "buffer_all_four": {
+      "passed": true,
+      "collision_free": true,
+      "physical_steps": 32,
+      "path_length": [
+        1.2089108719191775,
+        1.6475658435789249,
+        1.0220210213217398,
+        0.8589056059188593
+      ],
+      "net_displacement": [
+        0.9691539744045105,
+        1.0364372110083024,
+        0.7870808015307754,
+        0.8349364725122115
+      ],
+      "original_completion_protocol": true,
+      "scope": "Curated <=32-step mechanisms; not full-episode effectiveness or a safety guarantee"
+    },
+    "moving_handoff": {
+      "passed": true,
+      "collision_free": true,
+      "physical_steps": 8,
+      "path_length": [
+        0.05474004922484967,
+        0.043269995711166354,
+        0.03919559543796409,
+        0.3093803832557711
+      ],
+      "net_displacement": [
+        0.05474004922484967,
+        0.043269995711166354,
+        0.03919559543796409,
+        0.3083399848931588
+      ],
+      "original_completion_protocol": true,
+      "scope": "Curated <=32-step mechanisms; not full-episode effectiveness or a safety guarantee"
+    }
+  },
+  "performance_passed": false,
+  "safety_guarantee": false,
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+    "profile": "active_reach_avoid_v1",
+    "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+    "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+    "distribution": "auv.active_source.reach_avoid.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "reach_avoid_joint_learning_v1"
+}

@@ -24,9 +24,9 @@ def structural():
     from tools.verify_source import verify
     result = verify(ROOT)
     modules = []
-    for path in sorted(ROOT.rglob('*.py')):
-        if any(part in ('__pycache__', 'work', 'outputs') for part in path.relative_to(ROOT).parts):
-            continue
+    from chapter3_bser.learning.provenance import source_files
+    for relative in sorted(n for n in source_files(ROOT) if n.endswith('.py')):
+        path=ROOT/relative
         # Attached document builders are reference material, not importable
         # runtime/check code. Audit every declared Active Python source only.
         relative = path.relative_to(ROOT).as_posix()
@@ -143,11 +143,12 @@ def main():
     parser.add_argument('--recovery-workflow',action='store_true')
     parser.add_argument('--executor-diagnostics-workflow',action='store_true')
     parser.add_argument('--safe-rl-workflow',action='store_true')
+    parser.add_argument('--reach-avoid-workflow',action='store_true')
     parser.add_argument('--safe-rl-prefix')
     args=parser.parse_args()
     if not args.execute:
-        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow,recovery_workflow=args.recovery_workflow,executor_diagnostics_workflow=args.executor_diagnostics_workflow,safe_rl_workflow=args.safe_rl_workflow)));return
-    if sum((args.rollout,args.map_workflow,args.standby_workflow,args.recovery_workflow,args.executor_diagnostics_workflow,args.safe_rl_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
+        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow,recovery_workflow=args.recovery_workflow,executor_diagnostics_workflow=args.executor_diagnostics_workflow,safe_rl_workflow=args.safe_rl_workflow,reach_avoid_workflow=args.reach_avoid_workflow)));return
+    if sum((args.rollout,args.map_workflow,args.standby_workflow,args.recovery_workflow,args.executor_diagnostics_workflow,args.safe_rl_workflow,args.reach_avoid_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
     if args.safe_rl_prefix and not args.safe_rl_workflow:parser.error('--safe-rl-prefix requires --safe-rl-workflow')
     output=Path(args.output).resolve()
     if output.is_relative_to(ROOT) and not output.is_relative_to(ROOT/'work'):
@@ -188,6 +189,11 @@ def main():
             result['workflow']=check_safety(output/'safe_rl',prefix=args.safe_rl_prefix)
             write(output/'workflow.json',result['workflow'])
             if not result['workflow']['passed']:raise RuntimeError('safety-RL workflow failed')
+        if args.reach_avoid_workflow:
+            from tools.check_reach_avoid import run as check_reach_avoid
+            result['workflow']=check_reach_avoid(output/'reach_avoid')
+            write(output/'workflow.json',result['workflow'])
+            if not result['workflow']['passed']:raise RuntimeError('reach-avoid workflow failed')
         result['passed']=True
     except Exception:
         import traceback

@@ -7,7 +7,7 @@ import shutil
 import tempfile
 import unittest
 from project_paths import ROOT
-from tools.safe_rl_transport_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
+from tools.reach_avoid_source import verify, digest, BASELINE, EVOLUTION, MANIFEST
 
 
 def source_directory():

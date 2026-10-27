@@ -156,6 +156,7 @@ class ContinuationPipeline(unittest.TestCase):
             with patch.object(check_safe_rl,'SafetyRuntime',RecordedRuntime),\
                  patch.object(check_safe_rl,'RepairedMissionRuntime',side_effect=AssertionError('prefix must not rerun')),\
                  patch.object(check_safe_rl,'build_scenario_manifests',return_value={'M20_MOVING_UNKNOWN_MULTI':dict(scenarios=scenes)}),\
+                 patch('tools.safe_rl_transport_source.verify',return_value=dict(passed=True,synthetic_parent_transport_fixture=True)),\
                  patch('tools.safe_rl_resume.claim_prefix',side_effect=lambda r,o:real_claim(r,o,root=root)),\
                  contextlib.redirect_stdout(io.StringIO()):
                 result=check_safe_rl.run(root/'continuation',prefix=root)

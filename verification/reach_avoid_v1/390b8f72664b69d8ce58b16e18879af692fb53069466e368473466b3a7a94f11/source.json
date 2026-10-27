@@ -1,0 +1,26 @@
+{
+  "independent": {
+    "passed": true,
+    "files": 354,
+    "manifest_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+    "algorithm_changed": true,
+    "all_parent_algorithms_unchanged": true,
+    "public_handoff_accessor_only": true,
+    "source_admission_metadata_only": true,
+    "all_parent_evidence_immutable": true,
+    "scope": "Independent goal-conditioned reach-avoid branch; parent D2/B2/B3/safe-RL intact; public delivered-target accessor is read-only"
+  },
+  "parent_evidence_immutable": true,
+  "review_notes_sha256": "bf461b2b88a5afd699f55fb5fd95e8dc7d95ace819d8afc0159ade5da5137193",
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+    "profile": "active_reach_avoid_v1",
+    "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+    "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+    "distribution": "auv.active_source.reach_avoid.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "reach_avoid_joint_learning_v1"
+}

@@ -18,6 +18,7 @@ COMMANDS = {
     'executor-experiment': 'chapter3_bser.learning.executor_experiment',
     'executor-diagnose': 'tools.executor_diagnostics',
     'safe-rl': 'chapter3_bser.safe_rl.workflow',
+    'reach-avoid': 'chapter3_bser.reach_avoid.workflow',
 }
 
 

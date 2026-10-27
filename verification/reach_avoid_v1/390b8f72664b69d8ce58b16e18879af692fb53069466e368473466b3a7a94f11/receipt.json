@@ -1,0 +1,44 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+    "profile": "active_reach_avoid_v1",
+    "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+    "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+    "distribution": "auv.active_source.reach_avoid.v1"
+  },
+  "run_id": "reach_avoid_joint_learning_v1",
+  "gates": {
+    "source": {
+      "path": "verification/reach_avoid_v1/390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11/source.json",
+      "sha256": "91e0584ac99266280586b5a0d7f024d57d6854d3c4954b1c5435abd27baf174c"
+    },
+    "structural": {
+      "path": "verification/reach_avoid_v1/390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11/structural.json",
+      "sha256": "3645d1927df9ee5640f4c6442083d59d7574bd8357e784eca4f6076c54851e44"
+    },
+    "regression": {
+      "path": "verification/reach_avoid_v1/390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11/regression.json",
+      "sha256": "14aac05598dd06651914712a9392333f075e265e9ff8ddb74aeb5b56973583c0"
+    },
+    "parity": {
+      "path": "verification/reach_avoid_v1/390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11/parity.json",
+      "sha256": "88917904bbcda0c7f994b42cabc34e7186d26fbf16c5913dc0868f649517e37f"
+    },
+    "entrypoints": {
+      "path": "verification/reach_avoid_v1/390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11/entrypoints.json",
+      "sha256": "b538fab10a770dcab827ca4009d9495da73a94d7c92819cf5133ec6dd7ae732b"
+    },
+    "checkpoint": {
+      "path": "verification/reach_avoid_v1/390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11/checkpoint.json",
+      "sha256": "e43db3e81bd5ec932c2c4b6e0098cfcbb536e80baf571d2ec4b8de0cd0d2aaff"
+    },
+    "mechanisms": {
+      "path": "verification/reach_avoid_v1/390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11/mechanisms.json",
+      "sha256": "9d0b5a73de63e2e39d27cabe8d00fb6f9f006e56f7adfda9ace49760df1713a5"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "performance_passed": false,
+  "historical_acceptance_transferred": false
+}

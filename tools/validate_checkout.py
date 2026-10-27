@@ -102,13 +102,14 @@ def run(output, *, require_linux=False, expected_commit=None,checks_timeout=3600
         research_readiness(source)
         result['source'] = source
         result['versions'] = {name: importlib.metadata.version(name) for name in ('numpy', 'torch')}
+        reach_avoid_workflow=source.get('profile')=='active_reach_avoid_v1'
         safety_workflow=source.get('profile') in ('active_safe_rl_transport_v1','active_safe_rl_recovery_v2','active_safe_rl_v1','active_safe_rl_validation_v1')
         diagnostics_workflow=source.get('profile')=='active_executor_diagnostics_v1'
         recovery_workflow=source.get('profile')=='active_executor_recovery_v2'
         standby_workflow=source.get('profile')=='active_executor_standby_v1'
-        map_workflow=safety_workflow or diagnostics_workflow or recovery_workflow or standby_workflow or source.get('profile') in ('active_map_experiment_v1','active_map_convergence_v1','active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1','active_map_diagnostics_v1')
+        map_workflow=reach_avoid_workflow or safety_workflow or diagnostics_workflow or recovery_workflow or standby_workflow or source.get('profile') in ('active_map_experiment_v1','active_map_convergence_v1','active_map_persistence_v1','active_map_cache_v1','active_map_bounded_v3','active_map_route_health_v1','active_map_diagnostics_v1')
         command = [sys.executable, '-m', 'tools.run_checks', '--output', str(output / 'checks'), '--execute',
-                   '--safe-rl-workflow' if safety_workflow else '--executor-diagnostics-workflow' if diagnostics_workflow else '--recovery-workflow' if recovery_workflow else '--standby-workflow' if standby_workflow else '--map-workflow' if map_workflow else '--rollout']
+                   '--reach-avoid-workflow' if reach_avoid_workflow else '--safe-rl-workflow' if safety_workflow else '--executor-diagnostics-workflow' if diagnostics_workflow else '--recovery-workflow' if recovery_workflow else '--standby-workflow' if standby_workflow else '--map-workflow' if map_workflow else '--rollout']
         if safe_rl_prefix:
             if not safety_workflow:raise ValueError('prefix continuation requires safety workflow')
             from tools.safe_rl_resume import load_prefix

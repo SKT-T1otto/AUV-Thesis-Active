@@ -1,0 +1,38 @@
+{
+  "total_initializations": 8,
+  "total_physical_steps": 169,
+  "current_source_initializations": 4,
+  "current_source_physical_steps": 104,
+  "earlier_candidate_a": {
+    "source": {
+      "review_sha256": "d267421de09d3ac1aca9061e6e2d4c4f9e9df635eb69294760c56ec888f6b01e",
+      "profile": "active_reach_avoid_v1",
+      "inventory_sha256": "208fa82b6833bb3847807b4760f67de4d27e299712b0544af23482711f52a1b2",
+      "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+      "distribution": "auv.active_source.reach_avoid.v1"
+    },
+    "initializations": 2,
+    "physical_steps": 32,
+    "reason": "eps mock1e-8 vs original1e-6; second constructor rejected before physics"
+  },
+  "earlier_candidate_b": {
+    "source": {
+      "review_sha256": "94f269a2ac3b91359afbfa42ea06794e781e946de1df1e8e161af70fb5c076ba",
+      "profile": "active_reach_avoid_v1",
+      "inventory_sha256": "3b0a3b92f0a0afd2337932af01b19bceda0ef59311699bbfa2585d798fc99570",
+      "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+      "distribution": "auv.active_source.reach_avoid.v1"
+    },
+    "additional_initializations": 2,
+    "physical_steps": 33,
+    "original_report_additional_physical_steps": 32,
+    "corrected_unreported_physical_steps": 1,
+    "correction_basis": "Gated runtime missing applied_gates raises only AFTER BaselineMissionRuntime.advance completed one env.step; old loop counter increment was after the failed call.",
+    "reason": "nominal32-step prefix passed; rule first physics step completed then task-gate reporting failed"
+  },
+  "old_reports_preserved": true,
+  "old_auxiliary_episodes_relabelled": false,
+  "checkpoint_or_state_restore": false,
+  "current_full_eight_case_workflow_executed": false,
+  "native_flow_fixture_executed": false
+}

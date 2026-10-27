@@ -90,6 +90,22 @@ class MissionCoreEnv:
     def get_search_execution_state(self) -> SearchExecutionState:
         return SearchExecutionState(searcher_ids=(0, 1, 2), executor_id=3, target_known_by_agent=tuple((bool(x) for x in _array(self._env._agent_task_known).reshape(-1))), waypoint_reached_counts=tuple((int(x) for x in _array(self._env.waypoint_reached_counts).reshape(-1))), agent_finished=tuple((bool(x) for x in _array(self._env.agent_finished).reshape(-1))), hold_counters=tuple((int(x) for x in _array(self._env.hold_counters).reshape(-1))))
 
+    def get_public_delivered_target(self):
+        """Read only the committed handoff payload, never the true target state.
+
+        No prediction, sensing, planning refresh, RNG use or state update occurs.
+        A fresh serialized payload prevents callers from editing the delivery.
+        """
+        if not bool(self._env.executor_target_assigned):
+            return None
+        delivered = getattr(self._env, 'executor_delivered_target_state', None)
+        if delivered is None:
+            return None
+        return dict(schema='public_delivered_target_state_v1',
+            payload=delivered.to_payload(),
+            received_step=int(self._env.executor_received_target_step),
+            physical_step=int(self._env.step_count))
+
     def get_scenario_identity(self) -> Dict[str, Any]:
         return {'scenario_profile': str(self._env.scenario_profile), 'obstacle_layout_id': str(self._env.obstacle_layout_id), 'obstacle_knowledge_mode': str(self._env.obstacle_knowledge_mode), 'base_candidate': str(self._env.base_candidate)}
 

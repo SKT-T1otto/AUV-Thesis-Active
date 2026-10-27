@@ -59,7 +59,7 @@ class SafeRLValidation(unittest.TestCase):
             self.assertFalse(r['cross_platform_bitwise_reproducibility_established'])
     def test_resigning_manifest_cannot_change_unrepaired_safety_learner(self):
         from checks import test_map_source as sources
-        from tools.safe_rl_transport_source import MANIFEST,EVOLUTION,verify,digest
+        from tools.reach_avoid_source import MANIFEST,EVOLUTION,verify,digest
         with sources.source_directory() as directory:
             root,manifest=sources.MapSource().fixture(directory)
             name='chapter3_bser/safe_rl/learner.py';p=root/name;p.write_bytes(p.read_bytes()+b'\n# invalid verification-only algorithm edit\n')

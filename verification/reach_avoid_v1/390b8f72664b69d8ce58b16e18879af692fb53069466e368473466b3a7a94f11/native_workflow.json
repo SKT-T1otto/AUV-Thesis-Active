@@ -1,0 +1,176 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+    "profile": "active_reach_avoid_v1",
+    "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+    "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+    "distribution": "auv.active_source.reach_avoid.v1"
+  },
+  "planned_environment_initializations": 4,
+  "max_episode_steps": 32,
+  "checkpoint_file_restore_executed": false,
+  "max_complete_updates_per_model": 4,
+  "task_training": false,
+  "research_training": false,
+  "synthetic_auxiliary_learning_only": true,
+  "full_82_96_step_regression": false,
+  "safety_guarantee": false,
+  "performance_passed": false,
+  "environment": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.2.6",
+    "torch": "2.11.0+cu126",
+    "device": "cpu",
+    "torch_threads": 1
+  },
+  "parent_algorithm_protection": {
+    "passed": true,
+    "files": 354,
+    "manifest_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+    "algorithm_changed": true,
+    "all_parent_algorithms_unchanged": true,
+    "public_handoff_accessor_only": true,
+    "source_admission_metadata_only": true,
+    "all_parent_evidence_immutable": true,
+    "scope": "Independent goal-conditioned reach-avoid branch; parent D2/B2/B3/safe-RL intact; public delivered-target accessor is read-only"
+  },
+  "records": [
+    {
+      "case": "learned_wiring_0002",
+      "mode": "learned",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "evidence_origin": "current_execution",
+      "source_identity": {
+        "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+        "profile": "active_reach_avoid_v1",
+        "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+        "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+        "distribution": "auv.active_source.reach_avoid.v1"
+      }
+    },
+    {
+      "case": "fault_all_four",
+      "mode": "fault",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "evidence_origin": "current_execution",
+      "source_identity": {
+        "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+        "profile": "active_reach_avoid_v1",
+        "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+        "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+        "distribution": "auv.active_source.reach_avoid.v1"
+      }
+    },
+    {
+      "case": "buffer_all_four",
+      "mode": "buffer",
+      "physical_steps": 32,
+      "termination_reason": "timeout",
+      "success": false,
+      "collision_agents": [],
+      "evidence_origin": "current_execution",
+      "source_identity": {
+        "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+        "profile": "active_reach_avoid_v1",
+        "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+        "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+        "distribution": "auv.active_source.reach_avoid.v1"
+      }
+    },
+    {
+      "case": "moving_handoff",
+      "mode": "handoff",
+      "physical_steps": 8,
+      "termination_reason": "success",
+      "success": true,
+      "collision_agents": [],
+      "evidence_origin": "current_execution",
+      "source_identity": {
+        "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+        "profile": "active_reach_avoid_v1",
+        "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+        "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+        "distribution": "auv.active_source.reach_avoid.v1"
+      }
+    }
+  ],
+  "speed_audit": {
+    "schema": "auv.safe_speed.audit.v1",
+    "environment_initializations": 0,
+    "physics_steps": 0,
+    "flow_component_bound": 0.18,
+    "dt": 0.2,
+    "reaction_steps": 1,
+    "margin": 0.52,
+    "rows": [
+      {
+        "agent_id": 0,
+        "name": "search_fast",
+        "physical_v_xy_max": 2.8,
+        "full_sensor_range": 4.5,
+        "available_distance_after_margin": 3.9799999999999995,
+        "horizontal_reaction_and_stop_bound": 4.965242492094118,
+        "vertical_reaction_and_stop_bound": 1.4717355371900827,
+        "independent_axis_bounds_fit_range": false,
+        "horizontal_speed_cap_at_full_range": 2.4699024029076098,
+        "distance_at_20_step_refresh": 11.200000000000001,
+        "scope": "Conservative independent-axis model audit; not proof of ray coverage or combined 3D trajectory safety"
+      },
+      {
+        "agent_id": 1,
+        "name": "search_balanced",
+        "physical_v_xy_max": 2.2,
+        "full_sensor_range": 4.5,
+        "available_distance_after_margin": 3.9799999999999995,
+        "horizontal_reaction_and_stop_bound": 4.234395058854622,
+        "vertical_reaction_and_stop_bound": 1.1409602845287492,
+        "independent_axis_bounds_fit_range": false,
+        "horizontal_speed_cap_at_full_range": 2.1251241191755987,
+        "distance_at_20_step_refresh": 8.8,
+        "scope": "Conservative independent-axis model audit; not proof of ray coverage or combined 3D trajectory safety"
+      },
+      {
+        "agent_id": 2,
+        "name": "search_precise",
+        "physical_v_xy_max": 1.8,
+        "full_sensor_range": 4.5,
+        "available_distance_after_margin": 3.9799999999999995,
+        "horizontal_reaction_and_stop_bound": 3.331885606642022,
+        "vertical_reaction_and_stop_bound": 1.0090384615384616,
+        "independent_axis_bounds_fit_range": true,
+        "horizontal_speed_cap_at_full_range": 1.7999999995809048,
+        "distance_at_20_step_refresh": 7.2,
+        "scope": "Conservative independent-axis model audit; not proof of ray coverage or combined 3D trajectory safety"
+      },
+      {
+        "agent_id": 3,
+        "name": "executor",
+        "physical_v_xy_max": 1.5,
+        "full_sensor_range": 4.5,
+        "available_distance_after_margin": 3.9799999999999995,
+        "horizontal_reaction_and_stop_bound": 2.764120934570365,
+        "vertical_reaction_and_stop_bound": 0.8584789515488482,
+        "independent_axis_bounds_fit_range": true,
+        "horizontal_speed_cap_at_full_range": 1.499999999650754,
+        "distance_at_20_step_refresh": 6.0,
+        "scope": "Conservative independent-axis model audit; not proof of ray coverage or combined 3D trajectory safety"
+      }
+    ],
+    "safety_guarantee": false,
+    "scope": "Conservative drag-discarding reaction+discretization+stop audit, independent axes. Actual ray coverage may be less than4.5m; runtime uses current evidence and separately checks combined3D motion."
+  },
+  "environment_initializations": 4,
+  "physical_steps": 104,
+  "additional_environment_initializations": 4,
+  "additional_physical_steps": 104,
+  "current_source_environment_initializations": 4,
+  "current_source_physical_steps": 104
+}

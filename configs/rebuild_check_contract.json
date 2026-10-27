@@ -1,6 +1,6 @@
 {
   "schema": "auv.active.check_inventory.v1",
-  "expected_tests": 382,
+  "expected_tests": 430,
   "modules": [
     "checks.test_learning",
     "checks.test_workflow",
@@ -22,7 +22,9 @@
     "checks.test_safe_rl",
     "checks.test_safe_rl_validation",
     "checks.test_safe_rl_recovery",
-    "checks.test_safe_rl_transport"
+    "checks.test_safe_rl_transport",
+    "checks.test_reach_avoid",
+    "checks.test_reach_avoid_release"
   ],
   "allow_skips": false
 }

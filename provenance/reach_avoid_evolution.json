@@ -1,0 +1,183 @@
+{
+  "schema": "auv.reach_avoid.evolution.v1",
+  "parent_review_sha256": "b7fa87913db588f43ccb1c94e278a169be48777775658bb1a4867bf11a2cdcbe",
+  "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+  "algorithm_changed": true,
+  "independent_algorithm": true,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "c264c5e4ad92b629bd82f503e93277722e7b4b03ac82770b7580c06913330301",
+      "after_sha256": "e728656fddd80615f50a12e63c01a84917af0b5baf077b306fcda365b4545b98",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/learning/reach_avoid_source.py",
+      "before_sha256": null,
+      "after_sha256": "e0b9780a226250da62d9e61ca418f9584e3dd4d4c88e8b586eaab90307f5da52",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/__init__.py",
+      "before_sha256": null,
+      "after_sha256": "5bec64a184f8380bdeaff59627941232619113dca6a8d1ab5757dd3fe1a3d8ba",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/control.py",
+      "before_sha256": null,
+      "after_sha256": "93739fb38eb41c3b412a4424de09972856e99c26d3c03caf1190a4f87f808001",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/dataset.py",
+      "before_sha256": null,
+      "after_sha256": "c2d321078a8c713c72fe622e16c4c00f41f02d6ebd1b0b236b93ff6e88b97f20",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/features.py",
+      "before_sha256": null,
+      "after_sha256": "0027838062edf071fbb38e19e9771a0dbb9178e5b80d1437be7beb0a8dc509eb",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/goals.py",
+      "before_sha256": null,
+      "after_sha256": "e394e2c268e4d40fee7c0f9840ebf184746b4a9f1e7bb9cf725b30af72397d45",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/learner.py",
+      "before_sha256": null,
+      "after_sha256": "ebc0fd79cbd8381077418ec5b970b57a01a4f181f9c886568b9da5383464f7c7",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/options.py",
+      "before_sha256": null,
+      "after_sha256": "fbc3b77f68c6a00013b741cb716b2bf49759dfdc1fc56b3620e52ddfaa8ae1f0",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/planning.py",
+      "before_sha256": null,
+      "after_sha256": "fd0d5a29b889c98e31d965359db15b64f52cb934ffae40caa38d8ddffee2c087",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/runtime.py",
+      "before_sha256": null,
+      "after_sha256": "8c5e6c4fd6137dd897529f8092caec740f7e757f0764cb3a6f3349a4fc3853f9",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/workflow.py",
+      "before_sha256": null,
+      "after_sha256": "af4fefbdd4958a74af0fa5ee4753bd9b8a4075a4187486beb70d1e122c0292f6",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "checks/reach_avoid_fixtures.py",
+      "before_sha256": null,
+      "after_sha256": "5082e8834a957343eb530995cd34d7986d473938a0b71d99fef9c40c9646be99",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "d90b3a58b4730a20e3f62549f5e4a89b1df95dad17e16b1436754636054280ba",
+      "after_sha256": "757ebc2087fa8a50c7f28cee82d39ca6255965caf7de86e566392b3e7271566c",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "checks/test_reach_avoid.py",
+      "before_sha256": null,
+      "after_sha256": "f0b0bfdf6839949dece21f8ad74d58a6b58ab188ba6f56b891cca687fec0819c",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "checks/test_reach_avoid_release.py",
+      "before_sha256": null,
+      "after_sha256": "cf64cc37f26f27f1cd5c40c2bbf4f94989245ceb09806f0715416b3d9632ba7d",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "checks/test_safe_rl_transport.py",
+      "before_sha256": "480166a673c0288e4a6a89d1e6a468b06ffee0cd5303b137e35cd1b4cfc81016",
+      "after_sha256": "c37e114974f522eb9fc1e80b449075d12640f30eb2459e0ad2c287c25d4b305b",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "checks/test_safe_rl_validation.py",
+      "before_sha256": "1bfafaacea3f5614753a05f9263f29492966e9dee68d5ed5d0542775502ac7aa",
+      "after_sha256": "bed2cf7c94e0d8b51ef21d969f0cae8f57146c39ac4161ce6c021f97625a71d3",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "cli.py",
+      "before_sha256": "77105644465a68c9fdca1edbddfb6aeb113db460d907ee04ed903605e3d3e54e",
+      "after_sha256": "e9a1bc3330b8eadea2006601dd0add7796c358fc41483ee1136e6eaa4869115f",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "7e2a22dd94eeea14d7fbf1f60a2ac0c9f87dc0b02013e2078da8a8687db3eb40",
+      "after_sha256": "6ceb1af969b8678d4a04fb21f744409da283d553b3b7c99aebf43bac87d9a952",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "core/env/mission_env.py",
+      "before_sha256": "02131484c251243545bafa3eeb30b642139981244ac5c1ddfba6af732ec3df39",
+      "after_sha256": "b9f3829f15f3b16e6d7512e0a83912ff764418caf65ee6dcd9653f33d01ed449",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "provenance/baselines/safe_rl_transport_20261027_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "7b025855b0b9d820b5921ca9403ab9c6a2c3cd92999e3611c96983ad7fecbd4e",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "provenance/baselines/safe_rl_transport_20261027_v1/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "f9eb6c0d0e071207cdd504ab993ec19a9d07745cd9d56f4746d3e4892fecf219",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "provenance/safe_rl_transport_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "008eb34197b5bf07823259649ad466b565c839eebf313e2d0422c0dc41d5da1b",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "tools/check_reach_avoid.py",
+      "before_sha256": null,
+      "after_sha256": "6257b0bdb5a12a9cefb39d0c1ca4e92f3b6b767beab3d213d5288faf28c366fc",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "tools/reach_avoid_source.py",
+      "before_sha256": null,
+      "after_sha256": "c145ffedcf033d6ed3cd27e3528424f61754cbc44599dc3c4b991726f390c121",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "56f44cdce9dae0cd835a1b02187b665d19fb7b26189c382165909b9fb32e5825",
+      "after_sha256": "2fcde6bf1814136139f9c472029c02d1bbe3b9779d0c20c5f33379a4dba1b50b",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "1037b0cd4b7134493d27e43e9b800ad09791020293479d5a16d7ba1a4f54621c",
+      "after_sha256": "908c884da37f7b04140822f32febc644f193ee9eb03c71d389a47c49b0e2434f",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "27b02eae006bccb417111e0ffa14c3ebc46850c9ef216c8df224736fb74ee3cf",
+      "after_sha256": "e7611bc6c6dbf5dffe7faf07b0bf46efbc0b52be15777a6513d8a662565ede6a",
+      "reason": "Authorized independent goal-conditioned reach-avoid learning, learned goal repair and residual recovery; all parent algorithms preserved."
+    }
+  ]
+}

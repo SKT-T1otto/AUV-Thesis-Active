@@ -1,0 +1,171 @@
+[
+  {
+    "command": [
+      "-m",
+      "tools.check_reach_avoid",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "cases": null
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.run_checks",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "--reach-avoid-workflow"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "rollout": false,
+      "map_workflow": false,
+      "standby_workflow": false,
+      "recovery_workflow": false,
+      "executor_diagnostics_workflow": false,
+      "safe_rl_workflow": false,
+      "reach_avoid_workflow": true
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.validate_checkout",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "--require-linux"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "index_only": false,
+      "require_linux": true,
+      "expected_commit": null,
+      "checks_timeout": 3600,
+      "safe_rl_prefix": null,
+      "execute": false
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cli.py",
+      "reach-avoid",
+      "collect",
+      "--config",
+      "missing",
+      "--scenarios",
+      "missing",
+      "--validation",
+      "missing",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "--episodes",
+      "1"
+    ],
+    "result": {
+      "executed": false,
+      "algorithm": "auv.goal_conditioned_reach_avoid.v1",
+      "command": "collect",
+      "config": "missing",
+      "scenarios": "missing",
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "validation": "missing",
+      "episodes": 1,
+      "cases": null,
+      "options": null,
+      "mode": "rule",
+      "behavior": "mixed",
+      "ablation": "full",
+      "intervention": "none",
+      "policy": null,
+      "dataset": null,
+      "pretrain_updates": 256,
+      "execute": false
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cli.py",
+      "reach-avoid",
+      "train",
+      "--config",
+      "missing",
+      "--scenarios",
+      "missing",
+      "--validation",
+      "missing",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "--episodes",
+      "1"
+    ],
+    "result": {
+      "executed": false,
+      "algorithm": "auv.goal_conditioned_reach_avoid.v1",
+      "command": "train",
+      "config": "missing",
+      "scenarios": "missing",
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "validation": "missing",
+      "episodes": 1,
+      "cases": null,
+      "options": null,
+      "mode": "learned",
+      "behavior": "mixed",
+      "ablation": "full",
+      "intervention": "none",
+      "policy": null,
+      "dataset": null,
+      "pretrain_updates": 256,
+      "execute": false
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cli.py",
+      "reach-avoid",
+      "evaluate",
+      "--config",
+      "missing",
+      "--scenarios",
+      "missing",
+      "--validation",
+      "missing",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "--episodes",
+      "1"
+    ],
+    "result": {
+      "executed": false,
+      "algorithm": "auv.goal_conditioned_reach_avoid.v1",
+      "command": "evaluate",
+      "config": "missing",
+      "scenarios": "missing",
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\reach_avoid_dry_run_never_created",
+      "validation": "missing",
+      "episodes": 1,
+      "cases": null,
+      "options": null,
+      "mode": "rule",
+      "behavior": "mixed",
+      "ablation": "full",
+      "intervention": "none",
+      "policy": null,
+      "dataset": null,
+      "pretrain_updates": 256,
+      "execute": false
+    },
+    "exit_code": 0
+  }
+]

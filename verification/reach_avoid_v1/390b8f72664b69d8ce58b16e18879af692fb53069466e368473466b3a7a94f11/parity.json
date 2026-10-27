@@ -1,0 +1,43 @@
+{
+  "original_parent_runtime_bytes_protected": true,
+  "earlier_nominal_composition": {
+    "passed": true,
+    "max_errors": {
+      "positions": 9.5367431640625e-07,
+      "velocities": 2.384185791015625e-07,
+      "rewards": 1.0244548320770264e-08,
+      "tracking": 0.0
+    },
+    "tolerance": 5e-05,
+    "scope": "same-host32-step physical/reward/tracking prefix"
+  },
+  "earlier_nominal_source": {
+    "review_sha256": "94f269a2ac3b91359afbfa42ea06794e781e946de1df1e8e161af70fb5c076ba",
+    "profile": "active_reach_avoid_v1",
+    "inventory_sha256": "3b0a3b92f0a0afd2337932af01b19bceda0ef59311699bbfa2585d798fc99570",
+    "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+    "distribution": "auv.active_source.reach_avoid.v1"
+  },
+  "originalD2_reference_source": {
+    "review_sha256": "d267421de09d3ac1aca9061e6e2d4c4f9e9df635eb69294760c56ec888f6b01e",
+    "profile": "active_reach_avoid_v1",
+    "inventory_sha256": "208fa82b6833bb3847807b4760f67de4d27e299712b0544af23482711f52a1b2",
+    "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+    "distribution": "auv.active_source.reach_avoid.v1"
+  },
+  "current_nominal_physical_rerun": false,
+  "current_originalD2_runtime_equal_to_reference": true,
+  "current_task_bookkeeping_and_action_projection_tests": true,
+  "cross_host_bitwise_identity_claimed": false,
+  "gate": "parity",
+  "source_identity": {
+    "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+    "profile": "active_reach_avoid_v1",
+    "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+    "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+    "distribution": "auv.active_source.reach_avoid.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "reach_avoid_joint_learning_v1"
+}

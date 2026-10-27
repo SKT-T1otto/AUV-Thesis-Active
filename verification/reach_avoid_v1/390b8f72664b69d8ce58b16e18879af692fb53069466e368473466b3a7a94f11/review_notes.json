@@ -1,0 +1,135 @@
+{
+  "algorithm_changed": true,
+  "independent_algorithm": "auv.goal_conditioned_reach_avoid.v1",
+  "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+  "all_parent_algorithms_unchanged": true,
+  "public_handoff_accessor_read_only": true,
+  "old_weights_relabelled": false,
+  "checkpoint_files_restored": 0,
+  "original_task_network_updates": 0,
+  "research_training_executed": false,
+  "synthetic_auxiliary_updates": 4,
+  "scope": "Goal-conditioned competing first-event TD, task-value goal ranking and3D projected residual actor; directional public history; factual-only task labels; retained rare events.",
+  "actor_gradient": "Straight-through surrogate through discrete action-library projection, no convergence theorem.",
+  "task_gate_bookkeeping": "Every behavior records parent task proposed actions and task gates before returning the independent auxiliary command. OriginalD2/B2/B3 gates are unchanged.",
+  "control_fairness": "Rule/learned share public flow compensation, moving-goal feedforward, goal regions, candidates and projection. OriginalD2 intact.",
+  "budget": {
+    "total_initializations": 8,
+    "total_physical_steps": 169,
+    "current_source_initializations": 4,
+    "current_source_physical_steps": 104,
+    "earlier_candidate_a": {
+      "source": {
+        "review_sha256": "d267421de09d3ac1aca9061e6e2d4c4f9e9df635eb69294760c56ec888f6b01e",
+        "profile": "active_reach_avoid_v1",
+        "inventory_sha256": "208fa82b6833bb3847807b4760f67de4d27e299712b0544af23482711f52a1b2",
+        "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+        "distribution": "auv.active_source.reach_avoid.v1"
+      },
+      "initializations": 2,
+      "physical_steps": 32,
+      "reason": "eps mock1e-8 vs original1e-6; second constructor rejected before physics"
+    },
+    "earlier_candidate_b": {
+      "source": {
+        "review_sha256": "94f269a2ac3b91359afbfa42ea06794e781e946de1df1e8e161af70fb5c076ba",
+        "profile": "active_reach_avoid_v1",
+        "inventory_sha256": "3b0a3b92f0a0afd2337932af01b19bceda0ef59311699bbfa2585d798fc99570",
+        "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+        "distribution": "auv.active_source.reach_avoid.v1"
+      },
+      "additional_initializations": 2,
+      "physical_steps": 33,
+      "original_report_additional_physical_steps": 32,
+      "corrected_unreported_physical_steps": 1,
+      "correction_basis": "Gated runtime missing applied_gates raises only AFTER BaselineMissionRuntime.advance completed one env.step; old loop counter increment was after the failed call.",
+      "reason": "nominal32-step prefix passed; rule first physics step completed then task-gate reporting failed"
+    },
+    "old_reports_preserved": true,
+    "old_auxiliary_episodes_relabelled": false,
+    "checkpoint_or_state_restore": false,
+    "current_full_eight_case_workflow_executed": false,
+    "native_flow_fixture_executed": false
+  },
+  "curated_acceptance": {
+    "learned_wiring_0002": {
+      "passed": true,
+      "collision_free": true,
+      "physical_steps": 32,
+      "path_length": [
+        0.8124667535834701,
+        4.447698996744394,
+        5.180532176503759,
+        6.106788320542235
+      ],
+      "net_displacement": [
+        0.8113522543057793,
+        4.291990124193867,
+        4.995477488018983,
+        6.011751337326979
+      ],
+      "original_completion_protocol": true,
+      "scope": "Curated <=32-step mechanisms; not full-episode effectiveness or a safety guarantee"
+    },
+    "fault_all_four": {
+      "passed": true,
+      "collision_free": true,
+      "physical_steps": 32,
+      "path_length": [
+        0.8124667535834701,
+        5.668300115277939,
+        4.189257194975476,
+        5.372788380736619
+      ],
+      "net_displacement": [
+        0.8113522543057793,
+        5.41645790661621,
+        4.135116404373424,
+        5.189988822421005
+      ],
+      "original_completion_protocol": true,
+      "scope": "Curated <=32-step mechanisms; not full-episode effectiveness or a safety guarantee"
+    },
+    "buffer_all_four": {
+      "passed": true,
+      "collision_free": true,
+      "physical_steps": 32,
+      "path_length": [
+        1.2089108719191775,
+        1.6475658435789249,
+        1.0220210213217398,
+        0.8589056059188593
+      ],
+      "net_displacement": [
+        0.9691539744045105,
+        1.0364372110083024,
+        0.7870808015307754,
+        0.8349364725122115
+      ],
+      "original_completion_protocol": true,
+      "scope": "Curated <=32-step mechanisms; not full-episode effectiveness or a safety guarantee"
+    },
+    "moving_handoff": {
+      "passed": true,
+      "collision_free": true,
+      "physical_steps": 8,
+      "path_length": [
+        0.05474004922484967,
+        0.043269995711166354,
+        0.03919559543796409,
+        0.3093803832557711
+      ],
+      "net_displacement": [
+        0.05474004922484967,
+        0.043269995711166354,
+        0.03919559543796409,
+        0.3083399848931588
+      ],
+      "original_completion_protocol": true,
+      "scope": "Curated <=32-step mechanisms; not full-episode effectiveness or a safety guarantee"
+    }
+  },
+  "algorithm_effectiveness_established": false,
+  "paper_novelty_established": false,
+  "limits": "Four current <=32-step auxiliary mechanism episodes, not eight current episodes. Earlier rawD2 and nominal prefixes retain identities; no full82/96/400-step acceptance or trained-policy effectiveness."
+}

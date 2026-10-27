@@ -1,0 +1,18 @@
+{
+  "checkpoint_files_restored": 0,
+  "old_checkpoint_relabeling_allowed": false,
+  "policy_schema": "auv.goal_conditioned_reach_avoid.v1",
+  "training_resume_supported": false,
+  "synthetic_in_memory_weights_only": true,
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+    "profile": "active_reach_avoid_v1",
+    "inventory_sha256": "0d1cc2595ec5ab30193b44e14d18ab5dda4d97fc98ef8b37f889f9f1183bf836",
+    "parent_commit": "199dc25b17e70d7f9b0d69ef595bc455f2d13301",
+    "distribution": "auv.active_source.reach_avoid.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "reach_avoid_joint_learning_v1"
+}
