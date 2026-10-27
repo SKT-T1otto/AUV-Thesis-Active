@@ -59,7 +59,7 @@ class BaselineMissionRuntime:
         from chapter3_bser.d2.contract import enabled
         assembly.prepare(self, config, scenario, map_research=map_research)
         seed_innovations(seed)
-        base = _make_base_env(config)
+        base = self._make_environment(config)
         assembly.before_reset(self, base, episode_id)
         guided = GuidedEnv(base, enabled=True)
         v2 = Phase1CV2TrainingEnv(guided, reward_config=config['reward'])
@@ -91,6 +91,10 @@ class BaselineMissionRuntime:
         except Exception:
             self.env.close()
             raise
+
+    @staticmethod
+    def _make_environment(config):
+        return _make_base_env(config)
 
     @property
     def step(self):

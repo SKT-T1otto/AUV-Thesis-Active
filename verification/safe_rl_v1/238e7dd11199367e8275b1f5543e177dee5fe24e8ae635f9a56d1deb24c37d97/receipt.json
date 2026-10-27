@@ -1,0 +1,44 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97",
+    "profile": "active_safe_rl_v1",
+    "inventory_sha256": "7023127606faf8c83dcda9d5ea74e1ffd24e5a2f304e4642d5bfc92e7e52382a",
+    "parent_commit": "2be75cddcc96f14a4e0a2409af21aaa292763327",
+    "distribution": "auv.active_source.safe_rl.v1"
+  },
+  "run_id": "old_all_agent_safe_rl_v1",
+  "gates": {
+    "source": {
+      "path": "verification/safe_rl_v1/238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97/source.json",
+      "sha256": "f3011c5fae3e6ff31905e3b143a60829fec7034fc973078a1f2023bb278c6f30"
+    },
+    "structural": {
+      "path": "verification/safe_rl_v1/238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97/structural.json",
+      "sha256": "253a76b5f55aef18a6c01d764e1b7e78f4539f0b3890d5f10c832a638bb55eb7"
+    },
+    "regression": {
+      "path": "verification/safe_rl_v1/238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97/regression.json",
+      "sha256": "e1338711cd37545670e7c72c4007f20f214e25d6a400f10c229d03fa7e4c0216"
+    },
+    "parity": {
+      "path": "verification/safe_rl_v1/238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97/parity.json",
+      "sha256": "acde9bb40d59344f34588802ce868df85d9aceaa566b7b628daa46caf5540d30"
+    },
+    "entrypoints": {
+      "path": "verification/safe_rl_v1/238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97/entrypoints.json",
+      "sha256": "42258aa34256eb05cf7a4e4ad9fb13f5a636d2ce24900be9ec2422b46456c804"
+    },
+    "checkpoint": {
+      "path": "verification/safe_rl_v1/238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97/checkpoint.json",
+      "sha256": "366a2f743aff329d675eb5fb1930336635b5015b1d55edf239b1a52fb8714812"
+    },
+    "mechanisms": {
+      "path": "verification/safe_rl_v1/238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97/mechanisms.json",
+      "sha256": "c303a184a39459726f0fb2136d1105bfb08878526d753c84ad6aa45b08b26de0"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "performance_passed": false,
+  "historical_acceptance_transferred": false
+}

@@ -139,10 +139,11 @@ def main():
     parser.add_argument('--standby-workflow',action='store_true')
     parser.add_argument('--recovery-workflow',action='store_true')
     parser.add_argument('--executor-diagnostics-workflow',action='store_true')
+    parser.add_argument('--safe-rl-workflow',action='store_true')
     args=parser.parse_args()
     if not args.execute:
-        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow,recovery_workflow=args.recovery_workflow,executor_diagnostics_workflow=args.executor_diagnostics_workflow)));return
-    if sum((args.rollout,args.map_workflow,args.standby_workflow,args.recovery_workflow,args.executor_diagnostics_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
+        print(json.dumps(dict(executed=False,output=args.output,rollout=args.rollout,map_workflow=args.map_workflow,standby_workflow=args.standby_workflow,recovery_workflow=args.recovery_workflow,executor_diagnostics_workflow=args.executor_diagnostics_workflow,safe_rl_workflow=args.safe_rl_workflow)));return
+    if sum((args.rollout,args.map_workflow,args.standby_workflow,args.recovery_workflow,args.executor_diagnostics_workflow,args.safe_rl_workflow))>1:parser.error('choose one bounded workflow within the shared episode budget')
     output=Path(args.output).resolve()
     if output.is_relative_to(ROOT) and not output.is_relative_to(ROOT/'work'):
         raise ValueError('in-project verification output must stay under work/')
@@ -174,6 +175,11 @@ def main():
             result['workflow']=check_diagnostics(output/'executor_diagnostics')
             write(output/'workflow.json',result['workflow'])
             if not result['workflow']['passed']:raise RuntimeError('executor diagnostic workflow failed')
+        if args.safe_rl_workflow:
+            from tools.check_safe_rl import run as check_safety
+            result['workflow']=check_safety(output/'safe_rl')
+            write(output/'workflow.json',result['workflow'])
+            if not result['workflow']['passed']:raise RuntimeError('safety-RL workflow failed')
         result['passed']=True
     except Exception:
         import traceback

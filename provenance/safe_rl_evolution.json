@@ -1,0 +1,164 @@
+{
+  "schema": "auv.safe_rl.evolution.v1",
+  "parent_review_sha256": "d1a89107620893f541e011bfd19ea85f151310a66a18f1d4980764d6aacba4a5",
+  "parent_commit": "2be75cddcc96f14a4e0a2409af21aaa292763327",
+  "algorithm_changed": true,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/base_runtime.py",
+      "before_sha256": "4b2ac47d98d097ce8c813b91031042c274737b68c25bf4e3909c82ca8254f131",
+      "after_sha256": "a29313c81cef2d04262438dc601031b0a9be6035b5dc2cd3400fd93b1f3ac7ae",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "221df65dcc9cff84ad7c593f1cb33a8d793d4d3b8129f63100e6f031498c7c75",
+      "after_sha256": "217f18e0102cf4cac512a2f3b3a2090db0a39a5d8e57b15ac336e6c64e587dcb",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/learning/safe_rl_source.py",
+      "before_sha256": null,
+      "after_sha256": "640746c43d82e790409d0390dec8e8123a9357cd111659e613e2eda58bbeb70a",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/__init__.py",
+      "before_sha256": null,
+      "after_sha256": "f145f40efd2b8f75ba8746335b049664c61559150b92f991f5e1fc6792fcce5e",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/control.py",
+      "before_sha256": null,
+      "after_sha256": "548dddd404aa08ebe44cf50f006b4e5a12877a73e29dba4040a5978e307df980",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/dataset.py",
+      "before_sha256": null,
+      "after_sha256": "69b03f2cd1f86cc0a2fdaf9d88cd0c439a18b24dae0ea7f81ad9108948ae0d82",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/dynamics.py",
+      "before_sha256": null,
+      "after_sha256": "c92124fa1b45d04226a013c9de2150773144d6efb4e50c3dd96e1c4e31bcc8e6",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/evidence.py",
+      "before_sha256": null,
+      "after_sha256": "0e9ba16614f329fef195312749647438e13d035634911c15215534639ed932a2",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/learner.py",
+      "before_sha256": null,
+      "after_sha256": "daf69f5e084af31cbd7eb2df0b1c278e3c6dc91f01cc3d73f870a33948a24729",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/navigation.py",
+      "before_sha256": null,
+      "after_sha256": "06dd046a49223b27fb750c045cfef71aef1656387fb8f18e409836f46d356257",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/options.py",
+      "before_sha256": null,
+      "after_sha256": "cd570231415bd4f5c6c8285812557e5cbf0147d7a31332b7452cf9739b8c5423",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/runtime.py",
+      "before_sha256": null,
+      "after_sha256": "fee56c90f2dac1d00763d31da771fb2cb327b474b989e8cbdd1d61016ebf7367",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "chapter3_bser/safe_rl/workflow.py",
+      "before_sha256": null,
+      "after_sha256": "11249136beec5f6f6e06eacb3b6b664903f7249362084b4ea8d06e4a310db816",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "d90e1c593b227c9a6bfcd713b0aa5b471f134e61ea1f39b80d74193724151e4f",
+      "after_sha256": "011232a31c2f9126662ce7fd8e78af1cff6dc3fe61792908e463bb98388d4012",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "checks/test_safe_rl.py",
+      "before_sha256": null,
+      "after_sha256": "83c1f50427a227725434ff92e00c8471c0398b9d92e2ea63045e15d8c9fb81f0",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "cli.py",
+      "before_sha256": "de8e24bc02f619442fcd5d4f2b89d680f7190058eeecccdae5ddbf727490ca6e",
+      "after_sha256": "77105644465a68c9fdca1edbddfb6aeb113db460d907ee04ed903605e3d3e54e",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "ae5c0f86b8f287b2d2e20980ed2076d865aff476fe204d113cd8aa3e5be8f75d",
+      "after_sha256": "5eaddbbb491314c89d2740e8b1d95808c4f5ef756af6562ce63821e5d497d9f2",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "provenance/baselines/executor_diagnostics_20261027_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "e998b3be7022fc4b42b6b54a04130ab2bb0b427019f444436814cc70d393bfc2",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "provenance/baselines/executor_diagnostics_20261027_v1/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "c509737221bbfa86c3a00e7f491419663bffa180feeb8a32966ce0f6f87edbbe",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "provenance/executor_diagnostics_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "824802dbd094de165be365989bbec3f1b2efc47ca6c1ba8b5ccb4dc22a659c8c",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "tools/audit_safe_speed.py",
+      "before_sha256": null,
+      "after_sha256": "862fb6a8a1a1af6a7a3fb2c627c7373f5deb9000c7e668d986f5e6b612e6fd20",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "tools/check_safe_rl.py",
+      "before_sha256": null,
+      "after_sha256": "61bb69ecfd631fcd7d1ca49a95e1dc073339d74cf4edc9828e8e27de2f7fa55d",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "tools/run_checks.py",
+      "before_sha256": "35bc2a7ab4b95a98cda14e347635109ce94b259743aae5819af3210a42e8b76c",
+      "after_sha256": "600ccff57316e19c6f21a09ad4006e54cbe7e734f0eb3b31821b54e6a4d04247",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "tools/safe_rl_source.py",
+      "before_sha256": null,
+      "after_sha256": "fd9cdee0961f58303a5b8ac2cc50987e0dae8220e68f5ac93701d6b4b2c9b0d1",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "e0de3d5a0e89b59943df5bf39d3b45ce7af18e566277fd83b75cf64516e24f3d",
+      "after_sha256": "69757e37c51f7606f767c888643234ee4a468c19cf25b917841a4a754de5b3eb",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "6d7cb0f10c3254e3ceba4a643c584074026a110dde342f594922e90cb5b7c1b2",
+      "after_sha256": "ea6d299943c0507b2ed48333d83db0daab41071c4c65b6a9dba078a9f74238a9",
+      "reason": "Explicit OLD all-agent recoverability safety-RL research branch, source isolation and independent verification."
+    }
+  ]
+}

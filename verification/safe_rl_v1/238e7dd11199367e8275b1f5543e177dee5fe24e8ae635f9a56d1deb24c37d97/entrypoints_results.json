@@ -1,0 +1,161 @@
+[
+  {
+    "command": [
+      "-m",
+      "cli",
+      "safe-rl",
+      "collect",
+      "--config",
+      "missing",
+      "--scenarios",
+      "missing",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "--validation",
+      "missing",
+      "--episodes",
+      "1"
+    ],
+    "result": {
+      "executed": false,
+      "algorithm": "auv.invalid_goal_safe_rl.v1",
+      "command": "collect",
+      "config": "missing",
+      "scenarios": "missing",
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "validation": "missing",
+      "episodes": 1,
+      "mode": "nominal",
+      "options": null,
+      "policy": null,
+      "cases": null,
+      "risk_data": null,
+      "pretrain_updates": 256,
+      "execute": false
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "cli",
+      "safe-rl",
+      "train",
+      "--config",
+      "missing",
+      "--scenarios",
+      "missing",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "--validation",
+      "missing",
+      "--episodes",
+      "1"
+    ],
+    "result": {
+      "executed": false,
+      "algorithm": "auv.invalid_goal_safe_rl.v1",
+      "command": "train",
+      "config": "missing",
+      "scenarios": "missing",
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "validation": "missing",
+      "episodes": 1,
+      "mode": "learned",
+      "options": null,
+      "policy": null,
+      "cases": null,
+      "risk_data": null,
+      "pretrain_updates": 256,
+      "execute": false
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "cli",
+      "safe-rl",
+      "evaluate",
+      "--config",
+      "missing",
+      "--scenarios",
+      "missing",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "--validation",
+      "missing",
+      "--episodes",
+      "1"
+    ],
+    "result": {
+      "executed": false,
+      "algorithm": "auv.invalid_goal_safe_rl.v1",
+      "command": "evaluate",
+      "config": "missing",
+      "scenarios": "missing",
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "validation": "missing",
+      "episodes": 1,
+      "mode": "rule",
+      "options": null,
+      "policy": null,
+      "cases": null,
+      "risk_data": null,
+      "pretrain_updates": 256,
+      "execute": false
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.check_safe_rl",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created"
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.run_checks",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "--safe-rl-workflow"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "rollout": false,
+      "map_workflow": false,
+      "standby_workflow": false,
+      "recovery_workflow": false,
+      "executor_diagnostics_workflow": false,
+      "safe_rl_workflow": true
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.validate_checkout",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "--require-linux"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_dry_run_never_created",
+      "index_only": false,
+      "require_linux": true,
+      "expected_commit": null,
+      "execute": false
+    },
+    "exit_code": 0
+  }
+]

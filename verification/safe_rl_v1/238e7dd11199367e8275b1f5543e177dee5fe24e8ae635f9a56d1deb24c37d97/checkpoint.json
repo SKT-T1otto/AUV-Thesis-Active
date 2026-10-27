@@ -1,0 +1,21 @@
+{
+  "old_checkpoint_relabelling_allowed": false,
+  "checkpoint_files_restored": 0,
+  "synthetic_new_policy_write_oracle": {
+    "report": "synthetic_workflow_oracle.json",
+    "sha256": "15323f1dd8e84c9f66f22408cb1f82e7109afba7ce75b0dd9ed13aca33f2e4d6"
+  },
+  "old_task_learning_implementation_unchanged": true,
+  "no_research_training_executed": true,
+  "gate": "checkpoint",
+  "source_identity": {
+    "review_sha256": "238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97",
+    "profile": "active_safe_rl_v1",
+    "inventory_sha256": "7023127606faf8c83dcda9d5ea74e1ffd24e5a2f304e4642d5bfc92e7e52382a",
+    "parent_commit": "2be75cddcc96f14a4e0a2409af21aaa292763327",
+    "distribution": "auv.active_source.safe_rl.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "old_all_agent_safe_rl_v1"
+}

@@ -1,0 +1,28 @@
+{
+  "independent": {
+    "passed": true,
+    "files": 308,
+    "manifest_sha256": "238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97",
+    "algorithm_changed": true,
+    "original_core_bytes_unchanged": true,
+    "original_d2_b2_b3_bytes_unchanged": true,
+    "baseline_runtime_changed_only_by_default_preserving_factory": true,
+    "all_parent_evidence_immutable": true,
+    "safety_hidden_world_attribute_audit_passed": true,
+    "scope": "Separate OLD all-agent safety learning; no performance acceptance"
+  },
+  "review_notes_sha256": "ce00569052798a17686d8751798f85aa1714343959b99ca82c563596a641a718",
+  "algorithm_changed": true,
+  "parent_evidence_immutable": true,
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97",
+    "profile": "active_safe_rl_v1",
+    "inventory_sha256": "7023127606faf8c83dcda9d5ea74e1ffd24e5a2f304e4642d5bfc92e7e52382a",
+    "parent_commit": "2be75cddcc96f14a4e0a2409af21aaa292763327",
+    "distribution": "auv.active_source.safe_rl.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "old_all_agent_safe_rl_v1"
+}

@@ -1,0 +1,34 @@
+{
+  "source_identity": {
+    "review_sha256": "238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97",
+    "profile": "active_safe_rl_v1",
+    "inventory_sha256": "7023127606faf8c83dcda9d5ea74e1ffd24e5a2f304e4642d5bfc92e7e52382a",
+    "parent_commit": "2be75cddcc96f14a4e0a2409af21aaa292763327",
+    "distribution": "auv.active_source.safe_rl.v1"
+  },
+  "sha256": "e46e846f0d65d7c7df403faf51d9fef45395a82141a52e2a8e40311955b778e1",
+  "files": {
+    "initialization_01.json": "5ec52624e9b405ffa0d4cd57789ead4cbc0197cf38c15f892197ba9d4079b673",
+    "initialization_02.json": "3ee0ace4df32b1a4616a3539d2b0f207fc61f35a87d5f3a430979ba37031bc22",
+    "initialization_03.json": "cafe828c5bcf976551f931f4d64c7d6cedcd33fe1f500f90d48dae00ad6cdf2c",
+    "initialization_04.json": "1f5d680e5e5b0cc3aae133d7b6246c87174f9fa16035b926694805668e57a165",
+    "initialization_05.json": "40fcd8b82be2b8cb416a5f56d587f54c25641a16358a14e7ac2a2faeaf75984d",
+    "initialization_06.json": "6208c02c0ae85e554f8e65357b737e9d309e16caf74f68ccf3993fd3459142e0",
+    "safe_rl_workflow.json": "d102b87a54e584511098bec3fa4715be14b27f75e6485dc97b90983411f58c27",
+    "baseline_0002/episode.json": "ca2e352bc576ff37bc49cfc537ea4f73785e4e7db53a1c2c6e629a6cfe815ecd",
+    "baseline_0002/physical_frames.json": "e81a170bfa94bf70a00e2df589ad4418d35184819c99afa2e23474dd9c2fcf52",
+    "baseline_0002/signatures.json": "63beff889c9056797ed6ca03567e679c7103370b26b42ea7820e2b2b136a8d64",
+    "composition_0002/composition_parity.json": "a5647cecf7df4172562cb0006450a71ca1f8819dda0d3123f58404a516f1e453",
+    "composition_0002/episode.json": "574bce29691707464eebacf54a056b4698efac6f8fd44b3e16dd20a68d2179c0",
+    "composition_0002/physical_frames.json": "c4856b01035ca2f456d06a97bdf005704018bd4cab6eaa48d5bf0ef271ddae68",
+    "fault_all_four/episode.json": "ddbcdbcba4e2c7694e43830f1b3fc5d1ade69ae3a49d8373c5534bc440e237df",
+    "fault_all_four/physical_frames.json": "5a2072ed12556399c3f36537e4832ed6a076fd09a33615c3611a2ae949ee28c8",
+    "learned_fixture_0006/episode.json": "c80c5279f78d4b7e55f75aceac4e0a6356d368c0f11336479991d7d439101358",
+    "learned_fixture_0006/physical_frames.json": "56760e4cb6c949d74513dc4f08f519a962d1de29f8a508aaccac4aee3856efdd",
+    "learned_fixture_0006/synthetic_updates.json": "e258a934babd523f4117f01b26fb706253c63ab5592e1d145c458081fd010b30",
+    "rule_0002/episode.json": "b645bd487a23d6a589b0f8b82be994ca07e169fde7f44612aea2b03b7df47094",
+    "rule_0002/physical_frames.json": "f1ca3a9dd90f547de3923ac1924f85be13081aacd4da40d31008696e7eeabc77",
+    "rule_0006/episode.json": "beebee71ac48f8c1a9cc0089cf9502e09efafd37660675dcaa7e06363b865988",
+    "rule_0006/physical_frames.json": "578984947307127e9bfaae8b1009082d4d159256c1d3d1ed7827b4fc1b80d917"
+  }
+}

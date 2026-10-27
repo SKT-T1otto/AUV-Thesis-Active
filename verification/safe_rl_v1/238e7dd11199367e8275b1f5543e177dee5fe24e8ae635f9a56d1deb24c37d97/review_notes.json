@@ -1,0 +1,12 @@
+{
+  "algorithm_changed": true,
+  "preserved": "Original core/physics/reward/network/optimizer source bytes; D2/B2/B3/v1/v2 implementations and all parent evidence.",
+  "baseline_runtime": "Only self._make_environment(config) plus exact default-preserving static factory. Independent AST normalization to archived2be parent.",
+  "new_control_composition": "Explicit absolute-acceleration mode of original constructor, external exact prior+task residual reconstruction, then full-authority safety replacement.",
+  "new_safety_inputs": "4x48 public causal frames. No inherited oracle nearest-distance channel; retained existing scan hits and public map only.",
+  "new_learning": "Separate two risk networks+3D recovery actor; finite-horizon own collision targets with censored unobserved horizons; actual executed controls; successful recovery imitation.",
+  "new_navigation": "All-role fresh continuous start/current goal query endpoints; scoped route repair/quarantine; no fake arrival or task completion.",
+  "speed_governance": "Conservative disturbance/reaction/discretization stopping budget against current partial evidence; combined finite3D motion+braking checks.",
+  "source_admission": "Only identity inventory/profile/readiness metadata extended, original admission semantics normalize to parent.",
+  "evidence_scope": "Bounded mechanisms and numerical parity, NOT96/82-step reproduction, learned research performance, strict recursive safety, or thesis acceptance."
+}

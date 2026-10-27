@@ -1,0 +1,45 @@
+"""Synthetic workflow integration: ZERO environment starts; four safety updates."""
+import copy,json
+from pathlib import Path
+from unittest.mock import patch
+import numpy as np
+import torch
+from core.scenarios.ch3_generator_impl import build_scenario_manifests
+from chapter3_bser.safe_rl import workflow
+from chapter3_bser.safe_rl.options import validate
+from chapter3_bser.learning.provenance import verify_reviewed_changes
+torch.set_num_threads(1)
+ROOT=Path.cwd();output=ROOT/'work/collision_terminal/safe_rl_synthetic_workflow01'
+output.mkdir(parents=True,exist_ok=False)
+source=verify_reviewed_changes();options=dict(validate(),batch_size=4,warmup_samples=4,minimum_updates=2)
+(output/'options.json').write_text(json.dumps(options))
+scene=build_scenario_manifests(count=1,generator_seed=721991,split='train',profiles=['M20_MOVING_UNKNOWN_MULTI'])['M20_MOVING_UNKNOWN_MULTI']['scenarios'][0]
+scene.update(max_steps=8)
+(output/'train.json').write_text(json.dumps(dict(scenarios=[scene])))
+
+class Fake:
+    def __init__(self,config,scenario,*,collection_only=False,**kwargs):
+        self.step=0;self.terminal=False;self.collection=collection_only;self.safety_transitions=[]
+    def advance(self,*args,**kwargs):
+        cost=np.array([0,0,0,self.step==7],np.float32)
+        row=dict(safety_features=np.full((4,192),self.step/10,np.float32),
+            normalized_executed_acceleration=np.full((4,3),-.1,np.float32),collision_cost=cost,
+            safety_rows=[dict(mode='NOMINAL_COLLECTION' if self.collection else 'NOMINAL' if self.step>2 else 'BRAKE',model_checked=not self.collection) for _ in range(4)])
+        self.safety_transitions.append(row);self.step+=1;self.terminal=self.step==8;return row
+    def summary(self):return dict(termination_reason='obstacle_collision',success=False,synthetic_fixture=True)
+    def close(self):pass
+
+base=['--config',str(ROOT/'configs/b2_mechanism.json'),'--scenarios',str(output/'train.json'),
+    '--validation','synthetic-only','--episodes','1','--options',str(output/'options.json'),'--execute']
+with patch.object(workflow,'admission',return_value=source),patch.object(workflow,'SafetyRuntime',Fake):
+    collect=workflow.main(['collect',*base,'--output',str(output/'collect')])
+    train=workflow.main(['train',*base,'--output',str(output/'train'),'--risk-data',str(output/'collect'),'--pretrain-updates','2'])
+if train['safety_updates']!=4:raise ValueError('synthetic temporary model must have exactly four complete updates')
+# 8 transitions / update_frequency4 yields two online updates plus2 pretraining.
+if not (output/'train/safety_policy.pt').is_file():raise ValueError('new policy publication missing')
+result=dict(passed=True,source=source,environment_initializations=0,physical_steps=0,
+    synthetic_reported_steps=collect['physical_steps']+train['physical_steps'],max_complete_updates_per_model=4,
+    checkpoint_files_restored=0,manual_admission_bypassed_only_under_explicit_mock=True,
+    validates='Factual NPZ hashing/censoring, train-only roles, independent safety updates and new policy writing',
+    performance_or_real_training_evidence=False)
+(output/'oracle.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))

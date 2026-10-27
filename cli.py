@@ -17,6 +17,7 @@ COMMANDS = {
     'standby-experiment': 'chapter3_bser.learning.standby_experiment',
     'executor-experiment': 'chapter3_bser.learning.executor_experiment',
     'executor-diagnose': 'tools.executor_diagnostics',
+    'safe-rl': 'chapter3_bser.safe_rl.workflow',
 }
 
 
