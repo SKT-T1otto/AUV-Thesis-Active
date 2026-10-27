@@ -11,6 +11,9 @@ def digest(value):
 
 def verify(root):
     root = Path(root).resolve()
+    if (root/'provenance/safe_rl_validation_manifest.json').is_file():
+        from tools.safe_rl_validation_source import verify as verify_safety_validation
+        return verify_safety_validation(root)
     if (root/'provenance/safe_rl_manifest.json').is_file():
         from tools.safe_rl_source import verify as verify_safety
         return verify_safety(root)

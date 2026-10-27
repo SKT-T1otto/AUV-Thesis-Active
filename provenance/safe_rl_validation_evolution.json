@@ -1,0 +1,86 @@
+{
+  "schema": "auv.safe_rl_validation.evolution.v1",
+  "parent_review_sha256": "238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97",
+  "parent_commit": "aad17e94dea9f0e8ca0a35738f3d8834da6897f8",
+  "algorithm_changed": false,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "217f18e0102cf4cac512a2f3b3a2090db0a39a5d8e57b15ac336e6c64e587dcb",
+      "after_sha256": "285da97f8c66ac0a6f3be47df74ba9ec941918e4a9031f083b3902b15ba21c9c",
+      "reason": "Only successor inventory, source-identity dispatch and readiness profile metadata."
+    },
+    {
+      "path": "chapter3_bser/learning/safe_rl_validation_source.py",
+      "before_sha256": null,
+      "after_sha256": "7b220f829eba54f128129735c42c97a8f37e495feb45dfee01b985260f2166e1",
+      "reason": "New source metadata verifier; no runtime behavior."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "011232a31c2f9126662ce7fd8e78af1cff6dc3fe61792908e463bb98388d4012",
+      "after_sha256": "d3f02cd6eeae3201319f81b5bc250390253262a3536a70d257c3060ce006804b",
+      "reason": "Keep independent source tamper tests targeting the newest exact source identity."
+    },
+    {
+      "path": "checks/test_safe_rl_validation.py",
+      "before_sha256": null,
+      "after_sha256": "a7461d829a02e927f35f6683c5b24dc0668e5e0cde353d8c05e011299148f270",
+      "reason": "Negative/positive controls for host scope, exact repeats and diagnostic field differences without environment initialization."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "5eaddbbb491314c89d2740e8b1d95808c4f5ef756af6562ce63821e5d497d9f2",
+      "after_sha256": "c5b1eb7dc726113e71dbc211ff95b89f587a34e411bfcad61bee99cbe478c194",
+      "reason": "Exact regression inventory includes new validation-only tests."
+    },
+    {
+      "path": "provenance/baselines/safe_rl_20261027_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "a1676e075ba83de94870ef3494d4a6df6f373b97d311669bec57964036c482c1",
+      "reason": "Immutable published safety-RL baseline archive or verification-only successor lineage."
+    },
+    {
+      "path": "provenance/baselines/safe_rl_20261027_v1/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "0c8cb8361f0588001c8d123d616386de66b53619c4771d7f2154cb420a20841e",
+      "reason": "Immutable published safety-RL baseline archive or verification-only successor lineage."
+    },
+    {
+      "path": "provenance/safe_rl_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "13ddda313c3bf3436bd8559a44396effad6336148c2492df9e126381e55fd064",
+      "reason": "Immutable published safety-RL baseline archive or verification-only successor lineage."
+    },
+    {
+      "path": "tools/check_safe_rl.py",
+      "before_sha256": "61bb69ecfd631fcd7d1ca49a95e1dc073339d74cf4edc9828e8e27de2f7fa55d",
+      "after_sha256": "742b18e5c56f50463a82bee23a072eca08e9059cc0757a7ef49fac1f62c816c9",
+      "reason": "Replace cross-host digest admission with same-host exact repeat; keep original archive comparison as an explicit non-gating diagnostic and retain numerical composition checks."
+    },
+    {
+      "path": "tools/safe_rl_validation.py",
+      "before_sha256": null,
+      "after_sha256": "b7455aa92915ce1e1172ed7b5f9118c9db71f8b749384563497900fe6e9e8670",
+      "reason": "Pure exact same-host parity and cross-host diagnostic comparison helpers; no simulator or controller mutation."
+    },
+    {
+      "path": "tools/safe_rl_validation_source.py",
+      "before_sha256": null,
+      "after_sha256": "445e10099c5385d2e1dbcc21a8db06d1517ba5db928a6bacd59de753f5ca1267",
+      "reason": "Independent byte protection of all existing runtime modules and immutable source/evidence archive."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "69757e37c51f7606f767c888643234ee4a468c19cf25b917841a4a754de5b3eb",
+      "after_sha256": "7999eceaa306e1cdeb3670d2d7bb48f9543a1128c48f1b91cb761a628bbcf847",
+      "reason": "Select existing safety workflow for the new verification-only source identity."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "ea6d299943c0507b2ed48333d83db0daab41071c4c65b6a9dba078a9f74238a9",
+      "after_sha256": "bff4d481bc99d3b536b4724ca6bcd2c953acde49a35f7d2e0efa9e4283417791",
+      "reason": "Dispatch current independent verification-only successor."
+    }
+  ]
+}

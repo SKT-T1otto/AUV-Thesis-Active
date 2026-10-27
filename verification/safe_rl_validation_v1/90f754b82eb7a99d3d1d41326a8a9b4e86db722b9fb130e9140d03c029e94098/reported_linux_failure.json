@@ -1,0 +1,25 @@
+{
+  "origin": "User pasted Linux output; not independently executed by the Windows agent",
+  "parent_commit": "aad17e94dea9f0e8ca0a35738f3d8834da6897f8",
+  "parent_review_sha256": "238e7dd11199367e8275b1f5543e177dee5fe24e8ae635f9a56d1deb24c37d97",
+  "original_output_directory": "work/safe_rl_checkout_20261027_141619",
+  "git_package_source_verified": true,
+  "regression": {
+    "passed": true,
+    "tests_run": 322,
+    "failures": [],
+    "errors": [],
+    "skipped": []
+  },
+  "mechanism": {
+    "passed": false,
+    "environment_initializations": 1,
+    "physical_steps": 32,
+    "error": "default baseline differs from published parent prefix",
+    "file": "tools/check_safe_rl.py",
+    "line": 98
+  },
+  "full_research_evaluation_started": false,
+  "precise_hash_difference_cause_not_established": true,
+  "original_linux_failed_directory_must_be_preserved": true
+}

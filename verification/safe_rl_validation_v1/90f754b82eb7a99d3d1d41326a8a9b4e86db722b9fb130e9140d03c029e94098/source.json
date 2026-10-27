@@ -1,0 +1,26 @@
+{
+  "independent": {
+    "passed": true,
+    "files": 316,
+    "manifest_sha256": "90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098",
+    "algorithm_changed": false,
+    "all_parent_runtime_bytes_unchanged": true,
+    "source_admission_metadata_only": true,
+    "all_parent_evidence_immutable": true,
+    "scope": "Host-scoped validation correction only; all safety/RL/control/reward/dynamics source preserved"
+  },
+  "review_notes_sha256": "3802371be24169d8a51bdfb3435770ae9a5e33e9fb0bd635d9eb7c8602143455",
+  "algorithm_changed": false,
+  "parent_evidence_immutable": true,
+  "gate": "source",
+  "source_identity": {
+    "review_sha256": "90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098",
+    "profile": "active_safe_rl_validation_v1",
+    "inventory_sha256": "2d44b268bbf745ed46bca4b729c84b58f7e7c4b44ffb84aa4a8ce2932a29f6f1",
+    "parent_commit": "aad17e94dea9f0e8ca0a35738f3d8834da6897f8",
+    "distribution": "auv.active_source.safe_rl_validation.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_host_scoped_validation_v1"
+}

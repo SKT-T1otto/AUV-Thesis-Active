@@ -1,0 +1,44 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098",
+    "profile": "active_safe_rl_validation_v1",
+    "inventory_sha256": "2d44b268bbf745ed46bca4b729c84b58f7e7c4b44ffb84aa4a8ce2932a29f6f1",
+    "parent_commit": "aad17e94dea9f0e8ca0a35738f3d8834da6897f8",
+    "distribution": "auv.active_source.safe_rl_validation.v1"
+  },
+  "run_id": "safe_rl_host_scoped_validation_v1",
+  "gates": {
+    "source": {
+      "path": "verification/safe_rl_validation_v1/90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098/source.json",
+      "sha256": "150726d55dad34e06c3966428c6c3f3fd4f742af0c69f45a666e5f7ab36e6413"
+    },
+    "structural": {
+      "path": "verification/safe_rl_validation_v1/90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098/structural.json",
+      "sha256": "de04316b4822c9196f387e632f0d26225b6e385ed732a6f7e60721fdecb6cf5e"
+    },
+    "regression": {
+      "path": "verification/safe_rl_validation_v1/90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098/regression.json",
+      "sha256": "65f03def6c861f74266bb42265f9189c2c22a3991e567af62af1e60c170d2321"
+    },
+    "parity": {
+      "path": "verification/safe_rl_validation_v1/90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098/parity.json",
+      "sha256": "7803acfec1ff94f16c17855103ace097c77a0bb03e018c99b4edb21e5f6f42a0"
+    },
+    "entrypoints": {
+      "path": "verification/safe_rl_validation_v1/90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098/entrypoints.json",
+      "sha256": "88c60f8401131533bc20a68024926236d4932e933a12607f2268d985464f9be3"
+    },
+    "checkpoint": {
+      "path": "verification/safe_rl_validation_v1/90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098/checkpoint.json",
+      "sha256": "119ab2ee530731aad377f8ad73dd39f43d9ecdb263329720c4a077b00c0315f6"
+    },
+    "mechanisms": {
+      "path": "verification/safe_rl_validation_v1/90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098/mechanisms.json",
+      "sha256": "aeda97c402795ccfc72ae5c74d228d72d1e6b7b9cf6fe562d7ada5bd3d3c4722"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "performance_passed": false,
+  "historical_acceptance_transferred": false
+}

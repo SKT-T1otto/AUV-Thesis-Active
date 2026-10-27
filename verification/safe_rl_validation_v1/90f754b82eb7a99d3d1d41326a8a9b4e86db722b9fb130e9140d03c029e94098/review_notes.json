@@ -1,0 +1,9 @@
+{
+  "algorithm_changed": false,
+  "all_parent_runtime_bytes_unchanged": true,
+  "correction": "Do not require Linux complete-state hashes to equal Windows archive hashes. Preserve exact same-host repeats, immutable runtime-source proof and original numerical control-composition checks.",
+  "archived_comparison": "Still recorded with first mismatch and physical max errors; diagnostic only, no cross-platform identity claim.",
+  "budget": "Seven32-step current episodes. With the user-reported failed32-step episode, total8x32; no long training or checkpoint restore.",
+  "admission_metadata": "Only new profile/inventory/verifier/readiness dispatch; original admission semantics AST protected.",
+  "scope": "Validation-only repair, not proof of zero collisions or learned policy performance. Actual Linux success still requires a new user-executed validation."
+}

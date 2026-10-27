@@ -1,0 +1,53 @@
+[
+  {
+    "command": [
+      "-m",
+      "tools.check_safe_rl",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_validation_dry_run_never_created"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_validation_dry_run_never_created"
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.run_checks",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_validation_dry_run_never_created",
+      "--safe-rl-workflow"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_validation_dry_run_never_created",
+      "rollout": false,
+      "map_workflow": false,
+      "standby_workflow": false,
+      "recovery_workflow": false,
+      "executor_diagnostics_workflow": false,
+      "safe_rl_workflow": true
+    },
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "-m",
+      "tools.validate_checkout",
+      "--output",
+      "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_validation_dry_run_never_created",
+      "--require-linux"
+    ],
+    "result": {
+      "executed": false,
+      "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\work\\safe_rl_validation_dry_run_never_created",
+      "index_only": false,
+      "require_linux": true,
+      "expected_commit": null,
+      "execute": false
+    },
+    "exit_code": 0
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "report": "entrypoint_results.json",
+  "sha256": "7fa3a1aba7e692485984df87c6fcb4eded42515a4ce9fc46a4a7bf41c97ff12a",
+  "dry_run_output_absent": true,
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098",
+    "profile": "active_safe_rl_validation_v1",
+    "inventory_sha256": "2d44b268bbf745ed46bca4b729c84b58f7e7c4b44ffb84aa4a8ce2932a29f6f1",
+    "parent_commit": "aad17e94dea9f0e8ca0a35738f3d8834da6897f8",
+    "distribution": "auv.active_source.safe_rl_validation.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_host_scoped_validation_v1"
+}

@@ -102,7 +102,7 @@ def run(output, *, require_linux=False, expected_commit=None):
         research_readiness(source)
         result['source'] = source
         result['versions'] = {name: importlib.metadata.version(name) for name in ('numpy', 'torch')}
-        safety_workflow=source.get('profile')=='active_safe_rl_v1'
+        safety_workflow=source.get('profile') in ('active_safe_rl_v1','active_safe_rl_validation_v1')
         diagnostics_workflow=source.get('profile')=='active_executor_diagnostics_v1'
         recovery_workflow=source.get('profile')=='active_executor_recovery_v2'
         standby_workflow=source.get('profile')=='active_executor_standby_v1'

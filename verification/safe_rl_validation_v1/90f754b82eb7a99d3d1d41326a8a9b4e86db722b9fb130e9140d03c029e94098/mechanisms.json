@@ -1,0 +1,23 @@
+{
+  "report": "native_workflow.json",
+  "sha256": "09309d3a12375a377b58c4895e18f17a30898899a6e0c36faf15c58993405062",
+  "environment_initializations": 7,
+  "physical_steps": 224,
+  "max_episode_steps": 32,
+  "max_complete_updates_per_model": 4,
+  "checkpoint_files_restored": 0,
+  "full_82_96_step_regression": false,
+  "performance_passed": false,
+  "safety_guarantee": false,
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "90f754b82eb7a99d3d1d41326a8a9b4e86db722b9fb130e9140d03c029e94098",
+    "profile": "active_safe_rl_validation_v1",
+    "inventory_sha256": "2d44b268bbf745ed46bca4b729c84b58f7e7c4b44ffb84aa4a8ce2932a29f6f1",
+    "parent_commit": "aad17e94dea9f0e8ca0a35738f3d8834da6897f8",
+    "distribution": "auv.active_source.safe_rl_validation.v1"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "safe_rl_host_scoped_validation_v1"
+}
