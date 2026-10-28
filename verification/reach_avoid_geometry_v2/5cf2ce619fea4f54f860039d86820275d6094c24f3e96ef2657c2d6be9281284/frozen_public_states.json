@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "fixture_sha256": "ccbfc54d2b634f678d11ef2a5d39b02118a6fb8d93979faf31c99cc21dc6c1d8",
+  "records": [
+    {
+      "step": 80,
+      "agent_id": 3,
+      "parent_coarse_pose_free": false,
+      "ray_subcell_pose_free": true,
+      "speed_cap_xy": 0.19656073849182576,
+      "speed_cap_z": 0.19504135963506997,
+      "checked_moving_candidates": 9,
+      "selected_action": "GOAL_BASE_5",
+      "selected_model_checked": true,
+      "predicted_first_step_displacement": 0.03916840463287105,
+      "predicted_goal_distance_reduction": 0.008204733219895566
+    },
+    {
+      "step": 171,
+      "agent_id": 0,
+      "parent_coarse_pose_free": false,
+      "ray_subcell_pose_free": true,
+      "speed_cap_xy": 0.3494881163351238,
+      "speed_cap_z": 0.32139964504167434,
+      "checked_moving_candidates": 12,
+      "selected_action": "GOAL_BASE_1",
+      "selected_model_checked": true,
+      "predicted_first_step_displacement": 0.06732986373903498,
+      "predicted_goal_distance_reduction": 0.06491390151238452
+    },
+    {
+      "step": 267,
+      "agent_id": 1,
+      "parent_coarse_pose_free": false,
+      "ray_subcell_pose_free": true,
+      "speed_cap_xy": 0.21771818893030287,
+      "speed_cap_z": 0.2145658009685576,
+      "checked_moving_candidates": 10,
+      "selected_action": "GOAL_BASE_4",
+      "selected_model_checked": true,
+      "predicted_first_step_displacement": 0.03904065651602931,
+      "predicted_goal_distance_reduction": 0.026112627699796498
+    }
+  ],
+  "near_buffer_initial": {
+    "passed": true,
+    "fixture_sha256": "7bc36dbc71e36be7c454e349f3e846a3868774cc63f5eacd90922cd3404282f8",
+    "roles": [
+      {
+        "agent_id": 0,
+        "action_mode": "BUFFER_EXIT",
+        "model_checked": true
+      },
+      {
+        "agent_id": 1,
+        "action_mode": "BUFFER_EXIT",
+        "model_checked": true
+      },
+      {
+        "agent_id": 2,
+        "action_mode": "BUFFER_EXIT",
+        "model_checked": true
+      },
+      {
+        "agent_id": 3,
+        "action_mode": "BUFFER_EXIT",
+        "model_checked": true
+      }
+    ],
+    "environment_initializations": 0,
+    "physical_steps": 0,
+    "scope": "Initial public observation only, finite model exit probes; no environment trajectory"
+  },
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "optimizer_updates": 0,
+  "performance_passed": false,
+  "safety_guarantee": false,
+  "scope": "Counterfactual action availability at recorded public states; no new trajectories or task-success claims",
+  "source_identity": {
+    "review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+    "profile": "active_reach_avoid_geometry_v2",
+    "inventory_sha256": "25aed8a54128578bc710f2bf10afe7eaa3c3a081ea7405b6327dc2db4495cfbb",
+    "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+    "distribution": "auv.active_source.reach_avoid_geometry.v2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "expected": 447,
+  "tests_run": 447,
+  "failures": [
+    {
+      "test": "test_400_step_public_evidence_sequence_remains_usable (checks.test_map_persistence.MapPersistence)",
+      "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\checks\\test_map_persistence.py\", line 133, in test_400_step_public_evidence_sequence_remains_usable\n    self.assertTrue(b.valid,(step,b.error));self.assertEqual(b.step,step)\nAssertionError: False is not true : (60, 'wall_clock_budget')\n"
+    }
+  ],
+  "errors": [],
+  "skipped": []
+}

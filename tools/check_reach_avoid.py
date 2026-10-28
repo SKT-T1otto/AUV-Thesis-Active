@@ -93,13 +93,15 @@ def run(output,*,cases=None):
     if not output.is_relative_to(ROOT/'work'):raise ValueError('bounded evidence must stay under work')
     output.mkdir(parents=True,exist_ok=False)
     source=verify_reviewed_changes()
-    from tools.reach_avoid_source import verify
+    from tools.verify_source import verify
     protection=verify(ROOT);options=validate();torch.set_num_threads(1)
+    from tools.check_scan_geometry import frozen_checks
+    geometry_checks=frozen_checks()
     generated=build_scenario_manifests(count=12,generator_seed=827699,split='validation',profiles=['M20_MOVING_UNKNOWN_MULTI'])['M20_MOVING_UNKNOWN_MULTI']['scenarios']
     result=dict(passed=False,source=source,planned_environment_initializations=len(planned),max_episode_steps=32,
         checkpoint_file_restore_executed=False,max_complete_updates_per_model=4,task_training=False,research_training=False,
         synthetic_auxiliary_learning_only=True,full_82_96_step_regression=False,safety_guarantee=False,performance_passed=False,
-        environment=environment(),parent_algorithm_protection=protection)
+        environment=environment(),parent_algorithm_protection=protection,offline_scan_geometry=geometry_checks)
     starts=steps=0;records=[];baseline=None
     try:
         for name,index,mode in planned:

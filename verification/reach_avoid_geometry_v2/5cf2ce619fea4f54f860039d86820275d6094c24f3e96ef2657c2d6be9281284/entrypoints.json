@@ -1,0 +1,17 @@
+{
+  "report": "entrypoint_results.json",
+  "sha256": "b0cdced893fcfc1b0ca2504d9518d7ea3daf5d13c42211d27ac80455695a8610",
+  "dry_run_output_absent": true,
+  "manual_research_requires_fresh_current_linux_validation_and_execute": true,
+  "gate": "entrypoints",
+  "source_identity": {
+    "review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+    "profile": "active_reach_avoid_geometry_v2",
+    "inventory_sha256": "25aed8a54128578bc710f2bf10afe7eaa3c3a081ea7405b6327dc2db4495cfbb",
+    "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+    "distribution": "auv.active_source.reach_avoid_geometry.v2"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "reach_avoid_scan_geometry_offline_v2"
+}

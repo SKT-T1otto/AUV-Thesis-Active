@@ -7,7 +7,7 @@ import numpy as np
 from chapter3_bser.safe_rl.control import SafetyController
 from chapter3_bser.safe_rl.options import validate as safety_options
 from chapter3_bser.safe_rl.dynamics import brake, limits, integrate
-from chapter3_bser.safe_rl.buffer_recovery import buffer_exit
+from chapter3_bser.reach_avoid.scan_geometry import RaySubcells, ScanRefinedGeometry, refined_buffer_exit
 from chapter3_bser.reach_avoid.options import SPECS, CONTRACT
 from chapter3_bser.reach_avoid.features import Encoder
 from chapter3_bser.reach_avoid.goals import Goal, CAPTURE, STANDBY, base_action, encode_goal, goal_reached
@@ -32,6 +32,7 @@ class ReachAvoidController:
             raise ValueError('public control contract changed: '+str(mismatch))
         self.options = options
         self.guard = SafetyController(specs, contract, safety_options())
+        self.subcells = RaySubcells(contract['bounds'])
         self.encoder = Encoder(options, max_steps)
         self.learner = learner
         self.ablation = ablation
@@ -43,7 +44,9 @@ class ReachAvoidController:
     def snapshot(self, state, task, observations, semantic, delivered=None):
         if self.packet is not None and self.packet.step == state.step:
             return self.packet
-        geometry = self.guard.observe(state, self._events)
+        self.guard.observe(state, self._events)
+        self.subcells.consume(self._events, state.step)
+        geometry = ScanRefinedGeometry(state, self.guard.evidence, self.guard.options, self.subcells)
         packet = self.encoder.build(state, task, observations, semantic, geometry, self.guard,delivered)
         packet.goals, packet.goal_mask = candidate_goals(packet, state, semantic, geometry, self.options)
         banks, masks, checked, labels = [], [], [], []
@@ -54,7 +57,7 @@ class ReachAvoidController:
                 candidates.append((f'GOAL_BASE_{j}', base_action(packet, i, Goal.from_array(raw)), bool(packet.goal_mask[i, j])))
             b = brake(v, spec, CONTRACT['dt'], packet.flow[i]) / limits(spec)
             candidates.append(('BRAKE', b, True))
-            recovery = buffer_exit(p, v, spec, geometry, self.guard.contract, self.guard.options, packet.flow[i])
+            recovery = refined_buffer_exit(p, v, spec, geometry, self.guard.contract, self.guard.options, packet.flow[i])
             candidates.append(('BUFFER_EXIT', b if recovery is None else recovery[0] / limits(spec), recovery is not None))
             for j in range(3):
                 for sign in (-1, 1):
@@ -135,6 +138,9 @@ class ReachAvoidController:
                 public_position=packet.positions[i].tolist(), velocity=packet.velocities[i].tolist(),
                 baseline_action=base.tolist(), proposed_action=proposal.tolist(), executed_action=command.tolist(),
                 projection_changed=bool(np.linalg.norm(command-proposal) > 1e-5),
+                local_geometry=self.geometry.diagnostics(packet.positions[i]),
+                stop_cause='no_public_model_checked_action' if self.bank_labels[i][action_index]=='UNCERTIFIED_BRAKE' else
+                    'checked_braking' if self.bank_labels[i][action_index]=='BRAKE' else None,
                 learned_probability_is_certified=False, safety_guarantee=False))
         self.guard.previous_v = packet.velocities.copy()
         self.guard.previous = np.asarray(outputs) * np.array([limits(s) for s in SPECS])

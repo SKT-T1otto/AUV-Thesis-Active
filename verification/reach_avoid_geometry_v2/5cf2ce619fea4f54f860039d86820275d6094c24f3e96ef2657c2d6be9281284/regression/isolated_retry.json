@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "source": {
+    "review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+    "profile": "active_reach_avoid_geometry_v2",
+    "inventory_sha256": "25aed8a54128578bc710f2bf10afe7eaa3c3a081ea7405b6327dc2db4495cfbb",
+    "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+    "distribution": "auv.active_source.reach_avoid_geometry.v2"
+  },
+  "test_id": "checks.test_map_persistence.MapPersistence.test_400_step_public_evidence_sequence_remains_usable",
+  "tests_run": 1,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "original_full_run": "work/scan_geometry_regression_03",
+  "original_failure": "wall_clock_budget",
+  "source_and_thresholds_unchanged": true
+}

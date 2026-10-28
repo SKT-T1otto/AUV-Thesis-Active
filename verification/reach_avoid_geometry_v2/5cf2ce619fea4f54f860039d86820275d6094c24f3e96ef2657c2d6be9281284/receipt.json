@@ -1,0 +1,46 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+    "profile": "active_reach_avoid_geometry_v2",
+    "inventory_sha256": "25aed8a54128578bc710f2bf10afe7eaa3c3a081ea7405b6327dc2db4495cfbb",
+    "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+    "distribution": "auv.active_source.reach_avoid_geometry.v2"
+  },
+  "run_id": "reach_avoid_scan_geometry_offline_v2",
+  "gates": {
+    "source": {
+      "path": "verification/reach_avoid_geometry_v2/5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284/source.json",
+      "sha256": "4e5b1f22ed006afadae358a8e405a1b90df64fa945cc7cf73c0a7c3f20b6a14a"
+    },
+    "structural": {
+      "path": "verification/reach_avoid_geometry_v2/5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284/structural.json",
+      "sha256": "c8a4f25ffc738042061447288ab895a7ee003521c8e2891d7e00e87357dc90b6"
+    },
+    "regression": {
+      "path": "verification/reach_avoid_geometry_v2/5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284/regression.json",
+      "sha256": "d6606200f1aa6535a6f8c26bfc3000461a00708c7ce60bb33f9589726716b5a9"
+    },
+    "parity": {
+      "path": "verification/reach_avoid_geometry_v2/5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284/parity.json",
+      "sha256": "9e727e0d848427b1a53834f311f050c69f10af040e7bf48ddea5348351f6481c"
+    },
+    "entrypoints": {
+      "path": "verification/reach_avoid_geometry_v2/5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284/entrypoints.json",
+      "sha256": "7a78946c06caa14adbd8c6ef653a5cdf7e3b8dd2d73f0f44852cb9c899d77c39"
+    },
+    "checkpoint": {
+      "path": "verification/reach_avoid_geometry_v2/5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284/checkpoint.json",
+      "sha256": "940c2e0be13b3e24762d1bf857064414942e06d207f4b1877d84d46cdafba7f4"
+    },
+    "mechanisms": {
+      "path": "verification/reach_avoid_geometry_v2/5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284/mechanisms.json",
+      "sha256": "97426abdbc7ea61f2de9c5b45016633c74cb6e5d846f50f58b477f5f63caf6a7"
+    }
+  },
+  "manual_research_execution_allowed": true,
+  "performance_passed": false,
+  "historical_acceptance_transferred": false,
+  "offline_evidence_only": true,
+  "current_revision_environment_rollouts": 0
+}

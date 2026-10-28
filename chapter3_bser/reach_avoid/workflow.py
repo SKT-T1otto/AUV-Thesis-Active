@@ -24,7 +24,7 @@ def write(path,data):
 
 def admission(validation):
     source=verify_reviewed_changes();research_readiness(source)
-    if source['profile']!='active_reach_avoid_v1':raise ValueError('current independent reach-avoid source required')
+    if source['profile'] not in ('active_reach_avoid_v1','active_reach_avoid_geometry_v2'):raise ValueError('current independent reach-avoid source required')
     path=Path(validation);path=path/'validation.json' if path.is_dir() else path
     require_linux_validation(path,source)
     return source

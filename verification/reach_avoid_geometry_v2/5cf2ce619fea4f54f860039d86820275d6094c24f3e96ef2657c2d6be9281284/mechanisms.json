@@ -1,0 +1,22 @@
+{
+  "report": "frozen_public_states.json",
+  "sha256": "5f7f95038e9fd42602d3e25cbe4625bfaad71311783c3991d25735a78dd6f4af",
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "optimizer_updates": 0,
+  "native_current_revision_executed": false,
+  "scope": "Counterfactual action availability at recorded public states; no new trajectories or task-success claims",
+  "performance_passed": false,
+  "safety_guarantee": false,
+  "gate": "mechanisms",
+  "source_identity": {
+    "review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+    "profile": "active_reach_avoid_geometry_v2",
+    "inventory_sha256": "25aed8a54128578bc710f2bf10afe7eaa3c3a081ea7405b6327dc2db4495cfbb",
+    "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+    "distribution": "auv.active_source.reach_avoid_geometry.v2"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "reach_avoid_scan_geometry_offline_v2"
+}

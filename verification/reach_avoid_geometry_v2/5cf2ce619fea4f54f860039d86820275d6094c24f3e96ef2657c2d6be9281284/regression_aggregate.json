@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "source_identity": {
+    "review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+    "profile": "active_reach_avoid_geometry_v2",
+    "inventory_sha256": "25aed8a54128578bc710f2bf10afe7eaa3c3a081ea7405b6327dc2db4495cfbb",
+    "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+    "distribution": "auv.active_source.reach_avoid_geometry.v2"
+  },
+  "distinct_tests_covered": 447,
+  "first_full_run_passed": false,
+  "first_full_run_tests": 447,
+  "first_full_run_failures": 1,
+  "first_full_run_report": "regression/regression.json",
+  "first_full_run_sha256": "022af1593aab10b85c29512ab71e306c97e83fdf6b2ff06b9e4f4f534246b789",
+  "isolated_retry_count": 1,
+  "isolated_retry_passed": true,
+  "isolated_retry_report": "regression/isolated_retry.json",
+  "isolated_retry_sha256": "47f00d454d649da2603ccaccdfbff812c30783e674f282c8af323eb82f555705",
+  "source_and_thresholds_unchanged": true,
+  "initial_failure_retained": true,
+  "scope": "Full run446/447 plus unchanged-source isolated retry of one wall_clock_budget failure; not an all-green first full run"
+}

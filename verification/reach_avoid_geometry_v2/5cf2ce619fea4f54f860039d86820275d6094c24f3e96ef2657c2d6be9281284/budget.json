@@ -1,0 +1,15 @@
+{
+  "previous_automatic_initialization_budget_exhausted": true,
+  "current_revision_environment_initializations": 0,
+  "current_revision_physical_steps": 0,
+  "full_0002_0006_rerun": false,
+  "native_current_revision_mechanisms_executed": false,
+  "no_environment_or_checkpoint_restore_for_offline_checks": true,
+  "earlier_candidate_regressions_excluded": "regression_01 failed and had source evolution; regression_02 interrupted for face-supercover fix; only regression_03 is final evidence",
+  "future_manual_linux_checks_require_execute": true,
+  "future_manual_linux_plan_episodes": 8,
+  "future_manual_linux_max_steps": 32,
+  "parent_native_evidence_transferred": false,
+  "research_training": false,
+  "performance_passed": false
+}

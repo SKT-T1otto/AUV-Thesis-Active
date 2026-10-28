@@ -32,6 +32,7 @@ class Packet:
     actions: np.ndarray | None = None
     action_mask: np.ndarray | None = None
     checked: np.ndarray | None = None
+    pose_free: np.ndarray | None = None
 
 
 class Encoder:
@@ -75,10 +76,7 @@ class Encoder:
         radius = guard.contract['obstacle_sensor_range']
         for i, spec in enumerate(SPECS):
             rays = np.ones(26)
-            points = geometry.points
-            if len(geometry.raw.occupied_lower):
-                closest = np.clip(p[i], geometry.raw.occupied_lower, geometry.raw.occupied_upper)
-                points = np.concatenate((points, closest), axis=0)
+            points = geometry.directional_points(p[i])
             if len(points):
                 delta = points - p[i]
                 distances = np.linalg.norm(delta, axis=1)
@@ -108,4 +106,5 @@ class Encoder:
             frames.append(np.concatenate(tuple(self.history[i])))
         return Packet(int(state.step), np.asarray(frames, np.float32), p, v, guard.flow.copy(), phases, intent,
             target_velocity, np.array(gaps), geometry.origin.copy(), geometry.spacing.copy(), geometry.shape.copy(),
-            geometry.free.ravel().copy(), np.asarray(state.occupancy.occupied_mask, bool).copy(), bounds)
+            geometry.free.ravel().copy(), np.asarray(state.occupancy.occupied_mask, bool).copy(), bounds,
+            pose_free=np.array([geometry.local(point)[1] for point in p], bool))

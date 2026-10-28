@@ -65,6 +65,8 @@ def encode_goal(packet, agent, goal):
 def goal_reached(packet, agent, goal, options):
     """Local auxiliary event, never a replacement for environment capture/success."""
     free_pose, _, inside_pose = cell_status(packet, packet.positions[agent])
+    if packet.pose_free is not None:
+        free_pose = bool(packet.pose_free[agent])
     if not inside_pose or not free_pose or packet.clearances[agent] <= options['clearance'] + options['hit_padding']:
         return False
     radius = options['capture_radius'] if goal.kind == CAPTURE else options['goal_radius']

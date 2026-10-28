@@ -1,0 +1,146 @@
+{
+  "schema": "auv.reach_avoid_geometry.evolution.v2",
+  "parent_review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+  "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+  "algorithm_changed": true,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "e728656fddd80615f50a12e63c01a84917af0b5baf077b306fcda365b4545b98",
+      "after_sha256": "97ee4e670af514bda92310fb12fb3c05b6d1833f56fa1eb391de4b8f768a2933",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "chapter3_bser/learning/reach_avoid_geometry_source.py",
+      "before_sha256": null,
+      "after_sha256": "96c5f2bed0b2a72945f0ee52432b177d5e984385ea72ad7343b816177f4b5997",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/control.py",
+      "before_sha256": "93739fb38eb41c3b412a4424de09972856e99c26d3c03caf1190a4f87f808001",
+      "after_sha256": "94a138e438cc0f11e2f82b85242f50d19cf84bd57b295e96ee70595929273790",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/dataset.py",
+      "before_sha256": "c2d321078a8c713c72fe622e16c4c00f41f02d6ebd1b0b236b93ff6e88b97f20",
+      "after_sha256": "65f93a720187ddb9435962a1a2bf582eb477c4c649da932c8c377af4bdc7d065",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/features.py",
+      "before_sha256": "0027838062edf071fbb38e19e9771a0dbb9178e5b80d1437be7beb0a8dc509eb",
+      "after_sha256": "e444b6a69e879b72beccb528b68e8b86159d53cebf204aeb9b84c1531f5c9200",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/goals.py",
+      "before_sha256": "e394e2c268e4d40fee7c0f9840ebf184746b4a9f1e7bb9cf725b30af72397d45",
+      "after_sha256": "8f33b63108516264b274e7e91d1352a1a7bb08fb4d5ea072d5cda5866bcfb51c",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/scan_geometry.py",
+      "before_sha256": null,
+      "after_sha256": "1be6a839af9b0d41922c8316bfef9cd472465750e35794c7e7ca5137753e3bfb",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/workflow.py",
+      "before_sha256": "af4fefbdd4958a74af0fa5ee4753bd9b8a4075a4187486beb70d1e122c0292f6",
+      "after_sha256": "b905f5b0b8dd613e1448827cd3329f2ab86ff8b4ef84d5c9f4071bc969bc8b27",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "checks/fixtures/reach_avoid_0006_public_scans.json.gz",
+      "before_sha256": null,
+      "after_sha256": "ccbfc54d2b634f678d11ef2a5d39b02118a6fb8d93979faf31c99cc21dc6c1d8",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "checks/fixtures/reach_avoid_buffer_public_scan.json",
+      "before_sha256": null,
+      "after_sha256": "7bc36dbc71e36be7c454e349f3e846a3868774cc63f5eacd90922cd3404282f8",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "757ebc2087fa8a50c7f28cee82d39ca6255965caf7de86e566392b3e7271566c",
+      "after_sha256": "ddc23a27c4c1578782df975df896a038d4d3469332ceb05d29751e447677477e",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "checks/test_reach_avoid_release.py",
+      "before_sha256": "cf64cc37f26f27f1cd5c40c2bbf4f94989245ceb09806f0715416b3d9632ba7d",
+      "after_sha256": "99b0dc87747f595118630ee49fe38e9f5054a27209622b2e9ff26aa247cf90bd",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "checks/test_safe_rl_validation.py",
+      "before_sha256": "bed2cf7c94e0d8b51ef21d969f0cae8f57146c39ac4161ce6c021f97625a71d3",
+      "after_sha256": "68bce3da2aa560bc0ce15548eb196eff2fd8a1d685f17730c8cf0da08a7729e2",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "checks/test_scan_geometry.py",
+      "before_sha256": null,
+      "after_sha256": "22c47460627c6929542b323d3d187ea18ec82f2cfd352c8f96a2bbc2f9380b85",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "6ceb1af969b8678d4a04fb21f744409da283d553b3b7c99aebf43bac87d9a952",
+      "after_sha256": "382afc2c13e09027aac1598e648dd3423a4864c0e6225e222d694837fb5f1bc1",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "provenance/baselines/reach_avoid_20261028_v1/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "6792683dc13d955681b9fca61b8f9046a84fa35c3dfeed1a6cde21869d977f82",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "provenance/baselines/reach_avoid_20261028_v1/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "125d9e6786796e705d6f2b6bbb999c40c3a32a020af776016addb2b81b64727d",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "provenance/reach_avoid_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "fcc1809905cd253e8be617dbbb395d54ba6e8261995e92e0aa74dc8aa088c3d0",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "tools/check_reach_avoid.py",
+      "before_sha256": "6257b0bdb5a12a9cefb39d0c1ca4e92f3b6b767beab3d213d5288faf28c366fc",
+      "after_sha256": "0032f39c6eab0175e1b5bff835baa1a5a47c38d21ecd827c0425309bbcb17379",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "tools/check_scan_geometry.py",
+      "before_sha256": null,
+      "after_sha256": "46b3fa9a230f88a53cded9eeaaa4516236bc51ac851470da46883d699db524c3",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "tools/reach_avoid_geometry_source.py",
+      "before_sha256": null,
+      "after_sha256": "bd709d062b2e578639b96e5ddffacd3563ea56c538a3d62ba30e6db6adf56026",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "908c884da37f7b04140822f32febc644f193ee9eb03c71d389a47c49b0e2434f",
+      "after_sha256": "38833be06d5f0dd90755989a0d3a113129fa9a538073fe9e4ec1af0fe5b88a86",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "e7611bc6c6dbf5dffe7faf07b0bf46efbc0b52be15777a6513d8a662565ede6a",
+      "after_sha256": "f92f4aab1e5093dfc0aca1be892aab30bb2d5fd23a9148a362c364fb7c71c99b",
+      "reason": "Authorized public scan subcell refinement of local reach-avoid control geometry, replay-consistent local pose validity and independent verification; original collision, D2/B2/B3, reward and dynamics unchanged."
+    }
+  ]
+}

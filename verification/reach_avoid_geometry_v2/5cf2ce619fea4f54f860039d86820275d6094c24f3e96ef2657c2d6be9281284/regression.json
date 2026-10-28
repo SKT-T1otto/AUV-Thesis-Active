@@ -1,0 +1,21 @@
+{
+  "report": "regression_aggregate.json",
+  "sha256": "1b75e1016b31fd4457edea79af2b0eb3ae0ebc560c423d801fe54d98e5697b0e",
+  "distinct_tests_covered": 447,
+  "first_full_run_passed": false,
+  "first_full_run_failures": 1,
+  "isolated_retry_passed": true,
+  "errors": 0,
+  "skipped": 0,
+  "gate": "regression",
+  "source_identity": {
+    "review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+    "profile": "active_reach_avoid_geometry_v2",
+    "inventory_sha256": "25aed8a54128578bc710f2bf10afe7eaa3c3a081ea7405b6327dc2db4495cfbb",
+    "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+    "distribution": "auv.active_source.reach_avoid_geometry.v2"
+  },
+  "passed": true,
+  "exit_code": 0,
+  "run_id": "reach_avoid_scan_geometry_offline_v2"
+}

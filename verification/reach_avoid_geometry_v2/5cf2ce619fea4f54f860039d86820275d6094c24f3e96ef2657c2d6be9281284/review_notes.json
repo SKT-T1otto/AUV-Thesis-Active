@@ -1,0 +1,33 @@
+{
+  "source_identity": {
+    "review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+    "profile": "active_reach_avoid_geometry_v2",
+    "inventory_sha256": "25aed8a54128578bc710f2bf10afe7eaa3c3a081ea7405b6327dc2db4495cfbb",
+    "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+    "distribution": "auv.active_source.reach_avoid_geometry.v2"
+  },
+  "parent_commit": "806635eceedec881d33983b1ff8a794abd29fc09",
+  "parent_review_sha256": "390b8f72664b69d8ce58b16e18879af692fb53069466e368473466b3a7a94f11",
+  "original_collision_semantics": "closed motion segment vs true AABB, touching counts, team terminal",
+  "code_scope": "Only reach-avoid public local motion geometry and replay-consistent pose validity; global coarse map unchanged",
+  "evidence_scope": "447 distinct tests: full446/447, one unchanged-source isolated retry passed; 3 recorded frozen states and 4 near-buffer initial states; NO environment rollout",
+  "first_full_regression_passed": false,
+  "isolated_wall_clock_retry_passed": true,
+  "native_current_revision_environment_initializations": 0,
+  "native_current_revision_physical_steps": 0,
+  "old_evidence_relabelled": false,
+  "research_training": false,
+  "performance_passed": false,
+  "original_D2_B2_B3_reward_dynamics_unchanged": true,
+  "algorithm_effectiveness_established": false,
+  "runtime_review": {
+    "scan_geometry.py": "Ray-traversed subcells, hit priority, piecewise corridor checks, finite outward exit; no truth access",
+    "control.py": "Use refined public geometry consistently for rule/learned actions and log independent stop cause",
+    "features.py": "Remove unsupported zero-distance coarse proxy and retain replayable local pose-free bit without changing network dimensions",
+    "goals.py": "Use local pose-free evidence for auxiliary goal event; original task completion untouched",
+    "dataset.py": "Persist/validate boolean local pose-free mask for online/replay event equivalence",
+    "workflow.py": "Only admit the new exact source profile; current Linux validation and execute remain mandatory",
+    "learning/provenance.py": "Only source identity/readiness metadata; original admission rules preserved"
+  },
+  "limitation": "Finite rays/subcells are a public approximation; model checks are not continuous safety certification or complete mission-success evidence"
+}

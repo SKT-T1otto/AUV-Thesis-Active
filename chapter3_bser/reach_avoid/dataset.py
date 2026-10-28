@@ -6,7 +6,7 @@ from chapter3_bser.reach_avoid.features import Packet
 from chapter3_bser.reach_avoid.options import SCHEMA, FRAME_DIM
 
 FIELDS=('features','positions','velocities','flow','phases','intents','target_velocity','clearances',
-        'goals','goal_mask','actions','action_mask','checked')
+        'goals','goal_mask','actions','action_mask','checked','pose_free')
 
 
 def save(path, records):
@@ -35,12 +35,12 @@ def load_file(path, record, options):
     n=record['physical_steps'];k=options['candidates'];m=options['action_bank_size']
     if type(n) is not int or n<1:raise ValueError('positive factual physical length required')
     expected=dict(features=(n+1,4,FRAME_DIM*options['history']),positions=(n+1,4,3),velocities=(n+1,4,3),
-        flow=(n+1,4,2),phases=(n+1,4),intents=(n+1,4,3),target_velocity=(n+1,3),clearances=(n+1,4),
+        flow=(n+1,4,2),phases=(n+1,4),intents=(n+1,4,3),target_velocity=(n+1,3),clearances=(n+1,4),pose_free=(n+1,4),
         goals=(n+1,4,k,13),goal_mask=(n+1,4,k),actions=(n+1,4,m,3),action_mask=(n+1,4,m),checked=(n+1,4,m),
         selected_goals=(n,4,13),actual_actions=(n,4,3),rewards=(n,),done=(n,),collisions=(n,),intervened=(n,4),steps=(n+1,))
     for name,shape in expected.items():
         if name not in a or a[name].shape!=shape or not np.isfinite(a[name]).all():raise ValueError('invalid reach-avoid array: '+name)
-    for name in ('goal_mask','action_mask','checked','done','collisions','intervened'):
+    for name in ('goal_mask','action_mask','checked','pose_free','done','collisions','intervened'):
         if a[name].dtype!=np.bool_:raise ValueError('boolean factual mask required: '+name)
     if np.any(a['checked'] & ~a['action_mask']):raise ValueError('checked action absent from executable library')
     if not np.isin(a['phases'],[0,1,2,3]).all():raise ValueError('invalid factual task phase')
@@ -57,7 +57,7 @@ def load_file(path, record, options):
         p=Packet(int(a['steps'][t]),*[a[name][t] for name in ('features','positions','velocities','flow','phases','intents','target_velocity','clearances')],
             a['origin'],a['spacing'],shape,np.unpackbits(a['free'][t])[:cells].astype(bool),
             np.unpackbits(a['occupied'][t])[:cells].astype(bool),a['bounds'])
-        for name in ('goals','goal_mask','actions','action_mask','checked'):setattr(p,name,a[name][t])
+        for name in ('goals','goal_mask','actions','action_mask','checked','pose_free'):setattr(p,name,a[name][t])
         packets.append(p)
     return [dict(packet=packets[t],next_packet=packets[t+1],goals=a['selected_goals'][t],actual_actions=a['actual_actions'][t],
         reward=float(a['rewards'][t]),done=bool(a['done'][t]),team_collision=bool(a['collisions'][t]),

@@ -1,0 +1,6 @@
+test_400_step_public_evidence_sequence_remains_usable (checks.test_map_persistence.MapPersistence) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 4.008s
+
+OK
