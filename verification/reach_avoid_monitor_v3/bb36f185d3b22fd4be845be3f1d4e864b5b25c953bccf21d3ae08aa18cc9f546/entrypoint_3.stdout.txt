@@ -1,0 +1,23 @@
+{
+  "executed": false,
+  "online_training_episodes": 500,
+  "bootstrap_episodes": 32,
+  "training_cases": 32,
+  "development_cases": 12,
+  "evaluation_points": [
+    0,
+    50,
+    100,
+    150,
+    200,
+    250,
+    300,
+    350,
+    400,
+    450,
+    500
+  ],
+  "other_algorithm_experiments": false,
+  "checkpoint_resume": false,
+  "final_test_used": false
+}

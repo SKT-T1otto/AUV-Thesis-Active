@@ -1,0 +1,17 @@
+{
+  "source_identity": {
+    "review_sha256": "bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546",
+    "profile": "active_reach_avoid_monitor_v3",
+    "inventory_sha256": "8f983fba87b581608b0203b1038ce798d61773d364223f8fafc719469b3ce205",
+    "parent_commit": "e613ecb05bd6ef6d38f306f85fd7079e66857774",
+    "distribution": "auv.active_source.reach_avoid_monitor.v3"
+  },
+  "algorithm_changed": false,
+  "old_weights_relabelled": false,
+  "current_native_run": false,
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "training_500ep_executed": false,
+  "empirical_monitoring_only": true,
+  "linux_research_requires_current_validation_and_explicit_execute": true
+}

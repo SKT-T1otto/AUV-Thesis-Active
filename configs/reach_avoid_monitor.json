@@ -1,0 +1,14 @@
+{
+  "schema": "auv.reach_avoid.monitoring.v1",
+  "eval_every": 50,
+  "tail_points": 5,
+  "rate_tolerance": 0.05,
+  "return_relative_tolerance": 0.05,
+  "time_fraction_tolerance": 0.05,
+  "min_success_rate": 0.8,
+  "max_collision_rate": 0.1,
+  "max_timeout_rate": 0.2,
+  "max_stagnation_rate": 0.2,
+  "stagnation_steps": 50,
+  "stagnation_speed": 0.05
+}

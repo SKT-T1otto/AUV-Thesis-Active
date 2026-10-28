@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "argv": [
+        "-m",
+        "tools.reach_avoid_experiment",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "-m",
+        "tools.report_reach_avoid",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "-m",
+        "chapter3_bser.reach_avoid.workflow",
+        "train",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "-m",
+        "tools.reach_avoid_experiment",
+        "--validation",
+        "not_loaded",
+        "--output",
+        "work/collision_terminal/not_created_monitor_check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "-m",
+        "tools.report_reach_avoid",
+        "--run",
+        "not_loaded",
+        "--output",
+        "work/not_created_monitor_report"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "environment_initializations": 0,
+  "physical_steps": 0
+}

@@ -1,0 +1,134 @@
+{
+  "schema": "auv.reach_avoid_monitor.evolution.v3",
+  "parent_review_sha256": "5cf2ce619fea4f54f860039d86820275d6094c24f3e96ef2657c2d6be9281284",
+  "parent_commit": "e613ecb05bd6ef6d38f306f85fd7079e66857774",
+  "algorithm_changed": false,
+  "changes": [
+    {
+      "path": "chapter3_bser/learning/provenance.py",
+      "before_sha256": "97ee4e670af514bda92310fb12fb3c05b6d1833f56fa1eb391de4b8f768a2933",
+      "after_sha256": "1a17ca9ff410697b17b0a50aeb8ad409d81745a56a73b272178e59260096cae5",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "chapter3_bser/learning/reach_avoid_monitor_source.py",
+      "before_sha256": null,
+      "after_sha256": "4f978b3216c787204da35bd04d78028a3c6d225822d47889b67ba2fa0380d0bd",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/learning_diagnostics.py",
+      "before_sha256": null,
+      "after_sha256": "a45029163a7cac9ce7ffcc4b7453ccadc7d0cb8262368fa9e3fe8471b417bb33",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/monitor_reports.py",
+      "before_sha256": null,
+      "after_sha256": "6051f1872c3a016ec248b47de21414c46a8ded4ceeef2be5c58d5e5e9b6e2409",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/monitoring.py",
+      "before_sha256": null,
+      "after_sha256": "77b23bf2714a47569059454578f6c861fa122bb4c1c8320aa17405b55fcb21a7",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "chapter3_bser/reach_avoid/workflow.py",
+      "before_sha256": "b905f5b0b8dd613e1448827cd3329f2ab86ff8b4ef84d5c9f4071bc969bc8b27",
+      "after_sha256": "68a0012b8e9cbc61b29b2c73164034da8a6807dc3e417f7850d62718298c5f6b",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "checks/test_map_source.py",
+      "before_sha256": "ddc23a27c4c1578782df975df896a038d4d3469332ceb05d29751e447677477e",
+      "after_sha256": "51aa7ebfed502cf87faafbea55a791aa691d4ed3444c51c788a46bfd4f599f4c",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "checks/test_reach_avoid_monitor.py",
+      "before_sha256": null,
+      "after_sha256": "a32eb3b12a8690dfcd246d43685831fc7cfc1758f40f749f06010fb2c51482f3",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "checks/test_reach_avoid_release.py",
+      "before_sha256": "99b0dc87747f595118630ee49fe38e9f5054a27209622b2e9ff26aa247cf90bd",
+      "after_sha256": "1ac11c8e4b89f8890f56b1e1c263ae342696373eba5dbd6d0e3e8f2258cbd9a4",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "checks/test_safe_rl_validation.py",
+      "before_sha256": "68bce3da2aa560bc0ce15548eb196eff2fd8a1d685f17730c8cf0da08a7729e2",
+      "after_sha256": "4e33c88d2830e7617926b70c931c5bbf9afb81415ca0440bfc2876548dbd2f3c",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "configs/reach_avoid.json",
+      "before_sha256": null,
+      "after_sha256": "68fe200780454a758e9ca2dc25f1f9de65b0415a528785309d8f1e500f05416b",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "configs/reach_avoid_monitor.json",
+      "before_sha256": null,
+      "after_sha256": "84179fe7e8fcfb303f98d650c7118c058a996145275ea448b3dafaf9d4bfc5f0",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "configs/rebuild_check_contract.json",
+      "before_sha256": "382afc2c13e09027aac1598e648dd3423a4864c0e6225e222d694837fb5f1bc1",
+      "after_sha256": "84705587dd81a829441f207bdf19af20e85d0f6a59a099ff224dce921cde50f8",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "provenance/baselines/reach_avoid_geometry_20261028_v2/baseline.json",
+      "before_sha256": null,
+      "after_sha256": "0d70472c7766bf6cf9bfae5a602879896c4d3fe3e7ab53a7438bdfb6183511dd",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "provenance/baselines/reach_avoid_geometry_20261028_v2/source_and_docs.zip",
+      "before_sha256": null,
+      "after_sha256": "f2b33363f4a56d1e9a459aca168c22153b43e33f51b89d5987bfd3c37c8b55d5",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "provenance/reach_avoid_geometry_manifest.json",
+      "before_sha256": null,
+      "after_sha256": "647b7ec52d2eed8d2358ab92b0c83417dd51233170a4543c4bec85ebe66e1373",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "tools/reach_avoid_experiment.py",
+      "before_sha256": null,
+      "after_sha256": "716418514c27a5c8a0ad9d37a83267ddccebb7632eaf255f9b5566fe9836e498",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "tools/reach_avoid_monitor_source.py",
+      "before_sha256": null,
+      "after_sha256": "23471a15864392939d13075a92e8970a2044cc19687f6a3f28f095d9f1a6d66c",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "tools/report_reach_avoid.py",
+      "before_sha256": null,
+      "after_sha256": "9fdd0ccb3d64a05dc7fe27bab97a9f6980c373d5a179e1736235f53baf26d376",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "tools/validate_checkout.py",
+      "before_sha256": "38833be06d5f0dd90755989a0d3a113129fa9a538073fe9e4ec1af0fe5b88a86",
+      "after_sha256": "5547b82fc6f12cfb0bd5477f73c55021eca8f112ae7c4e2b82bca20285e7556f",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    },
+    {
+      "path": "tools/verify_source.py",
+      "before_sha256": "f92f4aab1e5093dfc0aca1be892aab30bb2d5fd23a9148a362c364fb7c71c99b",
+      "after_sha256": "04a0e525208426f7fc844ab11b941964c91bee58e8a8a9f753ef20f16898cc62",
+      "reason": "Read-only training observer, empirical diagnostics, explicit latest-RL research launcher and independent source verification; parent learning/control/physics unchanged."
+    }
+  ]
+}

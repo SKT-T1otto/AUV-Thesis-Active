@@ -4,7 +4,7 @@ from pathlib import Path
 from unittest.mock import patch
 from project_paths import ROOT
 import checks.test_map_source as source_checks
-from tools.reach_avoid_geometry_source import MANIFEST,EVOLUTION,verify,digest
+from tools.reach_avoid_monitor_source import MANIFEST,EVOLUTION,verify,digest
 
 
 class ReachAvoidRelease(unittest.TestCase):

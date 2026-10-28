@@ -14,6 +14,7 @@ from chapter3_bser.reach_avoid.options import SCHEMA,validate
 from chapter3_bser.reach_avoid.learner import ReachAvoidLearner
 from chapter3_bser.reach_avoid.runtime import ReachAvoidRuntime
 from chapter3_bser.reach_avoid import dataset
+from chapter3_bser.reach_avoid.monitoring import TrainingMonitor
 
 
 def read(path):return json.loads(Path(path).read_text(encoding='utf-8'))
@@ -24,7 +25,7 @@ def write(path,data):
 
 def admission(validation):
     source=verify_reviewed_changes();research_readiness(source)
-    if source['profile'] not in ('active_reach_avoid_v1','active_reach_avoid_geometry_v2'):raise ValueError('current independent reach-avoid source required')
+    if source['profile'] not in ('active_reach_avoid_v1','active_reach_avoid_geometry_v2','active_reach_avoid_monitor_v3'):raise ValueError('current independent reach-avoid source required')
     path=Path(validation);path=path/'validation.json' if path.is_dir() else path
     require_linux_validation(path,source)
     return source
@@ -70,6 +71,8 @@ def execute(args):
         if state_digest(state)!=metadata['state_sha256']:raise ValueError('policy state changed')
         learner.load_for_evaluation(state);learner.intervention=args.intervention
     elif args.policy or args.intervention!='none':raise ValueError('rule evaluation does not load or alter policies')
+    monitor=TrainingMonitor.from_args(args,output,source,config,scenes,options,training_ids,fingerprints) if training else None
+    if not training and getattr(args,'dev_scenarios',None):raise ValueError('development monitoring is training-only')
     output.mkdir(parents=True,exist_ok=False)
     run=dict(schema=SCHEMA,source_identity=source,command=args.command,options=options,config=config,
         mode=args.mode,ablation=args.ablation,evaluation_intervention=args.intervention,behavior=args.behavior,
@@ -78,13 +81,17 @@ def execute(args):
         checkpoint_resume=False,policy_sha256=sha(args.policy) if args.policy else None,dataset_inputs=dataset_inputs,
         original_reward_dynamics_protocol_unchanged=True,performance_passed=False,safety_guarantee=False)
     write(output/'run.json',run);write(output/'scenarios.json',dict(scenarios=scenes))
+    if monitor:monitor.start(learner)
     if training:
         for update in range(args.pretrain_updates):
             metric=learner.update();pretrain.append(metric)
+            if monitor:monitor.on_update(metric,learner,0,0,'pretrain')
             if (update+1)%32==0:print(f'[reach-avoid pretrain] {update+1}/{args.pretrain_updates}',flush=True)
+    if monitor:monitor.after_pretrain(learner)
     records=[];files=[];metrics=[];steps=0
     with (output/'episodes.jsonl').open('x',encoding='utf-8') as stream:
         for episode in range(args.episodes):
+            if monitor:monitor.before_episode(learner)
             require_review(source);scene=copy.deepcopy(scenes[episode%len(scenes)])
             behavior=('nominal' if episode%2==0 else 'explore') if collecting and args.behavior=='mixed' else args.behavior if collecting else 'learned' if learner else 'rule'
             runtime=ReachAvoidRuntime(config,scene,seed=int(scene['scenario_seed']),episode_id=episode+1,
@@ -101,11 +108,13 @@ def execute(args):
                     for _ in range(max(1,len(runtime.ra_records)//options['update_frequency'])):
                         metric=learner.update()
                         if metric is not None:metrics.append(metric)
+                        if monitor:monitor.on_update(metric,learner,episode+1,steps,'online')
                     training_ids.append(scene['scenario_id']);fingerprints.append(scenario_fingerprint(scene))
             finally:runtime.close()
             require_review(source);summary.update(episode=episode+1,reach_avoid_training=training)
-            stream.write(json.dumps(summary,ensure_ascii=False,allow_nan=False)+'\n');stream.flush();records.append(summary)
+            stream.write(json.dumps(summary,ensure_ascii=False,allow_nan=False)+'\n');stream.flush();records.append(dict(termination_reason=summary['termination_reason'],success=summary['success']))
             print(f'[reach-avoid] finished={episode+1} termination={summary["termination_reason"]} success={summary["success"]}',flush=True)
+            if monitor:monitor.on_episode(learner,summary,episode+1,steps,training_ids,fingerprints)
     if training:
         write(output/'learning_metrics.json',dict(pretrain=pretrain,online=metrics,updates=learner.updates,retained_strata=learner.replay.counts))
         if learner.ready:
@@ -118,7 +127,9 @@ def execute(args):
     result=dict(schema=SCHEMA,source_identity=source,completed=True,episodes=len(records),physical_steps=steps,
         collisions=sum(r['termination_reason']=='obstacle_collision' for r in records),successes=sum(bool(r['success']) for r in records),
         reach_avoid_updates=learner.updates if learner else 0,task_network_updates=0,performance_passed=False,safety_guarantee=False)
-    require_review(source);write(output/'completed.json',result);return result
+    require_review(source);write(output/'completed.json',result)
+    if monitor:monitor.finish(learner,training_ids,fingerprints)
+    return result
 
 
 def main(argv=None):
@@ -132,6 +143,7 @@ def main(argv=None):
         p.add_argument('--ablation',choices=('full','safety_only','no_goal_repair'),default='full')
         p.add_argument('--intervention',choices=('none','no_goal_repair','zero_residual'),default='none')
         p.add_argument('--policy');p.add_argument('--dataset',nargs='+');p.add_argument('--pretrain-updates',type=int,default=256)
+        p.add_argument('--dev-scenarios');p.add_argument('--monitor-settings',default=str(ROOT/'configs/reach_avoid_monitor.json'))
         p.add_argument('--execute',action='store_true')
     args=parser.parse_args(argv)
     if args.episodes<1 or args.pretrain_updates<1:parser.error('positive explicit run/update budgets required')

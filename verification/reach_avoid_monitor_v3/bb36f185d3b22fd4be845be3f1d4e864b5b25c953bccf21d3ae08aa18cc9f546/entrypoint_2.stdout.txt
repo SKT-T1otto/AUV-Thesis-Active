@@ -1,0 +1,31 @@
+usage: workflow.py train [-h] --config CONFIG --scenarios SCENARIOS --output
+                         OUTPUT --validation VALIDATION --episodes EPISODES
+                         [--cases CASES [CASES ...]] [--options OPTIONS]
+                         [--mode {rule,learned}]
+                         [--behavior {nominal,explore,mixed}]
+                         [--ablation {full,safety_only,no_goal_repair}]
+                         [--intervention {none,no_goal_repair,zero_residual}]
+                         [--policy POLICY] [--dataset DATASET [DATASET ...]]
+                         [--pretrain-updates PRETRAIN_UPDATES]
+                         [--dev-scenarios DEV_SCENARIOS]
+                         [--monitor-settings MONITOR_SETTINGS] [--execute]
+
+options:
+  -h, --help            show this help message and exit
+  --config CONFIG
+  --scenarios SCENARIOS
+  --output OUTPUT
+  --validation VALIDATION
+  --episodes EPISODES
+  --cases CASES [CASES ...]
+  --options OPTIONS
+  --mode {rule,learned}
+  --behavior {nominal,explore,mixed}
+  --ablation {full,safety_only,no_goal_repair}
+  --intervention {none,no_goal_repair,zero_residual}
+  --policy POLICY
+  --dataset DATASET [DATASET ...]
+  --pretrain-updates PRETRAIN_UPDATES
+  --dev-scenarios DEV_SCENARIOS
+  --monitor-settings MONITOR_SETTINGS
+  --execute

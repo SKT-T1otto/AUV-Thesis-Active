@@ -1,0 +1,26 @@
+usage: reach_avoid_experiment.py [-h] --validation VALIDATION --output OUTPUT
+                                 [--episodes EPISODES]
+                                 [--train-cases TRAIN_CASES]
+                                 [--bootstrap-episodes BOOTSTRAP_EPISODES]
+                                 [--dev-cases DEV_CASES]
+                                 [--pretrain-updates PRETRAIN_UPDATES]
+                                 [--config CONFIG] [--options OPTIONS]
+                                 [--monitor-settings MONITOR_SETTINGS]
+                                 [--execute]
+
+Explicit Linux research: fresh latest-RL training with fixed development
+monitoring.
+
+options:
+  -h, --help            show this help message and exit
+  --validation VALIDATION
+  --output OUTPUT
+  --episodes EPISODES
+  --train-cases TRAIN_CASES
+  --bootstrap-episodes BOOTSTRAP_EPISODES
+  --dev-cases DEV_CASES
+  --pretrain-updates PRETRAIN_UPDATES
+  --config CONFIG
+  --options OPTIONS
+  --monitor-settings MONITOR_SETTINGS
+  --execute

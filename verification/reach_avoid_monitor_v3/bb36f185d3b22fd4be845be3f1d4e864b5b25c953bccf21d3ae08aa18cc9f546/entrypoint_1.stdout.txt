@@ -1,0 +1,10 @@
+usage: report_reach_avoid.py [-h] --run RUN --output OUTPUT [--execute]
+
+Read-only report generation from completed or live journals; zero environment
+steps.
+
+options:
+  -h, --help       show this help message and exit
+  --run RUN
+  --output OUTPUT
+  --execute

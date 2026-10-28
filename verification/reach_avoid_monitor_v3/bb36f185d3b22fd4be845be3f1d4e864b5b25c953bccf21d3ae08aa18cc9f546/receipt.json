@@ -1,0 +1,47 @@
+{
+  "schema": "auv.active.rebuild.readiness.v1",
+  "source_identity": {
+    "review_sha256": "bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546",
+    "profile": "active_reach_avoid_monitor_v3",
+    "inventory_sha256": "8f983fba87b581608b0203b1038ce798d61773d364223f8fafc719469b3ce205",
+    "parent_commit": "e613ecb05bd6ef6d38f306f85fd7079e66857774",
+    "distribution": "auv.active_source.reach_avoid_monitor.v3"
+  },
+  "run_id": "reach_avoid_monitor_offline_v3",
+  "manual_research_execution_allowed": true,
+  "performance_passed": false,
+  "historical_acceptance_transferred": false,
+  "gates": {
+    "source": {
+      "path": "verification/reach_avoid_monitor_v3/bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546/source.json",
+      "sha256": "5cd4cba6600f09c89ad72182d1a3349e5accc2862e478df0c964d041699e6824"
+    },
+    "structural": {
+      "path": "verification/reach_avoid_monitor_v3/bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546/structural.json",
+      "sha256": "b97fbeaf0b85a16ed43c89b5a305aa3b94019757f1fee23a35df303cdfc76152"
+    },
+    "regression": {
+      "path": "verification/reach_avoid_monitor_v3/bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546/regression.json",
+      "sha256": "b250d81b8d2d445b4bafc183efff551fe47accd6d0483e1fa89eb95d68215c00"
+    },
+    "parity": {
+      "path": "verification/reach_avoid_monitor_v3/bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546/parity.json",
+      "sha256": "3147deb6757ae26e072c33979640d382deae420e4cf9eed4728e9138b10e958d"
+    },
+    "entrypoints": {
+      "path": "verification/reach_avoid_monitor_v3/bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546/entrypoints.json",
+      "sha256": "177780dc8ef573a24cd34fdf8af39d9beaced1593b84943ad84d87ea3f352c1a"
+    },
+    "checkpoint": {
+      "path": "verification/reach_avoid_monitor_v3/bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546/checkpoint.json",
+      "sha256": "9ef53cb468840e6bdc503c117a93b9c0d49cf15eb5e97912f637faf16c944839"
+    },
+    "mechanisms": {
+      "path": "verification/reach_avoid_monitor_v3/bb36f185d3b22fd4be845be3f1d4e864b5b25c953bccf21d3ae08aa18cc9f546/mechanisms.json",
+      "sha256": "f5ae54c9883f11da938a55182cb195f072d57d42e81b181d397d9a7b6029fb4f"
+    }
+  },
+  "current_linux_checkout_validation_still_required": true,
+  "environment_initializations": 0,
+  "physical_steps": 0
+}

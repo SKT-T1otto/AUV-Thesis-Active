@@ -102,7 +102,7 @@ def run(output, *, require_linux=False, expected_commit=None,checks_timeout=3600
         research_readiness(source)
         result['source'] = source
         result['versions'] = {name: importlib.metadata.version(name) for name in ('numpy', 'torch')}
-        reach_avoid_workflow=source.get('profile') in ('active_reach_avoid_v1','active_reach_avoid_geometry_v2')
+        reach_avoid_workflow=source.get('profile') in ('active_reach_avoid_v1','active_reach_avoid_geometry_v2','active_reach_avoid_monitor_v3')
         safety_workflow=source.get('profile') in ('active_safe_rl_transport_v1','active_safe_rl_recovery_v2','active_safe_rl_v1','active_safe_rl_validation_v1')
         diagnostics_workflow=source.get('profile')=='active_executor_diagnostics_v1'
         recovery_workflow=source.get('profile')=='active_executor_recovery_v2'
