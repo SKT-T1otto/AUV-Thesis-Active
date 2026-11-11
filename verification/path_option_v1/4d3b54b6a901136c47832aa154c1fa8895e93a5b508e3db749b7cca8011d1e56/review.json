@@ -1,0 +1,24 @@
+{
+  "source": {
+    "schema": "auv.path_option.source.v1",
+    "sha256": "4d3b54b6a901136c47832aa154c1fa8895e93a5b508e3db749b7cca8011d1e56",
+    "parent_commit": "2d6baf3b8c0fc5b1ca282188b9d257fc09103b0c"
+  },
+  "automatic_environment_initializations": 0,
+  "physical_steps": 0,
+  "checkpoint_restores": 0,
+  "synthetic_tests": 33,
+  "synthetic_failures": 0,
+  "synthetic_errors": 0,
+  "bash_syntax_check_passed": true,
+  "prior_candidate": "84b35971b41800b91bd6f79932bb9cbde50c1868b29f5c28b6856391ec3b3d4a",
+  "tracked_parent_files_verified": true,
+  "preexisting_user_changes_not_staged": true,
+  "native_linux_validation_pending": true,
+  "full_episode_performance_pending": true,
+  "archive": {
+    "validation.json": "9822905ed222c29054c111e3b8eacd2868581c8fe63916ba4cd5b28bd5c26d16",
+    "synthetic.log": "967b6c9d86ff14fc4a3343ed20195574e71562c741a8b8eb616c42c6e9220c18",
+    "network_sizes.json": "0e8aeabec22d4ce5cd1b3d6ecfb6cc0d37d6a3302480a043b0458634ab0b264f"
+  }
+}

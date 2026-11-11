@@ -1,0 +1,27 @@
+{
+  "source": {
+    "schema": "auv.path_option.source.v1",
+    "sha256": "cf81d42a92a46377d520f5e244a0cb424bc81cc63ead9fc819014c403db552ff",
+    "parent_commit": "2d6baf3b8c0fc5b1ca282188b9d257fc09103b0c"
+  },
+  "automatic_environment_initializations": 0,
+  "physical_steps": 0,
+  "checkpoint_restores": 0,
+  "synthetic_tests": 37,
+  "synthetic_failures": 0,
+  "synthetic_errors": 0,
+  "bash_syntax_check_passed": true,
+  "train_eval_categorical_policy_consistency_tested": true,
+  "inactive_team_value_and_event_separation_tested": true,
+  "incomplete_evaluation_retention_tested": true,
+  "previous_candidate": "4d3b54b6a901136c47832aa154c1fa8895e93a5b508e3db749b7cca8011d1e56",
+  "tracked_parent_files_verified": true,
+  "preexisting_user_changes_not_staged": true,
+  "native_linux_validation_pending": true,
+  "full_episode_performance_pending": true,
+  "archive": {
+    "validation.json": "3b0798eba176c49890af7dbf6639c6360638282ec13c50a09f739f0da94d197a",
+    "synthetic.log": "99fa126596c0f7b3aaa1858975898e407429b3a8348f008831f76cb96b18b4ee",
+    "network_sizes.json": "dd61105da565c0cd6127f52348c21a05f38f6bfff2f01b9f58866291b2eea3e5"
+  }
+}

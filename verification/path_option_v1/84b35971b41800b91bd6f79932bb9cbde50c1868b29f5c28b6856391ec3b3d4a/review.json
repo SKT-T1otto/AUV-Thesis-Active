@@ -1,0 +1,28 @@
+{
+  "source": {
+    "schema": "auv.path_option.source.v1",
+    "sha256": "84b35971b41800b91bd6f79932bb9cbde50c1868b29f5c28b6856391ec3b3d4a",
+    "parent_commit": "2d6baf3b8c0fc5b1ca282188b9d257fc09103b0c"
+  },
+  "automatic_environment_initializations": 0,
+  "physical_steps": 0,
+  "checkpoint_restores": 0,
+  "synthetic_tests": 32,
+  "synthetic_failures": 0,
+  "synthetic_errors": 0,
+  "bash_syntax_check_passed": true,
+  "bash_command": [
+    "E:/git/Git/bin/bash.exe",
+    "-n",
+    "scripts/run_path_option_pilot.sh"
+  ],
+  "tracked_parent_files_verified": true,
+  "preexisting_user_changes_not_staged": true,
+  "native_linux_validation_pending": true,
+  "full_episode_performance_pending": true,
+  "archive": {
+    "validation.json": "04bad78434da8992674162bb1f9ad56a152903dc254ffc91f798f81dba634050",
+    "synthetic.log": "b3c5b62675fa7e03f0acbf01da599effe8bb721f00bbb525589b2fa10fd6f068",
+    "network_sizes.json": "d713d984325eeb135c4f0a035bbecdc6bc62fca8da9aa4d9cc85a127f7ab5d3c"
+  }
+}
