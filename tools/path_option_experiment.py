@@ -50,7 +50,11 @@ def special_manifest(count=20, seed=940001):
             agents += rng.uniform(-.12, .12, agents.shape)
             boxes = [dict(center=c, size=z) for c, z in zip(centers, sizes)]
             target = [17., 18., 5.]; wait = [17., 3., 3.]
-            velocity = [.30, -.12, .03]
+            # Keep the original speed and reflection law, but move within the
+            # public upper corridor. The old diagonal trajectory grazed the
+            # wall at target clearance .2, inside the planner's .4 clearance,
+            # so the full-trajectory feasibility gate correctly rejected it.
+            velocity = [float(np.hypot(.30, .12)), 0., .03]
             number = group*count+n
             name = f'po_special_{category}_{seed}_{n:04d}'
             trajectory, distance, points = _unknown_trajectory_record(target, velocity, boxes)
@@ -61,7 +65,7 @@ def special_manifest(count=20, seed=940001):
                 target_motion_seed=seed+number, obstacles=boxes, obstacle_count=len(boxes),
                 obstacle_layout_id='custom_aabb_v1', obstacle_layout_sha256=digest(boxes),
                 target_trajectory_sha256=trajectory, target_trajectory_distance=distance,
-                obstacle_family='path_option_challenge_v1', **reach)
+                obstacle_family='path_option_challenge_v2', **reach)
             if category == 'invalid_goal':
                 agent = n % 4; point = centers[0]
             elif category == 'detour':
@@ -70,6 +74,7 @@ def special_manifest(count=20, seed=940001):
                 agent = n % 4; point = [18., 4.+(n % 4)*4., 3.]
             faults[name] = [dict(agent=agent, point=point, start=0, end=400)]
             labels[name] = dict(category=category, affected_agent=agent,
+                challenge_revision='path_option_challenge_v2',
                 qualification='designed challenge; occurrence must be verified from trace',
                 truth_used_only_for_offline_generation=True)
             scenes.append(s)
@@ -82,8 +87,13 @@ def prepare(args):
     options = validate(read(args.options))
     if config['max_steps'] != 400:
         raise ValueError('research plan requires original 400-step episodes')
-    manifests = dict(training=generate(32, 910001, 'train'), development=generate(12, 920001, 'eval'),
-        normal=generate(100, 930001, 'eval'))
+    manifests = {}
+    for name, count, seed, role in (('training', 32, 910001, 'train'),
+                                    ('development', 12, 920001, 'eval'),
+                                    ('normal', 100, 930001, 'eval')):
+        print(f'[path-option prepare] generating {name}: {count} scenes', flush=True)
+        manifests[name] = generate(count, seed, role)
+    print('[path-option prepare] generating special: 5 x 20 scenes', flush=True)
     special, faults, labels = special_manifest()
     manifests['special'] = special
     check_splits(manifests['training']['scenarios'], manifests['development']['scenarios'],

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "source": {
+    "schema": "auv.path_option.source.v1",
+    "sha256": "9a8a64f20f4ab5ced3d507b48bf3254b85d3dab57f7eb4717af42c91021b3d41",
+    "parent_commit": "ce737240fdb5dd81a1e3ab0950c38da3f0897bb5"
+  },
+  "counts": {
+    "training": 32,
+    "development": 12,
+    "normal": 100,
+    "special": 100
+  },
+  "categories": {
+    "invalid_goal": 20,
+    "detour": 20,
+    "new_observation": 20,
+    "distant_goal": 20,
+    "turn_braking": 20
+  },
+  "elapsed_seconds": 653.6383418999903,
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "training_started": false,
+  "checkpoint_restore": false,
+  "normal_generator_ast_unchanged": true,
+  "plan_source_verified": true,
+  "inputs": {
+    "config.json": "6e58ac2ed05b74db881e94a61cf62d1fb01b7230fb7d02c2f2119607e180d361",
+    "development.json": "dd2a3e8108bfaad1bfb8fa417aac124bbe66d59f62f604ab018bc70a4acaafd0",
+    "faults.json": "734fbfe9e536d3f12d028ecebe49ac264ab68b4ef5f13de432f83fc910e746cb",
+    "labels.json": "635078b0345a6479e012e70b617f06d62e6d93b68ef9074dcb3448962a6fd72c",
+    "normal.json": "8dc80f89eb873c5e098892f6961028ea4c9dce7e57c16a6366eb1d9aa2bffe68",
+    "options.json": "e6dce799a198d767a7e5df4e1885df1a9b8cbb1276af8cc4594281af1f636efc",
+    "plan.json": "a674d70e5921e36ac92ba574b05eab8d45344c6eda91cad6caef60a8bb3eff77",
+    "special.json": "1e36f9aa673248c3b1cd75ce74042e07605c6bc8618b1c5f7baf039ac1cfdf24",
+    "training.json": "2aa8dba07a3f6ff4b25b4627b8cd66e6659da7ec8abf2a331c6375e94759ecc0"
+  }
+}

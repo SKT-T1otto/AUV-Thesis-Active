@@ -1,0 +1,49 @@
+test_action_permutation_equivariance (checks.test_path_option.PathOptionContracts) ... ok
+test_all_supplemental_networks_and_rule_selection (checks.test_path_option.PathOptionContracts) ... ok
+test_causal_prefix (checks.test_path_option.PathOptionContracts) ... ok
+test_competing_events_collision_wins (checks.test_path_option.PathOptionContracts) ... ok
+test_config_identity (checks.test_path_option.PathOptionContracts) ... ok
+test_cross_track_is_not_waypoint_distance (checks.test_path_option.PathOptionContracts) ... ok
+test_duplicate_physical_splits_rejected (checks.test_path_option.PathOptionContracts) ... ok
+test_empty_reach_diagnostics_not_calibration (checks.test_path_option.PathOptionContracts) ... ok
+test_forced_action_actor_loss_mask (checks.test_path_option.PathOptionContracts) ... ok
+test_forced_samples_do_not_train_candidate_action_head (checks.test_path_option.PathOptionContracts) ... ok
+test_frozen_plan_rejects_tampered_inputs (checks.test_path_option.PathOptionContracts) ... ok
+test_handoff_phase (checks.test_path_option.PathOptionContracts) ... ok
+test_hazards_monotone_and_bounded (checks.test_path_option.PathOptionContracts) ... ok
+test_inactive_team_return_does_not_train_event_heads (checks.test_path_option.PathOptionContracts) ... ok
+test_inactive_transitions_keep_team_value_but_not_actor_labels (checks.test_path_option.PathOptionContracts) ... ok
+test_incomplete_evaluation_remains_in_report (checks.test_path_option.PathOptionContracts) ... ok
+test_install_preserves_upstream_and_full_path (checks.test_path_option.PathOptionContracts) ... ok
+test_invalid_goal_not_hold (checks.test_path_option.PathOptionContracts) ... ok
+test_mask (checks.test_path_option.PathOptionContracts) ... ok
+test_no_execute_no_files_or_runtime (checks.test_path_option.PathOptionContracts) ... ok
+test_no_feasible_option_does_not_switch_every_step (checks.test_path_option.PathOptionContracts) ... ok
+test_no_path_and_no_history_are_actual_interventions (checks.test_path_option.PathOptionContracts) ... ok
+test_no_ra_zeroes_decision_events (checks.test_path_option.PathOptionContracts) ... ok
+test_old_or_missing_metadata_cannot_restore (checks.test_path_option.PathOptionContracts) ... ok
+test_option_target_discount_once (checks.test_path_option.PathOptionContracts) ... ok
+test_padding_keeps_all_vertices (checks.test_path_option.PathOptionContracts) ... ok
+test_public_sensor_to_policy_integration_without_environment (checks.test_path_option.PathOptionContracts) ... ok
+test_query_connector_does_not_change_physical_positions (checks.test_path_option.PathOptionContracts) ... ok
+test_report_not_convergence_from_loss (checks.test_path_option.PathOptionContracts) ... ok
+test_route_progress_stable (checks.test_path_option.PathOptionContracts) ... ok
+test_rule_ablation_controls_beta (checks.test_path_option.PathOptionContracts) ... ok
+test_rules_hold_and_periodic (checks.test_path_option.PathOptionContracts) ... ok
+test_stable_good_prior_is_not_learning_gain (checks.test_path_option.PathOptionContracts) ... ok
+test_synthetic_update_all_primary_variants (checks.test_path_option.PathOptionContracts) ... ok
+test_termination_gradient_sign (checks.test_path_option.PathOptionContracts) ... ok
+test_training_and_evaluation_execute_same_categorical_policy (checks.test_path_option.PathOptionContracts) ... ok
+test_unknown_endpoint_not_falsely_occupied (checks.test_path_option.PathOptionContracts) ... ok
+test_encoder_call_counts (checks.test_path_option_compute.ComputeEquivalence) ... ok
+test_four_updates_gradients_parameters_adam_and_rng (checks.test_path_option_compute.ComputeEquivalence) ... ok
+test_outputs_all_variants_interventions_modes (checks.test_path_option_compute.ComputeEquivalence) ... ok
+test_sampled_decisions_and_rng_order (checks.test_path_option_compute.ComputeEquivalence) ... ok
+test_all_five_layouts_keep_full_trajectory_gate_and_speed (checks.test_path_option_scenarios.SpecialScenarioContracts) ... ok
+test_feasibility_errors_are_not_swallowed_or_resampled (checks.test_path_option_scenarios.SpecialScenarioContracts) ... ok
+test_original_diagonal_trajectory_is_rejected (checks.test_path_option_scenarios.SpecialScenarioContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 60.569s
+
+OK

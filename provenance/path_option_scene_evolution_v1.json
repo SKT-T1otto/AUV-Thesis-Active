@@ -1,0 +1,76 @@
+{
+  "schema": "auv.path_option.scene_evolution.v1",
+  "parent_source": "e1477269387a1926d5de250e928cd7914db7affd02fc929edb8416005d5866ef",
+  "changes": [
+    {
+      "path": "chapter3_bser/path_option/source.py",
+      "before_sha256": "4fd1727811b46c8dde888e30bfe9d4600ce51456eebc30791fb511c994af8119",
+      "after_sha256": "71a004486dcc6b5a488f02d8f46134a4c2f91480817d3feb3c245222517c8f50",
+      "reason": "Bind source v5 without reusing prior validation identities"
+    },
+    {
+      "path": "checks/test_path_option_scenarios.py",
+      "before_sha256": null,
+      "after_sha256": "dbae86648ca867a70293893dec4cf5c0b3f7c5c7a8dd3348dfa9975bb3687573",
+      "reason": "Independent offline regression, frozen parent or repair documentation"
+    },
+    {
+      "path": "docs/PATH_OPTION_SCENE_FIX_20261112.md",
+      "before_sha256": null,
+      "after_sha256": "d592b8b3f7348ac1ed9cc94e26b074cd60ef6e1d22046226b64c61d1dcc33feb",
+      "reason": "Independent offline regression, frozen parent or repair documentation"
+    },
+    {
+      "path": "provenance/path_option_manifest_v4.json",
+      "before_sha256": null,
+      "after_sha256": "a8d1519c5a72df9d55dbd443c82927b1615380f2a35e421900810c970af03e3a",
+      "reason": "Independent offline regression, frozen parent or repair documentation"
+    },
+    {
+      "path": "tools/build_path_option_scene_manifest.py",
+      "before_sha256": null,
+      "after_sha256": "3550b2b19955c66bd976697535ae09c5ddcbebb6d2395d84dc065eaa7323476c",
+      "reason": "Independent offline regression, frozen parent or repair documentation"
+    },
+    {
+      "path": "tools/path_option_experiment.py",
+      "before_sha256": "257b3de76f53948885dc6e8ecc98c1bb32bd66c696c626b54aa6f5fa3bd19df3",
+      "after_sha256": "ce3d33fb9526b8eef0cfdfff9cf4988c996a1f8958cf14388c12235a4e02ac2c",
+      "reason": "Correct special trajectory direction at unchanged speed; version v2 cases; report preparation progress"
+    },
+    {
+      "path": "tools/validate_path_option.py",
+      "before_sha256": "a7a4a74331f017f576ab476544c59a300a345073a742dfc06773ea92e1df41a9",
+      "after_sha256": "40b56f6ae00449fd50e67643b5f26b8fc30c4253553aa17478fe8a43771a5a9f",
+      "reason": "Add offline scene feasibility regression before native smoke"
+    },
+    {
+      "path": "verification/path_option_scene_fix_v1/20261112_v1/before.json",
+      "before_sha256": null,
+      "after_sha256": "62ae41829bac8fe4654a0b0514cd68c426a1c2726c1ba9626828b44266af05f1",
+      "reason": "Independent offline regression, frozen parent or repair documentation"
+    },
+    {
+      "path": "verification/path_option_scene_fix_v1/20261112_v1/before/chapter3_bser/path_option/source.py",
+      "before_sha256": null,
+      "after_sha256": "4fd1727811b46c8dde888e30bfe9d4600ce51456eebc30791fb511c994af8119",
+      "reason": "Independent offline regression, frozen parent or repair documentation"
+    },
+    {
+      "path": "verification/path_option_scene_fix_v1/20261112_v1/before/tools/path_option_experiment.py",
+      "before_sha256": null,
+      "after_sha256": "257b3de76f53948885dc6e8ecc98c1bb32bd66c696c626b54aa6f5fa3bd19df3",
+      "reason": "Independent offline regression, frozen parent or repair documentation"
+    },
+    {
+      "path": "verification/path_option_scene_fix_v1/20261112_v1/before/tools/validate_path_option.py",
+      "before_sha256": null,
+      "after_sha256": "a7a4a74331f017f576ab476544c59a300a345073a742dfc06773ea92e1df41a9",
+      "reason": "Independent offline regression, frozen parent or repair documentation"
+    }
+  ],
+  "special_evaluation_revision": "path_option_challenge_v2",
+  "runtime_algorithm_reward_training_configuration_changed": false,
+  "feasibility_gate_preserved": true,
+  "special_trajectory_direction_changed": true
+}

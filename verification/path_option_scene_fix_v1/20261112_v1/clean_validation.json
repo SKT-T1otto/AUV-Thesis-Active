@@ -1,0 +1,27 @@
+{
+  "schema": "auv.path_option.validation.v1",
+  "passed": true,
+  "source": {
+    "schema": "auv.path_option.source.v1",
+    "sha256": "9a8a64f20f4ab5ced3d507b48bf3254b85d3dab57f7eb4717af42c91021b3d41",
+    "parent_commit": "ce737240fdb5dd81a1e3ab0950c38da3f0897bb5"
+  },
+  "platform": "Windows",
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "native_smoke_passed": false,
+  "max_complete_updates_per_temporary_model": 4,
+  "automatic_long_training": false,
+  "checkpoint_restore": false,
+  "performance_accepted": false,
+  "synthetic": {
+    "tests": 44,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifacts": {
+    "network_sizes.json": "19eb0ba00ac4f1312420f5dc8410d945564215b658146e62dde9674fc2ba93cb",
+    "synthetic.log": "72c033a440f8a100f77a010fee2a3197e4d5774d9aa8e190a25823693d0bb12e"
+  }
+}
