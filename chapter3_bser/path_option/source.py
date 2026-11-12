@@ -6,7 +6,7 @@ import platform
 from pathlib import Path
 from project_paths import ROOT
 
-MANIFEST = ROOT/'provenance/path_option_manifest_v3.json'
+MANIFEST = ROOT/'provenance/path_option_manifest_v4.json'
 
 
 def legacy_digest(path):

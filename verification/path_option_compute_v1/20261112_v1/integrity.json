@@ -1,0 +1,24 @@
+{
+  "source": {
+    "schema": "auv.path_option.source.v1",
+    "sha256": "e1477269387a1926d5de250e928cd7914db7affd02fc929edb8416005d5866ef",
+    "parent_commit": "27a4053af78887941aa888227a19b991eef9ed8d"
+  },
+  "legacy": {
+    "CH3": {
+      "files": 369,
+      "sha256": "4fac5266b07076be7bcfc98d3d666ccce2924cd5ce8c297aface7651da9dd0ab"
+    },
+    "CH4": {
+      "files": 103,
+      "sha256": "68d0ee17576a95149ba56233e5313bcc6965125eb74b0fa275f3b82b1b142090"
+    },
+    "CH5": {
+      "files": 318,
+      "sha256": "5ef37799850c6ec13a867cc3aef66c788c8513564b650e9ccf3188e2a8d518ed"
+    }
+  },
+  "legacy_byte_unchanged": true,
+  "protected_parent_files_checked": 210,
+  "changed_protected_parent_files": []
+}

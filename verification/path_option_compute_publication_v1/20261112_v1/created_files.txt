@@ -1,0 +1,5 @@
+verification/path_option_compute_publication_v1/20261112_v1/validation.json
+verification/path_option_compute_publication_v1/20261112_v1/synthetic.log
+verification/path_option_compute_publication_v1/20261112_v1/network_sizes.json
+verification/path_option_compute_publication_v1/20261112_v1/publication.json
+verification/path_option_compute_publication_v1/20261112_v1/created_files.txt

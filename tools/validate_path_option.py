@@ -34,8 +34,9 @@ def validate(output, *, require_linux=False, native_smoke=False):
                     raise ValueError('hidden-world attribute in new runtime: '+str(p))
                 if isinstance(n, ast.ImportFrom) and (n.module or '').startswith('tools'):
                     raise ValueError('runtime imports tools')
-        from checks import test_path_option
-        suite = unittest.defaultTestLoader.loadTestsFromModule(test_path_option)
+        from checks import test_path_option, test_path_option_compute
+        suite = unittest.TestSuite(unittest.defaultTestLoader.loadTestsFromModule(module)
+                                   for module in (test_path_option, test_path_option_compute))
         # Fail closed if synthetic tests accidentally try to construct native environments.
         with (out/'synthetic.log').open('x', encoding='utf-8') as f:
             with patch('core.env.mission_env.MissionCoreEnv.__init__', side_effect=AssertionError('native environment forbidden in synthetic suite')):

@@ -88,12 +88,19 @@ class Policy(nn.Module):
 
     def forward(self, b, events):
         z = self.encoder(b)
+        low, high = self.action_goal(b, z)
+        return low, high, self.termination_probability(z, events)
+
+    def action_goal(self, b, z):
+        """Heads independent of event estimates; reuse only within this call."""
         a = self.action(b['actions'])
         logits = torch.einsum('bgd,bad->bga', z, a)/math.sqrt(z.shape[-1])
         low = masked_distribution(logits, b['action_mask'][:, None].expand_as(logits))
         high = self.goal(z).squeeze(-1)
-        beta = torch.sigmoid(self.termination(torch.cat((z, events.detach()), -1))).squeeze(-1)
-        return low, high, beta
+        return low, high
+
+    def termination_probability(self, z, events):
+        return torch.sigmoid(self.termination(torch.cat((z, events.detach()), -1))).squeeze(-1)
 
 
 class Critic(nn.Module):
@@ -108,6 +115,10 @@ class Critic(nn.Module):
 
     def forward(self, b, actions=None, event_relative=None):
         z = self.encoder(b)
+        return self.forward_encoded(b, z, actions, event_relative)
+
+    def forward_encoded(self, b, z, actions=None, event_relative=None):
+        """Evaluate heads with a call-local encoding, never across an update."""
         a = b['actions'] if actions is None else actions
         if a.ndim == 3:
             a = a[:, None].expand(-1, z.shape[1], -1, -1)

@@ -36,17 +36,29 @@ class Learner:
         self.updates = 0
         self.evaluation_only = False
 
-    def distributions(self, batch, rows, *, target=False):
+    def distributions(self, batch, rows, *, target=False, _critic_encodings=None):
         nets = self.target_critics if target else self.critics
         policy = self.target_policy if target else self.policy
         with torch.no_grad():
-            qs, hazards = zip(*(c(batch) for c in nets))
+            if _critic_encodings is None:
+                outputs = [c(batch) for c in nets]
+            else:
+                outputs = [c.forward_encoded(batch, z) for c, z in zip(nets, _critic_encodings)]
+            qs, hazards = zip(*outputs)
         q = torch.stack(qs).min(0).values
         cdf = torch.stack([first_event_cdf(h) for h in hazards])
         reach = cdf[..., -1, 0].min(0).values
         risk = cdf[..., -1, 1].max(0).values
-        zeros = torch.zeros((*q.shape[:2], 2))
-        low0, _, _ = policy(batch, zeros)
+        # Goal scores also backpropagate through event expectations. Preserve
+        # the two original actor graphs/accumulation order when gradients are
+        # enabled: merging them perturbs near-zero gradients amplified by Adam.
+        # Inference/targets have no graph and safely reuse one policy encoding.
+        if torch.is_grad_enabled():
+            low0, _, _ = policy(batch, torch.zeros((*q.shape[:2], 2)))
+        else:
+            z = policy.encoder(batch)
+            low, high = policy.action_goal(batch, z)
+            low0 = low
         # The action distribution used for values includes deployed forced overrides.
         force = torch.tensor([r['forced'] for r in rows], dtype=torch.long)
         forced = force >= 0
@@ -57,7 +69,10 @@ class Learner:
             events = torch.zeros_like(events)
         elif self.variant == 'risk_only':
             events = torch.stack((events[..., 0]*0, events[..., 1]), -1)
-        low, high, beta = policy(batch, events)
+        if torch.is_grad_enabled():
+            low, high, beta = policy(batch, events)
+        else:
+            beta = policy.termination_probability(z, events)
         low = torch.where(forced[:, None, None], hot[:, None], low)
         high = high + self.o['reach_weight']*events[..., 0] - self.o['risk_weight']*events[..., 1]
         mu = masked_distribution(high, batch['goal_mask'])
@@ -107,13 +122,18 @@ class Learner:
         rewards = torch.tensor([r['reward'] for r in rows], dtype=torch.float32)
         done = torch.tensor([r['done'] for r in rows], dtype=torch.float32)
         with torch.no_grad():
-            lp, mu, beta, nq, _, _, _ = self.distributions(nb, nexts, target=True)
+            # The second target query changes only the event region. Reuse
+            # encodings before any optimizer step, including all route tokens.
+            target_encodings = [c.encoder(nb) for c in self.target_critics]
+            lp, mu, beta, nq, _, _, _ = self.distributions(
+                nb, nexts, target=True, _critic_encodings=target_encodings)
             qo = (lp*nq).sum(-1)
             target_q = option_return(rewards, done, qo[:, 0], (mu*qo).sum(-1), beta[:, 0], self.o['gamma'])
             # Keep the ORIGINAL event region fixed across the transition.
             query = np.array([(r['event_target']-r['next']['position'])/r['next']['bounds'] for r in rows])
             query = torch.tensor(query, dtype=torch.float32)[:, None].expand(-1, 8, -1)
-            out = [c(nb, event_relative=query)[1] for c in self.target_critics]
+            out = [c.forward_encoded(nb, z, event_relative=query)[1]
+                   for c, z in zip(self.target_critics, target_encodings)]
             events = torch.stack([first_event_cdf(x)[:, 0] for x in out])
             # Avoid mixing min/max hazards across individual actions before expectation.
             pred = torch.stack(((events[..., 0]*lp[None, :, 0, :, None]).sum(2).min(0).values,
@@ -138,10 +158,10 @@ class Learner:
         nn.utils.clip_grad_norm_(self.critics.parameters(), 10.)
         self.critic_optimizer.step()
         # Enumerated categorical actions: no nearest-neighbour straight-through gradient.
-        with torch.no_grad():
-            _, _, _, q, reach, risk, _ = self.distributions(b, states)
         self.actor_optimizer.zero_grad()
-        lp, mu, beta, _, _, _, _ = self.distributions(b, states)
+        # Recompute after the critic step, then reuse its detached values for
+        # actor utility instead of repeating the identical distribution query.
+        lp, mu, beta, q, reach, risk, _ = self.distributions(b, states)
         utility = q.detach()
         if self.variant != 'D':
             utility = utility-self.o['risk_weight']*risk.detach()

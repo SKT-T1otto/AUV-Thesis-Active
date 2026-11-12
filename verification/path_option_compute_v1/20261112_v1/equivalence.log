@@ -1,0 +1,9 @@
+test_encoder_call_counts (checks.test_path_option_compute.ComputeEquivalence) ... ok
+test_four_updates_gradients_parameters_adam_and_rng (checks.test_path_option_compute.ComputeEquivalence) ... ok
+test_outputs_all_variants_interventions_modes (checks.test_path_option_compute.ComputeEquivalence) ... ok
+test_sampled_decisions_and_rng_order (checks.test_path_option_compute.ComputeEquivalence) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 38.234s
+
+OK

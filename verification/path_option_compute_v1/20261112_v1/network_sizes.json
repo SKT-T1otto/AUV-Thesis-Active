@@ -1,0 +1,37 @@
+[
+  {
+    "variant": "A",
+    "policy_parameters": 122178,
+    "twin_critic_parameters": 257090,
+    "synthetic_decision_seconds": 0.007454380000126548,
+    "scope": "synthetic single-agent 8-goal query; not end-to-end environment throughput"
+  },
+  {
+    "variant": "B",
+    "policy_parameters": 231298,
+    "twin_critic_parameters": 475330,
+    "synthetic_decision_seconds": 0.0037034599983599035,
+    "scope": "synthetic single-agent 8-goal query; not end-to-end environment throughput"
+  },
+  {
+    "variant": "C",
+    "policy_parameters": 122178,
+    "twin_critic_parameters": 257090,
+    "synthetic_decision_seconds": 0.008436959999380633,
+    "scope": "synthetic single-agent 8-goal query; not end-to-end environment throughput"
+  },
+  {
+    "variant": "D",
+    "policy_parameters": 122178,
+    "twin_critic_parameters": 257090,
+    "synthetic_decision_seconds": 0.007887399999890476,
+    "scope": "synthetic single-agent 8-goal query; not end-to-end environment throughput"
+  },
+  {
+    "variant": "fixed_query",
+    "policy_parameters": 122178,
+    "twin_critic_parameters": 257090,
+    "synthetic_decision_seconds": 0.007801279998966492,
+    "scope": "synthetic single-agent 8-goal query; not end-to-end environment throughput"
+  }
+]

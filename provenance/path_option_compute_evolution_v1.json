@@ -1,0 +1,88 @@
+{
+  "schema": "auv.path_option.compute_evolution.v1",
+  "parent_source": "cf81d42a92a46377d520f5e244a0cb424bc81cc63ead9fc819014c403db552ff",
+  "parent_manifest_sha256": "cf62081d4659e88d35d93a09afd6752048becde1f5ce17e1a0dab40f37b358e3",
+  "changes": [
+    {
+      "path": "chapter3_bser/path_option/learner.py",
+      "before_sha256": "e56f0d6300412cf928c0bdcaf8c3b7722dc2d346b2d3ac1155b509c1d825b12e",
+      "after_sha256": "cc73b792bdfb2dcf4c061a1dbe6a8f44d1c5fa8d981078391e45bb4eaaeee112",
+      "reason": "Reuse no-grad encodings and post-critic values; preserve actor gradient graphs"
+    },
+    {
+      "path": "chapter3_bser/path_option/networks.py",
+      "before_sha256": "b06794bcf1fff5ef65bc6652af6fbd9c61f473fa1cdafe3276a2495099882647",
+      "after_sha256": "432b61335684299b45e91eaca5228befaf04698dc7ca2428909773cb4fa4dc15",
+      "reason": "Expose call-local policy and critic heads without changing modules or parameters"
+    },
+    {
+      "path": "chapter3_bser/path_option/source.py",
+      "before_sha256": "c1a96d54ecb18406170aaaf0ec908e8b2477e28a5f04f121eed42a68fc065740",
+      "after_sha256": "4fd1727811b46c8dde888e30bfe9d4600ce51456eebc30791fb511c994af8119",
+      "reason": "Bind current code to new v4 compute identity; keep old manifests and evidence frozen"
+    },
+    {
+      "path": "checks/test_path_option_compute.py",
+      "before_sha256": null,
+      "after_sha256": "743a9bb45d139ac61087b8bf337e891644b2703267b06a3c283a0ee0def6e1f1",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    },
+    {
+      "path": "docs/PATH_OPTION_COMPUTE_20261112.md",
+      "before_sha256": null,
+      "after_sha256": "0c43455a5c2308c306341a4322c88a964ffdc56d1ded3439294beabc3f097638",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    },
+    {
+      "path": "provenance/path_option_manifest_v3.json",
+      "before_sha256": null,
+      "after_sha256": "cf62081d4659e88d35d93a09afd6752048becde1f5ce17e1a0dab40f37b358e3",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    },
+    {
+      "path": "tools/benchmark_path_option_compute.py",
+      "before_sha256": null,
+      "after_sha256": "61bf26246d764a1f63f33b3f66eeee879ed4d210c0497e21cf9d49258359bc4b",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    },
+    {
+      "path": "tools/build_path_option_compute_manifest.py",
+      "before_sha256": null,
+      "after_sha256": "a6777f469ef6610e0e782894348ac949ec7ca25e161b211035adb1b2e1c9ad91",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    },
+    {
+      "path": "tools/validate_path_option.py",
+      "before_sha256": "7baea80a6f44f7ad1048dde1242826bfb0a16f6c9d0be5a87f1aedf27d6c3d5d",
+      "after_sha256": "a7a4a74331f017f576ab476544c59a300a345073a742dfc06773ea92e1df41a9",
+      "reason": "Include independent frozen-parent compute equivalence in current validation"
+    },
+    {
+      "path": "verification/path_option_compute_v1/20261112_v1/before.json",
+      "before_sha256": null,
+      "after_sha256": "0ba3a87cd8b408e7954df89aab4cce5961ba38a730036ff2b1924d558e25dded",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    },
+    {
+      "path": "verification/path_option_compute_v1/20261112_v1/before/chapter3_bser/path_option/learner.py",
+      "before_sha256": null,
+      "after_sha256": "e56f0d6300412cf928c0bdcaf8c3b7722dc2d346b2d3ac1155b509c1d825b12e",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    },
+    {
+      "path": "verification/path_option_compute_v1/20261112_v1/before/chapter3_bser/path_option/networks.py",
+      "before_sha256": null,
+      "after_sha256": "b06794bcf1fff5ef65bc6652af6fbd9c61f473fa1cdafe3276a2495099882647",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    },
+    {
+      "path": "verification/path_option_compute_v1/20261112_v1/before/chapter3_bser/path_option/source.py",
+      "before_sha256": null,
+      "after_sha256": "c1a96d54ecb18406170aaaf0ec908e8b2477e28a5f04f121eed42a68fc065740",
+      "reason": "Bounded compute comparison, frozen reference, reproduction or documentation"
+    }
+  ],
+  "algorithm_reward_training_configuration_changed": false,
+  "preexisting_pure_marl_dispatch_untouched": true,
+  "evidence_note": "Outputs/losses/gradients/Adam/RNG compared to frozen v3; native validation is separate"
+}

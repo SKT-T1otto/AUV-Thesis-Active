@@ -1,0 +1,27 @@
+{
+  "staged_runtime_tree": "eb5eddb3d5a93586185aae01a1d6504b707f2476",
+  "source": {
+    "schema": "auv.path_option.source.v1",
+    "sha256": "e1477269387a1926d5de250e928cd7914db7affd02fc929edb8416005d5866ef",
+    "parent_commit": "27a4053af78887941aa888227a19b991eef9ed8d"
+  },
+  "clean_checkout_passed": true,
+  "synthetic": {
+    "tests": 41,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "long_training": false,
+  "checkpoint_restore": false,
+  "scope": "Exact staged git-tree archive; preexisting uncommitted pure-MARL changes and result assets excluded",
+  "created_files": [
+    "verification/path_option_compute_publication_v1/20261112_v1/validation.json",
+    "verification/path_option_compute_publication_v1/20261112_v1/synthetic.log",
+    "verification/path_option_compute_publication_v1/20261112_v1/network_sizes.json",
+    "verification/path_option_compute_publication_v1/20261112_v1/publication.json",
+    "verification/path_option_compute_publication_v1/20261112_v1/created_files.txt"
+  ]
+}
