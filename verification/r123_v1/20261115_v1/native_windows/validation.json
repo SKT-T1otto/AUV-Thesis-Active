@@ -1,0 +1,39 @@
+{
+  "schema": "auv.r123.validation.v1",
+  "source": {
+    "schema": "auv.r123.source.v1",
+    "sha256": "d79569958007f0f3ad4a1ebc662047d80a01f2d75a11aae7007ffbe01e2bb186",
+    "parent_commit": "18ea616ae256d2bc93f1bd640fe6bd46b5af8180"
+  },
+  "platform": "Windows",
+  "passed": true,
+  "environment_initializations": 4,
+  "physical_steps": 128,
+  "native_smoke_passed": true,
+  "max_complete_updates_per_temporary_model": 4,
+  "automatic_long_training": false,
+  "checkpoint_restore": false,
+  "performance_accepted": false,
+  "synthetic": {
+    "tests": 66,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifacts": {
+    "episode_00.json": "61a3a9344ed9ab4a029ebdb8a911f0efe081c6f8b67cd53773ab7fa6021466fd",
+    "episode_01.json": "10345f3f978cc49e4fcecd764f57ef808f100d69d25282d302602ba971ea68ed",
+    "episode_02.json": "d7a21a1d8394dbeec166971458d3c01d4b3c47b70022b72fc306899cef6f2ff5",
+    "episode_03.json": "0eb0b0ee9c90343389aa5bfd3b1917cc4b13a7463660c3e9bf143e6cfe6b882b",
+    "initialization_00.json": "f563cb927bd1f0cbbdaa6877cca198aba5d0f5ee7af15581bc549c8aa220fb37",
+    "initialization_01.json": "a9051fa49b93ee9ab74b72811fece83cc65d0dd08b2631866927b049b9f3f502",
+    "initialization_02.json": "5ced329886e72d336d61f5ad239a0df609d5084fcb8a93adb5ad7751c91e2002",
+    "initialization_03.json": "c3d29dadaf483d641d829d81c9de3619df30099e98a188f7ea77b58c80f63778",
+    "metric_00.json": "227188a38379ae975b90cebe1f6ffde20b945da86622552029e870010eb93852",
+    "metric_01.json": "8210d2aaafb8aa308e270333ba450472fca039cff5b59710734c44dcfa0e8991",
+    "metric_02.json": "acdd9f9b00af8dcabde93c2a3d6b2c0feabe166ab414919ccc9d4ebc47dd8afc",
+    "metric_03.json": "32be326c29a8a67dabf37f2f6a1ae8dc3e165e5e6e8f4e5dd300099dd72596a6",
+    "network_sizes.json": "74d37be98615981c2fdf6ff88935af7c6580d570713c9818a21a63741bcbd0d9",
+    "synthetic.log": "4ffcafdda6514a41dcbbceade0197ae43d145c83e445f867b807ed4b2bb36f3b"
+  }
+}

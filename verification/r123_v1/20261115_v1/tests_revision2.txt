@@ -1,0 +1,52 @@
+test_ablation_switches_change_exactly_one_component (checks.test_r123.R123Contracts) ... ok
+test_action_sampling_uses_selected_goals_own_bank (checks.test_r123.R123Contracts) ... ok
+test_actions_execute_selected_goal_bank_and_install_same_route (checks.test_r123.R123Contracts) ... ok
+test_all_arms_four_complete_updates_finite_and_beta_gradient_disabled (checks.test_r123.R123Contracts) ... ok
+test_arrival_requires_same_public_free_and_clearance_as_label (checks.test_r123.R123Contracts) ... ok
+test_budget_cutoff_does_not_fake_environment_done (checks.test_r123.R123Contracts) ... ok
+test_discovery_and_handoff_preempt_recovery (checks.test_r123.R123Contracts) ... ok
+test_evaluation_preserves_all_learning_and_rng_state (checks.test_r123.R123Contracts) ... ok
+test_executor_retries_root_without_resetting_recovery_budget (checks.test_r123.R123Contracts) ... ERROR
+test_forced_action_is_per_goal (checks.test_r123.R123Contracts) ... ok
+test_network_shapes_and_goal_conditional_masks (checks.test_r123.R123Contracts) ... ok
+test_new_d2_task_is_adopted_only_after_release (checks.test_r123.R123Contracts) ... ok
+test_no_r1_retains_original_shared_library (checks.test_r123.R123Contracts) ... ok
+test_no_r2_is_only_arm_with_learned_beta (checks.test_r123.R123Contracts) ... ok
+test_preview_does_not_generate_files_or_environment (checks.test_r123.R123Contracts) ... ok
+test_progress_timer_not_reset_by_recommitting_same_goal (checks.test_r123.R123Contracts) ... ok
+test_r1_masks_probes_and_keeps_bounded_residuals (checks.test_r123.R123Contracts) ... ok
+test_r2_cannot_terminate_continuing_task_at_ten_steps (checks.test_r123.R123Contracts) ... ok
+test_r3_recovery_arrival_returns_to_original_task (checks.test_r123.R123Contracts) ... ok
+test_r3_timeout_is_not_extended_by_goal_recommit (checks.test_r123.R123Contracts) ... ok
+test_task_discount_unchanged (checks.test_r123.R123Contracts) ... ok
+test_task_release_waits_without_fake_success_or_probe (checks.test_r123.R123Contracts) ... ok
+
+======================================================================
+ERROR: test_executor_retries_root_without_resetting_recovery_budget (checks.test_r123.R123Contracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\gym\code\WORKSPACE\AUV-Thesis-Active\checks\test_r123.py", line 183, in test_executor_retries_root_without_resetting_recovery_budget
+    state.step=2;task.step=2;r._cached=None;rows=observe(r,state)
+  File "E:\gym\code\WORKSPACE\AUV-Thesis-Active\checks\test_r123.py", line 57, in observe
+    return r.observe()
+  File "E:\gym\code\WORKSPACE\AUV-Thesis-Active\chapter3_bser\r123\runtime.py", line 316, in observe
+    packet = self.encoder.build(state, self.env.get_task_state(), self.observations, original, geometry,
+  File "E:\gym\code\WORKSPACE\AUV-Thesis-Active\chapter3_bser\reach_avoid\features.py", line 56, in build
+    raise ValueError('public handoff delivery clock mismatch')
+ValueError: public handoff delivery clock mismatch
+
+----------------------------------------------------------------------
+Ran 22 tests in 6.319s
+
+FAILED (errors=1)
+{
+  "executed": false,
+  "requested": {
+    "command": "prepare",
+    "stage": "screen",
+    "config": "configs/b2.json",
+    "options": "configs/r123_learning_v1.json",
+    "output": "unused",
+    "execute": false
+  }
+}

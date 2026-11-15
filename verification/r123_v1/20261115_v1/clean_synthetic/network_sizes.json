@@ -1,0 +1,22 @@
+[
+  {
+    "arm": "full",
+    "policy": 122178,
+    "twin_critics": 257090
+  },
+  {
+    "arm": "no_r1",
+    "policy": 122178,
+    "twin_critics": 257090
+  },
+  {
+    "arm": "no_r2",
+    "policy": 122178,
+    "twin_critics": 257090
+  },
+  {
+    "arm": "no_r3",
+    "policy": 122178,
+    "twin_critics": 257090
+  }
+]

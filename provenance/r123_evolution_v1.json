@@ -1,0 +1,31 @@
+{
+  "schema": "auv.r123.evolution.v1",
+  "parent_commit": "18ea616ae256d2bc93f1bd640fe6bd46b5af8180",
+  "parent_manifest": "provenance/path_option_manifest_v5.json",
+  "parent_source_sha256": "9a8a64f20f4ab5ced3d507b48bf3254b85d3dab57f7eb4717af42c91021b3d41",
+  "authorization": "User explicitly requests R123 implementation, independently attributable ablations and direct GitHub push to SKT-T1otto/AUV-Thesis-Active.",
+  "algorithm_changed": [
+    "R1 goal-conditioned tracking action domain with bounded residual choices",
+    "R2 task-progress termination replacing learned beta except no_r2",
+    "R3 task ownership, bounded recovery and root-task return/release except no_r3"
+  ],
+  "common_correctness": [
+    "public pose/clearance/velocity arrival predicate",
+    "invalidate planning caches when upstream D2 guidance refreshes",
+    "replay actual action from selected goal-conditioned bank",
+    "evaluation preserves training RNG and complete learning state"
+  ],
+  "unchanged": [
+    "legacy source bytes and historical evidence",
+    "environment 4 agents, 28D observations, 3D acceleration, 124D task state",
+    "team reward and gamma=0.95",
+    "physics, target motion, disturbances and discovery/handoff/capture success semantics",
+    "OLD map and public D2 planning implementation",
+    "attention encoders, network parameter dimensions, event heads, optimizers and update schedule"
+  ],
+  "old_weights_allowed": false,
+  "automatic_long_training": false,
+  "native_mechanism_limit": {"episodes": 4, "steps_each": 32, "updates": 0},
+  "maximum_complete_updates_per_temporary_model": 4,
+  "performance_claim": false
+}

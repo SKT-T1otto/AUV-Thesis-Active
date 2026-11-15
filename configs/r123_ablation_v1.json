@@ -1,0 +1,75 @@
+{
+  "schema": "auv.task_progress.r123.v1",
+  "arms": {
+    "full": {
+      "r1": true,
+      "r2": true,
+      "r3": true
+    },
+    "no_r1": {
+      "r1": false,
+      "r2": true,
+      "r3": true
+    },
+    "no_r2": {
+      "r1": true,
+      "r2": false,
+      "r3": true
+    },
+    "no_r3": {
+      "r1": true,
+      "r2": true,
+      "r3": false
+    }
+  },
+  "rule_reference": {
+    "r1": true,
+    "r2": true,
+    "r3": true
+  },
+  "control": {
+    "residual_bound": 0.15,
+    "stagnation_steps": 30,
+    "progress_distance": 0.025,
+    "max_recoveries": 2,
+    "recovery_budget_steps": 150,
+    "request_interval": 10
+  },
+  "screen": {
+    "arms": [
+      "full"
+    ],
+    "seeds": [
+      20261115
+    ],
+    "max_episodes": 20,
+    "step_cap": 8000
+  },
+  "attribution": {
+    "arms": [
+      "full",
+      "no_r1",
+      "no_r2",
+      "no_r3"
+    ],
+    "seeds": [
+      20261115,
+      20261116,
+      20261117
+    ],
+    "steps_per_job": 20000
+  },
+  "common": {
+    "map": "OLD",
+    "gamma": 0.95,
+    "task_reward": "team_mean_v1",
+    "history": 16,
+    "width": 64,
+    "heads": 4,
+    "layers": 2,
+    "batch_size": 32,
+    "replay_size": 12000
+  },
+  "rule_reference_required": true,
+  "source_matched_linux_validation_required": true
+}
