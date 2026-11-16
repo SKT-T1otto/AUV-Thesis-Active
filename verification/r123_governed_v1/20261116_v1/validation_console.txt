@@ -1,0 +1,33 @@
+[repair validation] case=1/2 variant=governed release_probe=True cap=32 updates=0
+[r123 governed rule governed] case=0 step=25/32 updates=0
+{
+  "schema": "auv.r123.governed.validation.v1",
+  "source": {
+    "schema": "auv.r123.governed.source.v1",
+    "sha256": "9540687de91703bfc84d9aee490ad3797026a440fc2d899d1c34c0e7b52e1706",
+    "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126"
+  },
+  "platform": "Windows",
+  "passed": false,
+  "native_smoke_passed": false,
+  "environment_initializations": 1,
+  "physical_steps": 32,
+  "native_training_updates": 0,
+  "checkpoint_restore": false,
+  "automatic_long_training": false,
+  "performance_accepted": false,
+  "max_complete_updates_per_temporary_model": 4,
+  "synthetic": {
+    "tests": 95,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\tools\\validate_r123_governed.py\", line 58, in validate\n    write(out/f'episode_{n:02d}.json',raw);write(out/f'metric_{n:02d}.json',m)\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\chapter3_bser\\path_option\\source.py\", line 79, in write\n    json.dump(value, f, ensure_ascii=False, indent=2, allow_nan=False)\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\json\\__init__.py\", line 179, in dump\n    for chunk in iterable:\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\json\\encoder.py\", line 431, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\json\\encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\json\\encoder.py\", line 438, in _iterencode\n    o = _default(o)\n  File \"D:\\anaconda\\anaconda\\envs\\AUV\\lib\\json\\encoder.py\", line 179, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\nTypeError: Object of type int64 is not JSON serializable\n",
+  "artifacts": {
+    "episode_00.json": "708cf374cd8ffb093aa3fb6cc3dcec942661402a790626a3fb57c256bf6b48d2",
+    "initialization_00.json": "fd37bfab2bae049a5ddf60c12078a10a9779cb8de9a925c646237fd33b091242",
+    "metric_00.json": "d467550cb486759413e98b62c1bc2b63312aa1b549df27732384bf11e7be1c50",
+    "synthetic.log": "35b61a593ce7a9c63c5cdd1b1d50d7d4442c3e9643403c0d2d21910f7952906d"
+  }
+}

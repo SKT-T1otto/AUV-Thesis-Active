@@ -1,0 +1,27 @@
+{
+  "schema": "auv.r123.governed.validation.v1",
+  "source": {
+    "schema": "auv.r123.governed.source.v1",
+    "sha256": "b604b90bc7586e4e5198587f17b77c7a4d57ab2b406a31f52b724237c37247f6",
+    "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126"
+  },
+  "platform": "Windows",
+  "passed": true,
+  "native_smoke_passed": false,
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "native_training_updates": 0,
+  "checkpoint_restore": false,
+  "automatic_long_training": false,
+  "performance_accepted": false,
+  "max_complete_updates_per_temporary_model": 4,
+  "synthetic": {
+    "tests": 96,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifacts": {
+    "synthetic.log": "40cb94a1a433ecbf2dcb606ed1f29cd28d7c97758b2f041f8fb58fbca56d49df"
+  }
+}

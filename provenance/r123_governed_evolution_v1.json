@@ -1,0 +1,13 @@
+{
+  "schema": "auv.r123.governed.evolution.v1",
+  "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126",
+  "authorization": "User requests correction in Windows and push to GitHub; user will execute Linux experiment.",
+  "changes": ["construct tracking base using existing safety speed caps", "project public-model next velocity and invert dynamics under real acceleration limits", "retain residual domain and all safety checks", "mark only-brake fallback as forced", "record per-candidate rejection diagnostics"],
+  "active_recovery": false,
+  "training": false,
+  "weights_loaded": false,
+  "reward_physics_success_map_networks_changed": false,
+  "native_checks": {"episodes": 2, "steps_each": 32},
+  "linux_full_rule_evaluation": {"episodes": 6, "step_cap": 2400, "automatically_run_by_agent": false},
+  "performance_accepted": false
+}

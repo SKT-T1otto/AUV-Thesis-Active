@@ -1,0 +1,28 @@
+{
+  "protected": {
+    "files": 413,
+    "changed": []
+  },
+  "inputs": {
+    "files": 2,
+    "changed": []
+  },
+  "legacy": {
+    "CH3": {
+      "files": 369,
+      "changed": [],
+      "added": []
+    },
+    "CH4": {
+      "files": 103,
+      "changed": [],
+      "added": []
+    },
+    "CH5": {
+      "files": 318,
+      "changed": [],
+      "added": []
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "auv.r123.governed.evolution.v2",
+  "candidate_v1_sha256": "9540687de91703bfc84d9aee490ad3797026a440fc2d899d1c34c0e7b52e1706",
+  "change": "Convert NumPy scalar motion counters to JSON-native scalars before writing metrics; add serialization regression.",
+  "controller_algorithm_changed_since_v1": false,
+  "candidate_evidence_relabeling_allowed": false,
+  "native_initializations_used_by_candidate_v1": 1,
+  "native_physical_steps_used_by_candidate_v1": 32,
+  "training": false
+}

@@ -1,0 +1,12 @@
+{
+  "created_files": [
+    "verification/r123_rule_comparison_audit/20261116_v1/REPORT.md",
+    "verification/r123_rule_comparison_audit/20261116_v1/analysis.json",
+    "verification/r123_rule_comparison_audit/20261116_v1/before.json",
+    "verification/r123_rule_comparison_audit/20261116_v1/created_files.json",
+    "verification/r123_rule_comparison_audit/20261116_v1/immutability.json"
+  ],
+  "native_environments": 0,
+  "training_updates": 0,
+  "checkpoint_loads": 0
+}

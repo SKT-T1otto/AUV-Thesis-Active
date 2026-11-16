@@ -1,0 +1,10 @@
+{
+  "source": {
+    "schema": "auv.r123.governed.source.v1",
+    "sha256": "b604b90bc7586e4e5198587f17b77c7a4d57ab2b406a31f52b724237c37247f6",
+    "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126"
+  },
+  "tree": "2ebae78925e0a2dfcc868b1e58ff69fbe87a3d82",
+  "archive_sha256": "f3af43f5b82043629056cc1ac074516a2bca3866d97e68e25e44dfe9d0ff7d09",
+  "unrelated_user_changes_excluded": true
+}

@@ -1,0 +1,71 @@
+{
+  "source": {
+    "schema": "auv.r123.governed.source.v1",
+    "sha256": "b604b90bc7586e4e5198587f17b77c7a4d57ab2b406a31f52b724237c37247f6",
+    "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126"
+  },
+  "final_native": {
+    "schema": "auv.r123.governed.validation.v1",
+    "source": {
+      "schema": "auv.r123.governed.source.v1",
+      "sha256": "b604b90bc7586e4e5198587f17b77c7a4d57ab2b406a31f52b724237c37247f6",
+      "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126"
+    },
+    "platform": "Windows",
+    "passed": true,
+    "native_smoke_passed": true,
+    "environment_initializations": 2,
+    "physical_steps": 64,
+    "native_training_updates": 0,
+    "checkpoint_restore": false,
+    "automatic_long_training": false,
+    "performance_accepted": false,
+    "max_complete_updates_per_temporary_model": 4,
+    "synthetic": {
+      "tests": 96,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "artifacts": {
+      "episode_00.json": "708cf374cd8ffb093aa3fb6cc3dcec942661402a790626a3fb57c256bf6b48d2",
+      "episode_01.json": "3346ab6770cb5106bb06756c746d8bda7c429127ba5be1e583c4635788689254",
+      "initialization_00.json": "fd37bfab2bae049a5ddf60c12078a10a9779cb8de9a925c646237fd33b091242",
+      "initialization_01.json": "52664be6ff4963dfb680739114de3b38d3fa4361c29606c7c21e445ad4f497b9",
+      "metric_00.json": "acb39d8663fb396aadbbd2da6d44ff15b1df87f0b27a70f49ecbabf2f70f674d",
+      "metric_01.json": "574457e2c04fd26b6361c3350accc84577d3b46acbabffd0c2d09260a919027b",
+      "synthetic.log": "9b7f565c6e6d859ba3974ad55b2bb2118dc163f364c62c6b3fb610c7caee4f31"
+    }
+  },
+  "clean": {
+    "schema": "auv.r123.governed.validation.v1",
+    "source": {
+      "schema": "auv.r123.governed.source.v1",
+      "sha256": "b604b90bc7586e4e5198587f17b77c7a4d57ab2b406a31f52b724237c37247f6",
+      "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126"
+    },
+    "platform": "Windows",
+    "passed": true,
+    "native_smoke_passed": false,
+    "environment_initializations": 0,
+    "physical_steps": 0,
+    "native_training_updates": 0,
+    "checkpoint_restore": false,
+    "automatic_long_training": false,
+    "performance_accepted": false,
+    "max_complete_updates_per_temporary_model": 4,
+    "synthetic": {
+      "tests": 96,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "artifacts": {
+      "synthetic.log": "40cb94a1a433ecbf2dcb606ed1f29cd28d7c97758b2f041f8fb58fbca56d49df"
+    }
+  },
+  "local_task_total_native_initializations": 3,
+  "local_task_total_native_steps": 96,
+  "training_updates": 0,
+  "full_linux_evaluation_performed": false
+}

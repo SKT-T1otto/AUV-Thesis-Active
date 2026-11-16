@@ -1,0 +1,22 @@
+{
+  "input_unchanged": true,
+  "source_manifest_verified": true,
+  "legacy": {
+    "CH3": {
+      "files": 369,
+      "changed": [],
+      "added": []
+    },
+    "CH4": {
+      "files": 103,
+      "changed": [],
+      "added": []
+    },
+    "CH5": {
+      "files": 318,
+      "changed": [],
+      "added": []
+    }
+  },
+  "passed": true
+}

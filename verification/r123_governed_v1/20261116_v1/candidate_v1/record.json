@@ -1,0 +1,17 @@
+{
+  "source_sha256": "9540687de91703bfc84d9aee490ad3797026a440fc2d899d1c34c0e7b52e1706",
+  "files": {
+    "chapter3_bser/r123_governed/__init__.py": "2c545ecbe211542ef4727c8f4747e7c078ca5241de41f61b9e2ba4ec1122b386",
+    "chapter3_bser/r123_governed/control.py": "83327b7bb66fa04efa4e35e2abf35bb1c56acb799c2372995153a0da128e64b3",
+    "chapter3_bser/r123_governed/runtime.py": "de605a10a8598b0156f51b2196fd9232944a563d72090c7f4b05186a6a455a7f",
+    "chapter3_bser/r123_governed/source.py": "133b849c4044d857264f0edbc6c9a5a2f26a57f3accea1434976d959b0860421",
+    "chapter3_bser/r123_governed/workflow.py": "79a413bd4103d8c6c7eef42b0bf63c9b7f4c176769e4de357513203ce442ca01",
+    "checks/test_r123_governed.py": "a89d331905935cb0d1d861cf413aab169319e2a2a000479e99638a51271d5efd",
+    "docs/R123_GOVERNED_20261116.md": "010826d12f8e33286ba956a346617203ba9d725ba99626b17877db5e3e222c45",
+    "scripts/r123_governed_linux.sh": "1531c4b910457fd96811b05e1ad0188ff4b19685ebe285cb8a10c2ec93d978b3",
+    "tools/r123_governed_experiment.py": "f6f38cca4fd68c6bb4c90dc465f1169c9b1a41c96ec2245d3e9d1c6e689812bf",
+    "tools/validate_r123_governed.py": "ee31e686d5c331c4417d6a4c07fd5acd5295a9e0eadf837ee9ef4f01dc7bea36",
+    "provenance/r123_governed_manifest_v1.json": "9dc836f78f817f413520e7aa3c625a4b4daed3dd9e5038c224596261e72ef4cb"
+  },
+  "reason": "retain candidate before JSON scalar metric correction"
+}
