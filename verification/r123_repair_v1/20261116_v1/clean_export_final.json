@@ -1,0 +1,13 @@
+{
+  "source": {
+    "schema": "auv.r123.rule_repair.source.v1",
+    "sha256": "3323d95151e4ec3774dafb8f934b9bed134a3bbccaa3b345128bf498b9e164e6",
+    "parent_commit": "2c6730f221906afe4d8d528df946078ada96b632"
+  },
+  "tree": "e4b73eb9b65ae540c89bda426aa9c21b02c28516",
+  "archive_sha256": "43b90292f4a5f7df888b80d3a31b7d3fd2cee26b187bc5ae1c02441cdb5d9d66",
+  "verified_directory": "work/r123f",
+  "partial_directory": "work/collision_terminal/r123_repair_clean_export_final",
+  "partial_directory_classification": "REVIEW_REQUIRED: incomplete Windows long-path extraction, not validation evidence",
+  "unrelated_user_changes_excluded": true
+}

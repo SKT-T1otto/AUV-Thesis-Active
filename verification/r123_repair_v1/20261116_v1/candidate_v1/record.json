@@ -1,0 +1,19 @@
+{
+  "source_sha256": "2dc5fc8d0faefbafae00f4b67c75934f92e175e03c039b9dc56076f3dd9fa066",
+  "files": {
+    "chapter3_bser/r123_repair/__init__.py": "3a0b2cec6ece2663c2a73a00da535f40bd7cc2315ce917e39d1a45d98878d693",
+    "chapter3_bser/r123_repair/lifecycle.py": "01ae42e6bdb50c6df45dd1673520a4e6fe5b551596473c9d99714f416edefbf1",
+    "chapter3_bser/r123_repair/planning.py": "d2ebf71cc4c346ddd80c860a8b5cac8de43c3cdabea421d188c848cbf28b2521",
+    "chapter3_bser/r123_repair/runtime.py": "be91e6377e9fe0a7d09c9d69d8fa4f4e150dfbd00b731c6926c941c12eb7d49d",
+    "chapter3_bser/r123_repair/source.py": "d801c822c6ec90ac007c16837d5c1011656e59906e2b9f1604a42bb6d9756a47",
+    "chapter3_bser/r123_repair/workflow.py": "23e87d9691214d9ec8e6d5e758963fa41e22a66e555b81b1062a25d44a277190",
+    "checks/test_r123_repair.py": "d466fee21e06fb9ec7247a0038bd1ca655e951f1ce0c0c8d972c8bfb28380a32",
+    "docs/R123_RULE_REPAIR_20261116.md": "ace60b22b9aa828caf3829c991f763802c7d1b6e778300155de8e2a63d1f4746",
+    "scripts/r123_rule_prepare_linux.sh": "8a43ef2525ab4cb9ce91b22f3c6501dfd0831a3baff62d4d803ed054f6b604cf",
+    "tools/r123_rule_experiment.py": "bad63eaccaf5073a186405e52bde7ed183bf27e638d603d70f5bcd712aba58bd",
+    "tools/validate_r123_repair.py": "f4a7d37e06fa3c04fc35d248dc61d4a7c8b7731c3bad246a528be8e5bfc217de"
+  },
+  "native_initializations": 5,
+  "native_steps": 160,
+  "reason": "Retain passed first candidate; final review adds filtered-planning-view consistency"
+}

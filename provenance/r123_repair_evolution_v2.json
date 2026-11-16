@@ -1,0 +1,13 @@
+{
+  "schema": "auv.r123.rule_repair.evolution.v2",
+  "parent_commit": "2c6730f221906afe4d8d528df946078ada96b632",
+  "prior_candidate_sha256": "2dc5fc8d0faefbafae00f4b67c75934f92e175e03c039b9dc56076f3dd9fa066",
+  "reason": "Final review found waiting connectors used the raw planning view while D2 candidates used the safety-filtered view; use the same filtered view for both.",
+  "prior_candidate_preserved": "verification/r123_repair_v1/20261116_v1/candidate_v1",
+  "final_native_cases": 3,
+  "final_native_physical_step_cap": 96,
+  "entire_local_task_native_initialization_cap": 8,
+  "entire_local_task_native_physical_step_cap": 256,
+  "native_training_updates": 0,
+  "prior_evidence_relabeling_allowed": false
+}

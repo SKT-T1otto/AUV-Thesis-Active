@@ -1,0 +1,28 @@
+{
+  "scope": "audit-only persistent outputs; no production files modified",
+  "created_files": [
+    "verification/r123_rule_audit/20261116_v1/REPORT.md",
+    "verification/r123_rule_audit/20261116_v1/analysis.json",
+    "verification/r123_rule_audit/20261116_v1/analysis_v2.json",
+    "verification/r123_rule_audit/20261116_v1/analyze.py",
+    "verification/r123_rule_audit/20261116_v1/before.json",
+    "verification/r123_rule_audit/20261116_v1/cases.csv",
+    "verification/r123_rule_audit/20261116_v1/created_files.json",
+    "verification/r123_rule_audit/20261116_v1/immutability.json",
+    "verification/r123_rule_audit/20261116_v1/searcher_timeline.png"
+  ],
+  "classifications": {
+    "verification/r123_rule_audit/20261116_v1/REPORT.md": "AUDIT_REPORT_OR_SUPPORTING_EVIDENCE",
+    "verification/r123_rule_audit/20261116_v1/analysis.json": "REVIEW_REQUIRED: incomplete serialization artifact; use analysis_v2.json",
+    "verification/r123_rule_audit/20261116_v1/analysis_v2.json": "AUDIT_REPORT_OR_SUPPORTING_EVIDENCE",
+    "verification/r123_rule_audit/20261116_v1/analyze.py": "AUDIT_REPORT_OR_SUPPORTING_EVIDENCE",
+    "verification/r123_rule_audit/20261116_v1/before.json": "AUDIT_REPORT_OR_SUPPORTING_EVIDENCE",
+    "verification/r123_rule_audit/20261116_v1/cases.csv": "AUDIT_REPORT_OR_SUPPORTING_EVIDENCE",
+    "verification/r123_rule_audit/20261116_v1/created_files.json": "AUDIT_REPORT_OR_SUPPORTING_EVIDENCE",
+    "verification/r123_rule_audit/20261116_v1/immutability.json": "AUDIT_REPORT_OR_SUPPORTING_EVIDENCE",
+    "verification/r123_rule_audit/20261116_v1/searcher_timeline.png": "AUDIT_REPORT_OR_SUPPORTING_EVIDENCE"
+  },
+  "native_environment_initializations": 0,
+  "training_updates": 0,
+  "checkpoint_restores": 0
+}

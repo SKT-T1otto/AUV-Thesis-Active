@@ -1,0 +1,29 @@
+{
+  "source": {
+    "schema": "auv.r123.rule_repair.source.v1",
+    "sha256": "e6cf52188cb7981ac70d65fc6fb00cf2fe7b56d4e4fec4b7a49097dc7f2203be",
+    "parent_commit": "2c6730f221906afe4d8d528df946078ada96b632"
+  },
+  "control": {
+    "residual_bound": 0.15,
+    "stagnation_steps": 30,
+    "progress_distance": 0.025,
+    "max_recoveries": 2,
+    "recovery_budget_steps": 150,
+    "request_interval": 10
+  },
+  "variants": [
+    "legacy",
+    "repaired",
+    "no_recovery"
+  ],
+  "episodes_per_variant": 6,
+  "maximum_physical_steps_per_variant": 2400,
+  "training_allowed": false,
+  "inputs": {
+    "config.json": "6e58ac2ed05b74db881e94a61cf62d1fb01b7230fb7d02c2f2119607e180d361",
+    "development.json": "cced36196c5723c42e7016bf057bc9301a769703166ea6c107412de24c36c269",
+    "historical_reference.json": "102d980eb7749648d5a07cb407dda3cf6c9224bd1c85afd3b30794e9e616a4f1",
+    "options.json": "e6dce799a198d767a7e5df4e1885df1a9b8cbb1276af8cc4594281af1f636efc"
+  }
+}

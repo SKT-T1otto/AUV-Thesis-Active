@@ -1,0 +1,7 @@
+﻿case,scenario_id,success,found,steps,wait_steps,wait_fraction,terminal_all_searchers_wait_steps,recovery_attempts,recovery_returns,d2_requests,d2_rejected
+0,po_eval_992001_0000,False,False,400,475,0.3958333333333333,115,10,0,25,20
+1,po_eval_992001_0001,True,True,281,0,0.0,0,2,0,6,0
+2,po_eval_992001_0002,False,False,400,612,0.51,90,10,0,30,30
+3,po_eval_992001_0003,False,False,400,482,0.40166666666666667,144,20,0,25,16
+4,po_eval_992001_0004,False,False,400,215,0.17916666666666667,0,2,0,26,21
+5,po_eval_992001_0005,True,True,294,2,0.0036036036036036037,0,0,0,4,0

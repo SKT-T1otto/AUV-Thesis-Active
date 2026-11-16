@@ -1,0 +1,52 @@
+[repair validation] case=1/5 variant=repaired release_probe=True cap=32 updates=0
+[r123 repair rule repaired] case=0 step=25/32 updates=0
+[repair validation] case=2/5 variant=no_recovery release_probe=True cap=32 updates=0
+[r123 repair rule no_recovery] case=1 step=25/32 updates=0
+[repair validation] case=3/5 variant=legacy release_probe=False cap=32 updates=0
+[r123 repair rule legacy] case=2 step=25/32 updates=0
+[repair validation] case=4/5 variant=repaired release_probe=False cap=32 updates=0
+[r123 repair rule repaired] case=3 step=25/32 updates=0
+[repair validation] case=5/5 variant=no_recovery release_probe=False cap=32 updates=0
+[r123 repair rule no_recovery] case=4 step=25/32 updates=0
+{
+  "schema": "auv.r123.rule_repair.validation.v1",
+  "source": {
+    "schema": "auv.r123.rule_repair.source.v1",
+    "sha256": "2dc5fc8d0faefbafae00f4b67c75934f92e175e03c039b9dc56076f3dd9fa066",
+    "parent_commit": "2c6730f221906afe4d8d528df946078ada96b632"
+  },
+  "platform": "Windows",
+  "passed": true,
+  "native_smoke_passed": true,
+  "environment_initializations": 5,
+  "physical_steps": 160,
+  "native_training_updates": 0,
+  "checkpoint_restore": false,
+  "automatic_long_training": false,
+  "performance_accepted": false,
+  "max_complete_updates_per_temporary_model": 4,
+  "synthetic": {
+    "tests": 86,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifacts": {
+    "episode_00.json": "00b70276cd6ccc6076e03763cde4770febc083999dfac0d738f6cf4b499aea40",
+    "episode_01.json": "b38566b7c2f7402fc43851ce98532571eabf13d9054751796b336877dd37ca0a",
+    "episode_02.json": "cf0d44c34ddbd4c95236731388b5511e0b242d35625b9c9788bcd6931cde4757",
+    "episode_03.json": "b208429f3a40895e33bab2283105ad9c1b371376b8eb6e9da598a6cec6b80c32",
+    "episode_04.json": "789d8d44e071a1653bc378a20b8bcd7df9ed784bf4f0f88821eb56f3620257eb",
+    "initialization_00.json": "f8c98ec2223dc6505adc0d4fbb7fd470818e2ce692b56bb7b146c680b28dc1bf",
+    "initialization_01.json": "4468b1b374e9880becfae5d5d374250fd8ebd861d87a541b043a75aad161b2fd",
+    "initialization_02.json": "7ff20fd36d61b490bfee962477299b98bc266cd62267d43737925cd248297f73",
+    "initialization_03.json": "cb055cdffe7d422adf1d8870904cc3365385d562a9a749091d4222496d467652",
+    "initialization_04.json": "8b089dca766d09f7f98de4f59bb506f30be3fa69ace5c1bd6538a9bda561d7b7",
+    "metric_00.json": "7c59371a53aeec1cc27171e6056933ec091a6de744d2fd70759e08b2739799fc",
+    "metric_01.json": "f253377aaccf10c9c66ba3b0d54bc31db3ff6a6b9d1eca73d3cb379d3cc58dc9",
+    "metric_02.json": "3eb7368058c329c1084e2f927a95e627cbe0a4ea96781dad9a4c79e9a5ac0015",
+    "metric_03.json": "7ead0602f35e858200f0cf1d2f3e2dafb0a94fdd16758fbc43906bc0ce6fdea3",
+    "metric_04.json": "b3bbec9d038ac9140150ef5a1a28903521c7e14b1b44cf4340bdbc893e4483e9",
+    "synthetic.log": "796fa99452be4c179877d36cb4455c783983729d3811e5169b55a3e3377dde93"
+  }
+}

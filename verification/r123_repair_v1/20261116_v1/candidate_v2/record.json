@@ -1,0 +1,19 @@
+{
+  "source_sha256": "e6cf52188cb7981ac70d65fc6fb00cf2fe7b56d4e4fec4b7a49097dc7f2203be",
+  "files": {
+    "chapter3_bser/r123_repair/__init__.py": "3a0b2cec6ece2663c2a73a00da535f40bd7cc2315ce917e39d1a45d98878d693",
+    "chapter3_bser/r123_repair/lifecycle.py": "01ae42e6bdb50c6df45dd1673520a4e6fe5b551596473c9d99714f416edefbf1",
+    "chapter3_bser/r123_repair/planning.py": "d2ebf71cc4c346ddd80c860a8b5cac8de43c3cdabea421d188c848cbf28b2521",
+    "chapter3_bser/r123_repair/runtime.py": "edb1417d1de0aa835a254740d9e78150b766c6e155ed30d9e56f91824f335087",
+    "chapter3_bser/r123_repair/source.py": "177c6ef58bdeeed3771febff7ba6d55482df5d970e0aaa95aeede51f5b68e9f3",
+    "chapter3_bser/r123_repair/workflow.py": "23e87d9691214d9ec8e6d5e758963fa41e22a66e555b81b1062a25d44a277190",
+    "checks/test_r123_repair.py": "5e921b9104a1cae7728b47ef82f47c015583fef9cd4884a0d407c0db6b7ab548",
+    "docs/R123_RULE_REPAIR_20261116.md": "b27f21daba5fc93e6b5e2dba5a3dd8b554d9703abe09d73335ab5ac96d3ec8c3",
+    "scripts/r123_rule_prepare_linux.sh": "8a43ef2525ab4cb9ce91b22f3c6501dfd0831a3baff62d4d803ed054f6b604cf",
+    "tools/r123_rule_experiment.py": "bad63eaccaf5073a186405e52bde7ed183bf27e638d603d70f5bcd712aba58bd",
+    "tools/validate_r123_repair.py": "8deb2a5f2c6d3dd05f456efc36bc0ca31db42a9ef4db23b9448fc3bb09301dc0"
+  },
+  "native_initializations": 3,
+  "native_steps": 96,
+  "reason": "Retain exact native-tested candidate before the moving-public-target identity correction"
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "auv.r123.rule_repair.evolution.v1",
+  "parent_commit": "2c6730f221906afe4d8d528df946078ada96b632",
+  "parent_source_sha256": "d79569958007f0f3ad4a1ebc662047d80a01f2d75a11aae7007ffbe01e2bb186",
+  "authorization": "User requests code repair and direct push to the same GitHub repository after the Linux rule audit.",
+  "new_runtime": "chapter3_bser/r123_repair",
+  "runtime_changes": [
+    "separate real recovery-attempt progress from root-task budget; duplicate attempts cannot reset clocks",
+    "safe root fallback after failed recovery without immediate detour loops",
+    "derive task identity from actual D2 allocation; unassigned hold is not task completion",
+    "freeze phase3 task bookkeeping as well as actions",
+    "request original D2 partial solves independently per released searcher",
+    "physically follow a public verified free valid start connector; never change virtual starts or map cells",
+    "preserve existing verified buffer exit while waiting",
+    "explicit no_recovery deletion control with no alternative endpoint queries"
+  ],
+  "variants": ["legacy", "repaired", "no_recovery"],
+  "training_entry_available": false,
+  "automatic_training": false,
+  "checkpoint_loading": false,
+  "old_source_and_evidence_immutable": true,
+  "unchanged": ["reward", "gamma", "observation and physical action contracts", "physics", "target motion", "discovery and handoff", "capture and mission success", "OLD map", "original D2 candidate and objective rules", "attention and network parameters", "R1 ordinary action and safety construction"],
+  "native_validation": {"episodes": 5, "maximum_steps_per_episode": 32, "maximum_physical_steps": 160, "training_updates": 0},
+  "formal_performance_claim": false
+}

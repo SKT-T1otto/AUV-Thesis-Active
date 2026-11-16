@@ -1,0 +1,36 @@
+{
+  "schema": "auv.r123.rule_repair.validation.v1",
+  "source": {
+    "schema": "auv.r123.rule_repair.source.v1",
+    "sha256": "e6cf52188cb7981ac70d65fc6fb00cf2fe7b56d4e4fec4b7a49097dc7f2203be",
+    "parent_commit": "2c6730f221906afe4d8d528df946078ada96b632"
+  },
+  "platform": "Windows",
+  "passed": true,
+  "native_smoke_passed": true,
+  "environment_initializations": 3,
+  "physical_steps": 96,
+  "native_training_updates": 0,
+  "checkpoint_restore": false,
+  "automatic_long_training": false,
+  "performance_accepted": false,
+  "max_complete_updates_per_temporary_model": 4,
+  "synthetic": {
+    "tests": 87,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifacts": {
+    "episode_00.json": "00b70276cd6ccc6076e03763cde4770febc083999dfac0d738f6cf4b499aea40",
+    "episode_01.json": "b38566b7c2f7402fc43851ce98532571eabf13d9054751796b336877dd37ca0a",
+    "episode_02.json": "d9980f7bec9e4229e6f69cb0a32d134361851988f6d8c380140909651d23c913",
+    "initialization_00.json": "f8c98ec2223dc6505adc0d4fbb7fd470818e2ce692b56bb7b146c680b28dc1bf",
+    "initialization_01.json": "4468b1b374e9880becfae5d5d374250fd8ebd861d87a541b043a75aad161b2fd",
+    "initialization_02.json": "cb055cdffe7d422adf1d8870904cc3365385d562a9a749091d4222496d467652",
+    "metric_00.json": "25f3beddc7ed517f15547802b7e26b9a5c71d9c29238aaa73a56891845178a29",
+    "metric_01.json": "49bdddab87bb26ada73e20cbaf20f281e03412c6dfbbc51a71e9fc9ca7341769",
+    "metric_02.json": "ebe488368cfaaa3e49f0144c7b574eff0660b3afa97c5dca8b3f60eadd3e33ae",
+    "synthetic.log": "7c13103c871ee75baa6e33e46daf0a18becb1b2ae8ad54b52a4b9c6124b85c5d"
+  }
+}

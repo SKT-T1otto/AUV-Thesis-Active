@@ -1,0 +1,29 @@
+{
+  "CH3": {
+    "recorded": 369,
+    "current": 369,
+    "changed": [],
+    "added": []
+  },
+  "CH4": {
+    "recorded": 103,
+    "current": 103,
+    "changed": [],
+    "added": []
+  },
+  "CH5": {
+    "recorded": 318,
+    "current": 318,
+    "changed": [],
+    "added": []
+  },
+  "inputs": {
+    "files": 30,
+    "changed": []
+  },
+  "sources": {
+    "files": 39,
+    "changed": []
+  },
+  "passed": true
+}

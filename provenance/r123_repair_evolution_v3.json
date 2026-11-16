@@ -1,0 +1,11 @@
+{
+  "schema": "auv.r123.rule_repair.evolution.v3",
+  "prior_candidate_sha256": "e6cf52188cb7981ac70d65fc6fb00cf2fe7b56d4e4fec4b7a49097dc7f2203be",
+  "reason": "A changed public interception coordinate is still the same phase2 mission; root-only resumption must retain its identity and exhausted recovery budget.",
+  "prior_candidate_preserved": "verification/r123_repair_v1/20261116_v1/candidate_v2",
+  "automatic_native_budget_used": {"environment_initializations": 8, "physical_steps": 256},
+  "additional_native_runs_allowed_in_this_task": false,
+  "final_patch_validation": "synthetic combination regressions and clean export; current-source native receipt must be regenerated on actual Linux",
+  "old_native_evidence_relabeling_allowed": false,
+  "training_allowed": false
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "auv.r123.rule_repair.validation.v1",
+  "source": {
+    "schema": "auv.r123.rule_repair.source.v1",
+    "sha256": "3323d95151e4ec3774dafb8f934b9bed134a3bbccaa3b345128bf498b9e164e6",
+    "parent_commit": "2c6730f221906afe4d8d528df946078ada96b632"
+  },
+  "platform": "Windows",
+  "passed": true,
+  "native_smoke_passed": false,
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "native_training_updates": 0,
+  "checkpoint_restore": false,
+  "automatic_long_training": false,
+  "performance_accepted": false,
+  "max_complete_updates_per_temporary_model": 4,
+  "synthetic": {
+    "tests": 88,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifacts": {
+    "synthetic.log": "ebad7b7b845b0c3ba5cd247ebf656b8c5c9780df0c93fc3aeb22ea04a4624975"
+  }
+}

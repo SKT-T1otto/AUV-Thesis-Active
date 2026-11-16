@@ -1,0 +1,6 @@
+{
+  "variant": "no_recovery",
+  "release_probe": true,
+  "max_steps": 32,
+  "updates": 0
+}

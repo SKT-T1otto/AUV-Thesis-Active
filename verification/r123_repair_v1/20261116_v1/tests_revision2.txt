@@ -1,0 +1,39 @@
+test_actual_recovery_arrival_returns_to_root (checks.test_r123_repair.RepairContracts) ... ok
+test_attempt_progress_does_not_extend_total_recovery_limit (checks.test_r123_repair.RepairContracts) ... ok
+test_cli_has_no_training_command_and_previews_do_not_mutate (checks.test_r123_repair.RepairContracts) ... usage: python.exe -m unittest [-h] {prepare,evaluate,report} ...
+python.exe -m unittest: error: argument command: invalid choice: 'run' (choose from 'prepare', 'evaluate', 'report')
+ok
+test_connector_is_public_free_valid_and_does_not_edit_state (checks.test_r123_repair.RepairContracts) ... ok
+test_duplicate_commit_does_not_reset_attempt_or_total_budget (checks.test_r123_repair.RepairContracts) ... ok
+test_exhausted_task_can_track_root_without_release_resume_loop (checks.test_r123_repair.RepairContracts) ... ok
+test_failed_recovery_can_return_to_root_without_immediate_new_detour (checks.test_r123_repair.RepairContracts) ... ok
+test_frozen_searchers_do_not_query_or_recover_or_move (checks.test_r123_repair.RepairContracts) ... ok
+test_hold_guidance_does_not_replace_semantic_assignment (checks.test_r123_repair.RepairContracts) ... ok
+test_invalid_start_is_isolated_before_allocator_call (checks.test_r123_repair.RepairContracts) ... ok
+test_new_assignment_adopted_after_release (checks.test_r123_repair.RepairContracts) ... ok
+test_no_recovery_cannot_train (checks.test_r123_repair.RepairContracts) ... ok
+test_no_recovery_has_no_alternatives_or_attempts (checks.test_r123_repair.RepairContracts) ... ok
+test_one_failed_pool_does_not_block_other_agent (checks.test_r123_repair.RepairContracts) ... ok
+test_same_completed_assignment_cannot_mint_a_new_task (checks.test_r123_repair.RepairContracts) ... ok
+test_stall_recovery_next_step_keeps_same_attempt_alive (checks.test_r123_repair.RepairContracts) ... ok
+test_two_genuinely_stalled_attempts_then_release (checks.test_r123_repair.RepairContracts) ... ok
+test_unassigned_hold_is_not_a_completed_task (checks.test_r123_repair.RepairContracts) ... ok
+test_wait_can_execute_public_connector_without_recovery_budget (checks.test_r123_repair.RepairContracts) ... ok
+test_wait_preserves_verified_buffer_exit (checks.test_r123_repair.RepairContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.983s
+
+OK
+{
+  "executed": false,
+  "requested": {
+    "command": "prepare",
+    "output": "unused",
+    "development": null,
+    "legacy_reference": null,
+    "config": "configs/b2.json",
+    "options": "configs/r123_learning_v1.json",
+    "execute": false
+  }
+}
