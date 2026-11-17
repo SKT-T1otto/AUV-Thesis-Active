@@ -1,0 +1,66 @@
+{
+  "native": {
+    "schema": "auv.r123.tracking.validation.v1",
+    "source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    },
+    "platform": "Windows",
+    "passed": true,
+    "native_smoke_passed": true,
+    "environment_initializations": 4,
+    "physical_steps": 128,
+    "native_training_updates": 0,
+    "checkpoint_restore": false,
+    "automatic_long_training": false,
+    "performance_accepted": false,
+    "max_complete_updates_per_temporary_model": 4,
+    "synthetic": {
+      "tests": 112,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "native_arms": [
+      "baseline",
+      "path_only",
+      "feedforward_only",
+      "both"
+    ],
+    "artifacts": {
+      "episode_00.json": "6f44785067710523bd62e00b650f03e94c64a81545d0a26e6cdf2855b3a145b2",
+      "episode_01.json": "36000d98fc992bfec083e4fb4cc152ffdf556a477a86ac3b355be58aac066c05",
+      "episode_02.json": "57b4fd8605538520187e53301aeec3cd114e3eb650e659d016c7bbf98f8c81c2",
+      "episode_03.json": "a7255c739ed5f10da1ec5609d324d31e8121f71cf59d7de288b80a198174494b",
+      "initialization_00.json": "96903557fbc003791ff6a31207d61c65bfa0753e6f4e53d6c9f128717b77eed7",
+      "initialization_01.json": "ea4a09ea63b11eab1928ba5f72682fd258f895c89646318e078741645cfdc223",
+      "initialization_02.json": "0c9c02640fd1ec7cfcfd242e1a202096c54169b75a45bc7c5f591c5cd6516320",
+      "initialization_03.json": "a730b91f77ae477b36d3afd4e9f9fc537a87ffd889a2006f50ec07d9d20dd666",
+      "metric_00.json": "89e08f73a916aefa63a902de4d8a1897bf7273e3c053baac2f000e7fd1ecbb18",
+      "metric_01.json": "f80c78118b4bd032baa7f0eb8a3a2ca8509fa20a21173ddb731787ffe6dc4b11",
+      "metric_02.json": "cd9a938f1ed2a585144d8c501205e3ddc32902d2867587f4b92bc3780563d610",
+      "metric_03.json": "0dbc01c1799f467c2e00d4177857c53f31beb966b1d7982dcc1d6a2533aa5068",
+      "synthetic.log": "a17a23a7cdf9f6f2957502aeabc1f15ef51d678c85bb1a5d7d5336620d9acfcc"
+    }
+  },
+  "preparation": {
+    "source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    },
+    "baseline_import_passed": true,
+    "baseline_rows": 6,
+    "new_arms": [
+      "path_only",
+      "feedforward_only",
+      "both"
+    ],
+    "maximum_new_full_steps": 7200,
+    "full_episodes_run": 0,
+    "plan_sha256": "5910f1e70a3450da1fb9f3c4fe99e989117acfc5c7fee822d8c396724bf79dca",
+    "baseline_sha256": "51729c09f8c56e33fbd38d24c483d784286aaa1a2d8f58fe80c9cc0f22b7e1be",
+    "bash_syntax_passed": true
+  }
+}

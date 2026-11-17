@@ -1,0 +1,6 @@
+{
+  "variant": "feedforward_only",
+  "release_probe": false,
+  "max_steps": 32,
+  "updates": 0
+}

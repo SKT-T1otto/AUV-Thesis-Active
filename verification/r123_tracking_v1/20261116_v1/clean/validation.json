@@ -1,0 +1,27 @@
+{
+  "schema": "auv.r123.tracking.validation.v1",
+  "source": {
+    "schema": "auv.r123.tracking.source.v1",
+    "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+    "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+  },
+  "platform": "Windows",
+  "passed": true,
+  "native_smoke_passed": false,
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "native_training_updates": 0,
+  "checkpoint_restore": false,
+  "automatic_long_training": false,
+  "performance_accepted": false,
+  "max_complete_updates_per_temporary_model": 4,
+  "synthetic": {
+    "tests": 112,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "artifacts": {
+    "synthetic.log": "68bc55c2c1099c2c6accaf35021a5c00f6874ba24b05ba17063f988b5346aff2"
+  }
+}

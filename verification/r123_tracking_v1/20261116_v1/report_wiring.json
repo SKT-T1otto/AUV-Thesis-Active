@@ -1,0 +1,9 @@
+{
+  "synthetic_report_passed": true,
+  "factorial_interaction_checked": true,
+  "incorrect_switches_rejected": true,
+  "filesystem_output_mocked": true,
+  "environment_initializations": 0,
+  "training_updates": 0,
+  "performance_claim": false
+}

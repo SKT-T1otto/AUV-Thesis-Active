@@ -1,0 +1,199 @@
+{
+  "declared_source_matches": true,
+  "six_paired_scenes_complete": true,
+  "paired_differences_recomputed": true,
+  "previous_matches_retained_verified_import": true,
+  "summary": {
+    "previous": {
+      "total": {
+        "success": 2,
+        "found": 2,
+        "collision": 0,
+        "timeout": 4,
+        "steps": 2174,
+        "search_agent_steps": 6009,
+        "search_stationary_steps": 2042,
+        "search_slow_distant_steps": 2317,
+        "search_brake_steps": 2911,
+        "search_wait_steps": 40,
+        "active_recovery_enters": 0,
+        "capture_contact_steps": 16,
+        "handoff": 2
+      },
+      "mean_discounted_return": 0.14926515148959563,
+      "per_scene": [
+        {
+          "scenario_id": "po_eval_992001_0000",
+          "success": 0,
+          "found": 0,
+          "steps": 400,
+          "capture_contact_steps": 0,
+          "capture_hold_max": 0,
+          "search_agent_steps": 1200,
+          "search_stationary_steps": 296,
+          "search_slow_distant_steps": 370,
+          "search_brake_steps": 480
+        },
+        {
+          "scenario_id": "po_eval_992001_0001",
+          "success": 1,
+          "found": 1,
+          "steps": 280,
+          "capture_contact_steps": 10,
+          "capture_hold_max": 5,
+          "search_agent_steps": 654,
+          "search_stationary_steps": 31,
+          "search_slow_distant_steps": 65,
+          "search_brake_steps": 134
+        },
+        {
+          "scenario_id": "po_eval_992001_0002",
+          "success": 0,
+          "found": 0,
+          "steps": 400,
+          "capture_contact_steps": 0,
+          "capture_hold_max": 0,
+          "search_agent_steps": 1200,
+          "search_stationary_steps": 815,
+          "search_slow_distant_steps": 890,
+          "search_brake_steps": 956
+        },
+        {
+          "scenario_id": "po_eval_992001_0003",
+          "success": 0,
+          "found": 0,
+          "steps": 400,
+          "capture_contact_steps": 0,
+          "capture_hold_max": 0,
+          "search_agent_steps": 1200,
+          "search_stationary_steps": 785,
+          "search_slow_distant_steps": 833,
+          "search_brake_steps": 909
+        },
+        {
+          "scenario_id": "po_eval_992001_0004",
+          "success": 0,
+          "found": 0,
+          "steps": 400,
+          "capture_contact_steps": 0,
+          "capture_hold_max": 0,
+          "search_agent_steps": 1200,
+          "search_stationary_steps": 93,
+          "search_slow_distant_steps": 129,
+          "search_brake_steps": 318
+        },
+        {
+          "scenario_id": "po_eval_992001_0005",
+          "success": 1,
+          "found": 1,
+          "steps": 294,
+          "capture_contact_steps": 6,
+          "capture_hold_max": 5,
+          "search_agent_steps": 555,
+          "search_stationary_steps": 22,
+          "search_slow_distant_steps": 30,
+          "search_brake_steps": 114
+        }
+      ]
+    },
+    "governed": {
+      "total": {
+        "success": 2,
+        "found": 3,
+        "collision": 0,
+        "timeout": 4,
+        "steps": 2053,
+        "search_agent_steps": 5754,
+        "search_stationary_steps": 6,
+        "search_slow_distant_steps": 440,
+        "search_brake_steps": 35,
+        "search_wait_steps": 33,
+        "active_recovery_enters": 0,
+        "capture_contact_steps": 12,
+        "handoff": 3
+      },
+      "mean_discounted_return": 0.1262362556663891,
+      "per_scene": [
+        {
+          "scenario_id": "po_eval_992001_0000",
+          "success": 0,
+          "found": 0,
+          "steps": 400,
+          "capture_contact_steps": 0,
+          "capture_hold_max": 0,
+          "search_agent_steps": 1200,
+          "search_stationary_steps": 0,
+          "search_slow_distant_steps": 41,
+          "search_brake_steps": 6
+        },
+        {
+          "scenario_id": "po_eval_992001_0001",
+          "success": 0,
+          "found": 0,
+          "steps": 400,
+          "capture_contact_steps": 0,
+          "capture_hold_max": 0,
+          "search_agent_steps": 1200,
+          "search_stationary_steps": 0,
+          "search_slow_distant_steps": 13,
+          "search_brake_steps": 12
+        },
+        {
+          "scenario_id": "po_eval_992001_0002",
+          "success": 0,
+          "found": 0,
+          "steps": 400,
+          "capture_contact_steps": 0,
+          "capture_hold_max": 0,
+          "search_agent_steps": 1200,
+          "search_stationary_steps": 6,
+          "search_slow_distant_steps": 344,
+          "search_brake_steps": 12
+        },
+        {
+          "scenario_id": "po_eval_992001_0003",
+          "success": 1,
+          "found": 1,
+          "steps": 210,
+          "capture_contact_steps": 6,
+          "capture_hold_max": 5,
+          "search_agent_steps": 558,
+          "search_stationary_steps": 0,
+          "search_slow_distant_steps": 21,
+          "search_brake_steps": 2
+        },
+        {
+          "scenario_id": "po_eval_992001_0004",
+          "success": 0,
+          "found": 1,
+          "steps": 400,
+          "capture_contact_steps": 0,
+          "capture_hold_max": 0,
+          "search_agent_steps": 945,
+          "search_stationary_steps": 0,
+          "search_slow_distant_steps": 15,
+          "search_brake_steps": 2
+        },
+        {
+          "scenario_id": "po_eval_992001_0005",
+          "success": 1,
+          "found": 1,
+          "steps": 243,
+          "capture_contact_steps": 6,
+          "capture_hold_max": 5,
+          "search_agent_steps": 651,
+          "search_stationary_steps": 0,
+          "search_slow_distant_steps": 6,
+          "search_brake_steps": 1
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Current report only: new raw episodes and validation artifacts not supplied",
+    "Same six development scenes, not general performance acceptance",
+    "Found step inferred from search_agent_steps/3 is not independently checked against new raw trace"
+  ],
+  "environment_initializations": 0,
+  "training_updates": 0
+}

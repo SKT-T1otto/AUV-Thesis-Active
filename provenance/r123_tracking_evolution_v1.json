@@ -1,0 +1,35 @@
+{
+  "schema": "auv.r123.tracking.evolution.v1",
+  "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1",
+  "parent_source": {
+    "schema": "auv.r123.governed.source.v1",
+    "sha256": "b604b90bc7586e4e5198587f17b77c7a4d57ab2b406a31f52b724237c37247f6",
+    "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126"
+  },
+  "created_runtime_and_entry_files": [
+    "chapter3_bser/r123_tracking/__init__.py",
+    "chapter3_bser/r123_tracking/control.py",
+    "chapter3_bser/r123_tracking/progress.py",
+    "chapter3_bser/r123_tracking/runtime.py",
+    "chapter3_bser/r123_tracking/source.py",
+    "chapter3_bser/r123_tracking/workflow.py",
+    "checks/test_r123_tracking.py",
+    "tools/r123_tracking_experiment.py",
+    "tools/validate_r123_tracking.py",
+    "scripts/r123_tracking_prepare_linux.sh",
+    "docs/R123_TRACKING_20261117.md"
+  ],
+  "changes": [
+    "carry only same-task completed route prefixes through fresh verified geometry",
+    "fixed path waypoint velocity zero; public target velocity only at terminal capture point",
+    "independent path_only/feedforward_only/both ablations, imported governed baseline"
+  ],
+  "unchanged": [
+    "parent sources and manifests",
+    "rewards, observations, actions, dynamics and success",
+    "existing speed, geometry, backup and safety exit checks"
+  ],
+  "active_recovery": false,
+  "training": false,
+  "checkpoint_restore": false
+}

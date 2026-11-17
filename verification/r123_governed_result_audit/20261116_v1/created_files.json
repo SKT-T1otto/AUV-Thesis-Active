@@ -1,0 +1,15 @@
+{
+  "created_files": [
+    "verification/r123_governed_result_audit/20261116_v1/REPORT.md",
+    "verification/r123_governed_result_audit/20261116_v1/analysis.json",
+    "verification/r123_governed_result_audit/20261116_v1/before.json",
+    "verification/r123_governed_result_audit/20261116_v1/created_files.json",
+    "verification/r123_governed_result_audit/20261116_v1/immutability.json"
+  ],
+  "environment_initializations": 0,
+  "training_updates": 0,
+  "checkpoint_restores": 0,
+  "review_required": [
+    "New group raw trajectory and receipt verification pending; current input is report only"
+  ]
+}

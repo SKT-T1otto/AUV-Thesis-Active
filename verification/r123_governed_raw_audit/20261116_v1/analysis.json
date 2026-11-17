@@ -1,0 +1,3805 @@
+{
+  "completed": true,
+  "checks": "All receipts, source, input hashes and 6 raw/reported metrics match",
+  "new_environment_initializations": 0,
+  "training_updates": 0,
+  "checkpoint_restore": false,
+  "linux_validation": {
+    "schema": "auv.r123.governed.validation.v1",
+    "source": {
+      "schema": "auv.r123.governed.source.v1",
+      "sha256": "b604b90bc7586e4e5198587f17b77c7a4d57ab2b406a31f52b724237c37247f6",
+      "parent_commit": "5c2fdc84a0182cfd744917ea8ec45fc42816a126"
+    },
+    "platform": "Linux",
+    "passed": true,
+    "native_smoke_passed": true,
+    "environment_initializations": 2,
+    "physical_steps": 64,
+    "native_training_updates": 0,
+    "checkpoint_restore": false,
+    "automatic_long_training": false,
+    "performance_accepted": false,
+    "max_complete_updates_per_temporary_model": 4,
+    "synthetic": {
+      "tests": 96,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "artifacts": {
+      "initialization_01.json": "665a6a6e1fd2dfd1f6ad4748d0a0010e46d787a06affd890f73eedf80d486b25",
+      "initialization_00.json": "27cd3aa894ffaeb0fc463a254636c5a70a8033faceb172e6a416e806985dc173",
+      "episode_00.json": "9642061b84133be7e19a1905f0776be62f00f29f02ccef2009a4b9a9e03f04bb",
+      "episode_01.json": "8c0f399be23ee63829ee8825aab628ad9bac9b771b9f5b3d38506e6668ad1504",
+      "metric_01.json": "1183280b0e02331eb75f43bfaf597ef2d859aa8b808a726de7a8dd803c52f5bc",
+      "metric_00.json": "6f5e4f2ee720916173cc0564606d4e9439d2217baa7f7016478feeb3abb26635",
+      "synthetic.log": "6e0be096662519ac3d54e3e75c3250ff34004b0164d8937e352b87c382ce94eb"
+    }
+  },
+  "cases": [
+    {
+      "scenario_id": "po_eval_992001_0000",
+      "found_step": null,
+      "received_step": null,
+      "success_step": null,
+      "timeout": true,
+      "previous_found_step": null,
+      "previous_success_step": null,
+      "closest_search": {
+        "previous": {
+          "step": 61,
+          "agent": 1,
+          "distance": 2.7951665900114318,
+          "margin": 0.3451665900114316
+        },
+        "governed": {
+          "step": 59,
+          "agent": 1,
+          "distance": 3.0032953108083995,
+          "margin": 0.5532953108083993
+        }
+      },
+      "agents": [
+        {
+          "agent": 0,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 398,
+            "WAIT_TASK": 2
+          },
+          "actions": {
+            "0": 391,
+            "8": 2,
+            "2": 1,
+            "9": 6
+          },
+          "slow_steps": 1,
+          "slow_actions": {
+            "0": 1
+          },
+          "motion_distance": 73.82405814456061
+        },
+        {
+          "agent": 1,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 349,
+            "CONNECTOR": 50,
+            "WAIT_TASK": 1
+          },
+          "actions": {
+            "0": 385,
+            "9": 14,
+            "8": 1
+          },
+          "slow_steps": 10,
+          "slow_actions": {
+            "0": 10
+          },
+          "motion_distance": 40.75303587515696
+        },
+        {
+          "agent": 2,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 397,
+            "WAIT_TASK": 3
+          },
+          "actions": {
+            "0": 389,
+            "8": 3,
+            "9": 8
+          },
+          "slow_steps": 30,
+          "slow_actions": {
+            "0": 30
+          },
+          "motion_distance": 55.123286543281196
+        },
+        {
+          "agent": 3,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 243,
+            "WAIT_TASK": 1,
+            "SETTLING": 8,
+            "HOLD": 148
+          },
+          "actions": {
+            "0": 398,
+            "9": 1,
+            "8": 1
+          },
+          "slow_steps": 0,
+          "slow_actions": {},
+          "motion_distance": 18.92900374540721
+        }
+      ]
+    },
+    {
+      "scenario_id": "po_eval_992001_0001",
+      "found_step": null,
+      "received_step": null,
+      "success_step": null,
+      "timeout": true,
+      "previous_found_step": 218,
+      "previous_success_step": 280,
+      "closest_search": {
+        "previous": {
+          "step": 218,
+          "agent": 2,
+          "distance": 2.824581324646567,
+          "margin": -0.025418675353432896
+        },
+        "governed": {
+          "step": 285,
+          "agent": 1,
+          "distance": 2.7121472895315715,
+          "margin": 0.2621472895315713
+        }
+      },
+      "agents": [
+        {
+          "agent": 0,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 392,
+            "WAIT_TASK": 8
+          },
+          "actions": {
+            "0": 392,
+            "8": 8
+          },
+          "slow_steps": 1,
+          "slow_actions": {
+            "0": 1
+          },
+          "motion_distance": 82.85064716702692
+        },
+        {
+          "agent": 1,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 399,
+            "WAIT_TASK": 1
+          },
+          "actions": {
+            "0": 399,
+            "8": 1
+          },
+          "slow_steps": 3,
+          "slow_actions": {
+            "0": 3
+          },
+          "motion_distance": 55.93894193821802
+        },
+        {
+          "agent": 2,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 380,
+            "WAIT_TASK": 3,
+            "CONNECTOR": 17
+          },
+          "actions": {
+            "0": 396,
+            "8": 3,
+            "9": 1
+          },
+          "slow_steps": 9,
+          "slow_actions": {
+            "0": 9
+          },
+          "motion_distance": 55.56730066070167
+        },
+        {
+          "agent": 3,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 13,
+            "SETTLING": 8,
+            "HOLD": 379
+          },
+          "actions": {
+            "0": 400
+          },
+          "slow_steps": 0,
+          "slow_actions": {},
+          "motion_distance": 2.276036584371311
+        }
+      ]
+    },
+    {
+      "scenario_id": "po_eval_992001_0002",
+      "found_step": null,
+      "received_step": null,
+      "success_step": null,
+      "timeout": true,
+      "previous_found_step": null,
+      "previous_success_step": null,
+      "closest_search": {
+        "previous": {
+          "step": 91,
+          "agent": 1,
+          "distance": 3.3980135545356713,
+          "margin": 0.9480135545356712
+        },
+        "governed": {
+          "step": 94,
+          "agent": 1,
+          "distance": 2.8555951811566724,
+          "margin": 0.40559518115667226
+        }
+      },
+      "agents": [
+        {
+          "agent": 0,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 374,
+            "CONNECTOR": 21,
+            "WAIT_TASK": 5
+          },
+          "actions": {
+            "0": 392,
+            "9": 3,
+            "8": 5
+          },
+          "slow_steps": 80,
+          "slow_actions": {
+            "0": 76,
+            "9": 1,
+            "8": 3
+          },
+          "motion_distance": 51.018678420791865
+        },
+        {
+          "agent": 1,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 188,
+            "CONNECTOR": 6,
+            "WAIT_TASK": 5,
+            "TRACK_ROOT": 201
+          },
+          "actions": {
+            "0": 390,
+            "9": 5,
+            "8": 5
+          },
+          "slow_steps": 255,
+          "slow_actions": {
+            "0": 248,
+            "9": 3,
+            "8": 4
+          },
+          "motion_distance": 10.250922598679903
+        },
+        {
+          "agent": 2,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 398,
+            "WAIT_TASK": 2
+          },
+          "actions": {
+            "0": 398,
+            "8": 2
+          },
+          "slow_steps": 9,
+          "slow_actions": {
+            "0": 9
+          },
+          "motion_distance": 62.33512388985989
+        },
+        {
+          "agent": 3,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 6,
+            "SETTLING": 11,
+            "HOLD": 383
+          },
+          "actions": {
+            "0": 400
+          },
+          "slow_steps": 0,
+          "slow_actions": {},
+          "motion_distance": 1.0159462575352327
+        }
+      ]
+    },
+    {
+      "scenario_id": "po_eval_992001_0003",
+      "found_step": 186,
+      "received_step": 187,
+      "success_step": 210,
+      "timeout": false,
+      "previous_found_step": null,
+      "previous_success_step": null,
+      "closest_search": {
+        "previous": {
+          "step": 3,
+          "agent": 0,
+          "distance": 2.1909723750361567,
+          "margin": 0.09097237503615663
+        },
+        "governed": {
+          "step": 186,
+          "agent": 0,
+          "distance": 1.9620153584822126,
+          "margin": -0.13798464151778744
+        }
+      },
+      "agents": [
+        {
+          "agent": 0,
+          "active_steps": 186,
+          "reasons": {
+            "CONTINUE": 168,
+            "CONNECTOR": 18
+          },
+          "actions": {
+            "0": 186
+          },
+          "slow_steps": 17,
+          "slow_actions": {
+            "0": 17
+          },
+          "motion_distance": 23.24034124473824
+        },
+        {
+          "agent": 1,
+          "active_steps": 186,
+          "reasons": {
+            "CONTINUE": 186
+          },
+          "actions": {
+            "0": 185,
+            "8": 1
+          },
+          "slow_steps": 3,
+          "slow_actions": {
+            "0": 3
+          },
+          "motion_distance": 13.229390853885425
+        },
+        {
+          "agent": 2,
+          "active_steps": 186,
+          "reasons": {
+            "CONTINUE": 185,
+            "WAIT_TASK": 1
+          },
+          "actions": {
+            "0": 183,
+            "8": 1,
+            "9": 2
+          },
+          "slow_steps": 1,
+          "slow_actions": {
+            "0": 1
+          },
+          "motion_distance": 25.38025194789887
+        },
+        {
+          "agent": 3,
+          "active_steps": 210,
+          "reasons": {
+            "CONTINUE": 82,
+            "SETTLING": 13,
+            "HOLD": 115
+          },
+          "actions": {
+            "0": 210
+          },
+          "slow_steps": 0,
+          "slow_actions": {},
+          "motion_distance": 14.037505749074905
+        }
+      ],
+      "capture": {
+        "contact_steps": 6,
+        "hold_max": 5,
+        "closest_swept": {
+          "distance": 0.5942777003596718,
+          "starting_step": 209
+        },
+        "brake_steps": 0,
+        "blocked_steps": 0,
+        "assignment_unreachable_count": 2,
+        "actual_handoff_distance": 2.942078770229716,
+        "target_prediction_error_summary": 0.0,
+        "timeline": [
+          {
+            "step": 187,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              10.999998092651367,
+              9.000001907348633,
+              3.5000007152557373
+            ],
+            "velocity": [
+              7.580965757369995e-07,
+              -7.618218660354614e-07,
+              -3.5623088479042053e-07
+            ],
+            "event_target": [
+              13.0,
+              7.0,
+              2.5
+            ],
+            "endpoint": [
+              13.330096443674215,
+              7.319328663666892,
+              2.8661185394775415
+            ],
+            "route_id": "58f93a5d7ecd69b0",
+            "route_revision": 188,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 1.132247065349468e-06,
+            "tracking_distance": 3.000002781550098,
+            "speed_cap_xy": 1.100260485894978,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.330096443674215,
+              7.319328663666892,
+              2.8661185394775415
+            ],
+            "actual_target_velocity": [
+              -0.0512299,
+              -0.0928103,
+              0.2509505
+            ]
+          },
+          {
+            "step": 190,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              11.154243469238281,
+              8.815105438232422,
+              3.4360105991363525
+            ],
+            "velocity": [
+              0.3615584969520569,
+              -0.4308720827102661,
+              -0.15186698734760284
+            ],
+            "event_target": [
+              13.0,
+              7.0,
+              2.5
+            ],
+            "endpoint": [
+              13.330096443674215,
+              7.319328663666892,
+              2.8661185394775415
+            ],
+            "route_id": "58f93a5d7ecd69b0",
+            "route_revision": 188,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.5826138345622681,
+            "tracking_distance": 2.7527333260681175,
+            "speed_cap_xy": 1.1643253300571814,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.299358503674213,
+              7.263642483666892,
+              3.0166888394775415
+            ],
+            "actual_target_velocity": [
+              -0.0512299,
+              -0.0928103,
+              0.2509505
+            ]
+          },
+          {
+            "step": 195,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              11.6912260055542,
+              8.192543029785156,
+              3.238973617553711
+            ],
+            "velocity": [
+              0.6017593145370483,
+              -0.6870265007019043,
+              -0.20112921297550201
+            ],
+            "event_target": [
+              13.0,
+              7.0,
+              2.5
+            ],
+            "endpoint": [
+              13.330096443674215,
+              7.319328663666892,
+              2.8661185394775415
+            ],
+            "route_id": "58f93a5d7ecd69b0",
+            "route_revision": 188,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.9351858882655077,
+            "tracking_distance": 1.9186271794872487,
+            "speed_cap_xy": 1.3930874591460451,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.24812860367421,
+              7.170832183666893,
+              3.2676393394775416
+            ],
+            "actual_target_velocity": [
+              -0.0512299,
+              -0.0928103,
+              0.2509505
+            ]
+          },
+          {
+            "step": 200,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              12.26456069946289,
+              7.552021026611328,
+              3.069683313369751
+            ],
+            "velocity": [
+              0.5215530395507812,
+              -0.5746898055076599,
+              -0.14294272661209106
+            ],
+            "event_target": [
+              13.0,
+              7.0,
+              2.5
+            ],
+            "endpoint": [
+              13.330096443674215,
+              7.319328663666892,
+              2.8661185394775415
+            ],
+            "route_id": "58f93a5d7ecd69b0",
+            "route_revision": 188,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.789125192038874,
+            "tracking_distance": 1.081728827445897,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.196898703674208,
+              7.078021883666894,
+              3.5185898394775417
+            ],
+            "actual_target_velocity": [
+              -0.0512299,
+              -0.0928103,
+              0.2509505
+            ]
+          },
+          {
+            "step": 205,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              12.67166805267334,
+              7.127992153167725,
+              3.143099546432495
+            ],
+            "velocity": [
+              0.3494809865951538,
+              -0.31707456707954407,
+              0.2399137169122696
+            ],
+            "event_target": [
+              13.186653137207031,
+              7.059459686279297,
+              3.568779945373535
+            ],
+            "endpoint": [
+              13.186652723674207,
+              7.059459823666894,
+              3.5687799394775417
+            ],
+            "route_id": "00957c934ceb1f98",
+            "route_revision": 202,
+            "route_index": 2,
+            "reason": "SETTLING",
+            "speed": 0.5293692781441544,
+            "tracking_distance": 0.6716473318286835,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.145668803674205,
+              6.985211583666895,
+              3.7695403394775417
+            ],
+            "actual_target_velocity": [
+              -0.0512299,
+              -0.0928103,
+              0.2509505
+            ]
+          },
+          {
+            "step": 209,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              12.893190383911133,
+              6.962060928344727,
+              3.3877203464508057
+            ],
+            "velocity": [
+              0.23210346698760986,
+              -0.15102435648441315,
+              0.3186572194099426
+            ],
+            "event_target": [
+              13.186653137207031,
+              7.059459686279297,
+              3.568779945373535
+            ],
+            "endpoint": [
+              13.186652723674207,
+              7.059459823666894,
+              3.5687799394775417
+            ],
+            "route_id": "00957c934ceb1f98",
+            "route_revision": 202,
+            "route_index": 2,
+            "reason": "SETTLING",
+            "speed": 0.42216442190368897,
+            "tracking_distance": 0.3583147833696874,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.104684883674203,
+              6.910963343666896,
+              3.970300739477542
+            ],
+            "actual_target_velocity": [
+              -0.0512299,
+              -0.0928103,
+              0.2509505
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "scenario_id": "po_eval_992001_0004",
+      "found_step": 315,
+      "received_step": 316,
+      "success_step": null,
+      "timeout": true,
+      "previous_found_step": null,
+      "previous_success_step": null,
+      "closest_search": {
+        "previous": {
+          "step": 369,
+          "agent": 2,
+          "distance": 3.6747361027715084,
+          "margin": 0.8247361027715083
+        },
+        "governed": {
+          "step": 315,
+          "agent": 1,
+          "distance": 2.42352558846428,
+          "margin": -0.026474411535720055
+        }
+      },
+      "agents": [
+        {
+          "agent": 0,
+          "active_steps": 315,
+          "reasons": {
+            "CONTINUE": 315
+          },
+          "actions": {
+            "0": 299,
+            "9": 7,
+            "8": 1,
+            "1": 8
+          },
+          "slow_steps": 12,
+          "slow_actions": {
+            "0": 9,
+            "1": 3
+          },
+          "motion_distance": 33.6864619361994
+        },
+        {
+          "agent": 1,
+          "active_steps": 315,
+          "reasons": {
+            "CONTINUE": 314,
+            "WAIT_TASK": 1
+          },
+          "actions": {
+            "0": 312,
+            "8": 1,
+            "9": 2
+          },
+          "slow_steps": 2,
+          "slow_actions": {
+            "0": 2
+          },
+          "motion_distance": 47.96162142821963
+        },
+        {
+          "agent": 2,
+          "active_steps": 315,
+          "reasons": {
+            "CONTINUE": 287,
+            "CONNECTOR": 28
+          },
+          "actions": {
+            "0": 311,
+            "9": 4
+          },
+          "slow_steps": 1,
+          "slow_actions": {
+            "0": 1
+          },
+          "motion_distance": 27.77814223188784
+        },
+        {
+          "agent": 3,
+          "active_steps": 400,
+          "reasons": {
+            "CONTINUE": 195,
+            "SETTLING": 2,
+            "HOLD": 203
+          },
+          "actions": {
+            "0": 400
+          },
+          "slow_steps": 0,
+          "slow_actions": {},
+          "motion_distance": 17.777680007973228
+        }
+      ],
+      "capture": {
+        "contact_steps": 0,
+        "hold_max": 0,
+        "closest_swept": {
+          "distance": 1.1421610102895288,
+          "starting_step": 369
+        },
+        "brake_steps": 0,
+        "blocked_steps": 0,
+        "assignment_unreachable_count": 63,
+        "actual_handoff_distance": 4.279286110252296,
+        "target_prediction_error_summary": 0.0,
+        "timeline": [
+          {
+            "step": 316,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              9.00000286102295,
+              9.000001907348633,
+              3.5
+            ],
+            "velocity": [
+              -9.685754776000977e-07,
+              -6.379559636116028e-07,
+              -9.313225746154785e-10
+            ],
+            "event_target": [
+              9.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              10.836183595604183,
+              11.949782118774309,
+              1.0020955527417692
+            ],
+            "route_id": "30449e319d0cd13c",
+            "route_revision": 306,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 1.1597961608306883e-06,
+            "tracking_distance": 1.0000000000059117,
+            "speed_cap_xy": 0.9338631718419492,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              10.836183595604183,
+              11.949782118774309,
+              1.0020955527417692
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 320,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              9.09131145477295,
+              8.950071334838867,
+              3.385277271270752
+            ],
+            "velocity": [
+              0.1572750210762024,
+              -0.08610039949417114,
+              -0.20423875749111176
+            ],
+            "event_target": [
+              9.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              10.836183595604183,
+              11.949782118774309,
+              1.0020955527417692
+            ],
+            "route_id": "30449e319d0cd13c",
+            "route_revision": 306,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.2717759759601443,
+            "tracking_distance": 0.8913733787847343,
+            "speed_cap_xy": 0.9292930309893563,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              11.060669675604181,
+              11.827276118774307,
+              1.164173472741769
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 325,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              9.269006729125977,
+              8.852602005004883,
+              3.1593124866485596
+            ],
+            "velocity": [
+              0.17675918340682983,
+              -0.09704220294952393,
+              -0.21794453263282776
+            ],
+            "event_target": [
+              11.0,
+              11.0,
+              1.5
+            ],
+            "endpoint": [
+              10.836183595604183,
+              11.949782118774309,
+              1.0020955527417692
+            ],
+            "route_id": "30449e319d0cd13c",
+            "route_revision": 306,
+            "route_index": 3,
+            "reason": "CONTINUE",
+            "speed": 0.2969188733921905,
+            "tracking_distance": 3.2188466538603584,
+            "speed_cap_xy": 0.9393954706611112,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              11.34127727560418,
+              11.674143618774306,
+              1.3667708727417687
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 330,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              9.744454383850098,
+              9.06735897064209,
+              2.826312303543091
+            ],
+            "velocity": [
+              0.5866440534591675,
+              0.3596179187297821,
+              -0.38101011514663696
+            ],
+            "event_target": [
+              11.0,
+              11.0,
+              1.5
+            ],
+            "endpoint": [
+              11.397398795604179,
+              11.643517118774305,
+              1.4072903527417686
+            ],
+            "route_id": "81a46eeff24e836b",
+            "route_revision": 308,
+            "route_index": 3,
+            "reason": "CONTINUE",
+            "speed": 0.7865398914070387,
+            "tracking_distance": 2.6590600724918985,
+            "speed_cap_xy": 0.9305638165678829,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              11.621884875604177,
+              11.521011118774304,
+              1.5693682727417684
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 335,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              10.34317684173584,
+              9.493791580200195,
+              2.427168369293213
+            ],
+            "velocity": [
+              0.5755181312561035,
+              0.4386659264564514,
+              -0.3867822289466858
+            ],
+            "event_target": [
+              11.0,
+              11.0,
+              1.5
+            ],
+            "endpoint": [
+              11.397398795604179,
+              11.643517118774305,
+              1.4072903527417686
+            ],
+            "route_id": "81a46eeff24e836b",
+            "route_revision": 308,
+            "route_index": 3,
+            "reason": "CONTINUE",
+            "speed": 0.8205177676731814,
+            "tracking_distance": 1.8867224624002774,
+            "speed_cap_xy": 1.0176372877322137,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              11.902492475604175,
+              11.367878618774302,
+              1.771965672741768
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 340,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              10.840412139892578,
+              9.656476020812988,
+              2.2611544132232666
+            ],
+            "velocity": [
+              0.43751269578933716,
+              0.07601254433393478,
+              -0.07488023489713669
+            ],
+            "event_target": [
+              11.0,
+              11.0,
+              1.5
+            ],
+            "endpoint": [
+              11.958613995604175,
+              11.337252118774302,
+              1.812485152741768
+            ],
+            "route_id": "8eacd7b8b3d8a3cd",
+            "route_revision": 313,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.45033578078054365,
+            "tracking_distance": 1.5523791445756487,
+            "speed_cap_xy": 1.0815893474500626,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              12.183100075604173,
+              11.2147461187743,
+              1.9745630727417678
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 345,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              11.182940483093262,
+              9.892492294311523,
+              2.1210782527923584
+            ],
+            "velocity": [
+              0.28154632449150085,
+              0.29176023602485657,
+              -0.15696978569030762
+            ],
+            "event_target": [
+              11.0,
+              11.0,
+              1.5
+            ],
+            "endpoint": [
+              11.958613995604175,
+              11.337252118774302,
+              1.812485152741768
+            ],
+            "route_id": "8eacd7b8b3d8a3cd",
+            "route_revision": 313,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.43477796836962035,
+            "tracking_distance": 1.2828790802742704,
+            "speed_cap_xy": 1.1368726749205962,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              12.463707675604171,
+              11.061613618774299,
+              2.1771604727417677
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 350,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              11.387550354003906,
+              9.878204345703125,
+              2.157240867614746
+            ],
+            "velocity": [
+              0.1601373702287674,
+              -0.2549654245376587,
+              0.1840001940727234
+            ],
+            "event_target": [
+              11.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              12.51982919560417,
+              11.030987118774298,
+              2.2176799527417677
+            ],
+            "route_id": "775a5f0ebb077bfd",
+            "route_revision": 323,
+            "route_index": 1,
+            "reason": "CONTINUE",
+            "speed": 0.35285608464677737,
+            "tracking_distance": 1.0192752192287906,
+            "speed_cap_xy": 1.122820450225845,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              12.744315275604169,
+              10.908481118774297,
+              2.3797578727417674
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 355,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              11.503013610839844,
+              9.523286819458008,
+              2.4007532596588135
+            ],
+            "velocity": [
+              0.09239886701107025,
+              -0.37063801288604736,
+              0.25012797117233276
+            ],
+            "event_target": [
+              13.0,
+              11.0,
+              2.5
+            ],
+            "endpoint": [
+              12.51982919560417,
+              11.030987118774298,
+              2.2176799527417677
+            ],
+            "route_id": "775a5f0ebb077bfd",
+            "route_revision": 323,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.4565896288614477,
+            "tracking_distance": 2.1051128193960436,
+            "speed_cap_xy": 1.0240287438500673,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.024922875604167,
+              10.755348618774295,
+              2.582355272741767
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 360,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              11.94488525390625,
+              9.516796112060547,
+              2.6122114658355713
+            ],
+            "velocity": [
+              0.5547219514846802,
+              0.17990459501743317,
+              0.17901243269443512
+            ],
+            "event_target": [
+              13.0,
+              11.0,
+              2.5
+            ],
+            "endpoint": [
+              13.081044395604167,
+              10.724722118774295,
+              2.622874752741767
+            ],
+            "route_id": "34c967540eb0a66d",
+            "route_revision": 333,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.6100225879641984,
+            "tracking_distance": 1.823664528823258,
+            "speed_cap_xy": 0.9313127518398687,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.305530475604165,
+              10.602216118774294,
+              2.784952672741767
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 365,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              12.489113807678223,
+              9.777017593383789,
+              2.7410106658935547
+            ],
+            "velocity": [
+              0.5091589689254761,
+              0.2754628360271454,
+              0.09776750206947327
+            ],
+            "event_target": [
+              13.0,
+              11.0,
+              2.5
+            ],
+            "endpoint": [
+              13.081044395604167,
+              10.724722118774295,
+              2.622874752741767
+            ],
+            "route_id": "34c967540eb0a66d",
+            "route_revision": 333,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.5870954897887365,
+            "tracking_distance": 1.347136522210083,
+            "speed_cap_xy": 0.8709418616490439,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.586138075604163,
+              10.449083618774292,
+              2.9875500727417665
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 370,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              12.91781234741211,
+              9.79157543182373,
+              2.8032851219177246
+            ],
+            "velocity": [
+              0.37458372116088867,
+              -0.1775026172399521,
+              0.04253008961677551
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              13.642259595604163,
+              10.418457118774292,
+              3.0280695527417665
+            ],
+            "route_id": "6d16c3950514f9bc",
+            "route_revision": 338,
+            "route_index": 1,
+            "reason": "CONTINUE",
+            "speed": 0.4166880749536544,
+            "tracking_distance": 0.8516621041712976,
+            "speed_cap_xy": 0.8405065485276282,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.866745675604161,
+              10.29595111877429,
+              3.1901474727417662
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 375,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              13.220297813415527,
+              9.599595069885254,
+              2.88950777053833
+            ],
+            "velocity": [
+              0.2585451602935791,
+              -0.04527059569954872,
+              0.21544350683689117
+            ],
+            "event_target": [
+              13.0,
+              11.0,
+              3.5
+            ],
+            "endpoint": [
+              13.642259595604163,
+              10.418457118774292,
+              3.0280695527417665
+            ],
+            "route_id": "6d16c3950514f9bc",
+            "route_revision": 338,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.33957463301077434,
+            "tracking_distance": 1.543491450290033,
+            "speed_cap_xy": 0.7968463642755523,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              14.147353275604159,
+              10.142818618774289,
+              3.392744872741766
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 380,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              13.428751945495605,
+              9.50696086883545,
+              3.033949375152588
+            ],
+            "velocity": [
+              0.18056020140647888,
+              -0.18297861516475677,
+              0.03981957584619522
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              14.203474795604158,
+              10.112192118774288,
+              3.433264352741766
+            ],
+            "route_id": "87992878dcde228e",
+            "route_revision": 347,
+            "route_index": 1,
+            "reason": "CONTINUE",
+            "speed": 0.2601321943937952,
+            "tracking_distance": 0.8520208263431706,
+            "speed_cap_xy": 0.719677448971197,
+            "speed_cap_z": 0.7108512604027055,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              14.427960875604157,
+              9.989686118774287,
+              3.5953422727417657
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 385,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              13.576616287231445,
+              9.288464546203613,
+              3.00488018989563
+            ],
+            "velocity": [
+              0.1274288445711136,
+              -0.22494341433048248,
+              -0.057687386870384216
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              14.203474795604158,
+              10.112192118774288,
+              3.433264352741766
+            ],
+            "route_id": "87992878dcde228e",
+            "route_revision": 347,
+            "route_index": 1,
+            "reason": "CONTINUE",
+            "speed": 0.2648876831476268,
+            "tracking_distance": 0.8189030121241956,
+            "speed_cap_xy": 0.7543917557923123,
+            "speed_cap_z": 0.7450448521412909,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              14.708568475604155,
+              9.836553618774285,
+              3.7979396727417654
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 390,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              13.676469802856445,
+              9.079750061035156,
+              2.9357762336730957
+            ],
+            "velocity": [
+              0.0827743336558342,
+              -0.1933828443288803,
+              -0.06888869404792786
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              14.764689995604154,
+              9.805927118774285,
+              3.8384591527417653
+            ],
+            "route_id": "adca4722ff8127cb",
+            "route_revision": 357,
+            "route_index": 1,
+            "reason": "CONTINUE",
+            "speed": 0.22134626032649463,
+            "tracking_distance": 0.8086237643342283,
+            "speed_cap_xy": 0.7927958535728976,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              14.989176075604153,
+              9.683421118774284,
+              4.000537072741765
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 395,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              13.736968994140625,
+              8.914620399475098,
+              2.878772497177124
+            ],
+            "velocity": [
+              0.04683787748217583,
+              -0.1459207683801651,
+              -0.04763953015208244
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              14.764689995604154,
+              9.805927118774285,
+              3.8384591527417653
+            ],
+            "route_id": "adca4722ff8127cb",
+            "route_revision": 357,
+            "route_index": 1,
+            "reason": "CONTINUE",
+            "speed": 0.16048732736513582,
+            "tracking_distance": 0.8329955456833072,
+            "speed_cap_xy": 0.8333408165490255,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              15.26978367560415,
+              9.530288618774282,
+              4.203134472741767
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          },
+          {
+            "step": 399,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              13.76318645477295,
+              8.816256523132324,
+              2.850022792816162
+            ],
+            "velocity": [
+              0.025186296552419662,
+              -0.10973390936851501,
+              -0.029339194297790527
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              2.5
+            ],
+            "endpoint": [
+              15.32590519560415,
+              9.499662118774282,
+              4.243653952741767
+            ],
+            "route_id": "7dcf5d70dac58404",
+            "route_revision": 365,
+            "route_index": 1,
+            "reason": "CONTINUE",
+            "speed": 0.11634719043177363,
+            "tracking_distance": 0.8594947268780367,
+            "speed_cap_xy": 0.8571742797503248,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              15.494269755604149,
+              9.40778261877428,
+              4.3652123927417685
+            ],
+            "actual_target_velocity": [
+              0.2806076,
+              -0.1531325,
+              0.2025974
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "scenario_id": "po_eval_992001_0005",
+      "found_step": 217,
+      "received_step": 218,
+      "success_step": 243,
+      "timeout": false,
+      "previous_found_step": 185,
+      "previous_success_step": 294,
+      "closest_search": {
+        "previous": {
+          "step": 185,
+          "agent": 0,
+          "distance": 1.8881960897274177,
+          "margin": -0.21180391027258239
+        },
+        "governed": {
+          "step": 217,
+          "agent": 0,
+          "distance": 1.838547277043393,
+          "margin": -0.26145272295660704
+        }
+      },
+      "agents": [
+        {
+          "agent": 0,
+          "active_steps": 217,
+          "reasons": {
+            "CONTINUE": 217
+          },
+          "actions": {
+            "0": 217
+          },
+          "slow_steps": 2,
+          "slow_actions": {
+            "0": 2
+          },
+          "motion_distance": 47.09712127359682
+        },
+        {
+          "agent": 1,
+          "active_steps": 217,
+          "reasons": {
+            "CONTINUE": 217
+          },
+          "actions": {
+            "0": 212,
+            "9": 5
+          },
+          "slow_steps": 3,
+          "slow_actions": {
+            "0": 3
+          },
+          "motion_distance": 28.799724135580874
+        },
+        {
+          "agent": 2,
+          "active_steps": 217,
+          "reasons": {
+            "CONTINUE": 216,
+            "WAIT_TASK": 1
+          },
+          "actions": {
+            "0": 216,
+            "8": 1
+          },
+          "slow_steps": 1,
+          "slow_actions": {
+            "0": 1
+          },
+          "motion_distance": 35.149297578799015
+        },
+        {
+          "agent": 3,
+          "active_steps": 243,
+          "reasons": {
+            "CONTINUE": 74,
+            "SETTLING": 11,
+            "HOLD": 158
+          },
+          "actions": {
+            "0": 243
+          },
+          "slow_steps": 0,
+          "slow_actions": {},
+          "motion_distance": 11.606178262011493
+        }
+      ],
+      "capture": {
+        "contact_steps": 6,
+        "hold_max": 5,
+        "closest_swept": {
+          "distance": 0.3410669532729762,
+          "starting_step": 241
+        },
+        "brake_steps": 0,
+        "blocked_steps": 0,
+        "assignment_unreachable_count": 4,
+        "actual_handoff_distance": 3.5178983797015024,
+        "target_prediction_error_summary": 0.0,
+        "timeline": [
+          {
+            "step": 218,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              10.999998092651367,
+              11.00000286102295,
+              4.500000953674316
+            ],
+            "velocity": [
+              1.039355993270874e-06,
+              -1.559033989906311e-06,
+              -4.76837158203125e-07
+            ],
+            "event_target": [
+              11.0,
+              11.0,
+              5.5
+            ],
+            "endpoint": [
+              13.512884631884596,
+              9.755479222778423,
+              6.6241881310900705
+            ],
+            "route_id": "d22c7308354921a0",
+            "route_revision": 207,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 1.933448095469467e-06,
+            "tracking_distance": 0.9999990463315953,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.512884631884596,
+              9.755479222778423,
+              6.6241881310900705
+            ],
+            "actual_target_velocity": [
+              -0.334488,
+              -0.14886,
+              0.0007622
+            ]
+          },
+          {
+            "step": 220,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              10.961138725280762,
+              10.982717514038086,
+              4.560276508331299
+            ],
+            "velocity": [
+              -0.12306609004735947,
+              -0.05471982806921005,
+              0.19651420414447784
+            ],
+            "event_target": [
+              11.0,
+              11.0,
+              5.5
+            ],
+            "endpoint": [
+              13.512884631884596,
+              9.755479222778423,
+              6.6241881310900705
+            ],
+            "route_id": "d22c7308354921a0",
+            "route_revision": 207,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.2382380207565665,
+            "tracking_distance": 0.9406854542235908,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.379089431884594,
+              9.695935222778424,
+              6.62449301109007
+            ],
+            "actual_target_velocity": [
+              -0.334488,
+              -0.14886,
+              0.0007622
+            ]
+          },
+          {
+            "step": 225,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              10.792967796325684,
+              10.864490509033203,
+              4.889033317565918
+            ],
+            "velocity": [
+              -0.10805763304233551,
+              -0.2659671902656555,
+              0.4038203954696655
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              6.5
+            ],
+            "endpoint": [
+              13.512884631884596,
+              9.755479222778423,
+              6.6241881310900705
+            ],
+            "route_id": "d22c7308354921a0",
+            "route_revision": 207,
+            "route_index": 3,
+            "reason": "CONTINUE",
+            "speed": 0.49546534707666134,
+            "tracking_distance": 3.307949464281925,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              13.04460143188459,
+              9.547075222778426,
+              6.62525521109007
+            ],
+            "actual_target_velocity": [
+              -0.334488,
+              -0.14886,
+              0.0007622
+            ]
+          },
+          {
+            "step": 230,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              10.937448501586914,
+              10.244925498962402,
+              5.395597457885742
+            ],
+            "velocity": [
+              0.3044527471065521,
+              -0.7407630085945129,
+              0.5494363307952881
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              6.5
+            ],
+            "endpoint": [
+              12.777011031884587,
+              9.427987222778428,
+              6.62586497109007
+            ],
+            "route_id": "a1f8d20dd89a29af",
+            "route_revision": 215,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.9712371449447915,
+            "tracking_distance": 2.6502194544228383,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              12.710113431884587,
+              9.398215222778429,
+              6.62601741109007
+            ],
+            "actual_target_velocity": [
+              -0.334488,
+              -0.14886,
+              0.0007622
+            ]
+          },
+          {
+            "step": 235,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              11.43639087677002,
+              9.534869194030762,
+              5.903535842895508
+            ],
+            "velocity": [
+              0.5780555009841919,
+              -0.6373224258422852,
+              0.45172446966171265
+            ],
+            "event_target": [
+              13.0,
+              9.0,
+              6.5
+            ],
+            "endpoint": [
+              12.777011031884587,
+              9.427987222778428,
+              6.62586497109007
+            ],
+            "route_id": "a1f8d20dd89a29af",
+            "route_revision": 215,
+            "route_index": 2,
+            "reason": "CONTINUE",
+            "speed": 0.9717937194645455,
+            "tracking_distance": 1.7569086588896752,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              12.375625431884583,
+              9.249355222778432,
+              6.626779611090069
+            ],
+            "actual_target_velocity": [
+              -0.334488,
+              -0.14886,
+              0.0007622
+            ]
+          },
+          {
+            "step": 240,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              11.956358909606934,
+              9.060541152954102,
+              6.244105815887451
+            ],
+            "velocity": [
+              0.451202929019928,
+              -0.3658757209777832,
+              0.26765426993370056
+            ],
+            "event_target": [
+              11.0,
+              9.0,
+              6.5
+            ],
+            "endpoint": [
+              12.041137431884579,
+              9.100495222778434,
+              6.627541811090069
+            ],
+            "route_id": "f1ca6b08fa21f7c4",
+            "route_revision": 226,
+            "route_index": 1,
+            "reason": "SETTLING",
+            "speed": 0.6395998237733631,
+            "tracking_distance": 0.9918515154236555,
+            "speed_cap_xy": 1.499999999650754,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              12.041137431884579,
+              9.100495222778434,
+              6.627541811090069
+            ],
+            "actual_target_velocity": [
+              -0.334488,
+              -0.14886,
+              0.0007622
+            ]
+          },
+          {
+            "step": 242,
+            "agent": 3,
+            "phase": 2,
+            "position": [
+              12.052826881408691,
+              8.943175315856934,
+              6.331707954406738
+            ],
+            "velocity": [
+              0.1727900505065918,
+              -0.27046406269073486,
+              0.20356786251068115
+            ],
+            "event_target": [
+              11.0,
+              9.0,
+              6.5
+            ],
+            "endpoint": [
+              12.041137431884579,
+              9.100495222778434,
+              6.627541811090069
+            ],
+            "route_id": "f1ca6b08fa21f7c4",
+            "route_revision": 226,
+            "route_index": 1,
+            "reason": "SETTLING",
+            "speed": 0.3800619494351097,
+            "tracking_distance": 1.0677058113331943,
+            "speed_cap_xy": 1.3990589414024726,
+            "speed_cap_z": 0.749999999825377,
+            "action": 0,
+            "navigation_candidates": 7,
+            "action_checks": {
+              "model_checked_stop": 8
+            },
+            "actual_target": [
+              11.907342231884577,
+              9.040951222778435,
+              6.627846691090069
+            ],
+            "actual_target_velocity": [
+              -0.334488,
+              -0.14886,
+              0.0007622
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "case2_agent1": {
+    "window": [
+      100,
+      399
+    ],
+    "backward_tracking_resets": [
+      {
+        "previous": {
+          "step": 167,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4521632194519043,
+            3.6538281440734863,
+            2.498347520828247
+          ],
+          "velocity": [
+            0.04269527643918991,
+            0.035490769892930984,
+            0.00011082056153099984
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            9.0,
+            5.5
+          ],
+          "route_id": "8f81fb31b3764b7c",
+          "route_revision": 132,
+          "route_index": 2,
+          "reason": "CONTINUE",
+          "speed": 0.05552020946474067,
+          "tracking_distance": 2.0513361732279622,
+          "speed_cap_xy": 0.08176365126855673,
+          "speed_cap_z": 0.08114862977527082,
+          "action": 0,
+          "navigation_candidates": 6,
+          "action_checks": {
+            "model_checked_stop": 7,
+            "speed_cap": 1
+          }
+        },
+        "current": {
+          "step": 168,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4609360694885254,
+            3.661191940307617,
+            2.498368978500366
+          ],
+          "velocity": [
+            0.04386475682258606,
+            0.03681930527091026,
+            0.0001070096404873766
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "80240fa37e0cc07a",
+          "route_revision": 162,
+          "route_index": 1,
+          "reason": "CONTINUE",
+          "speed": 0.057269447201804276,
+          "tracking_distance": 0.8060021726486937,
+          "speed_cap_xy": 0.07895324896089732,
+          "speed_cap_z": 0.07837518746964633,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 198,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.5476701259613037,
+            3.8171212673187256,
+            2.4994618892669678
+          ],
+          "velocity": [
+            0.058326296508312225,
+            0.046952176839113235,
+            4.342475222074427e-05
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "80240fa37e0cc07a",
+          "route_revision": 162,
+          "route_index": 2,
+          "reason": "WAIT_TASK",
+          "speed": 0.07487633578118004,
+          "tracking_distance": 1.873089546396027,
+          "speed_cap_xy": 0.09327631741762163,
+          "speed_cap_z": 0.09250112972222269,
+          "action": 8,
+          "navigation_candidates": 5,
+          "action_checks": {
+            "model_checked_stop": 6,
+            "speed_cap": 2
+          }
+        },
+        "current": {
+          "step": 199,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.547679901123047,
+            3.817108392715454,
+            2.4994618892669678
+          ],
+          "velocity": [
+            4.894658923149109e-05,
+            -6.492249667644501e-05,
+            0.0
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "fcd879efb09b8c8c",
+          "route_revision": 186,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 8.130620623359162e-05,
+          "tracking_distance": 0.9836766181542307,
+          "speed_cap_xy": 0.09326717569492758,
+          "speed_cap_z": 0.09249212080612779,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 248,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4538280963897705,
+            3.6497747898101807,
+            2.499708652496338
+          ],
+          "velocity": [
+            0.04140234738588333,
+            0.03457508981227875,
+            1.904888267745264e-05
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "e00f9eae9f4d9e12",
+          "route_revision": 219,
+          "route_index": 2,
+          "reason": "TRACK_ROOT",
+          "speed": 0.05394063002457826,
+          "tracking_distance": 2.05274347121826,
+          "speed_cap_xy": 0.08496790165081622,
+          "speed_cap_z": 0.08430969342589378,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        },
+        "current": {
+          "step": 249,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4624903202056885,
+            3.6570827960968018,
+            2.4997124671936035
+          ],
+          "velocity": [
+            0.043310582637786865,
+            0.036540329456329346,
+            1.8637019820744172e-05
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "a76ed6617dd90f6a",
+          "route_revision": 227,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 0.056665709141774295,
+          "tracking_distance": 0.8035267138592631,
+          "speed_cap_xy": 0.08236630116589366,
+          "speed_cap_z": 0.08174324198625982,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 268,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.3711342811584473,
+            3.6764113903045654,
+            2.4997799396514893
+          ],
+          "velocity": [
+            0.04960303753614426,
+            0.038479410111904144,
+            2.2715114027960226e-05
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "72385bfb28ccfa5b",
+          "route_revision": 230,
+          "route_index": 2,
+          "reason": "TRACK_ROOT",
+          "speed": 0.06277839478155404,
+          "tracking_distance": 2.0988307187954103,
+          "speed_cap_xy": 0.1387448749970645,
+          "speed_cap_z": 0.13721934845671058,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        },
+        "current": {
+          "step": 269,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.3827388286590576,
+            3.6855454444885254,
+            2.499784469604492
+          ],
+          "velocity": [
+            0.05802304297685623,
+            0.04567035287618637,
+            2.236947329947725e-05
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "4c9cf03f0d019295",
+          "route_revision": 240,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 0.07384074179288035,
+          "tracking_distance": 0.7851506950106003,
+          "speed_cap_xy": 0.13531029387377203,
+          "speed_cap_z": 0.13384715211577713,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 288,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.409116744995117,
+            3.6616759300231934,
+            2.4998505115509033
+          ],
+          "velocity": [
+            0.05025455355644226,
+            0.03809705376625061,
+            1.3902517821406946e-05
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "e63f098afff0ca6a",
+          "route_revision": 250,
+          "route_index": 2,
+          "reason": "TRACK_ROOT",
+          "speed": 0.06306271364368897,
+          "tracking_distance": 2.078947057931253,
+          "speed_cap_xy": 0.11415192037820818,
+          "speed_cap_z": 0.1130536301061511,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        },
+        "current": {
+          "step": 289,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4200260639190674,
+            3.670199155807495,
+            2.4998531341552734
+          ],
+          "velocity": [
+            0.054546989500522614,
+            0.0426163524389267,
+            1.3436922927212436e-05
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "f4c7a8e6a9dd8ef7",
+          "route_revision": 260,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 0.06922086202381357,
+          "tracking_distance": 0.7909417326111955,
+          "speed_cap_xy": 0.11076425877399744,
+          "speed_cap_z": 0.1097210489679128,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 308,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4119956493377686,
+            3.625774621963501,
+            2.4998912811279297
+          ],
+          "velocity": [
+            0.016959764063358307,
+            0.008509496226906776,
+            8.388975402340293e-06
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "ae4697abf7b0c639",
+          "route_revision": 270,
+          "route_index": 2,
+          "reason": "TRACK_ROOT",
+          "speed": 0.018974856876810133,
+          "tracking_distance": 2.100060289415884,
+          "speed_cap_xy": 0.10204751119017602,
+          "speed_cap_z": 0.10114142228849232,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        },
+        "current": {
+          "step": 309,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4174795150756836,
+            3.6295759677886963,
+            2.4998929500579834
+          ],
+          "velocity": [
+            0.027418820187449455,
+            0.019006267189979553,
+            8.236265784944408e-06
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "1a43cbaca5bfee91",
+          "route_revision": 280,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 0.03336210366275864,
+          "tracking_distance": 0.7554171405154847,
+          "speed_cap_xy": 0.0999470586422831,
+          "speed_cap_z": 0.09907298162579536,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 318,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.424238443374634,
+            3.6222145557403564,
+            2.499906301498413
+          ],
+          "velocity": [
+            0.018614323809742928,
+            0.011221283115446568,
+            6.770634172426071e-06
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "1a43cbaca5bfee91",
+          "route_revision": 280,
+          "route_index": 2,
+          "reason": "TRACK_ROOT",
+          "speed": 0.021735001529617055,
+          "tracking_distance": 2.0931596266246753,
+          "speed_cap_xy": 0.09384088935330512,
+          "speed_cap_z": 0.09305749949999154,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        },
+        "current": {
+          "step": 319,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.429720878601074,
+            3.626232624053955,
+            2.4999077320098877
+          ],
+          "velocity": [
+            0.027412699535489082,
+            0.020089756697416306,
+            6.622422006330453e-06
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "fbd8ff6c3f872a4e",
+          "route_revision": 290,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 0.033986092211974885,
+          "tracking_distance": 0.7594915018935784,
+          "speed_cap_xy": 0.09177391496486963,
+          "speed_cap_z": 0.09102040040306747,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 338,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.413905382156372,
+            3.6701581478118896,
+            2.499957323074341
+          ],
+          "velocity": [
+            -0.046674035489559174,
+            0.048728086054325104,
+            4.1412491555092856e-05
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "44cc0c28e3044565",
+          "route_revision": 300,
+          "route_index": 2,
+          "reason": "TRACK_ROOT",
+          "speed": 0.06747513374860993,
+          "tracking_distance": 2.0698249902841903,
+          "speed_cap_xy": 0.11410448043607173,
+          "speed_cap_z": 0.11300696805119514,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        },
+        "current": {
+          "step": 339,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.410048007965088,
+            3.680302619934082,
+            2.4999637603759766
+          ],
+          "velocity": [
+            -0.019286904484033585,
+            0.05072198063135147,
+            3.2712177926441655e-05
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "a60437c44243562b",
+          "route_revision": 310,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 0.05426513681757389,
+          "tracking_distance": 0.7943242567356377,
+          "speed_cap_xy": 0.11932381759397687,
+          "speed_cap_z": 0.11813958897255361,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 358,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.422337770462036,
+            3.6924357414245605,
+            2.499990701675415
+          ],
+          "velocity": [
+            0.06228676438331604,
+            0.0491134375333786,
+            1.2022976534353802e-06
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "9b3578c5bfc233ae",
+          "route_revision": 320,
+          "route_index": 2,
+          "reason": "TRACK_ROOT",
+          "speed": 0.07932068308539286,
+          "tracking_distance": 2.0490833074575314,
+          "speed_cap_xy": 0.11660698386840523,
+          "speed_cap_z": 0.11546817352063954,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        },
+        "current": {
+          "step": 359,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4351236820220947,
+            3.7026283740997314,
+            2.499990940093994
+          ],
+          "velocity": [
+            0.06392994523048401,
+            0.05096279829740524,
+            1.0997134722856572e-06
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "d097d67025ed7180",
+          "route_revision": 330,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 0.08175723031441356,
+          "tracking_distance": 0.8264497872397204,
+          "speed_cap_xy": 0.11320970007218421,
+          "speed_cap_z": 0.11212682700715959,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      },
+      {
+        "previous": {
+          "step": 388,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.44034743309021,
+            3.651061534881592,
+            2.499993085861206
+          ],
+          "velocity": [
+            0.044687237590551376,
+            0.03630552440881729,
+            4.872992462878756e-07
+          ],
+          "event_target": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "765bee9d3f02e265",
+          "route_revision": 350,
+          "route_index": 2,
+          "reason": "TRACK_ROOT",
+          "speed": 0.05757638670766929,
+          "tracking_distance": 2.062074468149031,
+          "speed_cap_xy": 0.09324646224267782,
+          "speed_cap_z": 0.09247170737944543,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        },
+        "current": {
+          "step": 389,
+          "agent": 1,
+          "phase": 0,
+          "position": [
+            3.4497616291046143,
+            3.658830165863037,
+            2.499993085861206
+          ],
+          "velocity": [
+            0.04707083851099014,
+            0.03884357213973999,
+            4.785293867826113e-07
+          ],
+          "event_target": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "endpoint": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "route_id": "bd7e296f5901e391",
+          "route_revision": 360,
+          "route_index": 1,
+          "reason": "TRACK_ROOT",
+          "speed": 0.061028574741115234,
+          "tracking_distance": 0.797710919139107,
+          "speed_cap_xy": 0.09035963406786324,
+          "speed_cap_z": 0.08962631458416581,
+          "action": 0,
+          "navigation_candidates": 7,
+          "action_checks": {
+            "model_checked_stop": 8
+          }
+        }
+      }
+    ],
+    "unique_routes": 25,
+    "tracking_targets": {
+      "[3.0, 3.0, 2.5]": 222,
+      "[5.0, 5.0, 2.5]": 78
+    },
+    "xy_cap_median": 0.09986072962637992,
+    "total_slow_steps": 255
+  },
+  "case4_static_tracking": {
+    "window": [
+      378,
+      399
+    ],
+    "points": [
+      {
+        "step": 378,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.35401725769043,
+          9.574126243591309,
+          3.009995460510254
+        ],
+        "velocity": [
+          0.20690427720546722,
+          -0.10973961651325226,
+          0.1311902105808258
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.203474795604158,
+          10.112192118774288,
+          3.433264352741766
+        ],
+        "route_id": "87992878dcde228e",
+        "route_revision": 347,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.2684455898513401,
+        "tracking_distance": 0.845603058215842,
+        "speed_cap_xy": 0.7324461898533627,
+        "speed_cap_z": 0.7234286922030151,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 379,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.392640113830566,
+          9.543556213378906,
+          3.0259854793548584
+        ],
+        "velocity": [
+          0.1931159347295761,
+          -0.15285050868988037,
+          0.07994967699050903
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.203474795604158,
+          10.112192118774288,
+          3.433264352741766
+        ],
+        "route_id": "87992878dcde228e",
+        "route_revision": 347,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.25893820325344,
+        "tracking_distance": 0.852220828532051,
+        "speed_cap_xy": 0.7235650046495721,
+        "speed_cap_z": 0.7146805985248648,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 380,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.428751945495605,
+          9.50696086883545,
+          3.033949375152588
+        ],
+        "velocity": [
+          0.18056020140647888,
+          -0.18297861516475677,
+          0.03981957584619522
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.203474795604158,
+          10.112192118774288,
+          3.433264352741766
+        ],
+        "route_id": "87992878dcde228e",
+        "route_revision": 347,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.2601321943937952,
+        "tracking_distance": 0.8520208263431706,
+        "speed_cap_xy": 0.719677448971197,
+        "speed_cap_z": 0.7108512604027055,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 381,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.462541580200195,
+          9.46632194519043,
+          3.035684823989868
+        ],
+        "velocity": [
+          0.16894720494747162,
+          -0.20319584012031555,
+          0.008677837438881397
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.203474795604158,
+          10.112192118774288,
+          3.433264352741766
+        ],
+        "route_id": "87992878dcde228e",
+        "route_revision": 347,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.264399342594454,
+        "tracking_distance": 0.8475606766676566,
+        "speed_cap_xy": 0.7204665269237012,
+        "speed_cap_z": 0.7116285235388204,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 382,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.494144439697266,
+          9.42314338684082,
+          3.0326244831085205
+        ],
+        "velocity": [
+          0.15801267325878143,
+          -0.21589261293411255,
+          -0.01530151255428791
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.203474795604158,
+          10.112192118774288,
+          3.433264352741766
+        ],
+        "route_id": "87992878dcde228e",
+        "route_revision": 347,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.2679771660353807,
+        "tracking_distance": 0.8407840942343423,
+        "speed_cap_xy": 0.7251372942700982,
+        "speed_cap_z": 0.7162293355213478,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 383,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.523653030395508,
+          9.378565788269043,
+          3.0259029865264893
+        ],
+        "velocity": [
+          0.14754508435726166,
+          -0.2228892296552658,
+          -0.03360745310783386
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.203474795604158,
+          10.112192118774288,
+          3.433264352741766
+        ],
+        "route_id": "87992878dcde228e",
+        "route_revision": 347,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.26940419729229265,
+        "tracking_distance": 0.8331257429269854,
+        "speed_cap_xy": 0.7329362545860931,
+        "speed_cap_z": 0.7239114093245007,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 384,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.551130294799805,
+          9.333453178405762,
+          3.0164177417755127
+        ],
+        "velocity": [
+          0.13738638162612915,
+          -0.2255612015724182,
+          -0.047426432371139526
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.203474795604158,
+          10.112192118774288,
+          3.433264352741766
+        ],
+        "route_id": "87992878dcde228e",
+        "route_revision": 347,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.2683321449222358,
+        "tracking_distance": 0.8256045712419139,
+        "speed_cap_xy": 0.7431693366961554,
+        "speed_cap_z": 0.7339909763541073,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 385,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.576616287231445,
+          9.288464546203613,
+          3.00488018989563
+        ],
+        "velocity": [
+          0.1274288445711136,
+          -0.22494341433048248,
+          -0.057687386870384216
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.203474795604158,
+          10.112192118774288,
+          3.433264352741766
+        ],
+        "route_id": "87992878dcde228e",
+        "route_revision": 347,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.2648876831476268,
+        "tracking_distance": 0.8189030121241956,
+        "speed_cap_xy": 0.7543917557923123,
+        "speed_cap_z": 0.7450448521412909,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 386,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.600146293640137,
+          9.244105339050293,
+          2.9918713569641113
+        ],
+        "velocity": [
+          0.11765158921480179,
+          -0.2217937707901001,
+          -0.06504396349191666
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.2593551433706255,
+        "tracking_distance": 0.8134497047295352,
+        "speed_cap_xy": 0.7603059613611549,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 387,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.621820449829102,
+          9.200791358947754,
+          2.9779722690582275
+        ],
+        "velocity": [
+          0.10837218910455704,
+          -0.21657095849514008,
+          -0.06949563324451447
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.251946729438732,
+        "tracking_distance": 0.8095896069258934,
+        "speed_cap_xy": 0.767483243951574,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 388,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.641719818115234,
+          9.158824920654297,
+          2.9637258052825928
+        ],
+        "velocity": [
+          0.09949808567762375,
+          -0.2098301649093628,
+          -0.07123202830553055
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.24290444420784493,
+        "tracking_distance": 0.8075093206073118,
+        "speed_cap_xy": 0.77551392337773,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 389,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.65991497039795,
+          9.118426322937012,
+          2.949553966522217
+        ],
+        "velocity": [
+          0.09097418189048767,
+          -0.20199303328990936,
+          -0.07085913419723511
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.23259085142688596,
+        "tracking_distance": 0.8072244613089757,
+        "speed_cap_xy": 0.7840478931320831,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 390,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.676469802856445,
+          9.079750061035156,
+          2.9357762336730957
+        ],
+        "velocity": [
+          0.0827743336558342,
+          -0.1933828443288803,
+          -0.06888869404792786
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.22134626032649463,
+        "tracking_distance": 0.8086237643342283,
+        "speed_cap_xy": 0.7927958535728976,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 391,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.691448211669922,
+          9.042900085449219,
+          2.922626495361328
+        ],
+        "velocity": [
+          0.074893519282341,
+          -0.18425069749355316,
+          -0.06574846059083939
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.20947605788590823,
+        "tracking_distance": 0.8115135250471689,
+        "speed_cap_xy": 0.8015265874564648,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 392,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.704916000366211,
+          9.007941246032715,
+          2.9102680683135986
+        ],
+        "velocity": [
+          0.06734079122543335,
+          -0.17479439079761505,
+          -0.0617920383810997
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.19724633640315875,
+        "tracking_distance": 0.8156528175876178,
+        "speed_cap_xy": 0.8100611746776849,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 393,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.71694278717041,
+          8.974906921386719,
+          2.89880633354187
+        ],
+        "velocity": [
+          0.06013341620564461,
+          -0.1651722937822342,
+          -0.057308170944452286
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.18488412813122854,
+        "tracking_distance": 0.8207820139008151,
+        "speed_cap_xy": 0.8182663869811222,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 394,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.727601051330566,
+          8.943804740905762,
+          2.8883004188537598
+        ],
+        "velocity": [
+          0.0532921701669693,
+          -0.155512735247612,
+          -0.052529312670230865
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.1725792424218682,
+        "tracking_distance": 0.8266428565735141,
+        "speed_cap_xy": 0.826047228416428,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 395,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.736968994140625,
+          8.914620399475098,
+          2.878772497177124
+        ],
+        "velocity": [
+          0.04683787748217583,
+          -0.1459207683801651,
+          -0.04763953015208244
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          14.764689995604154,
+          9.805927118774285,
+          3.8384591527417653
+        ],
+        "route_id": "adca4722ff8127cb",
+        "route_revision": 357,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.16048732736513582,
+        "tracking_distance": 0.8329955456833072,
+        "speed_cap_xy": 0.8333408165490255,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 396,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.745126724243164,
+          8.887324333190918,
+          2.870216131210327
+        ],
+        "velocity": [
+          0.040788765996694565,
+          -0.1364826261997223,
+          -0.04278164729475975
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          15.32590519560415,
+          9.499662118774282,
+          4.243653952741767
+        ],
+        "route_id": "7dcf5d70dac58404",
+        "route_revision": 365,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.1487329823245653,
+        "tracking_distance": 0.8396246928720961,
+        "speed_cap_xy": 0.8401096797315404,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 397,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.752158164978027,
+          8.861870765686035,
+          2.8626034259796143
+        ],
+        "velocity": [
+          0.03515886515378952,
+          -0.12726908922195435,
+          -0.03806367889046669
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          15.32590519560415,
+          9.499662118774282,
+          4.243653952741767
+        ],
+        "route_id": "7dcf5d70dac58404",
+        "route_revision": 365,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.13741328364086455,
+        "tracking_distance": 0.8463467581596973,
+        "speed_cap_xy": 0.8463369015371427,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 398,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.758149147033691,
+          8.838203430175781,
+          2.8558905124664307
+        ],
+        "velocity": [
+          0.0299569983035326,
+          -0.11833757907152176,
+          -0.03356456011533737
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          15.32590519560415,
+          9.499662118774282,
+          4.243653952741767
+        ],
+        "route_id": "7dcf5d70dac58404",
+        "route_revision": 365,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.12660088492424773,
+        "tracking_distance": 0.8530101500090229,
+        "speed_cap_xy": 0.8520214555319399,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      },
+      {
+        "step": 399,
+        "agent": 3,
+        "phase": 2,
+        "position": [
+          13.76318645477295,
+          8.816256523132324,
+          2.850022792816162
+        ],
+        "velocity": [
+          0.025186296552419662,
+          -0.10973390936851501,
+          -0.029339194297790527
+        ],
+        "event_target": [
+          13.0,
+          9.0,
+          2.5
+        ],
+        "endpoint": [
+          15.32590519560415,
+          9.499662118774282,
+          4.243653952741767
+        ],
+        "route_id": "7dcf5d70dac58404",
+        "route_revision": 365,
+        "route_index": 1,
+        "reason": "CONTINUE",
+        "speed": 0.11634719043177363,
+        "tracking_distance": 0.8594947268780367,
+        "speed_cap_xy": 0.8571742797503248,
+        "speed_cap_z": 0.749999999825377,
+        "action": 0,
+        "navigation_candidates": 7,
+        "action_checks": {
+          "model_checked_stop": 8
+        }
+      }
+    ],
+    "tracking_distance_min": 0.8072244613089757,
+    "tracking_distance_max": 0.8594947268780367,
+    "arrival_radius": 0.75,
+    "final_public_target_velocity": [
+      0.2806076,
+      -0.1531325,
+      0.2025974
+    ],
+    "simplified_zero_flow_steady_state_offset": [
+      0.7856724774758325,
+      -0.4287552819562547,
+      0.32415584007547343
+    ],
+    "simplified_offset_norm": 0.9519397787273288,
+    "interpretation": "Fixed waypoint with moving-target velocity feedforward admits nonzero stationary tracking error; simplified analytical counterexample, not a real-geometry rollout"
+  },
+  "returns": {
+    "previous": {
+      "discounted_mean": 0.14926515148959563,
+      "undiscounted_mean": 1.7481177078043402
+    },
+    "governed": {
+      "discounted_mean": 0.1262362556663891,
+      "undiscounted_mean": 2.018671560098331
+    }
+  }
+}

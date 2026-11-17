@@ -1,0 +1,12 @@
+{
+  "legacy_unchanged": true,
+  "protected_counts": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  },
+  "uploaded_and_old_inputs_unchanged": true,
+  "environment_initializations": 0,
+  "training_updates": 0,
+  "checkpoint_restore": false
+}
