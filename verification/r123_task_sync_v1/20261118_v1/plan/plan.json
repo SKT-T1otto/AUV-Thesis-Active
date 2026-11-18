@@ -1,0 +1,32 @@
+{
+  "source": {
+    "schema": "auv.r123.task_sync.source.v1",
+    "sha256": "aa7b6146fd8c0dfceb5f87ffd4ab8ed200e0a6ca5cf6c66c353c6e8779e10595",
+    "parent_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    }
+  },
+  "baseline_source": {
+    "schema": "auv.r123.tracking.source.v1",
+    "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+    "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+  },
+  "seed": 982001,
+  "scene_ids": [
+    "po_eval_992001_0000",
+    "po_eval_992001_0001",
+    "po_eval_992001_0002"
+  ],
+  "maximum_new_evaluation_steps": 1200,
+  "baseline_reused": true,
+  "training": false,
+  "checkpoint_load": false,
+  "inputs": {
+    "config.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "options.json": "d27ab96408ef695648f83c86ef7124df9354b85adf5c1d36017115486e8de112",
+    "scenes.json": "9cb7d3d3e697ede21f4d0f35421efffc18180646e48448ef88d3fce31443ab5c",
+    "baseline.json": "3bc98609575e241cfc1fc370d0b10786365422faad2bb14290f8eb74493fbec5"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parent_commit": "69b8c98a1ac5915352669f0f31281496b49f8365",
+  "source": {
+    "schema": "auv.r123.task_sync.source.v1",
+    "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+    "parent_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    }
+  },
+  "implementation": "chapter3_bser/r123_task_sync",
+  "unchanged_parent": true,
+  "prior_candidate_manifest": "verification/r123_task_sync_v1/20261118_v1/candidate_v1/provenance/r123_task_sync_manifest_v1.json",
+  "windows_receipt": "verification/r123_task_sync_v1/20261118_v1/final_windows/validation.json",
+  "linux_full_evaluation": false
+}

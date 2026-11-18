@@ -1,0 +1,7 @@
+{
+  "scene": 0,
+  "parent": true,
+  "sync": false,
+  "max_steps": 32,
+  "training": false
+}

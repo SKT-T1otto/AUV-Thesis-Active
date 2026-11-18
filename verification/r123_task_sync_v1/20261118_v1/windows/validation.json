@@ -1,0 +1,39 @@
+{
+  "source": {
+    "schema": "auv.r123.task_sync.source.v1",
+    "sha256": "aa7b6146fd8c0dfceb5f87ffd4ab8ed200e0a6ca5cf6c66c353c6e8779e10595",
+    "parent_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    }
+  },
+  "platform": "Windows",
+  "passed": true,
+  "native_smoke_passed": true,
+  "environment_initializations": 4,
+  "physical_steps": 128,
+  "native_training_updates": 0,
+  "checkpoint_restore": false,
+  "synthetic": {
+    "tests": 55,
+    "failures": 0,
+    "errors": 0
+  },
+  "disabled_matches_parent": true,
+  "artifacts": {
+    "episode_0.json": "044a43ad3cd54226dfe89afa5b9aa2960ee7c7c00b424b8c1e66a6abf412fe43",
+    "episode_1.json": "ead7f54e90871e809c892b0fc2ab6bf3815b988a0e029fd3661b7e8fbf5a2eb3",
+    "episode_2.json": "f1976083c32294b70d382be667c93aaa1f573f7fc9c8404e18850b0a80a98348",
+    "episode_3.json": "22522b7c8c253c88be262fab12f01fecc6b354534ef5744e0cb8d336abd850f4",
+    "initialization_0.json": "22ff06d1966872338dfb6988060e5304a9afca6939dbb194e5d9bfa409862576",
+    "initialization_1.json": "f5ec9b86351658e6b7bf26709d83f685fe098c61bb334aa103666f66e8be3336",
+    "initialization_2.json": "a5da4fa761e83eb2b1dc8a5e000793727b4941aed846382c37f5b5c6d621bfcf",
+    "initialization_3.json": "2fe694abde7ca049e663f42fc2e7cc977ada1793cb0c4492f49208f3ccbc8b6e",
+    "metric_0.json": "ac9e83479c56af3eded04a16d62e99dd8fb328022b85192a5945e3894a37fb0f",
+    "metric_1.json": "673ce8ad9ee47190a26aa030d22b2d4665447f7da8207e55934874f88c3efa3d",
+    "metric_2.json": "8906cb169ab0006427991ffce96b4715178bc6afa92a69811c097db8f92c275a",
+    "metric_3.json": "3b5fe379b30be2a30e26536f3b9ad1316182c40cd66273cabd581362d9d5558e",
+    "synthetic.log": "50b7558e6a9e4e018dac1385c1e70157810170d57723b1e5a9b3f1186218a475"
+  }
+}

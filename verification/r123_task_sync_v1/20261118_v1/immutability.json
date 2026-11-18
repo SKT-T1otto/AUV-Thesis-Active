@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "existing_files_byte_unchanged": 1705,
+  "protected_counts": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  },
+  "environment_initializations_total": 8,
+  "physical_steps_total": 256,
+  "final_environment_initializations": 4,
+  "final_physical_steps": 128,
+  "final_synthetic_tests": 59,
+  "training_updates": 0,
+  "checkpoint_restore": false,
+  "disabled_trace_exact": true,
+  "full_evaluation_executed": false
+}

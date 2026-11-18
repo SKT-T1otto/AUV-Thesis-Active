@@ -1,0 +1,10 @@
+{
+  "verification/r123_task_sync_v1/20261118_v1/plan/baseline.json": {
+    "sha256": "3bc98609575e241cfc1fc370d0b10786365422faad2bb14290f8eb74493fbec5",
+    "bytes": 47186716
+  },
+  "verification/r123_task_sync_v1/20261118_v1/final_plan/baseline.json": {
+    "sha256": "3bc98609575e241cfc1fc370d0b10786365422faad2bb14290f8eb74493fbec5",
+    "bytes": 47186716
+  }
+}

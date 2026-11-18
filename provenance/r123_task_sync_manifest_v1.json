@@ -1,0 +1,23 @@
+{
+  "schema": "auv.r123.task_sync.manifest.v1",
+  "parent_source": {
+    "schema": "auv.r123.tracking.source.v1",
+    "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+    "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+  },
+  "parent_commit": "69b8c98a1ac5915352669f0f31281496b49f8365",
+  "files": {
+    "chapter3_bser/r123_task_sync/__init__.py": "775ae81a23c05fd38d383fb269c38663d9bd363ee19b857b1aa1b704a16b2584",
+    "chapter3_bser/r123_task_sync/allocator.py": "d816e8ae67ca937f5ca24226c91ecb568613eddede096cbe7d43e31290295254",
+    "chapter3_bser/r123_task_sync/controller.py": "817f5e5c32f36538e80c7d245b9acf5912b5553b60b6223fc731a59e9255b6b6",
+    "chapter3_bser/r123_task_sync/receipts.py": "59df9c00a744a53a9cc0c24efbb993736d677e955ed6d0456a683dfd7ef34720",
+    "chapter3_bser/r123_task_sync/runtime.py": "956568fcc654a25d9d827aed509e6ccdfade1bd29313a662cd1613162107def1",
+    "chapter3_bser/r123_task_sync/source.py": "1eadaae2ef89621e4354420063a1c4336b29035b4a03552949458536d24d85de",
+    "checks/test_r123_task_sync.py": "e8c8b9707283eb91514395354aa4ec9dd5794da9d9ca08e84978b6c93063b54e",
+    "docs/R123_TASK_SYNC_20261118.md": "c777ff95c601e6f8f0ae417cf5f238fa0d4081b37ea8a25bcaaedc417a3dd815",
+    "scripts/r123_task_sync_evaluate_linux.sh": "f3e6a510b5c2cbfbd8c393546ac255b11c006af98c13f680ad85b4e0a55646ea",
+    "scripts/r123_task_sync_prepare_linux.sh": "38e2f905eecd2c043ca53234ff7812dd681f3f51366a9e537eec2edcfce95d7a",
+    "tools/r123_task_sync_experiment.py": "88dfad202955d9c9bc6d3b7a8aea0b8bbe742eaf60bc4aefc19dbb28ad562691"
+  },
+  "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f"
+}

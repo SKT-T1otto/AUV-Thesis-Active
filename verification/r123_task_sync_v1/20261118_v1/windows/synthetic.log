@@ -1,0 +1,74 @@
+test_completed_root_stays_released_until_new_token (checks.test_r123_task_sync.SyncContracts) ... ok
+test_disabled_rescore_is_exact_parent_and_no_receipts_or_rng_use (checks.test_r123_task_sync.SyncContracts) ... ok
+test_proposal_does_not_force_adoption_or_reset_identity (checks.test_r123_task_sync.SyncContracts) ... ok
+test_proposal_freezes_active_but_released_agent_gets_new_choice (checks.test_r123_task_sync.SyncContracts) ... ok
+test_receipt_is_copy_and_keeps_full_route_without_trimming (checks.test_r123_task_sync.SyncContracts) ... ok
+test_released_fixed_other_has_hold_receipt_in_finalize (checks.test_r123_task_sync.SyncContracts) ... ok
+test_released_unreachable_and_connector_never_credit_old_root (checks.test_r123_task_sync.SyncContracts) ... ok
+test_rescore_uses_actual_path_and_preserves_proposal (checks.test_r123_task_sync.SyncContracts) ... ok
+test_unassigned_and_frozen_do_not_create_tasks (checks.test_r123_task_sync.SyncContracts) ... ok
+test_all_arms_keep_no_recovery_and_frozen_actions (checks.test_r123_tracking.TrackingContracts) ... ok
+test_baseline_runtime_matches_parent_observation (checks.test_r123_tracking.TrackingContracts) ... ok
+test_cannot_skip_new_obstacle_detour_or_uncompleted_vertex (checks.test_r123_tracking.TrackingContracts) ... ok
+test_disabled_fixes_match_parent_actions_masks_forces_exactly (checks.test_r123_tracking.TrackingContracts) ... ok
+test_experiment_dry_run_creates_nothing (checks.test_r123_tracking.TrackingContracts) ... ok
+test_fixed_feedforward_bank_keeps_residuals_safety_and_real_authority (checks.test_r123_tracking.TrackingContracts) ... ok
+test_fixed_waypoint_velocity_zero_terminal_moving_target_preserved (checks.test_r123_tracking.TrackingContracts) ... ok
+test_fresh_geometry_veto_retains_required_old_vertex (checks.test_r123_tracking.TrackingContracts) ... ok
+test_invalid_arm_and_active_recovery_rejected (checks.test_r123_tracking.TrackingContracts) ... ok
+test_nullable_metrics_do_not_break_summary_or_become_false_zeroes (checks.test_r123_tracking.TrackingContracts) ... ok
+test_observed_backward_start_vertex_is_not_reintroduced (checks.test_r123_tracking.TrackingContracts) ... ok
+test_old_static_waypoint_equilibrium_is_no_longer_stationary (checks.test_r123_tracking.TrackingContracts) ... ok
+test_route_carry_is_scoped_to_same_live_task (checks.test_r123_tracking.TrackingContracts) ... ok
+test_runtime_feedforward_switch_applies_to_static_capture_path (checks.test_r123_tracking.TrackingContracts) ... ok
+test_runtime_requery_keeps_carried_progress_on_successive_queries (checks.test_r123_tracking.TrackingContracts) ... ok
+test_unreachable_routes_are_not_upgraded (checks.test_r123_tracking.TrackingContracts) ... ok
+test_geometry_veto_not_relaxed (checks.test_r123_governed.GovernedContracts) ... ok
+test_motion_metrics_are_json_serializable (checks.test_r123_governed.GovernedContracts) ... ok
+test_no_learning_or_active_recovery (checks.test_r123_governed.GovernedContracts) ... ok
+test_overspeed_is_braked_with_real_limits (checks.test_r123_governed.GovernedContracts) ... ok
+test_physical_authority_and_next_speed_with_flow_and_target_motion (checks.test_r123_governed.GovernedContracts) ... ok
+test_positive_cap_missing_action_regression (checks.test_r123_governed.GovernedContracts) ... ok
+test_trace_input_diagnostics_masks_and_residual_bound (checks.test_r123_governed.GovernedContracts) ... ok
+test_zero_cap_does_not_bypass_safety_or_claim_navigation (checks.test_r123_governed.GovernedContracts) ... ok
+test_actual_recovery_arrival_returns_to_root (checks.test_r123_repair.RepairContracts) ... ok
+test_attempt_progress_does_not_extend_total_recovery_limit (checks.test_r123_repair.RepairContracts) ... ok
+test_cli_has_no_training_command_and_previews_do_not_mutate (checks.test_r123_repair.RepairContracts) ... {
+  "executed": false,
+  "requested": {
+    "command": "prepare",
+    "output": "unused",
+    "development": null,
+    "legacy_reference": null,
+    "config": "configs/b2.json",
+    "options": "configs/r123_learning_v1.json",
+    "execute": false
+  }
+}
+usage: r123_task_sync_experiment.py [-h] {prepare,evaluate,report} ...
+r123_task_sync_experiment.py: error: argument command: invalid choice: 'run' (choose from 'prepare', 'evaluate', 'report')
+ok
+test_connector_is_public_free_valid_and_does_not_edit_state (checks.test_r123_repair.RepairContracts) ... ok
+test_duplicate_commit_does_not_reset_attempt_or_total_budget (checks.test_r123_repair.RepairContracts) ... ok
+test_exhausted_task_can_track_root_without_release_resume_loop (checks.test_r123_repair.RepairContracts) ... ok
+test_failed_recovery_can_return_to_root_without_immediate_new_detour (checks.test_r123_repair.RepairContracts) ... ok
+test_frozen_searchers_do_not_query_or_recover_or_move (checks.test_r123_repair.RepairContracts) ... ok
+test_hold_guidance_does_not_replace_semantic_assignment (checks.test_r123_repair.RepairContracts) ... ok
+test_invalid_start_is_isolated_before_allocator_call (checks.test_r123_repair.RepairContracts) ... ok
+test_moving_public_target_reallocation_cannot_reset_exhausted_budget (checks.test_r123_repair.RepairContracts) ... ok
+test_new_assignment_adopted_after_release (checks.test_r123_repair.RepairContracts) ... ok
+test_no_recovery_cannot_train (checks.test_r123_repair.RepairContracts) ... ok
+test_no_recovery_has_no_alternatives_or_attempts (checks.test_r123_repair.RepairContracts) ... ok
+test_one_failed_pool_does_not_block_other_agent (checks.test_r123_repair.RepairContracts) ... ok
+test_same_completed_assignment_cannot_mint_a_new_task (checks.test_r123_repair.RepairContracts) ... ok
+test_stall_recovery_next_step_keeps_same_attempt_alive (checks.test_r123_repair.RepairContracts) ... ok
+test_two_genuinely_stalled_attempts_then_release (checks.test_r123_repair.RepairContracts) ... ok
+test_unassigned_hold_is_not_a_completed_task (checks.test_r123_repair.RepairContracts) ... ok
+test_wait_can_execute_public_connector_without_recovery_budget (checks.test_r123_repair.RepairContracts) ... ok
+test_wait_preserves_verified_buffer_exit (checks.test_r123_repair.RepairContracts) ... ok
+test_wait_uses_same_filtered_start_view_as_d2_replanning (checks.test_r123_repair.RepairContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 55 tests in 3.991s
+
+OK
