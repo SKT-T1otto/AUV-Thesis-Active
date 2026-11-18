@@ -1,0 +1,101 @@
+[
+  {
+    "scene": 3,
+    "arms": {
+      "baseline": {
+        "found_step": 186,
+        "received_step": 187,
+        "success_step": 210,
+        "capture_steps": 23,
+        "fixed_waypoint_steps": 16,
+        "other_tracking_steps": 7,
+        "fixed_first_step": 187,
+        "fixed_last_step": 202,
+        "brakes": 0,
+        "navigation_blocked": 0,
+        "contacts": 6,
+        "max_hold": 5
+      },
+      "both": {
+        "found_step": 186,
+        "received_step": 187,
+        "success_step": 225,
+        "capture_steps": 38,
+        "fixed_waypoint_steps": 27,
+        "other_tracking_steps": 11,
+        "fixed_first_step": 187,
+        "fixed_last_step": 219,
+        "brakes": 0,
+        "navigation_blocked": 0,
+        "contacts": 6,
+        "max_hold": 5
+      }
+    }
+  },
+  {
+    "scene": 4,
+    "arms": {
+      "baseline": {
+        "found_step": 315,
+        "received_step": 316,
+        "success_step": null,
+        "capture_steps": 84,
+        "fixed_waypoint_steps": 84,
+        "other_tracking_steps": 0,
+        "fixed_first_step": 316,
+        "fixed_last_step": 399,
+        "brakes": 0,
+        "navigation_blocked": 0,
+        "contacts": 0,
+        "max_hold": 0
+      },
+      "both": {
+        "found_step": 315,
+        "received_step": 316,
+        "success_step": 361,
+        "capture_steps": 45,
+        "fixed_waypoint_steps": 33,
+        "other_tracking_steps": 12,
+        "fixed_first_step": 316,
+        "fixed_last_step": 354,
+        "brakes": 0,
+        "navigation_blocked": 0,
+        "contacts": 6,
+        "max_hold": 5
+      }
+    }
+  },
+  {
+    "scene": 5,
+    "arms": {
+      "baseline": {
+        "found_step": 217,
+        "received_step": 218,
+        "success_step": 243,
+        "capture_steps": 25,
+        "fixed_waypoint_steps": 25,
+        "other_tracking_steps": 0,
+        "fixed_first_step": 218,
+        "fixed_last_step": 242,
+        "brakes": 0,
+        "navigation_blocked": 0,
+        "contacts": 6,
+        "max_hold": 5
+      },
+      "both": {
+        "found_step": 217,
+        "received_step": 218,
+        "success_step": 241,
+        "capture_steps": 23,
+        "fixed_waypoint_steps": 20,
+        "other_tracking_steps": 3,
+        "fixed_first_step": 218,
+        "fixed_last_step": 237,
+        "brakes": 0,
+        "navigation_blocked": 0,
+        "contacts": 6,
+        "max_hold": 5
+      }
+    }
+  }
+]

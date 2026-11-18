@@ -1,0 +1,13 @@
+[
+  "verification/r123_search_interface_audit/20261117_v1/REPORT.md",
+  "verification/r123_search_interface_audit/20261117_v1/assignment_changes.csv",
+  "verification/r123_search_interface_audit/20261117_v1/before.json",
+  "verification/r123_search_interface_audit/20261117_v1/capture_followup.json",
+  "verification/r123_search_interface_audit/20261117_v1/created_files.json",
+  "verification/r123_search_interface_audit/20261117_v1/immutability.json",
+  "verification/r123_search_interface_audit/20261117_v1/investigate.py",
+  "verification/r123_search_interface_audit/20261117_v1/low_speed_model.csv",
+  "verification/r123_search_interface_audit/20261117_v1/partial_contexts.csv",
+  "verification/r123_search_interface_audit/20261117_v1/raw_followup.json",
+  "verification/r123_search_interface_audit/20261117_v1/synthetic_probes.json"
+]

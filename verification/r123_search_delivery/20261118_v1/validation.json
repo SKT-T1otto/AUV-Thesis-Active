@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "existing_files_byte_identical": 1716,
+  "protected_counts": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  },
+  "offline_episodes": 24,
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "training_updates": 0,
+  "dry_run_did_not_write": true,
+  "existing_output_rejected": true
+}

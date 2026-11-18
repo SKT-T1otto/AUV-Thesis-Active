@@ -1,0 +1,1146 @@
+{
+  "source": {
+    "schema": "auv.r123.tracking.source.v1",
+    "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+    "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+  },
+  "tool_sha256": "eb9dd8ab3517d69d26235038ce983fb4bf9d2d8231e259e0323b69f1ed18a8b7",
+  "arms": {
+    "baseline": {
+      "success": 2,
+      "found": 3,
+      "collision": 0,
+      "slow_steps": 440,
+      "cases": [
+        {
+          "scenario_id": "po_eval_992001_0000",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 41,
+          "prior_desired_xy_below_05": 14,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 137,
+                "physical_step": 138,
+                "time_seconds": 27.440920122620486,
+                "distance": 4.61089800822961,
+                "margin": 2.5108980082296095
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 143
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 58,
+                "physical_step": 59,
+                "time_seconds": 11.619565204827829,
+                "distance": 3.0032953108083995,
+                "margin": 0.5532953108083993
+              },
+              "slow_steps": 10,
+              "assigned_root_mismatch_steps": 206
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 154,
+                "physical_step": 155,
+                "time_seconds": 30.99770547821335,
+                "distance": 6.882572515258726,
+                "margin": 4.032572515258726
+              },
+              "slow_steps": 30,
+              "assigned_root_mismatch_steps": 128
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0001",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 13,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 264,
+                "physical_step": 265,
+                "time_seconds": 52.842082424185016,
+                "distance": 2.4085615922347534,
+                "margin": 0.3085615922347533
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 85
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 284,
+                "physical_step": 285,
+                "time_seconds": 56.969439988355546,
+                "distance": 2.7121472895315715,
+                "margin": 0.2621472895315713
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 308
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 223,
+                "physical_step": 224,
+                "time_seconds": 44.64834679130387,
+                "distance": 5.1863398095950295,
+                "margin": 2.3363398095950294
+              },
+              "slow_steps": 9,
+              "assigned_root_mismatch_steps": 149
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0002",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 344,
+          "prior_desired_xy_below_05": 248,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 93,
+                "physical_step": 94,
+                "time_seconds": 18.682984711973727,
+                "distance": 3.0588156949331204,
+                "margin": 0.9588156949331204
+              },
+              "slow_steps": 80,
+              "assigned_root_mismatch_steps": 125
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 93,
+                "physical_step": 94,
+                "time_seconds": 18.64965080537414,
+                "distance": 2.8555951811566724,
+                "margin": 0.40559518115667226
+              },
+              "slow_steps": 255,
+              "assigned_root_mismatch_steps": 298
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 94,
+                "physical_step": 95,
+                "time_seconds": 18.9131938002933,
+                "distance": 7.525221182629408,
+                "margin": 4.675221182629407
+              },
+              "slow_steps": 9,
+              "assigned_root_mismatch_steps": 159
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0003",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 21,
+          "prior_desired_xy_below_05": 2,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 185,
+                "physical_step": 186,
+                "time_seconds": 37.2,
+                "distance": 1.9620153584822126,
+                "margin": -0.13798464151778744
+              },
+              "slow_steps": 17,
+              "assigned_root_mismatch_steps": 73
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 78,
+                "physical_step": 79,
+                "time_seconds": 15.8,
+                "distance": 3.6393022445430523,
+                "margin": 1.1893022445430521
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 169
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 185,
+                "physical_step": 186,
+                "time_seconds": 37.2,
+                "distance": 8.537018932919638,
+                "margin": 5.687018932919639
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 1
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0004",
+          "success": false,
+          "found": true,
+          "collision": false,
+          "slow_steps": 15,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 0,
+                "physical_step": 1,
+                "time_seconds": 0.0,
+                "distance": 4.686684277636766,
+                "margin": 2.5866842776367656
+              },
+              "slow_steps": 12,
+              "assigned_root_mismatch_steps": 213
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 314,
+                "physical_step": 315,
+                "time_seconds": 63.0,
+                "distance": 2.42352558846428,
+                "margin": -0.026474411535720055
+              },
+              "slow_steps": 2,
+              "assigned_root_mismatch_steps": 152
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 0,
+                "physical_step": 1,
+                "time_seconds": 0.0,
+                "distance": 7.157389883260604,
+                "margin": 4.307389883260605
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 155
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0005",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 6,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 216,
+                "physical_step": 217,
+                "time_seconds": 43.400000000000006,
+                "distance": 1.838547277043393,
+                "margin": -0.26145272295660704
+              },
+              "slow_steps": 2,
+              "assigned_root_mismatch_steps": 117
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 216,
+                "physical_step": 217,
+                "time_seconds": 43.400000000000006,
+                "distance": 5.697149922287027,
+                "margin": 3.2471499222870266
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 170
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 163,
+                "physical_step": 164,
+                "time_seconds": 32.68465949427213,
+                "distance": 3.208593430059836,
+                "margin": 0.3585934300598361
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 22
+            }
+          ]
+        }
+      ]
+    },
+    "path_only": {
+      "success": 2,
+      "found": 3,
+      "collision": 0,
+      "slow_steps": 319,
+      "cases": [
+        {
+          "scenario_id": "po_eval_992001_0000",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 41,
+          "prior_desired_xy_below_05": 14,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 137,
+                "physical_step": 138,
+                "time_seconds": 27.440920122620486,
+                "distance": 4.61089800822961,
+                "margin": 2.5108980082296095
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 143
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 58,
+                "physical_step": 59,
+                "time_seconds": 11.619565204827829,
+                "distance": 3.0032953108083995,
+                "margin": 0.5532953108083993
+              },
+              "slow_steps": 10,
+              "assigned_root_mismatch_steps": 206
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 154,
+                "physical_step": 155,
+                "time_seconds": 30.99770547821335,
+                "distance": 6.882572515258726,
+                "margin": 4.032572515258726
+              },
+              "slow_steps": 30,
+              "assigned_root_mismatch_steps": 128
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0001",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 13,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 264,
+                "physical_step": 265,
+                "time_seconds": 52.842082424185016,
+                "distance": 2.4085615922347534,
+                "margin": 0.3085615922347533
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 85
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 284,
+                "physical_step": 285,
+                "time_seconds": 56.969439988355546,
+                "distance": 2.7121472895315715,
+                "margin": 0.2621472895315713
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 308
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 223,
+                "physical_step": 224,
+                "time_seconds": 44.64834679130387,
+                "distance": 5.1863398095950295,
+                "margin": 2.3363398095950294
+              },
+              "slow_steps": 9,
+              "assigned_root_mismatch_steps": 149
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0002",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 223,
+          "prior_desired_xy_below_05": 152,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 93,
+                "physical_step": 94,
+                "time_seconds": 18.682984711973727,
+                "distance": 3.0588156949331204,
+                "margin": 0.9588156949331204
+              },
+              "slow_steps": 80,
+              "assigned_root_mismatch_steps": 105
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 93,
+                "physical_step": 94,
+                "time_seconds": 18.64965080537414,
+                "distance": 2.8555951811566724,
+                "margin": 0.40559518115667226
+              },
+              "slow_steps": 134,
+              "assigned_root_mismatch_steps": 268
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 94,
+                "physical_step": 95,
+                "time_seconds": 18.9131938002933,
+                "distance": 7.525221182629408,
+                "margin": 4.675221182629407
+              },
+              "slow_steps": 9,
+              "assigned_root_mismatch_steps": 170
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0003",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 21,
+          "prior_desired_xy_below_05": 2,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 185,
+                "physical_step": 186,
+                "time_seconds": 37.2,
+                "distance": 1.9620153584822126,
+                "margin": -0.13798464151778744
+              },
+              "slow_steps": 17,
+              "assigned_root_mismatch_steps": 73
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 78,
+                "physical_step": 79,
+                "time_seconds": 15.8,
+                "distance": 3.6393022445430523,
+                "margin": 1.1893022445430521
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 169
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 185,
+                "physical_step": 186,
+                "time_seconds": 37.2,
+                "distance": 8.537018932919638,
+                "margin": 5.687018932919639
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 1
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0004",
+          "success": false,
+          "found": true,
+          "collision": false,
+          "slow_steps": 15,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 0,
+                "physical_step": 1,
+                "time_seconds": 0.0,
+                "distance": 4.686684277636766,
+                "margin": 2.5866842776367656
+              },
+              "slow_steps": 12,
+              "assigned_root_mismatch_steps": 213
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 314,
+                "physical_step": 315,
+                "time_seconds": 63.0,
+                "distance": 2.42352558846428,
+                "margin": -0.026474411535720055
+              },
+              "slow_steps": 2,
+              "assigned_root_mismatch_steps": 152
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 0,
+                "physical_step": 1,
+                "time_seconds": 0.0,
+                "distance": 7.157389883260604,
+                "margin": 4.307389883260605
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 155
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0005",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 6,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 216,
+                "physical_step": 217,
+                "time_seconds": 43.400000000000006,
+                "distance": 1.838547277043393,
+                "margin": -0.26145272295660704
+              },
+              "slow_steps": 2,
+              "assigned_root_mismatch_steps": 117
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 216,
+                "physical_step": 217,
+                "time_seconds": 43.400000000000006,
+                "distance": 5.697149922287027,
+                "margin": 3.2471499222870266
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 170
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 163,
+                "physical_step": 164,
+                "time_seconds": 32.68465949427213,
+                "distance": 3.208593430059836,
+                "margin": 0.3585934300598361
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 22
+            }
+          ]
+        }
+      ]
+    },
+    "feedforward_only": {
+      "success": 3,
+      "found": 3,
+      "collision": 0,
+      "slow_steps": 440,
+      "cases": [
+        {
+          "scenario_id": "po_eval_992001_0000",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 41,
+          "prior_desired_xy_below_05": 14,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 137,
+                "physical_step": 138,
+                "time_seconds": 27.440920122620486,
+                "distance": 4.61089800822961,
+                "margin": 2.5108980082296095
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 143
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 58,
+                "physical_step": 59,
+                "time_seconds": 11.619565204827829,
+                "distance": 3.0032953108083995,
+                "margin": 0.5532953108083993
+              },
+              "slow_steps": 10,
+              "assigned_root_mismatch_steps": 206
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 154,
+                "physical_step": 155,
+                "time_seconds": 30.99770547821335,
+                "distance": 6.882572515258726,
+                "margin": 4.032572515258726
+              },
+              "slow_steps": 30,
+              "assigned_root_mismatch_steps": 128
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0001",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 13,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 264,
+                "physical_step": 265,
+                "time_seconds": 52.842082424185016,
+                "distance": 2.4085615922347534,
+                "margin": 0.3085615922347533
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 85
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 284,
+                "physical_step": 285,
+                "time_seconds": 56.969439988355546,
+                "distance": 2.7121472895315715,
+                "margin": 0.2621472895315713
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 308
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 223,
+                "physical_step": 224,
+                "time_seconds": 44.64834679130387,
+                "distance": 5.1863398095950295,
+                "margin": 2.3363398095950294
+              },
+              "slow_steps": 9,
+              "assigned_root_mismatch_steps": 149
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0002",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 344,
+          "prior_desired_xy_below_05": 248,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 93,
+                "physical_step": 94,
+                "time_seconds": 18.682984711973727,
+                "distance": 3.0588156949331204,
+                "margin": 0.9588156949331204
+              },
+              "slow_steps": 80,
+              "assigned_root_mismatch_steps": 125
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 93,
+                "physical_step": 94,
+                "time_seconds": 18.64965080537414,
+                "distance": 2.8555951811566724,
+                "margin": 0.40559518115667226
+              },
+              "slow_steps": 255,
+              "assigned_root_mismatch_steps": 298
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 94,
+                "physical_step": 95,
+                "time_seconds": 18.9131938002933,
+                "distance": 7.525221182629408,
+                "margin": 4.675221182629407
+              },
+              "slow_steps": 9,
+              "assigned_root_mismatch_steps": 159
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0003",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 21,
+          "prior_desired_xy_below_05": 2,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 185,
+                "physical_step": 186,
+                "time_seconds": 37.2,
+                "distance": 1.9620153584822126,
+                "margin": -0.13798464151778744
+              },
+              "slow_steps": 17,
+              "assigned_root_mismatch_steps": 73
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 78,
+                "physical_step": 79,
+                "time_seconds": 15.8,
+                "distance": 3.6393022445430523,
+                "margin": 1.1893022445430521
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 169
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 185,
+                "physical_step": 186,
+                "time_seconds": 37.2,
+                "distance": 8.537018932919638,
+                "margin": 5.687018932919639
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 1
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0004",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 15,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 0,
+                "physical_step": 1,
+                "time_seconds": 0.0,
+                "distance": 4.686684277636766,
+                "margin": 2.5866842776367656
+              },
+              "slow_steps": 12,
+              "assigned_root_mismatch_steps": 213
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 314,
+                "physical_step": 315,
+                "time_seconds": 63.0,
+                "distance": 2.42352558846428,
+                "margin": -0.026474411535720055
+              },
+              "slow_steps": 2,
+              "assigned_root_mismatch_steps": 152
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 0,
+                "physical_step": 1,
+                "time_seconds": 0.0,
+                "distance": 7.157389883260604,
+                "margin": 4.307389883260605
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 155
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0005",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 6,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 216,
+                "physical_step": 217,
+                "time_seconds": 43.400000000000006,
+                "distance": 1.838547277043393,
+                "margin": -0.26145272295660704
+              },
+              "slow_steps": 2,
+              "assigned_root_mismatch_steps": 117
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 216,
+                "physical_step": 217,
+                "time_seconds": 43.400000000000006,
+                "distance": 5.697149922287027,
+                "margin": 3.2471499222870266
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 170
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 163,
+                "physical_step": 164,
+                "time_seconds": 32.68465949427213,
+                "distance": 3.208593430059836,
+                "margin": 0.3585934300598361
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 22
+            }
+          ]
+        }
+      ]
+    },
+    "both": {
+      "success": 3,
+      "found": 3,
+      "collision": 0,
+      "slow_steps": 319,
+      "cases": [
+        {
+          "scenario_id": "po_eval_992001_0000",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 41,
+          "prior_desired_xy_below_05": 14,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 137,
+                "physical_step": 138,
+                "time_seconds": 27.440920122620486,
+                "distance": 4.61089800822961,
+                "margin": 2.5108980082296095
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 143
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 58,
+                "physical_step": 59,
+                "time_seconds": 11.619565204827829,
+                "distance": 3.0032953108083995,
+                "margin": 0.5532953108083993
+              },
+              "slow_steps": 10,
+              "assigned_root_mismatch_steps": 206
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 154,
+                "physical_step": 155,
+                "time_seconds": 30.99770547821335,
+                "distance": 6.882572515258726,
+                "margin": 4.032572515258726
+              },
+              "slow_steps": 30,
+              "assigned_root_mismatch_steps": 128
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0001",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 13,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 264,
+                "physical_step": 265,
+                "time_seconds": 52.842082424185016,
+                "distance": 2.4085615922347534,
+                "margin": 0.3085615922347533
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 85
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 284,
+                "physical_step": 285,
+                "time_seconds": 56.969439988355546,
+                "distance": 2.7121472895315715,
+                "margin": 0.2621472895315713
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 308
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 223,
+                "physical_step": 224,
+                "time_seconds": 44.64834679130387,
+                "distance": 5.1863398095950295,
+                "margin": 2.3363398095950294
+              },
+              "slow_steps": 9,
+              "assigned_root_mismatch_steps": 149
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0002",
+          "success": false,
+          "found": false,
+          "collision": false,
+          "slow_steps": 223,
+          "prior_desired_xy_below_05": 152,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 93,
+                "physical_step": 94,
+                "time_seconds": 18.682984711973727,
+                "distance": 3.0588156949331204,
+                "margin": 0.9588156949331204
+              },
+              "slow_steps": 80,
+              "assigned_root_mismatch_steps": 105
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 93,
+                "physical_step": 94,
+                "time_seconds": 18.64965080537414,
+                "distance": 2.8555951811566724,
+                "margin": 0.40559518115667226
+              },
+              "slow_steps": 134,
+              "assigned_root_mismatch_steps": 268
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 94,
+                "physical_step": 95,
+                "time_seconds": 18.9131938002933,
+                "distance": 7.525221182629408,
+                "margin": 4.675221182629407
+              },
+              "slow_steps": 9,
+              "assigned_root_mismatch_steps": 170
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0003",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 21,
+          "prior_desired_xy_below_05": 2,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 185,
+                "physical_step": 186,
+                "time_seconds": 37.2,
+                "distance": 1.9620153584822126,
+                "margin": -0.13798464151778744
+              },
+              "slow_steps": 17,
+              "assigned_root_mismatch_steps": 73
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 78,
+                "physical_step": 79,
+                "time_seconds": 15.8,
+                "distance": 3.6393022445430523,
+                "margin": 1.1893022445430521
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 169
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 185,
+                "physical_step": 186,
+                "time_seconds": 37.2,
+                "distance": 8.537018932919638,
+                "margin": 5.687018932919639
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 1
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0004",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 15,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 0,
+                "physical_step": 1,
+                "time_seconds": 0.0,
+                "distance": 4.686684277636766,
+                "margin": 2.5866842776367656
+              },
+              "slow_steps": 12,
+              "assigned_root_mismatch_steps": 213
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 314,
+                "physical_step": 315,
+                "time_seconds": 63.0,
+                "distance": 2.42352558846428,
+                "margin": -0.026474411535720055
+              },
+              "slow_steps": 2,
+              "assigned_root_mismatch_steps": 152
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 0,
+                "physical_step": 1,
+                "time_seconds": 0.0,
+                "distance": 7.157389883260604,
+                "margin": 4.307389883260605
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 155
+            }
+          ]
+        },
+        {
+          "scenario_id": "po_eval_992001_0005",
+          "success": true,
+          "found": true,
+          "collision": false,
+          "slow_steps": 6,
+          "prior_desired_xy_below_05": 0,
+          "agents": [
+            {
+              "agent": 0,
+              "closest": {
+                "step": 216,
+                "physical_step": 217,
+                "time_seconds": 43.400000000000006,
+                "distance": 1.838547277043393,
+                "margin": -0.26145272295660704
+              },
+              "slow_steps": 2,
+              "assigned_root_mismatch_steps": 117
+            },
+            {
+              "agent": 1,
+              "closest": {
+                "step": 216,
+                "physical_step": 217,
+                "time_seconds": 43.400000000000006,
+                "distance": 5.697149922287027,
+                "margin": 3.2471499222870266
+              },
+              "slow_steps": 3,
+              "assigned_root_mismatch_steps": 170
+            },
+            {
+              "agent": 2,
+              "closest": {
+                "step": 163,
+                "physical_step": 164,
+                "time_seconds": 32.68465949427213,
+                "distance": 3.208593430059836,
+                "margin": 0.3585934300598361
+              },
+              "slow_steps": 1,
+              "assigned_root_mismatch_steps": 22
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

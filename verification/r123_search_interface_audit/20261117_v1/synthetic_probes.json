@@ -1,0 +1,171 @@
+{
+  "active_task_keeps_old_root": {
+    "passed": true,
+    "original": [
+      15.0,
+      3.0,
+      4.0
+    ],
+    "root": [
+      9.0,
+      3.0,
+      4.0
+    ],
+    "task_identity_unchanged": true
+  },
+  "rescore_uses_allocator_assignment": {
+    "passed": true,
+    "scored_waypoint": [
+      9.0,
+      3.0,
+      4.0
+    ],
+    "scored_path": [
+      [
+        1.0,
+        3.0,
+        4.0
+      ],
+      [
+        9.0,
+        3.0,
+        4.0
+      ]
+    ],
+    "note": "Synthetic executed root is 15,3,4; no lifecycle argument enters rescore"
+  },
+  "partial_solve_freezes_allocator_assignments": {
+    "passed": true,
+    "frozen": [
+      {
+        "agent": 0,
+        "waypoint": [
+          9.0,
+          3.0,
+          4.0
+        ],
+        "path": [
+          [
+            1.0,
+            3.0,
+            4.0
+          ],
+          [
+            9.0,
+            3.0,
+            4.0
+          ]
+        ]
+      },
+      {
+        "agent": 1,
+        "waypoint": [
+          9.0,
+          3.0,
+          4.0
+        ],
+        "path": [
+          [
+            1.0,
+            3.0,
+            4.0
+          ],
+          [
+            9.0,
+            3.0,
+            4.0
+          ]
+        ]
+      }
+    ]
+  },
+  "frozen_path_keeps_past_prefix": {
+    "passed": true,
+    "assumed_current_position": [
+      8.0,
+      0.0,
+      1.0
+    ],
+    "full_kernel": [
+      0.72,
+      0.72
+    ],
+    "remaining_kernel": [
+      0.00024153309208980854,
+      0.72
+    ],
+    "scope": "Synthetic scoring discrepancy; no success effect claimed"
+  },
+  "uniform_belief_candidate_tie_bias": {
+    "passed": true,
+    "endpoints_by_agent": {
+      "0": [
+        [
+          1.0,
+          1.0,
+          0.5
+        ],
+        [
+          1.0,
+          1.0,
+          1.5
+        ],
+        [
+          1.0,
+          1.0,
+          2.5
+        ],
+        [
+          1.0,
+          1.0,
+          3.5
+        ]
+      ],
+      "1": [
+        [
+          1.0,
+          1.0,
+          0.5
+        ],
+        [
+          1.0,
+          1.0,
+          1.5
+        ],
+        [
+          1.0,
+          1.0,
+          2.5
+        ],
+        [
+          1.0,
+          1.0,
+          3.5
+        ]
+      ],
+      "2": [
+        [
+          1.0,
+          1.0,
+          0.5
+        ],
+        [
+          1.0,
+          1.0,
+          1.5
+        ],
+        [
+          1.0,
+          1.0,
+          2.5
+        ],
+        [
+          1.0,
+          1.0,
+          3.5
+        ]
+      ]
+    },
+    "scope": "Synthetic uniform all-unknown state with all queries reachable. Real initial belief/candidate pools were not logged, so real-scene cause remains unproven"
+  }
+}

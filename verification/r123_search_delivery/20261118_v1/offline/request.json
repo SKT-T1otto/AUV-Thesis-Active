@@ -1,0 +1,14 @@
+{
+  "source": {
+    "schema": "auv.r123.tracking.source.v1",
+    "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+    "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+  },
+  "tool_sha256": "eb9dd8ab3517d69d26235038ce983fb4bf9d2d8231e259e0323b69f1ed18a8b7",
+  "run": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\3090结果\\r123_tracking_20261117_121047_2475513",
+  "baseline": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\3090结果\\r123_governed_20261116_215327_3078331\\governed",
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "training": false,
+  "checkpoint_load": false
+}

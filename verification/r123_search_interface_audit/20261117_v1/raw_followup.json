@@ -1,0 +1,8550 @@
+{
+  "cases": [
+    {
+      "scene": 0,
+      "changes": [
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 40,
+          "old_assignment": [
+            "s0_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0769",
+            [
+              19.0,
+              13.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.0066072940826416,
+            5.994904518127441,
+            2.3970820903778076
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 100,
+          "old_assignment": [
+            "s0_00_0769",
+            [
+              19.0,
+              13.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0133",
+            [
+              3.0,
+              13.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            19.0,
+            13.0,
+            1.5
+          ],
+          "root_now": [
+            19.0,
+            13.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.933160781860352,
+            9.02624797821045,
+            1.4998060464859009
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 155,
+          "old_assignment": [
+            "s0_00_0133",
+            [
+              3.0,
+              13.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0132",
+            [
+              3.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            19.0,
+            13.0,
+            1.5
+          ],
+          "root_now": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            18.59865379333496,
+            12.626766204833984,
+            1.5000001192092896
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 240,
+          "old_assignment": [
+            "s0_00_0132",
+            [
+              3.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0124",
+            [
+              3.0,
+              11.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            14.404407501220703,
+            11.783019065856934,
+            1.443284273147583
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 280,
+          "old_assignment": [
+            "s0_00_0124",
+            [
+              3.0,
+              11.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0203",
+            [
+              5.0,
+              11.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.557025909423828,
+            11.0250825881958,
+            1.5004353523254395
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 300,
+          "old_assignment": [
+            "s0_03_0203",
+            [
+              5.0,
+              11.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0111",
+            [
+              3.0,
+              7.0,
+              7.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.748050689697266,
+            11.00887393951416,
+            3.0434420108795166
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 342,
+          "old_assignment": [
+            "s0_01_0111",
+            [
+              3.0,
+              7.0,
+              7.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0178",
+            [
+              5.0,
+              5.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            7.0,
+            7.5
+          ],
+          "root_now": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.0114095211029053,
+            6.7982707023620605,
+            6.910250663757324
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 376,
+          "old_assignment": [
+            "s0_00_0178",
+            [
+              5.0,
+              5.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0354",
+            [
+              9.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "root_now": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            4.5246453285217285,
+            5.522030353546143,
+            2.6280105113983154
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 0,
+          "step": 395,
+          "old_assignment": [
+            "s0_00_0354",
+            [
+              9.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0090",
+            [
+              3.0,
+              3.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "root_now": [
+            3.0,
+            3.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            8.598368644714355,
+            8.500798225402832,
+            2.489626407623291
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 20,
+          "old_assignment": [
+            "s1_02_0016",
+            [
+              1.0,
+              5.0,
+              0.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0141",
+            [
+              3.0,
+              15.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            17.132381439208984,
+            15.098222732543945,
+            3.5166819095611572
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 100,
+          "old_assignment": [
+            "s1_02_0141",
+            [
+              3.0,
+              15.0,
+              5.5
+            ]
+          ],
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.12934398651123,
+            13.19534969329834,
+            4.069457054138184
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 101,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.12726879119873,
+            13.192123413085938,
+            4.083456516265869
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 102,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.125240325927734,
+            13.188980102539062,
+            4.096889019012451
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 103,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.123519897460938,
+            13.186312675476074,
+            4.108288764953613
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 104,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.122038841247559,
+            13.184016227722168,
+            4.118076801300049
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 105,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.12049674987793,
+            13.181635856628418,
+            4.127948760986328
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 106,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.118918418884277,
+            13.179206848144531,
+            4.137797832489014
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 107,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.155318260192871,
+            13.179206848144531,
+            4.1742844581604
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 108,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.175639152526855,
+            13.178976058959961,
+            4.194427013397217
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 109,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.190261840820312,
+            13.177943229675293,
+            4.2125654220581055
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 110,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.200407028198242,
+            13.176237106323242,
+            4.229190349578857
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 111,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.207039833068848,
+            13.173978805541992,
+            4.2446208000183105
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 112,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.210923194885254,
+            13.171278953552246,
+            4.259066104888916
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 113,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.212665557861328,
+            13.168235778808594,
+            4.272662162780762
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 114,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.212750434875488,
+            13.164932250976562,
+            4.2855000495910645
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 115,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.21156120300293,
+            13.1614408493042,
+            4.297640800476074
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 116,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.209402084350586,
+            13.157821655273438,
+            4.3091278076171875
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 117,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.20651626586914,
+            13.15412425994873,
+            4.3199944496154785
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 118,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.203094482421875,
+            13.150389671325684,
+            4.330267906188965
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 119,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.199287414550781,
+            13.146650314331055,
+            4.339972496032715
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 120,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.195213317871094,
+            13.142931938171387,
+            4.3491315841674805
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 121,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.190964698791504,
+            13.13925552368164,
+            4.3577680587768555
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 122,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.186613082885742,
+            13.135635375976562,
+            4.365904331207275
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 123,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.18221378326416,
+            13.132084846496582,
+            4.373563766479492
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 124,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.177810668945312,
+            13.128610610961914,
+            4.3807692527771
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 125,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.17343521118164,
+            13.12522029876709,
+            4.38754415512085
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 126,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.169111251831055,
+            13.121916770935059,
+            4.393911361694336
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 127,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            15.164856910705566,
+            13.118701934814453,
+            4.399893283843994
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 128,
+          "old_assignment": null,
+          "new_assignment": [
+            "s1_03_0132",
+            [
+              3.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            5.0,
+            0.5
+          ],
+          "root_now": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            15.160685539245605,
+            13.115577697753906,
+            4.40551233291626
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 177,
+          "old_assignment": [
+            "s1_03_0132",
+            [
+              3.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0131",
+            [
+              3.0,
+              13.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            14.529928207397461,
+            13.022260665893555,
+            4.7970452308654785
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 300,
+          "old_assignment": [
+            "s1_03_0131",
+            [
+              3.0,
+              13.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0115",
+            [
+              3.0,
+              9.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.6551196575164795,
+            12.135446548461914,
+            4.500000476837158
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 302,
+          "old_assignment": [
+            "s1_00_0115",
+            [
+              3.0,
+              9.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0187",
+            [
+              5.0,
+              7.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            5.0,
+            7.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.310386896133423,
+            12.469538688659668,
+            4.499997138977051
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 334,
+          "old_assignment": [
+            "s1_03_0187",
+            [
+              5.0,
+              7.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0294",
+            [
+              7.0,
+              13.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            5.0,
+            7.0,
+            3.5
+          ],
+          "root_now": [
+            5.0,
+            7.0,
+            3.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            4.488998889923096,
+            7.3109002113342285,
+            3.771623373031616
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 1,
+          "step": 366,
+          "old_assignment": [
+            "s1_02_0294",
+            [
+              7.0,
+              13.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0265",
+            [
+              7.0,
+              7.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            7.0,
+            13.0,
+            6.5
+          ],
+          "root_now": [
+            7.0,
+            7.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            6.424445152282715,
+            12.699055671691895,
+            6.297617435455322
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 40,
+          "old_assignment": [
+            "s2_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0302",
+            [
+              7.0,
+              15.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            1.4559049606323242,
+            3.4645700454711914,
+            1.373993992805481
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 50,
+          "old_assignment": [
+            "s2_03_0302",
+            [
+              7.0,
+              15.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_01_0294",
+            [
+              7.0,
+              13.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            7.0,
+            13.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            0.9712434411048889,
+            1.6681464910507202,
+            1.5355175733566284
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 100,
+          "old_assignment": [
+            "s2_01_0294",
+            [
+              7.0,
+              13.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0697",
+            [
+              17.0,
+              15.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            7.0,
+            13.0,
+            6.5
+          ],
+          "root_now": [
+            7.0,
+            13.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.063862323760986,
+            9.491432189941406,
+            3.695119619369507
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 177,
+          "old_assignment": [
+            "s2_02_0697",
+            [
+              17.0,
+              15.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_00_0132",
+            [
+              3.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            15.0,
+            1.5
+          ],
+          "root_now": [
+            17.0,
+            15.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            11.265787124633789,
+            13.737017631530762,
+            3.6036009788513184
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 225,
+          "old_assignment": [
+            "s2_00_0132",
+            [
+              3.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_00_0124",
+            [
+              3.0,
+              11.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            15.0,
+            1.5
+          ],
+          "root_now": [
+            3.0,
+            11.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            11.26685619354248,
+            14.223273277282715,
+            3.583385467529297
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 260,
+          "old_assignment": [
+            "s2_00_0124",
+            [
+              3.0,
+              11.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_00_0204",
+            [
+              5.0,
+              11.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            11.0,
+            4.5
+          ],
+          "root_now": [
+            3.0,
+            11.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.248520851135254,
+            13.745856285095215,
+            3.518728017807007
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 300,
+          "old_assignment": [
+            "s2_00_0204",
+            [
+              5.0,
+              11.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_01_0111",
+            [
+              3.0,
+              7.0,
+              7.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            11.0,
+            4.5
+          ],
+          "root_now": [
+            3.0,
+            11.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            4.196479797363281,
+            12.21638011932373,
+            3.9493701457977295
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 332,
+          "old_assignment": [
+            "s2_01_0111",
+            [
+              3.0,
+              7.0,
+              7.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0266",
+            [
+              7.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            7.0,
+            7.5
+          ],
+          "root_now": [
+            7.0,
+            7.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.0005576610565186,
+            7.002710342407227,
+            6.850217342376709
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 0,
+          "agent": 2,
+          "step": 374,
+          "old_assignment": [
+            "s2_03_0266",
+            [
+              7.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0387",
+            [
+              9.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            7.0,
+            7.0,
+            2.5
+          ],
+          "root_now": [
+            7.0,
+            7.0,
+            2.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            6.437046527862549,
+            6.992503643035889,
+            2.7734363079071045
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        }
+      ],
+      "partial_release_contexts": [
+        {
+          "scene": 0,
+          "step": 50,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                19.0,
+                13.0,
+                1.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                1.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 1,
+              "assignment": [
+                3.0,
+                15.0,
+                5.5
+              ],
+              "executed_root": [
+                1.0,
+                5.0,
+                0.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 128,
+          "requested_agent": 1,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                3.0,
+                13.0,
+                5.5
+              ],
+              "executed_root": [
+                19.0,
+                13.0,
+                1.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 155,
+          "requested_agent": 0,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 225,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                3.0,
+                13.0,
+                3.5
+              ],
+              "executed_root": [
+                3.0,
+                13.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 302,
+          "requested_agent": 1,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                3.0,
+                7.0,
+                7.5
+              ],
+              "executed_root": [
+                3.0,
+                13.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 2,
+              "assignment": [
+                3.0,
+                7.0,
+                7.5
+              ],
+              "executed_root": [
+                3.0,
+                11.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 332,
+          "requested_agent": 2,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 342,
+          "requested_agent": 0,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 366,
+          "requested_agent": 1,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 376,
+          "requested_agent": 0,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 0,
+          "step": 395,
+          "requested_agent": 0,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        }
+      ],
+      "continuity": {
+        "no_matching_completed_prefix": 3
+      }
+    },
+    {
+      "scene": 1,
+      "changes": [
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 20,
+          "old_assignment": [
+            "s0_01_0011",
+            [
+              1.0,
+              3.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0282",
+            [
+              7.0,
+              11.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "root_now": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            2.332730293273926,
+            6.392000198364258,
+            3.5674312114715576
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 81,
+          "old_assignment": [
+            "s0_01_0282",
+            [
+              7.0,
+              11.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0121",
+            [
+              3.0,
+              11.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            7.0,
+            11.0,
+            2.5
+          ],
+          "root_now": [
+            3.0,
+            11.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            6.777250289916992,
+            10.88953685760498,
+            3.0887680053710938
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 100,
+          "old_assignment": [
+            "s0_02_0121",
+            [
+              3.0,
+              11.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0183",
+            [
+              5.0,
+              5.0,
+              7.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            3.0,
+            11.0,
+            1.5
+          ],
+          "root_now": [
+            3.0,
+            11.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.831716775894165,
+            11.026274681091309,
+            1.6921933889389038
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 120,
+          "old_assignment": [
+            "s0_01_0183",
+            [
+              5.0,
+              5.0,
+              7.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0674",
+            [
+              17.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            5.0,
+            5.0,
+            7.5
+          ],
+          "root_now": [
+            5.0,
+            5.0,
+            7.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.0723676681518555,
+            10.765286445617676,
+            3.2989907264709473
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 140,
+          "old_assignment": [
+            "s0_01_0674",
+            [
+              17.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0509",
+            [
+              13.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            5.0,
+            5.0,
+            7.5
+          ],
+          "root_now": [
+            5.0,
+            5.0,
+            7.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.488267183303833,
+            6.481475830078125,
+            5.842301368713379
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 181,
+          "old_assignment": [
+            "s0_02_0509",
+            [
+              13.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0521",
+            [
+              13.0,
+              11.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            13.0,
+            7.0,
+            5.5
+          ],
+          "root_now": [
+            13.0,
+            11.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.6697998046875,
+            6.42542839050293,
+            5.7327656745910645
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 211,
+          "old_assignment": [
+            "s0_01_0521",
+            [
+              13.0,
+              11.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0354",
+            [
+              9.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            13.0,
+            11.0,
+            1.5
+          ],
+          "root_now": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            13.007006645202637,
+            10.684808731079102,
+            2.1379432678222656
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 236,
+          "old_assignment": [
+            "s0_03_0354",
+            [
+              9.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0452",
+            [
+              11.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "root_now": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            9.475214004516602,
+            9.470401763916016,
+            2.5283620357513428
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 256,
+          "old_assignment": [
+            "s0_02_0452",
+            [
+              11.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0620",
+            [
+              15.0,
+              15.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            11.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.427393913269043,
+            12.615367889404297,
+            4.357428550720215
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 278,
+          "old_assignment": [
+            "s0_00_0620",
+            [
+              15.0,
+              15.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0178",
+            [
+              5.0,
+              5.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            14.495457649230957,
+            14.49791145324707,
+            4.503138542175293
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 300,
+          "old_assignment": [
+            "s0_03_0178",
+            [
+              5.0,
+              5.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0187",
+            [
+              5.0,
+              7.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "root_now": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.906058311462402,
+            12.887758255004883,
+            4.499528408050537
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 339,
+          "old_assignment": [
+            "s0_03_0187",
+            [
+              5.0,
+              7.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0261",
+            [
+              7.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            5.0,
+            5.0,
+            2.5
+          ],
+          "root_now": [
+            7.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.420616149902344,
+            5.428256034851074,
+            2.7532689571380615
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 361,
+          "old_assignment": [
+            "s0_03_0261",
+            [
+              7.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0421",
+            [
+              11.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            7.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            7.0,
+            5.0,
+            5.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            6.36968469619751,
+            5.010382175445557,
+            5.176209926605225
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 379,
+          "old_assignment": [
+            "s0_03_0421",
+            [
+              11.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0418",
+            [
+              11.0,
+              5.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            11.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            11.0,
+            5.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.915730476379395,
+            4.959837913513184,
+            5.590986251831055
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 0,
+          "step": 396,
+          "old_assignment": [
+            "s0_00_0418",
+            [
+              11.0,
+              5.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0101",
+            [
+              3.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            11.0,
+            5.0,
+            2.5
+          ],
+          "root_now": [
+            3.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            11.011198997497559,
+            5.003774166107178,
+            3.1938302516937256
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 20,
+          "old_assignment": [
+            "s1_01_0011",
+            [
+              1.0,
+              3.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0266",
+            [
+              7.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "root_now": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            15.987232208251953,
+            14.720968246459961,
+            5.67953634262085
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 60,
+          "old_assignment": [
+            "s1_03_0266",
+            [
+              7.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0185",
+            [
+              5.0,
+              7.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "root_now": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            13.581732749938965,
+            13.44009780883789,
+            5.496393203735352
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 80,
+          "old_assignment": [
+            "s1_02_0185",
+            [
+              5.0,
+              7.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0117",
+            [
+              3.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "root_now": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.283370018005371,
+            12.216404914855957,
+            5.499682903289795
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 140,
+          "old_assignment": [
+            "s1_00_0117",
+            [
+              3.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0509",
+            [
+              13.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "root_now": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            2.6209909915924072,
+            3.126091718673706,
+            3.471557140350342
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 144,
+          "old_assignment": [
+            "s1_02_0509",
+            [
+              13.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0674",
+            [
+              17.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            3.0,
+            3.5
+          ],
+          "root_now": [
+            17.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            1.7427579164505005,
+            2.9836368560791016,
+            3.4905877113342285
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 190,
+          "old_assignment": [
+            "s1_03_0674",
+            [
+              17.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0676",
+            [
+              17.0,
+              9.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            9.0,
+            2.5
+          ],
+          "root_now": [
+            17.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.928763389587402,
+            5.902482509613037,
+            3.4999840259552
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 200,
+          "old_assignment": [
+            "s1_03_0676",
+            [
+              17.0,
+              9.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_01_0449",
+            [
+              11.0,
+              13.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            9.0,
+            2.5
+          ],
+          "root_now": [
+            17.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.24454402923584,
+            7.048092842102051,
+            3.500011682510376
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 235,
+          "old_assignment": [
+            "s1_01_0449",
+            [
+              11.0,
+              13.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_01_0052",
+            [
+              1.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            9.0,
+            2.5
+          ],
+          "root_now": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            16.799957275390625,
+            8.661274909973145,
+            3.0791420936584473
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 260,
+          "old_assignment": [
+            "s1_01_0052",
+            [
+              1.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0186",
+            [
+              5.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            15.69591999053955,
+            8.895328521728516,
+            3.4145069122314453
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 300,
+          "old_assignment": [
+            "s1_02_0186",
+            [
+              5.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0701",
+            [
+              17.0,
+              15.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.673653602600098,
+            9.003000259399414,
+            3.499917984008789
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 360,
+          "old_assignment": [
+            "s1_02_0701",
+            [
+              17.0,
+              15.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0404",
+            [
+              11.0,
+              1.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            4.201807975769043,
+            12.639365196228027,
+            4.493251800537109
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 1,
+          "step": 369,
+          "old_assignment": [
+            "s1_03_0404",
+            [
+              11.0,
+              1.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0419",
+            [
+              11.0,
+              5.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            4.282161235809326,
+            12.54450798034668,
+            4.498523712158203
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 20,
+          "old_assignment": [
+            "s2_02_0024",
+            [
+              1.0,
+              7.0,
+              0.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0189",
+            [
+              5.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            7.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            7.0,
+            0.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            15.492067337036133,
+            5.089196681976318,
+            3.4929168224334717
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 60,
+          "old_assignment": [
+            "s2_02_0189",
+            [
+              5.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0197",
+            [
+              5.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            7.0,
+            0.5
+          ],
+          "root_now": [
+            1.0,
+            7.0,
+            0.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            8.098828315734863,
+            7.017642974853516,
+            3.50020432472229
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 97,
+          "old_assignment": [
+            "s2_03_0197",
+            [
+              5.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_01_0279",
+            [
+              7.0,
+              9.0,
+              7.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            7.0,
+            0.5
+          ],
+          "root_now": [
+            7.0,
+            9.0,
+            7.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            1.7389451265335083,
+            7.0033674240112305,
+            0.5410580039024353
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 140,
+          "old_assignment": [
+            "s2_01_0279",
+            [
+              7.0,
+              9.0,
+              7.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0509",
+            [
+              13.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            7.0,
+            9.0,
+            7.5
+          ],
+          "root_now": [
+            7.0,
+            9.0,
+            7.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            4.441217422485352,
+            6.99445915222168,
+            5.223238945007324
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 191,
+          "old_assignment": [
+            "s2_02_0509",
+            [
+              13.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0434",
+            [
+              11.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            13.0,
+            7.0,
+            5.5
+          ],
+          "root_now": [
+            11.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.682341575622559,
+            7.407088756561279,
+            5.630186080932617
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 218,
+          "old_assignment": [
+            "s2_02_0434",
+            [
+              11.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_01_0052",
+            [
+              1.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            11.0,
+            9.0,
+            2.5
+          ],
+          "root_now": [
+            11.0,
+            9.0,
+            2.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            11.493812561035156,
+            8.501995086669922,
+            2.672720432281494
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 260,
+          "old_assignment": [
+            "s2_01_0052",
+            [
+              1.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_00_0620",
+            [
+              15.0,
+              15.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            4.3272833824157715,
+            11.74023723602295,
+            4.035595893859863
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 300,
+          "old_assignment": [
+            "s2_00_0620",
+            [
+              15.0,
+              15.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_01_0324",
+            [
+              9.0,
+              1.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "root_now": [
+            1.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.429593801498413,
+            12.514122009277344,
+            4.475219249725342
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 1,
+          "agent": 2,
+          "step": 360,
+          "old_assignment": [
+            "s2_01_0324",
+            [
+              9.0,
+              1.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0404",
+            [
+              11.0,
+              1.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            1.0,
+            4.5
+          ],
+          "root_now": [
+            11.0,
+            1.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.1160600185394287,
+            11.601594924926758,
+            4.497051239013672
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        }
+      ],
+      "partial_release_contexts": [
+        {
+          "scene": 1,
+          "step": 32,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                7.0,
+                7.0,
+                2.5
+              ],
+              "executed_root": [
+                1.0,
+                3.0,
+                3.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 2,
+              "assignment": [
+                5.0,
+                7.0,
+                5.5
+              ],
+              "executed_root": [
+                1.0,
+                7.0,
+                0.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 81,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                3.0,
+                9.0,
+                5.5
+              ],
+              "executed_root": [
+                1.0,
+                3.0,
+                3.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 2,
+              "assignment": [
+                5.0,
+                9.0,
+                5.5
+              ],
+              "executed_root": [
+                1.0,
+                7.0,
+                0.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 97,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                3.0,
+                9.0,
+                5.5
+              ],
+              "executed_root": [
+                1.0,
+                3.0,
+                3.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 144,
+          "requested_agent": 1,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                13.0,
+                7.0,
+                5.5
+              ],
+              "executed_root": [
+                5.0,
+                5.0,
+                7.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 2,
+              "assignment": [
+                13.0,
+                7.0,
+                5.5
+              ],
+              "executed_root": [
+                7.0,
+                9.0,
+                7.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 181,
+          "requested_agent": 0,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 211,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                11.0,
+                13.0,
+                1.5
+              ],
+              "executed_root": [
+                17.0,
+                9.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 235,
+          "requested_agent": 1,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 256,
+          "requested_agent": 0,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 278,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                5.0,
+                7.0,
+                2.5
+              ],
+              "executed_root": [
+                1.0,
+                13.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 2,
+              "assignment": [
+                15.0,
+                15.0,
+                4.5
+              ],
+              "executed_root": [
+                1.0,
+                13.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 313,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                5.0,
+                7.0,
+                3.5
+              ],
+              "executed_root": [
+                5.0,
+                5.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                15.0,
+                5.5
+              ],
+              "executed_root": [
+                1.0,
+                13.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 339,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                15.0,
+                5.5
+              ],
+              "executed_root": [
+                1.0,
+                13.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 379,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                11.0,
+                5.0,
+                3.5
+              ],
+              "executed_root": [
+                1.0,
+                13.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 1,
+          "step": 396,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                11.0,
+                5.0,
+                3.5
+              ],
+              "executed_root": [
+                1.0,
+                13.0,
+                4.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        }
+      ],
+      "continuity": {
+        "no_matching_completed_prefix": 1
+      }
+    },
+    {
+      "scene": 2,
+      "changes": [
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 20,
+          "old_assignment": [
+            "s0_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0418",
+            [
+              11.0,
+              5.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            14.037142753601074,
+            14.040202140808105,
+            4.536263465881348
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 100,
+          "old_assignment": [
+            "s0_00_0418",
+            [
+              11.0,
+              5.0,
+              2.5
+            ]
+          ],
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.832838296890259,
+            3.98592472076416,
+            2.486320734024048
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 101,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.8258678913116455,
+            3.9792587757110596,
+            2.4865236282348633
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 102,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.8192012310028076,
+            3.9725921154022217,
+            2.4867184162139893
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 103,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.8128230571746826,
+            3.965989589691162,
+            2.486905097961426
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 104,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.8067197799682617,
+            3.959498882293701,
+            2.487083911895752
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 105,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.80087947845459,
+            3.9531543254852295,
+            2.4872548580169678
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 106,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.7502083778381348,
+            3.981235980987549,
+            2.4873692989349365
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 107,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.7304821014404297,
+            3.990888833999634,
+            2.4875009059906006
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 108,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.713820457458496,
+            3.9961304664611816,
+            2.48764967918396
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 109,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6994311809539795,
+            3.99784255027771,
+            2.48781418800354
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 110,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6867430210113525,
+            3.996755838394165,
+            2.48799204826355
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 111,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6753435134887695,
+            3.9934730529785156,
+            2.488180637359619
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 112,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6649351119995117,
+            3.9884884357452393,
+            2.488377332687378
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 113,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6553030014038086,
+            3.982205867767334,
+            2.488579511642456
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 114,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.646291494369507,
+            3.974952459335327,
+            2.4887852668762207
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 115,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6377875804901123,
+            3.966991901397705,
+            2.488992214202881
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 116,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.629708766937256,
+            3.9585354328155518,
+            2.489198923110962
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 117,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6219942569732666,
+            3.9497501850128174,
+            2.4894039630889893
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 118,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.614457845687866,
+            3.940553665161133,
+            2.489610195159912
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 119,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.607145071029663,
+            3.9311704635620117,
+            2.489814519882202
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 120,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6000919342041016,
+            3.921776294708252,
+            2.4900145530700684
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 121,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            3.593325614929199,
+            3.912506103515625,
+            2.490208625793457
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 122,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            3.5933163166046143,
+            3.9125137329101562,
+            2.490208625793457
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 125,
+          "old_assignment": null,
+          "new_assignment": [
+            "s0_01_0586",
+            [
+              15.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            15.0,
+            7.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.5933163166046143,
+            3.9125137329101562,
+            2.490208625793457
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 150,
+          "old_assignment": [
+            "s0_01_0586",
+            [
+              15.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0597",
+            [
+              15.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            7.0,
+            2.5
+          ],
+          "root_now": [
+            15.0,
+            7.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.4870519638061523,
+            3.7503325939178467,
+            2.4931581020355225
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 155,
+          "old_assignment": [
+            "s0_01_0597",
+            [
+              15.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0635",
+            [
+              15.0,
+              19.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            7.0,
+            2.5
+          ],
+          "root_now": [
+            15.0,
+            19.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.467721462249756,
+            3.7208688259124756,
+            2.493652105331421
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 185,
+          "old_assignment": [
+            "s0_03_0635",
+            [
+              15.0,
+              19.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0293",
+            [
+              7.0,
+              13.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            19.0,
+            3.5
+          ],
+          "root_now": [
+            7.0,
+            13.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.422213554382324,
+            3.6997132301330566,
+            2.495819330215454
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 215,
+          "old_assignment": [
+            "s0_01_0293",
+            [
+              7.0,
+              13.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0354",
+            [
+              9.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            7.0,
+            13.0,
+            5.5
+          ],
+          "root_now": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.244500160217285,
+            3.9448912143707275,
+            2.4979512691497803
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 300,
+          "old_assignment": [
+            "s0_02_0354",
+            [
+              9.0,
+              9.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0622",
+            [
+              15.0,
+              15.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "root_now": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.676453113555908,
+            5.735708236694336,
+            2.499999523162842
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 310,
+          "old_assignment": [
+            "s0_02_0622",
+            [
+              15.0,
+              15.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0482",
+            [
+              13.0,
+              1.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "root_now": [
+            9.0,
+            9.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            6.90103006362915,
+            6.907526969909668,
+            2.500002861022949
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 0,
+          "step": 353,
+          "old_assignment": [
+            "s0_01_0482",
+            [
+              13.0,
+              1.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0299",
+            [
+              7.0,
+              15.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            13.0,
+            1.0,
+            2.5
+          ],
+          "root_now": [
+            7.0,
+            15.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.975923538208008,
+            1.6940158605575562,
+            2.5
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 20,
+          "old_assignment": [
+            "s1_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0705",
+            [
+              17.0,
+              17.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            7.391522407531738,
+            7.239344120025635,
+            3.399688482284546
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 100,
+          "old_assignment": [
+            "s1_02_0705",
+            [
+              17.0,
+              17.0,
+              1.5
+            ]
+          ],
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.621138572692871,
+            3.9337644577026367,
+            2.4960834980010986
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 101,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.614884614944458,
+            3.925347089767456,
+            2.4961531162261963
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 102,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6088225841522217,
+            3.9170007705688477,
+            2.4962213039398193
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 103,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.602940559387207,
+            3.9087576866149902,
+            2.4962878227233887
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 104,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            3.5972278118133545,
+            3.9006404876708984,
+            2.496352434158325
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 105,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            3.597219705581665,
+            3.900646924972534,
+            2.496352434158325
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 108,
+          "old_assignment": null,
+          "new_assignment": [
+            "s1_02_0618",
+            [
+              15.0,
+              15.0,
+              2.5
+            ]
+          ],
+          "both_assigned": false,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.597219705581665,
+            3.900646924972534,
+            2.496352434158325
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 138,
+          "old_assignment": [
+            "s1_02_0618",
+            [
+              15.0,
+              15.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0597",
+            [
+              15.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            15.0,
+            2.5
+          ],
+          "root_now": [
+            15.0,
+            9.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.483663558959961,
+            3.730722427368164,
+            2.4975459575653076
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 150,
+          "old_assignment": [
+            "s1_03_0597",
+            [
+              15.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0522",
+            [
+              13.0,
+              11.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            9.0,
+            5.5
+          ],
+          "root_now": [
+            15.0,
+            9.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.4440882205963135,
+            3.671536445617676,
+            2.497913360595703
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 168,
+          "old_assignment": [
+            "s1_00_0522",
+            [
+              13.0,
+              11.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0620",
+            [
+              15.0,
+              15.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            9.0,
+            5.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.4609360694885254,
+            3.661191940307617,
+            2.498368978500366
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 200,
+          "old_assignment": [
+            "s1_02_0620",
+            [
+              15.0,
+              15.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0357",
+            [
+              9.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "TRACK_ROOT",
+          "position": [
+            3.5467734336853027,
+            3.81573486328125,
+            2.4994635581970215
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 300,
+          "old_assignment": [
+            "s1_03_0357",
+            [
+              9.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.7667884826660156,
+            4.174039840698242,
+            2.4998817443847656
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 301,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.756544589996338,
+            4.186103343963623,
+            2.499885082244873
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 302,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.7458372116088867,
+            4.198440074920654,
+            2.4998884201049805
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 303,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.734717845916748,
+            4.21104621887207,
+            2.499891757965088
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 304,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.723228931427002,
+            4.223915100097656,
+            2.4998950958251953
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 305,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.7114059925079346,
+            4.237039089202881,
+            2.4998984336853027
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 306,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.699280261993408,
+            4.250407695770264,
+            2.49990177154541
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 307,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6868789196014404,
+            4.264009952545166,
+            2.4999051094055176
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 308,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.674226760864258,
+            4.277832984924316,
+            2.499908447265625
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 309,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.661346912384033,
+            4.291862487792969,
+            2.4999117851257324
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 310,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.648261547088623,
+            4.306082725524902,
+            2.49991512298584
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 311,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.6349916458129883,
+            4.320477485656738,
+            2.4999184608459473
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 312,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            3.62155818939209,
+            4.335029125213623,
+            2.4999217987060547
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 313,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            3.6079816818237305,
+            4.349719524383545,
+            2.499925136566162
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 314,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            3.6079940795898438,
+            4.349734783172607,
+            2.499925136566162
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 315,
+          "old_assignment": null,
+          "new_assignment": [
+            "s1_03_0288",
+            [
+              7.0,
+              13.0,
+              0.5
+            ]
+          ],
+          "both_assigned": false,
+          "root_before": [
+            15.0,
+            15.0,
+            4.5
+          ],
+          "root_now": [
+            7.0,
+            13.0,
+            0.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.6079940795898438,
+            4.349734783172607,
+            2.499925136566162
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 1,
+          "step": 330,
+          "old_assignment": [
+            "s1_03_0288",
+            [
+              7.0,
+              13.0,
+              0.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0362",
+            [
+              9.0,
+              11.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            7.0,
+            13.0,
+            0.5
+          ],
+          "root_now": [
+            7.0,
+            13.0,
+            0.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            3.569756269454956,
+            4.6445817947387695,
+            2.4999592304229736
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 20,
+          "old_assignment": [
+            "s2_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0705",
+            [
+              17.0,
+              17.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.100303649902344,
+            3.096937417984009,
+            5.1731462478637695
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 65,
+          "old_assignment": [
+            "s2_02_0705",
+            [
+              17.0,
+              17.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0706",
+            [
+              17.0,
+              17.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            17.0,
+            17.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            7.559953689575195,
+            1.5564237833023071,
+            3.538834810256958
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 100,
+          "old_assignment": [
+            "s2_02_0706",
+            [
+              17.0,
+              17.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0618",
+            [
+              15.0,
+              15.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            17.0,
+            2.5
+          ],
+          "root_now": [
+            17.0,
+            17.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            8.041267395019531,
+            2.0351614952087402,
+            3.5133438110351562
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 200,
+          "old_assignment": [
+            "s2_02_0618",
+            [
+              15.0,
+              15.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0357",
+            [
+              9.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            15.0,
+            2.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            16.121095657348633,
+            16.207765579223633,
+            2.528846025466919
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 243,
+          "old_assignment": [
+            "s2_03_0357",
+            [
+              9.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0586",
+            [
+              15.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            9.0,
+            5.5
+          ],
+          "root_now": [
+            15.0,
+            7.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.486085891723633,
+            9.482568740844727,
+            5.284144401550293
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 282,
+          "old_assignment": [
+            "s2_03_0586",
+            [
+              15.0,
+              7.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0622",
+            [
+              15.0,
+              15.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            7.0,
+            2.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            14.896504402160645,
+            7.211765766143799,
+            3.2024500370025635
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 300,
+          "old_assignment": [
+            "s2_02_0622",
+            [
+              15.0,
+              15.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0339",
+            [
+              9.0,
+              5.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            15.0,
+            6.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            15.014636993408203,
+            9.555289268493652,
+            3.8109493255615234
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 310,
+          "old_assignment": [
+            "s2_03_0339",
+            [
+              9.0,
+              5.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0340",
+            [
+              9.0,
+              5.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            15.0,
+            15.0,
+            6.5
+          ],
+          "root_now": [
+            15.0,
+            15.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            14.990640640258789,
+            11.699745178222656,
+            4.822518825531006
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 2,
+          "agent": 2,
+          "step": 380,
+          "old_assignment": [
+            "s2_02_0340",
+            [
+              9.0,
+              5.0,
+              4.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0442",
+            [
+              11.0,
+              11.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            5.0,
+            4.5
+          ],
+          "root_now": [
+            11.0,
+            11.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.547330856323242,
+            5.331308364868164,
+            4.688141345977783
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        }
+      ],
+      "partial_release_contexts": [
+        {
+          "scene": 2,
+          "step": 65,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                11.0,
+                5.0,
+                2.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                1.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                17.0,
+                1.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                1.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 108,
+          "requested_agent": 1,
+          "other_mismatches": [
+            {
+              "agent": 2,
+              "assignment": [
+                15.0,
+                15.0,
+                2.5
+              ],
+              "executed_root": [
+                17.0,
+                17.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 138,
+          "requested_agent": 1,
+          "other_mismatches": [
+            {
+              "agent": 2,
+              "assignment": [
+                15.0,
+                15.0,
+                2.5
+              ],
+              "executed_root": [
+                17.0,
+                17.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 155,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                13.0,
+                11.0,
+                2.5
+              ],
+              "executed_root": [
+                15.0,
+                9.0,
+                5.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 2,
+              "assignment": [
+                15.0,
+                15.0,
+                2.5
+              ],
+              "executed_root": [
+                17.0,
+                17.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 168,
+          "requested_agent": 1,
+          "other_mismatches": [
+            {
+              "agent": 2,
+              "assignment": [
+                15.0,
+                15.0,
+                2.5
+              ],
+              "executed_root": [
+                17.0,
+                17.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 185,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 2,
+              "assignment": [
+                15.0,
+                15.0,
+                2.5
+              ],
+              "executed_root": [
+                17.0,
+                17.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 215,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                9.0,
+                9.0,
+                5.5
+              ],
+              "executed_root": [
+                15.0,
+                15.0,
+                4.5
+              ],
+              "reason": "TRACK_ROOT"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 243,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                9.0,
+                9.0,
+                5.5
+              ],
+              "executed_root": [
+                15.0,
+                15.0,
+                4.5
+              ],
+              "reason": "TRACK_ROOT"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 282,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                9.0,
+                9.0,
+                5.5
+              ],
+              "executed_root": [
+                15.0,
+                15.0,
+                4.5
+              ],
+              "reason": "TRACK_ROOT"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 353,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                9.0,
+                11.0,
+                2.5
+              ],
+              "executed_root": [
+                7.0,
+                13.0,
+                0.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 2,
+          "step": 380,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                9.0,
+                11.0,
+                2.5
+              ],
+              "executed_root": [
+                7.0,
+                13.0,
+                0.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        }
+      ],
+      "continuity": {
+        "no_matching_completed_prefix": 6,
+        "completed_prefix_connected": 4
+      }
+    },
+    {
+      "scene": 3,
+      "changes": [
+        {
+          "scene": 3,
+          "agent": 0,
+          "step": 17,
+          "old_assignment": [
+            "s0_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0729",
+            [
+              19.0,
+              3.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            11.213544845581055,
+            11.002469062805176,
+            4.185058116912842
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 0,
+          "step": 40,
+          "old_assignment": [
+            "s0_03_0729",
+            [
+              19.0,
+              3.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0606",
+            [
+              15.0,
+              11.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.632182121276855,
+            9.7012300491333,
+            2.517017364501953
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 0,
+          "step": 65,
+          "old_assignment": [
+            "s0_02_0606",
+            [
+              15.0,
+              11.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0526",
+            [
+              13.0,
+              11.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.679049491882324,
+            9.518342018127441,
+            2.499547243118286
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 0,
+          "step": 120,
+          "old_assignment": [
+            "s0_02_0526",
+            [
+              13.0,
+              11.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0659",
+            [
+              17.0,
+              5.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            13.0,
+            11.0,
+            6.5
+          ],
+          "root_now": [
+            13.0,
+            11.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.691121101379395,
+            9.081053733825684,
+            2.854768753051758
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 0,
+          "step": 171,
+          "old_assignment": [
+            "s0_03_0659",
+            [
+              17.0,
+              5.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0532",
+            [
+              13.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            3.5
+          ],
+          "root_now": [
+            13.0,
+            13.0,
+            4.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            16.406957626342773,
+            5.350095748901367,
+            3.683058261871338
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 3,
+          "agent": 1,
+          "step": 17,
+          "old_assignment": [
+            "s1_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0729",
+            [
+              19.0,
+              3.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.383731842041016,
+            12.93497085571289,
+            5.305574417114258
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 1,
+          "step": 65,
+          "old_assignment": [
+            "s1_03_0729",
+            [
+              19.0,
+              3.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0650",
+            [
+              17.0,
+              3.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.424220085144043,
+            10.52171802520752,
+            2.49290132522583
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 1,
+          "step": 125,
+          "old_assignment": [
+            "s1_00_0650",
+            [
+              17.0,
+              3.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0525",
+            [
+              13.0,
+              11.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            8.435420989990234,
+            7.291704177856445,
+            2.5000202655792236
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 1,
+          "step": 144,
+          "old_assignment": [
+            "s1_00_0525",
+            [
+              13.0,
+              11.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0659",
+            [
+              17.0,
+              5.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            7.044571399688721,
+            6.697274208068848,
+            2.062685966491699
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 1,
+          "step": 154,
+          "old_assignment": [
+            "s1_03_0659",
+            [
+              17.0,
+              5.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0532",
+            [
+              13.0,
+              13.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            6.206510543823242,
+            6.011659145355225,
+            1.596130132675171
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 3,
+          "agent": 2,
+          "step": 111,
+          "old_assignment": [
+            "s2_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_01_0676",
+            [
+              17.0,
+              9.0,
+              4.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            0.9922011494636536,
+            1.6085811853408813,
+            1.5000416040420532
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        }
+      ],
+      "partial_release_contexts": [
+        {
+          "scene": 3,
+          "step": 66,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                3.0,
+                2.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                1.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 3,
+          "step": 144,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                5.0,
+                3.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                1.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 3,
+          "step": 171,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                13.0,
+                13.0,
+                4.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                1.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        }
+      ],
+      "continuity": {
+        "no_matching_completed_prefix": 5
+      }
+    },
+    {
+      "scene": 4,
+      "changes": [
+        {
+          "scene": 4,
+          "agent": 0,
+          "step": 66,
+          "old_assignment": [
+            "s0_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0662",
+            [
+              17.0,
+              5.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            1.4573636054992676,
+            1.2971922159194946,
+            1.4999901056289673
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 4,
+          "agent": 0,
+          "step": 87,
+          "old_assignment": [
+            "s0_00_0662",
+            [
+              17.0,
+              5.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0306",
+            [
+              7.0,
+              17.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            4.384538650512695,
+            2.206326961517334,
+            3.4153060913085938
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 0,
+          "step": 100,
+          "old_assignment": [
+            "s0_01_0306",
+            [
+              7.0,
+              17.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0299",
+            [
+              7.0,
+              15.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.076879501342773,
+            2.9123802185058594,
+            3.9458675384521484
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 0,
+          "step": 160,
+          "old_assignment": [
+            "s0_02_0299",
+            [
+              7.0,
+              15.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0661",
+            [
+              17.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.336348533630371,
+            4.014073848724365,
+            4.534337043762207
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 0,
+          "step": 180,
+          "old_assignment": [
+            "s0_03_0661",
+            [
+              17.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0467",
+            [
+              11.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.493945598602295,
+            4.308394908905029,
+            4.516014575958252
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 0,
+          "step": 185,
+          "old_assignment": [
+            "s0_01_0467",
+            [
+              11.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0677",
+            [
+              17.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            6.5
+          ],
+          "root_now": [
+            17.0,
+            9.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.5704755783081055,
+            4.360151290893555,
+            4.513278007507324
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 4,
+          "agent": 0,
+          "step": 200,
+          "old_assignment": [
+            "s0_00_0677",
+            [
+              17.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_01_0467",
+            [
+              11.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            9.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            9.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.532856464385986,
+            4.491965293884277,
+            4.508418083190918
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 0,
+          "step": 297,
+          "old_assignment": [
+            "s0_01_0467",
+            [
+              11.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0290",
+            [
+              7.0,
+              13.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            9.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            9.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.15892505645752,
+            6.977550029754639,
+            4.499999046325684
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 1,
+          "step": 100,
+          "old_assignment": [
+            "s1_01_0041",
+            [
+              1.0,
+              11.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0661",
+            [
+              17.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            11.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            11.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            2.689408779144287,
+            11.00975513458252,
+            1.5009775161743164
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 1,
+          "step": 160,
+          "old_assignment": [
+            "s1_00_0661",
+            [
+              17.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0371",
+            [
+              9.0,
+              13.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            11.669217109680176,
+            7.068553924560547,
+            2.953028917312622
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 1,
+          "step": 200,
+          "old_assignment": [
+            "s1_02_0371",
+            [
+              9.0,
+              13.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0370",
+            [
+              9.0,
+              13.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            13.0,
+            3.5
+          ],
+          "root_now": [
+            9.0,
+            13.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            16.380409240722656,
+            5.690063953399658,
+            5.0180888175964355
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 1,
+          "step": 240,
+          "old_assignment": [
+            "s1_03_0370",
+            [
+              9.0,
+              13.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_01_0467",
+            [
+              11.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            13.0,
+            3.5
+          ],
+          "root_now": [
+            9.0,
+            13.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.742583274841309,
+            9.2549467086792,
+            3.475229024887085
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 1,
+          "step": 297,
+          "old_assignment": [
+            "s1_01_0467",
+            [
+              11.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_01_0197",
+            [
+              5.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            13.0,
+            3.5
+          ],
+          "root_now": [
+            9.0,
+            13.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.650952339172363,
+            11.345768928527832,
+            3.4997923374176025
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 1,
+          "step": 312,
+          "old_assignment": [
+            "s1_01_0197",
+            [
+              5.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_02_0667",
+            [
+              17.0,
+              7.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            9.0,
+            13.0,
+            3.5
+          ],
+          "root_now": [
+            9.0,
+            13.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            10.190374374389648,
+            11.750393867492676,
+            3.3101840019226074
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 87,
+          "old_assignment": [
+            "s2_03_0001",
+            [
+              1.0,
+              1.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0662",
+            [
+              17.0,
+              5.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.086895942687988,
+            5.0757670402526855,
+            1.499971866607666
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 117,
+          "old_assignment": [
+            "s2_03_0662",
+            [
+              17.0,
+              5.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_00_0661",
+            [
+              17.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            1.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            1.4122785329818726,
+            1.4240590333938599,
+            1.5000007152557373
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 160,
+          "old_assignment": [
+            "s2_00_0661",
+            [
+              17.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_00_0589",
+            [
+              15.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            6.2287917137146,
+            0.9862626791000366,
+            1.500000238418579
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 180,
+          "old_assignment": [
+            "s2_00_0589",
+            [
+              15.0,
+              7.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_00_0661",
+            [
+              17.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            7.18477725982666,
+            1.6211724281311035,
+            1.500000238418579
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 195,
+          "old_assignment": [
+            "s2_00_0661",
+            [
+              17.0,
+              5.0,
+              5.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_01_0467",
+            [
+              11.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            7.645938873291016,
+            1.9825656414031982,
+            1.431267499923706
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 200,
+          "old_assignment": [
+            "s2_01_0467",
+            [
+              11.0,
+              17.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_02_0677",
+            [
+              17.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            7.7289252281188965,
+            2.0507214069366455,
+            1.4125399589538574
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 300,
+          "old_assignment": [
+            "s2_02_0677",
+            [
+              17.0,
+              9.0,
+              5.5
+            ]
+          ],
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.155479431152344,
+            3.250809669494629,
+            1.8787877559661865
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 301,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.154669761657715,
+            3.249333620071411,
+            1.8740900754928589
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 302,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.15377140045166,
+            3.247760534286499,
+            1.8692551851272583
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 303,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.152800559997559,
+            3.2461049556732178,
+            1.8642979860305786
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 304,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.15176773071289,
+            3.244377374649048,
+            1.8592305183410645
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 305,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.150683403015137,
+            3.242586135864258,
+            1.8540630340576172
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 306,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.149553298950195,
+            3.2407379150390625,
+            1.848804235458374
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 307,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.148383140563965,
+            3.238837718963623,
+            1.8434616327285767
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 308,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.147177696228027,
+            3.236889362335205,
+            1.838042140007019
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 309,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.145939826965332,
+            3.234896183013916,
+            1.8325520753860474
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 310,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.144671440124512,
+            3.232861042022705,
+            1.8269973993301392
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 311,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.143375396728516,
+            3.230786085128784,
+            1.8213838338851929
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 312,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.142054557800293,
+            3.228673219680786,
+            1.8157168626785278
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 313,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.140708923339844,
+            3.2265241146087646,
+            1.810002088546753
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 4,
+          "agent": 2,
+          "step": 314,
+          "old_assignment": null,
+          "new_assignment": null,
+          "both_assigned": false,
+          "root_before": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "root_now": [
+            17.0,
+            5.0,
+            5.5
+          ],
+          "reason": "CONNECTOR",
+          "position": [
+            9.1393404006958,
+            3.2243406772613525,
+            1.804244875907898
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        }
+      ],
+      "partial_release_contexts": [
+        {
+          "scene": 4,
+          "step": 66,
+          "requested_agent": 0,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 4,
+          "step": 104,
+          "requested_agent": 1,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                7.0,
+                15.0,
+                3.5
+              ],
+              "executed_root": [
+                17.0,
+                5.0,
+                6.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 2,
+              "assignment": [
+                17.0,
+                5.0,
+                6.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                1.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 4,
+          "step": 117,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                7.0,
+                15.0,
+                3.5
+              ],
+              "executed_root": [
+                17.0,
+                5.0,
+                6.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 4,
+          "step": 185,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                9.0,
+                13.0,
+                3.5
+              ],
+              "executed_root": [
+                17.0,
+                5.0,
+                5.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        }
+      ],
+      "continuity": {
+        "no_matching_completed_prefix": 4
+      }
+    },
+    {
+      "scene": 5,
+      "changes": [
+        {
+          "scene": 5,
+          "agent": 0,
+          "step": 20,
+          "old_assignment": [
+            "s0_02_0002",
+            [
+              1.0,
+              1.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0681",
+            [
+              17.0,
+              11.0,
+              1.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            16.117345809936523,
+            16.245269775390625,
+            2.478480339050293
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 0,
+          "step": 40,
+          "old_assignment": [
+            "s0_00_0681",
+            [
+              17.0,
+              11.0,
+              1.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_00_0683",
+            [
+              17.0,
+              11.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            12.189587593078613,
+            12.164372444152832,
+            2.501774311065674
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 0,
+          "step": 163,
+          "old_assignment": [
+            "s0_00_0683",
+            [
+              17.0,
+              11.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_03_0699",
+            [
+              17.0,
+              15.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            11.0,
+            3.5
+          ],
+          "root_now": [
+            17.0,
+            11.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.300383567810059,
+            7.605670928955078,
+            2.499999761581421
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 0,
+          "step": 180,
+          "old_assignment": [
+            "s0_03_0699",
+            [
+              17.0,
+              15.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0526",
+            [
+              13.0,
+              11.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            11.0,
+            3.5
+          ],
+          "root_now": [
+            17.0,
+            11.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            11.723316192626953,
+            8.918420791625977,
+            2.499999761581421
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 0,
+          "step": 200,
+          "old_assignment": [
+            "s0_02_0526",
+            [
+              13.0,
+              11.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s0_02_0518",
+            [
+              13.0,
+              9.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            11.0,
+            3.5
+          ],
+          "root_now": [
+            13.0,
+            9.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            16.682619094848633,
+            10.463398933410645,
+            3.246659755706787
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 5,
+          "agent": 1,
+          "step": 20,
+          "old_assignment": [
+            "s1_02_0002",
+            [
+              1.0,
+              1.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0690",
+            [
+              17.0,
+              13.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            11.932121276855469,
+            9.045258522033691,
+            4.048596382141113
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 1,
+          "step": 40,
+          "old_assignment": [
+            "s1_03_0690",
+            [
+              17.0,
+              13.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0683",
+            [
+              17.0,
+              11.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            9.304880142211914,
+            7.366944789886475,
+            2.4442780017852783
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 1,
+          "step": 153,
+          "old_assignment": [
+            "s1_00_0683",
+            [
+              17.0,
+              11.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_00_0691",
+            [
+              17.0,
+              13.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "root_now": [
+            17.0,
+            13.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            1.3955327272415161,
+            1.415726900100708,
+            2.499957323074341
+          ],
+          "root_unchanged": false,
+          "assignment_differs_root": false
+        },
+        {
+          "scene": 5,
+          "agent": 1,
+          "step": 180,
+          "old_assignment": [
+            "s1_00_0691",
+            [
+              17.0,
+              13.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s1_03_0706",
+            [
+              17.0,
+              17.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            13.0,
+            3.5
+          ],
+          "root_now": [
+            17.0,
+            13.0,
+            3.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            5.124964237213135,
+            5.1098504066467285,
+            2.500002145767212
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 2,
+          "step": 40,
+          "old_assignment": [
+            "s2_02_0002",
+            [
+              1.0,
+              1.0,
+              2.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_00_0683",
+            [
+              17.0,
+              11.0,
+              3.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "root_now": [
+            1.0,
+            1.0,
+            2.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            1.6086583137512207,
+            1.6286113262176514,
+            2.5539822578430176
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 2,
+          "step": 157,
+          "old_assignment": [
+            "s2_00_0683",
+            [
+              17.0,
+              11.0,
+              3.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_01_0462",
+            [
+              11.0,
+              15.0,
+              6.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            17.0,
+            11.0,
+            3.5
+          ],
+          "root_now": [
+            17.0,
+            11.0,
+            3.5
+          ],
+          "reason": "WAIT_TASK",
+          "position": [
+            16.581039428710938,
+            10.538494110107422,
+            3.333590030670166
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        },
+        {
+          "scene": 5,
+          "agent": 2,
+          "step": 180,
+          "old_assignment": [
+            "s2_01_0462",
+            [
+              11.0,
+              15.0,
+              6.5
+            ]
+          ],
+          "new_assignment": [
+            "s2_03_0706",
+            [
+              17.0,
+              17.0,
+              2.5
+            ]
+          ],
+          "both_assigned": true,
+          "root_before": [
+            11.0,
+            15.0,
+            6.5
+          ],
+          "root_now": [
+            11.0,
+            15.0,
+            6.5
+          ],
+          "reason": "CONTINUE",
+          "position": [
+            13.747949600219727,
+            13.07832145690918,
+            4.109979152679443
+          ],
+          "root_unchanged": true,
+          "assignment_differs_root": true
+        }
+      ],
+      "partial_release_contexts": [
+        {
+          "scene": 5,
+          "step": 41,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 0,
+              "assignment": [
+                17.0,
+                11.0,
+                3.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            },
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                11.0,
+                3.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 5,
+          "step": 100,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                11.0,
+                3.5
+              ],
+              "executed_root": [
+                1.0,
+                1.0,
+                2.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 5,
+          "step": 153,
+          "requested_agent": 1,
+          "other_mismatches": [],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 5,
+          "step": 200,
+          "requested_agent": 0,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                17.0,
+                2.5
+              ],
+              "executed_root": [
+                17.0,
+                13.0,
+                3.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        },
+        {
+          "scene": 5,
+          "step": 200,
+          "requested_agent": 2,
+          "other_mismatches": [
+            {
+              "agent": 1,
+              "assignment": [
+                17.0,
+                17.0,
+                2.5
+              ],
+              "executed_root": [
+                17.0,
+                13.0,
+                3.5
+              ],
+              "reason": "CONTINUE"
+            }
+          ],
+          "scope": "Same-step trace context, combined with source freeze semantics; exact scoring graph/path was not logged"
+        }
+      ],
+      "continuity": {
+        "no_matching_completed_prefix": 3
+      }
+    }
+  ],
+  "accepted_partial_events": 46,
+  "accepted_partial_events_with_other_mismatch": 35,
+  "changes": 217,
+  "assignment_changes_keeping_root": 175,
+  "assigned_endpoint_changes": 126,
+  "assigned_endpoint_changes_keeping_root": 88,
+  "slow_count": 319,
+  "slow_with_prior_desired_xy_below_05": 168,
+  "cap_reconstruction_max_error": 0.0,
+  "synthetic_environments": 0,
+  "physical_steps": 0,
+  "training_updates": 0,
+  "python": "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+  "torch": "2.11.0+cu126",
+  "numpy": "2.2.6"
+}

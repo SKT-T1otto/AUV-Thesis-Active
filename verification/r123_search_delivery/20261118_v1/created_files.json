@@ -1,0 +1,14 @@
+[
+  "docs/R123_SEARCH_AUDIT_LINUX_20261118.md",
+  "scripts/r123_search_audit_linux.sh",
+  "tools/r123_search_audit.py",
+  "verification/r123_search_delivery/20261118_v1/REPORT.md",
+  "verification/r123_search_delivery/20261118_v1/created_files.json",
+  "verification/r123_search_delivery/20261118_v1/offline/REPORT.md",
+  "verification/r123_search_delivery/20261118_v1/offline/analysis.json",
+  "verification/r123_search_delivery/20261118_v1/offline/completed.json",
+  "verification/r123_search_delivery/20261118_v1/offline/immutability.json",
+  "verification/r123_search_delivery/20261118_v1/offline/request.json",
+  "verification/r123_search_delivery/20261118_v1/source_files.json",
+  "verification/r123_search_delivery/20261118_v1/validation.json"
+]

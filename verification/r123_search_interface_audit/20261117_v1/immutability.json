@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "files_byte_unchanged": 1716,
+  "protected_counts": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  },
+  "environments": 0,
+  "physical_steps": 0,
+  "training_updates": 0,
+  "checkpoint_restore": false
+}

@@ -1,0 +1,13 @@
+{
+  "source_files_unchanged": 453,
+  "input_files_unchanged": 62,
+  "protected_counts": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  },
+  "protected_byte_identical": true,
+  "environment_initializations": 0,
+  "training_updates": 0,
+  "checkpoint_restore": false
+}

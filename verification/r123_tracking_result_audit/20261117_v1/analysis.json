@@ -1,0 +1,929 @@
+{
+  "source": {
+    "schema": "auv.r123.tracking.source.v1",
+    "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+    "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+  },
+  "completed": true,
+  "complete_jobs": 3,
+  "baseline_reused": true,
+  "linux_validation_tests": {
+    "tests": 112,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_evaluation_physical_steps": 6107,
+  "audit_environment_initializations": 0,
+  "audit_training_updates": 0,
+  "arms": {
+    "baseline": {
+      "totals": {
+        "success": 2,
+        "found": 3,
+        "collision": 0,
+        "timeout": 4,
+        "steps": 2053,
+        "search_agent_steps": 5754,
+        "search_stationary_steps": 6,
+        "search_slow_distant_steps": 440,
+        "search_brake_steps": 35,
+        "route_continuity_advances": 0,
+        "capture_contact_steps": 12,
+        "capture_fixed_waypoint_steps": 125,
+        "active_recovery_enters": 0,
+        "slow_search_fraction": 0.0764685436218283,
+        "conditional_capture_success": 0.6666666666666666
+      },
+      "mean_discounted_return": 0.1262362556663891,
+      "mean_undiscounted_return": 2.018671560098331
+    },
+    "path_only": {
+      "totals": {
+        "success": 2,
+        "found": 3,
+        "collision": 0,
+        "timeout": 4,
+        "steps": 2053,
+        "search_agent_steps": 5754,
+        "search_stationary_steps": 7,
+        "search_slow_distant_steps": 319,
+        "search_brake_steps": 38,
+        "route_continuity_advances": 4,
+        "capture_contact_steps": 12,
+        "capture_fixed_waypoint_steps": 125,
+        "active_recovery_enters": 0,
+        "slow_search_fraction": 0.055439694125825514,
+        "conditional_capture_success": 0.6666666666666666
+      },
+      "mean_discounted_return": 0.12623625465195273,
+      "mean_undiscounted_return": 2.028402177114458
+    },
+    "feedforward_only": {
+      "totals": {
+        "success": 3,
+        "found": 3,
+        "collision": 0,
+        "timeout": 3,
+        "steps": 2027,
+        "search_agent_steps": 5754,
+        "search_stationary_steps": 6,
+        "search_slow_distant_steps": 440,
+        "search_brake_steps": 35,
+        "route_continuity_advances": 0,
+        "capture_contact_steps": 18,
+        "capture_fixed_waypoint_steps": 80,
+        "active_recovery_enters": 0,
+        "slow_search_fraction": 0.0764685436218283,
+        "conditional_capture_success": 1.0
+      },
+      "mean_discounted_return": 0.1262343055845502,
+      "mean_undiscounted_return": 2.197995822474089
+    },
+    "both": {
+      "totals": {
+        "success": 3,
+        "found": 3,
+        "collision": 0,
+        "timeout": 3,
+        "steps": 2027,
+        "search_agent_steps": 5754,
+        "search_stationary_steps": 7,
+        "search_slow_distant_steps": 319,
+        "search_brake_steps": 38,
+        "route_continuity_advances": 4,
+        "capture_contact_steps": 18,
+        "capture_fixed_waypoint_steps": 80,
+        "active_recovery_enters": 0,
+        "slow_search_fraction": 0.055439694125825514,
+        "conditional_capture_success": 1.0
+      },
+      "mean_discounted_return": 0.12623430457011386,
+      "mean_undiscounted_return": 2.207726439490216
+    }
+  },
+  "paired_physical_checks": {
+    "baseline_vs_feedforward_only_search": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "path_only_vs_both_search": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "baseline_vs_path_only_all_agents": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true
+    ],
+    "feedforward_only_vs_both_all_agents": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
+  },
+  "cases": [
+    {
+      "scenario_id": "po_eval_992001_0000",
+      "arms": {
+        "baseline": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 59,
+            "agent": 1,
+            "distance": 3.0032953108083995,
+            "margin": 0.5532953108083993
+          },
+          "closest_capture": null,
+          "capture_brakes": 0
+        },
+        "path_only": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 59,
+            "agent": 1,
+            "distance": 3.0032953108083995,
+            "margin": 0.5532953108083993
+          },
+          "closest_capture": null,
+          "capture_brakes": 0
+        },
+        "feedforward_only": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 59,
+            "agent": 1,
+            "distance": 3.0032953108083995,
+            "margin": 0.5532953108083993
+          },
+          "closest_capture": null,
+          "capture_brakes": 0
+        },
+        "both": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 59,
+            "agent": 1,
+            "distance": 3.0032953108083995,
+            "margin": 0.5532953108083993
+          },
+          "closest_capture": null,
+          "capture_brakes": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "po_eval_992001_0001",
+      "arms": {
+        "baseline": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 285,
+            "agent": 1,
+            "distance": 2.7121472895315715,
+            "margin": 0.2621472895315713
+          },
+          "closest_capture": null,
+          "capture_brakes": 0
+        },
+        "path_only": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 285,
+            "agent": 1,
+            "distance": 2.7121472895315715,
+            "margin": 0.2621472895315713
+          },
+          "closest_capture": null,
+          "capture_brakes": 0
+        },
+        "feedforward_only": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 285,
+            "agent": 1,
+            "distance": 2.7121472895315715,
+            "margin": 0.2621472895315713
+          },
+          "closest_capture": null,
+          "capture_brakes": 0
+        },
+        "both": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 285,
+            "agent": 1,
+            "distance": 2.7121472895315715,
+            "margin": 0.2621472895315713
+          },
+          "closest_capture": null,
+          "capture_brakes": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "po_eval_992001_0002",
+      "arms": {
+        "baseline": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 94,
+            "agent": 1,
+            "distance": 2.8555951811566724,
+            "margin": 0.40559518115667226
+          },
+          "closest_capture": null,
+          "capture_brakes": 0,
+          "agent1_slow_steps": 255,
+          "backwards_5_to_3_steps": [
+            39,
+            168,
+            199,
+            249,
+            269,
+            289,
+            309,
+            319,
+            339,
+            359,
+            389
+          ],
+          "backwards_in_100_399": 10,
+          "final_position": [
+            3.4547371864318848,
+            3.6482901573181152,
+            2.499993085861206
+          ],
+          "continuity_events": []
+        },
+        "path_only": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 94,
+            "agent": 1,
+            "distance": 2.8555951811566724,
+            "margin": 0.40559518115667226
+          },
+          "closest_capture": null,
+          "capture_brakes": 0,
+          "agent1_slow_steps": 134,
+          "backwards_5_to_3_steps": [
+            39,
+            168,
+            199
+          ],
+          "backwards_in_100_399": 2,
+          "final_position": [
+            6.881307125091553,
+            11.315479278564453,
+            1.471004843711853
+          ],
+          "continuity_events": [
+            {
+              "agent": 1,
+              "step": 209,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "fcd879efb09b8c8c",
+              "new_route": "3c0a75f1ec33096b",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 219,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "3c0a75f1ec33096b",
+              "new_route": "d36deacc8e7bab89",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 229,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "d36deacc8e7bab89",
+              "new_route": "8ffbb7ad58b1fc61",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 239,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "8ffbb7ad58b1fc61",
+              "new_route": "e00f9eae9f4d9e12",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 249,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "e00f9eae9f4d9e12",
+              "new_route": "a76ed6617dd90f6a",
+              "advanced": true,
+              "reason": "completed_prefix_connected",
+              "skipped": 1,
+              "previous_query_index": 0,
+              "tracking": [
+                5.0,
+                5.0,
+                2.5
+              ]
+            },
+            {
+              "agent": 1,
+              "step": 259,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "a76ed6617dd90f6a",
+              "new_route": "9c3ec3720a33f46d",
+              "advanced": true,
+              "reason": "completed_prefix_connected",
+              "skipped": 1,
+              "previous_query_index": 0,
+              "tracking": [
+                5.0,
+                5.0,
+                2.5
+              ]
+            },
+            {
+              "agent": 1,
+              "step": 269,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "9c3ec3720a33f46d",
+              "new_route": "1a60e58d7bfaf4f8",
+              "advanced": true,
+              "reason": "completed_prefix_connected",
+              "skipped": 1,
+              "previous_query_index": 0,
+              "tracking": [
+                5.0,
+                5.0,
+                2.5
+              ]
+            },
+            {
+              "agent": 1,
+              "step": 279,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "1a60e58d7bfaf4f8",
+              "new_route": "9de57d86ac74cfd5",
+              "advanced": true,
+              "reason": "completed_prefix_connected",
+              "skipped": 1,
+              "previous_query_index": 0,
+              "tracking": [
+                5.0,
+                5.0,
+                2.5
+              ]
+            },
+            {
+              "agent": 1,
+              "step": 289,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "9de57d86ac74cfd5",
+              "new_route": "538daa29625c9296",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 299,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "538daa29625c9296",
+              "new_route": "cdd178e72ddf1379",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            }
+          ]
+        },
+        "feedforward_only": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 94,
+            "agent": 1,
+            "distance": 2.8555951811566724,
+            "margin": 0.40559518115667226
+          },
+          "closest_capture": null,
+          "capture_brakes": 0,
+          "agent1_slow_steps": 255,
+          "backwards_5_to_3_steps": [
+            39,
+            168,
+            199,
+            249,
+            269,
+            289,
+            309,
+            319,
+            339,
+            359,
+            389
+          ],
+          "backwards_in_100_399": 10,
+          "final_position": [
+            3.4547371864318848,
+            3.6482901573181152,
+            2.499993085861206
+          ],
+          "continuity_events": []
+        },
+        "both": {
+          "found_step": null,
+          "received_step": null,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 94,
+            "agent": 1,
+            "distance": 2.8555951811566724,
+            "margin": 0.40559518115667226
+          },
+          "closest_capture": null,
+          "capture_brakes": 0,
+          "agent1_slow_steps": 134,
+          "backwards_5_to_3_steps": [
+            39,
+            168,
+            199
+          ],
+          "backwards_in_100_399": 2,
+          "final_position": [
+            6.881307125091553,
+            11.315479278564453,
+            1.471004843711853
+          ],
+          "continuity_events": [
+            {
+              "agent": 1,
+              "step": 209,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "fcd879efb09b8c8c",
+              "new_route": "3c0a75f1ec33096b",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 219,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "3c0a75f1ec33096b",
+              "new_route": "d36deacc8e7bab89",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 229,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "d36deacc8e7bab89",
+              "new_route": "8ffbb7ad58b1fc61",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 239,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "8ffbb7ad58b1fc61",
+              "new_route": "e00f9eae9f4d9e12",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 249,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "e00f9eae9f4d9e12",
+              "new_route": "a76ed6617dd90f6a",
+              "advanced": true,
+              "reason": "completed_prefix_connected",
+              "skipped": 1,
+              "previous_query_index": 0,
+              "tracking": [
+                5.0,
+                5.0,
+                2.5
+              ]
+            },
+            {
+              "agent": 1,
+              "step": 259,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "a76ed6617dd90f6a",
+              "new_route": "9c3ec3720a33f46d",
+              "advanced": true,
+              "reason": "completed_prefix_connected",
+              "skipped": 1,
+              "previous_query_index": 0,
+              "tracking": [
+                5.0,
+                5.0,
+                2.5
+              ]
+            },
+            {
+              "agent": 1,
+              "step": 269,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "9c3ec3720a33f46d",
+              "new_route": "1a60e58d7bfaf4f8",
+              "advanced": true,
+              "reason": "completed_prefix_connected",
+              "skipped": 1,
+              "previous_query_index": 0,
+              "tracking": [
+                5.0,
+                5.0,
+                2.5
+              ]
+            },
+            {
+              "agent": 1,
+              "step": 279,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "1a60e58d7bfaf4f8",
+              "new_route": "9de57d86ac74cfd5",
+              "advanced": true,
+              "reason": "completed_prefix_connected",
+              "skipped": 1,
+              "previous_query_index": 0,
+              "tracking": [
+                5.0,
+                5.0,
+                2.5
+              ]
+            },
+            {
+              "agent": 1,
+              "step": 289,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "9de57d86ac74cfd5",
+              "new_route": "538daa29625c9296",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            },
+            {
+              "agent": 1,
+              "step": 299,
+              "task_id": 10,
+              "phase": 0,
+              "old_route": "538daa29625c9296",
+              "new_route": "cdd178e72ddf1379",
+              "advanced": false,
+              "reason": "no_matching_completed_prefix",
+              "skipped": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scenario_id": "po_eval_992001_0003",
+      "arms": {
+        "baseline": {
+          "found_step": 186,
+          "received_step": 187,
+          "success_step": 210,
+          "found_to_success": 24,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 186,
+            "agent": 0,
+            "distance": 1.9620153584822126,
+            "margin": -0.13798464151778744
+          },
+          "closest_capture": [
+            0.5942777003596718,
+            210
+          ],
+          "capture_brakes": 0
+        },
+        "path_only": {
+          "found_step": 186,
+          "received_step": 187,
+          "success_step": 210,
+          "found_to_success": 24,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 186,
+            "agent": 0,
+            "distance": 1.9620153584822126,
+            "margin": -0.13798464151778744
+          },
+          "closest_capture": [
+            0.5942777003596718,
+            210
+          ],
+          "capture_brakes": 0
+        },
+        "feedforward_only": {
+          "found_step": 186,
+          "received_step": 187,
+          "success_step": 225,
+          "found_to_success": 39,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 186,
+            "agent": 0,
+            "distance": 1.9620153584822126,
+            "margin": -0.13798464151778744
+          },
+          "closest_capture": [
+            0.63540213382331,
+            225
+          ],
+          "capture_brakes": 0
+        },
+        "both": {
+          "found_step": 186,
+          "received_step": 187,
+          "success_step": 225,
+          "found_to_success": 39,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 186,
+            "agent": 0,
+            "distance": 1.9620153584822126,
+            "margin": -0.13798464151778744
+          },
+          "closest_capture": [
+            0.63540213382331,
+            225
+          ],
+          "capture_brakes": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "po_eval_992001_0004",
+      "arms": {
+        "baseline": {
+          "found_step": 315,
+          "received_step": 316,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 315,
+            "agent": 1,
+            "distance": 2.42352558846428,
+            "margin": -0.026474411535720055
+          },
+          "closest_capture": [
+            1.1421610102895288,
+            370
+          ],
+          "capture_brakes": 0
+        },
+        "path_only": {
+          "found_step": 315,
+          "received_step": 316,
+          "success_step": null,
+          "found_to_success": null,
+          "contacts": 0,
+          "hold_max": 0,
+          "closest_search": {
+            "step": 315,
+            "agent": 1,
+            "distance": 2.42352558846428,
+            "margin": -0.026474411535720055
+          },
+          "closest_capture": [
+            1.1421610102895288,
+            370
+          ],
+          "capture_brakes": 0
+        },
+        "feedforward_only": {
+          "found_step": 315,
+          "received_step": 316,
+          "success_step": 361,
+          "found_to_success": 46,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 315,
+            "agent": 1,
+            "distance": 2.42352558846428,
+            "margin": -0.026474411535720055
+          },
+          "closest_capture": [
+            0.6597760973224471,
+            361
+          ],
+          "capture_brakes": 0
+        },
+        "both": {
+          "found_step": 315,
+          "received_step": 316,
+          "success_step": 361,
+          "found_to_success": 46,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 315,
+            "agent": 1,
+            "distance": 2.42352558846428,
+            "margin": -0.026474411535720055
+          },
+          "closest_capture": [
+            0.6597760973224471,
+            361
+          ],
+          "capture_brakes": 0
+        }
+      }
+    },
+    {
+      "scenario_id": "po_eval_992001_0005",
+      "arms": {
+        "baseline": {
+          "found_step": 217,
+          "received_step": 218,
+          "success_step": 243,
+          "found_to_success": 26,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 217,
+            "agent": 0,
+            "distance": 1.838547277043393,
+            "margin": -0.26145272295660704
+          },
+          "closest_capture": [
+            0.3410669532729762,
+            242
+          ],
+          "capture_brakes": 0
+        },
+        "path_only": {
+          "found_step": 217,
+          "received_step": 218,
+          "success_step": 243,
+          "found_to_success": 26,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 217,
+            "agent": 0,
+            "distance": 1.838547277043393,
+            "margin": -0.26145272295660704
+          },
+          "closest_capture": [
+            0.3410669532729762,
+            242
+          ],
+          "capture_brakes": 0
+        },
+        "feedforward_only": {
+          "found_step": 217,
+          "received_step": 218,
+          "success_step": 241,
+          "found_to_success": 24,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 217,
+            "agent": 0,
+            "distance": 1.838547277043393,
+            "margin": -0.26145272295660704
+          },
+          "closest_capture": [
+            0.6881050068713501,
+            238
+          ],
+          "capture_brakes": 0
+        },
+        "both": {
+          "found_step": 217,
+          "received_step": 218,
+          "success_step": 241,
+          "found_to_success": 24,
+          "contacts": 6,
+          "hold_max": 5,
+          "closest_search": {
+            "step": 217,
+            "agent": 0,
+            "distance": 1.838547277043393,
+            "margin": -0.26145272295660704
+          },
+          "closest_capture": [
+            0.6881050068713501,
+            238
+          ],
+          "capture_brakes": 0
+        }
+      }
+    }
+  ]
+}

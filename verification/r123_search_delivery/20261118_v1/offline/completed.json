@@ -1,0 +1,25 @@
+{
+  "completed": true,
+  "source": {
+    "schema": "auv.r123.tracking.source.v1",
+    "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+    "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+  },
+  "tool_sha256": "eb9dd8ab3517d69d26235038ce983fb4bf9d2d8231e259e0323b69f1ed18a8b7",
+  "verified_episodes": 24,
+  "physical_steps": 0,
+  "training": false,
+  "artifacts": {
+    "analysis.json": "21f2725b6c092e8e160012605d4e50d8437b4ad24344e6fba2523e10088f9ee9",
+    "immutability.json": "065bfd8913696acfa2efbdb5faec1971eb2bc36fddd75185c1c5d093a0082365",
+    "REPORT.md": "f7b274c9869febdd39e6f2a63128b75f98d090bca5376c2fdbdcfdeeaa686cc2",
+    "request.json": "b5da71da291eae97ff7bceb6f57314a0cd9982cd87bf1bf5f129b94cdaddbe1c"
+  },
+  "created_files": [
+    "REPORT.md",
+    "analysis.json",
+    "completed.json",
+    "immutability.json",
+    "request.json"
+  ]
+}

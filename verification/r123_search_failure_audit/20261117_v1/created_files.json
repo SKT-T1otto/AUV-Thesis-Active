@@ -1,0 +1,11 @@
+[
+  "verification/r123_search_failure_audit/20261117_v1/REPORT.md",
+  "verification/r123_search_failure_audit/20261117_v1/analysis.json",
+  "verification/r123_search_failure_audit/20261117_v1/analyze.py",
+  "verification/r123_search_failure_audit/20261117_v1/before.json",
+  "verification/r123_search_failure_audit/20261117_v1/created_files.json",
+  "verification/r123_search_failure_audit/20261117_v1/failure_paths.png",
+  "verification/r123_search_failure_audit/20261117_v1/immutability.json",
+  "verification/r123_search_failure_audit/20261117_v1/slow_steps.csv",
+  "verification/r123_search_failure_audit/20261117_v1/tasks.csv"
+]
