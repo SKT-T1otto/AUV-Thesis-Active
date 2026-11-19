@@ -1,0 +1,6 @@
+{
+  "arm": "tracking_both",
+  "plain": false,
+  "steps": 32,
+  "training": false
+}

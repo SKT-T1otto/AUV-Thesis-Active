@@ -1,0 +1,13 @@
+{
+  "parent_and_input_files_unchanged": 1681,
+  "protected_counts": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  },
+  "source_unchanged": true,
+  "historical_results_unchanged": true,
+  "protected_byte_identical": true,
+  "new_evaluation_physical_steps": 0,
+  "windows_interface_check_steps": 128
+}

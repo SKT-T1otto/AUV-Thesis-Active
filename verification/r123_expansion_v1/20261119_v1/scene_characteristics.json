@@ -1,0 +1,23 @@
+{
+  "scenarios": 24,
+  "obstacle_counts": {
+    "2": 7,
+    "3": 4,
+    "4": 13
+  },
+  "target_speed_minmax": [
+    0.2604664316300663,
+    0.5402434427963101
+  ],
+  "target_velocity_octants": 7,
+  "nearest_searcher_initial_distance_minmedianmax": [
+    2.7366666158202286,
+    6.48604042558031,
+    14.01546738570434
+  ],
+  "executor_initial_distance_minmedianmax": [
+    0.839268771084527,
+    8.42333303743554,
+    20.28406549121563
+  ]
+}

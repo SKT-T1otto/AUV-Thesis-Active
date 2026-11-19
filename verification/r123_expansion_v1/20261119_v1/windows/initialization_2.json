@@ -1,0 +1,6 @@
+{
+  "arm": "task_sync",
+  "plain": true,
+  "steps": 32,
+  "training": false
+}

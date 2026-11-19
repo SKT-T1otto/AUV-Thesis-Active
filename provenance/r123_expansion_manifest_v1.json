@@ -1,0 +1,45 @@
+{
+  "schema": "auv.r123.expansion.manifest.v1",
+  "control_source": {
+    "schema": "auv.r123.task_sync.source.v1",
+    "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+    "parent_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    }
+  },
+  "baseline_source": {
+    "schema": "auv.r123.tracking.source.v1",
+    "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+    "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+  },
+  "observer_source": {
+    "schema": "auv.r123.task_sync.regression_tool.v1",
+    "sha256": "55ef52ffa1352c922e688df9a2b538d4e9414ac8156c3a452e5b2a87e3220cdf",
+    "control_source": {
+      "schema": "auv.r123.task_sync.source.v1",
+      "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+      "parent_source": {
+        "schema": "auv.r123.tracking.source.v1",
+        "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+        "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+      }
+    }
+  },
+  "files": {
+    "tools/r123_expansion.py": "9483872e666fde2e42536ccec4aabaf629d7a7935c37d9f69b308a03d93aa748",
+    "checks/test_r123_expansion.py": "216cbdece0d509f9ee16d951c647a3dda45b740102da73c30e88f72e6688087f",
+    "scripts/r123_expansion_linux.sh": "d18f0f8715b0f318430eaa4a14a339f8034af1da72b3af4816b68589d3729ef6",
+    "docs/R123_EXPANSION_20261119.md": "81e14752a39977b8046ddf4a27d83392efe8086a2c7ff352e88a5d8ccf3fd2e1",
+    "configs/r123_expansion_v1/config.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "configs/r123_expansion_v1/exclusions.json": "8bbb1570319869ba8e9bb9755cbf2a22cd6b4e58954ffe416d200ac8ae4141fa",
+    "configs/r123_expansion_v1/options.json": "d27ab96408ef695648f83c86ef7124df9354b85adf5c1d36017115486e8de112",
+    "configs/r123_expansion_v1/scenes.json": "8bc806725774b415692e0699e88f24aae59ab625fbe0a0b71836b8db422f3605"
+  },
+  "runtime_changed": false,
+  "rule_only": true,
+  "new_scene_count": 24,
+  "maximum_evaluation_steps": 19200,
+  "sha256": "0f6d05c53987f4e427c7fd849318d7c66dfb6c4df63eef314fcbb2143561dfb6"
+}

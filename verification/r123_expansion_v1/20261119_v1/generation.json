@@ -1,0 +1,50 @@
+{
+  "completed": true,
+  "source": {
+    "schema": "auv.r123.task_sync.source.v1",
+    "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+    "parent_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    }
+  },
+  "new_scenes": 24,
+  "regression_scenes": 6,
+  "generation": [
+    {
+      "batch": 0,
+      "seed": 2026111901,
+      "count": 6,
+      "original_manifest_sha256": "b07610fe096a4305ce7227e12e6e7d14803ee81f39a81e220758040534d422d5"
+    },
+    {
+      "batch": 1,
+      "seed": 2026112901,
+      "count": 6,
+      "original_manifest_sha256": "17edc8cfc511172a312825e2638d4d0d3afc4d8b908de3fe68efcc909c3268a2"
+    },
+    {
+      "batch": 2,
+      "seed": 2026113901,
+      "count": 6,
+      "original_manifest_sha256": "c315bf9eea60a7b679345fc52667dc3abc1da2ac3342d822eadd59625c5d9bbd"
+    },
+    {
+      "batch": 3,
+      "seed": 2026114901,
+      "count": 6,
+      "original_manifest_sha256": "59cdc9841c1a9b4c6fca3c010d88b8d2cb01531e88922ed15feea0fab14f240a"
+    }
+  ],
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "training_updates": 0,
+  "inputs": {
+    "config.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "exclusions.json": "8bbb1570319869ba8e9bb9755cbf2a22cd6b4e58954ffe416d200ac8ae4141fa",
+    "options.json": "d27ab96408ef695648f83c86ef7124df9354b85adf5c1d36017115486e8de112",
+    "scenes.json": "8bc806725774b415692e0699e88f24aae59ab625fbe0a0b71836b8db422f3605"
+  },
+  "exclusions": 62
+}

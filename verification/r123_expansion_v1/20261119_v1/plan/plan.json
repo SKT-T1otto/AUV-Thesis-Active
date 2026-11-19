@@ -1,0 +1,341 @@
+{
+  "tool": {
+    "schema": "auv.r123.expansion.tool.v1",
+    "sha256": "0f6d05c53987f4e427c7fd849318d7c66dfb6c4df63eef314fcbb2143561dfb6",
+    "control_source": {
+      "schema": "auv.r123.task_sync.source.v1",
+      "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+      "parent_source": {
+        "schema": "auv.r123.tracking.source.v1",
+        "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+        "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+      }
+    },
+    "baseline_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    },
+    "observer_source": {
+      "schema": "auv.r123.task_sync.regression_tool.v1",
+      "sha256": "55ef52ffa1352c922e688df9a2b538d4e9414ac8156c3a452e5b2a87e3220cdf",
+      "control_source": {
+        "schema": "auv.r123.task_sync.source.v1",
+        "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+        "parent_source": {
+          "schema": "auv.r123.tracking.source.v1",
+          "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+          "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+        }
+      }
+    }
+  },
+  "count": 24,
+  "arms": [
+    "tracking_both",
+    "task_sync"
+  ],
+  "max_steps": 400,
+  "maximum_new_physical_steps": 19200,
+  "evaluation_seed": 20261119,
+  "jobs": [
+    {
+      "scene": 0,
+      "arm": "tracking_both",
+      "seed": 20261119,
+      "folder": "0000_tracking_both"
+    },
+    {
+      "scene": 0,
+      "arm": "task_sync",
+      "seed": 20261119,
+      "folder": "0000_task_sync"
+    },
+    {
+      "scene": 1,
+      "arm": "task_sync",
+      "seed": 20261120,
+      "folder": "0001_task_sync"
+    },
+    {
+      "scene": 1,
+      "arm": "tracking_both",
+      "seed": 20261120,
+      "folder": "0001_tracking_both"
+    },
+    {
+      "scene": 2,
+      "arm": "tracking_both",
+      "seed": 20261121,
+      "folder": "0002_tracking_both"
+    },
+    {
+      "scene": 2,
+      "arm": "task_sync",
+      "seed": 20261121,
+      "folder": "0002_task_sync"
+    },
+    {
+      "scene": 3,
+      "arm": "task_sync",
+      "seed": 20261122,
+      "folder": "0003_task_sync"
+    },
+    {
+      "scene": 3,
+      "arm": "tracking_both",
+      "seed": 20261122,
+      "folder": "0003_tracking_both"
+    },
+    {
+      "scene": 4,
+      "arm": "tracking_both",
+      "seed": 20261123,
+      "folder": "0004_tracking_both"
+    },
+    {
+      "scene": 4,
+      "arm": "task_sync",
+      "seed": 20261123,
+      "folder": "0004_task_sync"
+    },
+    {
+      "scene": 5,
+      "arm": "task_sync",
+      "seed": 20261124,
+      "folder": "0005_task_sync"
+    },
+    {
+      "scene": 5,
+      "arm": "tracking_both",
+      "seed": 20261124,
+      "folder": "0005_tracking_both"
+    },
+    {
+      "scene": 6,
+      "arm": "tracking_both",
+      "seed": 20261125,
+      "folder": "0006_tracking_both"
+    },
+    {
+      "scene": 6,
+      "arm": "task_sync",
+      "seed": 20261125,
+      "folder": "0006_task_sync"
+    },
+    {
+      "scene": 7,
+      "arm": "task_sync",
+      "seed": 20261126,
+      "folder": "0007_task_sync"
+    },
+    {
+      "scene": 7,
+      "arm": "tracking_both",
+      "seed": 20261126,
+      "folder": "0007_tracking_both"
+    },
+    {
+      "scene": 8,
+      "arm": "tracking_both",
+      "seed": 20261127,
+      "folder": "0008_tracking_both"
+    },
+    {
+      "scene": 8,
+      "arm": "task_sync",
+      "seed": 20261127,
+      "folder": "0008_task_sync"
+    },
+    {
+      "scene": 9,
+      "arm": "task_sync",
+      "seed": 20261128,
+      "folder": "0009_task_sync"
+    },
+    {
+      "scene": 9,
+      "arm": "tracking_both",
+      "seed": 20261128,
+      "folder": "0009_tracking_both"
+    },
+    {
+      "scene": 10,
+      "arm": "tracking_both",
+      "seed": 20261129,
+      "folder": "0010_tracking_both"
+    },
+    {
+      "scene": 10,
+      "arm": "task_sync",
+      "seed": 20261129,
+      "folder": "0010_task_sync"
+    },
+    {
+      "scene": 11,
+      "arm": "task_sync",
+      "seed": 20261130,
+      "folder": "0011_task_sync"
+    },
+    {
+      "scene": 11,
+      "arm": "tracking_both",
+      "seed": 20261130,
+      "folder": "0011_tracking_both"
+    },
+    {
+      "scene": 12,
+      "arm": "tracking_both",
+      "seed": 20261131,
+      "folder": "0012_tracking_both"
+    },
+    {
+      "scene": 12,
+      "arm": "task_sync",
+      "seed": 20261131,
+      "folder": "0012_task_sync"
+    },
+    {
+      "scene": 13,
+      "arm": "task_sync",
+      "seed": 20261132,
+      "folder": "0013_task_sync"
+    },
+    {
+      "scene": 13,
+      "arm": "tracking_both",
+      "seed": 20261132,
+      "folder": "0013_tracking_both"
+    },
+    {
+      "scene": 14,
+      "arm": "tracking_both",
+      "seed": 20261133,
+      "folder": "0014_tracking_both"
+    },
+    {
+      "scene": 14,
+      "arm": "task_sync",
+      "seed": 20261133,
+      "folder": "0014_task_sync"
+    },
+    {
+      "scene": 15,
+      "arm": "task_sync",
+      "seed": 20261134,
+      "folder": "0015_task_sync"
+    },
+    {
+      "scene": 15,
+      "arm": "tracking_both",
+      "seed": 20261134,
+      "folder": "0015_tracking_both"
+    },
+    {
+      "scene": 16,
+      "arm": "tracking_both",
+      "seed": 20261135,
+      "folder": "0016_tracking_both"
+    },
+    {
+      "scene": 16,
+      "arm": "task_sync",
+      "seed": 20261135,
+      "folder": "0016_task_sync"
+    },
+    {
+      "scene": 17,
+      "arm": "task_sync",
+      "seed": 20261136,
+      "folder": "0017_task_sync"
+    },
+    {
+      "scene": 17,
+      "arm": "tracking_both",
+      "seed": 20261136,
+      "folder": "0017_tracking_both"
+    },
+    {
+      "scene": 18,
+      "arm": "tracking_both",
+      "seed": 20261137,
+      "folder": "0018_tracking_both"
+    },
+    {
+      "scene": 18,
+      "arm": "task_sync",
+      "seed": 20261137,
+      "folder": "0018_task_sync"
+    },
+    {
+      "scene": 19,
+      "arm": "task_sync",
+      "seed": 20261138,
+      "folder": "0019_task_sync"
+    },
+    {
+      "scene": 19,
+      "arm": "tracking_both",
+      "seed": 20261138,
+      "folder": "0019_tracking_both"
+    },
+    {
+      "scene": 20,
+      "arm": "tracking_both",
+      "seed": 20261139,
+      "folder": "0020_tracking_both"
+    },
+    {
+      "scene": 20,
+      "arm": "task_sync",
+      "seed": 20261139,
+      "folder": "0020_task_sync"
+    },
+    {
+      "scene": 21,
+      "arm": "task_sync",
+      "seed": 20261140,
+      "folder": "0021_task_sync"
+    },
+    {
+      "scene": 21,
+      "arm": "tracking_both",
+      "seed": 20261140,
+      "folder": "0021_tracking_both"
+    },
+    {
+      "scene": 22,
+      "arm": "tracking_both",
+      "seed": 20261141,
+      "folder": "0022_tracking_both"
+    },
+    {
+      "scene": 22,
+      "arm": "task_sync",
+      "seed": 20261141,
+      "folder": "0022_task_sync"
+    },
+    {
+      "scene": 23,
+      "arm": "task_sync",
+      "seed": 20261142,
+      "folder": "0023_task_sync"
+    },
+    {
+      "scene": 23,
+      "arm": "tracking_both",
+      "seed": 20261142,
+      "folder": "0023_tracking_both"
+    }
+  ],
+  "training": false,
+  "checkpoint_load": false,
+  "baseline_reused": false,
+  "purpose": "expanded development screen; old six retained separately; not final test",
+  "inputs": {
+    "config.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "options.json": "d27ab96408ef695648f83c86ef7124df9354b85adf5c1d36017115486e8de112",
+    "scenes.json": "8bc806725774b415692e0699e88f24aae59ab625fbe0a0b71836b8db422f3605",
+    "exclusions.json": "8bbb1570319869ba8e9bb9755cbf2a22cd6b4e58954ffe416d200ac8ae4141fa"
+  }
+}

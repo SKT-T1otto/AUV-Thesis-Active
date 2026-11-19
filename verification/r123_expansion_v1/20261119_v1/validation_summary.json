@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "tool": {
+    "schema": "auv.r123.expansion.tool.v1",
+    "sha256": "0f6d05c53987f4e427c7fd849318d7c66dfb6c4df63eef314fcbb2143561dfb6",
+    "control_source": {
+      "schema": "auv.r123.task_sync.source.v1",
+      "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+      "parent_source": {
+        "schema": "auv.r123.tracking.source.v1",
+        "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+        "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+      }
+    },
+    "baseline_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    },
+    "observer_source": {
+      "schema": "auv.r123.task_sync.regression_tool.v1",
+      "sha256": "55ef52ffa1352c922e688df9a2b538d4e9414ac8156c3a452e5b2a87e3220cdf",
+      "control_source": {
+        "schema": "auv.r123.task_sync.source.v1",
+        "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+        "parent_source": {
+          "schema": "auv.r123.tracking.source.v1",
+          "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+          "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+        }
+      }
+    }
+  },
+  "new_scenes": 24,
+  "planned_full_episodes": 48,
+  "full_linux_evaluation_started": false,
+  "maximum_linux_evaluation_steps": 19200,
+  "synthetic_tests": 17,
+  "environment_initializations": 4,
+  "windows_physical_steps": 128,
+  "training_updates": 0,
+  "checkpoint_load": false,
+  "observer_physical_trace_equivalence": true,
+  "short_collisions": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "dry_run_creates_no_output": true,
+  "shell_file_has_unix_line_endings": true
+}

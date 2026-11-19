@@ -1,0 +1,73 @@
+{
+  "preparation_completed": true,
+  "evaluation_completed": false,
+  "tool": {
+    "schema": "auv.r123.expansion.tool.v1",
+    "sha256": "0f6d05c53987f4e427c7fd849318d7c66dfb6c4df63eef314fcbb2143561dfb6",
+    "control_source": {
+      "schema": "auv.r123.task_sync.source.v1",
+      "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+      "parent_source": {
+        "schema": "auv.r123.tracking.source.v1",
+        "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+        "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+      }
+    },
+    "baseline_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    },
+    "observer_source": {
+      "schema": "auv.r123.task_sync.regression_tool.v1",
+      "sha256": "55ef52ffa1352c922e688df9a2b538d4e9414ac8156c3a452e5b2a87e3220cdf",
+      "control_source": {
+        "schema": "auv.r123.task_sync.source.v1",
+        "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+        "parent_source": {
+          "schema": "auv.r123.tracking.source.v1",
+          "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+          "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+        }
+      }
+    }
+  },
+  "new_scenes": 24,
+  "planned_paired_jobs": 48,
+  "maximum_linux_physical_steps": 19200,
+  "windows_physical_steps": 128,
+  "training_updates": 0,
+  "checkpoint_loads": 0,
+  "artifacts": {
+    "before.json": "eec7c80e83e2d821facf1bf5a0aac546fa5c129bb1ba26053dad5c6638c03540",
+    "created_files.json": "21c249d8adf7822cbcf34a5b071801dbdfd8ab9e4b1431f4d40bbf73263bb792",
+    "delivery.json": "bcfc265816848c0ec6b91090b77d9c288725586c6a8440eeb32a0c5175e4a422",
+    "finalize.py": "643a015158d622d05f6a2afd43313fe50eda152cfd0548da5ada7e6d56b09372",
+    "generate_scenes.py": "ea6a59c50456a67ac3ec50331c6faae3955bc6ea44ce908e18bb8a4446d5f7e0",
+    "generation.json": "4961e2a93ff4649333d07162daab8578d44efbd72e63e15b791224e320fbbaf5",
+    "immutability.json": "4e54ffacfb7922bffe4e2ad2390fcd5a87ca61f7ee0de55891e1d3023f30453c",
+    "r123_expansion_new_files.zip": "4e16d1cb44c25e5b9f93fadb692af75449b3f8a6e83dfc5124b1f539caca1387",
+    "REPORT.md": "a27e0ef64fcb03a40f9c3194103dab3e1275e74880e480d171938133b95e4af2",
+    "scene_characteristics.json": "d3bc2dbc9285ab6d13a4f90c3436ae4d74b5e5edf7fda59bfd3a279ba278ad45",
+    "validation_summary.json": "1e5e333a5658d6a1f0d0b2aee232e46909b0d40ade22ecf91bfd43b23da4c33d",
+    "plan/config.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "plan/exclusions.json": "8bbb1570319869ba8e9bb9755cbf2a22cd6b4e58954ffe416d200ac8ae4141fa",
+    "plan/options.json": "d27ab96408ef695648f83c86ef7124df9354b85adf5c1d36017115486e8de112",
+    "plan/plan.json": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+    "plan/scenes.json": "8bc806725774b415692e0699e88f24aae59ab625fbe0a0b71836b8db422f3605",
+    "windows/checks.json": "297de740da15202fc8eeb1353a7b81fd7d0127cff0240be0ce92e2a3c01f4044",
+    "windows/episode_0.json": "3c1aa8a96dbb8b7a52b9f574c464f3a1d04c47dbfd43c5b3e9dad9c4d102f8d1",
+    "windows/episode_1.json": "fcf6dfa03d49eb9a1c63a6aa8a5934a2efa6b2b3aac748496628f8d0c508c7ac",
+    "windows/episode_2.json": "aaff623ef803c430d0f27b1258d0a22b1fd751c088a1f5e5d099cc3d5f399fb5",
+    "windows/episode_3.json": "9403e74f58f0db41a8a56700ed9f3037b07a3c6534244973e07c7693fe976c4b",
+    "windows/initialization_0.json": "e4c720a04caaf2d38758c117e8905534a62f373e8372914b2bddb2abc8a4d9e1",
+    "windows/initialization_1.json": "37cefc991e2f7ca7b7d24cdafd89771b56ca42d61d3e91996ecfba805f0cfd42",
+    "windows/initialization_2.json": "ce3802ad53996a9595db337b33aeb55076a23a034f9707cfe59159be8d15198f",
+    "windows/initialization_3.json": "c6a3f503fe014ad313991e1825ea720edee6d8f607f8475a4de7a3f2157385b2",
+    "windows/metric_0.json": "6c50d137239ed6329288b62e0c28a95b84b5279eb55a55e7da5262f6ce0804e0",
+    "windows/metric_1.json": "767ed9a5c36c61d52ace7df886386fc2f88dfd67b8f10d821716b176676a351d",
+    "windows/metric_2.json": "a0ae18ba9bfcf56a1d47128b6139bcefced1ebb98d217c8778dc24c2273b21fb",
+    "windows/metric_3.json": "aeeb75543b03d8dd04d8a55c7d94cece18aac1ee041db0808cbf3f6a657ab7e4",
+    "windows/synthetic.log": "8f17986eef87d1a643ec1f9a7070ca879809e708b585990474f2022981adfc7b"
+  }
+}

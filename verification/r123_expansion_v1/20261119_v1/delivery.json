@@ -1,0 +1,17 @@
+{
+  "package": "verification/r123_expansion_v1/20261119_v1/r123_expansion_new_files.zip",
+  "sha256": "4e16d1cb44c25e5b9f93fadb692af75449b3f8a6e83dfc5124b1f539caca1387",
+  "files": {
+    "tools/r123_expansion.py": "9483872e666fde2e42536ccec4aabaf629d7a7935c37d9f69b308a03d93aa748",
+    "checks/test_r123_expansion.py": "216cbdece0d509f9ee16d951c647a3dda45b740102da73c30e88f72e6688087f",
+    "scripts/r123_expansion_linux.sh": "d18f0f8715b0f318430eaa4a14a339f8034af1da72b3af4816b68589d3729ef6",
+    "docs/R123_EXPANSION_20261119.md": "81e14752a39977b8046ddf4a27d83392efe8086a2c7ff352e88a5d8ccf3fd2e1",
+    "configs/r123_expansion_v1/config.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "configs/r123_expansion_v1/exclusions.json": "8bbb1570319869ba8e9bb9755cbf2a22cd6b4e58954ffe416d200ac8ae4141fa",
+    "configs/r123_expansion_v1/options.json": "d27ab96408ef695648f83c86ef7124df9354b85adf5c1d36017115486e8de112",
+    "configs/r123_expansion_v1/scenes.json": "8bc806725774b415692e0699e88f24aae59ab625fbe0a0b71836b8db422f3605",
+    "provenance/r123_expansion_manifest_v1.json": "2f892b68a744108580bdab68255613066496a06d51ac7a2896b4c74fca8a2a16"
+  },
+  "github_pushed": false,
+  "notice": "Only nine newly named source/data files. Parent control and historical results are not in this archive."
+}

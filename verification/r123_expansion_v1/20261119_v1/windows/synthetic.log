@@ -1,0 +1,22 @@
+test_24_new_physical_scenes_have_original_contract (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_jobs_pair_same_seed_and_alternate_execution_order (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_missing_agent_or_false_discovery_is_rejected (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_overlap_with_old_inputs_is_rejected (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_raw_detection_and_original_five_interval_hold (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_renamed_physical_duplicate_is_rejected (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_scene_count_and_step_budget_cannot_expand_silently (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_smoke_bound_rejects_more_than32_before_initialization (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_wilson_endpoints_symmetry_and_invalid_count (checks.test_r123_expansion.ExpansionChecks) ... ok
+test_blocked_subcell_is_distinct_from_hit_distance (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_bounds_are_reported_without_truth_or_rng (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_diagnostic_error_never_changes_original_verdict (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_observer_preserves_tuple_and_restores_method (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_old_history_is_bounded_and_frozen_rows_not_reported (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_original_answer_and_probe_are_identical_for_pass_and_rejection (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_scan_hit_veto_has_real_offending_points (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_unknown_piece_coarse_veto_is_reported (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 1.391s
+
+OK
