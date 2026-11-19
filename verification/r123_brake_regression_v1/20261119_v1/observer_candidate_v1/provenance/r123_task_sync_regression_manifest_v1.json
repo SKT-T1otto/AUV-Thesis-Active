@@ -1,0 +1,20 @@
+{
+  "schema": "auv.r123.task_sync.regression.manifest.v1",
+  "control_source": {
+    "schema": "auv.r123.task_sync.source.v1",
+    "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+    "parent_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    }
+  },
+  "files": {
+    "chapter3_bser/r123_task_sync/diagnostics.py": "48e8e4eb5d1662f701d943348f999c5dd80fddfbb41b2de6275f02427df08488",
+    "checks/test_r123_regression_diagnostics.py": "72ae9ca7f7eeae0d0cf6a1478ddedefec987bdd97f8fa89b2e326260c50ba4a8",
+    "tools/r123_task_sync_regression.py": "89dadc960a0b4f5ac98c2003c1f0823bd4a8b80e872925aefa8d51353d79465b",
+    "scripts/r123_task_sync_regression_linux.sh": "b1b8e6a8824e98f6fe884d02fadffdc824af3e08df4e287d673f1ed798bfc6e5",
+    "docs/R123_TASK_SYNC_REGRESSION_20261119.md": "25055d535d2f716ec5a3086045d17197812a53e5a68134747e55021075c0dfa8"
+  },
+  "sha256": "8da4cc2173328258058bf7f8cc7e5a455c7b649d46a71a9a7ad98900edf95322"
+}

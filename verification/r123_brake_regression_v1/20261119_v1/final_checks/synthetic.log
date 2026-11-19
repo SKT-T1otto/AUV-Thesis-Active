@@ -1,0 +1,13 @@
+test_blocked_subcell_is_distinct_from_hit_distance (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_bounds_are_reported_without_truth_or_rng (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_diagnostic_error_never_changes_original_verdict (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_observer_preserves_tuple_and_restores_method (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_old_history_is_bounded_and_frozen_rows_not_reported (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_original_answer_and_probe_are_identical_for_pass_and_rejection (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_scan_hit_veto_has_real_offending_points (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+test_unknown_piece_coarse_veto_is_reported (checks.test_r123_regression_diagnostics.DiagnosticsContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.456s
+
+OK

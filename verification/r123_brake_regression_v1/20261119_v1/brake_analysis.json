@@ -1,0 +1,1791 @@
+{
+  "scene": "po_eval_992001_0000",
+  "agent": 0,
+  "trace_indices_zero_based": true,
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "classification": "Inherited emergency branch confirmed; no brake action/unit interface defect found; exact geometry cause REVIEW_REQUIRED",
+  "timeline": [
+    {
+      "step": 138,
+      "physical_step": 139,
+      "position": [
+        10.32731819152832,
+        12.982027053833008,
+        4.93479585647583
+      ],
+      "velocity": [
+        1.0137172937393188,
+        0.00513731874525547,
+        -0.503739058971405
+      ],
+      "next_position": [
+        10.499267578125,
+        12.983016014099121,
+        4.839941501617432
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        11.0,
+        13.0,
+        4.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 139,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 1.4044336287304757,
+      "available_distance": 1.5291824220088643,
+      "inferred_public_flow": [
+        -0.018625409603119092,
+        -0.10987839024513961
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.7350628452971788,
+        "next_speed_z": 0.34241940908432006,
+        "reason": "model_checked_stop",
+        "probe_steps": 4,
+        "predicted_travel": 0.30180759521955575,
+        "predicted_stop": [
+          10.60580421498134,
+          12.971287075664742,
+          4.822039256184677
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            10.474309228597729,
+            12.979510992661943,
+            4.8663119746589665
+          ],
+          "velocity": [
+            0.7349551853470427,
+            -0.012580305855327416,
+            -0.34241940908432006
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            10.566713730447784,
+            12.975087068307033,
+            4.829059577060242
+          ],
+          "velocity": [
+            0.4620225092502778,
+            -0.022119621774548792,
+            -0.18626198799362179
+          ],
+          "extra": 0.061094025894517706
+        },
+        {
+          "probe_step": 3,
+          "position": [
+            10.605804214066302,
+            12.971287075548865,
+            4.822039256184677
+          ],
+          "velocity": [
+            0.19545241809258587,
+            -0.018999963790841512,
+            -0.03510160437782587
+          ],
+          "extra": 0.12218805178903541
+        },
+        {
+          "probe_step": 4,
+          "position": [
+            10.605804214066302,
+            12.971287075548865,
+            4.822039256184677
+          ],
+          "velocity": [
+            -3.469446951953614e-18,
+            0.0,
+            0.0
+          ],
+          "extra": 0.2036467529817257
+        }
+      ],
+      "offline_true_segment_clearance": 1.692283180904546,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 139,
+      "physical_step": 140,
+      "position": [
+        10.499267578125,
+        12.983016014099121,
+        4.839941501617432
+      ],
+      "velocity": [
+        0.8597452640533447,
+        0.004944959655404091,
+        -0.4742720127105713
+      ],
+      "next_position": [
+        10.674098014831543,
+        13.018567085266113,
+        4.722621440887451
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        15.0,
+        3.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 140,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 1.292905423417687,
+      "available_distance": 1.3370249758157224,
+      "inferred_public_flow": [
+        -0.01867091774940488,
+        -0.11612620037049055
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.5842175087865328,
+        "next_speed_z": 0.313895308303833,
+        "reason": "model_checked_stop",
+        "probe_steps": 4,
+        "predicted_travel": 0.21381234186285716,
+        "predicted_stop": [
+          10.689356443444058,
+          12.975046110603497,
+          4.743757540795425
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            10.616083041347002,
+            12.980456487419245,
+            4.7771624399566655
+          ],
+          "velocity": [
+            0.5840773161100137,
+            -0.012797633399378719,
+            -0.313895308303833
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            10.678955859165116,
+            12.976501996470427,
+            4.745432308269043
+          ],
+          "velocity": [
+            0.31436408909057395,
+            -0.01977245474409066,
+            -0.15865065843811033
+          ],
+          "extra": 0.061094025894517706
+        },
+        {
+          "probe_step": 3,
+          "position": [
+            10.689356438237642,
+            12.975046110929847,
+            4.743757540795425
+          ],
+          "velocity": [
+            0.052002895362624355,
+            -0.007279427702894317,
+            -0.008373837368090773
+          ],
+          "extra": 0.12218805178903541
+        },
+        {
+          "probe_step": 4,
+          "position": [
+            10.689356438237642,
+            12.975046110929847,
+            4.743757540795425
+          ],
+          "velocity": [
+            2.6020852139652106e-18,
+            3.469446951953614e-18,
+            0.0
+          ],
+          "extra": 0.2036467529817257
+        }
+      ],
+      "offline_true_segment_clearance": 1.4857610537565116,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 140,
+      "physical_step": 141,
+      "position": [
+        10.674098014831543,
+        13.018567085266113,
+        4.722621440887451
+      ],
+      "velocity": [
+        0.8741521835327148,
+        0.1777563989162445,
+        -0.5865995287895203
+      ],
+      "next_position": [
+        10.846122741699219,
+        13.07829475402832,
+        4.591912269592285
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        15.0,
+        3.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 141,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 1.1713362992741165,
+      "available_distance": 1.1414660453755903,
+      "inferred_public_flow": [
+        -0.018715131282806552,
+        -0.12124446842819464
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.611207316210866,
+        "next_speed_z": 0.4226283438682556,
+        "reason": "model_checked_stop",
+        "probe_steps": 4,
+        "predicted_travel": 0.26021270925095064,
+        "predicted_stop": [
+          10.875028428377895,
+          13.049638363618651,
+          4.5632630644839445
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            10.794492997856997,
+            13.039733647792378,
+            4.6380957721138
+          ],
+          "velocity": [
+            0.6019749151272745,
+            0.10583281263132466,
+            -0.4226283438682556
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            10.8612333880812,
+            13.048781319184092,
+            4.585314924740906
+          ],
+          "velocity": [
+            0.3337019511210089,
+            0.04523835695856892,
+            -0.2639042368644714
+          ],
+          "extra": 0.061094025894517706
+        },
+        {
+          "probe_step": 3,
+          "position": [
+            10.87502842802231,
+            13.049638362607723,
+            4.5632630644839445
+          ],
+          "velocity": [
+            0.06897519970554633,
+            0.004285217118155538,
+            -0.11025930128480829
+          ],
+          "extra": 0.12218805178903541
+        },
+        {
+          "probe_step": 4,
+          "position": [
+            10.87502842802231,
+            13.049638362607723,
+            4.5632630644839445
+          ],
+          "velocity": [
+            1.734723475976807e-18,
+            0.0,
+            -1.3433698597964394e-17
+          ],
+          "extra": 0.2036467529817257
+        }
+      ],
+      "offline_true_segment_clearance": 1.2786972767309122,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 141,
+      "physical_step": 142,
+      "position": [
+        10.846122741699219,
+        13.07829475402832,
+        4.591912269592285
+      ],
+      "velocity": [
+        0.860123872756958,
+        0.29864072799682617,
+        -0.6535449028015137
+      ],
+      "next_position": [
+        11.0111722946167,
+        13.153792381286621,
+        4.45818567276001
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        15.0,
+        3.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 142,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 1.0461631285026667,
+      "available_distance": 0.9552578136693121,
+      "inferred_public_flow": [
+        -0.020305404588579767,
+        -0.12627072155475622
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.6256525883397532,
+        "next_speed_z": 0.4874314659118652,
+        "reason": "model_checked_stop",
+        "probe_steps": 4,
+        "predicted_travel": 0.2954217394415214,
+        "predicted_stop": [
+          11.047086280767916,
+          13.13787761455852,
+          4.390840972687788
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            10.965342136953861,
+            13.116299779765372,
+            4.494425976409912
+          ],
+          "velocity": [
+            0.5960969762732115,
+            0.1900251286852573,
+            -0.4874314659118652
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.032260296596508,
+            13.134868283919825,
+            4.429099244609374
+          ],
+          "velocity": [
+            0.33459079821323545,
+            0.09284252077226786,
+            -0.3266336590026855
+          ],
+          "extra": 0.061094025894517706
+        },
+        {
+          "probe_step": 3,
+          "position": [
+            11.047086278086434,
+            13.137877611686756,
+            4.394902968226455
+          ],
+          "velocity": [
+            0.07412990744962894,
+            0.015046638834652779,
+            -0.17098138191459952
+          ],
+          "extra": 0.12218805178903541
+        },
+        {
+          "probe_step": 4,
+          "position": [
+            11.047086278086434,
+            13.137877611686756,
+            4.390840972687788
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -0.020309977693332315
+          ],
+          "extra": 0.2036467529817257
+        }
+      ],
+      "offline_true_segment_clearance": 1.0810784699121838,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 142,
+      "physical_step": 143,
+      "position": [
+        11.0111722946167,
+        13.153792381286621,
+        4.45818567276001
+      ],
+      "velocity": [
+        0.8252476453781128,
+        0.3774891793727875,
+        -0.668631911277771
+      ],
+      "next_position": [
+        11.166498184204102,
+        13.238523483276367,
+        4.329250335693359
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        15.0,
+        3.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 143,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 0.9270509282127024,
+      "available_distance": 0.7923371402184287,
+      "inferred_public_flow": [
+        -0.0229737365245819,
+        -0.13103388786315895
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.6197318869287993,
+        "next_speed_z": 0.5020356901168823,
+        "reason": "model_checked_stop",
+        "probe_steps": 4,
+        "predicted_travel": 0.30136666457903205,
+        "predicted_stop": [
+          11.200586230649304,
+          13.230473640401149,
+          4.245979930630747
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.125143238871445,
+            13.202509201747796,
+            4.357778534736633
+          ],
+          "velocity": [
+            0.5698547212737315,
+            0.24358410230587882,
+            -0.5020356901168823
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.188337613971298,
+            13.226755566309865,
+            4.289624425130005
+          ],
+          "velocity": [
+            0.31597187549925937,
+            0.12123182281034872,
+            -0.34077054803314205
+          ],
+          "extra": 0.061094025894517706
+        },
+        {
+          "probe_step": 3,
+          "position": [
+            11.200586234010814,
+            13.230473640816115,
+            4.252691247030788
+          ],
+          "velocity": [
+            0.06124310019758186,
+            0.01859037253124346,
+            -0.18466589049608148
+          ],
+          "extra": 0.12218805178903541
+        },
+        {
+          "probe_step": 4,
+          "position": [
+            11.200586234010814,
+            13.230473640816115,
+            4.245979930630747
+          ],
+          "velocity": [
+            3.469446951953614e-18,
+            6.938893903907228e-18,
+            -0.03355658200020685
+          ],
+          "extra": 0.2036467529817257
+        }
+      ],
+      "offline_true_segment_clearance": 0.9007211008491517,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 143,
+      "physical_step": 144,
+      "position": [
+        11.166498184204102,
+        13.238523483276367,
+        4.329250335693359
+      ],
+      "velocity": [
+        0.7766318321228027,
+        0.42365503311157227,
+        -0.6446765661239624
+      ],
+      "next_position": [
+        11.306713104248047,
+        13.325294494628906,
+        4.209766864776611
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        15.0,
+        3.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 144,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 0.8255197156220673,
+      "available_distance": 0.6644510783378361,
+      "inferred_public_flow": [
+        -0.026339240968227262,
+        -0.13542764306068433
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.5948468975292371,
+        "next_speed_z": 0.47884691600799556,
+        "reason": "model_checked_stop",
+        "probe_steps": 4,
+        "predicted_travel": 0.2776443279293296,
+        "predicted_stop": [
+          11.335379684353466,
+          13.321647628518424,
+          4.134724008199225
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.27233130910814,
+            13.292865573386226,
+            4.23348095249176
+          ],
+          "velocity": [
+            0.5291656245201884,
+            0.271710450549299,
+            -0.47884691600799556
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.328802839026286,
+            13.319179785146808,
+            4.169816189552613
+          ],
+          "velocity": [
+            0.2823576495907319,
+            0.13157105880290548,
+            -0.31832381469573967
+          ],
+          "extra": 0.061094025894517706
+        },
+        {
+          "probe_step": 3,
+          "position": [
+            11.335379682127362,
+            13.32164763055771,
+            4.137228699027517
+          ],
+          "velocity": [
+            0.03288421550538385,
+            0.012339227054504201,
+            -0.162937452625476
+          ],
+          "extra": 0.12218805178903541
+        },
+        {
+          "probe_step": 4,
+          "position": [
+            11.335379682127362,
+            13.32164763055771,
+            4.134724008199225
+          ],
+          "velocity": [
+            1.734723475976807e-18,
+            0.0,
+            -0.012523454141460734
+          ],
+          "extra": 0.2036467529817257
+        }
+      ],
+      "offline_true_segment_clearance": 0.7472420310504087,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 144,
+      "physical_step": 145,
+      "position": [
+        11.306713104248047,
+        13.325294494628906,
+        4.209766864776611
+      ],
+      "velocity": [
+        0.7010738849639893,
+        0.43385687470436096,
+        -0.597417950630188
+      ],
+      "next_position": [
+        11.398748397827148,
+        13.378937721252441,
+        4.1231465339660645
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        15.0,
+        3.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 145,
+      "chosen_action": 8,
+      "emergency": false,
+      "navigation_blocked": true,
+      "verified_exit": false,
+      "cap_xy": 0.7135861369781196,
+      "available_distance": 0.5351815691769235,
+      "inferred_public_flow": [
+        -0.030104659795761046,
+        -0.13939955621957767
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.5336484842522837,
+        "next_speed_z": 0.43310057621002196,
+        "reason": "model_checked_stop",
+        "probe_steps": 4,
+        "predicted_travel": 0.23557399352258232,
+        "predicted_stop": [
+          11.442992213940698,
+          13.402386459262845,
+          4.044324071115823
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.39890211168342,
+            13.379075674997482,
+            4.123146749534607
+          ],
+          "velocity": [
+            0.46094503717686713,
+            0.2689059018428769,
+            -0.43310057621002196
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.442992215168077,
+            13.402386461999532,
+            4.068338477980347
+          ],
+          "velocity": [
+            0.220450517423287,
+            0.11655393501024794,
+            -0.27404135777130123
+          ],
+          "extra": 0.061094025894517706
+        },
+        {
+          "probe_step": 3,
+          "position": [
+            11.442992215168077,
+            13.402386461999532,
+            4.044324071115823
+          ],
+          "velocity": [
+            -3.209238430557093e-17,
+            0.0,
+            -0.12007203432261956
+          ],
+          "extra": 0.12218805178903541
+        },
+        {
+          "probe_step": 4,
+          "position": [
+            11.442992215168077,
+            13.402386461999532,
+            4.044324071115823
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -1.3433698597964394e-17
+          ],
+          "extra": 0.2036467529817257
+        }
+      ],
+      "offline_true_segment_clearance": 0.6540908021728526,
+      "candidate_reasons": {
+        "0": "motion_or_backup_geometry",
+        "1": "motion_or_backup_geometry",
+        "2": "motion_or_backup_geometry",
+        "3": "motion_or_backup_geometry",
+        "4": "motion_or_backup_geometry",
+        "5": "motion_or_backup_geometry",
+        "6": "motion_or_backup_geometry",
+        "8": "model_checked_stop"
+      },
+      "brake_normalized_error": 1.6399992475157887e-08,
+      "measured_next_velocity_error": 0.0007685096767145461,
+      "measured_next_position_error": 0.00015371385627105383
+    },
+    {
+      "step": 145,
+      "physical_step": 146,
+      "position": [
+        11.398748397827148,
+        13.378937721252441,
+        4.1231465339660645
+      ],
+      "velocity": [
+        0.4601765275001526,
+        0.26821672916412354,
+        -0.4331005811691284
+      ],
+      "next_position": [
+        11.442416191101074,
+        13.401932716369629,
+        4.068338394165039
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        15.0,
+        3.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 146,
+      "chosen_action": 8,
+      "emergency": true,
+      "navigation_blocked": true,
+      "verified_exit": false,
+      "cap_xy": 0.19004693580791354,
+      "available_distance": 0.09373329544947784,
+      "inferred_public_flow": [
+        -0.03394720315933242,
+        -0.14284544050693515
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.24738295088283843,
+        "next_speed_z": 0.2740413625717163,
+        "reason": "motion_or_backup_geometry",
+        "probe_steps": 3
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.442510709925521,
+            13.402020023673934,
+            4.068338261451721
+          ],
+          "velocity": [
+            0.21881156049186515,
+            0.1154115121074624,
+            -0.2740413625717163
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.442510709925521,
+            13.402020023673934,
+            4.044323853657837
+          ],
+          "velocity": [
+            -1.1275702593849246e-17,
+            0.0,
+            -0.12007203896942135
+          ],
+          "extra": 0.061094025894517706
+        },
+        {
+          "probe_step": 3,
+          "position": [
+            11.442510709925521,
+            13.402020023673934,
+            4.044323853657837
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            1.3433698597964394e-17
+          ],
+          "extra": 0.12218805178903541
+        }
+      ],
+      "offline_true_segment_clearance": 0.6104230088989269,
+      "candidate_reasons": {
+        "0": "motion_or_backup_geometry",
+        "1": "motion_or_backup_geometry",
+        "2": "motion_or_backup_geometry",
+        "3": "motion_or_backup_geometry",
+        "4": "motion_or_backup_geometry",
+        "5": "motion_or_backup_geometry",
+        "6": "motion_or_backup_geometry",
+        "8": "motion_or_backup_geometry"
+      },
+      "brake_normalized_error": 5.949491233003812e-08,
+      "measured_next_velocity_error": 0.0004734583895854849,
+      "measured_next_position_error": 9.45188244472206e-05
+    },
+    {
+      "step": 146,
+      "physical_step": 147,
+      "position": [
+        11.442416191101074,
+        13.401932716369629,
+        4.068338394165039
+      ],
+      "velocity": [
+        0.21833810210227966,
+        0.11497386544942856,
+        -0.2740413546562195
+      ],
+      "next_position": [
+        11.448538780212402,
+        13.405224800109863,
+        4.044323921203613
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        15.0,
+        3.5
+      ],
+      "route_id": "463aca4589902959",
+      "map_revision": 147,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 0.03503175387158988,
+      "available_distance": 0.014614611379096209,
+      "inferred_public_flow": [
+        -0.03631457090377807,
+        -0.145033656656742
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 4.614246486326838e-09,
+        "next_speed_z": 0.12007203130722044,
+        "reason": "model_checked_stop",
+        "probe_steps": 2,
+        "predicted_travel": 0.02401440626144426,
+        "predicted_stop": [
+          11.442416191978454,
+          13.401932716083527,
+          4.044323987903595
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.442416191101074,
+            13.401932716369629,
+            4.044323987903595
+          ],
+          "velocity": [
+            6.938893903907228e-18,
+            -1.3877787807814457e-17,
+            -0.12007203130722044
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.442416191101074,
+            13.401932716369629,
+            4.044323987903595
+          ],
+          "velocity": [
+            0.0,
+            -3.469446951953614e-18,
+            0.0
+          ],
+          "extra": 0.061094025894517706
+        }
+      ],
+      "offline_true_segment_clearance": 0.6043004197875987,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 147,
+      "physical_step": 148,
+      "position": [
+        11.448538780212402,
+        13.405224800109863,
+        4.044323921203613
+      ],
+      "velocity": [
+        0.030611302703619003,
+        0.016461726278066635,
+        -0.12007202208042145
+      ],
+      "next_position": [
+        11.402079582214355,
+        13.391914367675781,
+        4.046041488647461
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        11.0,
+        13.0,
+        4.5
+      ],
+      "route_id": "f882955f086c750d",
+      "map_revision": 148,
+      "chosen_action": 9,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": true,
+      "cap_xy": 0.07601412935182451,
+      "available_distance": 0.03323962884132692,
+      "inferred_public_flow": [
+        -0.037327429205179265,
+        -0.14605117321014402
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 2.2021980731728494e-10,
+        "next_speed_z": 2.8848647963819473e-09,
+        "reason": "model_checked_stop",
+        "probe_steps": 2,
+        "predicted_travel": 5.786517329052322e-10,
+        "predicted_stop": [
+          11.448538780243396,
+          13.405224800078571,
+          4.04432392062664
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.448538780212402,
+            13.405224800109863,
+            4.044323921203613
+          ],
+          "velocity": [
+            -8.673617379884035e-19,
+            0.0,
+            0.0
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.448538780212402,
+            13.405224800109863,
+            4.044323921203613
+          ],
+          "velocity": [
+            8.673617379884035e-19,
+            0.0,
+            0.0
+          ],
+          "extra": 0.061094025894517706
+        }
+      ],
+      "offline_true_segment_clearance": 0.6043004197875987,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 148,
+      "physical_step": 149,
+      "position": [
+        11.402079582214355,
+        13.391914367675781,
+        4.046041488647461
+      ],
+      "velocity": [
+        -0.23229537904262543,
+        -0.06655210256576538,
+        0.008587030693888664
+      ],
+      "next_position": [
+        11.339003562927246,
+        13.365485191345215,
+        4.050840854644775
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        11.0,
+        13.0,
+        3.5
+      ],
+      "route_id": "f882955f086c750d",
+      "map_revision": 149,
+      "chosen_action": 9,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": true,
+      "cap_xy": 0.1656004796735942,
+      "available_distance": 0.07969045738767089,
+      "inferred_public_flow": [
+        -0.03747232519090177,
+        -0.14619270227849482
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 6.772227442381699e-09,
+        "next_speed_z": 0.0,
+        "reason": "model_checked_stop",
+        "probe_steps": 2,
+        "predicted_travel": 1.3544449533470323e-09,
+        "predicted_stop": [
+          11.402079580872655,
+          13.391914367490411,
+          4.046041488647461
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.402079582214355,
+            13.391914367675781,
+            4.046041488647461
+          ],
+          "velocity": [
+            -6.938893903907228e-18,
+            6.938893903907228e-18,
+            0.0
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.402079582214355,
+            13.391914367675781,
+            4.046041488647461
+          ],
+          "velocity": [
+            0.0,
+            6.938893903907228e-18,
+            0.0
+          ],
+          "extra": 0.061094025894517706
+        }
+      ],
+      "offline_true_segment_clearance": 0.6507596177856456,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 149,
+      "physical_step": 150,
+      "position": [
+        11.339003562927246,
+        13.365485191345215,
+        4.050840854644775
+      ],
+      "velocity": [
+        -0.31538137793540955,
+        -0.1321447640657425,
+        0.023996764793992043
+      ],
+      "next_position": [
+        11.298855781555176,
+        13.34357738494873,
+        4.044882297515869
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        13.0,
+        2.5
+      ],
+      "route_id": "f882955f086c750d",
+      "map_revision": 150,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 0.2687864735722542,
+      "available_distance": 0.1429487780544484,
+      "inferred_public_flow": [
+        -0.03688623040914524,
+        -0.145111800134182
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 0.09913666051703504,
+        "next_speed_z": 3.6060810290616805e-10,
+        "reason": "model_checked_stop",
+        "probe_steps": 2,
+        "predicted_travel": 0.019827332103406432,
+        "predicted_stop": [
+          11.321276157337428,
+          13.356604752764106,
+          4.0508408545726535
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.321276155742128,
+            13.356604753033142,
+            4.050840854644775
+          ],
+          "velocity": [
+            -0.08863703592558896,
+            -0.04440219156036576,
+            0.0
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.321276155742128,
+            13.356604753033142,
+            4.050840854644775
+          ],
+          "velocity": [
+            -4.336808689942018e-18,
+            -3.469446951953614e-18,
+            0.0
+          ],
+          "extra": 0.061094025894517706
+        }
+      ],
+      "offline_true_segment_clearance": 0.713835637072755,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 150,
+      "physical_step": 151,
+      "position": [
+        11.298855781555176,
+        13.34357738494873,
+        4.044882297515869
+      ],
+      "velocity": [
+        -0.20073817670345306,
+        -0.10953809320926666,
+        -0.029792116954922676
+      ],
+      "next_position": [
+        11.27817153930664,
+        13.324856758117676,
+        4.028623580932617
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        13.0,
+        2.5
+      ],
+      "route_id": "f882955f086c750d",
+      "map_revision": 151,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 0.32607593135908247,
+      "available_distance": 0.1825792735975823,
+      "inferred_public_flow": [
+        -0.035721386671066224,
+        -0.1436199590563774
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 6.330970113923237e-09,
+        "next_speed_z": 1.0818243053600795e-09,
+        "reason": "model_checked_stop",
+        "probe_steps": 2,
+        "predicted_travel": 1.2845470054272877e-09,
+        "predicted_stop": [
+          11.298855780462027,
+          13.343577384309768,
+          4.044882297732234
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.298855781555176,
+            13.34357738494873,
+            4.044882297515869
+          ],
+          "velocity": [
+            5.204170427930421e-18,
+            -6.938893903907228e-18,
+            0.0
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.298855781555176,
+            13.34357738494873,
+            4.044882297515869
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "extra": 0.061094025894517706
+        }
+      ],
+      "offline_true_segment_clearance": 0.7539834184448253,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 151,
+      "physical_step": 152,
+      "position": [
+        11.27817153930664,
+        13.324856758117676,
+        4.028623580932617
+      ],
+      "velocity": [
+        -0.10342016816139221,
+        -0.09360235929489136,
+        -0.0812927633523941
+      ],
+      "next_position": [
+        11.273317337036133,
+        13.30850601196289,
+        4.003464698791504
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        13.0,
+        2.5
+      ],
+      "route_id": "f882955f086c750d",
+      "map_revision": 152,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 0.353106465563178,
+      "available_distance": 0.20239576137485105,
+      "inferred_public_flow": [
+        -0.034754652082920126,
+        -0.1426559707522392
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 1.609063236230411e-09,
+        "next_speed_z": 2.884864809815646e-09,
+        "reason": "model_checked_stop",
+        "probe_steps": 2,
+        "predicted_travel": 6.606526259213907e-10,
+        "predicted_stop": [
+          11.278171539597512,
+          13.324856757979989,
+          4.02862358150959
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.27817153930664,
+            13.324856758117676,
+            4.028623580932617
+          ],
+          "velocity": [
+            7.806255641895632e-18,
+            0.0,
+            0.0
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.27817153930664,
+            13.324856758117676,
+            4.028623580932617
+          ],
+          "velocity": [
+            -8.673617379884035e-19,
+            3.469446951953614e-18,
+            0.0
+          ],
+          "extra": 0.061094025894517706
+        }
+      ],
+      "offline_true_segment_clearance": 0.7746676606933605,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 152,
+      "physical_step": 153,
+      "position": [
+        11.273317337036133,
+        13.30850601196289,
+        4.003464698791504
+      ],
+      "velocity": [
+        -0.02427132986485958,
+        -0.08175414800643921,
+        -0.1257934421300888
+      ],
+      "next_position": [
+        11.280767440795898,
+        13.294023513793945,
+        3.9712181091308594
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        13.0,
+        2.5
+      ],
+      "route_id": "f882955f086c750d",
+      "map_revision": 153,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 0.3588395819067955,
+      "available_distance": 0.206690922462895,
+      "inferred_public_flow": [
+        -0.03392769150435921,
+        -0.14215501457452775
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 4.282962783892887e-10,
+        "next_speed_z": 2.8848647963819473e-09,
+        "reason": "model_checked_stop",
+        "probe_steps": 2,
+        "predicted_travel": 5.832971622485751e-10,
+        "predicted_stop": [
+          11.273317337057888,
+          13.30850601188004,
+          4.003464698214531
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.273317337036133,
+            13.30850601196289,
+            4.003464698791504
+          ],
+          "velocity": [
+            8.673617379884035e-19,
+            0.0,
+            0.0
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.273317337036133,
+            13.30850601196289,
+            4.003464698791504
+          ],
+          "velocity": [
+            -8.673617379884035e-19,
+            0.0,
+            0.0
+          ],
+          "extra": 0.061094025894517706
+        }
+      ],
+      "offline_true_segment_clearance": 0.7720717592041026,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    },
+    {
+      "step": 153,
+      "physical_step": 154,
+      "position": [
+        11.280767440795898,
+        13.294023513793945,
+        3.9712181091308594
+      ],
+      "velocity": [
+        0.03725248947739601,
+        -0.07241418957710266,
+        -0.16123239696025848
+      ],
+      "next_position": [
+        11.297264099121094,
+        13.281103134155273,
+        3.933823347091675
+      ],
+      "task": [
+        17.0,
+        15.0,
+        1.5
+      ],
+      "tracking": [
+        13.0,
+        13.0,
+        2.5
+      ],
+      "route_id": "f882955f086c750d",
+      "map_revision": 154,
+      "chosen_action": 0,
+      "emergency": false,
+      "navigation_blocked": false,
+      "verified_exit": false,
+      "cap_xy": 0.3488564947620034,
+      "available_distance": 0.19923255920410154,
+      "inferred_public_flow": [
+        -0.03320482928305866,
+        -0.1420369982719421
+      ],
+      "brake_check": {
+        "action": 8,
+        "speed_ok": true,
+        "next_speed_xy": 3.079692235854961e-09,
+        "next_speed_z": 0.01087296025753019,
+        "reason": "model_checked_stop",
+        "probe_steps": 2,
+        "predicted_travel": 0.0021745920515062506,
+        "predicted_stop": [
+          11.280767440640629,
+          13.2940235131979,
+          3.969043517079353
+        ],
+        "terminal_invariant_certified": false,
+        "ground_truth_geometry_used": false
+      },
+      "backup_under_fixed_public_flow": [
+        {
+          "probe_step": 1,
+          "position": [
+            11.280767440795898,
+            13.294023513793945,
+            3.969043517079353
+          ],
+          "velocity": [
+            -8.673617379884035e-19,
+            0.0,
+            -0.01087296025753019
+          ],
+          "extra": 0.02036467529817257
+        },
+        {
+          "probe_step": 2,
+          "position": [
+            11.280767440795898,
+            13.294023513793945,
+            3.969043517079353
+          ],
+          "velocity": [
+            8.673617379884035e-19,
+            0.0,
+            0.0
+          ],
+          "extra": 0.061094025894517706
+        }
+      ],
+      "offline_true_segment_clearance": 0.7555751008789073,
+      "candidate_reasons": {
+        "0": "model_checked_stop",
+        "1": "model_checked_stop",
+        "2": "model_checked_stop",
+        "3": "model_checked_stop",
+        "4": "model_checked_stop",
+        "5": "model_checked_stop",
+        "6": "model_checked_stop",
+        "8": "model_checked_stop"
+      }
+    }
+  ],
+  "unknown": [
+    "Actual public hit/subcell/coarse occupancy snapshot at steps 144-145",
+    "Which public geometry component changed or tightened"
+  ],
+  "inference_scope": "Flow reconstructed from preceding measured velocity and actual acceleration only; true boxes used offline solely for realized-segment clearance"
+}

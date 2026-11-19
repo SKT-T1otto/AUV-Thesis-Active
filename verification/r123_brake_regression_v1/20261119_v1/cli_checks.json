@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "indices": [
+    3,
+    4,
+    5
+  ],
+  "seeds": [
+    982004,
+    982005,
+    982006
+  ],
+  "baseline_success_steps": [
+    225,
+    361,
+    241
+  ],
+  "dry_run_no_write": true,
+  "windows_full_run_rejected": true,
+  "full_regression_executed": false
+}

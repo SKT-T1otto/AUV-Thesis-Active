@@ -1,0 +1,42 @@
+{
+  "tool": {
+    "schema": "auv.r123.task_sync.regression_tool.v1",
+    "sha256": "55ef52ffa1352c922e688df9a2b538d4e9414ac8156c3a452e5b2a87e3220cdf",
+    "control_source": {
+      "schema": "auv.r123.task_sync.source.v1",
+      "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+      "parent_source": {
+        "schema": "auv.r123.tracking.source.v1",
+        "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+        "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+      }
+    }
+  },
+  "control_source": {
+    "schema": "auv.r123.task_sync.source.v1",
+    "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+    "parent_source": {
+      "schema": "auv.r123.tracking.source.v1",
+      "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+      "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+    }
+  },
+  "indices": [
+    3,
+    4,
+    5
+  ],
+  "seed": 982001,
+  "maximum_new_physical_steps": 1200,
+  "validation_origin": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\3090结果\\r123_task_sync_20261118_223936_3078331",
+  "validation_sha256": "c2bb355ba1783e7a444aa8d13e9c8a561fa349a25d48b76df372aeb705d1f9ac",
+  "baseline_reused": true,
+  "training": false,
+  "checkpoint_load": false,
+  "inputs": {
+    "config.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "options.json": "d27ab96408ef695648f83c86ef7124df9354b85adf5c1d36017115486e8de112",
+    "scenes.json": "6c9cc1ec6cd6f69059e17e83241107ab6f95b89ee5615652ed3baffac4e6d69a",
+    "baseline.json": "4d26c7c5d12a7a1fa314c34480fb310437bcd495dfa0a8a17e36c4c9bde2142c"
+  }
+}

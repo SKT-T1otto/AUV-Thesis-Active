@@ -1,0 +1,25 @@
+{
+  "tool": {
+    "schema": "auv.r123.task_sync.regression_tool.v1",
+    "sha256": "55ef52ffa1352c922e688df9a2b538d4e9414ac8156c3a452e5b2a87e3220cdf",
+    "control_source": {
+      "schema": "auv.r123.task_sync.source.v1",
+      "sha256": "aadffb932cfd53e2b134623a7fb38b01ffe4edcbfa7ed0d027b721750fd0853f",
+      "parent_source": {
+        "schema": "auv.r123.tracking.source.v1",
+        "sha256": "1b51edf677adca45266d8e5ecf818f060f08d8a7ec0b2d476710ce8d127f6326",
+        "parent_commit": "b057577ba7e9b7d9ae86cb45c7527f472d409aa1"
+      }
+    }
+  },
+  "passed": true,
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "environment_initializations": 0,
+  "physical_steps": 0,
+  "training": false,
+  "artifacts": {
+    "synthetic.log": "7db30b59d5a707bafe52dc1a2bec72b0a05e83434d07c7b4e47cd3ab77d71554"
+  }
+}
