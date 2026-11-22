@@ -1,0 +1,14 @@
+{
+  "schema": "auv.r123.final_leg.source.v1",
+  "parent_commit": "98630ea",
+  "parent_expansion_sha256": "0f6d05c53987f4e427c7fd849318d7c66dfb6c4df63eef314fcbb2143561dfb6",
+  "change": "Reversible executor final cursor on a reachable public grid route during capture. Existing safety banks, goals and success conditions are inherited.",
+  "files": {
+    "chapter3_bser/r123_final_leg.py": "d6e5f519502e2fd6be1de1faea17df3157feae1ef6ab5ba414a1837a78279c83",
+    "tools/r123_final_leg.py": "bc09046b7fe2da7199f0b5b908c6980ac3bb84f1a7e14c20bce6acee6626b90e",
+    "checks/test_r123_final_leg.py": "f74930952edb3da768bacd97814a3efbd28e6def158fe08a7271c9a16f081f04",
+    "checks/r123_final_leg_smoke.py": "ed1919f054662783d8db94ec73dae41087ae694f1e1d6a7eda60e89602479bbc",
+    "scripts/r123_final_leg_linux.sh": "01e22b7fdb9abf6ee444e6c34539c79944c60e0c3ecd31c0246648fbc5a76e80"
+  },
+  "sha256": "9ea6fe17ca06cd038544c25b58397b72488988d51ebc1acee77bfdc0bd03a235"
+}

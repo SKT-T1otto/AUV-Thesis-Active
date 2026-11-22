@@ -1,0 +1,440 @@
+{
+  "source": "9ea6fe17ca06cd038544c25b58397b72488988d51ebc1acee77bfdc0bd03a235",
+  "new_environment_steps": 0,
+  "controls": [
+    {
+      "stage": "focus",
+      "scene": "r123_expand_20261119_0013",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0013_task_sync/episode.json",
+        "episode_file_sha256": "3af0ec130124babb8ba6a1923b1ea3a7813d35dc6d91c7fb7122c07d585c1742",
+        "seed": 20261132
+      },
+      "measures": {
+        "steps": 400,
+        "found_step": 128,
+        "handoff_step": 129,
+        "success": false,
+        "success_step": null,
+        "collision": false,
+        "closest_capture_m": 0.9114767752228917,
+        "first_contact_step": null,
+        "contact_steps": 0,
+        "max_consecutive_hold": 0,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 59,
+        "wall_seconds": 181.77096031303518
+      }
+    },
+    {
+      "stage": "focus",
+      "scene": "r123_expand_20261119_0017",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0017_task_sync/episode.json",
+        "episode_file_sha256": "c39f9fa09e50a9a2ba58c548aa65f1c22de8fd48e89236154fdfb155aba599ed",
+        "seed": 20261136
+      },
+      "measures": {
+        "steps": 400,
+        "found_step": 108,
+        "handoff_step": 109,
+        "success": false,
+        "success_step": null,
+        "collision": false,
+        "closest_capture_m": 0.9527793858316426,
+        "first_contact_step": null,
+        "contact_steps": 0,
+        "max_consecutive_hold": 0,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 91,
+        "wall_seconds": 215.6891393479891
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "r123_expand_20261119_0001",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0001_task_sync/episode.json",
+        "episode_file_sha256": "a415c4c88aa0fe1e2360baab4a2e07d9b8f85d9a8843743332f188c43d920d76",
+        "seed": 20261120
+      },
+      "measures": {
+        "steps": 174,
+        "found_step": 154,
+        "handoff_step": 155,
+        "success": true,
+        "success_step": 174,
+        "collision": false,
+        "closest_capture_m": 0.40618720316816354,
+        "first_contact_step": 169,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 77,
+        "wall_seconds": 157.7099459238816
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "r123_expand_20261119_0006",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0006_task_sync/episode.json",
+        "episode_file_sha256": "9f572e3b260c06651a4ae5431c79e256f94d092983824d23b011299def2e56fe",
+        "seed": 20261125
+      },
+      "measures": {
+        "steps": 150,
+        "found_step": 88,
+        "handoff_step": 89,
+        "success": true,
+        "success_step": 150,
+        "collision": false,
+        "closest_capture_m": 0.4052910459911166,
+        "first_contact_step": 145,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 9,
+        "wall_seconds": 57.21789619210176
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "r123_expand_20261119_0007",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0007_task_sync/episode.json",
+        "episode_file_sha256": "de61a4863d04a1a430f3e568a4453cb4a88c689b71842dfbdb0550b3ce323587",
+        "seed": 20261126
+      },
+      "measures": {
+        "steps": 345,
+        "found_step": 187,
+        "handoff_step": 188,
+        "success": true,
+        "success_step": 345,
+        "collision": false,
+        "closest_capture_m": 0.5451145991111245,
+        "first_contact_step": 236,
+        "contact_steps": 12,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 27,
+        "wall_seconds": 156.0739818699658
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "r123_expand_20261119_0010",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0010_task_sync/episode.json",
+        "episode_file_sha256": "2909224b259e982075beed33c296829fb6dfc75aaafeda1a2fa5bcb72e693d8a",
+        "seed": 20261129
+      },
+      "measures": {
+        "steps": 355,
+        "found_step": 235,
+        "handoff_step": 236,
+        "success": true,
+        "success_step": 355,
+        "collision": false,
+        "closest_capture_m": 0.5662302592721628,
+        "first_contact_step": 350,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 244,
+        "wall_seconds": 293.91407946986146
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "r123_expand_20261119_0011",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0011_task_sync/episode.json",
+        "episode_file_sha256": "dec49f228b07d94d4f912e10be41fc471c3c9002676b97d04ed4b0cad992699f",
+        "seed": 20261130
+      },
+      "measures": {
+        "steps": 160,
+        "found_step": 108,
+        "handoff_step": 109,
+        "success": true,
+        "success_step": 160,
+        "collision": false,
+        "closest_capture_m": 0.6197045922684071,
+        "first_contact_step": 155,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 14,
+        "wall_seconds": 92.19758904608898
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "r123_expand_20261119_0015",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0015_task_sync/episode.json",
+        "episode_file_sha256": "71b2b344a57311110f049bd7e6b2b6f027dd91cac5305cbbe145d7fb5c15c916",
+        "seed": 20261134
+      },
+      "measures": {
+        "steps": 245,
+        "found_step": 190,
+        "handoff_step": 191,
+        "success": true,
+        "success_step": 245,
+        "collision": false,
+        "closest_capture_m": 0.5763368998813151,
+        "first_contact_step": 240,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 16,
+        "wall_seconds": 122.12025251495652
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "r123_expand_20261119_0021",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0021_task_sync/episode.json",
+        "episode_file_sha256": "952d531d83449fc8475504fb95e8e34a3c0f5777781708c92be4e4cd8b39492b",
+        "seed": 20261140
+      },
+      "measures": {
+        "steps": 119,
+        "found_step": 53,
+        "handoff_step": 54,
+        "success": true,
+        "success_step": 119,
+        "collision": false,
+        "closest_capture_m": 0.6427532885318429,
+        "first_contact_step": 114,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 11,
+        "wall_seconds": 59.33533508190885
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "r123_expand_20261119_0022",
+      "reference": {
+        "run": "r123_expansion_20261120_123244_3078331",
+        "completion_sha256": "00a9d3cb364b0066a272c55a057188fcc49172108c52b08c4eb33f2d36d92ff4",
+        "plan_sha256": "9efebcdb73c0b326b9d62653c89da558e8f817cbb7e190f34fc0b1f09536b168",
+        "episode_file": "0022_task_sync/episode.json",
+        "episode_file_sha256": "71312c11d16a4b023d648c622bc1462104d34a16e7aa2ce8877f91e4ce4244f6",
+        "seed": 20261141
+      },
+      "measures": {
+        "steps": 74,
+        "found_step": 5,
+        "handoff_step": 6,
+        "success": true,
+        "success_step": 74,
+        "collision": false,
+        "closest_capture_m": 0.7010801349386044,
+        "first_contact_step": 69,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 11,
+        "wall_seconds": 28.180943541927263
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "po_eval_992001_0001",
+      "reference": {
+        "run": "r123_task_sync_20261118_223936_3078331",
+        "completion_sha256": "bb2713360ddce0c470c8df8006ac412559f778bf062f07e86a90dc0d15c13928",
+        "plan_sha256": "43583f5871380083e7dbe6908906344e201ae2a7afb1a62188f535dce5c726fe",
+        "episode_file": "episodes.jsonl",
+        "episode_file_sha256": "7b9661fa9f9f79b15774122025df19db9f26e55451d43c4351a178c1c57b2c27",
+        "seed": 982002
+      },
+      "measures": {
+        "steps": 231,
+        "found_step": 181,
+        "handoff_step": 182,
+        "success": true,
+        "success_step": 231,
+        "collision": false,
+        "closest_capture_m": 0.5475728706749258,
+        "first_contact_step": 226,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 15,
+        "wall_seconds": 132.55002473387867
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "po_eval_992001_0003",
+      "reference": {
+        "run": "r123_task_sync_regression_20261119_161420_3078331",
+        "completion_sha256": "96f8c0f86ba5b54bd197115d1f75142201e4f92b176813a1a45cabc59ee10359",
+        "plan_sha256": "823192cb1b60868f67954c0765b283d75ab74c3f60cb889a7fed93f786c157d3",
+        "episode_file": "episodes.jsonl",
+        "episode_file_sha256": "e426ab3d53ac94aa4dbd36800cbd2e2e3852bb03e2a70549bbac5037e9500ebc",
+        "seed": 982004
+      },
+      "measures": {
+        "steps": 302,
+        "found_step": 235,
+        "handoff_step": 236,
+        "success": true,
+        "success_step": 302,
+        "collision": false,
+        "closest_capture_m": 0.5025039796436255,
+        "first_contact_step": 297,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 72,
+        "wall_seconds": 188.58810912887566
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "po_eval_992001_0004",
+      "reference": {
+        "run": "r123_task_sync_regression_20261119_161420_3078331",
+        "completion_sha256": "96f8c0f86ba5b54bd197115d1f75142201e4f92b176813a1a45cabc59ee10359",
+        "plan_sha256": "823192cb1b60868f67954c0765b283d75ab74c3f60cb889a7fed93f786c157d3",
+        "episode_file": "episodes.jsonl",
+        "episode_file_sha256": "e426ab3d53ac94aa4dbd36800cbd2e2e3852bb03e2a70549bbac5037e9500ebc",
+        "seed": 982005
+      },
+      "measures": {
+        "steps": 400,
+        "found_step": 358,
+        "handoff_step": 359,
+        "success": false,
+        "success_step": null,
+        "collision": false,
+        "closest_capture_m": 4.157812232771202,
+        "first_contact_step": null,
+        "contact_steps": 0,
+        "max_consecutive_hold": 0,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 42,
+        "wall_seconds": 223.06094167078845
+      }
+    },
+    {
+      "stage": "regression",
+      "scene": "po_eval_992001_0005",
+      "reference": {
+        "run": "r123_task_sync_regression_20261119_161420_3078331",
+        "completion_sha256": "96f8c0f86ba5b54bd197115d1f75142201e4f92b176813a1a45cabc59ee10359",
+        "plan_sha256": "823192cb1b60868f67954c0765b283d75ab74c3f60cb889a7fed93f786c157d3",
+        "episode_file": "episodes.jsonl",
+        "episode_file_sha256": "e426ab3d53ac94aa4dbd36800cbd2e2e3852bb03e2a70549bbac5037e9500ebc",
+        "seed": 982006
+      },
+      "measures": {
+        "steps": 390,
+        "found_step": 269,
+        "handoff_step": 270,
+        "success": true,
+        "success_step": 390,
+        "collision": false,
+        "closest_capture_m": 0.6241817936985077,
+        "first_contact_step": 385,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 26,
+        "wall_seconds": 181.68028337112628
+      }
+    }
+  ]
+}

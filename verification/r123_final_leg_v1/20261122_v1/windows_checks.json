@@ -1,0 +1,73 @@
+{
+  "source": "cc1f46cbeef44280fc9512bb47530461e830d713b311500577e2f8fc72e4a948",
+  "runtime_sha256": "d6e5f519502e2fd6be1de1faea17df3157feae1ef6ab5ba414a1837a78279c83",
+  "initial_driver": "9ea6fe17ca06cd038544c25b58397b72488988d51ebc1acee77bfdc0bd03a235",
+  "archived_controls_checked": 14,
+  "original_capture_maps": [
+    {
+      "scene": "0013",
+      "action": 171,
+      "verdict": "outside_final_leg",
+      "query_sha256": "8a26c000ad2a3b3874f60268cddcf13ae0128be956482074c6c829de731f1ddf",
+      "map_sha256": "5d0fdd6af49d9cf49c164d4d5cb3416e41420636ee1b17c5ffc07869d549cada"
+    },
+    {
+      "scene": "0013",
+      "action": 179,
+      "verdict": "direct",
+      "query_sha256": "ee9d805963dc75c2b15cd1ee3f4f35af1753720840023a58d1ff3ccca87978b6",
+      "map_sha256": "df16f69167d461a349684927b179bece3d4e843e37d8aebe76fdf2716b4b6a75"
+    },
+    {
+      "scene": "0013",
+      "action": 187,
+      "verdict": "direct",
+      "query_sha256": "61d51fd0be0c87f12be6c2edf662c96675159c11421c2d45b0b1624e563db3f7",
+      "map_sha256": "94c148fc6b31708a940ef6fc725f7ac681207ff681f97602b4d726df2e88bdc5"
+    },
+    {
+      "scene": "0013",
+      "action": 195,
+      "verdict": "direct",
+      "query_sha256": "0e540cb7b4e59c54ead30fa9132da39e09a1ab5a340bf930664dbc6d94461b2a",
+      "map_sha256": "f8e444584ea8b5061c3b6190da3d20b8399f6f8af9083b3dd4560bd649b059a2"
+    },
+    {
+      "scene": "0017",
+      "action": 329,
+      "verdict": "direct",
+      "query_sha256": "442f21b18c8a16b45b23c03a529436c18c27099fc9ed3bbf1b45c26b85fee85a",
+      "map_sha256": "44e527546f2e7ae40238685e332d32e97b120e294033d2473251413cf87c4324"
+    },
+    {
+      "scene": "0017",
+      "action": 336,
+      "verdict": "direct",
+      "query_sha256": "04c120f8434f01978c4d89aa51959a124ff3aed60b704aad508c4dfb1199b8c3",
+      "map_sha256": "85f402a80a4562578976e1092cc6d0629f31cd76ed371be89321889276ec8160"
+    },
+    {
+      "scene": "0017",
+      "action": 343,
+      "verdict": "direct",
+      "query_sha256": "29f70c58e9f1a962050569261e22c0c22b28c6559d34b48b69a3b1abd225dcb9",
+      "map_sha256": "110a62d0b736bd8ca3db9ad5599e2a57ed60d8997ff2a26386b1843af26ca0e9"
+    }
+  ],
+  "prefix_steps_per_arm": {
+    "r123_expand_20261119_0013": 8,
+    "r123_expand_20261119_0017": 8
+  },
+  "native_near_receipt_sha256": "6fd29bd1c71c61890f7fa6ca3955c89b2670bff38d879790b776da7649a70b1f",
+  "native_completed_episodes": 6,
+  "native_environment_initialization_attempts": 7,
+  "rejected_fixture_resets_before_first_action": 1,
+  "physical_steps": 71,
+  "training_updates": 0,
+  "checkpoint_load": false,
+  "protected_sha256_sets_verified": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  }
+}

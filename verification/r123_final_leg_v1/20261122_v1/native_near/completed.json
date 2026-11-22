@@ -1,0 +1,63 @@
+{
+  "source": "cc1f46cbeef44280fc9512bb47530461e830d713b311500577e2f8fc72e4a948",
+  "part": "near",
+  "records": [
+    {
+      "scene": "final_leg_interface_fixture",
+      "direct": false,
+      "cap": 24,
+      "measures": {
+        "steps": 24,
+        "found_step": 1,
+        "handoff_step": 2,
+        "success": false,
+        "success_step": null,
+        "collision": false,
+        "closest_capture_m": 0.9417691202845517,
+        "first_contact_step": null,
+        "contact_steps": 0,
+        "max_consecutive_hold": 0,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": null,
+        "direct_actions": 0,
+        "route_queries": 7,
+        "wall_seconds": 36.51500000001397
+      },
+      "raw_file": "0022_grid.json",
+      "raw_sha256": "2c8d486fc238c6809d769d890ca5c3c7c5d8b66c9be201b339dab0ffb5c77df8"
+    },
+    {
+      "scene": "final_leg_interface_fixture",
+      "direct": true,
+      "cap": 24,
+      "measures": {
+        "steps": 15,
+        "found_step": 1,
+        "handoff_step": 2,
+        "success": true,
+        "success_step": 15,
+        "collision": false,
+        "closest_capture_m": 0.39251436725957684,
+        "first_contact_step": 10,
+        "contact_steps": 6,
+        "max_consecutive_hold": 5,
+        "capture_brakes": 0,
+        "capture_blocked": 0,
+        "emergency_actions": 0,
+        "first_direct_action": 2,
+        "direct_actions": 13,
+        "route_queries": 6,
+        "wall_seconds": 27.030999999988126
+      },
+      "raw_file": "0022_direct.json",
+      "raw_sha256": "3d6d23c8cdfdca566a54fc7dc19d5cd7eb9f14c87371967a6a82a389ab4ef5fc"
+    }
+  ],
+  "environment_initializations": 2,
+  "physical_steps": 39,
+  "passed": true,
+  "training_updates": 0,
+  "checkpoint_load": false
+}
