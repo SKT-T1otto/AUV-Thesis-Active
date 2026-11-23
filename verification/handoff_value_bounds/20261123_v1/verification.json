@@ -1,0 +1,198 @@
+{
+  "scope": "Stage 1: standalone handoff route success-difference bounds",
+  "source_head": "7810c66384740aedfc451ca4819a528f156988b9",
+  "created_files": [
+    "chapter3_bser/handoff_value/__init__.py",
+    "chapter3_bser/handoff_value/bounds.py",
+    "checks/test_handoff_bounds.py",
+    "verification/handoff_value_bounds/20261123_v1/verification.json"
+  ],
+  "source_inventory": {
+    "inventory_function": "tools.verify_pure_marl.inventory",
+    "before_count": 498,
+    "before_sha256": "17ecd863113cdb473532771ec3b3511fc2f2d68fe2114007a6b0ca20d14aeee4",
+    "after_count": 501,
+    "after_sha256": "a27f6ae3af4f777f043ca0faba64f0624cb237a1ed3db7e7de381ab1c82d8153",
+    "added_sha256": {
+      "chapter3_bser/handoff_value/__init__.py": "be5ba226b4fbe92e2d3c7f41c890e01431e754165b822237101c45649c00bc25",
+      "chapter3_bser/handoff_value/bounds.py": "488fca8c1c56eca28737b205ee5ee0b517b07bfd7a70dfeafc2223e53fc24320",
+      "checks/test_handoff_bounds.py": "1b12369c167607af57a0848394f1d613437001178826c364456f33a8534fab1d"
+    }
+  },
+  "bin_contract": "All input vectors share the supplied bin_ids. Exactly one bin is named no_handoff; its conditional success interval must be [0, 0]. Its mass may be zero.",
+  "validation": {
+    "python_version": "3.10.20",
+    "unit_tests": {
+      "command": "python -B -X utf8 -m unittest -v checks.test_handoff_bounds",
+      "test_methods": 13,
+      "exit_code": 0,
+      "output": [
+        "test_256_vertex_extrema (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_bad_probability_sum_for_each_route (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_bin_order_invariance_including_no_handoff (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_dimension_and_invalid_values_name_the_field (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_full_bin_width_recovers_separate_route_intervals (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_increasing_either_tv_radius_only_widens_bounds (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_inverted_interval (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_missing_duplicate_or_nonzero_no_handoff (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_no_handoff_and_zero_mass_bins (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_same_masses_with_shared_and_distinct_success_rates (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_swapping_routes_reflects_the_interval (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_three_four_bin_examples (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "test_tolerated_mass_roundoff_preserves_order_at_extremes (checks.test_handoff_bounds.HandoffBoundsTests) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 13 tests in 0.024s",
+        "",
+        "OK"
+      ]
+    },
+    "absolute_tolerance": 1e-12,
+    "vertex_checks": {
+      "cases": 256,
+      "input_grid": {
+        "mass_a": [
+          "0",
+          "0.2",
+          "0.5",
+          "1"
+        ],
+        "mass_b": [
+          "0",
+          "0.2",
+          "0.5",
+          "1"
+        ],
+        "lower": [
+          "0",
+          "0.2"
+        ],
+        "upper": [
+          "0.5",
+          "1"
+        ],
+        "within_bin_gap": [
+          "0",
+          "0.125",
+          "0.5",
+          "1"
+        ]
+      },
+      "oracle": "Exact rational arithmetic: intersect each pair of the six boundary lines, retain feasible points and take min/max of a*x-b*y.",
+      "max_absolute_endpoint_error": 7.549516567451065e-17
+    },
+    "four_bin_checks": {
+      "cases": 3,
+      "shared_inputs": {
+        "bin_ids": [
+          "no_handoff",
+          "near",
+          "far",
+          "uncertain"
+        ],
+        "mass_a": [
+          0.1,
+          0.45,
+          0.15,
+          0.3
+        ],
+        "mass_b": [
+          0.1,
+          0.25,
+          0.35,
+          0.3
+        ],
+        "lower": [
+          0,
+          0.65,
+          0.1,
+          0
+        ],
+        "upper": [
+          0,
+          0.8,
+          0.3,
+          1
+        ],
+        "tv_a": 0,
+        "tv_b": 0
+      },
+      "examples": [
+        {
+          "within_bin_gap": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "expected": [
+            0.07,
+            0.14
+          ],
+          "actual": [
+            0.07,
+            0.14000000000000004
+          ]
+        },
+        {
+          "within_bin_gap": [
+            0,
+            0,
+            0,
+            0.1
+          ],
+          "expected": [
+            0.04,
+            0.17
+          ],
+          "actual": [
+            0.040000000000000015,
+            0.17000000000000004
+          ]
+        },
+        {
+          "within_bin_gap": [
+            0,
+            0,
+            0,
+            0.25
+          ],
+          "expected": [
+            -0.005,
+            0.215
+          ],
+          "actual": [
+            -0.004999999999999984,
+            0.21500000000000002
+          ]
+        }
+      ],
+      "max_absolute_endpoint_error": 4.107825191113079e-17
+    },
+    "prototype_comparison": {
+      "path": "verification/handoff_value_design/20261123_v1/handoff_bounds.py",
+      "sha256": "9a5b520392137f05dd1a399e29cdd033a69801a4d3a5f9c527931a42fba6062b",
+      "comparisons": 259,
+      "max_absolute_endpoint_difference": 0,
+      "reference_command": "python -B -X utf8 verification/handoff_value_design/20261123_v1/handoff_bounds.py",
+      "reference_output": [
+        "gap=0.00  lower=0.0700  upper=0.1400",
+        "gap=0.10  lower=0.0400  upper=0.1700",
+        "gap=0.25  lower=-0.0050  upper=0.2150",
+        "256 vertex comparisons and 3 four-bin examples passed"
+      ]
+    },
+    "preserved_files": {
+      "checker": "verification/r123_allocation_evidence/20261122_v1/analyze.py:verify",
+      "protected": {
+        "CH3": 369,
+        "CH4": 103,
+        "CH5": 318
+      },
+      "raw_files": 209,
+      "archive_reference_sha256": "658232af4681f06970dafdf5a1519e88b3560ed7fedb95a421f1333e5487aa19"
+    },
+    "physical_steps": 0,
+    "training_updates": 0
+  }
+}
