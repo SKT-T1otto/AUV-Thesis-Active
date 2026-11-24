@@ -1,0 +1,57 @@
+{
+  "schema": "auv.launch_assignment.provenance.v1",
+  "base_commit": "52108bbd548391c4b4fedc7f212666df0f508528",
+  "reference_environment": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "torch": "2.11.0+cu126"
+  },
+  "fresh_identity_sha256": "324fed985bbb6a3f44543b1b1a75863e5b8ecccf82cda578cb970d5fc636f76d",
+  "prepare_file_sha256": {
+    "chapter3_bser/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "chapter3_bser/learning/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "chapter3_bser/learning/checkpoint.py": "3ee2be3edf022ad694453c887572a35995e7b4a0ab94373fe11197b80ebe2f2e",
+    "chapter3_bser/learning/config.py": "77e3fed3a37cb086f7cc4c66883601f2535c754aff6ebc14d9a1e9e11bf810eb",
+    "chapter3_bser/rewards/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "chapter3_bser/rewards/team_objective.py": "480e5e53cda49a6e4d6b04c4c0010a9c35b85a50a3afa5c28b93efefdbd831f4",
+    "checks/test_launch_assignment_prepare.py": "2edd1adfbbb36f2374eb3a025bd9b18e8180b5eeae331c7a1d1f297476c664fd",
+    "configs/launch_assignment_v1/history.json": "8cf359061507abdc4ee988ce60e29194c8e854214e8694512c44cd1385dded12",
+    "configs/launch_assignment_v1/study.json": "1b126c6dc0e9ede6cf230f894f851f54a0915a51caa287229a32d96d5006ca19",
+    "configs/r123_expansion_v1/config.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "configs/r123_expansion_v1/exclusions.json": "8bbb1570319869ba8e9bb9755cbf2a22cd6b4e58954ffe416d200ac8ae4141fa",
+    "configs/r123_expansion_v1/options.json": "d27ab96408ef695648f83c86ef7124df9354b85adf5c1d36017115486e8de112",
+    "configs/r123_expansion_v1/scenes.json": "8bc806725774b415692e0699e88f24aae59ab625fbe0a0b71836b8db422f3605",
+    "core/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "core/config/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "core/config/ch3_constants.py": "1b4f45c1031fa324e57eaccc32c7179aaac5687db884c38d059a2d505c1f53f8",
+    "core/env/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "core/env/target_motion.py": "5a4459d15035740ca76899065b8e45ac64a99257eee6edf8db2f362dc41d478f",
+    "core/env/task_protocol.py": "5a4daa807ce144cda8a13e20e2bc700f1680212b750c1455ac213b0a3217143b",
+    "core/mapping/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "core/mapping/map_module.py": "c92654ddac5e13c410153103805592affbcc5e12a5d193955d8ea1acfc9dc78a",
+    "core/mapping/path_planner.py": "0415b51e1ac2c8f0e48b8b4effaf19b741adc6dca4a3203b2c2282654351c2aa",
+    "core/scenarios/__init__.py": "2e98d5f27e5dc32f60ffafd55a7fa41370e6e6560250d32bf71aa6ef1efb8b6d",
+    "core/scenarios/ch3_generator_impl.py": "de3f501036b0fee6a116690db5e1de3b2ccf8262d1dbee4e0f7ed61caec85728",
+    "project_paths.py": "4a9f567163fbcca47fdbd5947bd9291800d0bfd1bec517f89779462ebe81d50f",
+    "requirements.txt": "a68e52b328f6b85320df6e8d8b4580af9a3d44f552bb5701da7ff1f006b797d8",
+    "tools/__init__.py": "e954b390d222ae5210827b5ef2a87d61dec128ab0a5196f3c0cb2435df832985",
+    "tools/launch_assignment_study.py": "2d934c01cbd2e4209a362310ec21deca0c293d31bd146c8cb3dcb7ea04d228de"
+  },
+  "historical_manifest_sha256": {
+    "provenance/handoff_value_pairs_v1.json": "801c1223ef82e4c12f84a155a3c5d8daf58c5e4ffe4a71f6bf9c821e15c73e1c",
+    "provenance/handoff_value_readonly_v1.json": "544a6d9fa56d1c7ebc50c910cf5289c75b9c82e8db4a7a9103ec527bfec17847",
+    "provenance/local_ctde_v1.json": "df20d45aadffc496f83e190a7b655e48472220d07f732571b97ebcb818f6484b",
+    "provenance/neighbor_ctde_v1.json": "7c78ac0789b7c9faf8fc2fd624109e447637a98ebf9650b8d02fce05b64515b6",
+    "provenance/r123_expansion_manifest_v1.json": "2f892b68a744108580bdab68255613066496a06d51ac7a2896b4c74fca8a2a16",
+    "provenance/r123_final_leg_manifest_v1.json": "02f4cbc9598cde49bd27c5bca896e3e452f13a35d03c4b2e980a80129dabc1d4"
+  },
+  "historical_regression_file_sha256": {
+    "checks/test_handoff_bounds.py": "1b12369c167607af57a0848394f1d613437001178826c364456f33a8534fab1d",
+    "checks/test_handoff_pairs.py": "5e3c1128d41834598fe1378884b30809c230c0e2b03a298a102e23d474ba384c",
+    "checks/test_handoff_records.py": "073fd75db52ac3672ba2a847619f2509eda69eccd024f81b8e1a3c3414c2be4b",
+    "checks/test_local_ctde.py": "cc7cd5de6922a7ba66e07c274ec54edbfcff22d87424d3d47e199b4b1e552d98",
+    "checks/test_neighbor_ctde.py": "98f11fe4c40a7b9e0825a96b05ab4b64df7392dd430fbc4734d65fa2d2c0bb41",
+    "checks/test_r123_final_leg.py": "c7fcde936de0bbf0c19949dab3dac305c5ca98174e48bfb91eb49b6827dd12de",
+    "checks/test_r123_task_sync.py": "e8c8b9707283eb91514395354aa4ec9dd5794da9d9ca08e84978b6c93063b54e"
+  }
+}

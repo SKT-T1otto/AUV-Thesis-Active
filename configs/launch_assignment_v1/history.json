@@ -1,0 +1,1337 @@
+{
+  "schema": "auv.launch_assignment.historical_identities.v1",
+  "sources": [
+    {
+      "name": "expansion24",
+      "path": "configs/r123_expansion_v1/scenes.json",
+      "field": "scenarios",
+      "sha256": "8bc806725774b415692e0699e88f24aae59ab625fbe0a0b71836b8db422f3605",
+      "scenes": [
+        {
+          "scenario_id": "r123_expand_20261119_0000",
+          "scenario_seed": 2026111901,
+          "physical": "4974a2d41548944ca6ff7f539b9c24b178b789e8f8da030733b6e22ab3afbc9f",
+          "launch_positions": "4eda2a891d0e073bfc87bc9ce26fb40d5b89ceb517739c1f8e7843890606f0bc",
+          "layout": "232468cd6dc3dc39b775641589ba06ffbe87ba2d5d0e3f6981f05d65bbf36675",
+          "trajectory": "9184b01dbd69e677126f116aff38732010856b98de1ff0be62c144f4a75ddcd3",
+          "motion_origin": "0f23bfdc5ca763a02fac3906ffa2a41d448a4a9dff2b6e5f5c66ef909ad8ae56"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0001",
+          "scenario_seed": 2026111902,
+          "physical": "f715885b0c9a5927329c55d69da22b8b78a818196e8ec12d174cf85e42ed339d",
+          "launch_positions": "3992836dc1773c97351c9342c89349d1e0d87170c6dbef796923856254f9a03d",
+          "layout": "8c6823c955ad65f84777ab1243583bed0c1aacd1e71df4d2da95b01ea2a4b85e",
+          "trajectory": "21f354e0a64465aeee7f9dcf2a9e5e92ca5437c3b3668f37ac60758e81f1df82",
+          "motion_origin": "29b5266e4680bd97f5f379b97178cd1e782e85a907e3d68bb77be8f68f093de8"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0002",
+          "scenario_seed": 2026111903,
+          "physical": "fc4c6f5af4729a7474d177e41c43c3390556b2f394e71709d39b4adcc3bcb985",
+          "launch_positions": "eac3450ac56c325deb3ea0e62192913a38a30915892bf6a66a3196af2609f1fd",
+          "layout": "582f31a5557bb3665edead225c64e92e495e4150fbc0cdd3c17e79f10835d15b",
+          "trajectory": "0f186ff9a08421cb714779d603da2d5b80c2cf57c2d70b72baf8056850e5323d",
+          "motion_origin": "ceade5309b5ed83d346a5e7e8558b5d5d4acac322f2bdc3d04fe47f39429fd66"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0003",
+          "scenario_seed": 2026111904,
+          "physical": "3dcbfc10fa235a5131d83b60322073675e54dabd5b3beb7600d1bc20dc7e5ced",
+          "launch_positions": "642ac076031dfc8562d54514172bcbc90d706638837be036188759ef475b5398",
+          "layout": "5583636d498c2a655a33ea3994080c5a80fb0acc523f88bfa69deb1f753ee8ac",
+          "trajectory": "c4772814ce1820aa6910ef2aeab664f1befb66869135f38a8626e0abb3d5ebff",
+          "motion_origin": "7155e213b8b303b32d4bed062af1c76e731aa5b04deddc4afdc714a5c70838b3"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0004",
+          "scenario_seed": 2026111905,
+          "physical": "1ea8f11cb2f9047cba4329916238f2ec7ce9b4616c9a9a1e1417390e4158ae04",
+          "launch_positions": "6361e9d047411b857f0776e2f23de595bde4d19530254c17455b88da4ba8e2b8",
+          "layout": "8ded7374fb042b83e6142cc8759ba96acb96ee7a20c439cd8a2725c4d4fad962",
+          "trajectory": "99a2e8a2c753dd30cab0bbc6c68edf0209220f7b42b685f9158ef3f20a6e0a15",
+          "motion_origin": "f163fe5ba3f438e84b530e2d5449f9616f4539a9a18c3b256157d917bba1f540"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0005",
+          "scenario_seed": 2026111906,
+          "physical": "797efe669f0cf87505090aac3d472377999f50e46b96d48faf2d06aed4f9a30b",
+          "launch_positions": "eb247db485dbfa0db745f8dd6bf3ceb0e80c8ba856881f924c326f06d9f3892b",
+          "layout": "3c3f1edb467d7bff8e6081659a626d4dfd485f6711f836cfded53af5d6ab8c08",
+          "trajectory": "79c894fbf97ecdac1bf69ddff3882445dbb4f4483180cf6be0e3b344de6f4b4f",
+          "motion_origin": "aa5f3956efaef3781926e4ed94b411e41683dc41aeee48c31fc83e4793d0f8d5"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0006",
+          "scenario_seed": 2026112901,
+          "physical": "6984a4d577861d25ba21e32396b9b45638690a72579bba9479812e4b09869f39",
+          "launch_positions": "2bbb436f174e8c0c9d1174d162d7a114a20240d5dd73eab5fab449f03a2070b2",
+          "layout": "e51a0fb90393f7c98dec566f6a663dc7d632610398d9f8172683e345a1832fab",
+          "trajectory": "04286dfc64c04abe99960c209a9895ff76932eeab33f95dd2c0731c57d2dcc9b",
+          "motion_origin": "3c4ad3a29e0ed2d31f69455065653159ac479e6b1dc5789c2641443be49b8889"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0007",
+          "scenario_seed": 2026112902,
+          "physical": "44bbe713cf70f70fb1c6281afb0607d465968f9bf0f0162131d48713e75308f7",
+          "launch_positions": "fad22052e008c8b6aae30d3425cb4e62181f86a824407a4bc8549d072c1831dc",
+          "layout": "fdca48ea1ff547ad03ef8b5e59b7a128697149d30f983e71d52dd38b99f9716a",
+          "trajectory": "7ae4931bab8ea54847c64756bbcdd5703bf7ca2f0e0b22a77ac8554f738db3c5",
+          "motion_origin": "3d3057215910e9c62e9963d6c3bb845bf8d7fbbeef4033de14a621d6c2cfa091"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0008",
+          "scenario_seed": 2026112903,
+          "physical": "b05f408085711e00c17b56415ae0662e73c3a7dedd61b089ffbf9f9ab263e102",
+          "launch_positions": "515b0f36c4c1c7539bc853e6f8cfc28e44b617534013cb9fe3ecffee39276120",
+          "layout": "b7899446374d9c368d1874a4817aa4c68af9974326f1c31cc13804099efb814b",
+          "trajectory": "0cbf9ffca9e74ee25b94e3b6a0a4930abc8bc17e1ff7502be2ef4b2faf28e3ca",
+          "motion_origin": "00d0d97ec4a64c52ee82398c25e805a2f4c2a1d093c73b8f773696deb08f1d61"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0009",
+          "scenario_seed": 2026112904,
+          "physical": "377c095c1818a2d9fd275fcb2a300794a615efc354e79d3c1040fe9d043c87e7",
+          "launch_positions": "8643865832e54ebb9f1b2d9390140b54e99ab17d469ebbf7595cb0f5f25344b7",
+          "layout": "a4eb5285f61a5224b561054f092da5cfb33f2b7941b786837fbba6d29e1d27e6",
+          "trajectory": "b62b4bcf367e338be120274c2f863c4b24653f735ac3448c83bf449da75525a1",
+          "motion_origin": "1aca463db16fe063691d1ec437b9f97d7648ddac898189544a4b385e1b781ba7"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0010",
+          "scenario_seed": 2026112905,
+          "physical": "589aabb56baf821421f4e5877c4f5a7132fe0aa579b33100df6aab7ff5466bcb",
+          "launch_positions": "476c0afda83134c911ebcfc6991a31ade37b513397679043bc474692328432cc",
+          "layout": "1e638756be552ad53aa32e094c610391bd9b9b9082a41742343c9e7815ab9522",
+          "trajectory": "c63cfb6512896f02b66828829a39a90188f1b5cff7f868a53d3baf184092b58a",
+          "motion_origin": "bb5eb2e75d849bad4a3571ede817f8633ea81a4694d38830d3bfe9364217ac91"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0011",
+          "scenario_seed": 2026112906,
+          "physical": "6356c9add789f6c34bf37e1d11c16bc3384077b18f6e40db3534ade505364d03",
+          "launch_positions": "ada8caee71d56c577f367fe653a55956bc7d699683ee3e549f08ed1771f55c6b",
+          "layout": "ea10c00b523cfbbb0d8209f8e8d4a59070bc01f3365a0f1decaf727144f437bb",
+          "trajectory": "273efef996510148e78d65288845b36f33b5eaefb50f34880ff461f0e38b196a",
+          "motion_origin": "ae90728c58144c7ef931f453576ca9d01101bb274e71c0fd462175a25dc469bd"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0012",
+          "scenario_seed": 2026113901,
+          "physical": "d4ab47d2d74e7604d4378201ed56529991376d20df776dbc14b793f54920690c",
+          "launch_positions": "a15c3b6bc9f43f5cb7605568fdd347b66ad84a18e075aad21528cdb341a4e4f8",
+          "layout": "d0d9e72cb8d53517e97af5de2bc9105dc1b95a037685a3f1f5bc152fbf2e8876",
+          "trajectory": "128eaa62845ac372736f960f62950fea0cba9ccea3275e01d7d0fbdf77fbd9f6",
+          "motion_origin": "1cf9fbfed9eff9e536a953e677689dc5a1bd5c01581b6a8b5d186433f702f31a"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0013",
+          "scenario_seed": 2026113902,
+          "physical": "b93f8a339da9ee2148d884ac67def1a3e83df0b219854c3c7437af27833718df",
+          "launch_positions": "a692f255a9695151c5a107a7760e5f96e34478238c096959aae4cea3e69b1dab",
+          "layout": "c9c50e3d33618de7202bd57e5125d4467d33e929d3e524bb3ef460d133597aa2",
+          "trajectory": "3d5484e24c4dcf298efe6824d1a815f6a36893a80eda6c5b4eed3f7580c8b38c",
+          "motion_origin": "0aa3823d609bd380fdb53a95b4f00d830dd426a5831dee02b770396cc720a3fd"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0014",
+          "scenario_seed": 2026113903,
+          "physical": "d767e560d15e408e341f0aff2cea91703300e373ead9d3fd5d697a554c778774",
+          "launch_positions": "5005c1bc0d800ff76651c82cac2c16b43adfe3fbded0c564e3c23978d3c2a608",
+          "layout": "a17def01eff4fa032099a0a1bbd9eaecb31a9775c1dbb3143ffa4d2b823e0d2c",
+          "trajectory": "65f30d832d47d933072abd10792a8d6176bf5fb341a675a0c06216833c7482b4",
+          "motion_origin": "b08a1a592e382c0833798a88ad1261bc45213c36154173c55c9ff9b28c71def9"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0015",
+          "scenario_seed": 2026113904,
+          "physical": "84fdd78839235d53028266fab0661c2d2d8ad80f3f9f92946acff78b441a44cd",
+          "launch_positions": "b925b1c6a8a284fd57858f42eba822144b71eec9fa018b7e1b983ef2eaaca450",
+          "layout": "d146d11b5e516d24e1dee2dd5210d310ad42b95719971b9462c2653bd53f543a",
+          "trajectory": "7477a304c2b44fb84fbc31ed42cd7ae473d994c43f93ea9b4ca28f189732daed",
+          "motion_origin": "16b62fabe5e30af884a115cd5cb4a4d7bc1af18afafdbfd3da7f229c563666e7"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0016",
+          "scenario_seed": 2026113905,
+          "physical": "f19a3918fa6df7611bf4987885b4e9f9800289ef7a9966ae64529a7040649971",
+          "launch_positions": "f3e6d30a3c6a7de21a241eeefc7ac9b589be47b954e48ce34cdfffa9b1e86078",
+          "layout": "b08b30363e63ae890019343aa890f4d87c94afbb08d4bd6862e6a13317966aa7",
+          "trajectory": "e951299c03a1894bbb7e1c78ffd71ab3904e61ca93b377868d8eec88bf87fba2",
+          "motion_origin": "7bd31eb666a3141673114308432aaf2b0be39ef72e1c9e459ba5c464e4de8bc9"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0017",
+          "scenario_seed": 2026113906,
+          "physical": "809e10044242757977ca1f474dc0d4d389598574385807cb02f623d87c0c7859",
+          "launch_positions": "8d803d9cd6ddffe1ccc779c4307a4340eea1025e4b1250888ea494acbb282e53",
+          "layout": "e915a08c3fa1992dd280eaca95f019d84d19db6a0294e03e2fd18054138babe3",
+          "trajectory": "9614d0835343fd37e350b8f945ba8113cc5d830d1e2b50ddf8f5c078fe40f28e",
+          "motion_origin": "d11ea1bb5f4b660fb09e5e91dc4c1d463e12f1fd10f956f4734962786998bdaf"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0018",
+          "scenario_seed": 2026114901,
+          "physical": "dc4c630e57a2b2a5085254d8bcfa9f85c987be6a5827138de99629e6e5cde13d",
+          "launch_positions": "4684c87253424d75cc0f25f1832d05e4ce692c5950a4e3b7d2d47fcab909115b",
+          "layout": "9cc930e99b740b62109d05bced85df559172d68063cc35138dfc3ba277504307",
+          "trajectory": "a1232e2070015f648639b4d09eae2256efe47c63faade9baa3fb82d54fafea4d",
+          "motion_origin": "10986d8b1561c97d143d65ff729c614dab05a5d1c3503eb3e5b6905f25438f05"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0019",
+          "scenario_seed": 2026114902,
+          "physical": "1f7b8a27f13f52f19eb00a795da89ebfe89392458ca244dd66c64905acbda38a",
+          "launch_positions": "deb437d86e6921056ad2084e62f245b951f3a2958666c47d61c78f9947195f73",
+          "layout": "5b6df67d2b4a7cc78dcd554c47d41b1e40ae4a4e04225388c77fb16e60be3546",
+          "trajectory": "72d0b748c8232554eaf2d849107232af9c115a56675bf36c637ec6d89dd5b759",
+          "motion_origin": "709593caf1fe142346f3ab3a8e97667d015259d5d0d802560cfca3b1257e2884"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0020",
+          "scenario_seed": 2026114903,
+          "physical": "d4bb39cbecd21e2c6636e26362755797b45de5fa1e66304cb6b307b55f8e1c48",
+          "launch_positions": "3562460dd01cee118bd464fdca2f0a4a23e962fd723eb8b20e418e15edb29624",
+          "layout": "49fbd98a62817511069fed288345ccdf366eec4a61caf2b06febebe48e956c5b",
+          "trajectory": "6e591dea48f887cb0c14ae679606988cd53f83d563c48e63eb3d689a8c0ca477",
+          "motion_origin": "8d0a4e8a8747519db0d09217c55a4ef3fe0c332a9facf0596165ac2af95fd4f9"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0021",
+          "scenario_seed": 2026114904,
+          "physical": "366c3d671b42f86a5d2ff3eee21b002aa479fc44e9c8f1008e4dd87768e87d61",
+          "launch_positions": "41d007aff3eba852ce75cf57ade6ab1870973395e33e16606195008c88ec91a1",
+          "layout": "8da5439bd3073ccb9b387ba318e1be97142f56604506201113200ea79a7af31a",
+          "trajectory": "2aea1e806d1b192c642aeda89faafdda523687841a35a5e207a84c19662f5d17",
+          "motion_origin": "4a886b236f9fdb975d0a7f0b2e96c36cf1dc4ec454ef60222d6a4911c8a280d1"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0022",
+          "scenario_seed": 2026114905,
+          "physical": "f04a0e4e790ce19780ea2a0acb7cc3a3155f11c4bc1fd252eac8ade45fb9f440",
+          "launch_positions": "a9aa4e480d95ca507c8eac2e89a82835f6b9b33cfdd88a41656871be112b0d99",
+          "layout": "7be96d8314edad1e12d157c45cb3c683909f4cb211838220255c84a4e03cd1c9",
+          "trajectory": "263bc4dbe53fb81ece572e82ca5a31e2f2e44a0f5841aad1dbfd8c2678a096d2",
+          "motion_origin": "e15dec7c15600f8aa2e8a4d8bab36adc57758eb3f9d13919edb0c3898aeeab97"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0023",
+          "scenario_seed": 2026114906,
+          "physical": "ac71e47d90b9b93f1f6a4aead5996c0d328241a2c0c84b6d03347b57407aaa67",
+          "launch_positions": "3a06388d4dfc38590b85496f3a007c6a59d25848641238c3212ebe86f2d6d132",
+          "layout": "7ba6b01973f990fe2a08de13b959658f9fcf9afa915166825c6a46672a18bffe",
+          "trajectory": "f679ea7f52f79f4036405d9375b6a34f4bc5b1decccb2d5ee51c460995eca72c",
+          "motion_origin": "c7ea6c633381834cef3e80da0a1e12d939b309faf12d89fc3965af43b747f81a"
+        }
+      ]
+    },
+    {
+      "name": "r123_training",
+      "path": "3090结果/11.16/r123_20261116_103339_2030716/screen/training.json",
+      "field": "scenarios",
+      "sha256": "5d4c35894fc63c250d9b23c93656c992fedc62c16d548edc7f08c1c089aa3d4d",
+      "scenes": [
+        {
+          "scenario_id": "po_train_991001_0000",
+          "scenario_seed": 991001,
+          "physical": "8d1334cf1304fe78b916bb93f2091af129eb49544a90027be043d6c012e80482",
+          "launch_positions": "54ce90e003be9a18f87ea75a6d621f11c0282a8799730fdccfd63c01d14c7b19",
+          "layout": "2dbd11b8d493f46ae37985917e19759639213581dda12a4cca819d95858dadde",
+          "trajectory": "59d75cf0d33f91e78159653244663e43c5d81a8905d7410c5e6946387f09db57",
+          "motion_origin": "6e4f941fdaf91b3e0150c87e3f560d8a4f366e8b5fd2492714b47f250a3b0050"
+        },
+        {
+          "scenario_id": "po_train_991001_0001",
+          "scenario_seed": 991002,
+          "physical": "f705ee336ea8efe11d012735e444efce5092323592e03a07aef3683db06adf28",
+          "launch_positions": "9cebd264a8d90f1351b3b1839d75260db6442f940b436be0b20c998e75e79439",
+          "layout": "3904d23e4d02033716b8e6f5577be33ba54953e5eb46f0a00a013eee7b3bac9c",
+          "trajectory": "f6a990d37c68a752c2e5cf7428e32445fa9d98696c3226d1c3ec5364d48e2119",
+          "motion_origin": "aa84ba2865f5d9649baa287be14d16fe7bb5c2ec988f09a7a13a63eecbcee4ea"
+        },
+        {
+          "scenario_id": "po_train_991001_0002",
+          "scenario_seed": 991003,
+          "physical": "0e8bbe30931a084466093d56bca23be6f5ea458bc31f416a70522704b6cb4070",
+          "launch_positions": "7dc3d4eca27e5cd4aed0eea996d46145e540bc7e1df052e340fd3e5bc4c9e4eb",
+          "layout": "7de97d88dc15414b18f41e5a7d60ba92c878daf41f22428358934e0b23f68a41",
+          "trajectory": "60669bb764411bf6f5505f51f56ea55c85f39f471f2ae058261f8d95032bd73f",
+          "motion_origin": "1c55f81faaaba7e730fe69faec3a35c24c0fd609a6d4c2d4ba3f44c1108c2eab"
+        },
+        {
+          "scenario_id": "po_train_991001_0003",
+          "scenario_seed": 991004,
+          "physical": "e1af1e786f98eca894bb484eb1068adc1227aae1de7a28e74d2acf5b7a24a300",
+          "launch_positions": "4e7f97098f051150ebbcf1d8b0481f0d19059d2cbabbe57e5d98112897f0fe75",
+          "layout": "1affe0e87ba625a38a6b4c631c70f3f81c91733d6e3f5a7418d7a259ef97652b",
+          "trajectory": "cd8bc3333f6c42846260749e078f0d06e8fe78302e71788d726216def9ddab8c",
+          "motion_origin": "6f2c27697020ecce9b14d36ff7e4806c083c6211a83e5ee623caa9e418594217"
+        },
+        {
+          "scenario_id": "po_train_991001_0004",
+          "scenario_seed": 991005,
+          "physical": "361cc79dc3a0674ae1734e41e7f92c06e8fa3747cb2b568c8e228fc574a8d7c2",
+          "launch_positions": "bc7bc945b28a8c04c5d752c7be8ffccdb2bbcd2b38012c7f3033b155e5e930f3",
+          "layout": "df67628fbb3c93e49439ff79bcabfc9c5eed7e1608a72109e4cbed981a27f612",
+          "trajectory": "1c1098cf755c38eb1100dc2d4c0aa7ff957d393a1e4bcbf3f8603304cd8c2dad",
+          "motion_origin": "2e5872fa390ad2472142909015e3fc2e85d465add775f77b68c31ccb2a6b3f1e"
+        },
+        {
+          "scenario_id": "po_train_991001_0005",
+          "scenario_seed": 991006,
+          "physical": "0433b13f62293f89683886a72db0d8fc6ac4c7dc5be4ab6c1ab6c2af4e711eb8",
+          "launch_positions": "9640b063e87183fe0222e040743f225107cdae3d9967c6f0afe4d1014bdcb5f0",
+          "layout": "c0baf606bc2acdf6f8f2e442cfca987cc1ecc2ae6de93f47e068dcc775277c86",
+          "trajectory": "847ba1cf95bf19d7eca5ad80381af21d8e9f9ed3a18f2869ae752d034056c989",
+          "motion_origin": "5c0ac6336ae7927f401ef4b22c458e48c94c3c6ae9f3028f4183fb7a7fb6a5f6"
+        },
+        {
+          "scenario_id": "po_train_991001_0006",
+          "scenario_seed": 991007,
+          "physical": "c562b9a864afa65dc277ab3356e344470f196e1967b9ad26bfb4bd65aa37beb1",
+          "launch_positions": "83a25211b8e22478df39631fc684bc6eaaaf4a49325afe0ddcd362b03690d0d8",
+          "layout": "34ba5442bc0bc346db5f23732f25e41d07dc99b3074f5f48cacc7f837d775672",
+          "trajectory": "4154bd287a2d49ed76d67a7775682317310987ea5559deb946a95d5768e8ef9b",
+          "motion_origin": "eea78c0f0eb625a2564023ce2c908ee2b9fd25f5e1d267fb272acd690d6b4930"
+        },
+        {
+          "scenario_id": "po_train_991001_0007",
+          "scenario_seed": 991008,
+          "physical": "7f6f1c22d746ab94a9945ea855ebcbd9d3bcab680141918801e3e41b7fc73eaf",
+          "launch_positions": "b718cb58d901c663604b0c2fecd9b156cc4c32fe091c2f1f8f7e2e32f8a71d87",
+          "layout": "c749a15305cef56695fb20ee93190ee569ea3779d391634af21050302663b2ec",
+          "trajectory": "52a4f34f03886748b3c48129d45c992d2ca0e4e3474a6735da53fe81e680fa75",
+          "motion_origin": "f7d4c9cdfc94c72c3ad27dd5ba347b7f675c0046eb117d003338bdfb8e2f34e5"
+        },
+        {
+          "scenario_id": "po_train_991001_0008",
+          "scenario_seed": 991009,
+          "physical": "4fce6604f95405f24d7ea9fa0c319c6864087a625f1409d42b07fa67e9e0487e",
+          "launch_positions": "80abd3f1edcc534622535c724ec681096efeb8d3020cdc9f7dd80b34b0d7d56b",
+          "layout": "a27456e4d71211e6b1b293df793cfbc72dc67bc31154e1f8705430e040e616a2",
+          "trajectory": "3e72e1c4712392399111d4570f8fbb112de8cb3ceb3e6dd5cb8cb0decc4df21a",
+          "motion_origin": "fe61c190a8ca8c6dfcc4ba5c976f7b849c50b02a6da7576d4a84f6e0ba1f2586"
+        },
+        {
+          "scenario_id": "po_train_991001_0009",
+          "scenario_seed": 991010,
+          "physical": "9e4811370f47edf591cd6aa028339c7b1578d015ec30aba979d33f703c0bf40e",
+          "launch_positions": "abb9f69c5816e7d5be006e6506c53535a13e62f308ffc70df1f8112fa258a69f",
+          "layout": "d0dbaf768648cc10ada846185e53d71824d616aea8ae2b035199cc6c0910dc79",
+          "trajectory": "12f0e1ad7576577fd61e98ea21597eb5375da0c3110a63fddd2ce593fba5d688",
+          "motion_origin": "6352146e9fe9b798c3b5525ad8345d4df8fa735b519094dc5f1c292ebd3f72a5"
+        },
+        {
+          "scenario_id": "po_train_991001_0010",
+          "scenario_seed": 991011,
+          "physical": "6eb456288bf4dbe88870caac4c4b6c8bff8eab73780eb6ebcd4471a21aa76cdc",
+          "launch_positions": "a6b79b4c4bd410f2ffffdfaf8ff516e6e34055f5c233442f51b686b8eab6a179",
+          "layout": "fcffced4a19175da359ec136913c75e976a684c493840dd82ac402ef1ddc518d",
+          "trajectory": "e1d0c5f882738c58cf188f434d33a107adc1fe767ea8aac6dc5df51f8c4029d3",
+          "motion_origin": "19f45980b85d797b3417d9dd61cb05180e3a286d21f2a344b9f4a78a35644216"
+        },
+        {
+          "scenario_id": "po_train_991001_0011",
+          "scenario_seed": 991012,
+          "physical": "669adc31f6c5641c7f731162df6faed93575c05d71755a1f98da2c8381d3735d",
+          "launch_positions": "e6916a41e75133424ebb8196a3bd420278fd101957ddcd35ac1fcccf5ee8d3ed",
+          "layout": "400dd54c484b2e9929c31956421d2a81bd1039e020b4c04222ea67ff14b34c24",
+          "trajectory": "e7a825757453cb747d466fd6ca4645e87f3c95f838782052843f5442832d50a8",
+          "motion_origin": "cb1be22b04f5dc3c043b8f7a9b99cf03213e2bb7ce0a4430f8b9a8e17480ef7f"
+        },
+        {
+          "scenario_id": "po_train_991001_0012",
+          "scenario_seed": 991013,
+          "physical": "69ecdfc775c97bab272e2e701f23b2a1203321273903d6347abcb4a442e1ee8f",
+          "launch_positions": "f8d2a57e1f52ed5cfc530c272683e03b960de61a6079c9ca684479b6dbe6d8b5",
+          "layout": "40d9d105ebaec6143ab8ba53d0dc0537dc6a459f67b38717afc6c37a82d59c59",
+          "trajectory": "276801a3f3d890bf53367a225f5ee75f477817dbe7888a6986ee1e8512b0e394",
+          "motion_origin": "a44f85f4ac1197c5375f43149e03dc41fe3323f308db1c34555aaacf078df62f"
+        },
+        {
+          "scenario_id": "po_train_991001_0013",
+          "scenario_seed": 991014,
+          "physical": "9cd33d56ff8beb5eb93404201023a124f9eb689766fdf59d5c65bb1ac154c34c",
+          "launch_positions": "364657c9ccb3a7cabfb557e44f84441aad2036ff819f54982585e0987675d0c2",
+          "layout": "79e4fe5a2ccbae38d0d9c14ce839bc6c5e56b167d076822c7c2f5af068c3e842",
+          "trajectory": "0b603dd9916b0e397e22b34174da93f098c950d13789ef55d462542d4cc193f4",
+          "motion_origin": "e92eb4ff346d923dcc767d9e6299a94cbeab0b2066bef92702854a088c36336d"
+        },
+        {
+          "scenario_id": "po_train_991001_0014",
+          "scenario_seed": 991015,
+          "physical": "abb3536e8970c078c129dd8bf3eeecf4b4573f7024857562f320629581e83dc6",
+          "launch_positions": "eee142db6e345177d02a0333dd13436fc5a5f34f7045fa6b32794a5517b7ad77",
+          "layout": "0d080613ad2ad26957ec1a8800cdff61835b78e6cc31ee5efb98db6916f34fc0",
+          "trajectory": "070d7f940de1af03dfaa05241a61777af2c533b63754e71b45da1a45cd9323c0",
+          "motion_origin": "d1b341cb7400de972c9480e922858ba0d0d3012ee638ea80ffb19f0909a0d10f"
+        },
+        {
+          "scenario_id": "po_train_991001_0015",
+          "scenario_seed": 991016,
+          "physical": "491d347e8fcebe84246533f4183969b6887b9cd85424826b8ff0dbc83a1a14c6",
+          "launch_positions": "31ee37d76edc4ec04b32fff45917b486578fabe54f5117a269cb44b6b12b4943",
+          "layout": "be8e5aa19eff294d4668a965fec76ae853f99e7d8aaae6b829a75671afc9c631",
+          "trajectory": "f6ffdb45f1fa31b5cb353b68733ad6fd5b3536f7e65c5b958cceb73663bdcdba",
+          "motion_origin": "6a78cda192a099312d1f5b5fcbdb4310ac516797b8ad9312ecf601e2b5852c10"
+        },
+        {
+          "scenario_id": "po_train_991001_0016",
+          "scenario_seed": 991017,
+          "physical": "75c9a2d4c9db23855752f17be27ed02d8a25d52bd36815fa04a23bb92c13b72e",
+          "launch_positions": "2b94ba424c56a1dfec970dae9ff1affb84b24928fa5b522e1791a413b00420e3",
+          "layout": "f634e7d84174f794957e8dd4e54969a19b93bcf8481e8f30915d1bae4f545293",
+          "trajectory": "d9b1e58e9f1c0e96affa9568245fdeae981a2b53e9f30a4ab223171238d4bfe8",
+          "motion_origin": "b0236b9c11d9eeffc70385740d2846b91bfbd07c508bdadcf5e7b6639dac7ea5"
+        },
+        {
+          "scenario_id": "po_train_991001_0017",
+          "scenario_seed": 991018,
+          "physical": "b00cb2dc7335a7ccef38283064b8b88d98deb346597d06eccdf6d67485faf67a",
+          "launch_positions": "465956962878d8cbc25211a8efb26d051d69791bfcc8e1dcdbe957f8ea7cb862",
+          "layout": "912a4e5dc9726aac2a35981b0216c019b7f0b94361f36c849b3bdea9661bae9b",
+          "trajectory": "5114a11a5f75201dc5ce1d3e8a123d05c61887c1f25029b4c359d94d02dafc68",
+          "motion_origin": "3990e6c6f9ed2caa623d75d5d591582a33e460f138f6e62b16ae9b72abb1e587"
+        },
+        {
+          "scenario_id": "po_train_991001_0018",
+          "scenario_seed": 991019,
+          "physical": "b8f896fe76498172e52b3eb67849701f595bf97172e8686aa5e590aab2b14bc9",
+          "launch_positions": "e4cc102043d2184387b7b015ab90103406626677cf59d2837d2111554691fece",
+          "layout": "40b49d3b8d8dea424aa2187323620ffb4e05dd36f682cdfce647b5a098cfd3c4",
+          "trajectory": "0a1f480314a175e43397bf45e5a7a10e35a7b4fad74cbbc2057496c7c26a9b7f",
+          "motion_origin": "4b4dbfb9dd58fe0164ced4e582a2637f23fa05d4bc1e8ba310a680579b2fb717"
+        },
+        {
+          "scenario_id": "po_train_991001_0019",
+          "scenario_seed": 991020,
+          "physical": "93c2bba074b293cfa24fe0c2847cc4e4d3e820727b782818573ebbc1d6a3c74e",
+          "launch_positions": "8b93c8232542fe384801d6a47088a1fa40dda0c814aa51b5476567751ffedc9f",
+          "layout": "583a8f03f01ef152dd74c381919ff649861d9ffee3587c7b4bce39d518c79465",
+          "trajectory": "2922062d45957ddff82c503cf07e505e9136f89b7f091dfd8fff42b1dcd27b76",
+          "motion_origin": "2c518f4b8db321d7da2fa03a3317e42aed3573626c89276552adc914b130a6b2"
+        },
+        {
+          "scenario_id": "po_train_991001_0020",
+          "scenario_seed": 991021,
+          "physical": "94ea5caa7d65571c445ad153e8cfcb9ef10688db45bd6a346dfa5a5bf12a181b",
+          "launch_positions": "a4faafc8985da5d3a2d4cd3f561573539e134cb1de0a7ad1bc564898e907b997",
+          "layout": "42cd75669845262b7526dd46263b58e957e70edbc5dad0726756276d8015686f",
+          "trajectory": "9644507dc0778eeae5aa6992f38ecb9091b2a54e694fdbc8f5cc1cb38ebda0d5",
+          "motion_origin": "4aec5879a0633987b1757786c172c7442c3f734743f3cc5ebd64a673221ea2da"
+        },
+        {
+          "scenario_id": "po_train_991001_0021",
+          "scenario_seed": 991022,
+          "physical": "6b995b8665e71bd65d97d59185d581548d416d532a2e1d7866004c2ebdd5af9b",
+          "launch_positions": "1f2a0743aff88729fdd1c45f68dadeb2f97205ac6379f1625e62f09dd3baa6bf",
+          "layout": "277488289e5ca8faad408adc9342dfd62bb5d2464ba27e46596ad9175ba2d278",
+          "trajectory": "f53124aa62361d684b57c2dbd0de41469baa3f84a096eb9a2a7a93c9e903b245",
+          "motion_origin": "ce1e4eed296c769f12d02679d14311f92b4d945f6057260d55dd9ca7a21a4a7a"
+        },
+        {
+          "scenario_id": "po_train_991001_0022",
+          "scenario_seed": 991023,
+          "physical": "ce5c34fe2910d05785c52aff795996789386607df5294f9563228ab4469abe89",
+          "launch_positions": "de1710c615dd18172ed5d3e06794ba5d613ab3bc68238357279492129a25992a",
+          "layout": "20e703311e0de1d236b4e13a2fbdc93e630e286701daf4efc24dcb83b8dc4cb6",
+          "trajectory": "95f3ba0240429e417fffb5dafae112d29e0a979502b1ef9fd034d78037ad2c04",
+          "motion_origin": "2e112b6f55817100b08fd9f6f978ea85751c60129b744a0c2c5730437243ef79"
+        },
+        {
+          "scenario_id": "po_train_991001_0023",
+          "scenario_seed": 991024,
+          "physical": "8b46b2fef97043037ba1a2a27474b807a29e5305913ce2b2f4db9ef47a8343b7",
+          "launch_positions": "2509e71901f55922a81597020e83ecbec33982d1a8e8532f302b81bc71aaa458",
+          "layout": "ee921df5296f2380c650e38b8581c3312965a9dafb162f96a08fad374affa3b4",
+          "trajectory": "3e8f09f0a07cb1e4c546d48d4776d08306a310b30013c72aefe1453615b48de9",
+          "motion_origin": "fce817d846f77c3c359a4a8d2cdd99fb00785c8adf4bb251768db760932de3b9"
+        },
+        {
+          "scenario_id": "po_train_991001_0024",
+          "scenario_seed": 991025,
+          "physical": "c103ab1ec7c46fcbe9a8554aad9d1f7095512540e8ed90b64c1f01a606a682a3",
+          "launch_positions": "b94eb53857f781b58e7ddfcf035146bea7ce3dc8b25ccf4951c58cb8b9605613",
+          "layout": "d8be381cdc6696454f62635e8739650f9bbb60f422a89f79622742a42c7125c9",
+          "trajectory": "638eaf2a220e8c7288de44efe4c02b0422a8cc1b9eeb9c1bc11835f2b9532434",
+          "motion_origin": "91b8955a371e2d34737cf210daa1ce08bdea4d9d2b6c5abdc50a87c1ce75d33c"
+        },
+        {
+          "scenario_id": "po_train_991001_0025",
+          "scenario_seed": 991026,
+          "physical": "e096b9f5f0735d3018e703537bb93bb33f76aa1ac91a31645d41f5ae598cf749",
+          "launch_positions": "9ffd5dd5d8efaddffc1adb5b6090be8a37901e8c3faa6f8e05f0c00cf1929659",
+          "layout": "abe3e11acf6d53c1e0ed012fbc03cea4b9b490b55e2d3dd645aad5a386be1e8c",
+          "trajectory": "abc52792ff84060a2312a61230dfaef765c5574001c7c6a523035341cfba92cb",
+          "motion_origin": "e7344a4b96675a888af841d7398bc74bf217c586218250f58aa50f31ba69d475"
+        },
+        {
+          "scenario_id": "po_train_991001_0026",
+          "scenario_seed": 991027,
+          "physical": "81e969213603c1816cda50e9f95a83ae9be7f24c3cac3b03dcec7fc9aeea6d52",
+          "launch_positions": "6bd0d5b10c8d9bbea9a5d91a200c209c11ae12ab9192d5bc32691218f0cbe922",
+          "layout": "b45d721a9fd137dfaaee0b03719627e077adf958311a4a897494412a4808e80d",
+          "trajectory": "769d63208e3b79d312997ee770b01c75dac828214e31f027e6bad7fb039a09e4",
+          "motion_origin": "3c0cdaeabc345365194db55cae44451bbe147179ab4fa2badfea09857f2a087b"
+        },
+        {
+          "scenario_id": "po_train_991001_0027",
+          "scenario_seed": 991028,
+          "physical": "ea8a3c1402b8f39ed3f46d877de3d3c7423f7618e20e5b17fbbfef0dd4c215e0",
+          "launch_positions": "251b61a8bd9fcc3941ab8fe1e297115bf34644e19f71422dd1708616f099e78e",
+          "layout": "c86ef29b2714cf4ae3fffbe6744bd00d05735df9ef96f7965a8dd2884cc80872",
+          "trajectory": "c0efc01f6edbec3c5cf8e236c22f7b69a94c0875704b8356325b9c49f5a1793a",
+          "motion_origin": "d0b46f1ced5b0fc89bc65aff87847ecac73acc99eb066d0d5c1bea0ea4b2bff5"
+        },
+        {
+          "scenario_id": "po_train_991001_0028",
+          "scenario_seed": 991029,
+          "physical": "2d4191262da8294c65b1d03827249b18b7c02427e27be473234bcff5592156dd",
+          "launch_positions": "cb084320a2217e192459084934f72f7dac35fd6d9a870257675967446243b289",
+          "layout": "845f3bae1b6cbe6576e67a859716a142a15c95f8d5e79fa5e149bb0f07dbc997",
+          "trajectory": "b5396c66a701fbc3d9693d60e81d292a7f97dc064c9ffd65938f870bbb574d76",
+          "motion_origin": "8c5fd1777ec9d232cbb599d553c67e06a0af5d32c85783cbb48bccf16849a27a"
+        },
+        {
+          "scenario_id": "po_train_991001_0029",
+          "scenario_seed": 991030,
+          "physical": "d0148c1021bf24eef16129c7bbae6ddbe6886a439219c8dd46d71245d9af42fc",
+          "launch_positions": "460e747cca07592de67904105f5c5c8db34839997bcf9c2f8521eba7e3342106",
+          "layout": "82bdba0c5d9710054d5dbad97306af92cde5d4d4f106f816e10b57a6acc56488",
+          "trajectory": "281c764e7d29cb0744591fba1c20a8561bfd68ac0d9391a0e3bf841bf0ee85ec",
+          "motion_origin": "532d672b07fccb07e2328397c2e730b0c5334b7cc35cd3d883d3fe8455fd1a79"
+        },
+        {
+          "scenario_id": "po_train_991001_0030",
+          "scenario_seed": 991031,
+          "physical": "a391a3786b2cab0dc1e838dafe67e1ae1f1486a78c4d0d6e3f26ade635c72ed8",
+          "launch_positions": "f3e48c865931dc8eab33f5dd7305b45fa1ca175a2633779a3e16f3b80027aef0",
+          "layout": "b7fd1dad5103d38e3eb6b30011ee85fcf269db0e39f2b59f71bbc24260fccf68",
+          "trajectory": "aa2837385819476b326cc0e4639259956360522cbd05a0237aae6012f42bd720",
+          "motion_origin": "0aea63426fb6aef3d230f29480cd8b2553dacba1088a2c522d1858abc3e57e2a"
+        },
+        {
+          "scenario_id": "po_train_991001_0031",
+          "scenario_seed": 991032,
+          "physical": "94eddf9253902a78f01601bb65237a0072701e95fc37aedb00e38f6a08283ffb",
+          "launch_positions": "dec08e0df7756f9640f840dc12d2e9d8be38df44174f9cc602f1c07c3c9efdd5",
+          "layout": "d25a20a91b38e4491c3bf70911d1002da4aa5fa9bc2fa7c52433a8bdd0a555e9",
+          "trajectory": "abd1b8412f8eb5ee4597a45aed6d1291a78d6af1759ceddbddd5af6f4b45dcdd",
+          "motion_origin": "9b38777a3784c15ac67660539b30499c337e1f932b15ed20505fe660d7affbc2"
+        }
+      ]
+    },
+    {
+      "name": "r123_development",
+      "path": "3090结果/11.16/r123_20261116_103339_2030716/screen/development.json",
+      "field": "scenarios",
+      "sha256": "91cc5a9ec5b0b24b2ae18cc985cd9875bf680833d39d3247436618b84ef8a11c",
+      "scenes": [
+        {
+          "scenario_id": "po_eval_992001_0000",
+          "scenario_seed": 992001,
+          "physical": "ee71b777c56ea314b017a62450476a4147b47e166c41ce8e1415339ffa9b2fbe",
+          "launch_positions": "54702dda8c3cdee676bba089640698a3cab2bb86e316fca996875d31a94fc043",
+          "layout": "7d558fba7656ca44bf338f0a7cb165638b40a26b1a97e59874c7464a0c927569",
+          "trajectory": "bd346c4b0709f5532bf5ad9619814bbe2e1d1037d35743ce09fb6ec2988d477f",
+          "motion_origin": "4e776e65a4289281729ca262f3adddf227c7f224ac81bbcbe9c25b02fee970b9"
+        },
+        {
+          "scenario_id": "po_eval_992001_0001",
+          "scenario_seed": 992002,
+          "physical": "0e193af7efb741c4a83bff1599e251d4bd57a13d9fa776650ec4df520edfe810",
+          "launch_positions": "9f9b5761c0156f4f5ec573aad6da18ef6adfe69af0855f6ae6e7dceaab29c772",
+          "layout": "b4e236e4a00aac03ff1a002b380b7b9c98172f89d0c80c006f71588147833e39",
+          "trajectory": "547384b6bdc5ab2c9209f260b8e01ce232a422cb775e6a82a301baad9d02b3ff",
+          "motion_origin": "9a254e1ddebd514ba2c8110ba4ac867eda5db995300f8a3e00e0581a4f245d80"
+        },
+        {
+          "scenario_id": "po_eval_992001_0002",
+          "scenario_seed": 992003,
+          "physical": "0d822efae2fdea2f8c94071f49fd3bcc86cef1e7d8433a4fe9b053564126f1e3",
+          "launch_positions": "1b65ae9a622e9321e06f2c78434fbe79e138bb12b52ef86eaa88c71aa15ccb95",
+          "layout": "aca600182cea83690a9a6f95d66ebebc74b9577b67113b59cf34ded2dc64ebaa",
+          "trajectory": "83a822a2f3457fdc93ac49b5dec42994dae3e54e58a6cbcd4cdd3f7bddbe5690",
+          "motion_origin": "26c3ca4d0962be0b8834b57f3ab0d26498236cec7fc5bdb400a210b1492d3912"
+        },
+        {
+          "scenario_id": "po_eval_992001_0003",
+          "scenario_seed": 992004,
+          "physical": "f367b71754d462e3c444c1de377389cd16027ea8112724a5327fd5741204731b",
+          "launch_positions": "3c9f484dcc87a179559263f959de7e96a25637db82843b15ea547c8fb611b6d1",
+          "layout": "9ec6e48a7aa6ed82c58953f7f50d48935be99e2d1f598ab0607d4aa9a0085202",
+          "trajectory": "bea82d9c2afaa9face654f89c9877cb799419f63c5fe22ee1ba859322a31e389",
+          "motion_origin": "95f8fa2e8c3d5b33639b7b3f410061dc8912c5705b38f18e4661d7cf7e98e5dc"
+        },
+        {
+          "scenario_id": "po_eval_992001_0004",
+          "scenario_seed": 992005,
+          "physical": "d9ed01dc6d34a2b8f952f5c378f1ae4e4192d5716c14ce2c5a23804ac2196f8b",
+          "launch_positions": "6206ec407f72308f2f5f7b4f10a67bd12a715591ca15614d519f01a5e56a376d",
+          "layout": "0c3c0ef2e8d7acf5af3012177e8d9f36ed75def2b9c646271798e7e3a2b82b6b",
+          "trajectory": "c4032787967bbe333298e9a0b87e19dbc4c5a6089b077fea603e9a495ea83cb4",
+          "motion_origin": "03b5f5ca58c114117da254d07a0c94396b243e322e2c3cb41353473237cc0703"
+        },
+        {
+          "scenario_id": "po_eval_992001_0005",
+          "scenario_seed": 992006,
+          "physical": "d682b16b41f33b413b3b7f040a4d5d1870544c47946bebcd1c8e5bc0ddc19faa",
+          "launch_positions": "a7354512db9a804f5b646c7f4cb92e4ce0e7442cbde0c2eb8ba77798d5160f51",
+          "layout": "150bec8ff54dafb44c6d79c2d061bed5e95873757a7e8613ba0b17c544e8a853",
+          "trajectory": "64182fa0e791c53b2870ec7f645a67dd4ebcf95573f5bf34071086fc2259e4c1",
+          "motion_origin": "b099af667d8e3c2a8e7fdb1de9a4ed52a4054535ae4edee2d1af4c9b08ef74b1"
+        }
+      ]
+    },
+    {
+      "name": "r123_test",
+      "path": "3090结果/11.16/r123_20261116_103339_2030716/screen/test.json",
+      "field": "scenarios",
+      "sha256": "3258c124769c14b3b5806f1f4ced5cf1332ebf6ea7fbd4acf2fe6df5b0d11cdb",
+      "scenes": [
+        {
+          "scenario_id": "po_eval_993001_0000",
+          "scenario_seed": 993001,
+          "physical": "eed096ca5fd2c1306a972d742ec8da1627b3b8636def939e97de1791bc4efd69",
+          "launch_positions": "f37f15f4cee8040be815f34c7f85687106deb53a7232f8a134881325838015b8",
+          "layout": "16f64578c4b52c9dbdd9029de1447f0369a01f119b6db1218f7b95f950eabc11",
+          "trajectory": "ebceec62c43ed560787d942c256d93dfef6ed48f1fe9a1be591f6ceeed5e9069",
+          "motion_origin": "fc1fbb91345ff605c70ce7fb850fd01d06968b42fbdfe1e6745ceec1c9fcd90d"
+        },
+        {
+          "scenario_id": "po_eval_993001_0001",
+          "scenario_seed": 993002,
+          "physical": "52bb3d36c66356a6431de4bf1c1426db1d07b3d68f1bdd3b3d1d4803a3a8da1f",
+          "launch_positions": "d06e876ccbd6854c0d54d1f9189001c402cf27cac12cfb25a6f74f850ffd21c7",
+          "layout": "e54a12e1ee667ffd749e4febe35f6ed4c38e6e47285d74ee0596e9e3a7aabedd",
+          "trajectory": "d2eb83cdd48fd4cd7013f76fd341948f483ea1f0164b8cfc2e96d2cf7347befb",
+          "motion_origin": "6d8aaac2d3c875e5ff2ed8513a86c8d0e08d69d00aba22041934331b923fc396"
+        },
+        {
+          "scenario_id": "po_eval_993001_0002",
+          "scenario_seed": 993003,
+          "physical": "ccf43065df6f1fb7e1c6ede0500af5760cf9a401319dc8b834acdfedd1c1b732",
+          "launch_positions": "7396bfdecde7f3e64e07d897af78bd017cee20f5f6f5ea26acc6058798e8c2ab",
+          "layout": "aee51d6579d8283fedc72cf1473ea72c3cef13591b3eebe78faae4ade65e981f",
+          "trajectory": "d2671855a7e9a84908a28081ffa3d4afc32a5b93baf140fb86ebc5d3de9b4c8b",
+          "motion_origin": "c30b4935d5ef7f945067128758ba965fb97852447288110a0664606f3bb54c87"
+        },
+        {
+          "scenario_id": "po_eval_993001_0003",
+          "scenario_seed": 993004,
+          "physical": "dce94a5c0d322cb121a55c38c9a985f8d7b935bffb13857882079204ed4605a4",
+          "launch_positions": "aa09ed39b69bdfe1932506ebbecf9ea611dbbc170865638399ccc7da70a0bfc8",
+          "layout": "23145c57fd90693899023fd1f3186fdb19cd8a220bf41a7b2b74c84f9c9f7e95",
+          "trajectory": "04a9d34b7e917a060a70156f9c2c81c4d3b2c93665176306dc074a5dacb03e8d",
+          "motion_origin": "c21d8826837ed974979ea40bda0e5b924f864bb24b712c7e3e19caba2b16e7f4"
+        },
+        {
+          "scenario_id": "po_eval_993001_0004",
+          "scenario_seed": 993005,
+          "physical": "dc6fedf6e4504ee5d326306293574b58ea97784a100c5caef140a961f3396771",
+          "launch_positions": "77339c2d63cb5a11a3e7b15000f4e881fa4b777f630830d9f82343564bb4e1a8",
+          "layout": "43e7cdf8799173032908a7a6d66307f720b4a738679b35f057e9485c31d74938",
+          "trajectory": "b87ebcf0c5f9f9755ca4f4f33c347dc58d476bfa983432b494ce32be277aa14d",
+          "motion_origin": "e09a41b0a03ac89badca375413c0b643513c56228bcc0d28215b87cde9ff5b8a"
+        },
+        {
+          "scenario_id": "po_eval_993001_0005",
+          "scenario_seed": 993006,
+          "physical": "739cfcdc7e45f70af57d733e1363d3abdcae037372e961ea4ca96b553c538716",
+          "launch_positions": "af1a5323bf1082234d25caa56c28b208275f4d875f2b8a378620b1f25435f5a3",
+          "layout": "66a4a38d75534a4e8b4506f20b2fe647f5b9109421719cb8e7be6478db432ebc",
+          "trajectory": "9cb3d83c8b51c3f755dc8ab76b3355431cf6989ca0228d949a711e26cd1963c6",
+          "motion_origin": "e1d11613fe22bcf7f1759a93c611b4d71a4ac36a73ff4d630e55f729d67003a5"
+        },
+        {
+          "scenario_id": "po_eval_993001_0006",
+          "scenario_seed": 993007,
+          "physical": "76b0d6bdd1e3c88edc0a2fb5ae5c3108729a920b313eebb91958a4d658eb8e4a",
+          "launch_positions": "73f55e4c7fbc0caaa2dd3d5670e7c4a9a2affa4460bcab504e9937cd271dbe78",
+          "layout": "cab0f0bf05fab5b32b2a9b78425db332e9e8ed3a2d16148001e13f621d282b2a",
+          "trajectory": "6dd0a90e3fd2a052b09a1f357a5a1c3ee5d3737a67eba38fdda01b3170377c49",
+          "motion_origin": "a8a043ba0c0bc99430107caaf746cb5dd981b2b404a42a70cff4737248698970"
+        },
+        {
+          "scenario_id": "po_eval_993001_0007",
+          "scenario_seed": 993008,
+          "physical": "e3f7678ef21fa183af80096ec54f3d9a1840ddcf9cfc89a72541ed65763aacbd",
+          "launch_positions": "9816a87b9f6f5d4cb1b9127a4178482785a60e1ba1618e8ca3edb41f7ee85280",
+          "layout": "5b97cb1d77f01a57aea2c2d96aa01546f805e509337c94890864922fdc3d16e4",
+          "trajectory": "707dd0dce39b11baf0b43bd071330d523bd3056f6d8aa6dfe9bb76e87125eb7a",
+          "motion_origin": "dfff0bc45f1e1f336e4b7748dbc3a4f9b85bba6703e9713c673e2116ae445799"
+        },
+        {
+          "scenario_id": "po_eval_993001_0008",
+          "scenario_seed": 993009,
+          "physical": "3a916f5089c3ea2bd6b9f00d0dd0e132f9e1c5f0f63f17c60b2bc862a4c93e38",
+          "launch_positions": "fe4b199aa9c103a0daf404179435c543d21bc628a2910a14a942d923888c292d",
+          "layout": "fb8869f31b358aaa93295980086915e954db68befb21a1b2bd762fd5c3199b3c",
+          "trajectory": "a35f29d4c15a78d5bb170df425225d47cd3c14d3e257608ef277b0a163949830",
+          "motion_origin": "50aa475d35a0ddc4b54fbc4da16ed01fbc8da6ba2b94b2b9e5fa0d3dba63b1bf"
+        },
+        {
+          "scenario_id": "po_eval_993001_0009",
+          "scenario_seed": 993010,
+          "physical": "6d3916bbbc69b1042e5f0e8e942348175ad9934d30f5731337902137cafbfd12",
+          "launch_positions": "5058eded427ff28fd63eff208d93a5194c0dcd75429616292af8eb3e3731ec4a",
+          "layout": "8e8622086d711941ad5a3d3778fc778889ee803311e83017d6b59f765fe88df7",
+          "trajectory": "8a9f8aee4c96863e376ccd9439ef555799f31957302f3aab21d7408476724620",
+          "motion_origin": "ead356281d77d3e53b110008131f7447fab6f8acee22ee36e2588d5884f2a597"
+        },
+        {
+          "scenario_id": "po_eval_993001_0010",
+          "scenario_seed": 993011,
+          "physical": "7f8c201820dede084e01e65ec092ce749937b2bb4248374e789df36adf4cce3a",
+          "launch_positions": "13c00d3fa424675f8b9112d0a1af712df42520f1a02c5531a4ba6c47b66dee3e",
+          "layout": "e231d52621d9b25099d9e444f6a2fc9e32b6230fd12c3972e1b323bdaa88b460",
+          "trajectory": "a3cf626987cef3e1ac1553b218d152deda02d0ad5eb27624c13351f9761867b2",
+          "motion_origin": "1fdebc9e3e2aab6e2fa810298ff26ab28ff1c3042869fc8da9b201d8d80fe444"
+        },
+        {
+          "scenario_id": "po_eval_993001_0011",
+          "scenario_seed": 993012,
+          "physical": "832aae7d7ea7fd744e5bc03387bc85feed98441be45adf71922db0e0f87a6f4b",
+          "launch_positions": "3525e93c94da3ed57bf9778d86f7025bb29a6dd4b7bd7669f4a8440c4bc23a93",
+          "layout": "085c911893baf9c882b75d23d20584b6aadbbb3dfaaa44e3323236985e969615",
+          "trajectory": "4ffb4195da5f71f5fe8982bc631beb45820ff56dbaaddaa662b77f2be8993126",
+          "motion_origin": "177f11df58a1146abe833d74851cb9c9fe99f4f4d32f05e788633c6f2ae8c8d7"
+        },
+        {
+          "scenario_id": "po_eval_993001_0012",
+          "scenario_seed": 993013,
+          "physical": "609d8f1afb0cebcd6728f3d7af717d12d22a6e3bd3e5a36f40fe6df6eb71b493",
+          "launch_positions": "715560956c7273bcb9108e9a11e2b2ad3d6a9a1b863fd15848071c16942bcab3",
+          "layout": "fa325fccce3f2f2d9ea193b6a63750b0849473786c5fac6e48306c712b8c7d5b",
+          "trajectory": "dac7d7fa4d2159055d2d63eff4c8255fd96a34c8b227d23e3fb894234c1a0a97",
+          "motion_origin": "9dddce66a4499d17c5af78ed7ad08ec2b9b35ccf1a0682b851d10872eb13d9b2"
+        },
+        {
+          "scenario_id": "po_eval_993001_0013",
+          "scenario_seed": 993014,
+          "physical": "32d4aa579ac95bb31906b6156e47dd69be0fd3f4895f996f1793d6e47d585b29",
+          "launch_positions": "770347c7addc334c9cf4141075d91eb1142439498fd335acdaf1f4d920863566",
+          "layout": "9c42093e08f43161b6fe232f2e93c349b17d5a7a19224695df18205fad91608e",
+          "trajectory": "24850d83fb741554fead935b0671f9b27912cde5bfb9efa614f7cda20d30ce5f",
+          "motion_origin": "e04dbb3645dbb2f06b8116b8d9945691e1a5f67cad24235b851242fb3cf4b83b"
+        },
+        {
+          "scenario_id": "po_eval_993001_0014",
+          "scenario_seed": 993015,
+          "physical": "68634004d4ab18914f551f937df6093b881a312e4f97749c66add0d87828fc03",
+          "launch_positions": "212f670a33a3d5e105dc5a2c49193abcce3719efb6fb611c5184845440085e60",
+          "layout": "58fc53434c0089487cbf847606d51a980f6d75c97ed3d4fee4974d13660c8bf1",
+          "trajectory": "3f8fa0b4265e022cadbda9b956a80d4c794d0850be64a1e08cf01f6f545e0587",
+          "motion_origin": "bbef473e22a60cf3a854f299a0625ad0b82c53b0197437c551bf9860cd7359f2"
+        },
+        {
+          "scenario_id": "po_eval_993001_0015",
+          "scenario_seed": 993016,
+          "physical": "47c40c1cf47fd786e44333adcfb067e08c2469498ffb756ff5388572322b9526",
+          "launch_positions": "95c61ed27abb9cae439a43a057219e798bf69e6c3b3e588ca9941b93f69595fa",
+          "layout": "188a2625ed5d1d4d5d288288e40b66d785813321bc6f9cef8e02fd7e11a01e49",
+          "trajectory": "ce4647c2a4a6740b02c83d5f62d51a6e2b18e3b6f17a2190e94cf75d68ad4897",
+          "motion_origin": "e5fa40dd3492bb0d7c39a8f073984ed5ff6ac2a0a307054940de2fd9963db2d3"
+        },
+        {
+          "scenario_id": "po_eval_993001_0016",
+          "scenario_seed": 993017,
+          "physical": "d0c317e791bd276ffb1bea66e63d89a93d96cbb07fa1cfedeb7e93fc2ef8d33e",
+          "launch_positions": "0ba894b5bab374b31497af751d00e6510f3748998c1b70148183c76c330e8a2c",
+          "layout": "21897aaa4d6dc1ad254ee27f13317a7c46beb7fae02abeb83aaeaa647bf0922d",
+          "trajectory": "6756d360d56b75d6cd593ec8103127424435886f64b77c86d679186408dbbe6e",
+          "motion_origin": "a297d3d9346c800cb4187fb70de63a4f9be79ad3dca57b56a669bd05680ed486"
+        },
+        {
+          "scenario_id": "po_eval_993001_0017",
+          "scenario_seed": 993018,
+          "physical": "1baeb8b84e6564f13b4db1d213c3cd04c1f4c2b0970fb6bed7bed66e0db68c74",
+          "launch_positions": "df338f0b1426a8b6cacd0565150f744f2dd10b2caa318d1d543a7a09c5b20925",
+          "layout": "f4422bb154cb20279d2b4df315523b2d4833e1b57251bf0b59dfcbd082fd37cf",
+          "trajectory": "063fa57daa4059b0830781a319bee9cb6fb7b02d1acfd5cd4562fdedf8774fb6",
+          "motion_origin": "8772d074e55af808d3ac444f752dd47d11beb28a952c3d92b61cc7a3284be7ad"
+        },
+        {
+          "scenario_id": "po_eval_993001_0018",
+          "scenario_seed": 993019,
+          "physical": "6f769897ef4efefe9278a0642b088a8681699d346292ed310bbe09019cc219e1",
+          "launch_positions": "972475ec0d43cac8982c0bbd1b9d178a7f4bebd43e8bd3d30c2f8b10f8eb12f2",
+          "layout": "6db109900d18e03da5966ce5bcbd0bb3ede2537e4e1f89ddcf7b7958e6d5d965",
+          "trajectory": "b1b2bcb14f0fc02268cdf24cd7b58daf3eb2d18f1dd7087eb2df42368441ecf6",
+          "motion_origin": "4a078cf35cd1078e576c2875d608375c1d7f74799878e758b9ed22a916c71613"
+        },
+        {
+          "scenario_id": "po_eval_993001_0019",
+          "scenario_seed": 993020,
+          "physical": "f3495a46e82e4ff9993eeec4e586f89fc0025630d0dec07a9cfd44f18798609b",
+          "launch_positions": "90ea2cd016473ebf892870aaebf020fcdfba7d775044019cd2c8ef17984c7c75",
+          "layout": "1a2a916a2d8710afb522044aba81ad8bbcf4a5e74854ccd1913d0789f54fe67e",
+          "trajectory": "6d24c894ef64a5530b7d5cb3004f7fc8b07c219915f862d8deffb750121d3a08",
+          "motion_origin": "67cab4d891ab7a2abfa34b3a4d67f3b929052dceb096768605065019096e8b3f"
+        },
+        {
+          "scenario_id": "po_eval_993001_0020",
+          "scenario_seed": 993021,
+          "physical": "dea211b7731f53dfd428350359ba5c61053651f4de01ef1b6bc6cc532050b7e0",
+          "launch_positions": "d80c406fb32a94fbbe0407b779d57dd1a56c7000eabc5663a4385e50c781dffd",
+          "layout": "515f01866b9b8eea683b616c60dd87530571fb486dd1b7fb9e63ca9d26ab7bd0",
+          "trajectory": "43e5bffefc7b8e639fcf4e02597ae678fe11b10155478236a7c56558558af6fa",
+          "motion_origin": "c08e128e76c33922b14061bcf936c7fe19050c4a199b705c17d3d82775c7daa6"
+        },
+        {
+          "scenario_id": "po_eval_993001_0021",
+          "scenario_seed": 993022,
+          "physical": "a5a48ebc049d6bfb9cb9eead42a49c33ab1c69abf5a306fb358f540b564178ff",
+          "launch_positions": "d711696a135fc1122cdfc861a3d8878791eb24d5fce3122f24c47f2feb4cfb2c",
+          "layout": "7e2c6839b9db6b53384f19fc3f7ee9a1b13024ac5bb8c32298500f9cc7b2d28d",
+          "trajectory": "fdb15cebf7cacde97f08b1f69efa85981cd56532b121b8a5d2903773c01eb2d7",
+          "motion_origin": "c16e5ca24c0af4102749ca9a0a8bd6ea736977d619eab8be8a800e1f850c18a2"
+        },
+        {
+          "scenario_id": "po_eval_993001_0022",
+          "scenario_seed": 993023,
+          "physical": "6dcb135cea9eef6efc0a99089f9e9a7aada99ee060c409de4d1fe28095289b98",
+          "launch_positions": "fa19c2cd6c2313e3fff3f1b8c36bca38a96e8e5e47c5082df2ef2dfb878019f1",
+          "layout": "45e117ce261e680a5932f8321ce4734e8a16ab08f12ab5f452be802ae84a6fb6",
+          "trajectory": "fc5428407544aa2645a99028d47d0bb8ef9f957ef186efd42e4c18836e402fc1",
+          "motion_origin": "bc45b226faee400833d72ed4df8fd5340f509b9e3670d40c7b4e8251e79f4fc6"
+        },
+        {
+          "scenario_id": "po_eval_993001_0023",
+          "scenario_seed": 993024,
+          "physical": "4ed9a6b60a938a8f01dbb07c97c9b6b222404e881bb75f89a3513094424bfe17",
+          "launch_positions": "247e1eda8378458b7cabecbfa0fff7cdaf09663058a4bcf9de8a71f583528cb6",
+          "layout": "4d2cb7e3d5df32cf1a22d289060ec5c23ed7cffd19f6bff6b081fecb65dcd327",
+          "trajectory": "6c618a981f6614cdb3846dbcbbeece110fdd046a1060cd5e0025eaa2d5aaa08a",
+          "motion_origin": "120f0975b108987d514b2e0cb4d25390994fede322a5d5b2de1a47fe97526995"
+        }
+      ]
+    },
+    {
+      "name": "earlier_search_training",
+      "path": "3090结果/新建文件夹/reach_avoid_500ep_assets_20261108_200909_1791926/scenarios.json",
+      "field": "scenarios",
+      "sha256": "2e4df8e627cc907ee33113bc016d97a2e343bb69fc3f9fa3357588ddbfada4ae",
+      "scenes": [
+        {
+          "scenario_id": "unknown_train_m20_0001",
+          "scenario_seed": 81001,
+          "physical": "3c7ffbe014f22aaaaf6897e64aad9dbca9e6b99ac474eb2d40efb279b0c290ec",
+          "launch_positions": "dc855d5af687022154dff80c9e277858d18d31829b12b244eb3c066783b90d7d",
+          "layout": "1a95971d908b97091f763de5edce08f4153a98a9fd48ed30a8bc662464e5122e",
+          "trajectory": "e87be28dcf94193cf0994971fd20f434a024990f7f00082a1fcf118c6fdec357",
+          "motion_origin": "a1e84652203f04d924403424fc544836ffc18edf09594c9883a998ddbc86c229"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0002",
+          "scenario_seed": 81002,
+          "physical": "9d45a004586541adf23d410401eb9e5ec94b9949d5d5bb2e83924639eecf5782",
+          "launch_positions": "b315454ddb233587e4afde438466a47214e8e837b0fd3355e26ca99f6b71f227",
+          "layout": "2a28bae72356018218e88496739276468d8a1f506f36a3cd8646f98808ce9aa7",
+          "trajectory": "2c0d801285d99dc5cdd2c51fc407010c6bfa24bc3585a024967c793368367010",
+          "motion_origin": "5150cc9bc2f28169263cb53bc4c4fffcbb6b20fc1f37e9ea165c18722187ed3a"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0003",
+          "scenario_seed": 81003,
+          "physical": "39dd37a08ab54daf55ddb4107cbc13b928e2106f34053edd59ed94a0dc842fd9",
+          "launch_positions": "c9fa0ad3fa6e2db01bf7d1706d3b479763a0e7516dc5689206e68a90b03550a0",
+          "layout": "79e5de4d7a391d4d6d602cea449e18516f505a202210a70b3f7628a8f1bbb6bb",
+          "trajectory": "f7ef3b7d90c77b58e80a96a83c4e9a75eccbaf79a54a39d6442f1009687c05a0",
+          "motion_origin": "e0011b85e405191efcc7a551168b6bc9020a31fed88e46799c3c2fea83c4c032"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0004",
+          "scenario_seed": 81004,
+          "physical": "fe1fbfe4222c02be168b316c7c5f5e092a2105cc240f15764745e1af26b3be0a",
+          "launch_positions": "2d851ae33c702014153b8ddd9d36efb642ce4a8eb6ec475fa606f999129652ff",
+          "layout": "374a2545baf11430ba83698df19acee1ca9896b902733de6a28682ecb9e201dc",
+          "trajectory": "0ed1f87ab4d44243c24bae48b02ce944a1f1e4ecf78b792675950a50a2fd6591",
+          "motion_origin": "ddd2f5c70ba71de9fdd94e8c3e03b576f01ad9c7afb72407ccc3cc87b72c4f5d"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0005",
+          "scenario_seed": 81005,
+          "physical": "7331216a63b2f78e6141836dde0547fa806ca85f1509b172513677b23a90c5e3",
+          "launch_positions": "19c0401b974a04d31ea4b72601e33dfecf6dfe693432a1426db4d44dde450c27",
+          "layout": "243b873d38ce9a9c2338eff88705b24a593bf32f8a55f84fcc0fc274d9b8bb7f",
+          "trajectory": "1ddca90458b48e038122926bff89e71c8cfeffb3aeec25c93618a9856e07c791",
+          "motion_origin": "50171a096abbcddb1bf7b6b87951038dedacdfe4ee504d877ed16fbdeefd85a1"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0006",
+          "scenario_seed": 81006,
+          "physical": "5d5bc7d4cead3aba90ce89b59ff80a8e3a3a426d1b72222747db964ed384e001",
+          "launch_positions": "e93af5fc4808646f3cbd830b5c72d9c3d79c1ae677e057e3d77adc592c9be9e8",
+          "layout": "cb6a0e4d34b561709be67ffa861f1bf8d2090fd2e338f9cc0725ed557a3630bd",
+          "trajectory": "73e000145afeda6f768b98b76740c073d6d0d49c1d010e64355b9fa4c3efe412",
+          "motion_origin": "980ce7b652808e52f12596d9c91f8b7d8fafcf300044d442baf0ba96e2c2f8b5"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0007",
+          "scenario_seed": 81007,
+          "physical": "cc0a5ce595e6c65874bc1e087c0a063844c5e87ed31c0df830d57e1b71846635",
+          "launch_positions": "1e4353a785675521ec0a4c2ae81998ce2b2ebd95f82ff81c140c359efdb895e4",
+          "layout": "9f4135d9546afff0ff203672331380a20715556fd8122e55988058e199334dcd",
+          "trajectory": "c2a48d3ab00231b096567e4273d9734bb5f6a54939cb33fbf33081cc9f081e28",
+          "motion_origin": "7e32da9cb0f0eb23c3ecd6f06a4a973050ab50c5b772852fe0a65dd9a1eb7397"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0008",
+          "scenario_seed": 81008,
+          "physical": "5b03178337b9ea24a226efec4c05308dd215eaefc55dc7b4f66e524c0ec08b17",
+          "launch_positions": "6c57eddaf6ff6e5def062dd6ee01c7141f1ae7c62f039e80fc716620235d36b7",
+          "layout": "7193e4ccd41e0f1f016581cddc81241e06cb7da5f041ead850ed2af1ade671fa",
+          "trajectory": "fabe0bfc192aafe95c0bba9bbcaf3380529b7a14519a41a05e959b7382d08dc2",
+          "motion_origin": "8002b3c1354e9501c8cbdf2bd2ae06fef6954e101ce126906c6dbade234ae0a3"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0009",
+          "scenario_seed": 81009,
+          "physical": "a7f2da8706faf7091ec27b60983ae4da5e67aba0497b00b8865c3205f970b1f7",
+          "launch_positions": "a96ca2f209dfb8bbb1bddc3362eb63ab628f6d64819fb74559ec879ed3b5dbdd",
+          "layout": "f528303d970939896fc8374e452c3333be68a53037bafb8245d7e1ce42deb367",
+          "trajectory": "af3121f29450570abb57e636475e325bead039540b8d281ffb8193c9cb1c8296",
+          "motion_origin": "1f7a659f74ad6584dd4eae8a1c4b416a9d4c824d2a2d1fad7aa237891f7eb2e9"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0010",
+          "scenario_seed": 81010,
+          "physical": "05ece24477bdebdd5c026bb5bd653c45a37ba5eb4dc71d350c8c99ed82167eb4",
+          "launch_positions": "aff0421e97a1789b1b0005539f29062b214c4ebbacce80e7d0842fb843b07674",
+          "layout": "dad2f9ac05316ac32422d33d901d01023ebd5370c5b3aa6e6bb194ce549b4132",
+          "trajectory": "2c63f0d972636a67da9d0fe03a8dfe8d9cd88c5e45c6b48842e1b4aa9150bdcf",
+          "motion_origin": "e4d758541379e5a5b3539d8cafe67b66f06360dc49e0ec9eece80db285d8a00f"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0011",
+          "scenario_seed": 81011,
+          "physical": "e10498daeb080c78cb779d509289fe46536b19e7e2f5996d290df6c49151773c",
+          "launch_positions": "5b76c76f9368f4cc09bd26dcbdac96eb180fd9ab23dcb8d762cdf26473fa6621",
+          "layout": "460d3c12f0da9ffe619ddab9ff9079411ea0557f376dca6b792793ed918591ba",
+          "trajectory": "61456444c31baabf9cbc71070d5db23a5b71c619fba9d399409df9ef4410b23a",
+          "motion_origin": "e7282338392f5d791b8122e0d3de7ff40d466c5a04ab7a5f714b0267a77669ae"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0012",
+          "scenario_seed": 81012,
+          "physical": "46481e85edcec68f2f143e3d15927c8caef3446c05f8e6211d3e98c71545014c",
+          "launch_positions": "0016284510fae7b4941003b59dfb5a765fac87976b907b2205522ab99ca18894",
+          "layout": "d64a2fb741a4f3fecfc603537f397cde62fc222345484aa5ec62df25aef4d6dd",
+          "trajectory": "0af91b5cd660edecf474b4f9b6c0366e2f63e1ea7b6ed63335460a7326f762f1",
+          "motion_origin": "9f59c81d00e98b42433d9684fa35bc95cfe30ac1ee089ffa04535f73a2e76211"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0013",
+          "scenario_seed": 81013,
+          "physical": "b72c41ebeb7beaed68e58aa8e1caa97c62dc2bc6d271a67a959264980eb83c68",
+          "launch_positions": "76f9294b03cd44607e7013d54403e9f56ceb43dda563246a5bc3d21fe9ec2aeb",
+          "layout": "5a22dcb72d54d698d2abdd28911fee1ff0d3d5e79391d29d76c1082d389d5e52",
+          "trajectory": "c2e05f3c5b82646e996cd744bdf370f2127823c2a528b5396fa865b7b2cb56cd",
+          "motion_origin": "3c14cfca33b990654067a74a7a68a3ca86821bd5646587c81bbeef9d6f241fe2"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0014",
+          "scenario_seed": 81014,
+          "physical": "720d071bf98e77e93acb508c3a89f0408520451a5aa30a4003d0d54b0d7871d0",
+          "launch_positions": "8479ac1d763f4b6aba85d07c2737abd0a36e8105867d50443e1f979aa2586eb1",
+          "layout": "55ed0d80399beaa0d87422e8bb9328ade879277f0e305816efe9beea59653755",
+          "trajectory": "b1e0c0a8b5ae195e7af1296366d6c287e3341b5edbd21e94265850c57100fd41",
+          "motion_origin": "df19027d012bf577d3364f976e04ab87ccd27e4d7f3611d571854bb2b2116ca4"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0015",
+          "scenario_seed": 81015,
+          "physical": "b74bc91a6814e4f286f79b2247d7792147b075e332c91e67e3ae4adf37fafddc",
+          "launch_positions": "4c0a2731234433c50dd8c005115532687ab95f7ae7814f9b14d70be01408b702",
+          "layout": "b53939418868defecd444547ae5a16137bec26536bc9fbdae04cb1b7d7ec5e3e",
+          "trajectory": "c281436134b3a824836d6a4420986c150bc3b4415f6d96411454de5bfa31cceb",
+          "motion_origin": "7e43b5050e11cdd09421ce71a806cd2a65715aa11db8404276306f863234b8e5"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0016",
+          "scenario_seed": 81016,
+          "physical": "0d83e069d5d4bedee13cb0219ca016dedf61a836e09d0404c9c7f788b2726a33",
+          "launch_positions": "404bbb190c6d50bc081fc93f490787be3314a0ace4c01064644aed15560eceeb",
+          "layout": "50e274b249bad59bce1e8951f6f0be8f529742619af5f82b39c64ce8de693ae4",
+          "trajectory": "595c085a290fe679de64b3e1ff559f40cbe8321095db524b9e8bb59bca878ff7",
+          "motion_origin": "3b91a43c45939ed8cfc337abcf9c0336c3770b95f03dae4b1895bdf2344dc923"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0017",
+          "scenario_seed": 81017,
+          "physical": "8693c25b4a5a0d2140afddcba5aed076389e1b5eab5f3fdeaba8abf324156c8b",
+          "launch_positions": "360391b7807ac5ed1d97011f889ddb9be2e184d9c2fb91e58c0c4cbd893d54aa",
+          "layout": "ceb160d987c673b144ecbc0c1916967b8ac32b238fc534c78a4d56bfda44d547",
+          "trajectory": "f39e8edbb15f0ee1224385708341ba9035e12169ee4b9a8302df03687a7e77dc",
+          "motion_origin": "d3d4f57cb3bed6dacb0858157aeed61090877cca83a16d0692aae5735fcdb449"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0018",
+          "scenario_seed": 81018,
+          "physical": "a59a354310c3c9eb7f8623ef0ca8a23a8ea0804736f0823be63c2de722a59c14",
+          "launch_positions": "0796cc43fe17abefcb90114ad28c2118b764059537050d9d4334fb4c5e521feb",
+          "layout": "f6a9c2b1b889194ea895e54794befc8cb4e5d9a8924ee54cd164e017675530ac",
+          "trajectory": "0b3aa798a1e0b6b537bfa996dac64b5ebe62329976882ce64844fe68f7c6a27b",
+          "motion_origin": "b4ce03b7ba3189b9b73fd5634968941047666fadddbc6df0f41bb42636f57b3b"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0019",
+          "scenario_seed": 81019,
+          "physical": "2dcb1cfcb4c1c63d05655cc57833cb2552321b24f25a83c1b79ae780e50658b7",
+          "launch_positions": "8527fbf700ebe817be7f38c779095d67c9bb8f52f521feba544236cacc942327",
+          "layout": "a40db6711eb44a1e841d17aedeb3e90b691800c6e07c349a7bc30715886694ec",
+          "trajectory": "e4226b4d83e7d301132981ffad7eec92c0cc2d55f85da9c6f736012bdaf7d063",
+          "motion_origin": "250f1325358e2124bbd1e7e1912363a7c09ef7b4f7c93b6442fa1cd7aeefbee6"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0020",
+          "scenario_seed": 81020,
+          "physical": "3a877004dcc9054b02366a8a11f0e47a5963ac7d1c900ac52bbd44db1a298132",
+          "launch_positions": "e1261105ed46d6c52e233993b13f6c8e4865711fc5f334872b14f657a61c4aab",
+          "layout": "49466365e5373cc3cfee9434350728d27a1d86c4e476f1a888488e2f57e41515",
+          "trajectory": "14f1ecacf2de9a0063e535f8d458ea1637591981e2a379636b65c01f532d939f",
+          "motion_origin": "5d04da2d2b2deda50233f9bac05701ca3b59519d97c454303465351cd0cb0ae2"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0021",
+          "scenario_seed": 81021,
+          "physical": "73114ac638ef3bd981bad52d10d010646be3e2d645036ea5084350abd66335ba",
+          "launch_positions": "a7001e66c580fbc913a99000dd0f367937504e5a1c135fffa9d069979fe6dcc1",
+          "layout": "7d9ab223dd54242a19de3d44450b47b351aad9ccdc31608bc672c0573ea30879",
+          "trajectory": "b3c6a79643e13a8140cb191b6a4cb39d0b08c03370958f0fc44671653f7e763c",
+          "motion_origin": "4f89830a5285c214b051feb6f30c02edc7138fc7ba232c5b84c0650938644b3c"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0022",
+          "scenario_seed": 81022,
+          "physical": "a3f871cbe76052fcd660baf3cc4067740383a342f40457cd620e9218a32ba67e",
+          "launch_positions": "15dd44a7611b20701e5f5eff4abfa99b8bf9dc31c53d37ed75751123ea62dfd5",
+          "layout": "e62bd7f87913032359ce89197d35eafb0b0dfeada4325c1a906b3311d812434a",
+          "trajectory": "3462bdcc0b18908f0be5a60029cad6f032ea2d8e9c08c7127adfded99f0b52aa",
+          "motion_origin": "f5dd74d7a264f59c9ac50f4c67fe57ab510371e9d0582cb5339995df2c24fa99"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0023",
+          "scenario_seed": 81023,
+          "physical": "93b4bc719bb7131307c40d5a8d30469b8aca5259d42eb2ceaa967305e7c872d0",
+          "launch_positions": "0183242a04b8eb6e8a139da43dc27a012dbda938afc6c72156ad1d4faa7a56b4",
+          "layout": "0f51b13f4c19523ff897bfe123a3cac80a8b4390716a1a5191d750a1e80bee93",
+          "trajectory": "fc4fc9c0f85d9fcf4617318a750a4ff1e266b3e720b9ba01a60f571cce1fc5e9",
+          "motion_origin": "c379532c69ca935698e90c22ae80293329008d1563f329446542dff72c11c0fc"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0024",
+          "scenario_seed": 81024,
+          "physical": "e247cb829515594b6e58520f6ece4355a2ba20e695dfa8e212fd55d0b734416b",
+          "launch_positions": "8db4abf2cec9cdb824c93ac6e4a7b90842235d1a38117301f9e8599158fc4f5f",
+          "layout": "7db5e401fc5f048c16fbe01232b44cce37f31cf06a0c0a7af9a56807478de988",
+          "trajectory": "6141dd6674de8117b866d045d1252ce0a86e4cf4a2b7730e145c5344f349fc27",
+          "motion_origin": "3cf3451102d2253bbc729369e6a37553650e52ba107d7be0a89a7a2c58b3c92a"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0025",
+          "scenario_seed": 81025,
+          "physical": "bc8518268b33e0475554c323f89fea58a2f839326ef9510b38c7a58712e18ba0",
+          "launch_positions": "c90836d339ad933ee4af42bd394b10445992d863fb6f0464b83955699073d0ce",
+          "layout": "1a0584a8d5c8cf25cee6b100d1154cb7bb719d725a3067f2b952fd5f3c51a34a",
+          "trajectory": "5be7205b523cb580285310b065fdcb719bc7d1d8552bdaae910f50cda1b52998",
+          "motion_origin": "513976c5d1bc623b02f8896332fd6f3fd63f029dfd2b6932723f7d672536d0cc"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0026",
+          "scenario_seed": 81026,
+          "physical": "7c2869121ab599953565852eebff8ff579fb52813dc08377122376f640a5e7c2",
+          "launch_positions": "19326afbe66c34595beab5c1d1d17f7e7685d92b53be4bb299169bd9f11c0ad3",
+          "layout": "b44853e4d17017c5c9c8b426d00a20fb7dafc9a7c8107994e018e419553bc072",
+          "trajectory": "90756b7c16d0e8b6a6b815a482367adfdca4c434558d4d2fc2ba7a06543451ab",
+          "motion_origin": "3575ee520a02174c8ea22f507b34dd36f1261ab6bdf0a8e79396bfe6a0005955"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0027",
+          "scenario_seed": 81027,
+          "physical": "7d72ec0da97499a0194bd9efd2a79537078e97d6ccdc43f7e353e812fa703bd8",
+          "launch_positions": "74e82dee1c2fee17618e3eeab68b1911b7307e935cdaa55f9d83869942ee55c7",
+          "layout": "ed3d027c0a175439a2ecde025671bc6be3c19b4865545f6b7e581d40866620d2",
+          "trajectory": "a99f47329026729cd747f8f04868a93dabf292ab749ab8022880858d69760ebc",
+          "motion_origin": "aeebe0386f3b6cfc46cc4fb0cd557babe630d8678805cc71fc0ac73460383299"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0028",
+          "scenario_seed": 81028,
+          "physical": "6ef7ce2380eacde84f766600ada2d6f82a6a45edcbf24410d3659a48df14aa67",
+          "launch_positions": "564a9d3553d6750a4499a0441430a1974501c1c4fe786bf3545a1bb67fec6224",
+          "layout": "1aabe782f7566d45f24627e75869d39ff01ba6bc324be5e0ae55c8182b406fce",
+          "trajectory": "e823abcc3d6cd3e793482bd959ba20b94f4d6169249f26a44814c71412110399",
+          "motion_origin": "be7d6dc6e5e4eed761077d1ba2c100cd072709fae340312d8300b0ad21f2fb1b"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0029",
+          "scenario_seed": 81029,
+          "physical": "8504e48a011284fcd5b08c10b27eeca8d87f03a2431bdad7c04270b3cd09786b",
+          "launch_positions": "58c557ecab9436ea3551c5afb5fd0a0846e4b9939a95c9741910920c62a8eb4d",
+          "layout": "ccd6d391e5e62f9504d180d0cdd67a3a8fba141bf60688a3338b7c356b94c186",
+          "trajectory": "2def1f42c62dc53ef305785fbee3b4c4d42d81b52d19f4e2975bccbe01cad74d",
+          "motion_origin": "b33d01849b5c16a07961879d52994282fec5e3723e93ef6e9ab48f101d5a3ef2"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0030",
+          "scenario_seed": 81030,
+          "physical": "0efb01547de64f3336345f9f9bfac770cbb255a5a633a89946c8a5785042fc93",
+          "launch_positions": "f266b4754f0aa4c993f689b64b477f2185466f16334c0a050760d307ed98906f",
+          "layout": "e7c987a407a223077524a1584763f6953bd2d0332fb5cdd67c49269a5cd3f3fa",
+          "trajectory": "363448bde4a4cdc0db2e2e68e1110cb5db9e2cebb999cc3d5675dc25385dc9cb",
+          "motion_origin": "200ee7d14ce3cb28e726630ff091f58290f2b24e8ff09f1272711b6cf44be027"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0031",
+          "scenario_seed": 81031,
+          "physical": "f760594059cbf39b43be2fed5d67a6aeb6185756f317f3fa760c3b2e118596b7",
+          "launch_positions": "f82f28a6241a79f63a9dc1be4913201fa022a96252eb1aac72bd0522066de40c",
+          "layout": "87ce6491e0c13cec9d9f864a005177c1ea54cdc878918658102a6993f816c8cb",
+          "trajectory": "baaec3fcf6cdaf10327a1a058f6c514d456f32138de718d5842cebcee41f8525",
+          "motion_origin": "72140129a8149b234fa3cb0bb4ec0dd3b413f8e3d920910f66ac2cef5be09ce4"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0032",
+          "scenario_seed": 81032,
+          "physical": "59b3db20a0d43632e357166060ac9e273487166612b470e17093ea137501569e",
+          "launch_positions": "6c31ec7c0882a87de97cba8b046752d4e8b2debf7d00ef147f4e811c2dc9efdf",
+          "layout": "a209c1c24d3208447c9f2675ddb38ce46b57f156bccbf29653839d46a35601a8",
+          "trajectory": "3bc48d28f04fdd025e0e12e91c7731b2c92bffe662dd31ac3bd7dabca82c7e48",
+          "motion_origin": "bf5429302340c62bbacbac324f3b99c9314deace75868a66c82e4dd68f3edb82"
+        }
+      ]
+    },
+    {
+      "name": "earlier_search_development",
+      "path": "3090结果/新建文件夹/reach_avoid_500ep_assets_20261108_200909_1791926/monitoring/development_scenarios.json",
+      "field": "scenarios",
+      "sha256": "e32291a2212de8bfe6ac2c8d242b3d4851be01803ce756312ba1ec7a0a085a76",
+      "scenes": [
+        {
+          "scenario_id": "unknown_validation_m20_0001",
+          "scenario_seed": 82001,
+          "physical": "2f316d164c2d224098c60b8b89e61191820acca6e9b5bfd95460362dbbb16230",
+          "launch_positions": "7de76d427a81f1badac93ad72a52066fdb34da6b7f4fbaf8bcf5ec5a694893e0",
+          "layout": "22277608f501e5cc6b82486a8b479be28082e62613fa1ea7c00a2860bd6d7eed",
+          "trajectory": "608b0aee7e15080b9acc34f311104ded7ea2197ae9e770b7acc0483c8b2ea7e6",
+          "motion_origin": "c819c3d77b2d675d92148ad41a3a32f18259202fe6b0d52a67626c3618079061"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0002",
+          "scenario_seed": 82002,
+          "physical": "197230bd075fc42be1eef3a76ca9446e008678d2b96639b3a10598d472362b2b",
+          "launch_positions": "a5d8f9328019ae0bb070c5be25e11378bbf18a7be38373602cf8c86d212bfbbb",
+          "layout": "de54e5c163504cf76cad370a6218483254f6699a29dd1bdf19b3fec16efc2ff1",
+          "trajectory": "119aa3aaa5659634700df0042b364a0e71f07679c4edaed414010f4345993ce1",
+          "motion_origin": "d9c177318548b2eede8a65cc39002a18dbfd3154b7d7bfba1f255b4c435b33fd"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0003",
+          "scenario_seed": 82003,
+          "physical": "dbd8cab5f9c33c5d41e26cf69990968ca75385aeec78b1673b34ebafc7b774e0",
+          "launch_positions": "6efb52063f12f984fb101cca9cc642d71169b5387dfeebd4500f458c136e0acc",
+          "layout": "e60f517fc35dcf093d6e1346e04b65bd0499e6bf702947774f72fc14d82d33fe",
+          "trajectory": "a153e26326f48abcb0cd8f064068ab94b1d9c72bb96ae95798a0c5d91ec4d6fc",
+          "motion_origin": "57d4b45949bc441a4a6e22a2cfe38d8d1bd53c866e5beca8573d24f971e4a9f3"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0004",
+          "scenario_seed": 82004,
+          "physical": "5814cd61cdfa241f4ff81657554d679f892bd5557668b766514988cae6f76e60",
+          "launch_positions": "f17d442a028d895db6b5def252b450fc21f7af6deb1f79a739a6b2a07a4b8fb1",
+          "layout": "d9b1ebf0f62fbfb2cac2690e37ed7a6db12cbe96e52e04f48cecc7b534515ab2",
+          "trajectory": "4b75b55e0313e61ed6cfa5aa78260db0a2a771eabfc7f793b0269741f4d52c7b",
+          "motion_origin": "ece096cb243dc30dc2b9f78ee4054983dc5e44b45a321c9fdfbc6f1cbba24abf"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0005",
+          "scenario_seed": 82005,
+          "physical": "d9dec1118fc0e80a8018936254c5168da9bd50098cb1debc5f7afd092425feff",
+          "launch_positions": "0fdd183690125af68f434a602920fe626bc8880e327a2d6fdd978261f7af0111",
+          "layout": "b794b13d4e4019b4bb13a8bb8917b1969ace83e07030495b37720354922c9a35",
+          "trajectory": "e9eddb1579b9b40a2efee89af236db61661622e7cc27bcd0aa286c2080b61840",
+          "motion_origin": "f9a715b0aec1b9d8681ff254a6d2d18bc9d46ce9d9dc280a92656cb38b2ee5a4"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0006",
+          "scenario_seed": 82006,
+          "physical": "6009ce640c87302d821349ce5ae63ea7c6f868c2fc1f22cc780a6d02587148d8",
+          "launch_positions": "6949f71d9a351ed4118ce323867d401a2aa54ee548452c5d9e7a42f83e292443",
+          "layout": "ffdbc194709a22af15601298ead14ea5f811d7bbe39658f10c4593f65e9df9b2",
+          "trajectory": "4f19fdcef1e92a4d6f45778b455dbfeba27c0816ee29bdfb62f9a65673e2a9ff",
+          "motion_origin": "402ab265e36a8f3edf2a6239a5c916e5065c568f5f716109378605931e2b24a7"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0007",
+          "scenario_seed": 82007,
+          "physical": "82b9da8d4bc581c03c4bbcab3c002d84a24ebdff9aab486ff53806fe281f0ca6",
+          "launch_positions": "a4f7d7ffaad4c9b26d2e037918d99fbb576d33ae6a1d6f86d8848b082af599f2",
+          "layout": "1cfe4de8661f5279a4c69a8c51933ecebd4e20c0956b8437c934413ecf1d6b03",
+          "trajectory": "37775c8f78caf049debd69d50e0401ce39526154224114f9db0fff9160645127",
+          "motion_origin": "01bafe790db12c45df7fef109806b238d5b63679ccfad70b4416adc445e0cbe9"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0008",
+          "scenario_seed": 82008,
+          "physical": "7a70fc9bf5bf6b82927a503789618fe034d8e968ce97229bfe590cc9164e5711",
+          "launch_positions": "d41f26379b3f88fd5c2145966aae2979593776f883569b000b109442ec44d8b9",
+          "layout": "36f28e35b1a1cb2ef51000f5712d9065237e34e8958eb46c64d215168719f4dd",
+          "trajectory": "2e747501721e1850a6caee17d4efc9c487d0a09cddb7e5dfa34ffc81e840d5a7",
+          "motion_origin": "21aae76da9a97aa57ed36b4f3ca30af3231c72cff2df02d984f9752b0caf6e38"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0009",
+          "scenario_seed": 82009,
+          "physical": "f27801446f34dfa4bbdc7d6f180c8a879f8d3b54db7044d7c89c89e399a594cd",
+          "launch_positions": "b48672d1fa54f525f369776a180b89a5c50fffdad0772b4e452eeee9e7bb7719",
+          "layout": "66aa9577919598d7fe0b8c6221a286f84d61aba56e6f9b8fb7470500691219e9",
+          "trajectory": "088ebccb125635615212a6f04de9ea3eae1421e6b2b82764192bb318dd7cc1d2",
+          "motion_origin": "d33d0da8737a9ecd09593ea421b134da4c83f11a51d0557458176effca9439d4"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0010",
+          "scenario_seed": 82010,
+          "physical": "74ea027cb6e13a6e267623acee7d528cebfc55d19c821832944a1432ee03668f",
+          "launch_positions": "5cc57235931705eaacf0a6f91ef594c8fc60a24127c21a48fa5b271a48e6f91d",
+          "layout": "ec1446e6e256ca96aaa4fd606ba85cd3d638d96557536a873ece6b7a72443221",
+          "trajectory": "085a05332aaac3912cfa54e6baf1c2c58139106a14f2f3eb4c3f722103c798a8",
+          "motion_origin": "49a0518d626ae99e5f553c484b458a77c273071a9592bc39d355e3c128c0de78"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0011",
+          "scenario_seed": 82011,
+          "physical": "62253ecc87fae195b4c39e46d3c6ceb0cb1ec4b795ecf9a28981fb2a0c43e293",
+          "launch_positions": "521e933dbc8d8f500c4ded323c1c58bb98c8f93af937ce6c08159f1ad26ae463",
+          "layout": "997a1bb455ae250c0469de96ba77e9931d590599262de1fd99431ed3a906bff1",
+          "trajectory": "8eaf495935e6fbbe2705d4aa869a8cda03824624e7559459c3d588d2c3a39cd9",
+          "motion_origin": "187adb4003a109b163c08cb35ed04ee4ccab99d6c0290187947cd918f3f5c0aa"
+        },
+        {
+          "scenario_id": "unknown_validation_m20_0012",
+          "scenario_seed": 82012,
+          "physical": "f424d1bc9b46a192b7d8ede570cd592d11e90f08df6f6cee6c18890811089cda",
+          "launch_positions": "9d0d03ff7f414271aa8359e0c13e67fb66ce06604a12a3b83e112db740504edf",
+          "layout": "691dae6893202fcdfac14be7af278d0a99e4010eeac3a9ebc7a9ade1bc3c4ff6",
+          "trajectory": "7e9ff80afea85fc41703587a0478c49fae9235cb93a328c8a217f2099dff9655",
+          "motion_origin": "18f17f6752b4fa2e675ce02495ec20fdbd64fbc452eaed2c4cab381efbf6ec1f"
+        }
+      ]
+    },
+    {
+      "name": "local_ctde_training_scenes",
+      "path": "verification/local_ctde/20261123_v1/runs/20261123T140748264508Z/request.json",
+      "field": "training_scenes",
+      "sha256": "c32c633ea566f7c6964c0d34562b1e505e22a6196b29b6beeaf33f8688edd0f2",
+      "scenes": [
+        {
+          "scenario_id": "unknown_train_m20_0001",
+          "scenario_seed": 2026112301,
+          "physical": "b70ea20fca7f635d0ce66b3bc38eaaa2a7d00f3841d6d6ee3c6b8e4d330787af",
+          "launch_positions": "25f80db25d327b51a284c9810671633c185eeb1bad22ac41ab3262b9f64a5cec",
+          "layout": "7b14bdeece87ba07b91c92351e5fa55d599db502bd31bb931c8b58cc05ab1f50",
+          "trajectory": "fc86a7193ff03d5a01fe20a5686a025a34aa86cc9191defda02eea33d89bc62d",
+          "motion_origin": "3ccd04316c26e0cbad1e8988f0e61281385ccacbc500b395b93bc2fa62f518ce"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0002",
+          "scenario_seed": 2026112302,
+          "physical": "a4009f4f4e7ec02ce5ed76605ec1f2e9a4e64ced49239cd9319f5226d6024176",
+          "launch_positions": "97ce57b9377bc20636e509603068435e0f82e1993b3671e3e7f025437cba7b27",
+          "layout": "c42c067dba6caad777da254440d7fa4d822d3b1cf62895eb7000e7a05e778ac8",
+          "trajectory": "f37f1f911025d8a2b783b5c0c53a540f1dd2c4ef032e4bc8c12a7b1b83152cd6",
+          "motion_origin": "1037968be0025c1b8b48ebe88da9b364f87f64b73ff61bfe7c852dadf02ae6e3"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0003",
+          "scenario_seed": 2026112303,
+          "physical": "0a3241e93746e8aa1131e2852910f8969fb60b72bca2a04c13915b712f9dc681",
+          "launch_positions": "fd4e32770ef000a71be8b1f9dd1b81ecdfda80bcf845d1f251625fb2f51d75de",
+          "layout": "c06b828621dde502e279e5df5d52785b7df5fc43df66a9b4165b683ea7e40453",
+          "trajectory": "901447f1f9ecade1f114575008e4dc8b7d92591852b4a4a8c33c026f9e83b684",
+          "motion_origin": "a34c2e695107ab5f7f866074b76e7acf23fd8817a3e7991b4e49bb6dd26e47f8"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0004",
+          "scenario_seed": 2026112304,
+          "physical": "9aa8c499a4bb963ebd3b9aac86be31ad31d90cbd3250f6884721e9941384edee",
+          "launch_positions": "a49af535c8b1f7b950220ca9a66e0cf8bad6bacfc4930a8eacf280511bd6fd2c",
+          "layout": "84c4a0e70b7cc99d3e56ff0e027332a4d85e8526b64f7e7138e02c468f5014e6",
+          "trajectory": "759fb10a5eafabff909c51a77a26011b4f391c7450d0ecb4645f7e382829d94d",
+          "motion_origin": "bfa516d08eb0cd9e5f424ef68eee716e58b4014c0f75181216e13d97c2a295bf"
+        }
+      ]
+    },
+    {
+      "name": "neighbor_ctde_training_scenes",
+      "path": "verification/neighbor_ctde/20261123_v1/runs/20261123T145847696897Z/request.json",
+      "field": "training_scenes",
+      "sha256": "3c13516ba18322af7228d65b731554e3fabee8aa7e495e06ea9555683ca57589",
+      "scenes": [
+        {
+          "scenario_id": "unknown_train_m20_0001",
+          "scenario_seed": 2026112301,
+          "physical": "b70ea20fca7f635d0ce66b3bc38eaaa2a7d00f3841d6d6ee3c6b8e4d330787af",
+          "launch_positions": "25f80db25d327b51a284c9810671633c185eeb1bad22ac41ab3262b9f64a5cec",
+          "layout": "7b14bdeece87ba07b91c92351e5fa55d599db502bd31bb931c8b58cc05ab1f50",
+          "trajectory": "fc86a7193ff03d5a01fe20a5686a025a34aa86cc9191defda02eea33d89bc62d",
+          "motion_origin": "3ccd04316c26e0cbad1e8988f0e61281385ccacbc500b395b93bc2fa62f518ce"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0002",
+          "scenario_seed": 2026112302,
+          "physical": "a4009f4f4e7ec02ce5ed76605ec1f2e9a4e64ced49239cd9319f5226d6024176",
+          "launch_positions": "97ce57b9377bc20636e509603068435e0f82e1993b3671e3e7f025437cba7b27",
+          "layout": "c42c067dba6caad777da254440d7fa4d822d3b1cf62895eb7000e7a05e778ac8",
+          "trajectory": "f37f1f911025d8a2b783b5c0c53a540f1dd2c4ef032e4bc8c12a7b1b83152cd6",
+          "motion_origin": "1037968be0025c1b8b48ebe88da9b364f87f64b73ff61bfe7c852dadf02ae6e3"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0003",
+          "scenario_seed": 2026112303,
+          "physical": "0a3241e93746e8aa1131e2852910f8969fb60b72bca2a04c13915b712f9dc681",
+          "launch_positions": "fd4e32770ef000a71be8b1f9dd1b81ecdfda80bcf845d1f251625fb2f51d75de",
+          "layout": "c06b828621dde502e279e5df5d52785b7df5fc43df66a9b4165b683ea7e40453",
+          "trajectory": "901447f1f9ecade1f114575008e4dc8b7d92591852b4a4a8c33c026f9e83b684",
+          "motion_origin": "a34c2e695107ab5f7f866074b76e7acf23fd8817a3e7991b4e49bb6dd26e47f8"
+        },
+        {
+          "scenario_id": "unknown_train_m20_0004",
+          "scenario_seed": 2026112304,
+          "physical": "9aa8c499a4bb963ebd3b9aac86be31ad31d90cbd3250f6884721e9941384edee",
+          "launch_positions": "a49af535c8b1f7b950220ca9a66e0cf8bad6bacfc4930a8eacf280511bd6fd2c",
+          "layout": "84c4a0e70b7cc99d3e56ff0e027332a4d85e8526b64f7e7138e02c468f5014e6",
+          "trajectory": "759fb10a5eafabff909c51a77a26011b4f391c7450d0ecb4645f7e382829d94d",
+          "motion_origin": "bfa516d08eb0cd9e5f424ef68eee716e58b4014c0f75181216e13d97c2a295bf"
+        }
+      ]
+    },
+    {
+      "name": "neighbor_ctde_evaluation_scenes",
+      "path": "verification/neighbor_ctde/20261123_v1/runs/20261123T145847696897Z/request.json",
+      "field": "evaluation_scenes",
+      "sha256": "3c13516ba18322af7228d65b731554e3fabee8aa7e495e06ea9555683ca57589",
+      "scenes": [
+        {
+          "scenario_id": "r123_expand_20261119_0003",
+          "scenario_seed": 2026111904,
+          "physical": "3dcbfc10fa235a5131d83b60322073675e54dabd5b3beb7600d1bc20dc7e5ced",
+          "launch_positions": "642ac076031dfc8562d54514172bcbc90d706638837be036188759ef475b5398",
+          "layout": "5583636d498c2a655a33ea3994080c5a80fb0acc523f88bfa69deb1f753ee8ac",
+          "trajectory": "c4772814ce1820aa6910ef2aeab664f1befb66869135f38a8626e0abb3d5ebff",
+          "motion_origin": "7155e213b8b303b32d4bed062af1c76e731aa5b04deddc4afdc714a5c70838b3"
+        },
+        {
+          "scenario_id": "r123_expand_20261119_0022",
+          "scenario_seed": 2026114905,
+          "physical": "f04a0e4e790ce19780ea2a0acb7cc3a3155f11c4bc1fd252eac8ade45fb9f440",
+          "launch_positions": "a9aa4e480d95ca507c8eac2e89a82835f6b9b33cfdd88a41656871be112b0d99",
+          "layout": "7be96d8314edad1e12d157c45cb3c683909f4cb211838220255c84a4e03cd1c9",
+          "trajectory": "263bc4dbe53fb81ece572e82ca5a31e2f2e44a0f5841aad1dbfd8c2678a096d2",
+          "motion_origin": "e15dec7c15600f8aa2e8a4d8bab36adc57758eb3f9d13919edb0c3898aeeab97"
+        }
+      ]
+    }
+  ]
+}

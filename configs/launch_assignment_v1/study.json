@@ -1,0 +1,75 @@
+{
+  "schema": "auv.launch_assignment.study.v1",
+  "problem": {
+    "decision": "one simultaneous departure of the eligible search boats",
+    "reference": "best jointly admissible departure assignment conditional on the pooled predecision histories and offers, under the same frozen continuation",
+    "deployment": "one deterministic rule per boat using its role, own history, local offers and previously delivered messages",
+    "information_boundary": {"own_features": 28, "delivered_peer_slots": 3, "features_per_slot": 15, "recent_coverage_features": 8, "link_radius_m": 10, "delivery_delay_steps": 1, "max_hops_per_step": 1, "family_id_and_generator_seeds": "offline only"},
+    "primary_outcome": "native terminal mission success with censoring at external observation caps",
+    "secondary_outcome": "one original team reward per physical interval, discounted with gamma 0.95",
+    "scope": "declared family support, with group-mean claims when only group means are estimable"
+  },
+  "native_inputs": {
+    "config": "configs/r123_expansion_v1/config.json",
+    "options": "configs/r123_expansion_v1/options.json",
+    "profile": "M20_MOVING_UNKNOWN_MULTI",
+    "native_split": "validation",
+    "generator_seed": 2026112401,
+    "fresh_families": {"development": 8, "calibration": 24, "blind": 24},
+    "family_split_seed": 2026112402
+  },
+  "historical_registry": "configs/launch_assignment_v1/history.json",
+  "historical_use": "reserve previously used physical families in development while retaining the original split and outcome restrictions of each archive",
+  "candidates": {
+    "generator": "one frozen local proposer across methods, with its original offer and one optional private extra draw",
+    "proposer_reference": {
+      "path": "verification/neighbor_ctde/20261123_v1/runs/20261123T145847696897Z/search_actor.pt",
+      "file_sha256": "2740a7a5c6583cccfeb257bc1f0c069cdffcbafa35c02f9cf4437c330c2ee8db",
+      "actor_parameters_sha256": "833cac497f001eaaa68c686cf8011573189cdaa981e1430b5e5a355439a5011e",
+      "model_seed": 2729
+    },
+    "sampling": "use the private original_offer stream with frozen NeighborPolicy.propose for the shared single-offer comparator. Draw the optional alternative on extra_offer independently of the reference and continuation streams",
+    "projection": "original onboard projection using the local map",
+    "duplicates": "collapse identical projected options without resampling",
+    "no_offer": "native wait or safety fallback",
+    "accounting": "log all projection queries, selected offers, installed tasks, accepted routes, rejections and fallbacks",
+    "standby": "scene.initial_executor_wait_point, given only to the executor and fixed across paired arms"
+  },
+  "continuations": {
+    "local_coverage": "rank feasible proposals by new local search coverage",
+    "handoff_value": "rank by a frozen local handoff-value rule derived only on development families with grid terminal control"
+  },
+  "continuation_freeze": "pin implementations and weights of both prospective policies before collecting formal arms. The terminal-mode identifier becomes available only after first receipt",
+  "terminal_modes": {
+    "grid": "existing grid final leg",
+    "direct": "existing direct final leg, eligible only after actual first packet receipt"
+  },
+  "holdout": {
+    "search": "handoff_value",
+    "terminal": "direct",
+    "seal": ["trajectories", "receipt_states", "terminal_outcomes", "summaries", "derived_labels"],
+    "release": "after the local rules, predictions, study tolerances and analysis version are frozen",
+    "inheritance": "every branch and continuation repeat inherits its departure family across arms and replicate seeds"
+  },
+  "random_streams": {
+    "master_seed": 2026112403,
+    "derivation": "first 64 bits of SHA-256 of canonical JSON [master_seed, family_id, stream, boat, repeat], unsigned big-endian",
+    "candidate_streams": ["original_offer", "extra_offer"],
+    "continuation_stream": "continuation",
+    "pairing": "offer repeat is zero. Pair continuation streams by repeat across assignments and terminal modes using arm-independent keys",
+    "scene_innovations": "native scenario_seed and planner_seed from the original manifest"
+  },
+  "tolerance": {
+    "primary_loss_absolute_success_probability": 0.05,
+    "sensitivity": [0.025, 0.05, 0.1],
+    "simultaneous_alpha": 0.05,
+    "verdict": "certify only when a simultaneous upper bound on loss is within tolerance. Overlapping intervals or unsupported families remain unresolved"
+  },
+  "budget": {
+    "prepare": {"mission_episodes": 0, "mission_physical_steps": 0, "training_updates": 0, "checkpoint_loads": 0},
+    "future_mechanism_check": {"maximum_episodes": 8, "maximum_steps_per_episode": 32, "training_updates": 0},
+    "evaluation_design": {"max_effective_offers_per_boat": 2, "max_joint_arms_per_departure": 8, "native_horizon_steps": 400, "pilot_paired_continuation_repeats": 4, "max_physical_steps_per_family_one_departure_one_cell": 12800},
+    "units": ["distinct_joint_assignments", "independent_continuations", "mission_physical_steps", "projection_queries", "model_build_cost", "adjudication_cost"],
+    "interpretation": "report pilot ceilings and adjudication costs separately. Statistical precision depends on the number of genuinely independent outcomes"
+  }
+}

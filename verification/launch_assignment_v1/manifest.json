@@ -1,0 +1,3471 @@
+{
+  "cells": [
+    {
+      "access": {
+        "blind": "sealed",
+        "calibration": "calibrate_only",
+        "development": "fit"
+      },
+      "search": "local_coverage",
+      "terminal": "grid"
+    },
+    {
+      "access": {
+        "blind": "sealed",
+        "calibration": "calibrate_only",
+        "development": "fit"
+      },
+      "search": "local_coverage",
+      "terminal": "direct"
+    },
+    {
+      "access": {
+        "blind": "sealed",
+        "calibration": "calibrate_only",
+        "development": "fit"
+      },
+      "search": "handoff_value",
+      "terminal": "grid"
+    },
+    {
+      "access": {
+        "blind": "sealed",
+        "calibration": "sealed",
+        "development": "sealed"
+      },
+      "search": "handoff_value",
+      "terminal": "direct"
+    }
+  ],
+  "families": [
+    {
+      "family_id": "018062943a31901496a276d6b45c234a127f9ddd2dbde49418df6979d7063bf6",
+      "members": [
+        {
+          "index": 4,
+          "launch_positions": "bc7bc945b28a8c04c5d752c7be8ffccdb2bbcd2b38012c7f3033b155e5e930f3",
+          "layout": "df67628fbb3c93e49439ff79bcabfc9c5eed7e1608a72109e4cbed981a27f612",
+          "motion_origin": "2e5872fa390ad2472142909015e3fc2e85d465add775f77b68c31ccb2a6b3f1e",
+          "physical": "361cc79dc3a0674ae1734e41e7f92c06e8fa3747cb2b568c8e228fc574a8d7c2",
+          "scenario_id": "po_train_991001_0004",
+          "scenario_seed": 991005,
+          "source": "r123_training",
+          "trajectory": "1c1098cf755c38eb1100dc2d4c0aa7ff957d393a1e4bcbf3f8603304cd8c2dad"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "01b2a67ddc333788300d04327334b78c5e0d13f9939899a02b387fe3a7216430",
+      "members": [
+        {
+          "index": 20,
+          "launch_positions": "3562460dd01cee118bd464fdca2f0a4a23e962fd723eb8b20e418e15edb29624",
+          "layout": "49fbd98a62817511069fed288345ccdf366eec4a61caf2b06febebe48e956c5b",
+          "motion_origin": "8d0a4e8a8747519db0d09217c55a4ef3fe0c332a9facf0596165ac2af95fd4f9",
+          "physical": "d4bb39cbecd21e2c6636e26362755797b45de5fa1e66304cb6b307b55f8e1c48",
+          "scenario_id": "r123_expand_20261119_0020",
+          "scenario_seed": 2026114903,
+          "source": "expansion24",
+          "trajectory": "6e591dea48f887cb0c14ae679606988cd53f83d563c48e63eb3d689a8c0ca477"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "01dfd6f59cfa2a5dc24e4caee9c3ace442985a7ab37341bcdcd7aa835e97d0cd",
+      "members": [
+        {
+          "index": 29,
+          "launch_positions": "f266b4754f0aa4c993f689b64b477f2185466f16334c0a050760d307ed98906f",
+          "layout": "e7c987a407a223077524a1584763f6953bd2d0332fb5cdd67c49269a5cd3f3fa",
+          "motion_origin": "200ee7d14ce3cb28e726630ff091f58290f2b24e8ff09f1272711b6cf44be027",
+          "physical": "0efb01547de64f3336345f9f9bfac770cbb255a5a633a89946c8a5785042fc93",
+          "scenario_id": "unknown_train_m20_0030",
+          "scenario_seed": 81030,
+          "source": "earlier_search_training",
+          "trajectory": "363448bde4a4cdc0db2e2e68e1110cb5db9e2cebb999cc3d5675dc25385dc9cb"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "01e47ecd784a76815989e0558178b1efe5dbbd0c2f029a14150a4ac0b877713f",
+      "members": [
+        {
+          "index": 33,
+          "launch_positions": "113707b2e375c24d8f187dd66514dd9541f8d08f99cdead15b93a3bf211b6f6e",
+          "layout": "99fcb2a9c572678e06e9228a42ff16d45e2ada31ba121d472f8e10936cdff29f",
+          "motion_origin": "408cd86d474ba0430a5d8d5690f1e3d321dc56784c7e3ce03e731a1e1fd970cb",
+          "physical": "3c38a029b089eb63e5d9963df24088b3833e8fc975748b1f307a8ebd07bdc745",
+          "scenario_id": "unknown_validation_m20_0034",
+          "scenario_seed": 2026112434,
+          "source": "fresh",
+          "trajectory": "260207cc2559fdfdb3211a9f9febeec3ff98434c8f48f3f0048ad92f205e6677"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "0288ec78bf5492b49e95324e8c249f41fc486712f69e9a4e0ba560d7cc3f32b2",
+      "members": [
+        {
+          "index": 24,
+          "launch_positions": "c90836d339ad933ee4af42bd394b10445992d863fb6f0464b83955699073d0ce",
+          "layout": "1a0584a8d5c8cf25cee6b100d1154cb7bb719d725a3067f2b952fd5f3c51a34a",
+          "motion_origin": "513976c5d1bc623b02f8896332fd6f3fd63f029dfd2b6932723f7d672536d0cc",
+          "physical": "bc8518268b33e0475554c323f89fea58a2f839326ef9510b38c7a58712e18ba0",
+          "scenario_id": "unknown_train_m20_0025",
+          "scenario_seed": 81025,
+          "source": "earlier_search_training",
+          "trajectory": "5be7205b523cb580285310b065fdcb719bc7d1d8552bdaae910f50cda1b52998"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "029130ec6fd57009a70fb3ffcba8043f76c850fe73ec7132883d6eb2a939b985",
+      "members": [
+        {
+          "index": 24,
+          "launch_positions": "b94eb53857f781b58e7ddfcf035146bea7ce3dc8b25ccf4951c58cb8b9605613",
+          "layout": "d8be381cdc6696454f62635e8739650f9bbb60f422a89f79622742a42c7125c9",
+          "motion_origin": "91b8955a371e2d34737cf210daa1ce08bdea4d9d2b6c5abdc50a87c1ce75d33c",
+          "physical": "c103ab1ec7c46fcbe9a8554aad9d1f7095512540e8ed90b64c1f01a606a682a3",
+          "scenario_id": "po_train_991001_0024",
+          "scenario_seed": 991025,
+          "source": "r123_training",
+          "trajectory": "638eaf2a220e8c7288de44efe4c02b0422a8cc1b9eeb9c1bc11835f2b9532434"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "038b9fb90c85952b89e020289d5603a58af85de4acb5c216bec3c1c43d19424a",
+      "members": [
+        {
+          "index": 24,
+          "launch_positions": "f1769b775183c840d677338760cc3b9d9ba2667b30fb89a3d093a56e93d82cb7",
+          "layout": "9f0053241d0208756157a78c1840d8853c0cb34ad7d10300be49066f508b1118",
+          "motion_origin": "a2e4ce3d385a444644c7f981ec04974f6f7c6eb6b6e519da7af4d90b4c37661c",
+          "physical": "bb4eff1a1676644401464182e253a533c59ef34771defd47a114784f4b77ebb1",
+          "scenario_id": "unknown_validation_m20_0025",
+          "scenario_seed": 2026112425,
+          "source": "fresh",
+          "trajectory": "3aba793bbca0adc876c0b728d3ba1bb6a32483a77f3d4216fba5b2b5909e4c1d"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "04001fa661b62ba037ceaf4e0ddf8000c7d60b4280270ff29b53dfb79d3dbe42",
+      "members": [
+        {
+          "index": 11,
+          "launch_positions": "f35034c49ef230524125249e3347aaa87a9b45d42a251eddb45302b79aa7abf2",
+          "layout": "9c486e1786029dab6b876f572fdd45cc2e78fd75d7fb4821c4917e4efd4c9077",
+          "motion_origin": "df016b4dff60305dff039c6b5d2e20f1e1345cba77b3e5285ec0254d354fff9a",
+          "physical": "d657b1b415dcdae7a69e7755f5184a596c1088a365ead1805c1f03aac5bcbe9e",
+          "scenario_id": "unknown_validation_m20_0012",
+          "scenario_seed": 2026112412,
+          "source": "fresh",
+          "trajectory": "d0baceea7c645b05a1a797df56bcfedcaf6a4c9d44a1382eaec48985d799eb4a"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "04e27f55bb6d57b5cefc6703be4d283dfa8dc0a1e983fa09a34347a88db66ab5",
+      "members": [
+        {
+          "index": 48,
+          "launch_positions": "de8f9ef1a32a1336ae4375dd5dc548953a7dde4ad9869cd01bd1a0ce59f89cc9",
+          "layout": "f8397513c6c89f9cfef798b06afac47afdd574104e379febc6bf6cd448c2959a",
+          "motion_origin": "bc9abedb32d9ac1f3c7b1c428f5f37c151ed48933d790f5ed497d7ccd0dd9955",
+          "physical": "8f8daf3479d8e4825dee9add3c357caaabd3370b1c2b470b0e18a54a59f0d763",
+          "scenario_id": "unknown_validation_m20_0049",
+          "scenario_seed": 2026112449,
+          "source": "fresh",
+          "trajectory": "55c86a1949f995e73d83ac7998f950a0bdd2cbf3326a1f0ece159cf3ff38143a"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "04ece54b547c711686860bae85b1bbcf74b178c43d8cb530e34c7f705b8346a8",
+      "members": [
+        {
+          "index": 18,
+          "launch_positions": "ace2e42c4378d65983cda52a4f7a53eda1428f18e824974e2dfcc36d09251c89",
+          "layout": "da12643248ef5923c05b8a8f09acf17e38cb1cf43e59514c8539f819c2794f93",
+          "motion_origin": "09d2ca3290ac4d41a487a5a9147a0f7ae4f9adc63c825c34cf8669e8202365da",
+          "physical": "f26c4d95b3baafac3f7a3df73b903c271c4dfbdbce7b12495e894c57866b1982",
+          "scenario_id": "unknown_validation_m20_0019",
+          "scenario_seed": 2026112419,
+          "source": "fresh",
+          "trajectory": "2094484fe68638a4975c74fffa7dcd3a1e007fc1b27a164a4aeaf101f55c0fa1"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "05242d7576cdb07f15971f9efac74e54d030ea3edef661e40d34d284fb083bd1",
+      "members": [
+        {
+          "index": 10,
+          "launch_positions": "13c00d3fa424675f8b9112d0a1af712df42520f1a02c5531a4ba6c47b66dee3e",
+          "layout": "e231d52621d9b25099d9e444f6a2fc9e32b6230fd12c3972e1b323bdaa88b460",
+          "motion_origin": "1fdebc9e3e2aab6e2fa810298ff26ab28ff1c3042869fc8da9b201d8d80fe444",
+          "physical": "7f8c201820dede084e01e65ec092ce749937b2bb4248374e789df36adf4cce3a",
+          "scenario_id": "po_eval_993001_0010",
+          "scenario_seed": 993011,
+          "source": "r123_test",
+          "trajectory": "a3cf626987cef3e1ac1553b218d152deda02d0ad5eb27624c13351f9761867b2"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "0aff7798335433da85a0cad465cfb8025f71c073ce18beaf35628c820f6906b3",
+      "members": [
+        {
+          "index": 14,
+          "launch_positions": "5005c1bc0d800ff76651c82cac2c16b43adfe3fbded0c564e3c23978d3c2a608",
+          "layout": "a17def01eff4fa032099a0a1bbd9eaecb31a9775c1dbb3143ffa4d2b823e0d2c",
+          "motion_origin": "b08a1a592e382c0833798a88ad1261bc45213c36154173c55c9ff9b28c71def9",
+          "physical": "d767e560d15e408e341f0aff2cea91703300e373ead9d3fd5d697a554c778774",
+          "scenario_id": "r123_expand_20261119_0014",
+          "scenario_seed": 2026113903,
+          "source": "expansion24",
+          "trajectory": "65f30d832d47d933072abd10792a8d6176bf5fb341a675a0c06216833c7482b4"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "0b61bb58376c394d823870333281fc385014c2e6b86f10a2220072acf2d57e62",
+      "members": [
+        {
+          "index": 6,
+          "launch_positions": "83a25211b8e22478df39631fc684bc6eaaaf4a49325afe0ddcd362b03690d0d8",
+          "layout": "34ba5442bc0bc346db5f23732f25e41d07dc99b3074f5f48cacc7f837d775672",
+          "motion_origin": "eea78c0f0eb625a2564023ce2c908ee2b9fd25f5e1d267fb272acd690d6b4930",
+          "physical": "c562b9a864afa65dc277ab3356e344470f196e1967b9ad26bfb4bd65aa37beb1",
+          "scenario_id": "po_train_991001_0006",
+          "scenario_seed": 991007,
+          "source": "r123_training",
+          "trajectory": "4154bd287a2d49ed76d67a7775682317310987ea5559deb946a95d5768e8ef9b"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "0d988ba600c90b2696c22df7bea526d2da0becae9dbef0021a2b81c86e20e8d1",
+      "members": [
+        {
+          "index": 25,
+          "launch_positions": "19326afbe66c34595beab5c1d1d17f7e7685d92b53be4bb299169bd9f11c0ad3",
+          "layout": "b44853e4d17017c5c9c8b426d00a20fb7dafc9a7c8107994e018e419553bc072",
+          "motion_origin": "3575ee520a02174c8ea22f507b34dd36f1261ab6bdf0a8e79396bfe6a0005955",
+          "physical": "7c2869121ab599953565852eebff8ff579fb52813dc08377122376f640a5e7c2",
+          "scenario_id": "unknown_train_m20_0026",
+          "scenario_seed": 81026,
+          "source": "earlier_search_training",
+          "trajectory": "90756b7c16d0e8b6a6b815a482367adfdca4c434558d4d2fc2ba7a06543451ab"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "0fadeb8178be799ba6df299b8566a5d78e9c66450cad8c73e12316ac142137ee",
+      "members": [
+        {
+          "index": 9,
+          "launch_positions": "abb9f69c5816e7d5be006e6506c53535a13e62f308ffc70df1f8112fa258a69f",
+          "layout": "d0dbaf768648cc10ada846185e53d71824d616aea8ae2b035199cc6c0910dc79",
+          "motion_origin": "6352146e9fe9b798c3b5525ad8345d4df8fa735b519094dc5f1c292ebd3f72a5",
+          "physical": "9e4811370f47edf591cd6aa028339c7b1578d015ec30aba979d33f703c0bf40e",
+          "scenario_id": "po_train_991001_0009",
+          "scenario_seed": 991010,
+          "source": "r123_training",
+          "trajectory": "12f0e1ad7576577fd61e98ea21597eb5375da0c3110a63fddd2ce593fba5d688"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "0fd38927f2c7293a3d657674d1f5f4968d5409382fac9e28e3da9b57021e3325",
+      "members": [
+        {
+          "index": 12,
+          "launch_positions": "715560956c7273bcb9108e9a11e2b2ad3d6a9a1b863fd15848071c16942bcab3",
+          "layout": "fa325fccce3f2f2d9ea193b6a63750b0849473786c5fac6e48306c712b8c7d5b",
+          "motion_origin": "9dddce66a4499d17c5af78ed7ad08ec2b9b35ccf1a0682b851d10872eb13d9b2",
+          "physical": "609d8f1afb0cebcd6728f3d7af717d12d22a6e3bd3e5a36f40fe6df6eb71b493",
+          "scenario_id": "po_eval_993001_0012",
+          "scenario_seed": 993013,
+          "source": "r123_test",
+          "trajectory": "dac7d7fa4d2159055d2d63eff4c8255fd96a34c8b227d23e3fb894234c1a0a97"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "0fd3d62561d2731efe831d84826435a7e3315318e645a10ddb446cd32e530565",
+      "members": [
+        {
+          "index": 7,
+          "launch_positions": "43dcf2b3b97bcb49fb6f72627e6168d0dcb8f7e58542942e61b4067207f28804",
+          "layout": "a2bae1e2501729c0fb0aa1035c7d8df26e6f0b88f70da636b96ef940aa34025b",
+          "motion_origin": "18a826df7ad65c2324597cb874b3dc63867f5f36bb27f4c5da9ebc04172e7c2c",
+          "physical": "e34e6efc5e0599171927d257c5e7adeb8c6cd3d886eb8bb9181de0a6b7235d3f",
+          "scenario_id": "unknown_validation_m20_0008",
+          "scenario_seed": 2026112408,
+          "source": "fresh",
+          "trajectory": "54833c994b261e238ea352154bf218cf4bf9919ceb5835d0a5d7702cdc5d7fcf"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "102fd6da97a128ea00e79627924d05941d6e309f4a3980413e2593a869d81082",
+      "members": [
+        {
+          "index": 2,
+          "launch_positions": "7dc3d4eca27e5cd4aed0eea996d46145e540bc7e1df052e340fd3e5bc4c9e4eb",
+          "layout": "7de97d88dc15414b18f41e5a7d60ba92c878daf41f22428358934e0b23f68a41",
+          "motion_origin": "1c55f81faaaba7e730fe69faec3a35c24c0fd609a6d4c2d4ba3f44c1108c2eab",
+          "physical": "0e8bbe30931a084466093d56bca23be6f5ea458bc31f416a70522704b6cb4070",
+          "scenario_id": "po_train_991001_0002",
+          "scenario_seed": 991003,
+          "source": "r123_training",
+          "trajectory": "60669bb764411bf6f5505f51f56ea55c85f39f471f2ae058261f8d95032bd73f"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "105cef346502246daca1c2f3822445d387b095ecd1a9495be86b9b83ddf44c44",
+      "members": [
+        {
+          "index": 0,
+          "launch_positions": "54702dda8c3cdee676bba089640698a3cab2bb86e316fca996875d31a94fc043",
+          "layout": "7d558fba7656ca44bf338f0a7cb165638b40a26b1a97e59874c7464a0c927569",
+          "motion_origin": "4e776e65a4289281729ca262f3adddf227c7f224ac81bbcbe9c25b02fee970b9",
+          "physical": "ee71b777c56ea314b017a62450476a4147b47e166c41ce8e1415339ffa9b2fbe",
+          "scenario_id": "po_eval_992001_0000",
+          "scenario_seed": 992001,
+          "source": "r123_development",
+          "trajectory": "bd346c4b0709f5532bf5ad9619814bbe2e1d1037d35743ce09fb6ec2988d477f"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "12bcc905bc12a29d4632ccb4549d4603e7a1e5e9314f54f82ef11162b05a3c14",
+      "members": [
+        {
+          "index": 2,
+          "launch_positions": "1b65ae9a622e9321e06f2c78434fbe79e138bb12b52ef86eaa88c71aa15ccb95",
+          "layout": "aca600182cea83690a9a6f95d66ebebc74b9577b67113b59cf34ded2dc64ebaa",
+          "motion_origin": "26c3ca4d0962be0b8834b57f3ab0d26498236cec7fc5bdb400a210b1492d3912",
+          "physical": "0d822efae2fdea2f8c94071f49fd3bcc86cef1e7d8433a4fe9b053564126f1e3",
+          "scenario_id": "po_eval_992001_0002",
+          "scenario_seed": 992003,
+          "source": "r123_development",
+          "trajectory": "83a822a2f3457fdc93ac49b5dec42994dae3e54e58a6cbcd4cdd3f7bddbe5690"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "13fd0ad5b637d2bd668392b184e4c9d35208f8c9ed40e6f43766d787eb07b3f1",
+      "members": [
+        {
+          "index": 27,
+          "launch_positions": "564a9d3553d6750a4499a0441430a1974501c1c4fe786bf3545a1bb67fec6224",
+          "layout": "1aabe782f7566d45f24627e75869d39ff01ba6bc324be5e0ae55c8182b406fce",
+          "motion_origin": "be7d6dc6e5e4eed761077d1ba2c100cd072709fae340312d8300b0ad21f2fb1b",
+          "physical": "6ef7ce2380eacde84f766600ada2d6f82a6a45edcbf24410d3659a48df14aa67",
+          "scenario_id": "unknown_train_m20_0028",
+          "scenario_seed": 81028,
+          "source": "earlier_search_training",
+          "trajectory": "e823abcc3d6cd3e793482bd959ba20b94f4d6169249f26a44814c71412110399"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "166288faa70373fd935c7b4864446b33f198bb36b3ede0bd51823bbcc4c06ee9",
+      "members": [
+        {
+          "index": 3,
+          "launch_positions": "642ac076031dfc8562d54514172bcbc90d706638837be036188759ef475b5398",
+          "layout": "5583636d498c2a655a33ea3994080c5a80fb0acc523f88bfa69deb1f753ee8ac",
+          "motion_origin": "7155e213b8b303b32d4bed062af1c76e731aa5b04deddc4afdc714a5c70838b3",
+          "physical": "3dcbfc10fa235a5131d83b60322073675e54dabd5b3beb7600d1bc20dc7e5ced",
+          "scenario_id": "r123_expand_20261119_0003",
+          "scenario_seed": 2026111904,
+          "source": "expansion24",
+          "trajectory": "c4772814ce1820aa6910ef2aeab664f1befb66869135f38a8626e0abb3d5ebff"
+        },
+        {
+          "index": 0,
+          "launch_positions": "642ac076031dfc8562d54514172bcbc90d706638837be036188759ef475b5398",
+          "layout": "5583636d498c2a655a33ea3994080c5a80fb0acc523f88bfa69deb1f753ee8ac",
+          "motion_origin": "7155e213b8b303b32d4bed062af1c76e731aa5b04deddc4afdc714a5c70838b3",
+          "physical": "3dcbfc10fa235a5131d83b60322073675e54dabd5b3beb7600d1bc20dc7e5ced",
+          "scenario_id": "r123_expand_20261119_0003",
+          "scenario_seed": 2026111904,
+          "source": "neighbor_ctde_evaluation_scenes",
+          "trajectory": "c4772814ce1820aa6910ef2aeab664f1befb66869135f38a8626e0abb3d5ebff"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "18198c669b25ea46b3f196142922aefb94fa026b28404539f5762ceb1a977f8a",
+      "members": [
+        {
+          "index": 20,
+          "launch_positions": "d80c406fb32a94fbbe0407b779d57dd1a56c7000eabc5663a4385e50c781dffd",
+          "layout": "515f01866b9b8eea683b616c60dd87530571fb486dd1b7fb9e63ca9d26ab7bd0",
+          "motion_origin": "c08e128e76c33922b14061bcf936c7fe19050c4a199b705c17d3d82775c7daa6",
+          "physical": "dea211b7731f53dfd428350359ba5c61053651f4de01ef1b6bc6cc532050b7e0",
+          "scenario_id": "po_eval_993001_0020",
+          "scenario_seed": 993021,
+          "source": "r123_test",
+          "trajectory": "43e5bffefc7b8e639fcf4e02597ae678fe11b10155478236a7c56558558af6fa"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "1990bd7990ac790b0e0af72509b7fc4cca759beba4a551d988839eac89a4a51c",
+      "members": [
+        {
+          "index": 30,
+          "launch_positions": "f82f28a6241a79f63a9dc1be4913201fa022a96252eb1aac72bd0522066de40c",
+          "layout": "87ce6491e0c13cec9d9f864a005177c1ea54cdc878918658102a6993f816c8cb",
+          "motion_origin": "72140129a8149b234fa3cb0bb4ec0dd3b413f8e3d920910f66ac2cef5be09ce4",
+          "physical": "f760594059cbf39b43be2fed5d67a6aeb6185756f317f3fa760c3b2e118596b7",
+          "scenario_id": "unknown_train_m20_0031",
+          "scenario_seed": 81031,
+          "source": "earlier_search_training",
+          "trajectory": "baaec3fcf6cdaf10327a1a058f6c514d456f32138de718d5842cebcee41f8525"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "1a95902e2853913b4dd6269066adda790e557119b756901e40d71fbeecd18c4a",
+      "members": [
+        {
+          "index": 1,
+          "launch_positions": "d06e876ccbd6854c0d54d1f9189001c402cf27cac12cfb25a6f74f850ffd21c7",
+          "layout": "e54a12e1ee667ffd749e4febe35f6ed4c38e6e47285d74ee0596e9e3a7aabedd",
+          "motion_origin": "6d8aaac2d3c875e5ff2ed8513a86c8d0e08d69d00aba22041934331b923fc396",
+          "physical": "52bb3d36c66356a6431de4bf1c1426db1d07b3d68f1bdd3b3d1d4803a3a8da1f",
+          "scenario_id": "po_eval_993001_0001",
+          "scenario_seed": 993002,
+          "source": "r123_test",
+          "trajectory": "d2eb83cdd48fd4cd7013f76fd341948f483ea1f0164b8cfc2e96d2cf7347befb"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "1ac2a393c36f41a61162bd4d1e480e00f0bac0a5199b99a91377ce629a9bad11",
+      "members": [
+        {
+          "index": 11,
+          "launch_positions": "3525e93c94da3ed57bf9778d86f7025bb29a6dd4b7bd7669f4a8440c4bc23a93",
+          "layout": "085c911893baf9c882b75d23d20584b6aadbbb3dfaaa44e3323236985e969615",
+          "motion_origin": "177f11df58a1146abe833d74851cb9c9fe99f4f4d32f05e788633c6f2ae8c8d7",
+          "physical": "832aae7d7ea7fd744e5bc03387bc85feed98441be45adf71922db0e0f87a6f4b",
+          "scenario_id": "po_eval_993001_0011",
+          "scenario_seed": 993012,
+          "source": "r123_test",
+          "trajectory": "4ffb4195da5f71f5fe8982bc631beb45820ff56dbaaddaa662b77f2be8993126"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "1d2c724e602290607b9f501ae18d676c0b6d9e0581d3fb69cc82cfe1246bfc83",
+      "members": [
+        {
+          "index": 17,
+          "launch_positions": "df338f0b1426a8b6cacd0565150f744f2dd10b2caa318d1d543a7a09c5b20925",
+          "layout": "f4422bb154cb20279d2b4df315523b2d4833e1b57251bf0b59dfcbd082fd37cf",
+          "motion_origin": "8772d074e55af808d3ac444f752dd47d11beb28a952c3d92b61cc7a3284be7ad",
+          "physical": "1baeb8b84e6564f13b4db1d213c3cd04c1f4c2b0970fb6bed7bed66e0db68c74",
+          "scenario_id": "po_eval_993001_0017",
+          "scenario_seed": 993018,
+          "source": "r123_test",
+          "trajectory": "063fa57daa4059b0830781a319bee9cb6fb7b02d1acfd5cd4562fdedf8774fb6"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "1e4b8ac253b0b22dc7c18e957157193d596e3de002fc93366090ecc7b06912b4",
+      "members": [
+        {
+          "index": 17,
+          "launch_positions": "82ef0423c5cd381536a296846e0416123e4733c519bb47d1f99b531a9d3cae74",
+          "layout": "2dc7a94e28e120d84d875d60ca9cab4286da7a949d68e984e32b20932877bfac",
+          "motion_origin": "bdc985168a09cf4368e16022af66acc5a1dd65d9c6f4d24b345fffc43bf2e1e3",
+          "physical": "75b8ad54bef5fd26336285df671af3f201c0445972e90e58bfdea8f75a5becd6",
+          "scenario_id": "unknown_validation_m20_0018",
+          "scenario_seed": 2026112418,
+          "source": "fresh",
+          "trajectory": "d2d6f79d83e2c4c64e792669b6d97a5d2efdb30c7f8d1b17862374e192083377"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "1f31c8dd8bc4b14843f90c89ef357f83869b888f1d8ac2f4ff21970d11a97572",
+      "members": [
+        {
+          "index": 14,
+          "launch_positions": "4c0a2731234433c50dd8c005115532687ab95f7ae7814f9b14d70be01408b702",
+          "layout": "b53939418868defecd444547ae5a16137bec26536bc9fbdae04cb1b7d7ec5e3e",
+          "motion_origin": "7e43b5050e11cdd09421ce71a806cd2a65715aa11db8404276306f863234b8e5",
+          "physical": "b74bc91a6814e4f286f79b2247d7792147b075e332c91e67e3ae4adf37fafddc",
+          "scenario_id": "unknown_train_m20_0015",
+          "scenario_seed": 81015,
+          "source": "earlier_search_training",
+          "trajectory": "c281436134b3a824836d6a4420986c150bc3b4415f6d96411454de5bfa31cceb"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "1f3fdb235052e7888f3efd677f0d23dc1aa4cba9e76f14efc36113ffcc43504c",
+      "members": [
+        {
+          "index": 14,
+          "launch_positions": "eee142db6e345177d02a0333dd13436fc5a5f34f7045fa6b32794a5517b7ad77",
+          "layout": "0d080613ad2ad26957ec1a8800cdff61835b78e6cc31ee5efb98db6916f34fc0",
+          "motion_origin": "d1b341cb7400de972c9480e922858ba0d0d3012ee638ea80ffb19f0909a0d10f",
+          "physical": "abb3536e8970c078c129dd8bf3eeecf4b4573f7024857562f320629581e83dc6",
+          "scenario_id": "po_train_991001_0014",
+          "scenario_seed": 991015,
+          "source": "r123_training",
+          "trajectory": "070d7f940de1af03dfaa05241a61777af2c533b63754e71b45da1a45cd9323c0"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "236891661cd6e67936a90e4b7ede8019666d3fe134129e9aaf0d79cc76993b6d",
+      "members": [
+        {
+          "index": 12,
+          "launch_positions": "76f9294b03cd44607e7013d54403e9f56ceb43dda563246a5bc3d21fe9ec2aeb",
+          "layout": "5a22dcb72d54d698d2abdd28911fee1ff0d3d5e79391d29d76c1082d389d5e52",
+          "motion_origin": "3c14cfca33b990654067a74a7a68a3ca86821bd5646587c81bbeef9d6f241fe2",
+          "physical": "b72c41ebeb7beaed68e58aa8e1caa97c62dc2bc6d271a67a959264980eb83c68",
+          "scenario_id": "unknown_train_m20_0013",
+          "scenario_seed": 81013,
+          "source": "earlier_search_training",
+          "trajectory": "c2e05f3c5b82646e996cd744bdf370f2127823c2a528b5396fa865b7b2cb56cd"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "236efabf6ea584dcf6ab58ff3849a87c14128cd9292baf2caeeb01e97effd4b5",
+      "members": [
+        {
+          "index": 31,
+          "launch_positions": "abc54bbd7c13ea46503585e919b89ea09e26320d39cb11118a8511f5b5e6c9e9",
+          "layout": "4326519c88ab5cbf992acbdaf9456577b77deec6b7765663ff86b970d714e520",
+          "motion_origin": "015b1fc481dd315fd5cc276720b0c530cfd5bf1ec2ecb14950d4156724701179",
+          "physical": "a276a2ccd03cf1d7d8b5a69b82e7205e989c6489fb80e8c149371a6a7ad3c68a",
+          "scenario_id": "unknown_validation_m20_0032",
+          "scenario_seed": 2026112432,
+          "source": "fresh",
+          "trajectory": "57178620f0eaca1b435c2fd68e380873e7f9240dc7e0da0484bb4e9c5c637db5"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "24d282c825a9a4efe4a6b5298da5fb35b58be6dd0e92ca2cf7b62eabcf160c0b",
+      "members": [
+        {
+          "index": 9,
+          "launch_positions": "5cc57235931705eaacf0a6f91ef594c8fc60a24127c21a48fa5b271a48e6f91d",
+          "layout": "ec1446e6e256ca96aaa4fd606ba85cd3d638d96557536a873ece6b7a72443221",
+          "motion_origin": "49a0518d626ae99e5f553c484b458a77c273071a9592bc39d355e3c128c0de78",
+          "physical": "74ea027cb6e13a6e267623acee7d528cebfc55d19c821832944a1432ee03668f",
+          "scenario_id": "unknown_validation_m20_0010",
+          "scenario_seed": 82010,
+          "source": "earlier_search_development",
+          "trajectory": "085a05332aaac3912cfa54e6baf1c2c58139106a14f2f3eb4c3f722103c798a8"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "27e96e5ffa3010b46980517dad058f01b4c95f6f48f0771689f170fd16a5e608",
+      "members": [
+        {
+          "index": 1,
+          "launch_positions": "9cebd264a8d90f1351b3b1839d75260db6442f940b436be0b20c998e75e79439",
+          "layout": "3904d23e4d02033716b8e6f5577be33ba54953e5eb46f0a00a013eee7b3bac9c",
+          "motion_origin": "aa84ba2865f5d9649baa287be14d16fe7bb5c2ec988f09a7a13a63eecbcee4ea",
+          "physical": "f705ee336ea8efe11d012735e444efce5092323592e03a07aef3683db06adf28",
+          "scenario_id": "po_train_991001_0001",
+          "scenario_seed": 991002,
+          "source": "r123_training",
+          "trajectory": "f6a990d37c68a752c2e5cf7428e32445fa9d98696c3226d1c3ec5364d48e2119"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "28c2022e9a493ab85e4742e59169f7fe13b8b636f9042cf1ce2bc5017d041dec",
+      "members": [
+        {
+          "index": 4,
+          "launch_positions": "19c0401b974a04d31ea4b72601e33dfecf6dfe693432a1426db4d44dde450c27",
+          "layout": "243b873d38ce9a9c2338eff88705b24a593bf32f8a55f84fcc0fc274d9b8bb7f",
+          "motion_origin": "50171a096abbcddb1bf7b6b87951038dedacdfe4ee504d877ed16fbdeefd85a1",
+          "physical": "7331216a63b2f78e6141836dde0547fa806ca85f1509b172513677b23a90c5e3",
+          "scenario_id": "unknown_train_m20_0005",
+          "scenario_seed": 81005,
+          "source": "earlier_search_training",
+          "trajectory": "1ddca90458b48e038122926bff89e71c8cfeffb3aeec25c93618a9856e07c791"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "292ace7b38577ec29f55c723f4a5f0c98e52ef48d5052e472450201247d3c599",
+      "members": [
+        {
+          "index": 16,
+          "launch_positions": "2c1e5b7fb6de8d40920430115bd71396f201d32003d0b88995042d7bdb6a875a",
+          "layout": "61668f70fb7a3a164b10cbd9156334e6631534b0b0628a28b6d50e38aa663d3f",
+          "motion_origin": "edaad374cec5a78979db6dfeb49b0d8894f34f5e7619a2ab09c692bf922bafb0",
+          "physical": "76080318a754076154335611451d60a922f4d87b04033823dc5667098f312b3a",
+          "scenario_id": "unknown_validation_m20_0017",
+          "scenario_seed": 2026112417,
+          "source": "fresh",
+          "trajectory": "af8fb052ff980b5808fb14c5edacd9e072bc3b19b6482828e03b8df0b3836dd7"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "2b4a608079934b6d60d90ac6228018f8bf6866c3d79158e7581f481c4ff48d58",
+      "members": [
+        {
+          "index": 50,
+          "launch_positions": "d774d4b14af017865f18416f5cf888d7fbbadc7ca6ca0e96566df3e9e7adb58e",
+          "layout": "688db7519263bc3bf1811e4d10522b2f0f3d795d33655a6f3dcf5d0dff17a609",
+          "motion_origin": "4abf6afbb2d33d999f580b51a80c82703437084079ea341f7cd59daf46de21f1",
+          "physical": "487e51d5ae6038719ae227057a96e523ad908c14085a37b3ae1e7ede5854aff7",
+          "scenario_id": "unknown_validation_m20_0051",
+          "scenario_seed": 2026112451,
+          "source": "fresh",
+          "trajectory": "c604d36e11f7aee1071d3b6b23da83367d58569ceb286b8ed233e71f28dacbcb"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "2c0125f7b28a596edbb06a90d59a2468867d643a313c5c63b76c234d4468cbef",
+      "members": [
+        {
+          "index": 4,
+          "launch_positions": "0fdd183690125af68f434a602920fe626bc8880e327a2d6fdd978261f7af0111",
+          "layout": "b794b13d4e4019b4bb13a8bb8917b1969ace83e07030495b37720354922c9a35",
+          "motion_origin": "f9a715b0aec1b9d8681ff254a6d2d18bc9d46ce9d9dc280a92656cb38b2ee5a4",
+          "physical": "d9dec1118fc0e80a8018936254c5168da9bd50098cb1debc5f7afd092425feff",
+          "scenario_id": "unknown_validation_m20_0005",
+          "scenario_seed": 82005,
+          "source": "earlier_search_development",
+          "trajectory": "e9eddb1579b9b40a2efee89af236db61661622e7cc27bcd0aa286c2080b61840"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "2cc53b1ef40edaed2f0be73e933dd51c8a4790350ce248620bed4f3970599e57",
+      "members": [
+        {
+          "index": 3,
+          "launch_positions": "f17d442a028d895db6b5def252b450fc21f7af6deb1f79a739a6b2a07a4b8fb1",
+          "layout": "d9b1ebf0f62fbfb2cac2690e37ed7a6db12cbe96e52e04f48cecc7b534515ab2",
+          "motion_origin": "ece096cb243dc30dc2b9f78ee4054983dc5e44b45a321c9fdfbc6f1cbba24abf",
+          "physical": "5814cd61cdfa241f4ff81657554d679f892bd5557668b766514988cae6f76e60",
+          "scenario_id": "unknown_validation_m20_0004",
+          "scenario_seed": 82004,
+          "source": "earlier_search_development",
+          "trajectory": "4b75b55e0313e61ed6cfa5aa78260db0a2a771eabfc7f793b0269741f4d52c7b"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "2dae17ee1115695524bde4bc02ae3f7092884e36716a64f15a787527402e8e92",
+      "members": [
+        {
+          "index": 10,
+          "launch_positions": "a6b79b4c4bd410f2ffffdfaf8ff516e6e34055f5c233442f51b686b8eab6a179",
+          "layout": "fcffced4a19175da359ec136913c75e976a684c493840dd82ac402ef1ddc518d",
+          "motion_origin": "19f45980b85d797b3417d9dd61cb05180e3a286d21f2a344b9f4a78a35644216",
+          "physical": "6eb456288bf4dbe88870caac4c4b6c8bff8eab73780eb6ebcd4471a21aa76cdc",
+          "scenario_id": "po_train_991001_0010",
+          "scenario_seed": 991011,
+          "source": "r123_training",
+          "trajectory": "e1d0c5f882738c58cf188f434d33a107adc1fe767ea8aac6dc5df51f8c4029d3"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "2dfdfec8b3c546e9badc13dc794d32dab841f29189deffe660475cff38dc6753",
+      "members": [
+        {
+          "index": 10,
+          "launch_positions": "5b76c76f9368f4cc09bd26dcbdac96eb180fd9ab23dcb8d762cdf26473fa6621",
+          "layout": "460d3c12f0da9ffe619ddab9ff9079411ea0557f376dca6b792793ed918591ba",
+          "motion_origin": "e7282338392f5d791b8122e0d3de7ff40d466c5a04ab7a5f714b0267a77669ae",
+          "physical": "e10498daeb080c78cb779d509289fe46536b19e7e2f5996d290df6c49151773c",
+          "scenario_id": "unknown_train_m20_0011",
+          "scenario_seed": 81011,
+          "source": "earlier_search_training",
+          "trajectory": "61456444c31baabf9cbc71070d5db23a5b71c619fba9d399409df9ef4410b23a"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "2e47027efd5397a76639cd69e96a1d74ee142b528f5bf5e592822d384ccdae58",
+      "members": [
+        {
+          "index": 1,
+          "launch_positions": "30019be5c2d0869fb39e6c91b1d416c53a2bd7014da564b81aad7e3440c81c00",
+          "layout": "295d12a56002d3ca60540b1b27e07fe0a80a2f6ef9226c5f3c160f2391d33cf8",
+          "motion_origin": "8686f7393f45c843221e2da4feb4f70617873d69b016d856c8d839d42ca05917",
+          "physical": "122e7342daeadce644df2354e0a1fe71fa88aeb10682cf34c7a686c3449d0b53",
+          "scenario_id": "unknown_validation_m20_0002",
+          "scenario_seed": 2026112402,
+          "source": "fresh",
+          "trajectory": "db8ee879117f66728cf60d4a62c1d9d7d3fa4e698bd17b02876b974ae49e6223"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "2e9ced362cd5286a497deee786a96112c256e3b6623e5c12279e007c6f6de1e2",
+      "members": [
+        {
+          "index": 16,
+          "launch_positions": "2b94ba424c56a1dfec970dae9ff1affb84b24928fa5b522e1791a413b00420e3",
+          "layout": "f634e7d84174f794957e8dd4e54969a19b93bcf8481e8f30915d1bae4f545293",
+          "motion_origin": "b0236b9c11d9eeffc70385740d2846b91bfbd07c508bdadcf5e7b6639dac7ea5",
+          "physical": "75c9a2d4c9db23855752f17be27ed02d8a25d52bd36815fa04a23bb92c13b72e",
+          "scenario_id": "po_train_991001_0016",
+          "scenario_seed": 991017,
+          "source": "r123_training",
+          "trajectory": "d9b1e58e9f1c0e96affa9568245fdeae981a2b53e9f30a4ab223171238d4bfe8"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "33d7478d8fa886b094daf475b34cf1ab8374855df6259a31f518199dea288184",
+      "members": [
+        {
+          "index": 6,
+          "launch_positions": "2bbb436f174e8c0c9d1174d162d7a114a20240d5dd73eab5fab449f03a2070b2",
+          "layout": "e51a0fb90393f7c98dec566f6a663dc7d632610398d9f8172683e345a1832fab",
+          "motion_origin": "3c4ad3a29e0ed2d31f69455065653159ac479e6b1dc5789c2641443be49b8889",
+          "physical": "6984a4d577861d25ba21e32396b9b45638690a72579bba9479812e4b09869f39",
+          "scenario_id": "r123_expand_20261119_0006",
+          "scenario_seed": 2026112901,
+          "source": "expansion24",
+          "trajectory": "04286dfc64c04abe99960c209a9895ff76932eeab33f95dd2c0731c57d2dcc9b"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "386455c3d1fe0e75c6f8edfbe6cb240bdf171c16ccbb9397685572c7bb7dcadf",
+      "members": [
+        {
+          "index": 7,
+          "launch_positions": "fad22052e008c8b6aae30d3425cb4e62181f86a824407a4bc8549d072c1831dc",
+          "layout": "fdca48ea1ff547ad03ef8b5e59b7a128697149d30f983e71d52dd38b99f9716a",
+          "motion_origin": "3d3057215910e9c62e9963d6c3bb845bf8d7fbbeef4033de14a621d6c2cfa091",
+          "physical": "44bbe713cf70f70fb1c6281afb0607d465968f9bf0f0162131d48713e75308f7",
+          "scenario_id": "r123_expand_20261119_0007",
+          "scenario_seed": 2026112902,
+          "source": "expansion24",
+          "trajectory": "7ae4931bab8ea54847c64756bbcdd5703bf7ca2f0e0b22a77ac8554f738db3c5"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "3866bb09866f1f1fda5541cca0d05a782771f90f81c15c50ae84f52808238c21",
+      "members": [
+        {
+          "index": 38,
+          "launch_positions": "5951ab2c9bd035b2b3ea52f38bb3a831f95384566954adfb4ffcb4304e51ec92",
+          "layout": "1973c95b028aba6ad0bd1ce74f1d42f62980487d0ba1f355ffcbd6d1e0dcf2bb",
+          "motion_origin": "7141a595e7ab0fce881a5dbefbb85c6653bab13f36e22bc77f4136aa11ac6448",
+          "physical": "9c8d3a804783f31461935b5874fd8d51949688eb0cfde06251388847fe53e3e6",
+          "scenario_id": "unknown_validation_m20_0039",
+          "scenario_seed": 2026112439,
+          "source": "fresh",
+          "trajectory": "89e64b79aff4b935e372f921cb4fba5e9b4392b998b4a7d16dcb5462f189e011"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "39d822c8cba5bee96fa9e61d06f1f4bb22c43c8544c47e1b324ff1aea2395fba",
+      "members": [
+        {
+          "index": 1,
+          "launch_positions": "97ce57b9377bc20636e509603068435e0f82e1993b3671e3e7f025437cba7b27",
+          "layout": "c42c067dba6caad777da254440d7fa4d822d3b1cf62895eb7000e7a05e778ac8",
+          "motion_origin": "1037968be0025c1b8b48ebe88da9b364f87f64b73ff61bfe7c852dadf02ae6e3",
+          "physical": "a4009f4f4e7ec02ce5ed76605ec1f2e9a4e64ced49239cd9319f5226d6024176",
+          "scenario_id": "unknown_train_m20_0002",
+          "scenario_seed": 2026112302,
+          "source": "local_ctde_training_scenes",
+          "trajectory": "f37f1f911025d8a2b783b5c0c53a540f1dd2c4ef032e4bc8c12a7b1b83152cd6"
+        },
+        {
+          "index": 1,
+          "launch_positions": "97ce57b9377bc20636e509603068435e0f82e1993b3671e3e7f025437cba7b27",
+          "layout": "c42c067dba6caad777da254440d7fa4d822d3b1cf62895eb7000e7a05e778ac8",
+          "motion_origin": "1037968be0025c1b8b48ebe88da9b364f87f64b73ff61bfe7c852dadf02ae6e3",
+          "physical": "a4009f4f4e7ec02ce5ed76605ec1f2e9a4e64ced49239cd9319f5226d6024176",
+          "scenario_id": "unknown_train_m20_0002",
+          "scenario_seed": 2026112302,
+          "source": "neighbor_ctde_training_scenes",
+          "trajectory": "f37f1f911025d8a2b783b5c0c53a540f1dd2c4ef032e4bc8c12a7b1b83152cd6"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "3cdac0193ed060e15b9b97a183b18e5e554269a40642ccb244d6066297c38d4d",
+      "members": [
+        {
+          "index": 3,
+          "launch_positions": "a49af535c8b1f7b950220ca9a66e0cf8bad6bacfc4930a8eacf280511bd6fd2c",
+          "layout": "84c4a0e70b7cc99d3e56ff0e027332a4d85e8526b64f7e7138e02c468f5014e6",
+          "motion_origin": "bfa516d08eb0cd9e5f424ef68eee716e58b4014c0f75181216e13d97c2a295bf",
+          "physical": "9aa8c499a4bb963ebd3b9aac86be31ad31d90cbd3250f6884721e9941384edee",
+          "scenario_id": "unknown_train_m20_0004",
+          "scenario_seed": 2026112304,
+          "source": "local_ctde_training_scenes",
+          "trajectory": "759fb10a5eafabff909c51a77a26011b4f391c7450d0ecb4645f7e382829d94d"
+        },
+        {
+          "index": 3,
+          "launch_positions": "a49af535c8b1f7b950220ca9a66e0cf8bad6bacfc4930a8eacf280511bd6fd2c",
+          "layout": "84c4a0e70b7cc99d3e56ff0e027332a4d85e8526b64f7e7138e02c468f5014e6",
+          "motion_origin": "bfa516d08eb0cd9e5f424ef68eee716e58b4014c0f75181216e13d97c2a295bf",
+          "physical": "9aa8c499a4bb963ebd3b9aac86be31ad31d90cbd3250f6884721e9941384edee",
+          "scenario_id": "unknown_train_m20_0004",
+          "scenario_seed": 2026112304,
+          "source": "neighbor_ctde_training_scenes",
+          "trajectory": "759fb10a5eafabff909c51a77a26011b4f391c7450d0ecb4645f7e382829d94d"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "3e64b31fa6ef00a0f91716bf42a48af61d4abbe55c15ab3ada38ea23bf64e6d7",
+      "members": [
+        {
+          "index": 23,
+          "launch_positions": "2509e71901f55922a81597020e83ecbec33982d1a8e8532f302b81bc71aaa458",
+          "layout": "ee921df5296f2380c650e38b8581c3312965a9dafb162f96a08fad374affa3b4",
+          "motion_origin": "fce817d846f77c3c359a4a8d2cdd99fb00785c8adf4bb251768db760932de3b9",
+          "physical": "8b46b2fef97043037ba1a2a27474b807a29e5305913ce2b2f4db9ef47a8343b7",
+          "scenario_id": "po_train_991001_0023",
+          "scenario_seed": 991024,
+          "source": "r123_training",
+          "trajectory": "3e8f09f0a07cb1e4c546d48d4776d08306a310b30013c72aefe1453615b48de9"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "423248a8cd383476e6a91786a44de3bc78c7281b25edc0b13b13202fb640f2ea",
+      "members": [
+        {
+          "index": 2,
+          "launch_positions": "c9fa0ad3fa6e2db01bf7d1706d3b479763a0e7516dc5689206e68a90b03550a0",
+          "layout": "79e5de4d7a391d4d6d602cea449e18516f505a202210a70b3f7628a8f1bbb6bb",
+          "motion_origin": "e0011b85e405191efcc7a551168b6bc9020a31fed88e46799c3c2fea83c4c032",
+          "physical": "39dd37a08ab54daf55ddb4107cbc13b928e2106f34053edd59ed94a0dc842fd9",
+          "scenario_id": "unknown_train_m20_0003",
+          "scenario_seed": 81003,
+          "source": "earlier_search_training",
+          "trajectory": "f7ef3b7d90c77b58e80a96a83c4e9a75eccbaf79a54a39d6442f1009687c05a0"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "440b194ddf6d610c087dea0abaf2ba349d642a761ee691ddadaa270c0b219ba5",
+      "members": [
+        {
+          "index": 1,
+          "launch_positions": "a5d8f9328019ae0bb070c5be25e11378bbf18a7be38373602cf8c86d212bfbbb",
+          "layout": "de54e5c163504cf76cad370a6218483254f6699a29dd1bdf19b3fec16efc2ff1",
+          "motion_origin": "d9c177318548b2eede8a65cc39002a18dbfd3154b7d7bfba1f255b4c435b33fd",
+          "physical": "197230bd075fc42be1eef3a76ca9446e008678d2b96639b3a10598d472362b2b",
+          "scenario_id": "unknown_validation_m20_0002",
+          "scenario_seed": 82002,
+          "source": "earlier_search_development",
+          "trajectory": "119aa3aaa5659634700df0042b364a0e71f07679c4edaed414010f4345993ce1"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "44496d612c6f58c48d7283249253824b6caf4549eb96ede20541b8eb19335ade",
+      "members": [
+        {
+          "index": 13,
+          "launch_positions": "1d67b4e37fb538a96e9146932ecf320929b78109b8bd1e5ee692fda2c9427f8b",
+          "layout": "1c00d00b569d93b45ceb890cbeb18213838beef3040368466026ec2dfa678c84",
+          "motion_origin": "23d41c80f1d3e8514b2e5e8125d53e4fe902e97eb43680be66a32285aef919fa",
+          "physical": "332a5c732d330907575c84815d4552f97463c11532cf09ddd862321fffc895da",
+          "scenario_id": "unknown_validation_m20_0014",
+          "scenario_seed": 2026112414,
+          "source": "fresh",
+          "trajectory": "95f7172e90ddeecaaadac29540df44bddefa318390ff196bbe12ae2240c9aac6"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "461bda385022ac36504a69468028bd838818f3b433a9f5374a2cdc1082a23dae",
+      "members": [
+        {
+          "index": 11,
+          "launch_positions": "9d0d03ff7f414271aa8359e0c13e67fb66ce06604a12a3b83e112db740504edf",
+          "layout": "691dae6893202fcdfac14be7af278d0a99e4010eeac3a9ebc7a9ade1bc3c4ff6",
+          "motion_origin": "18f17f6752b4fa2e675ce02495ec20fdbd64fbc452eaed2c4cab381efbf6ec1f",
+          "physical": "f424d1bc9b46a192b7d8ede570cd592d11e90f08df6f6cee6c18890811089cda",
+          "scenario_id": "unknown_validation_m20_0012",
+          "scenario_seed": 82012,
+          "source": "earlier_search_development",
+          "trajectory": "7e9ff80afea85fc41703587a0478c49fae9235cb93a328c8a217f2099dff9655"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "465573ad590bff3453582fc5efc78facfca81a13fec03327a72553a310bad321",
+      "members": [
+        {
+          "index": 35,
+          "launch_positions": "3b90e8e08589299e52957cafcc1e2582e9993cacfe2c0a841b7d0aefbf140be7",
+          "layout": "0090c6b0ce2b2e48f7b793e37277d051428299acf67cbdfe1120dbfcf31e57cc",
+          "motion_origin": "c5a08a67a3c31b35733b85accedc9d9e4cd8ca9b498c798e54e51be75e1f67e9",
+          "physical": "a13c852ad75c42bc90cf5f2a39409a5448f71234eec4e08df7e144e2650d2f36",
+          "scenario_id": "unknown_validation_m20_0036",
+          "scenario_seed": 2026112436,
+          "source": "fresh",
+          "trajectory": "0b5aea18d0f99d9b43a4b306f241e562cd4ca0bab4d1e06c1c3ea3bbda98cccf"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "4760cf4e16e4135caa3618b262fd0eb241263102cb333c6c63d0176b95f8b0e3",
+      "members": [
+        {
+          "index": 28,
+          "launch_positions": "58c557ecab9436ea3551c5afb5fd0a0846e4b9939a95c9741910920c62a8eb4d",
+          "layout": "ccd6d391e5e62f9504d180d0cdd67a3a8fba141bf60688a3338b7c356b94c186",
+          "motion_origin": "b33d01849b5c16a07961879d52994282fec5e3723e93ef6e9ab48f101d5a3ef2",
+          "physical": "8504e48a011284fcd5b08c10b27eeca8d87f03a2431bdad7c04270b3cd09786b",
+          "scenario_id": "unknown_train_m20_0029",
+          "scenario_seed": 81029,
+          "source": "earlier_search_training",
+          "trajectory": "2def1f42c62dc53ef305785fbee3b4c4d42d81b52d19f4e2975bccbe01cad74d"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "480775dfc7a7eb7cf13897f02033970f9f08a717654643c79a85f17cbb2f5deb",
+      "members": [
+        {
+          "index": 22,
+          "launch_positions": "ce069a20d785f6f6040be88174ae77cb5008ad41b8a3b2ed4e7324bf7983a29d",
+          "layout": "04b0bbbf75dd62b7d3b977b1ae9db7416d2c85f25df4a8e9eaba2828d2540a18",
+          "motion_origin": "6d3b38393fdab25c5cf08a4795ac8d20c6b3d99a66177b0fdf9e935a4a6cad2e",
+          "physical": "73a1ee0a5a04cb12eb639341d4bf591c2eab55b6c0d1623e14ddeed387c717b9",
+          "scenario_id": "unknown_validation_m20_0023",
+          "scenario_seed": 2026112423,
+          "source": "fresh",
+          "trajectory": "7e80689af9e7cf1f1208c32a86078fa3210f1eee8d442349c9c05d4559e51142"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "4915b82948674d2c0e3f5078e5a93d67b7a17fd98e3c8071ed81988e69af0de7",
+      "members": [
+        {
+          "index": 34,
+          "launch_positions": "69df9f789b7f4a6bbbd3b345a61d947a3e9ffa48d56494b20c8e0fb18baafbf4",
+          "layout": "ed33f55505bd4c7b06864d704752e34d747df74523a6c7100f51d7936c657387",
+          "motion_origin": "b6ff4bd3ac27a1ff0a2b3cc1691ee3706edf89c98caa4e17795b2c9acb4e95ac",
+          "physical": "a7f6141897fd20adbb2cc4d8582eefcca123e0e44dbaddea6e411d3e64381056",
+          "scenario_id": "unknown_validation_m20_0035",
+          "scenario_seed": 2026112435,
+          "source": "fresh",
+          "trajectory": "54ab15ae9a581dc0285523d18267d2878ace3e0c52e89f5b0237ab8eb670ee39"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "4930356cbb9f4b9a9060df47b3423194c1a398babe3face59320a4c582f415a3",
+      "members": [
+        {
+          "index": 32,
+          "launch_positions": "97bd9d087a11c32c11fb345f90433a6f622cdfb50595590fa9c02e22500c3a09",
+          "layout": "2406907fae44d7faca424a5ce3c9772e0fd6a17daeeaba7361c9cf247bc9e874",
+          "motion_origin": "c8d99fce9120c3281eccded26c624fdb0ef3dddc83d5dd243a860b86ca308aa4",
+          "physical": "9bddb0e5d874f4e779ec18602967aa86b004a7adf5bd0d34e924bda4736fac24",
+          "scenario_id": "unknown_validation_m20_0033",
+          "scenario_seed": 2026112433,
+          "source": "fresh",
+          "trajectory": "c844972eaf03f22cdfe63aad399930e26ff078295a712598ef7fcdfce0129cc4"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "4b61da7f9c0489f4da698f6763e02491c404f7c16678524dae08c330db05ea3f",
+      "members": [
+        {
+          "index": 8,
+          "launch_positions": "fe4b199aa9c103a0daf404179435c543d21bc628a2910a14a942d923888c292d",
+          "layout": "fb8869f31b358aaa93295980086915e954db68befb21a1b2bd762fd5c3199b3c",
+          "motion_origin": "50aa475d35a0ddc4b54fbc4da16ed01fbc8da6ba2b94b2b9e5fa0d3dba63b1bf",
+          "physical": "3a916f5089c3ea2bd6b9f00d0dd0e132f9e1c5f0f63f17c60b2bc862a4c93e38",
+          "scenario_id": "po_eval_993001_0008",
+          "scenario_seed": 993009,
+          "source": "r123_test",
+          "trajectory": "a35f29d4c15a78d5bb170df425225d47cd3c14d3e257608ef277b0a163949830"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "4bbd5d8145a63a7425d049654179a13bffb379194311c73c2b2a759d1d98c98e",
+      "members": [
+        {
+          "index": 52,
+          "launch_positions": "752e62d55e9334fdb8d61374f2fc50becfb8bb07ab6c4a32e01e66ee2ec9d5cb",
+          "layout": "41f57bd876f55ded8441cb9017725ac6fd9a6a8f76dc7a5a8f5dccac6d867c85",
+          "motion_origin": "181eb25f6fec242c2d0f8eb4e56f0fb1089df71807a3050722cf56e94e8b9800",
+          "physical": "5ff02c64094ec162f2535de35fa1b43dffa16f3c26714ab6fc0f23166b503296",
+          "scenario_id": "unknown_validation_m20_0053",
+          "scenario_seed": 2026112453,
+          "source": "fresh",
+          "trajectory": "e6531480f88a2fe8efb57650f630fa77281859ded5ae8aa904b257a6819082fe"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "4c4722558007090d9505b89e680b02aa922fff19755844bfd06226e6938bee75",
+      "members": [
+        {
+          "index": 13,
+          "launch_positions": "a692f255a9695151c5a107a7760e5f96e34478238c096959aae4cea3e69b1dab",
+          "layout": "c9c50e3d33618de7202bd57e5125d4467d33e929d3e524bb3ef460d133597aa2",
+          "motion_origin": "0aa3823d609bd380fdb53a95b4f00d830dd426a5831dee02b770396cc720a3fd",
+          "physical": "b93f8a339da9ee2148d884ac67def1a3e83df0b219854c3c7437af27833718df",
+          "scenario_id": "r123_expand_20261119_0013",
+          "scenario_seed": 2026113902,
+          "source": "expansion24",
+          "trajectory": "3d5484e24c4dcf298efe6824d1a815f6a36893a80eda6c5b4eed3f7580c8b38c"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "4cd8d2267e99cc879fef4d4d1333ba3ccd648de2da557ec3bba2503b7a589186",
+      "members": [
+        {
+          "index": 45,
+          "launch_positions": "e6775eda685e0eb90f9820662b7bfad5b7e62223dd488aa5cdbda113c0bf4657",
+          "layout": "63ca12b0cf9298302d8f75fd68b5b98c62c87a62fa27422f1dd70b9c5dc11af5",
+          "motion_origin": "933cd6fb94575771966ea3ae5f221f0ea473685429928644987d95cf7da05138",
+          "physical": "3bcc17160a5fd7121f8295e4534c237f91a2e46b82a943034b5f64c4ccf521da",
+          "scenario_id": "unknown_validation_m20_0046",
+          "scenario_seed": 2026112446,
+          "source": "fresh",
+          "trajectory": "003f7ff53b80d5f52841ec697968bf9cbd020d9da11aeea16207b124fb39132d"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "4d89b6403499d9b89785b88a5d7ce3e0c3131417f9996d338489329f5193731c",
+      "members": [
+        {
+          "index": 5,
+          "launch_positions": "eb247db485dbfa0db745f8dd6bf3ceb0e80c8ba856881f924c326f06d9f3892b",
+          "layout": "3c3f1edb467d7bff8e6081659a626d4dfd485f6711f836cfded53af5d6ab8c08",
+          "motion_origin": "aa5f3956efaef3781926e4ed94b411e41683dc41aeee48c31fc83e4793d0f8d5",
+          "physical": "797efe669f0cf87505090aac3d472377999f50e46b96d48faf2d06aed4f9a30b",
+          "scenario_id": "r123_expand_20261119_0005",
+          "scenario_seed": 2026111906,
+          "source": "expansion24",
+          "trajectory": "79c894fbf97ecdac1bf69ddff3882445dbb4f4483180cf6be0e3b344de6f4b4f"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "4fb0a4da2c4f314eec5c79be88a29a254789d27a014ec7630e70faf56a117d45",
+      "members": [
+        {
+          "index": 0,
+          "launch_positions": "7de76d427a81f1badac93ad72a52066fdb34da6b7f4fbaf8bcf5ec5a694893e0",
+          "layout": "22277608f501e5cc6b82486a8b479be28082e62613fa1ea7c00a2860bd6d7eed",
+          "motion_origin": "c819c3d77b2d675d92148ad41a3a32f18259202fe6b0d52a67626c3618079061",
+          "physical": "2f316d164c2d224098c60b8b89e61191820acca6e9b5bfd95460362dbbb16230",
+          "scenario_id": "unknown_validation_m20_0001",
+          "scenario_seed": 82001,
+          "source": "earlier_search_development",
+          "trajectory": "608b0aee7e15080b9acc34f311104ded7ea2197ae9e770b7acc0483c8b2ea7e6"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "507e331862760098cf4ca0e4d79656d432327095adb177ecda6306188d0ae8b9",
+      "members": [
+        {
+          "index": 30,
+          "launch_positions": "f3e48c865931dc8eab33f5dd7305b45fa1ca175a2633779a3e16f3b80027aef0",
+          "layout": "b7fd1dad5103d38e3eb6b30011ee85fcf269db0e39f2b59f71bbc24260fccf68",
+          "motion_origin": "0aea63426fb6aef3d230f29480cd8b2553dacba1088a2c522d1858abc3e57e2a",
+          "physical": "a391a3786b2cab0dc1e838dafe67e1ae1f1486a78c4d0d6e3f26ade635c72ed8",
+          "scenario_id": "po_train_991001_0030",
+          "scenario_seed": 991031,
+          "source": "r123_training",
+          "trajectory": "aa2837385819476b326cc0e4639259956360522cbd05a0237aae6012f42bd720"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "5182afff391ec0d7fddc11606931637d6c0d2638e6890569a1bd15f5e66d9215",
+      "members": [
+        {
+          "index": 14,
+          "launch_positions": "212f670a33a3d5e105dc5a2c49193abcce3719efb6fb611c5184845440085e60",
+          "layout": "58fc53434c0089487cbf847606d51a980f6d75c97ed3d4fee4974d13660c8bf1",
+          "motion_origin": "bbef473e22a60cf3a854f299a0625ad0b82c53b0197437c551bf9860cd7359f2",
+          "physical": "68634004d4ab18914f551f937df6093b881a312e4f97749c66add0d87828fc03",
+          "scenario_id": "po_eval_993001_0014",
+          "scenario_seed": 993015,
+          "source": "r123_test",
+          "trajectory": "3f8fa0b4265e022cadbda9b956a80d4c794d0850be64a1e08cf01f6f545e0587"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "52bbe61c87c45bc364a2361e33395cc70a5832fde275a286188fd83b7705e5d2",
+      "members": [
+        {
+          "index": 2,
+          "launch_positions": "eac3450ac56c325deb3ea0e62192913a38a30915892bf6a66a3196af2609f1fd",
+          "layout": "582f31a5557bb3665edead225c64e92e495e4150fbc0cdd3c17e79f10835d15b",
+          "motion_origin": "ceade5309b5ed83d346a5e7e8558b5d5d4acac322f2bdc3d04fe47f39429fd66",
+          "physical": "fc4c6f5af4729a7474d177e41c43c3390556b2f394e71709d39b4adcc3bcb985",
+          "scenario_id": "r123_expand_20261119_0002",
+          "scenario_seed": 2026111903,
+          "source": "expansion24",
+          "trajectory": "0f186ff9a08421cb714779d603da2d5b80c2cf57c2d70b72baf8056850e5323d"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "537be86ffa856daea3614e3aedf157c955677ccd3bfb98786491b2ebb39f77c2",
+      "members": [
+        {
+          "index": 6,
+          "launch_positions": "a4f7d7ffaad4c9b26d2e037918d99fbb576d33ae6a1d6f86d8848b082af599f2",
+          "layout": "1cfe4de8661f5279a4c69a8c51933ecebd4e20c0956b8437c934413ecf1d6b03",
+          "motion_origin": "01bafe790db12c45df7fef109806b238d5b63679ccfad70b4416adc445e0cbe9",
+          "physical": "82b9da8d4bc581c03c4bbcab3c002d84a24ebdff9aab486ff53806fe281f0ca6",
+          "scenario_id": "unknown_validation_m20_0007",
+          "scenario_seed": 82007,
+          "source": "earlier_search_development",
+          "trajectory": "37775c8f78caf049debd69d50e0401ce39526154224114f9db0fff9160645127"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "53c36b77a465874ea821d9be7509e1a1af6df765fd7803e30590900043249dfa",
+      "members": [
+        {
+          "index": 23,
+          "launch_positions": "5b463085e7055f0344c680d3132e92c6125627b5e4b634b1509e96114f2e0cb7",
+          "layout": "b0afb6e8dfb79c589a1fe9957e6453f76429bb647a93aeb91945bb9b9a69832c",
+          "motion_origin": "cf5a67a97da335d73af1ec765539539ca2f8cef4eeb3ec8644048bb3bccaf0c4",
+          "physical": "a97cea52f29d75a4025a584a950a06da65a152bab1a20147f6a32a45ec940e6d",
+          "scenario_id": "unknown_validation_m20_0024",
+          "scenario_seed": 2026112424,
+          "source": "fresh",
+          "trajectory": "20e214882ec625cbfbe4de8048f9060efc5622179a7c65237851a94ac08de125"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "559ee02145f758fde099b95691dfda65e86a7b776d07149d62adeaaff14a5cd8",
+      "members": [
+        {
+          "index": 37,
+          "launch_positions": "e40deb728210560d02534516f34ab3299f83f567fcaf98939396693ca3091379",
+          "layout": "ee9b47f060a5cb983a5e29874fb2772b6ed61660d076edab0e077207cde18673",
+          "motion_origin": "80569466b6dbb3a44d7533dbff888ed20adb70aa71f6c318a9d36a751fd8fda4",
+          "physical": "f31311ac4a0050221fbb0ed42f793ccb5fd722687eba5518c0bc9c76ddb03934",
+          "scenario_id": "unknown_validation_m20_0038",
+          "scenario_seed": 2026112438,
+          "source": "fresh",
+          "trajectory": "316232e6cc65d6bd6cd02f15f9f69f5687f25049157e2bb43a9b503c3154e15a"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "56c899865c1cb8ebf05b9d4dde12718192feb69ee86d11cc5dd48a7534b1ba83",
+      "members": [
+        {
+          "index": 0,
+          "launch_positions": "25f80db25d327b51a284c9810671633c185eeb1bad22ac41ab3262b9f64a5cec",
+          "layout": "7b14bdeece87ba07b91c92351e5fa55d599db502bd31bb931c8b58cc05ab1f50",
+          "motion_origin": "3ccd04316c26e0cbad1e8988f0e61281385ccacbc500b395b93bc2fa62f518ce",
+          "physical": "b70ea20fca7f635d0ce66b3bc38eaaa2a7d00f3841d6d6ee3c6b8e4d330787af",
+          "scenario_id": "unknown_train_m20_0001",
+          "scenario_seed": 2026112301,
+          "source": "local_ctde_training_scenes",
+          "trajectory": "fc86a7193ff03d5a01fe20a5686a025a34aa86cc9191defda02eea33d89bc62d"
+        },
+        {
+          "index": 0,
+          "launch_positions": "25f80db25d327b51a284c9810671633c185eeb1bad22ac41ab3262b9f64a5cec",
+          "layout": "7b14bdeece87ba07b91c92351e5fa55d599db502bd31bb931c8b58cc05ab1f50",
+          "motion_origin": "3ccd04316c26e0cbad1e8988f0e61281385ccacbc500b395b93bc2fa62f518ce",
+          "physical": "b70ea20fca7f635d0ce66b3bc38eaaa2a7d00f3841d6d6ee3c6b8e4d330787af",
+          "scenario_id": "unknown_train_m20_0001",
+          "scenario_seed": 2026112301,
+          "source": "neighbor_ctde_training_scenes",
+          "trajectory": "fc86a7193ff03d5a01fe20a5686a025a34aa86cc9191defda02eea33d89bc62d"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "5885a55c9bf88257629c9e63549abc1e0432e3881776e9563a9e46d793e8e014",
+      "members": [
+        {
+          "index": 16,
+          "launch_positions": "0ba894b5bab374b31497af751d00e6510f3748998c1b70148183c76c330e8a2c",
+          "layout": "21897aaa4d6dc1ad254ee27f13317a7c46beb7fae02abeb83aaeaa647bf0922d",
+          "motion_origin": "a297d3d9346c800cb4187fb70de63a4f9be79ad3dca57b56a669bd05680ed486",
+          "physical": "d0c317e791bd276ffb1bea66e63d89a93d96cbb07fa1cfedeb7e93fc2ef8d33e",
+          "scenario_id": "po_eval_993001_0016",
+          "scenario_seed": 993017,
+          "source": "r123_test",
+          "trajectory": "6756d360d56b75d6cd593ec8103127424435886f64b77c86d679186408dbbe6e"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "59444e93f26631e58982e75859b973073ae8037fef66c05d717107077cfd12db",
+      "members": [
+        {
+          "index": 3,
+          "launch_positions": "2d851ae33c702014153b8ddd9d36efb642ce4a8eb6ec475fa606f999129652ff",
+          "layout": "374a2545baf11430ba83698df19acee1ca9896b902733de6a28682ecb9e201dc",
+          "motion_origin": "ddd2f5c70ba71de9fdd94e8c3e03b576f01ad9c7afb72407ccc3cc87b72c4f5d",
+          "physical": "fe1fbfe4222c02be168b316c7c5f5e092a2105cc240f15764745e1af26b3be0a",
+          "scenario_id": "unknown_train_m20_0004",
+          "scenario_seed": 81004,
+          "source": "earlier_search_training",
+          "trajectory": "0ed1f87ab4d44243c24bae48b02ce944a1f1e4ecf78b792675950a50a2fd6591"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "5ab67ebd723688e9133886fc94c46761db0af825ee655f8fb84106c75e3a64a5",
+      "members": [
+        {
+          "index": 0,
+          "launch_positions": "30bf97f705506af099dee810a9c074a11b096c8ef6b8862df252ad4e222c4ffa",
+          "layout": "2aab139227c45cbb873ac33ecf803a69a9f4ecfc8659b20ea2c00b1418d224eb",
+          "motion_origin": "544de70c5b93418b6907b7b8bf5f8831f33290957adf22d170916eb41ae94f71",
+          "physical": "b26c993520cd3b3dd922ce3f6122912d728b56a70768d68b1c44fa7466cce121",
+          "scenario_id": "unknown_validation_m20_0001",
+          "scenario_seed": 2026112401,
+          "source": "fresh",
+          "trajectory": "78dd520aa3e956028eafd0c3dbcc4bf6016a949dabb38d18022563427101578b"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "5b5c04609f41c3640c5145a03c6d69b030024b3c5e0ee30ed62fa90f838ebd17",
+      "members": [
+        {
+          "index": 55,
+          "launch_positions": "b36c4105797f3632f1fd4b8c7861f7e332cb6e89c146ec25adc3c9d1d48fc4ad",
+          "layout": "800c252a68a81fc3c55f20e2313c87b50fbec0b5f466d53744057c1d7396d1fb",
+          "motion_origin": "d0f6f98086f3a6f2970fb78dc67e26599929c21002ddfd287bbdfcbec4e4d756",
+          "physical": "9a1e1607a297d587ca90216e4fd4ac899999f7725f811929fb84eae17d4a2c29",
+          "scenario_id": "unknown_validation_m20_0056",
+          "scenario_seed": 2026112456,
+          "source": "fresh",
+          "trajectory": "35a138a570cc125759cbd468b877eee71aa78b141844e9d808f34824ae89ffee"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "5b5f7a9dcdcbdf9962935fddf7cd0ab433cf37d3c8a3ec38c87d9ba923749e51",
+      "members": [
+        {
+          "index": 21,
+          "launch_positions": "41d007aff3eba852ce75cf57ade6ab1870973395e33e16606195008c88ec91a1",
+          "layout": "8da5439bd3073ccb9b387ba318e1be97142f56604506201113200ea79a7af31a",
+          "motion_origin": "4a886b236f9fdb975d0a7f0b2e96c36cf1dc4ec454ef60222d6a4911c8a280d1",
+          "physical": "366c3d671b42f86a5d2ff3eee21b002aa479fc44e9c8f1008e4dd87768e87d61",
+          "scenario_id": "r123_expand_20261119_0021",
+          "scenario_seed": 2026114904,
+          "source": "expansion24",
+          "trajectory": "2aea1e806d1b192c642aeda89faafdda523687841a35a5e207a84c19662f5d17"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "5c04e5d4d3241c818288ea7515c3942b94e9bcf3ea4b65a77afc03f3e8870090",
+      "members": [
+        {
+          "index": 14,
+          "launch_positions": "f01ee4a8c9f95bb411a381c8def9a289b5549370491339dbd714001bebb6bf35",
+          "layout": "90d17e6b5528b8edce24bddea667fe3e06ec169cbb544886ccf74e09c1c1cae7",
+          "motion_origin": "479c7cddb7f153725e750f8c912404a8deea925451cff3550307d02fcb21c70b",
+          "physical": "4bc80290f51e3db43b408b6688ef56ff9d1722c222f8731c635c85a27ba92528",
+          "scenario_id": "unknown_validation_m20_0015",
+          "scenario_seed": 2026112415,
+          "source": "fresh",
+          "trajectory": "f6901e53769ac4e3a046525e75ac72d1bb9c994138950b0ab768a166237cec73"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "5cc2521e5eb1d8b0f10fb28f44f08685adc2345c8e6b18b6fdbe398a6ea8308d",
+      "members": [
+        {
+          "index": 10,
+          "launch_positions": "521e933dbc8d8f500c4ded323c1c58bb98c8f93af937ce6c08159f1ad26ae463",
+          "layout": "997a1bb455ae250c0469de96ba77e9931d590599262de1fd99431ed3a906bff1",
+          "motion_origin": "187adb4003a109b163c08cb35ed04ee4ccab99d6c0290187947cd918f3f5c0aa",
+          "physical": "62253ecc87fae195b4c39e46d3c6ceb0cb1ec4b795ecf9a28981fb2a0c43e293",
+          "scenario_id": "unknown_validation_m20_0011",
+          "scenario_seed": 82011,
+          "source": "earlier_search_development",
+          "trajectory": "8eaf495935e6fbbe2705d4aa869a8cda03824624e7559459c3d588d2c3a39cd9"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "5d869691ed37816d57a42b1fd84e00786066b60de58e90a0bb6b9bf37e2352a4",
+      "members": [
+        {
+          "index": 13,
+          "launch_positions": "364657c9ccb3a7cabfb557e44f84441aad2036ff819f54982585e0987675d0c2",
+          "layout": "79e4fe5a2ccbae38d0d9c14ce839bc6c5e56b167d076822c7c2f5af068c3e842",
+          "motion_origin": "e92eb4ff346d923dcc767d9e6299a94cbeab0b2066bef92702854a088c36336d",
+          "physical": "9cd33d56ff8beb5eb93404201023a124f9eb689766fdf59d5c65bb1ac154c34c",
+          "scenario_id": "po_train_991001_0013",
+          "scenario_seed": 991014,
+          "source": "r123_training",
+          "trajectory": "0b603dd9916b0e397e22b34174da93f098c950d13789ef55d462542d4cc193f4"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "5e06c388bee14ae725e3cf452ccc47205c83fe90eefcac299622a66cf7bd839f",
+      "members": [
+        {
+          "index": 23,
+          "launch_positions": "3a06388d4dfc38590b85496f3a007c6a59d25848641238c3212ebe86f2d6d132",
+          "layout": "7ba6b01973f990fe2a08de13b959658f9fcf9afa915166825c6a46672a18bffe",
+          "motion_origin": "c7ea6c633381834cef3e80da0a1e12d939b309faf12d89fc3965af43b747f81a",
+          "physical": "ac71e47d90b9b93f1f6a4aead5996c0d328241a2c0c84b6d03347b57407aaa67",
+          "scenario_id": "r123_expand_20261119_0023",
+          "scenario_seed": 2026114906,
+          "source": "expansion24",
+          "trajectory": "f679ea7f52f79f4036405d9375b6a34f4bc5b1decccb2d5ee51c460995eca72c"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "5e32fdeb6755b46bdeb639739624970f01d08671c82b2bd61f9714c76a86a4f3",
+      "members": [
+        {
+          "index": 1,
+          "launch_positions": "9f9b5761c0156f4f5ec573aad6da18ef6adfe69af0855f6ae6e7dceaab29c772",
+          "layout": "b4e236e4a00aac03ff1a002b380b7b9c98172f89d0c80c006f71588147833e39",
+          "motion_origin": "9a254e1ddebd514ba2c8110ba4ac867eda5db995300f8a3e00e0581a4f245d80",
+          "physical": "0e193af7efb741c4a83bff1599e251d4bd57a13d9fa776650ec4df520edfe810",
+          "scenario_id": "po_eval_992001_0001",
+          "scenario_seed": 992002,
+          "source": "r123_development",
+          "trajectory": "547384b6bdc5ab2c9209f260b8e01ce232a422cb775e6a82a301baad9d02b3ff"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "6265065816e4af26a6cebb005b1f1fac59feb4ef30f089d99d1a644f38519565",
+      "members": [
+        {
+          "index": 26,
+          "launch_positions": "6bd0d5b10c8d9bbea9a5d91a200c209c11ae12ab9192d5bc32691218f0cbe922",
+          "layout": "b45d721a9fd137dfaaee0b03719627e077adf958311a4a897494412a4808e80d",
+          "motion_origin": "3c0cdaeabc345365194db55cae44451bbe147179ab4fa2badfea09857f2a087b",
+          "physical": "81e969213603c1816cda50e9f95a83ae9be7f24c3cac3b03dcec7fc9aeea6d52",
+          "scenario_id": "po_train_991001_0026",
+          "scenario_seed": 991027,
+          "source": "r123_training",
+          "trajectory": "769d63208e3b79d312997ee770b01c75dac828214e31f027e6bad7fb039a09e4"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "645dc32dca74c792ef78d5c22e69c17fb02e8e8156f2ddbd70b7149b7ad1d662",
+      "members": [
+        {
+          "index": 40,
+          "launch_positions": "bd4cb0b7c55ef4c47d36aad498344b257b56611cd480591525647727ec931dd0",
+          "layout": "1e77b98d07361222f30719a60d4d1665d275f4747a0b01a708e8d943f9a9e364",
+          "motion_origin": "52d93ba6876cebbefd78e858ebd6d3529201121cdaac3dda1662dad555ab14ee",
+          "physical": "8d7b7dea2704d8362762e7aac06e802b65c4328b6d0a4e96588c696f691261de",
+          "scenario_id": "unknown_validation_m20_0041",
+          "scenario_seed": 2026112441,
+          "source": "fresh",
+          "trajectory": "3ad050e3f34b76dd6db126c1714336db3695b7df0d9d531e8a167e2b59769f95"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "695f001f07990ed8be8799ad3a8ba17b9d7a465e0ab042adc0ff7de5d44221a2",
+      "members": [
+        {
+          "index": 19,
+          "launch_positions": "e1261105ed46d6c52e233993b13f6c8e4865711fc5f334872b14f657a61c4aab",
+          "layout": "49466365e5373cc3cfee9434350728d27a1d86c4e476f1a888488e2f57e41515",
+          "motion_origin": "5d04da2d2b2deda50233f9bac05701ca3b59519d97c454303465351cd0cb0ae2",
+          "physical": "3a877004dcc9054b02366a8a11f0e47a5963ac7d1c900ac52bbd44db1a298132",
+          "scenario_id": "unknown_train_m20_0020",
+          "scenario_seed": 81020,
+          "source": "earlier_search_training",
+          "trajectory": "14f1ecacf2de9a0063e535f8d458ea1637591981e2a379636b65c01f532d939f"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "6aa9a22a416da9d8f54dfa6d89c96b96e75bef7500dcb3a34b237227d48db66f",
+      "members": [
+        {
+          "index": 15,
+          "launch_positions": "31ee37d76edc4ec04b32fff45917b486578fabe54f5117a269cb44b6b12b4943",
+          "layout": "be8e5aa19eff294d4668a965fec76ae853f99e7d8aaae6b829a75671afc9c631",
+          "motion_origin": "6a78cda192a099312d1f5b5fcbdb4310ac516797b8ad9312ecf601e2b5852c10",
+          "physical": "491d347e8fcebe84246533f4183969b6887b9cd85424826b8ff0dbc83a1a14c6",
+          "scenario_id": "po_train_991001_0015",
+          "scenario_seed": 991016,
+          "source": "r123_training",
+          "trajectory": "f6ffdb45f1fa31b5cb353b68733ad6fd5b3536f7e65c5b958cceb73663bdcdba"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "6cb83b4bff72d53ec314b41b0fcc607468e991ed63da3b7e97dcb816b7cb55f9",
+      "members": [
+        {
+          "index": 5,
+          "launch_positions": "9640b063e87183fe0222e040743f225107cdae3d9967c6f0afe4d1014bdcb5f0",
+          "layout": "c0baf606bc2acdf6f8f2e442cfca987cc1ecc2ae6de93f47e068dcc775277c86",
+          "motion_origin": "5c0ac6336ae7927f401ef4b22c458e48c94c3c6ae9f3028f4183fb7a7fb6a5f6",
+          "physical": "0433b13f62293f89683886a72db0d8fc6ac4c7dc5be4ab6c1ab6c2af4e711eb8",
+          "scenario_id": "po_train_991001_0005",
+          "scenario_seed": 991006,
+          "source": "r123_training",
+          "trajectory": "847ba1cf95bf19d7eca5ad80381af21d8e9f9ed3a18f2869ae752d034056c989"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "6e61dbefd91f903f114a77212d46f2ad1f6ce23da20724a1a3fe15222e701fd5",
+      "members": [
+        {
+          "index": 23,
+          "launch_positions": "247e1eda8378458b7cabecbfa0fff7cdaf09663058a4bcf9de8a71f583528cb6",
+          "layout": "4d2cb7e3d5df32cf1a22d289060ec5c23ed7cffd19f6bff6b081fecb65dcd327",
+          "motion_origin": "120f0975b108987d514b2e0cb4d25390994fede322a5d5b2de1a47fe97526995",
+          "physical": "4ed9a6b60a938a8f01dbb07c97c9b6b222404e881bb75f89a3513094424bfe17",
+          "scenario_id": "po_eval_993001_0023",
+          "scenario_seed": 993024,
+          "source": "r123_test",
+          "trajectory": "6c618a981f6614cdb3846dbcbbeece110fdd046a1060cd5e0025eaa2d5aaa08a"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "6ec6b4c1d67a4ab0625a522ead7daca5c8ece19feb27f4c07076bc81e64bd219",
+      "members": [
+        {
+          "index": 12,
+          "launch_positions": "a15c3b6bc9f43f5cb7605568fdd347b66ad84a18e075aad21528cdb341a4e4f8",
+          "layout": "d0d9e72cb8d53517e97af5de2bc9105dc1b95a037685a3f1f5bc152fbf2e8876",
+          "motion_origin": "1cf9fbfed9eff9e536a953e677689dc5a1bd5c01581b6a8b5d186433f702f31a",
+          "physical": "d4ab47d2d74e7604d4378201ed56529991376d20df776dbc14b793f54920690c",
+          "scenario_id": "r123_expand_20261119_0012",
+          "scenario_seed": 2026113901,
+          "source": "expansion24",
+          "trajectory": "128eaa62845ac372736f960f62950fea0cba9ccea3275e01d7d0fbdf77fbd9f6"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "714fcb688c8b27192d8f807decece9ae98bd2f41cf85f9121ce3985693a06239",
+      "members": [
+        {
+          "index": 15,
+          "launch_positions": "95c61ed27abb9cae439a43a057219e798bf69e6c3b3e588ca9941b93f69595fa",
+          "layout": "188a2625ed5d1d4d5d288288e40b66d785813321bc6f9cef8e02fd7e11a01e49",
+          "motion_origin": "e5fa40dd3492bb0d7c39a8f073984ed5ff6ac2a0a307054940de2fd9963db2d3",
+          "physical": "47c40c1cf47fd786e44333adcfb067e08c2469498ffb756ff5388572322b9526",
+          "scenario_id": "po_eval_993001_0015",
+          "scenario_seed": 993016,
+          "source": "r123_test",
+          "trajectory": "ce4647c2a4a6740b02c83d5f62d51a6e2b18e3b6f17a2190e94cf75d68ad4897"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "71c0e4a23b87c9ffa0a8dfb062d8b449f6c90e7d7c4669bd23ed676e14a5d4e3",
+      "members": [
+        {
+          "index": 18,
+          "launch_positions": "8527fbf700ebe817be7f38c779095d67c9bb8f52f521feba544236cacc942327",
+          "layout": "a40db6711eb44a1e841d17aedeb3e90b691800c6e07c349a7bc30715886694ec",
+          "motion_origin": "250f1325358e2124bbd1e7e1912363a7c09ef7b4f7c93b6442fa1cd7aeefbee6",
+          "physical": "2dcb1cfcb4c1c63d05655cc57833cb2552321b24f25a83c1b79ae780e50658b7",
+          "scenario_id": "unknown_train_m20_0019",
+          "scenario_seed": 81019,
+          "source": "earlier_search_training",
+          "trajectory": "e4226b4d83e7d301132981ffad7eec92c0cc2d55f85da9c6f736012bdaf7d063"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "720f22059d1580bfbb3263fbabb43cd0ab106e3331a5115b48f7401ff420411b",
+      "members": [
+        {
+          "index": 28,
+          "launch_positions": "cb084320a2217e192459084934f72f7dac35fd6d9a870257675967446243b289",
+          "layout": "845f3bae1b6cbe6576e67a859716a142a15c95f8d5e79fa5e149bb0f07dbc997",
+          "motion_origin": "8c5fd1777ec9d232cbb599d553c67e06a0af5d32c85783cbb48bccf16849a27a",
+          "physical": "2d4191262da8294c65b1d03827249b18b7c02427e27be473234bcff5592156dd",
+          "scenario_id": "po_train_991001_0028",
+          "scenario_seed": 991029,
+          "source": "r123_training",
+          "trajectory": "b5396c66a701fbc3d9693d60e81d292a7f97dc064c9ffd65938f870bbb574d76"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "7486e1e290fe6b496cd69782b2575ad881cd10f78ce3e8935f800d349e3631d7",
+      "members": [
+        {
+          "index": 7,
+          "launch_positions": "6c57eddaf6ff6e5def062dd6ee01c7141f1ae7c62f039e80fc716620235d36b7",
+          "layout": "7193e4ccd41e0f1f016581cddc81241e06cb7da5f041ead850ed2af1ade671fa",
+          "motion_origin": "8002b3c1354e9501c8cbdf2bd2ae06fef6954e101ce126906c6dbade234ae0a3",
+          "physical": "5b03178337b9ea24a226efec4c05308dd215eaefc55dc7b4f66e524c0ec08b17",
+          "scenario_id": "unknown_train_m20_0008",
+          "scenario_seed": 81008,
+          "source": "earlier_search_training",
+          "trajectory": "fabe0bfc192aafe95c0bba9bbcaf3380529b7a14519a41a05e959b7382d08dc2"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "752e4dd8c1f07eb94a764585f3f5ee8d599772c6c926b45d1c0c4e31e7008dde",
+      "members": [
+        {
+          "index": 49,
+          "launch_positions": "9958a3e4d91866456dc721e5ee9438c374a35a67336daf63dd79e123e16a925d",
+          "layout": "84309821f7064a9b79f1505df0853717121961ae5ad2941f6776a4c333b97815",
+          "motion_origin": "3ae728e36d11eb04cf818e55232db91fa39f307ffc2b657519ae14a1cdd3ce18",
+          "physical": "40151caff72dbdc5f6cc50b6ad5386a56010a30db5c8be2e7e889f9c0206d241",
+          "scenario_id": "unknown_validation_m20_0050",
+          "scenario_seed": 2026112450,
+          "source": "fresh",
+          "trajectory": "be3f6dcc5a9919f223448c72f80ec2b46de0ca26bad72e000106d2d121c50ea9"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "7635c818fc9ed6606ab6ebb30319ae703c895e0550920f1bbb20539b99fb800c",
+      "members": [
+        {
+          "index": 9,
+          "launch_positions": "8643865832e54ebb9f1b2d9390140b54e99ab17d469ebbf7595cb0f5f25344b7",
+          "layout": "a4eb5285f61a5224b561054f092da5cfb33f2b7941b786837fbba6d29e1d27e6",
+          "motion_origin": "1aca463db16fe063691d1ec437b9f97d7648ddac898189544a4b385e1b781ba7",
+          "physical": "377c095c1818a2d9fd275fcb2a300794a615efc354e79d3c1040fe9d043c87e7",
+          "scenario_id": "r123_expand_20261119_0009",
+          "scenario_seed": 2026112904,
+          "source": "expansion24",
+          "trajectory": "b62b4bcf367e338be120274c2f863c4b24653f735ac3448c83bf449da75525a1"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "783348929e2af41221545507e498da106c58fb5831412ab63fa25943d059d079",
+      "members": [
+        {
+          "index": 41,
+          "launch_positions": "e8a91e065fb78f0a7e144b7f869b5dceea11b4b23a214e5f4fb65d0dc8464aa9",
+          "layout": "4584921095af8434b6d2cf7526a6b4d780223a1ac16ef3f2deca2f1cd68879a1",
+          "motion_origin": "2f32e52e5715912e11b77432cbf9a185feb79a2265df4425d5c3910d876197a0",
+          "physical": "b7e71e9f62422f42329118fd3888ca529c721683f0d3adc093b2265283686843",
+          "scenario_id": "unknown_validation_m20_0042",
+          "scenario_seed": 2026112442,
+          "source": "fresh",
+          "trajectory": "274ee104c44aaedd07364d1364cea7abe572797ebd18ad321f4bb9557ec37317"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "786ddf07806bb96240ac74c7f7cf23b00cdf70789e968e4f1b470b14a06e00ae",
+      "members": [
+        {
+          "index": 18,
+          "launch_positions": "e4cc102043d2184387b7b015ab90103406626677cf59d2837d2111554691fece",
+          "layout": "40b49d3b8d8dea424aa2187323620ffb4e05dd36f682cdfce647b5a098cfd3c4",
+          "motion_origin": "4b4dbfb9dd58fe0164ced4e582a2637f23fa05d4bc1e8ba310a680579b2fb717",
+          "physical": "b8f896fe76498172e52b3eb67849701f595bf97172e8686aa5e590aab2b14bc9",
+          "scenario_id": "po_train_991001_0018",
+          "scenario_seed": 991019,
+          "source": "r123_training",
+          "trajectory": "0a1f480314a175e43397bf45e5a7a10e35a7b4fad74cbbc2057496c7c26a9b7f"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "7a24f1f0967f5b6867ee8abea4bb924d349233688e1e46141d67b8f56e99551e",
+      "members": [
+        {
+          "index": 1,
+          "launch_positions": "3992836dc1773c97351c9342c89349d1e0d87170c6dbef796923856254f9a03d",
+          "layout": "8c6823c955ad65f84777ab1243583bed0c1aacd1e71df4d2da95b01ea2a4b85e",
+          "motion_origin": "29b5266e4680bd97f5f379b97178cd1e782e85a907e3d68bb77be8f68f093de8",
+          "physical": "f715885b0c9a5927329c55d69da22b8b78a818196e8ec12d174cf85e42ed339d",
+          "scenario_id": "r123_expand_20261119_0001",
+          "scenario_seed": 2026111902,
+          "source": "expansion24",
+          "trajectory": "21f354e0a64465aeee7f9dcf2a9e5e92ca5437c3b3668f37ac60758e81f1df82"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "7b5e976abce508e8d9b4a596df6cddc0d27925934357eaca41c19577c56eade9",
+      "members": [
+        {
+          "index": 25,
+          "launch_positions": "9ffd5dd5d8efaddffc1adb5b6090be8a37901e8c3faa6f8e05f0c00cf1929659",
+          "layout": "abe3e11acf6d53c1e0ed012fbc03cea4b9b490b55e2d3dd645aad5a386be1e8c",
+          "motion_origin": "e7344a4b96675a888af841d7398bc74bf217c586218250f58aa50f31ba69d475",
+          "physical": "e096b9f5f0735d3018e703537bb93bb33f76aa1ac91a31645d41f5ae598cf749",
+          "scenario_id": "po_train_991001_0025",
+          "scenario_seed": 991026,
+          "source": "r123_training",
+          "trajectory": "abc52792ff84060a2312a61230dfaef765c5574001c7c6a523035341cfba92cb"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "7c77066acbbb70b820fd38275aa25f9f7af238b45716cc5e3eaae3eec858d3f6",
+      "members": [
+        {
+          "index": 31,
+          "launch_positions": "6c31ec7c0882a87de97cba8b046752d4e8b2debf7d00ef147f4e811c2dc9efdf",
+          "layout": "a209c1c24d3208447c9f2675ddb38ce46b57f156bccbf29653839d46a35601a8",
+          "motion_origin": "bf5429302340c62bbacbac324f3b99c9314deace75868a66c82e4dd68f3edb82",
+          "physical": "59b3db20a0d43632e357166060ac9e273487166612b470e17093ea137501569e",
+          "scenario_id": "unknown_train_m20_0032",
+          "scenario_seed": 81032,
+          "source": "earlier_search_training",
+          "trajectory": "3bc48d28f04fdd025e0e12e91c7731b2c92bffe662dd31ac3bd7dabca82c7e48"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "7f0da55e24c87544a98560204605df964c4d9f5b493ffe7326da326885f5bea1",
+      "members": [
+        {
+          "index": 9,
+          "launch_positions": "d7d387a096d0e35ae2d009ee80abefe909b185ae3146766053cea90714804898",
+          "layout": "666b134ae837d6c690831025fdf80f2e6474c7001a6a2cb37de8902b6693e2f9",
+          "motion_origin": "69324479ae30773a1efb71f470bdef05b28d51ecbd9527202d5fba4516d79b5e",
+          "physical": "261fb333f375ca0a9110948d432b2987dd7b51fb740ff37dcfe7288543042795",
+          "scenario_id": "unknown_validation_m20_0010",
+          "scenario_seed": 2026112410,
+          "source": "fresh",
+          "trajectory": "bb13965fd8f3945eadd0e446075a1cafdf3415c49a40a2de198485fa121dc629"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "80183f893e0cd398cad6c0013390c935d0bc9ac0244dcea1523679aab9abb681",
+      "members": [
+        {
+          "index": 2,
+          "launch_positions": "6efb52063f12f984fb101cca9cc642d71169b5387dfeebd4500f458c136e0acc",
+          "layout": "e60f517fc35dcf093d6e1346e04b65bd0499e6bf702947774f72fc14d82d33fe",
+          "motion_origin": "57d4b45949bc441a4a6e22a2cfe38d8d1bd53c866e5beca8573d24f971e4a9f3",
+          "physical": "dbd8cab5f9c33c5d41e26cf69990968ca75385aeec78b1673b34ebafc7b774e0",
+          "scenario_id": "unknown_validation_m20_0003",
+          "scenario_seed": 82003,
+          "source": "earlier_search_development",
+          "trajectory": "a153e26326f48abcb0cd8f064068ab94b1d9c72bb96ae95798a0c5d91ec4d6fc"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "8103d3b3ce74b24f575f2482bf3406c36bba133f25191104325876c2912e6945",
+      "members": [
+        {
+          "index": 22,
+          "launch_positions": "a9aa4e480d95ca507c8eac2e89a82835f6b9b33cfdd88a41656871be112b0d99",
+          "layout": "7be96d8314edad1e12d157c45cb3c683909f4cb211838220255c84a4e03cd1c9",
+          "motion_origin": "e15dec7c15600f8aa2e8a4d8bab36adc57758eb3f9d13919edb0c3898aeeab97",
+          "physical": "f04a0e4e790ce19780ea2a0acb7cc3a3155f11c4bc1fd252eac8ade45fb9f440",
+          "scenario_id": "r123_expand_20261119_0022",
+          "scenario_seed": 2026114905,
+          "source": "expansion24",
+          "trajectory": "263bc4dbe53fb81ece572e82ca5a31e2f2e44a0f5841aad1dbfd8c2678a096d2"
+        },
+        {
+          "index": 1,
+          "launch_positions": "a9aa4e480d95ca507c8eac2e89a82835f6b9b33cfdd88a41656871be112b0d99",
+          "layout": "7be96d8314edad1e12d157c45cb3c683909f4cb211838220255c84a4e03cd1c9",
+          "motion_origin": "e15dec7c15600f8aa2e8a4d8bab36adc57758eb3f9d13919edb0c3898aeeab97",
+          "physical": "f04a0e4e790ce19780ea2a0acb7cc3a3155f11c4bc1fd252eac8ade45fb9f440",
+          "scenario_id": "r123_expand_20261119_0022",
+          "scenario_seed": 2026114905,
+          "source": "neighbor_ctde_evaluation_scenes",
+          "trajectory": "263bc4dbe53fb81ece572e82ca5a31e2f2e44a0f5841aad1dbfd8c2678a096d2"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "815624c92d512e9f70bbd056a730272d526ade08a7a3bbefad32852a2bdb23df",
+      "members": [
+        {
+          "index": 3,
+          "launch_positions": "4e7f97098f051150ebbcf1d8b0481f0d19059d2cbabbe57e5d98112897f0fe75",
+          "layout": "1affe0e87ba625a38a6b4c631c70f3f81c91733d6e3f5a7418d7a259ef97652b",
+          "motion_origin": "6f2c27697020ecce9b14d36ff7e4806c083c6211a83e5ee623caa9e418594217",
+          "physical": "e1af1e786f98eca894bb484eb1068adc1227aae1de7a28e74d2acf5b7a24a300",
+          "scenario_id": "po_train_991001_0003",
+          "scenario_seed": 991004,
+          "source": "r123_training",
+          "trajectory": "cd8bc3333f6c42846260749e078f0d06e8fe78302e71788d726216def9ddab8c"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "82577318633dbcd2d844feebc86c44fdbfbc371e6027177368f0cffdc3810f90",
+      "members": [
+        {
+          "index": 10,
+          "launch_positions": "60420162badb98ab006c56dcc218e8a08f47d1598743d6cc414288a9658b0641",
+          "layout": "78cb3855b9161057a1b8740fe12090db1110ba6e269c994a57e5f3e4cec7e4d0",
+          "motion_origin": "bdbec6b0b51d87fbf8fe0d71583de9a11ade4d93062a006c940457628656b65c",
+          "physical": "7d092e7e6abd0c8902f5408a0a3d66709965b3cfcb9c549e40eed44380080c82",
+          "scenario_id": "unknown_validation_m20_0011",
+          "scenario_seed": 2026112411,
+          "source": "fresh",
+          "trajectory": "086fc54f8662f10aae03fca0cfcaaa3250dc9db3020968ff88055ddd538a786a"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "844f9c3400030e57215eb0374db727107fedc969b4a23b237652e4c55bdec857",
+      "members": [
+        {
+          "index": 8,
+          "launch_positions": "c2d22b27c8e9f05098ad7906f30e8879bf9a1b5291dd2d26fcdf52ce7e782b77",
+          "layout": "6760d4fc355ef7b8fc6d2d37212f2d64cdc17f95cec495c14d7280be14a956ea",
+          "motion_origin": "7337e868acfd900802740347cc188d7d6df5e3ee6c0f4c271a14b1b7a70e9368",
+          "physical": "c8321e22d2f03c252f7455f724ceac2f6427e015ee0fbea616782743f5d43141",
+          "scenario_id": "unknown_validation_m20_0009",
+          "scenario_seed": 2026112409,
+          "source": "fresh",
+          "trajectory": "35bd1beb9cb4e79b64e1d235379632d74bfa00d128906c722e6cf0946a1a2241"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "87b2e6d5cc6e1c9c9edbb0dc0edcb181b717c4067c9fe67ac7be1a1ba1dab94d",
+      "members": [
+        {
+          "index": 7,
+          "launch_positions": "b718cb58d901c663604b0c2fecd9b156cc4c32fe091c2f1f8f7e2e32f8a71d87",
+          "layout": "c749a15305cef56695fb20ee93190ee569ea3779d391634af21050302663b2ec",
+          "motion_origin": "f7d4c9cdfc94c72c3ad27dd5ba347b7f675c0046eb117d003338bdfb8e2f34e5",
+          "physical": "7f6f1c22d746ab94a9945ea855ebcbd9d3bcab680141918801e3e41b7fc73eaf",
+          "scenario_id": "po_train_991001_0007",
+          "scenario_seed": 991008,
+          "source": "r123_training",
+          "trajectory": "52a4f34f03886748b3c48129d45c992d2ca0e4e3474a6735da53fe81e680fa75"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "8a2430e908d94ea6d2a021bf7169e66b6d16ee42a19d0d15d3bece5cd1e6878d",
+      "members": [
+        {
+          "index": 17,
+          "launch_positions": "465956962878d8cbc25211a8efb26d051d69791bfcc8e1dcdbe957f8ea7cb862",
+          "layout": "912a4e5dc9726aac2a35981b0216c019b7f0b94361f36c849b3bdea9661bae9b",
+          "motion_origin": "3990e6c6f9ed2caa623d75d5d591582a33e460f138f6e62b16ae9b72abb1e587",
+          "physical": "b00cb2dc7335a7ccef38283064b8b88d98deb346597d06eccdf6d67485faf67a",
+          "scenario_id": "po_train_991001_0017",
+          "scenario_seed": 991018,
+          "source": "r123_training",
+          "trajectory": "5114a11a5f75201dc5ce1d3e8a123d05c61887c1f25029b4c359d94d02dafc68"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "8ccf0fae61d416039106c1c00b6c5a71d573b7e1758b2a462c778e43051c55eb",
+      "members": [
+        {
+          "index": 22,
+          "launch_positions": "fa19c2cd6c2313e3fff3f1b8c36bca38a96e8e5e47c5082df2ef2dfb878019f1",
+          "layout": "45e117ce261e680a5932f8321ce4734e8a16ab08f12ab5f452be802ae84a6fb6",
+          "motion_origin": "bc45b226faee400833d72ed4df8fd5340f509b9e3670d40c7b4e8251e79f4fc6",
+          "physical": "6dcb135cea9eef6efc0a99089f9e9a7aada99ee060c409de4d1fe28095289b98",
+          "scenario_id": "po_eval_993001_0022",
+          "scenario_seed": 993023,
+          "source": "r123_test",
+          "trajectory": "fc5428407544aa2645a99028d47d0bb8ef9f957ef186efd42e4c18836e402fc1"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "8d03965efd2317b6b643aa324843cf8d163a59edc38ec8dc209a0d07588f64da",
+      "members": [
+        {
+          "index": 9,
+          "launch_positions": "aff0421e97a1789b1b0005539f29062b214c4ebbacce80e7d0842fb843b07674",
+          "layout": "dad2f9ac05316ac32422d33d901d01023ebd5370c5b3aa6e6bb194ce549b4132",
+          "motion_origin": "e4d758541379e5a5b3539d8cafe67b66f06360dc49e0ec9eece80db285d8a00f",
+          "physical": "05ece24477bdebdd5c026bb5bd653c45a37ba5eb4dc71d350c8c99ed82167eb4",
+          "scenario_id": "unknown_train_m20_0010",
+          "scenario_seed": 81010,
+          "source": "earlier_search_training",
+          "trajectory": "2c63f0d972636a67da9d0fe03a8dfe8d9cd88c5e45c6b48842e1b4aa9150bdcf"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "8d374854905fd279e4d9ab565a8416dc8de4cfa0d2bfe1f66169a391bcea8201",
+      "members": [
+        {
+          "index": 30,
+          "launch_positions": "1b83449c9bf4d3aae4cec5534b73dab06e84fac887609941c3333bf512856c3c",
+          "layout": "9d46a29bccad9d8560325912b1525b209b11c705ef2b232e0eb82384daf8f9ca",
+          "motion_origin": "0896463e6d433b56d5351d2b260760f2cdcfd1aa3b9a4958ec452000f7b9c808",
+          "physical": "42eb937a38a3ab0f4c5bc4a5fbb12047d810090bf33bef2e2b07ac24b2bf20ef",
+          "scenario_id": "unknown_validation_m20_0031",
+          "scenario_seed": 2026112431,
+          "source": "fresh",
+          "trajectory": "8870736726387716aa822398da5cf606135c04172bbcc3fd7617fa686cef51d2"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "8d94014d3272e5b2435a0c669eebbe9b6ad6edb60eb32057c902f9ad561b46c5",
+      "members": [
+        {
+          "index": 5,
+          "launch_positions": "6949f71d9a351ed4118ce323867d401a2aa54ee548452c5d9e7a42f83e292443",
+          "layout": "ffdbc194709a22af15601298ead14ea5f811d7bbe39658f10c4593f65e9df9b2",
+          "motion_origin": "402ab265e36a8f3edf2a6239a5c916e5065c568f5f716109378605931e2b24a7",
+          "physical": "6009ce640c87302d821349ce5ae63ea7c6f868c2fc1f22cc780a6d02587148d8",
+          "scenario_id": "unknown_validation_m20_0006",
+          "scenario_seed": 82006,
+          "source": "earlier_search_development",
+          "trajectory": "4f19fdcef1e92a4d6f45778b455dbfeba27c0816ee29bdfb62f9a65673e2a9ff"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "8dec43ef6c647bd83c5202367fe2c9186233c71a548dd2bde7af50633ad75432",
+      "members": [
+        {
+          "index": 44,
+          "launch_positions": "48b197fa5fd74666193fb6473a9b90483f859b3bd173752d79e2d15c19faa805",
+          "layout": "93bd1a2aad34eb5104ace24dad06c6db66288bd9468515848c2d14d2813b8933",
+          "motion_origin": "de3a9763454adaa2d8d93b3e01de0b3f068b821e427c56f297fd21c93d0ce3fd",
+          "physical": "5f88b0c00fa373fdd1b5ba7b54a28359435fef1aae2106cb3cee60cce7ae48d2",
+          "scenario_id": "unknown_validation_m20_0045",
+          "scenario_seed": 2026112445,
+          "source": "fresh",
+          "trajectory": "f0129204c5e11c2ab1d4478655d79806e5fc3a527fb2e0ee2066e652ec087853"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "90cb40eba573e112941db5dd279784b7185a2679002e130a48e8f91dff625e15",
+      "members": [
+        {
+          "index": 29,
+          "launch_positions": "460e747cca07592de67904105f5c5c8db34839997bcf9c2f8521eba7e3342106",
+          "layout": "82bdba0c5d9710054d5dbad97306af92cde5d4d4f106f816e10b57a6acc56488",
+          "motion_origin": "532d672b07fccb07e2328397c2e730b0c5334b7cc35cd3d883d3fe8455fd1a79",
+          "physical": "d0148c1021bf24eef16129c7bbae6ddbe6886a439219c8dd46d71245d9af42fc",
+          "scenario_id": "po_train_991001_0029",
+          "scenario_seed": 991030,
+          "source": "r123_training",
+          "trajectory": "281c764e7d29cb0744591fba1c20a8561bfd68ac0d9391a0e3bf841bf0ee85ec"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "9154771e5a6379158b1e2bc9de0009f3f25be7803332ce4282ee21414c731a95",
+      "members": [
+        {
+          "index": 3,
+          "launch_positions": "3c9f484dcc87a179559263f959de7e96a25637db82843b15ea547c8fb611b6d1",
+          "layout": "9ec6e48a7aa6ed82c58953f7f50d48935be99e2d1f598ab0607d4aa9a0085202",
+          "motion_origin": "95f8fa2e8c3d5b33639b7b3f410061dc8912c5705b38f18e4661d7cf7e98e5dc",
+          "physical": "f367b71754d462e3c444c1de377389cd16027ea8112724a5327fd5741204731b",
+          "scenario_id": "po_eval_992001_0003",
+          "scenario_seed": 992004,
+          "source": "r123_development",
+          "trajectory": "bea82d9c2afaa9face654f89c9877cb799419f63c5fe22ee1ba859322a31e389"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "93b033dd52ef34cb0195d85c5d5a983008fecf9cd7aa405d7401177485508c7b",
+      "members": [
+        {
+          "index": 26,
+          "launch_positions": "74e82dee1c2fee17618e3eeab68b1911b7307e935cdaa55f9d83869942ee55c7",
+          "layout": "ed3d027c0a175439a2ecde025671bc6be3c19b4865545f6b7e581d40866620d2",
+          "motion_origin": "aeebe0386f3b6cfc46cc4fb0cd557babe630d8678805cc71fc0ac73460383299",
+          "physical": "7d72ec0da97499a0194bd9efd2a79537078e97d6ccdc43f7e353e812fa703bd8",
+          "scenario_id": "unknown_train_m20_0027",
+          "scenario_seed": 81027,
+          "source": "earlier_search_training",
+          "trajectory": "a99f47329026729cd747f8f04868a93dabf292ab749ab8022880858d69760ebc"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "95a48badcb4de661f2ab0f6103d4b7ac29159720c88dfbd4b8245e607445509c",
+      "members": [
+        {
+          "index": 2,
+          "launch_positions": "fd4e32770ef000a71be8b1f9dd1b81ecdfda80bcf845d1f251625fb2f51d75de",
+          "layout": "c06b828621dde502e279e5df5d52785b7df5fc43df66a9b4165b683ea7e40453",
+          "motion_origin": "a34c2e695107ab5f7f866074b76e7acf23fd8817a3e7991b4e49bb6dd26e47f8",
+          "physical": "0a3241e93746e8aa1131e2852910f8969fb60b72bca2a04c13915b712f9dc681",
+          "scenario_id": "unknown_train_m20_0003",
+          "scenario_seed": 2026112303,
+          "source": "local_ctde_training_scenes",
+          "trajectory": "901447f1f9ecade1f114575008e4dc8b7d92591852b4a4a8c33c026f9e83b684"
+        },
+        {
+          "index": 2,
+          "launch_positions": "fd4e32770ef000a71be8b1f9dd1b81ecdfda80bcf845d1f251625fb2f51d75de",
+          "layout": "c06b828621dde502e279e5df5d52785b7df5fc43df66a9b4165b683ea7e40453",
+          "motion_origin": "a34c2e695107ab5f7f866074b76e7acf23fd8817a3e7991b4e49bb6dd26e47f8",
+          "physical": "0a3241e93746e8aa1131e2852910f8969fb60b72bca2a04c13915b712f9dc681",
+          "scenario_id": "unknown_train_m20_0003",
+          "scenario_seed": 2026112303,
+          "source": "neighbor_ctde_training_scenes",
+          "trajectory": "901447f1f9ecade1f114575008e4dc8b7d92591852b4a4a8c33c026f9e83b684"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "97a38c01247fc43fd7f10d6e545edbaed10be1f0f2c5be978cdd2f981f971b35",
+      "members": [
+        {
+          "index": 9,
+          "launch_positions": "5058eded427ff28fd63eff208d93a5194c0dcd75429616292af8eb3e3731ec4a",
+          "layout": "8e8622086d711941ad5a3d3778fc778889ee803311e83017d6b59f765fe88df7",
+          "motion_origin": "ead356281d77d3e53b110008131f7447fab6f8acee22ee36e2588d5884f2a597",
+          "physical": "6d3916bbbc69b1042e5f0e8e942348175ad9934d30f5731337902137cafbfd12",
+          "scenario_id": "po_eval_993001_0009",
+          "scenario_seed": 993010,
+          "source": "r123_test",
+          "trajectory": "8a9f8aee4c96863e376ccd9439ef555799f31957302f3aab21d7408476724620"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "989e1b696ecdf29215fc691911de6aa9f327e28065d67f32c63ebce52fe24c97",
+      "members": [
+        {
+          "index": 22,
+          "launch_positions": "de1710c615dd18172ed5d3e06794ba5d613ab3bc68238357279492129a25992a",
+          "layout": "20e703311e0de1d236b4e13a2fbdc93e630e286701daf4efc24dcb83b8dc4cb6",
+          "motion_origin": "2e112b6f55817100b08fd9f6f978ea85751c60129b744a0c2c5730437243ef79",
+          "physical": "ce5c34fe2910d05785c52aff795996789386607df5294f9563228ab4469abe89",
+          "scenario_id": "po_train_991001_0022",
+          "scenario_seed": 991023,
+          "source": "r123_training",
+          "trajectory": "95f3ba0240429e417fffb5dafae112d29e0a979502b1ef9fd034d78037ad2c04"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "9a678d33ff4ee9ead7896873d4a599395d6a9dafb02bf832a7597969107eba36",
+      "members": [
+        {
+          "index": 6,
+          "launch_positions": "73f55e4c7fbc0caaa2dd3d5670e7c4a9a2affa4460bcab504e9937cd271dbe78",
+          "layout": "cab0f0bf05fab5b32b2a9b78425db332e9e8ed3a2d16148001e13f621d282b2a",
+          "motion_origin": "a8a043ba0c0bc99430107caaf746cb5dd981b2b404a42a70cff4737248698970",
+          "physical": "76b0d6bdd1e3c88edc0a2fb5ae5c3108729a920b313eebb91958a4d658eb8e4a",
+          "scenario_id": "po_eval_993001_0006",
+          "scenario_seed": 993007,
+          "source": "r123_test",
+          "trajectory": "6dd0a90e3fd2a052b09a1f357a5a1c3ee5d3737a67eba38fdda01b3170377c49"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "9acdee27325ec85a8ed1674544525b68abce3df80153845243488d8d099dd820",
+      "members": [
+        {
+          "index": 0,
+          "launch_positions": "dc855d5af687022154dff80c9e277858d18d31829b12b244eb3c066783b90d7d",
+          "layout": "1a95971d908b97091f763de5edce08f4153a98a9fd48ed30a8bc662464e5122e",
+          "motion_origin": "a1e84652203f04d924403424fc544836ffc18edf09594c9883a998ddbc86c229",
+          "physical": "3c7ffbe014f22aaaaf6897e64aad9dbca9e6b99ac474eb2d40efb279b0c290ec",
+          "scenario_id": "unknown_train_m20_0001",
+          "scenario_seed": 81001,
+          "source": "earlier_search_training",
+          "trajectory": "e87be28dcf94193cf0994971fd20f434a024990f7f00082a1fcf118c6fdec357"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "9e26c8f7a1181d6fbeb6807117ec109ce758a7cd2823986febe3911b8cd43b1b",
+      "members": [
+        {
+          "index": 5,
+          "launch_positions": "a7354512db9a804f5b646c7f4cb92e4ce0e7442cbde0c2eb8ba77798d5160f51",
+          "layout": "150bec8ff54dafb44c6d79c2d061bed5e95873757a7e8613ba0b17c544e8a853",
+          "motion_origin": "b099af667d8e3c2a8e7fdb1de9a4ed52a4054535ae4edee2d1af4c9b08ef74b1",
+          "physical": "d682b16b41f33b413b3b7f040a4d5d1870544c47946bebcd1c8e5bc0ddc19faa",
+          "scenario_id": "po_eval_992001_0005",
+          "scenario_seed": 992006,
+          "source": "r123_development",
+          "trajectory": "64182fa0e791c53b2870ec7f645a67dd4ebcf95573f5bf34071086fc2259e4c1"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "a2cafc56e373dd7e19679bb9b17588caa932e1223f2130ded095dcc840a83ec1",
+      "members": [
+        {
+          "index": 19,
+          "launch_positions": "47d43b02803e55bb9c4a1cda9ef54615faac64d1bbad7300432d2d43c147e169",
+          "layout": "6d291f3acba324cbcb099c6a77cd84a8b532c7d1a827421c41d455269cb34d5d",
+          "motion_origin": "488fe34b21f1398c94c330cec0aab4009f3495824d187642b30d44fb0e6c1f16",
+          "physical": "04418cf2611616cda4f6e48308fee8f6ad57b4e8b1403a8aa1938520f18ce84c",
+          "scenario_id": "unknown_validation_m20_0020",
+          "scenario_seed": 2026112420,
+          "source": "fresh",
+          "trajectory": "e72c1152a0feae851d680be4579481860d95865c3b65f16f885ac3a978ffc135"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "a2cf64e5204873c698b4a5ee88a77e6c40c3fceb3652cf9a79cf5096315ba893",
+      "members": [
+        {
+          "index": 2,
+          "launch_positions": "7396bfdecde7f3e64e07d897af78bd017cee20f5f6f5ea26acc6058798e8c2ab",
+          "layout": "aee51d6579d8283fedc72cf1473ea72c3cef13591b3eebe78faae4ade65e981f",
+          "motion_origin": "c30b4935d5ef7f945067128758ba965fb97852447288110a0664606f3bb54c87",
+          "physical": "ccf43065df6f1fb7e1c6ede0500af5760cf9a401319dc8b834acdfedd1c1b732",
+          "scenario_id": "po_eval_993001_0002",
+          "scenario_seed": 993003,
+          "source": "r123_test",
+          "trajectory": "d2671855a7e9a84908a28081ffa3d4afc32a5b93baf140fb86ebc5d3de9b4c8b"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "a62aa6cc48bdeaabfcc552a09d0176ded940d6117c22f1825e76d331fa28a724",
+      "members": [
+        {
+          "index": 18,
+          "launch_positions": "4684c87253424d75cc0f25f1832d05e4ce692c5950a4e3b7d2d47fcab909115b",
+          "layout": "9cc930e99b740b62109d05bced85df559172d68063cc35138dfc3ba277504307",
+          "motion_origin": "10986d8b1561c97d143d65ff729c614dab05a5d1c3503eb3e5b6905f25438f05",
+          "physical": "dc4c630e57a2b2a5085254d8bcfa9f85c987be6a5827138de99629e6e5cde13d",
+          "scenario_id": "r123_expand_20261119_0018",
+          "scenario_seed": 2026114901,
+          "source": "expansion24",
+          "trajectory": "a1232e2070015f648639b4d09eae2256efe47c63faade9baa3fb82d54fafea4d"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "a87a3322d83b41156d5371abe9631cba3cbbb778e36d4e84833f04600149a924",
+      "members": [
+        {
+          "index": 19,
+          "launch_positions": "8b93c8232542fe384801d6a47088a1fa40dda0c814aa51b5476567751ffedc9f",
+          "layout": "583a8f03f01ef152dd74c381919ff649861d9ffee3587c7b4bce39d518c79465",
+          "motion_origin": "2c518f4b8db321d7da2fa03a3317e42aed3573626c89276552adc914b130a6b2",
+          "physical": "93c2bba074b293cfa24fe0c2847cc4e4d3e820727b782818573ebbc1d6a3c74e",
+          "scenario_id": "po_train_991001_0019",
+          "scenario_seed": 991020,
+          "source": "r123_training",
+          "trajectory": "2922062d45957ddff82c503cf07e505e9136f89b7f091dfd8fff42b1dcd27b76"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "ac5e805e78609c306857210165f64cc2b0938a9373f39099d077659794326ec6",
+      "members": [
+        {
+          "index": 46,
+          "launch_positions": "957094a866e70b6d137722a42d0ffc2c749da38629274dcfb2fd7a1c8a8bedd5",
+          "layout": "333b2030cbc168edf21bee6be98215541554bd2dae8701d45100027ca1004747",
+          "motion_origin": "b5a3c64f7665627b999376849d072a7de2163c67c7303fb88ffcedeee8360bc7",
+          "physical": "67b2bdb3fcfd172addb3bb6a614e86b6dd9d446ad9b07d980cdcf1a67c146160",
+          "scenario_id": "unknown_validation_m20_0047",
+          "scenario_seed": 2026112447,
+          "source": "fresh",
+          "trajectory": "a1a587390a421b87dadbef67b6d81ef5c2f3398058570758225aad442f11de69"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "aed7cd30baec2307781242f7af3911125ceb859bce0be1f1d0765c33a79e1e82",
+      "members": [
+        {
+          "index": 13,
+          "launch_positions": "770347c7addc334c9cf4141075d91eb1142439498fd335acdaf1f4d920863566",
+          "layout": "9c42093e08f43161b6fe232f2e93c349b17d5a7a19224695df18205fad91608e",
+          "motion_origin": "e04dbb3645dbb2f06b8116b8d9945691e1a5f67cad24235b851242fb3cf4b83b",
+          "physical": "32d4aa579ac95bb31906b6156e47dd69be0fd3f4895f996f1793d6e47d585b29",
+          "scenario_id": "po_eval_993001_0013",
+          "scenario_seed": 993014,
+          "source": "r123_test",
+          "trajectory": "24850d83fb741554fead935b0671f9b27912cde5bfb9efa614f7cda20d30ce5f"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "b02e7c5b61ec558b11402353ff32ff0ee21e102659988ed97e4f0602fc5eb24a",
+      "members": [
+        {
+          "index": 12,
+          "launch_positions": "13ccb3347873abb250c6c857dd62516c0fb70046361b72c3baa5c22bd77a7afb",
+          "layout": "1d52eb267c1a511d37d5f66b01248f3ff50c1276ef0bc9ebd44f4ec14c432569",
+          "motion_origin": "742b2e185e605934714789cbc6aee73687f1c71ccec55e66e434027516916f87",
+          "physical": "d818ea35e2a9cc452a098de9380d3b2855624a860ea0ac021663be6fd72b5d62",
+          "scenario_id": "unknown_validation_m20_0013",
+          "scenario_seed": 2026112413,
+          "source": "fresh",
+          "trajectory": "dcc5efab669ef4dc44bdc61fbd582f3bce336fcb80ca1abacc7caea4333ed2c0"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "b1d31c499798115e19a79096fd3b22068e73d2e9678c75e431a485b3b65ceb4a",
+      "members": [
+        {
+          "index": 4,
+          "launch_positions": "6361e9d047411b857f0776e2f23de595bde4d19530254c17455b88da4ba8e2b8",
+          "layout": "8ded7374fb042b83e6142cc8759ba96acb96ee7a20c439cd8a2725c4d4fad962",
+          "motion_origin": "f163fe5ba3f438e84b530e2d5449f9616f4539a9a18c3b256157d917bba1f540",
+          "physical": "1ea8f11cb2f9047cba4329916238f2ec7ce9b4616c9a9a1e1417390e4158ae04",
+          "scenario_id": "r123_expand_20261119_0004",
+          "scenario_seed": 2026111905,
+          "source": "expansion24",
+          "trajectory": "99a2e8a2c753dd30cab0bbc6c68edf0209220f7b42b685f9158ef3f20a6e0a15"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "b271974175cc34ae0393418c3d6efe2d5af46d3154091869b871f962ed9c7bde",
+      "members": [
+        {
+          "index": 53,
+          "launch_positions": "577d891108d2f15d206691ddf16c1ab39e56a7601268fb52d5d0de298c9789f4",
+          "layout": "9672849d0fcbb6157c7953a1e180446ae24f3d699a71371781d30e7f31059b0d",
+          "motion_origin": "642924247e39d69b86c0d11c519012fcc4d2e4bb85a923b1f03541102051d9ba",
+          "physical": "31d36b2a806ab0c0fda953f50e15e9375df1dfa52da36093fb64f8ef910a6bb9",
+          "scenario_id": "unknown_validation_m20_0054",
+          "scenario_seed": 2026112454,
+          "source": "fresh",
+          "trajectory": "664a7f240a649fcaac881f315dfa204ec80a98d1eaf9dd427368b879e448b7ee"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "b32571d97fd2de3ce971f30ba093a34c03bab5278750d3b7226c57e786666322",
+      "members": [
+        {
+          "index": 17,
+          "launch_positions": "8d803d9cd6ddffe1ccc779c4307a4340eea1025e4b1250888ea494acbb282e53",
+          "layout": "e915a08c3fa1992dd280eaca95f019d84d19db6a0294e03e2fd18054138babe3",
+          "motion_origin": "d11ea1bb5f4b660fb09e5e91dc4c1d463e12f1fd10f956f4734962786998bdaf",
+          "physical": "809e10044242757977ca1f474dc0d4d389598574385807cb02f623d87c0c7859",
+          "scenario_id": "r123_expand_20261119_0017",
+          "scenario_seed": 2026113906,
+          "source": "expansion24",
+          "trajectory": "9614d0835343fd37e350b8f945ba8113cc5d830d1e2b50ddf8f5c078fe40f28e"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "b401033d0f2ffe4dc2fa04449029c84118c5661a3975e400aa6204c38f541c10",
+      "members": [
+        {
+          "index": 20,
+          "launch_positions": "a7001e66c580fbc913a99000dd0f367937504e5a1c135fffa9d069979fe6dcc1",
+          "layout": "7d9ab223dd54242a19de3d44450b47b351aad9ccdc31608bc672c0573ea30879",
+          "motion_origin": "4f89830a5285c214b051feb6f30c02edc7138fc7ba232c5b84c0650938644b3c",
+          "physical": "73114ac638ef3bd981bad52d10d010646be3e2d645036ea5084350abd66335ba",
+          "scenario_id": "unknown_train_m20_0021",
+          "scenario_seed": 81021,
+          "source": "earlier_search_training",
+          "trajectory": "b3c6a79643e13a8140cb191b6a4cb39d0b08c03370958f0fc44671653f7e763c"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "b4ab1766feaaee1c31538e485fd54e6bc164b01f38386afde302763970a89bc5",
+      "members": [
+        {
+          "index": 20,
+          "launch_positions": "a4faafc8985da5d3a2d4cd3f561573539e134cb1de0a7ad1bc564898e907b997",
+          "layout": "42cd75669845262b7526dd46263b58e957e70edbc5dad0726756276d8015686f",
+          "motion_origin": "4aec5879a0633987b1757786c172c7442c3f734743f3cc5ebd64a673221ea2da",
+          "physical": "94ea5caa7d65571c445ad153e8cfcb9ef10688db45bd6a346dfa5a5bf12a181b",
+          "scenario_id": "po_train_991001_0020",
+          "scenario_seed": 991021,
+          "source": "r123_training",
+          "trajectory": "9644507dc0778eeae5aa6992f38ecb9091b2a54e694fdbc8f5cc1cb38ebda0d5"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "b6031c7717091a14e41b85ff4db61bc9a3b40bebc075481392d5bbb18ebfaba8",
+      "members": [
+        {
+          "index": 47,
+          "launch_positions": "5f286d6f64a2a9084f97ee3a785f7912817ea6a4a2db956f717803a0ecf1047a",
+          "layout": "25a9ceadbe95c2539475d536e5db5453dfc9ca094c1f2bea45bbfb0d12148acd",
+          "motion_origin": "d17865fd543df8d6d072e85c01dd7d63404ba1a8a48f0718c799cead3ad3a537",
+          "physical": "8e5658733993eb972b39b1346b9f4b2e4eb0cdb509212560515fb2ca086f7fd2",
+          "scenario_id": "unknown_validation_m20_0048",
+          "scenario_seed": 2026112448,
+          "source": "fresh",
+          "trajectory": "7f5d8fe14905575fcb0bd7bf1a51756f737f7e3b8e5d1bd14f66895e983fbe4b"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "b651a23f496e69c32380db76c8167a600361a17329cc68dd77cc24b903fd333b",
+      "members": [
+        {
+          "index": 19,
+          "launch_positions": "deb437d86e6921056ad2084e62f245b951f3a2958666c47d61c78f9947195f73",
+          "layout": "5b6df67d2b4a7cc78dcd554c47d41b1e40ae4a4e04225388c77fb16e60be3546",
+          "motion_origin": "709593caf1fe142346f3ab3a8e97667d015259d5d0d802560cfca3b1257e2884",
+          "physical": "1f7b8a27f13f52f19eb00a795da89ebfe89392458ca244dd66c64905acbda38a",
+          "scenario_id": "r123_expand_20261119_0019",
+          "scenario_seed": 2026114902,
+          "source": "expansion24",
+          "trajectory": "72d0b748c8232554eaf2d849107232af9c115a56675bf36c637ec6d89dd5b759"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "b6589f16a36c44ac68b727d143fd0c755c87937d997e3e575de1163b66251839",
+      "members": [
+        {
+          "index": 11,
+          "launch_positions": "ada8caee71d56c577f367fe653a55956bc7d699683ee3e549f08ed1771f55c6b",
+          "layout": "ea10c00b523cfbbb0d8209f8e8d4a59070bc01f3365a0f1decaf727144f437bb",
+          "motion_origin": "ae90728c58144c7ef931f453576ca9d01101bb274e71c0fd462175a25dc469bd",
+          "physical": "6356c9add789f6c34bf37e1d11c16bc3384077b18f6e40db3534ade505364d03",
+          "scenario_id": "r123_expand_20261119_0011",
+          "scenario_seed": 2026112906,
+          "source": "expansion24",
+          "trajectory": "273efef996510148e78d65288845b36f33b5eaefb50f34880ff461f0e38b196a"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "b879a041ddb348626c0e2e8ad2c362263d0161fcf4585260c82a20b0a8bf3c4d",
+      "members": [
+        {
+          "index": 8,
+          "launch_positions": "a96ca2f209dfb8bbb1bddc3362eb63ab628f6d64819fb74559ec879ed3b5dbdd",
+          "layout": "f528303d970939896fc8374e452c3333be68a53037bafb8245d7e1ce42deb367",
+          "motion_origin": "1f7a659f74ad6584dd4eae8a1c4b416a9d4c824d2a2d1fad7aa237891f7eb2e9",
+          "physical": "a7f2da8706faf7091ec27b60983ae4da5e67aba0497b00b8865c3205f970b1f7",
+          "scenario_id": "unknown_train_m20_0009",
+          "scenario_seed": 81009,
+          "source": "earlier_search_training",
+          "trajectory": "af3121f29450570abb57e636475e325bead039540b8d281ffb8193c9cb1c8296"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "bc1fbbfa366206bcafe38414d2b803cf7e54d1b48c4b7f326dc349d919d30640",
+      "members": [
+        {
+          "index": 42,
+          "launch_positions": "65b62fb74f096f5e29cf25b86ae959d23b94e0e50377321d368ef378587924a7",
+          "layout": "92e88a2664779a8b112a410b538b4c6b2852096c7400dee8a17bd6d7d563c348",
+          "motion_origin": "ba645d0cce144c725bd2029473dbfc2a60bff3c10445c63ddba5127b4de06fa9",
+          "physical": "db4ebd2ad47b6b8c2e4f972804d66896a2791316bba44f3a1dbbdf00d25ad118",
+          "scenario_id": "unknown_validation_m20_0043",
+          "scenario_seed": 2026112443,
+          "source": "fresh",
+          "trajectory": "3c019b61da45195c49d6b52596359f895efe7e51716c33aad698a8eb2d485402"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "bcc520a03d8d8d61e716576943d321b9988d5ad380265e95105079a643399f0b",
+      "members": [
+        {
+          "index": 5,
+          "launch_positions": "e93af5fc4808646f3cbd830b5c72d9c3d79c1ae677e057e3d77adc592c9be9e8",
+          "layout": "cb6a0e4d34b561709be67ffa861f1bf8d2090fd2e338f9cc0725ed557a3630bd",
+          "motion_origin": "980ce7b652808e52f12596d9c91f8b7d8fafcf300044d442baf0ba96e2c2f8b5",
+          "physical": "5d5bc7d4cead3aba90ce89b59ff80a8e3a3a426d1b72222747db964ed384e001",
+          "scenario_id": "unknown_train_m20_0006",
+          "scenario_seed": 81006,
+          "source": "earlier_search_training",
+          "trajectory": "73e000145afeda6f768b98b76740c073d6d0d49c1d010e64355b9fa4c3efe412"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "bcfabd0ab2d5f3d39b3672f8ff5a1e1fc8aa7699d47c80dbc4281570edd8ab91",
+      "members": [
+        {
+          "index": 2,
+          "launch_positions": "4fbef6cde3bb4746b95eb311821acc47f79347db3f906289ce397279ec42d9de",
+          "layout": "37a035119dbe7a7defb6146d4f9abaccd1badad0caae9050eb7614dcc9a008fb",
+          "motion_origin": "dc458cb79718d457da8acc64dd4c20ef78c435d9764d3ba8dbb7565a2dff378a",
+          "physical": "1c92657100c747dad246fccfe8298f50429687ad61ba3bb412627eb66df48aa3",
+          "scenario_id": "unknown_validation_m20_0003",
+          "scenario_seed": 2026112403,
+          "source": "fresh",
+          "trajectory": "74f053a861cfd46e84c8c7ea50aaa64bfde958f35f007d3a9b6c04432abe530c"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "bd6b44de4578590f46f240ffb8de0f83c6dea595c1e6cf854b714f3b9caa4e92",
+      "members": [
+        {
+          "index": 43,
+          "launch_positions": "40a3857958cfa8671f2443959a3c1a78df156981d84d7706e9fafd030dac380e",
+          "layout": "b4284af07cdd44f25543a11afd3cec8c349ab2709d84d2301d1a126d23d1a00b",
+          "motion_origin": "678bb23db84767c090b5ba1757d9b451bfe305bf952d68e71faf2b32a1fcef5c",
+          "physical": "72ff32d0a18a73522535726dd8e2a97d29b4de470128553402f67bdf563e18d9",
+          "scenario_id": "unknown_validation_m20_0044",
+          "scenario_seed": 2026112444,
+          "source": "fresh",
+          "trajectory": "fbb6440a8de219999e368829f69180c3c55f095d26ccdc8269a0ec16c63c1bc2"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "c0a1488f277347ada0895c75c12d7f35155671ba8cd589f1f0f95ffdfa1e4834",
+      "members": [
+        {
+          "index": 17,
+          "launch_positions": "0796cc43fe17abefcb90114ad28c2118b764059537050d9d4334fb4c5e521feb",
+          "layout": "f6a9c2b1b889194ea895e54794befc8cb4e5d9a8924ee54cd164e017675530ac",
+          "motion_origin": "b4ce03b7ba3189b9b73fd5634968941047666fadddbc6df0f41bb42636f57b3b",
+          "physical": "a59a354310c3c9eb7f8623ef0ca8a23a8ea0804736f0823be63c2de722a59c14",
+          "scenario_id": "unknown_train_m20_0018",
+          "scenario_seed": 81018,
+          "source": "earlier_search_training",
+          "trajectory": "0b3aa798a1e0b6b537bfa996dac64b5ebe62329976882ce64844fe68f7c6a27b"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "c0a79277aef1d614310887d0c6f0a690110378dfd9c185fd4b91bb2ef9c318ce",
+      "members": [
+        {
+          "index": 7,
+          "launch_positions": "9816a87b9f6f5d4cb1b9127a4178482785a60e1ba1618e8ca3edb41f7ee85280",
+          "layout": "5b97cb1d77f01a57aea2c2d96aa01546f805e509337c94890864922fdc3d16e4",
+          "motion_origin": "dfff0bc45f1e1f336e4b7748dbc3a4f9b85bba6703e9713c673e2116ae445799",
+          "physical": "e3f7678ef21fa183af80096ec54f3d9a1840ddcf9cfc89a72541ed65763aacbd",
+          "scenario_id": "po_eval_993001_0007",
+          "scenario_seed": 993008,
+          "source": "r123_test",
+          "trajectory": "707dd0dce39b11baf0b43bd071330d523bd3056f6d8aa6dfe9bb76e87125eb7a"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "c0df484859f28cb256a102b9319a01a1b7d8b38c8244cddc0993b2679e87fda9",
+      "members": [
+        {
+          "index": 1,
+          "launch_positions": "b315454ddb233587e4afde438466a47214e8e837b0fd3355e26ca99f6b71f227",
+          "layout": "2a28bae72356018218e88496739276468d8a1f506f36a3cd8646f98808ce9aa7",
+          "motion_origin": "5150cc9bc2f28169263cb53bc4c4fffcbb6b20fc1f37e9ea165c18722187ed3a",
+          "physical": "9d45a004586541adf23d410401eb9e5ec94b9949d5d5bb2e83924639eecf5782",
+          "scenario_id": "unknown_train_m20_0002",
+          "scenario_seed": 81002,
+          "source": "earlier_search_training",
+          "trajectory": "2c0d801285d99dc5cdd2c51fc407010c6bfa24bc3585a024967c793368367010"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "c1bcc98f4810149b17ff11c914a21484181f5f5ea0da4449c500b764f0a00a4b",
+      "members": [
+        {
+          "index": 39,
+          "launch_positions": "978f0611392a8d12a76f63f6f19f685d2de513c440ebb3bd7fa0a7dcee82e1be",
+          "layout": "e88664762ad802342ebf9ad407fd7f3595042da5b53e039d3186acb912f6ded9",
+          "motion_origin": "72670d58e2e0a68b8fa79f2416b680e659175575c8fe202647e1decd79d1ab87",
+          "physical": "454f2063d62cd8160d4a0a6b327d42d8bd726784d0e2b5b912cf4851fc8ea33e",
+          "scenario_id": "unknown_validation_m20_0040",
+          "scenario_seed": 2026112440,
+          "source": "fresh",
+          "trajectory": "de45df5a2748e7ba98294c60c756b4b5494a64a2ef2c51f291b6d0cabebb9840"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "c3ffda6a348648b823e4f5d3243e899e5ebaa250f04855df3d152d3072610c31",
+      "members": [
+        {
+          "index": 13,
+          "launch_positions": "8479ac1d763f4b6aba85d07c2737abd0a36e8105867d50443e1f979aa2586eb1",
+          "layout": "55ed0d80399beaa0d87422e8bb9328ade879277f0e305816efe9beea59653755",
+          "motion_origin": "df19027d012bf577d3364f976e04ab87ccd27e4d7f3611d571854bb2b2116ca4",
+          "physical": "720d071bf98e77e93acb508c3a89f0408520451a5aa30a4003d0d54b0d7871d0",
+          "scenario_id": "unknown_train_m20_0014",
+          "scenario_seed": 81014,
+          "source": "earlier_search_training",
+          "trajectory": "b1e0c0a8b5ae195e7af1296366d6c287e3341b5edbd21e94265850c57100fd41"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "cd3eb914798d57096390af67bbeae8f4a99a1d8ff05fb70da6b637a56ae37806",
+      "members": [
+        {
+          "index": 0,
+          "launch_positions": "4eda2a891d0e073bfc87bc9ce26fb40d5b89ceb517739c1f8e7843890606f0bc",
+          "layout": "232468cd6dc3dc39b775641589ba06ffbe87ba2d5d0e3f6981f05d65bbf36675",
+          "motion_origin": "0f23bfdc5ca763a02fac3906ffa2a41d448a4a9dff2b6e5f5c66ef909ad8ae56",
+          "physical": "4974a2d41548944ca6ff7f539b9c24b178b789e8f8da030733b6e22ab3afbc9f",
+          "scenario_id": "r123_expand_20261119_0000",
+          "scenario_seed": 2026111901,
+          "source": "expansion24",
+          "trajectory": "9184b01dbd69e677126f116aff38732010856b98de1ff0be62c144f4a75ddcd3"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "cec4a6a8d42a574e6b2b8f1497f3561254aea510d89b66c97c26cedeb410a828",
+      "members": [
+        {
+          "index": 15,
+          "launch_positions": "b925b1c6a8a284fd57858f42eba822144b71eec9fa018b7e1b983ef2eaaca450",
+          "layout": "d146d11b5e516d24e1dee2dd5210d310ad42b95719971b9462c2653bd53f543a",
+          "motion_origin": "16b62fabe5e30af884a115cd5cb4a4d7bc1af18afafdbfd3da7f229c563666e7",
+          "physical": "84fdd78839235d53028266fab0661c2d2d8ad80f3f9f92946acff78b441a44cd",
+          "scenario_id": "r123_expand_20261119_0015",
+          "scenario_seed": 2026113904,
+          "source": "expansion24",
+          "trajectory": "7477a304c2b44fb84fbc31ed42cd7ae473d994c43f93ea9b4ca28f189732daed"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "cfa7446caac9a501dd7eec260e236dc692bfb980aa63442a6c6320ff0a60f2d5",
+      "members": [
+        {
+          "index": 15,
+          "launch_positions": "404bbb190c6d50bc081fc93f490787be3314a0ace4c01064644aed15560eceeb",
+          "layout": "50e274b249bad59bce1e8951f6f0be8f529742619af5f82b39c64ce8de693ae4",
+          "motion_origin": "3b91a43c45939ed8cfc337abcf9c0336c3770b95f03dae4b1895bdf2344dc923",
+          "physical": "0d83e069d5d4bedee13cb0219ca016dedf61a836e09d0404c9c7f788b2726a33",
+          "scenario_id": "unknown_train_m20_0016",
+          "scenario_seed": 81016,
+          "source": "earlier_search_training",
+          "trajectory": "595c085a290fe679de64b3e1ff559f40cbe8321095db524b9e8bb59bca878ff7"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d11943c0ae76c76ef771120a4a853f64e89184c9a56f98841f3b7263b8d44453",
+      "members": [
+        {
+          "index": 21,
+          "launch_positions": "d711696a135fc1122cdfc861a3d8878791eb24d5fce3122f24c47f2feb4cfb2c",
+          "layout": "7e2c6839b9db6b53384f19fc3f7ee9a1b13024ac5bb8c32298500f9cc7b2d28d",
+          "motion_origin": "c16e5ca24c0af4102749ca9a0a8bd6ea736977d619eab8be8a800e1f850c18a2",
+          "physical": "a5a48ebc049d6bfb9cb9eead42a49c33ab1c69abf5a306fb358f540b564178ff",
+          "scenario_id": "po_eval_993001_0021",
+          "scenario_seed": 993022,
+          "source": "r123_test",
+          "trajectory": "fdb15cebf7cacde97f08b1f69efa85981cd56532b121b8a5d2903773c01eb2d7"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d280bb7fc6bb9607af733071a904d0f1c3064e762bd866e57a192b71cf1340f6",
+      "members": [
+        {
+          "index": 8,
+          "launch_positions": "b48672d1fa54f525f369776a180b89a5c50fffdad0772b4e452eeee9e7bb7719",
+          "layout": "66aa9577919598d7fe0b8c6221a286f84d61aba56e6f9b8fb7470500691219e9",
+          "motion_origin": "d33d0da8737a9ecd09593ea421b134da4c83f11a51d0557458176effca9439d4",
+          "physical": "f27801446f34dfa4bbdc7d6f180c8a879f8d3b54db7044d7c89c89e399a594cd",
+          "scenario_id": "unknown_validation_m20_0009",
+          "scenario_seed": 82009,
+          "source": "earlier_search_development",
+          "trajectory": "088ebccb125635615212a6f04de9ea3eae1421e6b2b82764192bb318dd7cc1d2"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d28f1ea932bd09f87c8b5e6fa32876704024f810623c5e842fed31fc561b32db",
+      "members": [
+        {
+          "index": 54,
+          "launch_positions": "f235cc5d5f49beb76259fecd2154218adc92ffaa433bf31608646fbb3d3fa9f7",
+          "layout": "e1300cda154099822d6c82708ee964b9f0f48d1364733b7c5cf514f4633a2ace",
+          "motion_origin": "36e02fdae82b9745e6f5d6991ffce4c76bdae22032b706e939a6af53ddf6859e",
+          "physical": "433b37a289e146a9fb22b1184db2458e3c7a9ebc35a85ce77a3eb50ed9d0d516",
+          "scenario_id": "unknown_validation_m20_0055",
+          "scenario_seed": 2026112455,
+          "source": "fresh",
+          "trajectory": "81db5f3451347fa1e88dc6f8f0fc0827ff894ff838d1b6d92ae65c894ec4cabc"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "d5a765280ad30acbab8cd6f03df3f67f83e21f0017c801db83e6916354c927fb",
+      "members": [
+        {
+          "index": 4,
+          "launch_positions": "6206ec407f72308f2f5f7b4f10a67bd12a715591ca15614d519f01a5e56a376d",
+          "layout": "0c3c0ef2e8d7acf5af3012177e8d9f36ed75def2b9c646271798e7e3a2b82b6b",
+          "motion_origin": "03b5f5ca58c114117da254d07a0c94396b243e322e2c3cb41353473237cc0703",
+          "physical": "d9ed01dc6d34a2b8f952f5c378f1ae4e4192d5716c14ce2c5a23804ac2196f8b",
+          "scenario_id": "po_eval_992001_0004",
+          "scenario_seed": 992005,
+          "source": "r123_development",
+          "trajectory": "c4032787967bbe333298e9a0b87e19dbc4c5a6089b077fea603e9a495ea83cb4"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d6e3ce21f554a40e69058a2a26f4f815febd35228ddd693ea621edae13c75254",
+      "members": [
+        {
+          "index": 10,
+          "launch_positions": "476c0afda83134c911ebcfc6991a31ade37b513397679043bc474692328432cc",
+          "layout": "1e638756be552ad53aa32e094c610391bd9b9b9082a41742343c9e7815ab9522",
+          "motion_origin": "bb5eb2e75d849bad4a3571ede817f8633ea81a4694d38830d3bfe9364217ac91",
+          "physical": "589aabb56baf821421f4e5877c4f5a7132fe0aa579b33100df6aab7ff5466bcb",
+          "scenario_id": "r123_expand_20261119_0010",
+          "scenario_seed": 2026112905,
+          "source": "expansion24",
+          "trajectory": "c63cfb6512896f02b66828829a39a90188f1b5cff7f868a53d3baf184092b58a"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d70cfacb00838f3728535ec986b740e9ac73c2ed4aa7a124abe120774bcfd0e3",
+      "members": [
+        {
+          "index": 6,
+          "launch_positions": "1e4353a785675521ec0a4c2ae81998ce2b2ebd95f82ff81c140c359efdb895e4",
+          "layout": "9f4135d9546afff0ff203672331380a20715556fd8122e55988058e199334dcd",
+          "motion_origin": "7e32da9cb0f0eb23c3ecd6f06a4a973050ab50c5b772852fe0a65dd9a1eb7397",
+          "physical": "cc0a5ce595e6c65874bc1e087c0a063844c5e87ed31c0df830d57e1b71846635",
+          "scenario_id": "unknown_train_m20_0007",
+          "scenario_seed": 81007,
+          "source": "earlier_search_training",
+          "trajectory": "c2a48d3ab00231b096567e4273d9734bb5f6a54939cb33fbf33081cc9f081e28"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d86ad4d9e982b871eef83ba98e4be093e0b0d2f994cfcd52faebcb83ffdb68c0",
+      "members": [
+        {
+          "index": 16,
+          "launch_positions": "f3e6d30a3c6a7de21a241eeefc7ac9b589be47b954e48ce34cdfffa9b1e86078",
+          "layout": "b08b30363e63ae890019343aa890f4d87c94afbb08d4bd6862e6a13317966aa7",
+          "motion_origin": "7bd31eb666a3141673114308432aaf2b0be39ef72e1c9e459ba5c464e4de8bc9",
+          "physical": "f19a3918fa6df7611bf4987885b4e9f9800289ef7a9966ae64529a7040649971",
+          "scenario_id": "r123_expand_20261119_0016",
+          "scenario_seed": 2026113905,
+          "source": "expansion24",
+          "trajectory": "e951299c03a1894bbb7e1c78ffd71ab3904e61ca93b377868d8eec88bf87fba2"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d907fc8b06b2394bd84f70bb1065feb26dccb438201c18a690d14853e063220a",
+      "members": [
+        {
+          "index": 8,
+          "launch_positions": "80abd3f1edcc534622535c724ec681096efeb8d3020cdc9f7dd80b34b0d7d56b",
+          "layout": "a27456e4d71211e6b1b293df793cfbc72dc67bc31154e1f8705430e040e616a2",
+          "motion_origin": "fe61c190a8ca8c6dfcc4ba5c976f7b849c50b02a6da7576d4a84f6e0ba1f2586",
+          "physical": "4fce6604f95405f24d7ea9fa0c319c6864087a625f1409d42b07fa67e9e0487e",
+          "scenario_id": "po_train_991001_0008",
+          "scenario_seed": 991009,
+          "source": "r123_training",
+          "trajectory": "3e72e1c4712392399111d4570f8fbb112de8cb3ceb3e6dd5cb8cb0decc4df21a"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d914b31b76be32a4c99f7506a254be7c71b07a38244723d4d7fc95586b9504cb",
+      "members": [
+        {
+          "index": 21,
+          "launch_positions": "15dd44a7611b20701e5f5eff4abfa99b8bf9dc31c53d37ed75751123ea62dfd5",
+          "layout": "e62bd7f87913032359ce89197d35eafb0b0dfeada4325c1a906b3311d812434a",
+          "motion_origin": "f5dd74d7a264f59c9ac50f4c67fe57ab510371e9d0582cb5339995df2c24fa99",
+          "physical": "a3f871cbe76052fcd660baf3cc4067740383a342f40457cd620e9218a32ba67e",
+          "scenario_id": "unknown_train_m20_0022",
+          "scenario_seed": 81022,
+          "source": "earlier_search_training",
+          "trajectory": "3462bdcc0b18908f0be5a60029cad6f032ea2d8e9c08c7127adfded99f0b52aa"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "d91835f028925f0a2e6f64459d7df949cdda0dbf83a0c8b6390de5e0ce893f01",
+      "members": [
+        {
+          "index": 4,
+          "launch_positions": "77339c2d63cb5a11a3e7b15000f4e881fa4b777f630830d9f82343564bb4e1a8",
+          "layout": "43e7cdf8799173032908a7a6d66307f720b4a738679b35f057e9485c31d74938",
+          "motion_origin": "e09a41b0a03ac89badca375413c0b643513c56228bcc0d28215b87cde9ff5b8a",
+          "physical": "dc6fedf6e4504ee5d326306293574b58ea97784a100c5caef140a961f3396771",
+          "scenario_id": "po_eval_993001_0004",
+          "scenario_seed": 993005,
+          "source": "r123_test",
+          "trajectory": "b87ebcf0c5f9f9755ca4f4f33c347dc58d476bfa983432b494ce32be277aa14d"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "dadca13a598883454ffa0fefae26b98ba39f34336418b396631fa84202c1386c",
+      "members": [
+        {
+          "index": 0,
+          "launch_positions": "f37f15f4cee8040be815f34c7f85687106deb53a7232f8a134881325838015b8",
+          "layout": "16f64578c4b52c9dbdd9029de1447f0369a01f119b6db1218f7b95f950eabc11",
+          "motion_origin": "fc1fbb91345ff605c70ce7fb850fd01d06968b42fbdfe1e6745ceec1c9fcd90d",
+          "physical": "eed096ca5fd2c1306a972d742ec8da1627b3b8636def939e97de1791bc4efd69",
+          "scenario_id": "po_eval_993001_0000",
+          "scenario_seed": 993001,
+          "source": "r123_test",
+          "trajectory": "ebceec62c43ed560787d942c256d93dfef6ed48f1fe9a1be591f6ceeed5e9069"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "dc900e24ab139e2fb4ca938fd87176f4daa7b4d8c4930d23dc5c00ecc612073b",
+      "members": [
+        {
+          "index": 20,
+          "launch_positions": "cc355d9bb66f0582db2b658e9429a3eb5787c055c9bedd869d34133dbb132883",
+          "layout": "6fc3552777bec8a7992954797a06273be35410802e0a75fe5cc04b9ea7aa911d",
+          "motion_origin": "11a04849ab7facda29ba4e5a798fa25beb787add430f7e69c198ffab2dbc0a13",
+          "physical": "387fdba1904fead165ac19a782d6187cc40c2a4b86087c9a0ee67162bae01ce0",
+          "scenario_id": "unknown_validation_m20_0021",
+          "scenario_seed": 2026112421,
+          "source": "fresh",
+          "trajectory": "8fe5ed7e5e31c8a806f0e387f47880d56a80ada209f43ddc6179d7063cd70be3"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "ddcb0a31cba03d8a2fd95c526febd8be3a38af326f45955103730971a83206df",
+      "members": [
+        {
+          "index": 29,
+          "launch_positions": "b01c32f450532c466c47043f8f637599f2ab8fec4ac16f44dc0988f88cd448b8",
+          "layout": "3e85dbcae7966f9e424f25e05b8399a87bce7d0e34b856bf32be5d4ef9252c2c",
+          "motion_origin": "f5d7814e983cbb9970a8c6a72cb945aacbb456e52803e0de08829dfc84cea4b3",
+          "physical": "4ce957ee526ec21f754003f242bdbecd3a54c92c70ba343451034a31af76a35e",
+          "scenario_id": "unknown_validation_m20_0030",
+          "scenario_seed": 2026112430,
+          "source": "fresh",
+          "trajectory": "f12a2dcca3d0f5c8ab73223071a1e9083e6dd10abc94550b1469b02cea5867c0"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "de39aa278114e3137dcdf617dba6062c62bee33e15c8e08aa3f39b022085a649",
+      "members": [
+        {
+          "index": 11,
+          "launch_positions": "e6916a41e75133424ebb8196a3bd420278fd101957ddcd35ac1fcccf5ee8d3ed",
+          "layout": "400dd54c484b2e9929c31956421d2a81bd1039e020b4c04222ea67ff14b34c24",
+          "motion_origin": "cb1be22b04f5dc3c043b8f7a9b99cf03213e2bb7ce0a4430f8b9a8e17480ef7f",
+          "physical": "669adc31f6c5641c7f731162df6faed93575c05d71755a1f98da2c8381d3735d",
+          "scenario_id": "po_train_991001_0011",
+          "scenario_seed": 991012,
+          "source": "r123_training",
+          "trajectory": "e7a825757453cb747d466fd6ca4645e87f3c95f838782052843f5442832d50a8"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "de58bdd9b0eb8bd2e64d8b4b14379d8346d10b748e864592ccf5c3dfa57d33a5",
+      "members": [
+        {
+          "index": 36,
+          "launch_positions": "cf30476af4bb3854ce7405270989d7d6a0996f00b36776a45703545655342076",
+          "layout": "d9b6ed891e45cacdd988d2dcbcaaa50f530c86ea9b198f2e0877c4878459c230",
+          "motion_origin": "47919d729224e59f5da4795126889614687138d7bf82498e920f2c49a65fd306",
+          "physical": "cab6153f5639e53f3e37eccc7a84ddd184693c26bdf95354b26ffadd62e7bc0a",
+          "scenario_id": "unknown_validation_m20_0037",
+          "scenario_seed": 2026112437,
+          "source": "fresh",
+          "trajectory": "6a51f7760061f6054afc70ebf4d391e94496d4c07db6fbb93e8a6d037fdad008"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "decf91be3a0d0b290ce395cea1b99347c620d9ebb5da9041e3cf4a4f49388083",
+      "members": [
+        {
+          "index": 5,
+          "launch_positions": "7589f14422124d27b88e07d75e180d60a17878f8d01de96fcfbedb0df690af45",
+          "layout": "058eb58b219d480e49a2a03e1a34439e65e9687661c3dfe906833e6b63f3a14f",
+          "motion_origin": "cbeb0069af4400b88976e3fbd28af589617ceaae43bc709d68d93ab48af2c5c6",
+          "physical": "d802da30c6e33217764e27ef1f9be70123534bba2624237e3deb44a2fc4e341a",
+          "scenario_id": "unknown_validation_m20_0006",
+          "scenario_seed": 2026112406,
+          "source": "fresh",
+          "trajectory": "7117f3c95ad60049d4060e40f262895581c2bff41fd03e3c2089db70f5d005be"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "df1a2482fbd073ee93be16b05adbbe1cc05ff86a7660aa2b2c97ef54f3162951",
+      "members": [
+        {
+          "index": 31,
+          "launch_positions": "dec08e0df7756f9640f840dc12d2e9d8be38df44174f9cc602f1c07c3c9efdd5",
+          "layout": "d25a20a91b38e4491c3bf70911d1002da4aa5fa9bc2fa7c52433a8bdd0a555e9",
+          "motion_origin": "9b38777a3784c15ac67660539b30499c337e1f932b15ed20505fe660d7affbc2",
+          "physical": "94eddf9253902a78f01601bb65237a0072701e95fc37aedb00e38f6a08283ffb",
+          "scenario_id": "po_train_991001_0031",
+          "scenario_seed": 991032,
+          "source": "r123_training",
+          "trajectory": "abd1b8412f8eb5ee4597a45aed6d1291a78d6af1759ceddbddd5af6f4b45dcdd"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "df68baa5e6c6de8aeea21f3742ff99ca51a4852176ae0104e888b8a6f57395f2",
+      "members": [
+        {
+          "index": 27,
+          "launch_positions": "251b61a8bd9fcc3941ab8fe1e297115bf34644e19f71422dd1708616f099e78e",
+          "layout": "c86ef29b2714cf4ae3fffbe6744bd00d05735df9ef96f7965a8dd2884cc80872",
+          "motion_origin": "d0b46f1ced5b0fc89bc65aff87847ecac73acc99eb066d0d5c1bea0ea4b2bff5",
+          "physical": "ea8a3c1402b8f39ed3f46d877de3d3c7423f7618e20e5b17fbbfef0dd4c215e0",
+          "scenario_id": "po_train_991001_0027",
+          "scenario_seed": 991028,
+          "source": "r123_training",
+          "trajectory": "c0efc01f6edbec3c5cf8e236c22f7b69a94c0875704b8356325b9c49f5a1793a"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "dfbf102639b49b1d7d91a4c95005a59e78d60021f83c30c99a9625c06f9fb1d9",
+      "members": [
+        {
+          "index": 0,
+          "launch_positions": "54ce90e003be9a18f87ea75a6d621f11c0282a8799730fdccfd63c01d14c7b19",
+          "layout": "2dbd11b8d493f46ae37985917e19759639213581dda12a4cca819d95858dadde",
+          "motion_origin": "6e4f941fdaf91b3e0150c87e3f560d8a4f366e8b5fd2492714b47f250a3b0050",
+          "physical": "8d1334cf1304fe78b916bb93f2091af129eb49544a90027be043d6c012e80482",
+          "scenario_id": "po_train_991001_0000",
+          "scenario_seed": 991001,
+          "source": "r123_training",
+          "trajectory": "59d75cf0d33f91e78159653244663e43c5d81a8905d7410c5e6946387f09db57"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "dffbd5c25285ff5500a1006d974b9447f8e7d4dd9aa5255119929fbe82e9e78a",
+      "members": [
+        {
+          "index": 8,
+          "launch_positions": "515b0f36c4c1c7539bc853e6f8cfc28e44b617534013cb9fe3ecffee39276120",
+          "layout": "b7899446374d9c368d1874a4817aa4c68af9974326f1c31cc13804099efb814b",
+          "motion_origin": "00d0d97ec4a64c52ee82398c25e805a2f4c2a1d093c73b8f773696deb08f1d61",
+          "physical": "b05f408085711e00c17b56415ae0662e73c3a7dedd61b089ffbf9f9ab263e102",
+          "scenario_id": "r123_expand_20261119_0008",
+          "scenario_seed": 2026112903,
+          "source": "expansion24",
+          "trajectory": "0cbf9ffca9e74ee25b94e3b6a0a4930abc8bc17e1ff7502be2ef4b2faf28e3ca"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "e17be22e231e5c39c5c8487a744f223eb9763741524289c2115972fd3e566968",
+      "members": [
+        {
+          "index": 26,
+          "launch_positions": "29476e188b23334f3d1d68ca36c159fca62ed1d0dc000613ad0318b2057c0431",
+          "layout": "9ab5f0a850f154429cd031d2d4399eef5201ed81380ee8d811fae876f9353de7",
+          "motion_origin": "ce20797bdffe95d307f4664e9b05d4e0318c49b0e2bd2f08f5a9f4654f3303b1",
+          "physical": "501757943612852de136c839e6af60d7f4388db29fa0fb3e95cf5b15e0b13a25",
+          "scenario_id": "unknown_validation_m20_0027",
+          "scenario_seed": 2026112427,
+          "source": "fresh",
+          "trajectory": "4b2f19647a3c23237c3094412663c02badfe30c769e7154656366bd4dca0ff56"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "e1aa13becb246d0d1cc79b291ad12ee73b3378f45bf656b97e1b2ebd6b99fdae",
+      "members": [
+        {
+          "index": 21,
+          "launch_positions": "35125e54a6de47cc7a600a7697f551dd0149d1bda1159b97794bb0f0cd045c57",
+          "layout": "c226eb7bdc029eea05d2be364ba1f76d62f4c447c4fe16e55c7cfd5b899208fb",
+          "motion_origin": "04de0e51a856bf6c3e3676b930a83215ab78eaa6ccc4e08d091932f0764d23a9",
+          "physical": "7e3cbde5c72c245eb80ce6a92c8db8b413c74a2ba47e303c81aa9f8f88ea7bdf",
+          "scenario_id": "unknown_validation_m20_0022",
+          "scenario_seed": 2026112422,
+          "source": "fresh",
+          "trajectory": "0caa7f60ef04c2e3da504b681f17c82ddc2f4881b8af01dcaf443c393a8aa0d4"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "e1da04b08ebc2fa472ec116564a71d4666224632c0ad2b9472719b28aa26395f",
+      "members": [
+        {
+          "index": 51,
+          "launch_positions": "8a1ed95d61ed56efde48357a5cb9fab7bb29dc85d3ecfee390576d7d783205df",
+          "layout": "6c9eca8b4c379695fd18ba0dba8315b373583b09c6aace4e0c033d9482516529",
+          "motion_origin": "b89db4496f1f3df433e55c1d27886ae82650eccca14f3feb8d5c90974e08a75e",
+          "physical": "39fc7b4ca7c6f005b8b2238b5a0343e7289fdaca4db0f33a05a33715cc009902",
+          "scenario_id": "unknown_validation_m20_0052",
+          "scenario_seed": 2026112452,
+          "source": "fresh",
+          "trajectory": "ef260726a1b7a2662509d46ca61ae6e66ba63ca6af52e439601803a655984f4f"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "e28570bc61eca8890529f2357402b59aa6c7efe3ac04dbffa506fedd021e1606",
+      "members": [
+        {
+          "index": 28,
+          "launch_positions": "37b647342110704485e53b2da2c6c759f4cd0f3ef7769cdeeff4519a268d88a3",
+          "layout": "17ef7b724ba23b1553afe5a2840cc19e17910de3aa498f466dfec34caafa6396",
+          "motion_origin": "607a511ce3cb80356dd756c1ab64721445b19d38e9422784e71d5e5f41184b48",
+          "physical": "60c026e27a6ae91426c00a6c7d107a80f5902c0ea52ce9cf21a0f951ff4ba262",
+          "scenario_id": "unknown_validation_m20_0029",
+          "scenario_seed": 2026112429,
+          "source": "fresh",
+          "trajectory": "407306f49be392947b8eb6f5a5c20ab31a57959c521a5cdeb910afe8df5bbcf0"
+        }
+      ],
+      "split": "blind"
+    },
+    {
+      "family_id": "e57caa52917a083d3b135d6ec1845802bc663a0e94639b47c1036b67b21a7e6c",
+      "members": [
+        {
+          "index": 15,
+          "launch_positions": "81f2f87a9d4c2f1015ddb06ed0d452a32982e05968c6e7e663045131aaf94cb8",
+          "layout": "1e2e5e87cf9fc095744e8242c4fb462fd8b5cd82508532157a393bcdd3a17439",
+          "motion_origin": "6fd96d25efad28addb118abb56ecdd97ca40a7d6486d5d2217c53b87608371a2",
+          "physical": "335467d801bbb336f013ae834d3e990bedef4c213129a4120bb3a86019160e0a",
+          "scenario_id": "unknown_validation_m20_0016",
+          "scenario_seed": 2026112416,
+          "source": "fresh",
+          "trajectory": "4df942435ca3a73803fb790b1cb338477b68cb53b85e9b4a7ed4aaf8bbd8a167"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "eb7114c0471edbb31115576eee0e26e020e60aecfa2be84fc0b822cdcca95b4d",
+      "members": [
+        {
+          "index": 3,
+          "launch_positions": "aa09ed39b69bdfe1932506ebbecf9ea611dbbc170865638399ccc7da70a0bfc8",
+          "layout": "23145c57fd90693899023fd1f3186fdb19cd8a220bf41a7b2b74c84f9c9f7e95",
+          "motion_origin": "c21d8826837ed974979ea40bda0e5b924f864bb24b712c7e3e19caba2b16e7f4",
+          "physical": "dce94a5c0d322cb121a55c38c9a985f8d7b935bffb13857882079204ed4605a4",
+          "scenario_id": "po_eval_993001_0003",
+          "scenario_seed": 993004,
+          "source": "r123_test",
+          "trajectory": "04a9d34b7e917a060a70156f9c2c81c4d3b2c93665176306dc074a5dacb03e8d"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "eb88b24e637a592c78bdd23ee9464b618f8ac8484a5b1f0ed3e6da023f710951",
+      "members": [
+        {
+          "index": 12,
+          "launch_positions": "f8d2a57e1f52ed5cfc530c272683e03b960de61a6079c9ca684479b6dbe6d8b5",
+          "layout": "40d9d105ebaec6143ab8ba53d0dc0537dc6a459f67b38717afc6c37a82d59c59",
+          "motion_origin": "a44f85f4ac1197c5375f43149e03dc41fe3323f308db1c34555aaacf078df62f",
+          "physical": "69ecdfc775c97bab272e2e701f23b2a1203321273903d6347abcb4a442e1ee8f",
+          "scenario_id": "po_train_991001_0012",
+          "scenario_seed": 991013,
+          "source": "r123_training",
+          "trajectory": "276801a3f3d890bf53367a225f5ee75f477817dbe7888a6986ee1e8512b0e394"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "ece23431618ee679d60b0ffff67af896cd7e748fa713f63f63ef10a0620cc53a",
+      "members": [
+        {
+          "index": 16,
+          "launch_positions": "360391b7807ac5ed1d97011f889ddb9be2e184d9c2fb91e58c0c4cbd893d54aa",
+          "layout": "ceb160d987c673b144ecbc0c1916967b8ac32b238fc534c78a4d56bfda44d547",
+          "motion_origin": "d3d4f57cb3bed6dacb0858157aeed61090877cca83a16d0692aae5735fcdb449",
+          "physical": "8693c25b4a5a0d2140afddcba5aed076389e1b5eab5f3fdeaba8abf324156c8b",
+          "scenario_id": "unknown_train_m20_0017",
+          "scenario_seed": 81017,
+          "source": "earlier_search_training",
+          "trajectory": "f39e8edbb15f0ee1224385708341ba9035e12169ee4b9a8302df03687a7e77dc"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "eede781619723c10c2e86d081deaed06e1617722092b0dfb1b67020e98ef7c0c",
+      "members": [
+        {
+          "index": 6,
+          "launch_positions": "b0c18b95ab0421c3f12775e60e95686dd3c075db06cf9a1c7c33fe8dea2be09c",
+          "layout": "2b216162aef221005da7236cd7bac7c6c02675fd760e12f80c641747ae84e4df",
+          "motion_origin": "31c8877cfa57202b430eb00dd935ab2e1e560af8c091e049cb29309e4f4e091f",
+          "physical": "116aaedf0ccec3f4e7b692e379ce83b5a8c7afb6976b659b71fd513066a52109",
+          "scenario_id": "unknown_validation_m20_0007",
+          "scenario_seed": 2026112407,
+          "source": "fresh",
+          "trajectory": "5a920c8b7e81530fbee1140d3a8bb34c03386740bdc59af7635f1cfee66f46b0"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "ef3dfc8c786a5f6ec5f02f1e8d37500babfd7203e8dab0556357d3561216de7c",
+      "members": [
+        {
+          "index": 4,
+          "launch_positions": "d83443ad675628a0162bc5c3b8bf0d8be6b26641c715fb0fac63872abebedaad",
+          "layout": "2626f7575384a838061b74465135a4e7a10899a141aff4d9deb8b605165363c4",
+          "motion_origin": "e2e24936413ae4347359aa625dc2459c728ff1b51688fa093cc9c09fa64e0bc1",
+          "physical": "334fef02f2bde2aba5219075eaca07465140b2962792752038239d526014a576",
+          "scenario_id": "unknown_validation_m20_0005",
+          "scenario_seed": 2026112405,
+          "source": "fresh",
+          "trajectory": "b329da416ac0b5f9f0f03c23513a2395facfe8e3440ac2efb18dfeae54d9b0cc"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "f026bd8be9406979ee91749aefaa0b8e8a74df54a40d4ce8db751587915b5f11",
+      "members": [
+        {
+          "index": 21,
+          "launch_positions": "1f2a0743aff88729fdd1c45f68dadeb2f97205ac6379f1625e62f09dd3baa6bf",
+          "layout": "277488289e5ca8faad408adc9342dfd62bb5d2464ba27e46596ad9175ba2d278",
+          "motion_origin": "ce1e4eed296c769f12d02679d14311f92b4d945f6057260d55dd9ca7a21a4a7a",
+          "physical": "6b995b8665e71bd65d97d59185d581548d416d532a2e1d7866004c2ebdd5af9b",
+          "scenario_id": "po_train_991001_0021",
+          "scenario_seed": 991022,
+          "source": "r123_training",
+          "trajectory": "f53124aa62361d684b57c2dbd0de41469baa3f84a096eb9a2a7a93c9e903b245"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "f1f2a03a9388da30f7aea62446e6e6d136a82820fd37ca25e01e4e4d39275d9e",
+      "members": [
+        {
+          "index": 23,
+          "launch_positions": "8db4abf2cec9cdb824c93ac6e4a7b90842235d1a38117301f9e8599158fc4f5f",
+          "layout": "7db5e401fc5f048c16fbe01232b44cce37f31cf06a0c0a7af9a56807478de988",
+          "motion_origin": "3cf3451102d2253bbc729369e6a37553650e52ba107d7be0a89a7a2c58b3c92a",
+          "physical": "e247cb829515594b6e58520f6ece4355a2ba20e695dfa8e212fd55d0b734416b",
+          "scenario_id": "unknown_train_m20_0024",
+          "scenario_seed": 81024,
+          "source": "earlier_search_training",
+          "trajectory": "6141dd6674de8117b866d045d1252ce0a86e4cf4a2b7730e145c5344f349fc27"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "f35c1a1ed9584b51a006b30134a795542f633185ee8dcf2cd4b6e8a988c1c71f",
+      "members": [
+        {
+          "index": 27,
+          "launch_positions": "83e039548c658435ba2ed12a8acc569fd1439484f8bddd11440aea00cd033e65",
+          "layout": "fc72f5b8c2c1f1545195355f5b4a1f432518b5028e4c5415bf318c11af4f6180",
+          "motion_origin": "46bb033fc224ac09be10f02f9d07c34999291257f83a16e5f902aa41151356c4",
+          "physical": "fea243a595a31973c194baa50272e852df17a645776d999a9dd6abc0e8b57b6d",
+          "scenario_id": "unknown_validation_m20_0028",
+          "scenario_seed": 2026112428,
+          "source": "fresh",
+          "trajectory": "c22c7fb8b374750d5b52077d00d4561d334c836f7e6a568a8bc1f27850d68322"
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "family_id": "f6634fc41dc56daf2a0eb89105f5588cf39941a2f4de661fea1a3b2851356cf3",
+      "members": [
+        {
+          "index": 5,
+          "launch_positions": "af1a5323bf1082234d25caa56c28b208275f4d875f2b8a378620b1f25435f5a3",
+          "layout": "66a4a38d75534a4e8b4506f20b2fe647f5b9109421719cb8e7be6478db432ebc",
+          "motion_origin": "e1d11613fe22bcf7f1759a93c611b4d71a4ac36a73ff4d630e55f729d67003a5",
+          "physical": "739cfcdc7e45f70af57d733e1363d3abdcae037372e961ea4ca96b553c538716",
+          "scenario_id": "po_eval_993001_0005",
+          "scenario_seed": 993006,
+          "source": "r123_test",
+          "trajectory": "9cb3d83c8b51c3f755dc8ab76b3355431cf6989ca0228d949a711e26cd1963c6"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "f6b2a0980245c3a100f1b232667853a626dd7d4957feebc6d5e86e473b4ebb78",
+      "members": [
+        {
+          "index": 25,
+          "launch_positions": "aecc887969a6780bf8cfac5f55c0561f5fca7ec709e886aecc2f294e3cbf5e5d",
+          "layout": "fd6de3b50a3bf64b9906c9aa07257fd3b60980d2d8f18aa4a6c9893eb99d39e9",
+          "motion_origin": "f0ea79dbc0dddd9940c9b80f7792b9c942b4298dce2b16bf99f0c80734d39053",
+          "physical": "48dd556d7a5bcb244a1f4cb79c724b47c47e19774c8955a80fb1176c2e57a2cf",
+          "scenario_id": "unknown_validation_m20_0026",
+          "scenario_seed": 2026112426,
+          "source": "fresh",
+          "trajectory": "be91541fd331819a399c76557787d3a56033e4b3706774beae99b85e492449dc"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "f7921bd158c2246bce4d0549fb9b4e90b6a5e330678018196523dcb934233077",
+      "members": [
+        {
+          "index": 11,
+          "launch_positions": "0016284510fae7b4941003b59dfb5a765fac87976b907b2205522ab99ca18894",
+          "layout": "d64a2fb741a4f3fecfc603537f397cde62fc222345484aa5ec62df25aef4d6dd",
+          "motion_origin": "9f59c81d00e98b42433d9684fa35bc95cfe30ac1ee089ffa04535f73a2e76211",
+          "physical": "46481e85edcec68f2f143e3d15927c8caef3446c05f8e6211d3e98c71545014c",
+          "scenario_id": "unknown_train_m20_0012",
+          "scenario_seed": 81012,
+          "source": "earlier_search_training",
+          "trajectory": "0af91b5cd660edecf474b4f9b6c0366e2f63e1ea7b6ed63335460a7326f762f1"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "f8e8e473d31f0e73be200aa61f533820f8bc3998e70c59477e6a6493adfbf923",
+      "members": [
+        {
+          "index": 22,
+          "launch_positions": "0183242a04b8eb6e8a139da43dc27a012dbda938afc6c72156ad1d4faa7a56b4",
+          "layout": "0f51b13f4c19523ff897bfe123a3cac80a8b4390716a1a5191d750a1e80bee93",
+          "motion_origin": "c379532c69ca935698e90c22ae80293329008d1563f329446542dff72c11c0fc",
+          "physical": "93b4bc719bb7131307c40d5a8d30469b8aca5259d42eb2ceaa967305e7c872d0",
+          "scenario_id": "unknown_train_m20_0023",
+          "scenario_seed": 81023,
+          "source": "earlier_search_training",
+          "trajectory": "fc4fc9c0f85d9fcf4617318a750a4ff1e266b3e720b9ba01a60f571cce1fc5e9"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "f9e94bc1af8c6210f59249bac5e9a3d031d5944beec68d959f21da28f8422376",
+      "members": [
+        {
+          "index": 7,
+          "launch_positions": "d41f26379b3f88fd5c2145966aae2979593776f883569b000b109442ec44d8b9",
+          "layout": "36f28e35b1a1cb2ef51000f5712d9065237e34e8958eb46c64d215168719f4dd",
+          "motion_origin": "21aae76da9a97aa57ed36b4f3ca30af3231c72cff2df02d984f9752b0caf6e38",
+          "physical": "7a70fc9bf5bf6b82927a503789618fe034d8e968ce97229bfe590cc9164e5711",
+          "scenario_id": "unknown_validation_m20_0008",
+          "scenario_seed": 82008,
+          "source": "earlier_search_development",
+          "trajectory": "2e747501721e1850a6caee17d4efc9c487d0a09cddb7e5dfa34ffc81e840d5a7"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "fb2f17338b111e1ef618a60e2e922bb11c4957670b9b17a1ef0a94e2b90ca1ba",
+      "members": [
+        {
+          "index": 19,
+          "launch_positions": "90ea2cd016473ebf892870aaebf020fcdfba7d775044019cd2c8ef17984c7c75",
+          "layout": "1a2a916a2d8710afb522044aba81ad8bbcf4a5e74854ccd1913d0789f54fe67e",
+          "motion_origin": "67cab4d891ab7a2abfa34b3a4d67f3b929052dceb096768605065019096e8b3f",
+          "physical": "f3495a46e82e4ff9993eeec4e586f89fc0025630d0dec07a9cfd44f18798609b",
+          "scenario_id": "po_eval_993001_0019",
+          "scenario_seed": 993020,
+          "source": "r123_test",
+          "trajectory": "6d24c894ef64a5530b7d5cb3004f7fc8b07c219915f862d8deffb750121d3a08"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "fe02da2aa1d001ad1c178bd5efdf823cec71d7bbb079f273fae071457580e747",
+      "members": [
+        {
+          "index": 18,
+          "launch_positions": "972475ec0d43cac8982c0bbd1b9d178a7f4bebd43e8bd3d30c2f8b10f8eb12f2",
+          "layout": "6db109900d18e03da5966ce5bcbd0bb3ede2537e4e1f89ddcf7b7958e6d5d965",
+          "motion_origin": "4a078cf35cd1078e576c2875d608375c1d7f74799878e758b9ed22a916c71613",
+          "physical": "6f769897ef4efefe9278a0642b088a8681699d346292ed310bbe09019cc219e1",
+          "scenario_id": "po_eval_993001_0018",
+          "scenario_seed": 993019,
+          "source": "r123_test",
+          "trajectory": "b1b2bcb14f0fc02268cdf24cd7b58daf3eb2d18f1dd7087eb2df42368441ecf6"
+        }
+      ],
+      "split": "development"
+    },
+    {
+      "family_id": "ff6f8befc2faa41ea0fd3b948bd1dec99bfc8c9f0eaadbd6c62a0964fc3665e1",
+      "members": [
+        {
+          "index": 3,
+          "launch_positions": "9cbecb2f6547aca05f3bb609a2d150b0fbe50635da1e55f24946efc08034e0e1",
+          "layout": "b4ecc9f9e06727c0f92208db4bddfee15f064ee243377f59f764f77b080d704d",
+          "motion_origin": "ef0cf5caa425d52fcda98dce59b37979ba1b4bc57b310637127453e02112f016",
+          "physical": "ceeb52352d4ccc7621b96a807bfa9a7fb496dbf2b556d3c485ddeca0788ab9fc",
+          "scenario_id": "unknown_validation_m20_0004",
+          "scenario_seed": 2026112404,
+          "source": "fresh",
+          "trajectory": "e52ad343dfab8dc84c83c2f25912ba1a281a247900eb51c5a91cf8b03a1e88af"
+        }
+      ],
+      "split": "calibration"
+    }
+  ],
+  "family_counts": {
+    "blind": 24,
+    "calibration": 24,
+    "development": 142
+  },
+  "schema": "auv.launch_assignment.preparation.v1",
+  "source": {
+    "base_commit": "52108bbd548391c4b4fedc7f212666df0f508528",
+    "source_manifest_sha256": "f3dacc2cb0d3af863a5b31ad86140f4022fe9db4436653d2ca3c30d6b5c9b741"
+  },
+  "study": {
+    "budget": {
+      "evaluation_design": {
+        "max_effective_offers_per_boat": 2,
+        "max_joint_arms_per_departure": 8,
+        "max_physical_steps_per_family_one_departure_one_cell": 12800,
+        "native_horizon_steps": 400,
+        "pilot_paired_continuation_repeats": 4
+      },
+      "future_mechanism_check": {
+        "maximum_episodes": 8,
+        "maximum_steps_per_episode": 32,
+        "training_updates": 0
+      },
+      "interpretation": "report pilot ceilings and adjudication costs separately. Statistical precision depends on the number of genuinely independent outcomes",
+      "prepare": {
+        "checkpoint_loads": 0,
+        "mission_episodes": 0,
+        "mission_physical_steps": 0,
+        "training_updates": 0
+      },
+      "units": [
+        "distinct_joint_assignments",
+        "independent_continuations",
+        "mission_physical_steps",
+        "projection_queries",
+        "model_build_cost",
+        "adjudication_cost"
+      ]
+    },
+    "candidates": {
+      "accounting": "log all projection queries, selected offers, installed tasks, accepted routes, rejections and fallbacks",
+      "duplicates": "collapse identical projected options without resampling",
+      "generator": "one frozen local proposer across methods, with its original offer and one optional private extra draw",
+      "no_offer": "native wait or safety fallback",
+      "projection": "original onboard projection using the local map",
+      "proposer_reference": {
+        "actor_parameters_sha256": "833cac497f001eaaa68c686cf8011573189cdaa981e1430b5e5a355439a5011e",
+        "file_sha256": "2740a7a5c6583cccfeb257bc1f0c069cdffcbafa35c02f9cf4437c330c2ee8db",
+        "model_seed": 2729,
+        "path": "verification/neighbor_ctde/20261123_v1/runs/20261123T145847696897Z/search_actor.pt"
+      },
+      "sampling": "use the private original_offer stream with frozen NeighborPolicy.propose for the shared single-offer comparator. Draw the optional alternative on extra_offer independently of the reference and continuation streams",
+      "standby": "scene.initial_executor_wait_point, given only to the executor and fixed across paired arms"
+    },
+    "continuation_freeze": "pin implementations and weights of both prospective policies before collecting formal arms. The terminal-mode identifier becomes available only after first receipt",
+    "continuations": {
+      "handoff_value": "rank by a frozen local handoff-value rule derived only on development families with grid terminal control",
+      "local_coverage": "rank feasible proposals by new local search coverage"
+    },
+    "historical_registry": "configs/launch_assignment_v1/history.json",
+    "historical_use": "reserve previously used physical families in development while retaining the original split and outcome restrictions of each archive",
+    "holdout": {
+      "inheritance": "every branch and continuation repeat inherits its departure family across arms and replicate seeds",
+      "release": "after the local rules, predictions, study tolerances and analysis version are frozen",
+      "seal": [
+        "trajectories",
+        "receipt_states",
+        "terminal_outcomes",
+        "summaries",
+        "derived_labels"
+      ],
+      "search": "handoff_value",
+      "terminal": "direct"
+    },
+    "native_inputs": {
+      "config": "configs/r123_expansion_v1/config.json",
+      "family_split_seed": 2026112402,
+      "fresh_families": {
+        "blind": 24,
+        "calibration": 24,
+        "development": 8
+      },
+      "generator_seed": 2026112401,
+      "native_split": "validation",
+      "options": "configs/r123_expansion_v1/options.json",
+      "profile": "M20_MOVING_UNKNOWN_MULTI"
+    },
+    "problem": {
+      "decision": "one simultaneous departure of the eligible search boats",
+      "deployment": "one deterministic rule per boat using its role, own history, local offers and previously delivered messages",
+      "information_boundary": {
+        "delivered_peer_slots": 3,
+        "delivery_delay_steps": 1,
+        "family_id_and_generator_seeds": "offline only",
+        "features_per_slot": 15,
+        "link_radius_m": 10,
+        "max_hops_per_step": 1,
+        "own_features": 28,
+        "recent_coverage_features": 8
+      },
+      "primary_outcome": "native terminal mission success with censoring at external observation caps",
+      "reference": "best jointly admissible departure assignment conditional on the pooled predecision histories and offers, under the same frozen continuation",
+      "scope": "declared family support, with group-mean claims when only group means are estimable",
+      "secondary_outcome": "one original team reward per physical interval, discounted with gamma 0.95"
+    },
+    "random_streams": {
+      "candidate_streams": [
+        "original_offer",
+        "extra_offer"
+      ],
+      "continuation_stream": "continuation",
+      "derivation": "first 64 bits of SHA-256 of canonical JSON [master_seed, family_id, stream, boat, repeat], unsigned big-endian",
+      "master_seed": 2026112403,
+      "pairing": "offer repeat is zero. Pair continuation streams by repeat across assignments and terminal modes using arm-independent keys",
+      "scene_innovations": "native scenario_seed and planner_seed from the original manifest"
+    },
+    "schema": "auv.launch_assignment.study.v1",
+    "terminal_modes": {
+      "direct": "existing direct final leg, eligible only after actual first packet receipt",
+      "grid": "existing grid final leg"
+    },
+    "tolerance": {
+      "primary_loss_absolute_success_probability": 0.05,
+      "sensitivity": [
+        0.025,
+        0.05,
+        0.1
+      ],
+      "simultaneous_alpha": 0.05,
+      "verdict": "certify only when a simultaneous upper bound on loss is within tolerance. Overlapping intervals or unsupported families remain unresolved"
+    }
+  }
+}
