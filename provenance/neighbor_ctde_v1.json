@@ -1,0 +1,17 @@
+{
+  "schema": "ch3.neighbor_ctde.v1",
+  "parent_lock_sha256": "df20d45aadffc496f83e190a7b655e48472220d07f732571b97ebcb818f6484b",
+  "radii_m": {
+    "neighbor": 10.0,
+    "all_links": 100.0
+  },
+  "source_lf_sha256": {
+    "chapter3_bser/neighbor_ctde/__init__.py": "0b7fb964f76524c3b2968911787c778b12d386c20926c7081623a7d3411ddccf",
+    "chapter3_bser/neighbor_ctde/exchange.py": "4f97c13b9b379772709c0f6351536cdd1436240dabf3d0708b463515dea3034b",
+    "chapter3_bser/neighbor_ctde/mission.py": "861023ecef3311e98876f6f4a01d69d9b6d06ebf6cd9e94f690bde6a656cfd72",
+    "chapter3_bser/neighbor_ctde/observations.py": "2bfd26fd9abf17bfcf893c1eaa40c3ddd5b8873dff219f7def4fe531f137c9b6",
+    "chapter3_bser/neighbor_ctde/policy.py": "19c861876035bdb589faff29f31c31d73122e00598ae5aa22348fc55215cff40",
+    "checks/test_neighbor_ctde.py": "98f11fe4c40a7b9e0825a96b05ab4b64df7392dd430fbc4734d65fa2d2c0bb41",
+    "tools/check_neighbor_ctde.py": "c625385234e23771e79bfda6e3dd15551aebaddd01a5b4149dd430add5737eab"
+  }
+}

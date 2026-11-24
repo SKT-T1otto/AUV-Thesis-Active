@@ -136,7 +136,9 @@ def prepare(*, audit_history=False):
     lock = read(LOCK)
     for relative, expected in lock["prepare_file_sha256"].items():
         if file_hash(ROOT / relative) != expected:
-            raise ValueError(f"prepare source or input changed: {relative}")
+            from tools.launch_intervention_source import reviewed_successor
+            if relative != 'tools/launch_assignment_study.py' or not reviewed_successor(relative, expected):
+                raise ValueError(f"prepare source or input changed: {relative}")
     study = read(CONFIG)
     native = study["native_inputs"]
     history = read(ROOT / study["historical_registry"])
@@ -208,7 +210,12 @@ def main():
     prep = commands.add_parser("prepare", help="freeze family assignments and the held-out configuration")
     prep.add_argument("--output", type=Path, required=True, help="directory for manifest.json")
     prep.add_argument("--verify-history", action="store_true", help="also audit original local archives and parent locks")
+    from tools.launch_assignment_collect import add_arguments, collect_command
+    add_arguments(commands.add_parser("collect", help="paired development departures"))
     args = parser.parse_args()
+    if args.command == "collect":
+        collect_command(args)
+        return
     torch.set_num_threads(1)
     manifest = prepare(audit_history=args.verify_history)
     path = publish(args.output, manifest)

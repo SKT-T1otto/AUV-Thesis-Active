@@ -83,6 +83,9 @@ def source_files(root):
 def verify_reviewed_changes(root=ROOT):
     root = Path(root).resolve()
     try:
+        if (root/'provenance/pure_marl_manifest.json').is_file():
+            from chapter3_bser.baselines.source import verify
+            return verify(root,source_files(root),canonical_digest)
         if (root/'provenance/reach_avoid_monitor_manifest.json').is_file():
             from chapter3_bser.learning.reach_avoid_monitor_source import verify
             return verify(root,source_files(root),canonical_digest)

@@ -1,0 +1,83 @@
+{
+  "schema": "auv.launch_development_pilot.release_check.v1",
+  "validation_platform": "Windows",
+  "python": "3.10.20",
+  "numpy": "2.2.6",
+  "torch": "2.11.0+cu126",
+  "plan_sha256": "7e64707eb07d6f85bf0001a4036ebaf3f4a4d873606b9a027da43271002f14f0",
+  "verified_source_files": 183,
+  "validation": {
+    "method": "clean staged Git checkout, portable import, repeated no-execute preflight, historical per-arm summary and focused unit suite",
+    "unit_tests_passed": 38,
+    "suites": [
+      "checks.test_launch_assignment_prepare",
+      "checks.test_launch_candidates",
+      "checks.test_launch_interventions",
+      "checks.test_launch_development_pilot"
+    ],
+    "historical_terminals": 4,
+    "historical_found": 0,
+    "historical_received": 0,
+    "historical_success": 0,
+    "new_terminal_episodes": 0,
+    "terminal_episodes_pending": 44,
+    "linux_execution": "manual, pending"
+  },
+  "protected_legacy_files_verified": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  },
+  "protected_digest_reference": "verification/r123_expansion_v1/20261119_v1/before.json",
+  "added_in_git": [
+    "chapter3_bser/handoff_value/records.py",
+    "chapter3_bser/handoff_value/runtime.py",
+    "chapter3_bser/joint_departure.py",
+    "chapter3_bser/launch_assignment.py",
+    "chapter3_bser/local_ctde/__init__.py",
+    "chapter3_bser/local_ctde/mission.py",
+    "chapter3_bser/local_ctde/navigation.py",
+    "chapter3_bser/local_ctde/observation.py",
+    "chapter3_bser/local_ctde/policy.py",
+    "chapter3_bser/neighbor_ctde/__init__.py",
+    "chapter3_bser/neighbor_ctde/exchange.py",
+    "chapter3_bser/neighbor_ctde/mission.py",
+    "chapter3_bser/neighbor_ctde/observations.py",
+    "chapter3_bser/neighbor_ctde/policy.py",
+    "checks/test_launch_candidates.py",
+    "checks/test_launch_development_pilot.py",
+    "checks/test_launch_interventions.py",
+    "provenance/launch_candidates_v1.json",
+    "provenance/launch_intervention_parent_v1.zip",
+    "provenance/launch_interventions_v1.json",
+    "provenance/local_ctde_v1.json",
+    "provenance/neighbor_ctde_v1.json",
+    "tools/check_launch_candidates.py",
+    "tools/launch_assignment_audit.py",
+    "tools/launch_assignment_collect.py",
+    "tools/launch_development_pilot_audit.py",
+    "tools/launch_intervention_source.py",
+    "tools/run_launch_development_pilot.py",
+    "verification/launch_development_pilot_v1/.gitignore",
+    "verification/launch_development_pilot_v1/README.md",
+    "verification/launch_development_pilot_v1/plan.json",
+    "verification/launch_development_pilot_v1/release_check.json"
+  ],
+  "modified_in_git": [
+    "chapter3_bser/d2/allocator.py",
+    "chapter3_bser/learning/provenance.py",
+    "tools/launch_assignment_study.py"
+  ],
+  "local_only": [
+    {
+      "path": "verification/launch_development_pilot_v1/linux_inputs.zip",
+      "size": 1699047,
+      "members": 7,
+      "sha256": "2bb6a82902b9041a01015b9aa3a482a3b4c0e8bdf2964a095a2828a7d4457453"
+    },
+    {
+      "path": "verification/launch_development_pilot_v1/0003_r1/request.json",
+      "note": "interrupted local launch request only; excluded from portable inputs"
+    }
+  ]
+}

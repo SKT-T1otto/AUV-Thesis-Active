@@ -55,6 +55,9 @@ class EffectAllocator(SafeJointAllocator):
         pool = tuple(candidates) + tuple(frozen)
         context = build_objective_context(state, pool, standbys, self.config)
         result = solve(self.arm, candidates, standbys, context, frozen=frozen)
+        proposal_hook = getattr(self.owner, 'd2_proposal_hook', None)
+        if proposal_hook is not None:
+            result = proposal_hook(state, candidates, frozen, standbys, result, trigger)
         allocation = OnlineAllocation(tuple((self._search_assignment(c) for c in result.selected)), executor or self.execution.assign_standby(state, result.standby), result.objective, evaluate_objective(result.selected, result.standby, context, search_only=True), response_diagnostics(result.selected, result.standby, context).conditional_reachable_response_time, trigger, result.status)
         pure = fixed_greedy(candidates, standbys[0], context, pure=True, frozen=frozen)
         sequential_y = best_standby(pure.selected, standbys, context)

@@ -1,0 +1,160 @@
+{
+  "schema": "auv.launch_development_pilot.v1",
+  "created_utc": "2026-11-24T14:37:21.319391+00:00",
+  "registry_sha256": "a06e8e8a4db3b1a99db512e1a710915cf7f597a544e5bb4e2a1ca74d37e7fccc",
+  "source_lock": "9678765d703c7014d410f72f22998256211ca4a556079188f1426f966f116180",
+  "baseline": "verification/launch_interventions_v1/development_terminal",
+  "baseline_sha256": {
+    "00.json": "a4efcdd763757288fe5dc3c2f5a74f0cdf836c8dc472cfcccb15437dae3c5fe0",
+    "01.json": "e2daf87585abcb96eed4fca80c5245cfb9786f8d513be4c421c434698fccb6f4",
+    "10.json": "3272f54baf0430ed01a61ad6c42c4959f594c58296e3ea68763fe82f59277b35",
+    "11.json": "76e0b4c262d96fb330942c8e0b275c35f20095617cc4081bb5eb33dd9c193831",
+    "audit.json": "be4054dfa5e1da79a4c153b9c68c95d0f5ce41792959cd51f2084f94c481e6bb",
+    "request.json": "ebcf3082c1e31c2e1516bd123c101fdbb1d7d057cf6d1cf86d0fbfa5aea1ec8b"
+  },
+  "eligible_order": [
+    {
+      "scene": "r123_expand_20261119_0020",
+      "family": "01b2a67ddc333788300d04327334b78c5e0d13f9939899a02b387fe3a7216430"
+    },
+    {
+      "scene": "r123_expand_20261119_0014",
+      "family": "0aff7798335433da85a0cad465cfb8025f71c073ce18beaf35628c820f6906b3"
+    },
+    {
+      "scene": "r123_expand_20261119_0003",
+      "family": "166288faa70373fd935c7b4864446b33f198bb36b3ede0bd51823bbcc4c06ee9"
+    },
+    {
+      "scene": "r123_expand_20261119_0006",
+      "family": "33d7478d8fa886b094daf475b34cf1ab8374855df6259a31f518199dea288184"
+    },
+    {
+      "scene": "r123_expand_20261119_0007",
+      "family": "386455c3d1fe0e75c6f8edfbe6cb240bdf171c16ccbb9397685572c7bb7dcadf"
+    },
+    {
+      "scene": "r123_expand_20261119_0013",
+      "family": "4c4722558007090d9505b89e680b02aa922fff19755844bfd06226e6938bee75"
+    },
+    {
+      "scene": "r123_expand_20261119_0005",
+      "family": "4d89b6403499d9b89785b88a5d7ce3e0c3131417f9996d338489329f5193731c"
+    },
+    {
+      "scene": "r123_expand_20261119_0002",
+      "family": "52bbe61c87c45bc364a2361e33395cc70a5832fde275a286188fd83b7705e5d2"
+    },
+    {
+      "scene": "r123_expand_20261119_0021",
+      "family": "5b5f7a9dcdcbdf9962935fddf7cd0ab433cf37d3c8a3ec38c87d9ba923749e51"
+    },
+    {
+      "scene": "r123_expand_20261119_0023",
+      "family": "5e06c388bee14ae725e3cf452ccc47205c83fe90eefcac299622a66cf7bd839f"
+    },
+    {
+      "scene": "r123_expand_20261119_0012",
+      "family": "6ec6b4c1d67a4ab0625a522ead7daca5c8ece19feb27f4c07076bc81e64bd219"
+    },
+    {
+      "scene": "r123_expand_20261119_0009",
+      "family": "7635c818fc9ed6606ab6ebb30319ae703c895e0550920f1bbb20539b99fb800c"
+    },
+    {
+      "scene": "r123_expand_20261119_0001",
+      "family": "7a24f1f0967f5b6867ee8abea4bb924d349233688e1e46141d67b8f56e99551e"
+    },
+    {
+      "scene": "r123_expand_20261119_0022",
+      "family": "8103d3b3ce74b24f575f2482bf3406c36bba133f25191104325876c2912e6945"
+    },
+    {
+      "scene": "r123_expand_20261119_0018",
+      "family": "a62aa6cc48bdeaabfcc552a09d0176ded940d6117c22f1825e76d331fa28a724"
+    },
+    {
+      "scene": "r123_expand_20261119_0004",
+      "family": "b1d31c499798115e19a79096fd3b22068e73d2e9678c75e431a485b3b65ceb4a"
+    },
+    {
+      "scene": "r123_expand_20261119_0017",
+      "family": "b32571d97fd2de3ce971f30ba093a34c03bab5278750d3b7226c57e786666322"
+    },
+    {
+      "scene": "r123_expand_20261119_0019",
+      "family": "b651a23f496e69c32380db76c8167a600361a17329cc68dd77cc24b903fd333b"
+    },
+    {
+      "scene": "r123_expand_20261119_0011",
+      "family": "b6589f16a36c44ac68b727d143fd0c755c87937d997e3e575de1163b66251839"
+    },
+    {
+      "scene": "r123_expand_20261119_0000",
+      "family": "cd3eb914798d57096390af67bbeae8f4a99a1d8ff05fb70da6b637a56ae37806"
+    },
+    {
+      "scene": "r123_expand_20261119_0015",
+      "family": "cec4a6a8d42a574e6b2b8f1497f3561254aea510d89b66c97c26cedeb410a828"
+    },
+    {
+      "scene": "r123_expand_20261119_0010",
+      "family": "d6e3ce21f554a40e69058a2a26f4f815febd35228ddd693ea621edae13c75254"
+    },
+    {
+      "scene": "r123_expand_20261119_0016",
+      "family": "d86ad4d9e982b871eef83ba98e4be093e0b0d2f994cfcd52faebcb83ffdb68c0"
+    },
+    {
+      "scene": "r123_expand_20261119_0008",
+      "family": "dffbd5c25285ff5500a1006d974b9447f8e7d4dd9aa5255119929fbe82e9e78a"
+    }
+  ],
+  "families": [
+    {
+      "scene": "r123_expand_20261119_0003",
+      "family": "166288faa70373fd935c7b4864446b33f198bb36b3ede0bd51823bbcc4c06ee9"
+    },
+    {
+      "scene": "r123_expand_20261119_0020",
+      "family": "01b2a67ddc333788300d04327334b78c5e0d13f9939899a02b387fe3a7216430"
+    },
+    {
+      "scene": "r123_expand_20261119_0014",
+      "family": "0aff7798335433da85a0cad465cfb8025f71c073ce18beaf35628c820f6906b3"
+    }
+  ],
+  "selection": "Start with 0003, then the first two distinct expansion24 development families in the already frozen manifest order. No replacement based on outcomes.",
+  "repeats": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "arms": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "assignment_axes": [
+    0,
+    1
+  ],
+  "third_option": 0,
+  "cap": 400,
+  "continuation": "unchanged_neighbor_policy",
+  "terminal": "native_direct",
+  "actor_sha256": "833cac497f001eaaa68c686cf8011573189cdaa981e1430b5e5a355439a5011e",
+  "native_episodes_new": 44,
+  "max_new_physical_steps": 17600,
+  "checkpoint_identity": "2740a7a5c6583cccfeb257bc1f0c069cdffcbafa35c02f9cf4437c330c2ee8db",
+  "primary": "native terminal success",
+  "events": [
+    "ever_found",
+    "ever_received",
+    "S"
+  ],
+  "pairing": "Identical addressed original/extra streams across repeats; per-boat continuation streams shared across arms within a repeat, independently derived across repeats. Keep all families and all submitted arms, including native rejections.",
+  "decision": "Count within-family, within-repeat success-discordant blocks. Any discordant block motivates wider paired validation. If most arms never find the target in at least two families, inspect offline route coverage and detector margins before fitting. Report both conditions if both hold. Otherwise localize losses using actual receipt and terminal events. No ranking by shaped return."
+}
