@@ -1,4 +1,5 @@
 import hashlib
+import copy
 from pathlib import Path
 import tempfile
 import unittest
@@ -11,6 +12,42 @@ from tools.launch_development_pilot_audit import pilot_decision
 
 
 class PilotTests(unittest.TestCase):
+    def test_runtime_local_schedule_collects_repeat_zero_in_new_directory(self):
+        plan = runner.read(runner.LOCAL_OUT / 'plan.json')
+        jobs = list(runner.cells(plan, runner.LOCAL_OUT))
+        self.assertEqual(len(jobs) * len(plan['arms']), 48)
+        self.assertFalse(any(archived for _, _, archived, _ in jobs))
+        self.assertEqual(jobs[0][3], runner.LOCAL_OUT / '0003_r0')
+        self.assertTrue(all(folder.parent == runner.LOCAL_OUT for _, _, _, folder in jobs))
+
+    def test_small_historical_differences_are_reported_exactly(self):
+        reference = dict(initial={}, prefix=dict(menus=[dict(boat=0, features=[0.], points=[[1., 2., 3.]])]))
+        snapshot = copy.deepcopy(reference)
+        snapshot['prefix']['menus'][0]['points'][0][2] += 2**-22
+        result = runner.historical_comparison(snapshot, reference)
+        self.assertTrue(result['initial_equal'])
+        self.assertFalse(result['menus_equal'])
+        self.assertEqual(result['coordinates'][0]['max_coordinate_difference_m'], 2**-22)
+        snapshot['prefix']['menus'][0]['points'].append([0., 0., 0.])
+        result = runner.historical_comparison(snapshot, reference)
+        self.assertFalse(result['coordinates'][0]['same_shape'])
+        self.assertIsNone(result['coordinates'][0]['max_coordinate_difference_m'])
+
+    def test_preflight_freezes_local_candidates_and_rejects_changed_resume(self):
+        plan = dict(families=[dict(scene='0003')])
+        sample = dict(scene='0003', menus=[1., 2.])
+        with tempfile.TemporaryDirectory() as tmp, patch.object(runner, 'file_hash', return_value='hash'), \
+                patch.object(runner, 'checked_source', return_value='source'), \
+                patch.object(runner, 'runtime_identity', return_value=dict(system='Linux')), \
+                patch.object(runner, 'preview', return_value=sample), patch.object(runner, 'collect_command') as collect:
+            out = Path(tmp)
+            runner.freeze_runtime(plan, out)
+            runner.freeze_runtime(plan, out)
+            sample['menus'][0] += 2**-22
+            with self.assertRaisesRegex(ValueError, 'local frozen departures changed'):
+                runner.freeze_runtime(plan, out)
+            collect.assert_not_called()
+
     def test_schedule_reuses_only_the_historical_block(self):
         plan = runner.read(runner.OUT / 'plan.json')
         jobs = list(runner.cells(plan))
@@ -81,6 +118,10 @@ class PilotTests(unittest.TestCase):
                                 ever_found=True, ever_received=True), admissions=[dict(accepted=False)])
                               for arm in arms})
         def receipt(path):
+            if path.name == 'runtime.json':
+                snapshot = receipt(runner.OUT / '0020_r0/00.json')
+                return dict(plan_sha256='receipt', source_lock='lock',
+                            departures=[dict(**family, snapshot=snapshot, prefix_sha256=audit.family_prefix(snapshot))])
             repeat = int(path.parent.name[-1])
             if path.name == 'request.json':
                 return dict(**family, repeat=repeat, cap=400, fixture=False, order=[0, 1, 2, 3],
@@ -97,6 +138,13 @@ class PilotTests(unittest.TestCase):
                 patch.object(audit, 'file_hash', return_value='receipt'), patch.object(audit, 'coverage', return_value=geom):
             result = audit.one_family(plan, family, dict(scenario_id=family['scene'], planner_grid_size=[1]*3,
                                       obstacles=[]), runner.OUT)
+            local = audit.one_family(dict(plan, reuse_archived_baseline=False), family,
+                                     dict(scenario_id=family['scene'], planner_grid_size=[1]*3, obstacles=[]), runner.LOCAL_OUT)
+            self.assertEqual(local['counts'], result['counts'])
+            with patch.object(audit, 'family_prefix', side_effect=['frozen', 'frozen', 'changed']):
+                with self.assertRaisesRegex(ValueError, 'branch differs'):
+                    audit.one_family(dict(plan, reuse_archived_baseline=False), family,
+                                     dict(scenario_id=family['scene'], planner_grid_size=[1]*3, obstacles=[]), runner.LOCAL_OUT)
         self.assertEqual(result['counts'], dict(n=16, found=16, received=16, success=2))
         self.assertEqual(result['discordant_repeats'], [0, 1])
         self.assertEqual(result['paired_success_contrasts']['00-01'], dict(first_only=1, second_only=1, equal=2))

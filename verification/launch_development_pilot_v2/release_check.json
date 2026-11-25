@@ -1,0 +1,43 @@
+{
+  "schema": "auv.launch_development_pilot.release_check.v2",
+  "date": "2026-11-25",
+  "validation_platform": "Windows",
+  "parent_commit": "2212146246c0fb478f3d80f3a4ba37d281a6f8a8",
+  "parent_plan_sha256": "7e64707eb07d6f85bf0001a4036ebaf3f4a4d873606b9a027da43271002f14f0",
+  "plan_sha256": "b58863102d4f50cf5010e90fe2b734f59ca30eeb7af51f34232decf9946267d5",
+  "source_lock": "9678765d703c7014d410f72f22998256211ca4a556079188f1426f966f116180",
+  "source_files_verified": 183,
+  "linux_user_report": {
+    "numpy": "2.2.6",
+    "torch": "2.11.0+cu126",
+    "field": "points",
+    "max_coordinate_difference_m": 1.1920928955078125e-06,
+    "cause": "platform-specific numerical computation suspected; individual operator unverified"
+  },
+  "validation": {
+    "clean_staged_git_export": true,
+    "unit_tests_passed": 41,
+    "runtime_local_preflight": "three families; two identical preparations",
+    "legacy_preflight": "passed; four archived, 44 missing",
+    "actual_collector": "four arms, cap one, two workers; all prefixes exactly match runtime receipt",
+    "physical_steps": 4,
+    "native_terminal": 0,
+    "training_updates": 0,
+    "linux_full_pilot": "pending manual execution"
+  },
+  "protected_legacy_files_verified": {
+    "CH3": 369,
+    "CH4": 103,
+    "CH5": 318
+  },
+  "historical_input_files_verified": 7,
+  "changed_files": [
+    "checks/test_launch_development_pilot.py",
+    "tools/launch_development_pilot_audit.py",
+    "tools/run_launch_development_pilot.py",
+    "verification/launch_development_pilot_v2/.gitignore",
+    "verification/launch_development_pilot_v2/README.md",
+    "verification/launch_development_pilot_v2/plan.json",
+    "verification/launch_development_pilot_v2/release_check.json"
+  ]
+}

@@ -92,9 +92,19 @@ def one_family(plan, family, scene, out):
     reps, discordant = [], []
     signatures, first_actions, random_states = set(), {}, [set() for _ in range(3)]
     centers = free_centers(scene)
+    frozen_prefix = None
+    if not plan.get('reuse_archived_baseline', True):
+        runtime = read(out / 'runtime.json')
+        require(runtime['plan_sha256'] == file_hash(out / 'plan.json') and
+                runtime['source_lock'] == plan['source_lock'], 'runtime receipt identity')
+        saved, = [d for d in runtime['departures'] if d['scene'] == family['scene']]
+        require(saved['family'] == family['family'] and
+                family_prefix(saved['snapshot']) == saved['prefix_sha256'], 'frozen runtime departure identity')
+        frozen_prefix = saved['prefix_sha256']
     for repeat in plan['repeats']:
         short = scene['scenario_id'].rsplit('_',1)[1]
-        folder = ROOT / plan['baseline'] if short == '0003' and repeat == 0 else out / f'{short}_r{repeat}'
+        archived = plan.get('reuse_archived_baseline', True) and short == '0003' and repeat == 0
+        folder = ROOT / plan['baseline'] if archived else out / f'{short}_r{repeat}'
         req = read(folder/'request.json')
         require((req['scene'],req['family'],req['repeat'],req['cap'],req['fixture'],req['order'],
                  req['source_lock'],req['actor_reference']['actor_parameters_sha256'],req['continuation'],req['terminal'])
@@ -105,7 +115,10 @@ def one_family(plan, family, scene, out):
         block = {}
         for arm in arm_names:
             b = read(folder/(arm+'.json'))
-            signatures.add(family_prefix(b))
+            prefix = family_prefix(b)
+            if frozen_prefix is not None:
+                require(prefix == frozen_prefix, 'branch differs from its frozen runtime departure')
+            signatures.add(prefix)
             first = departure_actions(b)
             require(first_actions.setdefault(arm, first) == first, 'repeat changed the assigned departure')
             if arm == arm_names[0]:
@@ -153,8 +166,13 @@ def summarize(out):
     scenes = read((ROOT/registry['study']['native_inputs']['config']).with_name('scenes.json'))['scenarios']
     by_scene = {s['scenario_id']:s for s in scenes}
     results = [one_family(plan, f, by_scene[f['scene']],out) for f in selected]
-    return dict(schema='auv.launch_development_pilot.audit.v1', plan_sha256=file_hash(out/'plan.json'),
-                auditor_sha256=file_hash(Path(__file__)), families=results, **pilot_decision(results))
+    result = dict(schema='auv.launch_development_pilot.audit.v1', plan_sha256=file_hash(out/'plan.json'),
+                  auditor_sha256=file_hash(Path(__file__)), families=results, **pilot_decision(results))
+    if not plan.get('reuse_archived_baseline', True):
+        result.update(schema='auv.launch_development_pilot.audit.v2',
+                      runtime_receipt_sha256=file_hash(out / 'runtime.json'), archived_terminals_pooled=0,
+                      historical_reference=dict(folder=plan['baseline'], sha256=plan['baseline_sha256']))
+    return result
 
 
 def pilot_decision(results):
